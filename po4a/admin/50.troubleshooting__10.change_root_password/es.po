@@ -1,0 +1,60 @@
+# Spanish translations for YunoHost documentation package
+# Copyright (C) 2025 YunoHost Contributors
+# This file is distributed under the same license as the YunoHost documentation package.
+# Automatically generated, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: YunoHost documentation VERSION\n"
+"POT-Creation-Date: 2025-11-09 20:53+0100\n"
+"PO-Revision-Date: 2025-11-09 20:53+0100\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. type: Yaml Front Matter Hash Value: title
+#: docs/admin/50.troubleshooting/10.change_root_password.mdx:1
+#, no-wrap
+msgid "Changing root's password"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/50.troubleshooting/10.change_root_password.mdx:6
+#, no-wrap
+msgid "In the past, YunoHost had a special \"`admin`\" user in addition to `root`. This is not the case anymore, and each user admin password can be changed via the regular process.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/50.troubleshooting/10.change_root_password.mdx:8
+#, no-wrap
+msgid "`root`, a.k.a \"god on the machine\", still exists however, and being able to access the root account can sometimes be useful. For example, because LDAP (the user database powering YunoHost account) is broken. In this case, you may be able to connect to root via SSH *from the local network*, via a direct screen/keyboard access, or via a rescue console provided by your VPS provider - depending on the nature of your server.\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/50.troubleshooting/10.change_root_password.mdx:9
+#, no-wrap
+msgid "Using the web administration interface"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/50.troubleshooting/10.change_root_password.mdx:12
+#, no-wrap
+msgid "First, connect to your web administration.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/50.troubleshooting/10.change_root_password.mdx:14
+#, no-wrap
+msgid "Then go to Tools > YunoHost settings > Security tab > Change root password\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/50.troubleshooting/10.change_root_password.mdx:15
+#, no-wrap
+msgid "Using the command line interface"
+msgstr ""
+

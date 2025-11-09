@@ -1,0 +1,226 @@
+# Occitan translations for YunoHost documentation package
+# Copyright (C) 2025 YunoHost Contributors
+# This file is distributed under the same license as the YunoHost documentation package.
+# Automatically generated, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: YunoHost documentation VERSION\n"
+"POT-Creation-Date: 2025-11-09 20:53+0100\n"
+"PO-Revision-Date: 2025-11-09 20:53+0100\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: oc\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Title ##
+#: docs/admin/05.get_started/20.install_on/arm_board.mdx:18
+#: docs/admin/05.get_started/20.install_on/raspberry_pi.mdx:17
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:17
+#: docs/admin/05.get_started/20.install_on/remote_server.mdx:14
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:20
+#: docs/admin/05.get_started/20.install_on/wsl.mdx:21
+#, no-wrap
+msgid "<FAIcon icon=\"fa-list-alt\"/> Pre-requisites"
+msgstr ""
+
+#. type: Bullet: '  - '
+#: docs/admin/05.get_started/20.install_on/arm_board.mdx:26
+#: docs/admin/05.get_started/20.install_on/raspberry_pi.mdx:25
+#, no-wrap
+msgid "A power supply (either an adapter or a USB cable) for your board;\n"
+msgstr ""
+
+#. type: Bullet: '  - '
+#: docs/admin/05.get_started/20.install_on/arm_board.mdx:26
+#: docs/admin/05.get_started/20.install_on/raspberry_pi.mdx:25
+#, no-wrap
+msgid "A microSD card: 16GB capacity (at least), [class \"A1\"](https://en.wikipedia.org/wiki/SD_card#Class) highly recommended (such as [this SanDisk A1 card](https://www.amazon.fr/SanDisk-microSDHC-Adaptateur-homologu%C3%A9e-Nouvelle/dp/B073JWXGNT/));\n"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/05.get_started/20.install_on/arm_board.mdx:26
+#: docs/admin/05.get_started/20.install_on/raspberry_pi.mdx:25
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:25
+#, no-wrap
+msgid "A [reasonable ISP](/admin/get_started/providers/isp/), preferably with a good and unlimited upstream bandwidth\n"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/05.get_started/20.install_on/arm_board.mdx:26
+#: docs/admin/05.get_started/20.install_on/raspberry_pi.mdx:25
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:25
+#, no-wrap
+msgid "An ethernet cable (RJ-45) to connect your server to your router.\n"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/05.get_started/20.install_on/arm_board.mdx:26
+#: docs/admin/05.get_started/20.install_on/raspberry_pi.mdx:25
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:25
+#, no-wrap
+msgid "A computer to read this guide, flash the image and access your server.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/arm_board.mdx:49
+#: docs/admin/05.get_started/20.install_on/raspberry_pi.mdx:46
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:44
+#, no-wrap
+msgid "  <TabItem value=\"etcher\" label=\"With Etcher (recommended)\">\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/arm_board.mdx:53
+#: docs/admin/05.get_started/20.install_on/raspberry_pi.mdx:49
+#, no-wrap
+msgid "    Plug your SD card, select your image and click \"Flash\"\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/arm_board.mdx:55
+#: docs/admin/05.get_started/20.install_on/raspberry_pi.mdx:51
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:50
+#, no-wrap
+msgid "    ![Etcher](/img/softwares/etcher.gif)\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/arm_board.mdx:58
+#: docs/admin/05.get_started/20.install_on/raspberry_pi.mdx:54
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:53
+#, no-wrap
+msgid ""
+"  <TabItem value=\"usbimager\" label=\"With USBimager\">\n"
+"    Download [USBimager](https://bztsrc.gitlab.io/usbimager/) for your operating system and install it.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/arm_board.mdx:60
+#: docs/admin/05.get_started/20.install_on/raspberry_pi.mdx:56
+#, no-wrap
+msgid "    Plug your SD card, select your image and click \"Write\"\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/arm_board.mdx:62
+#: docs/admin/05.get_started/20.install_on/raspberry_pi.mdx:58
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:57
+#, no-wrap
+msgid "    ![USBimager](/img/softwares/usbimager.png)\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/arm_board.mdx:65
+#: docs/admin/05.get_started/20.install_on/raspberry_pi.mdx:61
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:60
+#, no-wrap
+msgid ""
+"  <TabItem value=\"dd\" label=\"With dd\">\n"
+"    If you are on GNU/Linux / macOS and know your way around command line, you may also flash your USB stick or SD card with `dd`. You can identify which device corresponds to your USB stick or SD card with `fdisk -l` or `lsblk`. A typical SD card name is something like `/dev/mmcblk0`. BE CAREFUL and make sure you got the right name.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/arm_board.mdx:67
+#: docs/admin/05.get_started/20.install_on/raspberry_pi.mdx:63
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:62
+#, no-wrap
+msgid "    Then run:\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/05.get_started/20.install_on/arm_board.mdx:75
+#: docs/admin/05.get_started/20.install_on/raspberry_pi.mdx:71
+#, no-wrap
+msgid "<FAIcon icon=\"fa-plug\"/> Power up the board"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/05.get_started/20.install_on/arm_board.mdx:82
+#: docs/admin/05.get_started/20.install_on/raspberry_pi.mdx:78
+#, no-wrap
+msgid "Put the SD card in your board\n"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/05.get_started/20.install_on/arm_board.mdx:82
+#: docs/admin/05.get_started/20.install_on/raspberry_pi.mdx:78
+#, no-wrap
+msgid "Connect your board to your home router via Ethernet\n"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/05.get_started/20.install_on/arm_board.mdx:82
+#: docs/admin/05.get_started/20.install_on/raspberry_pi.mdx:78
+#, no-wrap
+msgid "If you want to follow the initial boot, connect a screen and keyboard on your board.\n"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/05.get_started/20.install_on/arm_board.mdx:82
+#: docs/admin/05.get_started/20.install_on/raspberry_pi.mdx:78
+#, no-wrap
+msgid "Power up the board\n"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: description
+#: docs/admin/05.get_started/20.install_on/raspberry_pi.mdx:1
+#, no-wrap
+msgid "Our preferred baked boards"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: title
+#: docs/admin/05.get_started/20.install_on/raspberry_pi.mdx:1
+#, no-wrap
+msgid "On a Raspberry Pi"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/05.get_started/20.install_on/raspberry_pi.mdx:25
+#, no-wrap
+msgid "A Raspberry Pi 3, 4 or 5\n"
+msgstr ""
+
+#. type: Fenced div block (warning)
+#: docs/admin/05.get_started/20.install_on/raspberry_pi.mdx:26
+#, no-wrap
+msgid ""
+"Support for Raspberry Pi 2 was dropped. If you really want to install YunoHost on a Pi 2, download and install\n"
+"\"Raspberry Pi OS (32-bit)\" from [the official website](https://www.raspberrypi.com/software/operating-systems/)\n"
+"and then [follow the instructions](./on_top_of_debian) to install YunoHost on Debian.\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/05.get_started/20.install_on/raspberry_pi.mdx:32
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:26
+#, no-wrap
+msgid "<FAIcon icon=\"fa-download\" /> Download the YunoHost image"
+msgstr ""
+
+#. type: Fenced div block (note)
+#: docs/admin/05.get_started/20.install_on/raspberry_pi.mdx:34
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:32
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:30
+#, no-wrap
+msgid "If you wish to check the validity of our signed images, you can [download our public key](https://forge.yunohost.org/keys/yunohost_bookworm.asc).\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/05.get_started/20.install_on/raspberry_pi.mdx:40
+#, no-wrap
+msgid "<FAIcon icon=\"fa-sim-card\"/> Flash the YunoHost image"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/raspberry_pi.mdx:43
+#, no-wrap
+msgid "Now that you downloaded the image of YunoHost, you should flash it on a microSD card\n"
+msgstr ""
+
+#. type: Bullet: '  - '
+#: docs/admin/05.get_started/20.install_on/raspberry_pi.mdx:78
+#, no-wrap
+msgid "For advanced users requiring WiFi instead, please follow [the official documentation](https://www.raspberrypi.com/documentation/computers/configuration.html#connect-to-a-wireless-network).\n"
+msgstr ""

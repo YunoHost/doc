@@ -39,7 +39,7 @@ conf = f"""
 [po4a_alias:markdown] text opt:"--option markdown --option breaks='{'|'.join(patterns_to_ignore)}' --option neverwrap --option yfm_keys={','.join(yaml_front_matter_keys_to_translate)}"
 
 [po4a_langs] {' '.join(langs)}
-[po4a_paths] po4a/admin/$master/$master.pot $lang:po4a/admin/$master/$lang.po
+[po4a_paths] po4a/admin/$master/en.pot $lang:po4a/admin/$master/$lang.po
 
 """
 
@@ -49,13 +49,14 @@ os.chdir(base_dir)
 for page in sorted(Path("./docs/admin").rglob("*.mdx")):
     page = str(page).split("/", 2)[-1]  # Remove the starting 'docs/admin'
     pot = page.replace("/", "__")[:-len(".mdx")]
-    conf += f'\n[type: markdown] ./docs/admin/{page} $lang:i18n/$lang/docusaurus-plugin-content-docs/current/admin/{page} pot:{pot} opt:"--keep 0"'
+    conf += f'\n[type: markdown] ./docs/admin/{page} $lang:i18n/$lang/docusaurus-plugin-content-docs/current/admin/{page} pot:{pot} opt:"--keep 10"'
 
 print(conf)
 
 with tempfile.NamedTemporaryFile(prefix="po4a_", suffix=".cfg", dir=base_dir) as po4a_conf:
     po4a_conf.write(conf.encode())
     os.system(f"po4a {po4a_conf.name} --no-translations")
+    #os.system(f"po4a {po4a_conf.name} --no-update")
 
 # We dont want to translate code blocks, the vast majority is language agnostic
 os.system("sed -i '/^#. type: Fenced code block/,/^$/d' po4a/admin/*/*.po po4a/admin/*/*.pot")

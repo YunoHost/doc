@@ -1,0 +1,23 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR YunoHost Contributors
+# This file is distributed under the same license as the YunoHost documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: YunoHost documentation VERSION\n"
+"POT-Creation-Date: 2025-11-09 20:53+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Yaml Front Matter Hash Value: title
+#: docs/admin/05.get_started/10.providers/10.isp/orange.mdx:1
+#, no-wrap
+msgid "Orange (France)"
+msgstr ""

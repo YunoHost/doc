@@ -1,0 +1,57 @@
+# Occitan translations for YunoHost documentation package
+# Copyright (C) 2025 YunoHost Contributors
+# This file is distributed under the same license as the YunoHost documentation package.
+# Automatically generated, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: YunoHost documentation VERSION\n"
+"POT-Creation-Date: 2025-11-09 20:53+0100\n"
+"PO-Revision-Date: 2025-11-09 20:53+0100\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: oc\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Title ##
+#: docs/admin/05.get_started/20.install_on/arm_board.mdx:18
+#: docs/admin/05.get_started/20.install_on/raspberry_pi.mdx:17
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:17
+#: docs/admin/05.get_started/20.install_on/remote_server.mdx:14
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:20
+#: docs/admin/05.get_started/20.install_on/wsl.mdx:21
+#, no-wrap
+msgid "<FAIcon icon=\"fa-list-alt\"/> Pre-requisites"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: description
+#: docs/admin/05.get_started/20.install_on/remote_server.mdx:1
+#, no-wrap
+msgid "Cloud machines: VPS or dedicated servers"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: title
+#: docs/admin/05.get_started/20.install_on/remote_server.mdx:1
+#, no-wrap
+msgid "On a remote server"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/05.get_started/20.install_on/remote_server.mdx:18
+#, no-wrap
+msgid "A computer or a smartphone to read this guide and access your server.\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/05.get_started/20.install_on/remote_server.mdx:19
+#, no-wrap
+msgid "<FAIcon icon=\"fa-terminal\"/> Connect to the server"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/remote_server.mdx:22
+#, no-wrap
+msgid "You will need to connect to your server via `ssh`.\n"
+msgstr ""

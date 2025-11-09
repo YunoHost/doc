@@ -1,0 +1,216 @@
+# Occitan translations for YunoHost documentation package
+# Copyright (C) 2025 YunoHost Contributors
+# This file is distributed under the same license as the YunoHost documentation package.
+# Automatically generated, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: YunoHost documentation VERSION\n"
+"POT-Creation-Date: 2025-11-09 20:53+0100\n"
+"PO-Revision-Date: 2025-11-09 20:53+0100\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: oc\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Yaml Front Matter Hash Value: title
+#: docs/admin/50.troubleshooting/25.blacklist_forms.mdx:1
+#, no-wrap
+msgid "Unblacklisting forms"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/50.troubleshooting/25.blacklist_forms.mdx:6
+#, no-wrap
+msgid "It could happen sometimes that your IP is blacklisted by some email provider, or anti-spam services. If you receive an alert from the diagnosis tool, click on details to find the unblocking forms.\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/50.troubleshooting/25.blacklist_forms.mdx:7
+#, no-wrap
+msgid "Test your server"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/50.troubleshooting/25.blacklist_forms.mdx:11
+#, no-wrap
+msgid ""
+"To check your Email deliverability, YunoHost provide some tests avilables in the Diagnosis tool. This tools evalutes  a lot of configuration and ip reputation points. It gives you also an indicator if some mails are blocked inside the mail queue (waiting to be sent).\n"
+"all the points evaluated by [the well known mail-tester.com](https://www.mail-tester.com) except for mail content (usefull if you prepare a newsletter).\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/50.troubleshooting/25.blacklist_forms.mdx:15
+#, no-wrap
+msgid ""
+"However, if you have a doubt on the internal diagnosis results, you could check on external tools:\n"
+"- by sending an emails : [Mail tester](https://www.mail-tester.com)\n"
+"- by providing the public ip : [MultiRBL Valli](https://multirbl.valli.org/) or [Whatismyip](https://whatismyipaddress.com/blacklist-check)\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/50.troubleshooting/25.blacklist_forms.mdx:16
+#, no-wrap
+msgid "Check your mail logs"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/50.troubleshooting/25.blacklist_forms.mdx:19
+#, no-wrap
+msgid "This command can help you to summarize which emails has been refused by other SMTP server and why.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/50.troubleshooting/25.blacklist_forms.mdx:25
+#, no-wrap
+msgid "See [the list of SMTP return code](https://en.wikipedia.org/wiki/List_of_SMTP_server_return_codes) from wikipedia.\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/50.troubleshooting/25.blacklist_forms.mdx:26
+#, no-wrap
+msgid "Untestable email providers"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/50.troubleshooting/25.blacklist_forms.mdx:29
+#, no-wrap
+msgid "YunoHost is only able to test generic blacklist using the DNS RBL mechanism. However, Gmail, Microsoft, Yahoo or Free maintains their own blacklisting mechanism, so in some situation you may need to contact their teams through dedicated forms or use dedicated tools.\n"
+msgstr ""
+
+#. type: Title ###
+#: docs/admin/50.troubleshooting/25.blacklist_forms.mdx:30
+#, no-wrap
+msgid "Microsoft"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/50.troubleshooting/25.blacklist_forms.mdx:39
+#: docs/admin/50.troubleshooting/25.blacklist_forms.mdx:47
+#: docs/admin/50.troubleshooting/25.blacklist_forms.mdx:55
+#, no-wrap
+msgid "No way to test easily IP reputation\n"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/50.troubleshooting/25.blacklist_forms.mdx:39
+#, no-wrap
+msgid "[Microsoft guide for postmaster](https://sendersupport.olc.protection.outlook.com/pm/)\n"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/50.troubleshooting/25.blacklist_forms.mdx:39
+#, no-wrap
+msgid "[Information about SMTP return code from Microsoft](https://sendersupport.olc.protection.outlook.com/pm/troubleshooting.aspx#Codes)\n"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/50.troubleshooting/25.blacklist_forms.mdx:39
+#, no-wrap
+msgid "Reputation Management tools :\n"
+msgstr ""
+
+#. type: Bullet: '  - '
+#: docs/admin/50.troubleshooting/25.blacklist_forms.mdx:39
+#, no-wrap
+msgid "[Junk Email Reporting Program (JMRP)](https://postmaster.live.com/snds/JMRP.aspx)\n"
+msgstr ""
+
+#. type: Bullet: '  - '
+#: docs/admin/50.troubleshooting/25.blacklist_forms.mdx:39
+#, no-wrap
+msgid "[Smart Network Data Services (SNDS)](https://postmaster.live.com/snds/index.aspx)\n"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/50.troubleshooting/25.blacklist_forms.mdx:39
+#, no-wrap
+msgid "[Get support form for deliverability issues](https://support.microsoft.com/supportrequestform/8ad563e3-288e-2a61-8122-3ba03d6b8d75) (Sadly you need a Microsoft account :/ )\n"
+msgstr ""
+
+#. type: Title ###
+#: docs/admin/50.troubleshooting/25.blacklist_forms.mdx:40
+#, no-wrap
+msgid "Gmail"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/50.troubleshooting/25.blacklist_forms.mdx:47
+#, no-wrap
+msgid "[Google guide for postmaster](https://support.google.com/a/topic/1354753)\n"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/50.troubleshooting/25.blacklist_forms.mdx:47
+#, no-wrap
+msgid "[Information about SMTP return code from Google](https://support.google.com/a/answer/3726730)\n"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/50.troubleshooting/25.blacklist_forms.mdx:47
+#, no-wrap
+msgid "Reputation Management tools : [Google Postmaster Tools](https://postmaster.google.com)\n"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/50.troubleshooting/25.blacklist_forms.mdx:47
+#, no-wrap
+msgid "[Get support form for deliverability issues](https://support.google.com/mail/contact/bulk_send_new)\n"
+msgstr ""
+
+#. type: Title ###
+#: docs/admin/50.troubleshooting/25.blacklist_forms.mdx:48
+#, no-wrap
+msgid "Yahoo"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/50.troubleshooting/25.blacklist_forms.mdx:55
+#, no-wrap
+msgid "[Yahoo guide for postmaster](https://senders.yahooinc.com/best-practices)\n"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/50.troubleshooting/25.blacklist_forms.mdx:55
+#, no-wrap
+msgid "[Information about SMTP return code from Yahoo](https://senders.yahooinc.com/smtp-error-codes)\n"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/50.troubleshooting/25.blacklist_forms.mdx:55
+#, no-wrap
+msgid "Reputation Management tools : [Complaint Feedback Loop](https://io.help.yahoo.com/contact/index?page=contactform&locale=en_US&token=Zh%2FBBVqXzLHlIbokbUqVWTUbuuQeXGkGnZzhKR2JQ4O6mMQdy9JSWdtWFXvjthcYCRj9bUIFfycOfG%2B4GOHPHoOGa8HwDO2%2B0kYRtTcdR8Nja5P9HWkKh3VWfS3pyu4UdjhvwG%2BBCvnYFl5dToDK%2Fw%3D%3D&selectedChannel=email-icon)\n"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/50.troubleshooting/25.blacklist_forms.mdx:55
+#, no-wrap
+msgid "[Get support form for deliverability issues](https://senders.yahooinc.com/contact)\n"
+msgstr ""
+
+#. type: Title ###
+#: docs/admin/50.troubleshooting/25.blacklist_forms.mdx:56
+#, no-wrap
+msgid "Free"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/50.troubleshooting/25.blacklist_forms.mdx:59
+#, no-wrap
+msgid "You can find a tool to test your IP, advices, explanation of error code and a way to contact Free on [this page](https://postmaster.free.fr/)\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/50.troubleshooting/25.blacklist_forms.mdx:60
+#, no-wrap
+msgid "Get alert about emails sent without SPF or DKIM"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/50.troubleshooting/25.blacklist_forms.mdx:63
+#, no-wrap
+msgid "If you use your own domains and think that some mails are sent by unauthorized servers (so without SPF/DKIM), you  get report about this mail with.\n"
+msgstr ""
+

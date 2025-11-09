@@ -1,0 +1,62 @@
+# Occitan translations for YunoHost documentation package
+# Copyright (C) 2025 YunoHost Contributors
+# This file is distributed under the same license as the YunoHost documentation package.
+# Automatically generated, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: YunoHost documentation VERSION\n"
+"POT-Creation-Date: 2025-11-09 20:53+0100\n"
+"PO-Revision-Date: 2025-11-09 20:53+0100\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: oc\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Title ##
+#: docs/admin/05.get_started/20.install_on/_install_script.mdx:2
+#, no-wrap
+msgid "<FAIcon icon=\"fa-rocket\"/> Run the install script"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/05.get_started/20.install_on/_install_script.mdx:7
+#, no-wrap
+msgid "Open a command line prompt on your server (either directly or [through SSH](/admin/command_line))\n"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/05.get_started/20.install_on/_install_script.mdx:7
+#, no-wrap
+msgid "Make sure you are root (or type `sudo -i` to become root)\n"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/05.get_started/20.install_on/_install_script.mdx:7
+#, no-wrap
+msgid "Run the following command:\n"
+msgstr ""
+
+#. type: Fenced div block (warning)
+#: docs/admin/05.get_started/20.install_on/_install_script.mdx:12
+#, no-wrap
+msgid ""
+"You might need to first install `curl` and `ca-certificates` by running:\n"
+"```bash\n"
+"apt install curl ca-certificates\n"
+"```\n"
+msgstr ""
+
+#. type: Fenced div block (danger)
+#: docs/admin/05.get_started/20.install_on/_install_script.mdx:19
+#, no-wrap
+msgid "Always ensure there's an `s` at the end of `https`.\n"
+msgstr ""
+
+#. type: Fenced div block (note)
+#: docs/admin/05.get_started/20.install_on/_install_script.mdx:23
+#, no-wrap
+msgid "**For advanced users concerned with the `curl | bash` approach:** consider reading [\"Is curl|bash insecure?\"](https://sandstorm.io/news/2015-09-24-is-curl-bash-insecure-pgp-verified-install) on Sandstom's blog, and possibly [this discussion on Hacker News](https://news.ycombinator.com/item?id=12766350&noprocess).\n"
+msgstr ""

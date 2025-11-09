@@ -1,0 +1,87 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR YunoHost Contributors
+# This file is distributed under the same license as the YunoHost documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: YunoHost documentation VERSION\n"
+"POT-Creation-Date: 2025-11-09 20:53+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Yaml Front Matter Hash Value: sidebar_label
+#: docs/admin/45.tutorials/55.moving_app_folder.mdx:1
+#, no-wrap
+msgid "Move apps storage"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: title
+#: docs/admin/45.tutorials/55.moving_app_folder.mdx:1
+#, no-wrap
+msgid "Moving an app folder to a different storage"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/55.moving_app_folder.mdx:7
+#, no-wrap
+msgid "Applications folder are (*usually*) located in `/var/www/$appname`\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/55.moving_app_folder.mdx:9
+#, no-wrap
+msgid "If an application folder is expected to get bigger because of the amount of data it contains, it might be relevant to move it to another storage (like an external hard drive).\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/55.moving_app_folder.mdx:12
+#, no-wrap
+msgid ""
+"Here's a summary of how to do this the application wordpress. Here, is is assumed that\n"
+"[you already mounted the external hard-drive](/admin/tutorials/external_storage).\n"
+msgstr ""
+
+#. type: Title ####
+#: docs/admin/45.tutorials/55.moving_app_folder.mdx:13
+#, no-wrap
+msgid "1. Move the entire wordpress folder to an external hard drive"
+msgstr ""
+
+#. type: Title ####
+#: docs/admin/45.tutorials/55.moving_app_folder.mdx:19
+#, no-wrap
+msgid "2. Create a symbolic link"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/55.moving_app_folder.mdx:22
+#, no-wrap
+msgid "So that programs looking for files in /var/www/wordpress will actually take them from the harddrive\n"
+msgstr ""
+
+#. type: Title ####
+#: docs/admin/45.tutorials/55.moving_app_folder.mdx:27
+#, no-wrap
+msgid "3. Tweak permissions (maybe?)"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/55.moving_app_folder.mdx:30
+#, no-wrap
+msgid "After this, note that you may need to tweak the permissions of `/media/externalharddrive` so that `www-data` (or the user corresponding to the app) is able to read through the folder... Something like :\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/55.moving_app_folder.mdx:37
+#, no-wrap
+msgid ""
+"(but it depends on your exact setup... Please update this doc page if you figure\n"
+"out what to do exactly)\n"
+msgstr ""

@@ -1,0 +1,256 @@
+# Catalan translations for YunoHost documentation package
+# Copyright (C) 2025 YunoHost Contributors
+# This file is distributed under the same license as the YunoHost documentation package.
+# Automatically generated, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: YunoHost documentation VERSION\n"
+"POT-Creation-Date: 2025-11-09 20:53+0100\n"
+"PO-Revision-Date: 2025-11-09 20:53+0100\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: ca\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Yaml Front Matter Hash Value: sidebar_label
+#: docs/admin/45.tutorials/15.filezilla.mdx:1
+#, no-wrap
+msgid "Transfer files"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: title
+#: docs/admin/45.tutorials/15.filezilla.mdx:1
+#, no-wrap
+msgid "Exchange files with your server using a graphical interface"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/15.filezilla.mdx:7
+#, no-wrap
+msgid "This page explains how to exchange files (backup archives, music, pictures, movies...) with your server using a graphical interface for the (S)FTP protocol. This is an alternative to using `scp` which can be deemed technical and cryptic, or using an app like Nextcloud.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/15.filezilla.mdx:9
+#, no-wrap
+msgid "[FileZilla](https://filezilla-project.org/) can be used for this. It is free software and is available for Windows, GNU/Linux and macOS.\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/45.tutorials/15.filezilla.mdx:10
+#, no-wrap
+msgid "Download and install FileZilla"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/15.filezilla.mdx:13
+#, no-wrap
+msgid "Get the client from the [download page](https://filezilla-project.org/download.php?type=client). It should automatically detect the version needed for your computer. Otherwise, follow the instructions to [install the client](https://wiki.filezilla-project.org/Client_Installation)\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/15.filezilla.mdx:15
+#, no-wrap
+msgid "Install the program and run *Filezilla*.\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/45.tutorials/15.filezilla.mdx:16
+#, no-wrap
+msgid "Configuration"
+msgstr ""
+
+#. type: Bullet: '1. '
+#: docs/admin/45.tutorials/15.filezilla.mdx:19
+#, no-wrap
+msgid "Click the *Site Manager* icon in the upper left to begin.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/15.filezilla.mdx:21
+#, no-wrap
+msgid "   ![Main screen of Filezilla](/img/softwares/filezilla_1.png)\n"
+msgstr ""
+
+#. type: Bullet: '2. '
+#: docs/admin/45.tutorials/15.filezilla.mdx:23
+#, no-wrap
+msgid "Click **New Site** and give a name the server you will be using : *Family* here. Fill the settings as on the screenshot (replace the server address with your own and leave the port field empty unless you changed your SSH port number, in which case use this port number), and click on **Connect**. (N.B. : if you want to interact with the [custom webapp](https://github.com/YunoHost-Apps/my_webapp_ynh) files, you should use a different user than `admin`. Refer to the custom webapp documentation.)\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/15.filezilla.mdx:25
+#, no-wrap
+msgid "   ![Site manager screen](/img/softwares/filezilla_2.png)\n"
+msgstr ""
+
+#. type: Bullet: '3. '
+#: docs/admin/45.tutorials/15.filezilla.mdx:27
+#, no-wrap
+msgid "You will get a warning as you connect for the first time to the server. *You can ignore it safely the first time you get it.*\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/15.filezilla.mdx:29
+#, no-wrap
+msgid "   ![warning about the unknown fingerprint of the server](/img/softwares/filezilla_3.png)\n"
+msgstr ""
+
+#. type: Bullet: '4. '
+#: docs/admin/45.tutorials/15.filezilla.mdx:31
+#, no-wrap
+msgid "Filezilla is now asking the `admin` password to connect to your server.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/15.filezilla.mdx:33
+#, no-wrap
+msgid "   ![credential screen asking for the password](/img/softwares/filezilla_4.png)\n"
+msgstr ""
+
+#. type: Bullet: '5. '
+#: docs/admin/45.tutorials/15.filezilla.mdx:35
+#, no-wrap
+msgid "Once bookmarked, your server will be backup up and you will get this screen.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/15.filezilla.mdx:37
+#, no-wrap
+msgid "   ![View of the \"site manager\" with the newly server added](/img/softwares/filezilla_5.png)\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/45.tutorials/15.filezilla.mdx:38
+#, no-wrap
+msgid "Usage"
+msgstr ""
+
+#. type: Bullet: '1. '
+#: docs/admin/45.tutorials/15.filezilla.mdx:41
+#, no-wrap
+msgid "Connect to the Site created previously. *Your passwork might be asked again*\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/15.filezilla.mdx:43
+#, no-wrap
+msgid "   The left panel corresponds to your computer. The right panel corresponds to your remote YunoHost server. You can browse folders and drag-and-drop files between the two panels.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/15.filezilla.mdx:45
+#, no-wrap
+msgid "   ![view while connected to a remote server](/img/softwares/filezilla_6.png)\n"
+msgstr ""
+
+#. type: Bullet: '2. '
+#: docs/admin/45.tutorials/15.filezilla.mdx:47
+#, no-wrap
+msgid "In the right panel, you can browse to `/home/yunohost.backup/archives/` to find [backup archives](/admin/backups/).\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/15.filezilla.mdx:49
+#, no-wrap
+msgid "   ![path where backups are located on YunoHost](/img/softwares/filezilla_7.png)\n"
+msgstr ""
+
+#. type: Fenced div block (warning)
+#: docs/admin/45.tutorials/15.filezilla.mdx:50
+#, no-wrap
+msgid "   <FAIcon icon=\"fa-cloud-download\"/> Be sure to download both the `.tar.gz` and `.json` files.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/15.filezilla.mdx:55
+#, no-wrap
+msgid "   ![Copy backups from YunoHost to local computer](/img/softwares/filezilla_8.png)\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/15.filezilla.mdx:59
+#, no-wrap
+msgid "Sources\n"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/45.tutorials/15.filezilla.mdx:62
+#, no-wrap
+msgid "[Official documentation](https://wiki.filezilla-project.org/FileZilla_Client_Tutorial_(en))\n"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/45.tutorials/15.filezilla.mdx:62
+#, no-wrap
+msgid "[General tutorial about using FileZilla](https://www.rc.fas.harvard.edu/resources/documentation/sftp-file-transfer/)\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/45.tutorials/15.filezilla.mdx:63
+#, no-wrap
+msgid "Alternatives to Filezilla"
+msgstr ""
+
+#. type: Title ###
+#: docs/admin/45.tutorials/15.filezilla.mdx:65
+#, no-wrap
+msgid "GNU/Linux"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/15.filezilla.mdx:68
+#, no-wrap
+msgid "From any recent GNU/Linux, you should be able to use the `file manager` to reach your server.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/15.filezilla.mdx:70
+#, no-wrap
+msgid "Nautilus from Gnome3 and Dolphin from KDE have features similar to FileZilla, out of the box.\n"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/45.tutorials/15.filezilla.mdx:74
+#, no-wrap
+msgid "[Nautilus Connect](https://help.gnome.org/users/gnome-help/stable/nautilus-connect.html.en)\n"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/45.tutorials/15.filezilla.mdx:74
+#, no-wrap
+msgid "[Dolphin](https://docs.kde.org/stable5/en/dolphin/dolphin/location-bar.html#location-bar-editable-kioslaves)\n"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/45.tutorials/15.filezilla.mdx:74
+#, no-wrap
+msgid "[Tutorial for Nautilus and SFTP](https://www.techrepublic.com/article/how-to-use-linux-file-manager-to-connect-to-an-sftp-server/)\n"
+msgstr ""
+
+#. type: Title ###
+#: docs/admin/45.tutorials/15.filezilla.mdx:75
+#, no-wrap
+msgid "Windows"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/45.tutorials/15.filezilla.mdx:78
+#, no-wrap
+msgid "[WinSCP](https://winscp.net/) is also a nice candidate for Windows\n"
+msgstr ""
+
+#. type: Title ###
+#: docs/admin/45.tutorials/15.filezilla.mdx:79
+#, no-wrap
+msgid "macOS"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/45.tutorials/15.filezilla.mdx:81
+#, no-wrap
+msgid "[Cyberduck](https://cyberduck.io/) is a free software available on macOS\n"
+msgstr ""

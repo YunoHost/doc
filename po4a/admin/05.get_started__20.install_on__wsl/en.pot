@@ -1,0 +1,218 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR YunoHost Contributors
+# This file is distributed under the same license as the YunoHost documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: YunoHost documentation VERSION\n"
+"POT-Creation-Date: 2025-11-09 20:53+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Title ##
+#: docs/admin/05.get_started/20.install_on/arm_board.mdx:18
+#: docs/admin/05.get_started/20.install_on/raspberry_pi.mdx:17
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:17
+#: docs/admin/05.get_started/20.install_on/remote_server.mdx:14
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:20
+#: docs/admin/05.get_started/20.install_on/wsl.mdx:21
+#, no-wrap
+msgid "<FAIcon icon=\"fa-list-alt\"/> Pre-requisites"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: description
+#: docs/admin/05.get_started/20.install_on/wsl.mdx:1
+#, no-wrap
+msgid "Experimental, for testing purposes"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: title
+#: docs/admin/05.get_started/20.install_on/wsl.mdx:1
+#, no-wrap
+msgid "On WSL"
+msgstr ""
+
+#. type: Fenced div block (danger)
+#: docs/admin/05.get_started/20.install_on/wsl.mdx:17
+#, no-wrap
+msgid "This setup is mainly meant for local testing by advanced users. Due to limitations on WSL's side (changing IP address, notably), selfhosting from it can be tricky and will not be described here.\n"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/05.get_started/20.install_on/wsl.mdx:27
+#, no-wrap
+msgid "Windows 10 and above\n"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/05.get_started/20.install_on/wsl.mdx:27
+#, no-wrap
+msgid "Administration rights\n"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/05.get_started/20.install_on/wsl.mdx:27
+#, no-wrap
+msgid "Windows Subsystem for Linux, installed from the Optional Features menu of Windows\n"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/05.get_started/20.install_on/wsl.mdx:27
+#, no-wrap
+msgid "*Recommended:* Windows Terminal (Preview) app, installed from the Microsoft Store. Much better than the standard Terminal, as it offers shortcuts to the WSL distros.\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/05.get_started/20.install_on/wsl.mdx:28
+#: docs/admin/45.tutorials/25.external_storage.mdx:6
+#, no-wrap
+msgid "Introduction"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/wsl.mdx:32
+#, no-wrap
+msgid ""
+"WSL is a nice feature of Windows 10, making Linux pseudo-distributions available through command line. Let's say pseudo, because even though they are not really like virtual machines, they rely on virtualization capacities that make their integration with Windows almost seamless.\n"
+"Docker for Windows can now rely on WSL instead of Hyper-V, for example.\n"
+msgstr ""
+
+#. type: Fenced div block (warning)
+#: docs/admin/05.get_started/20.install_on/wsl.mdx:33
+#, no-wrap
+msgid ""
+"Bear in mind, this setup itself is *not* a container of any kind. If something breaks, there is no rollback capability.  \n"
+"You may need to delete the Debian distro altogether and restore it whole.\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/05.get_started/20.install_on/wsl.mdx:38
+#, no-wrap
+msgid "Install Debian"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/wsl.mdx:41
+#, no-wrap
+msgid "Let's install YunoHost into its own distro, not altering the default one. In a PowerShell terminal:\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/wsl.mdx:56
+#, no-wrap
+msgid "You can now access it: run `wsl.exe -d YunoHost`\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/wsl.mdx:58
+#, no-wrap
+msgid "It is under Debian 9 Stretch, so let's upgrade it:\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/05.get_started/20.install_on/wsl.mdx:70
+#, no-wrap
+msgid "Prevent WSL from tweaking configuration files"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/wsl.mdx:73
+#, no-wrap
+msgid "Edit `/etc/wsl.conf` and put the following code in it:\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/05.get_started/20.install_on/wsl.mdx:80
+#, no-wrap
+msgid "Force the use of iptables-legacy"
+msgstr ""
+
+#. type: Fenced div block (warning[FIXME])
+#: docs/admin/05.get_started/20.install_on/wsl.mdx:82
+#, no-wrap
+msgid "YunoHost now uses nftables, these instructions might be out of date.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/wsl.mdx:88
+#, no-wrap
+msgid ""
+"Somehow the YunoHost post-installation does not like `nf_tables`, the new software replacing `iptables`.\n"
+"We can still explicitely use the good ol' `iptables` though:\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/05.get_started/20.install_on/wsl.mdx:95
+#, no-wrap
+msgid "Install Systemd"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/wsl.mdx:99
+#, no-wrap
+msgid ""
+"Debian on WSL does not have `systemd`, a service configuration software.\n"
+"This is a key element for YunoHost, and for any decent Debian distro (seriously MS, what the heck). Let's install it:\n"
+msgstr ""
+
+#. type: Bullet: '1. '
+#: docs/admin/05.get_started/20.install_on/wsl.mdx:101
+#, no-wrap
+msgid "Install dotNET runtime:\n"
+msgstr ""
+
+#. type: Bullet: '2. '
+#: docs/admin/05.get_started/20.install_on/wsl.mdx:113
+#, no-wrap
+msgid "Install [Genie](https://github.com/arkane-systems/genie):\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/05.get_started/20.install_on/wsl.mdx:123
+#, no-wrap
+msgid "Install YunoHost"
+msgstr ""
+
+#. type: Title ###
+#: docs/admin/05.get_started/20.install_on/wsl.mdx:137
+#, no-wrap
+msgid "Access the command line"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/wsl.mdx:140
+#, no-wrap
+msgid "Always call `genie -s` while starting your distro.\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/05.get_started/20.install_on/wsl.mdx:145
+#, no-wrap
+msgid "Backup and restore the distro"
+msgstr ""
+
+#. type: Title ###
+#: docs/admin/05.get_started/20.install_on/wsl.mdx:147
+#, no-wrap
+msgid "Make your first distro backup"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/wsl.mdx:150
+#, no-wrap
+msgid "As said before, there is no rollback capability. So let's export your fresh distro. In PowerShell:\n"
+msgstr ""
+
+#. type: Title ###
+#: docs/admin/05.get_started/20.install_on/wsl.mdx:156
+#, no-wrap
+msgid "In case of crash, delete and restore the whole distro"
+msgstr ""
+

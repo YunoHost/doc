@@ -1,0 +1,113 @@
+# German translations for YunoHost documentation package
+# Copyright (C) 2025 YunoHost Contributors
+# This file is distributed under the same license as the YunoHost documentation package.
+# Automatically generated, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: YunoHost documentation VERSION\n"
+"POT-Creation-Date: 2025-11-09 20:53+0100\n"
+"PO-Revision-Date: 2025-11-09 20:53+0100\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. type: Yaml Front Matter Hash Value: title
+#: docs/admin/50.troubleshooting/05.fail2ban.mdx:1
+#, no-wrap
+msgid "IP address unban"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/50.troubleshooting/05.fail2ban.mdx:6
+#, no-wrap
+msgid "**Fail2Ban** is an intrusion prevention software that protects computer servers against brute-force attacks. It monitors certain logs and will ban IP addresses that show brute-force-like behavior.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/50.troubleshooting/05.fail2ban.mdx:8
+#, no-wrap
+msgid "In particular, **Fail2Ban** monitors `SSH` connection attempts. After 5 failed SSH connection attempts, Fail2Ban will ban the IP address from connecting via SSH for 10 minutes. If this address fails several times, it might get banned for a week.\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/50.troubleshooting/05.fail2ban.mdx:9
+#, no-wrap
+msgid "Unban an IP address"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/50.troubleshooting/05.fail2ban.mdx:12
+#, no-wrap
+msgid "To unblock an IP address, you must first access your server by some means (for example from another IP address or from another internet connection than the banned one).\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/50.troubleshooting/05.fail2ban.mdx:14
+#, no-wrap
+msgid "Then, look at the **Fail2Ban’s log** to identify in which `jail` the IP address has been banned:\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/50.troubleshooting/05.fail2ban.mdx:27
+#, no-wrap
+msgid "Here, the `11.22.33.44` IP address has been banned in the `sshd` and `recidive` jails.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/50.troubleshooting/05.fail2ban.mdx:29
+#, no-wrap
+msgid "Then deban the IP address with the following commands:\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/50.troubleshooting/05.fail2ban.mdx:35
+#, no-wrap
+msgid "Whitelist an IP address"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/50.troubleshooting/05.fail2ban.mdx:38
+#, no-wrap
+msgid "If you don’t want a \"legitimate\" IP address to be blocked by **YunoHost** anymore, then you have to fill it in the whitelist of the `jail` configuration file.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/50.troubleshooting/05.fail2ban.mdx:40
+#, no-wrap
+msgid "When updating the **Fail2Ban** software, the original `/etc/fail2ban/jail.conf` file is overwritten. So it is on a new dedicated file that we will store the changes. They will thus be preserved over time.\n"
+msgstr ""
+
+#. type: Bullet: '1. '
+#: docs/admin/50.troubleshooting/05.fail2ban.mdx:42
+#, no-wrap
+msgid "Start by creating the new jail configuration file which will be called `yunohost-whitelist.conf`:\n"
+msgstr ""
+
+#. type: Bullet: '2. '
+#: docs/admin/50.troubleshooting/05.fail2ban.mdx:48
+#, no-wrap
+msgid "Edit this new file with your favorite editor:\n"
+msgstr ""
+
+#. type: Bullet: '3. '
+#: docs/admin/50.troubleshooting/05.fail2ban.mdx:54
+#, no-wrap
+msgid "Paste the following content into the file and adapt the IP address `XXX.XXX.XXX.XXX`:\n"
+msgstr ""
+
+#. type: Bullet: '4. '
+#: docs/admin/50.troubleshooting/05.fail2ban.mdx:62
+#, no-wrap
+msgid "Save the file and reload the Fail2Ban configuration:\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/50.troubleshooting/05.fail2ban.mdx:67
+#, no-wrap
+msgid "Congratulations, no more risks of banning yourself from your own YunoHost server!\n"
+msgstr ""

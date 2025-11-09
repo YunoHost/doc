@@ -1,0 +1,199 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR YunoHost Contributors
+# This file is distributed under the same license as the YunoHost documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: YunoHost documentation VERSION\n"
+"POT-Creation-Date: 2025-11-09 20:53+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Yaml Front Matter Hash Value: title
+#: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:1
+#, no-wrap
+msgid "Find your server's local IP"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:9
+#, no-wrap
+msgid "On an installation at home, your server should typically be accessible using the `yunohost.local` domain. If for any reason this does not work, you may need to find the *local* IP of your server.\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:10
+#, no-wrap
+msgid "What is a local IP ?"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:13
+#, no-wrap
+msgid "The local IP is the address used to refer to your server inside the local network (typically your home) where multiple devices are connected to a router (your internet box). The local IP typically looks like `192.168.x.y` (or sometimes `10.0.x.y` or `172.16.x.y`)\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:14
+#, no-wrap
+msgid "How to find it ?"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:17
+#, no-wrap
+msgid "Any of these tricks should allow you to find the local IP of your server:\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:21
+#, no-wrap
+msgid ""
+"<TabItem value=\"angryip\" label=\"With AngryIP (Recommended)\" default>\n"
+"You can use the [AngryIP](https://angryip.org/download/) software to achieve that. You just need to scan these local ip ranges in this order until you find the active IP corresponding to your server:\n"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:27
+#, no-wrap
+msgid "`192.168.0.0` -> `192.168.0.255`\n"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:27
+#, no-wrap
+msgid "`192.168.1.0` -> `192.168.1.255`\n"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:27
+#, no-wrap
+msgid "`192.168.2.0` -> `192.168.255.255`\n"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:27
+#, no-wrap
+msgid "`10.0.0.0` -> `10.0.255.255`\n"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:27
+#, no-wrap
+msgid "`172.16.0.0` -> `172.31.255.255`\n"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:28
+#, no-wrap
+msgid "you can order by ping like on this screenshot to easily see effectively-used IP.\n"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:28
+#, no-wrap
+msgid "your server should typically be displayed as listening on port 80 and 443\n"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:28
+#, no-wrap
+msgid "in case of doubt, just type `https://192.168.x.y` in your browser to check if it's a YunoHost or not.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:39
+#, no-wrap
+msgid ""
+"<TabItem value=\"router\" label=\"With your internet router / box\">\n"
+"Connect to your internet box / router interface to list the machines connected.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:43
+#, no-wrap
+msgid ""
+"<TabItem value=\"arp-scan\" label=\"With arp-scan\">\n"
+"If you're using Linux, you can open a terminal and use `sudo arp-scan --local` to list the IP on your local network (this may also work in Windows);\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:45
+#, no-wrap
+msgid "If the `arp-scan` command displays a confusing number of devices, you can check which ones are open to SSH with `nmap -p 22 192.168.1.0/24` to sort them out (adapt the IP range to your local network)\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:49
+#, no-wrap
+msgid ""
+"<TabItem value=\"direct\" label=\"With a direct access on the server\">\n"
+"Plug a screen on your server, log in and type `hostname --all-ip-address`.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:51
+#, no-wrap
+msgid "The default credentials (before post-installation!) to log in are:\n"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:54
+#, no-wrap
+msgid "login: `root`\n"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:54
+#, no-wrap
+msgid "password: `yunohost`\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:56
+#, no-wrap
+msgid "(If you are using a raw Armbian image instead of the pre-installed YunoHost image, the credentials are root / 1234)\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:60
+#, no-wrap
+msgid "I still can't find my local IP"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:63
+#, no-wrap
+msgid "If you are unable to find your server using any of the previous tricks, maybe your server did not boot correctly:\n"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:67
+#, no-wrap
+msgid "Make sure that your server is properly plugged in;\n"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:67
+#, no-wrap
+msgid "If you're using an SD card, make sure the connector is not too dusty;\n"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:67
+#, no-wrap
+msgid "Plug a screen on your server and try to reboot to check that it's properly booting;\n"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:67
+#, no-wrap
+msgid "Make sure that your ethernet cable is working and properly plugged in;\n"
+msgstr ""

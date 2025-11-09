@@ -1,0 +1,57 @@
+# Catalan translations for YunoHost documentation package
+# Copyright (C) 2025 YunoHost Contributors
+# This file is distributed under the same license as the YunoHost documentation package.
+# Automatically generated, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: YunoHost documentation VERSION\n"
+"POT-Creation-Date: 2025-11-09 20:53+0100\n"
+"PO-Revision-Date: 2025-11-09 20:53+0100\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: ca\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Title ##
+#: docs/admin/55.upgrade/11.0-bullseye.mdx:19
+#: docs/admin/55.upgrade/12.0-bookworm/index.mdx:23
+#: docs/admin/55.upgrade/index.mdx:5
+#, no-wrap
+msgid "From the webadmin"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/55.upgrade/11.0-bullseye.mdx:23
+#: docs/admin/55.upgrade/12.0-bookworm/index.mdx:29
+#: docs/admin/55.upgrade/index.mdx:11
+#, no-wrap
+msgid "From the command line"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: title
+#: docs/admin/55.upgrade/index.mdx:1
+#, no-wrap
+msgid "✨ Upgrades"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/55.upgrade/index.mdx:8
+#, no-wrap
+msgid "On the administraton panel, click on Upgrade the system. YunoHost will refresh the system package catalog as well as the application catalog, and display available upgrades.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/55.upgrade/index.mdx:10
+#, no-wrap
+msgid "Click on green upgrade buttons to upgrade the system and applications.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/55.upgrade/index.mdx:14
+#, no-wrap
+msgid "Here are some example of corresponding command lines:\n"
+msgstr ""
+

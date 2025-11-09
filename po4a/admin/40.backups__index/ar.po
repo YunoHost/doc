@@ -1,0 +1,284 @@
+# Arabic translations for YunoHost documentation package
+# Copyright (C) 2025 YunoHost Contributors
+# This file is distributed under the same license as the YunoHost documentation package.
+# Automatically generated, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: YunoHost documentation VERSION\n"
+"POT-Creation-Date: 2025-11-09 20:53+0100\n"
+"PO-Revision-Date: 2025-11-09 20:53+0100\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/_configuration.mdx:19
+#: docs/admin/05.get_started/20.install_on/_configuration.mdx:116
+#: docs/admin/30.apps/index.mdx:100 docs/admin/30.apps/index.mdx:132
+#: docs/admin/40.backups/index.mdx:25 docs/admin/40.backups/index.mdx:74
+#: docs/admin/40.backups/index.mdx:140
+#: docs/admin/45.tutorials/35.email_configure_relay.mdx:49
+#, no-wrap
+msgid "  <TabItem value=\"web\" label=\"From the web interface\">\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/_configuration.mdx:100
+#: docs/admin/05.get_started/20.install_on/_configuration.mdx:123
+#: docs/admin/30.apps/index.mdx:109 docs/admin/30.apps/index.mdx:139
+#: docs/admin/40.backups/index.mdx:32 docs/admin/40.backups/index.mdx:88
+#: docs/admin/40.backups/index.mdx:147 docs/admin/40.backups/index.mdx:174
+#, no-wrap
+msgid "  <TabItem value=\"cli\" label=\"From the command line\">\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/05.evaluate.mdx:6 docs/admin/40.backups/index.mdx:12
+#, no-wrap
+msgid "In the context of self-hosting, backups are an important element to compensate for unexpected events (fire, database corruption, loss of access to the server, compromised server...). The backup policy to implement depends on the importance of the services and data you manage. For example, backing up a test server will be of little interest, while you will want to be very careful if you are managing critical data for an association or a company - and in such cases, you will want to store the backups *in a different location or locations*.\n"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: title
+#: docs/admin/40.backups/index.mdx:1
+#, no-wrap
+msgid "🚑 Backups"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/40.backups/index.mdx:13
+#, no-wrap
+msgid "Manual backup"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/index.mdx:16
+#, no-wrap
+msgid "YunoHost comes with a backup system, that allows you to backup (and restore) system configurations and data (e.g. emails) and apps if they support it.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/index.mdx:18
+#, no-wrap
+msgid "You can manage backups either from the command line (`yunohost backup --help`) or from the web administration (in the Backups section), though some features are not yet available in the webadmin.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/index.mdx:20
+#, no-wrap
+msgid "The current default method consists in creating a `.tar` archive containing all relevant files.\n"
+msgstr ""
+
+#. type: Title ####
+#: docs/admin/40.backups/index.mdx:21
+#, no-wrap
+msgid "Creating backups"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/index.mdx:27
+#, no-wrap
+msgid "You can easily create backup archives from the webadmin by going to `Backups > Local storage` and clicking on `New backup`. You will then be asked to select which configuration, data and apps you want to backup.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/index.mdx:29
+#, no-wrap
+msgid "![picture of YunoHost's backup pannel](/img/webadmin/backup.png)\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/index.mdx:34
+#, no-wrap
+msgid "You can create a new backup archive from the command line. Here are a few simple examples of commands and their corresponding behavior:\n"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/40.backups/index.mdx:36
+#, no-wrap
+msgid "Backing up everything (all system parts and apps):\n"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/40.backups/index.mdx:42
+#, no-wrap
+msgid "Backing up only apps\n"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/40.backups/index.mdx:48
+#, no-wrap
+msgid "Backing up only two apps (wordpress and shaarli)\n"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/40.backups/index.mdx:54
+#, no-wrap
+msgid "Backing up only emails\n"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/40.backups/index.mdx:60
+#, no-wrap
+msgid "Backing up emails and wordpress\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/index.mdx:66
+#, no-wrap
+msgid "For more information and options about backup creation, consult `yunohost backup create --help`. You can also list the system parts that can be backed up with `yunohost hook list backup`.\n"
+msgstr ""
+
+#. type: Title ###
+#: docs/admin/40.backups/index.mdx:70
+#, no-wrap
+msgid "Downloading backups"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/index.mdx:76
+#, no-wrap
+msgid "After creating backups, it is possible to list and inspect them using the corresponding views in the web administration interface. A button allows you to download the archive. If the archive is larger than 3GB, it may be better to proceed via SFTP.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/index.mdx:78
+#, no-wrap
+msgid "`Backup > Local Archives > <Archive name> > Download`\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/index.mdx:81 docs/admin/40.backups/index.mdx:167
+#, no-wrap
+msgid "  <TabItem value=\"sftp\" label=\"With a SFTP client\">\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/index.mdx:83
+#, no-wrap
+msgid "Currently, the most accessible way to download big archives is to use the program FileZilla as explained in [this page](/admin/tutorials/filezilla).\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/index.mdx:85
+#, no-wrap
+msgid "By default, backups are stored in `/home/yunohost.backup/archives/`.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/index.mdx:92
+#, no-wrap
+msgid "It is possible to use `scp` (a program based on [`ssh`](/admin/command_line)) to copy files between two machines via the command line. So, from a GNU/Linux machine, you can use the following command to download an archive:\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/index.mdx:98 docs/admin/40.backups/index.mdx:182
+#, no-wrap
+msgid "If your SSH port is different from 22\n"
+msgstr ""
+
+#. type: Fenced div block (caution)
+#: docs/admin/40.backups/index.mdx:107
+#, no-wrap
+msgid "Don't forget to store your backup in a different place to your server.\n"
+msgstr ""
+
+#. type: Fenced div block (info)
+#: docs/admin/40.backups/index.mdx:111
+#, no-wrap
+msgid "If you want, you can connect an external disk to your server so that the archives arrive directly on it. See this guide to [Adding external storage to your server](/admin/tutorials/external_storage)\n"
+msgstr ""
+
+#. type: Title ###
+#: docs/admin/40.backups/index.mdx:115
+#, no-wrap
+msgid "Testing"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/index.mdx:118
+#, no-wrap
+msgid "You should regularly test your backups by at least listing the contents of the archives and checking the size of the associated data. It is best to practice restoring regularly.\n"
+msgstr ""
+
+#. type: Title ###
+#: docs/admin/40.backups/index.mdx:130
+#, no-wrap
+msgid "Restoring backups"
+msgstr ""
+
+#. type: Fenced div block (info)
+#: docs/admin/40.backups/index.mdx:132
+#, no-wrap
+msgid "SPOILER: The larger your data volume and the more applications you have, the more complex your recovery will be.\n"
+msgstr ""
+
+#. type: Title ####
+#: docs/admin/40.backups/index.mdx:136
+#, no-wrap
+msgid "Simple case: little data, archive already present"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/index.mdx:142
+#, no-wrap
+msgid "Go in `Backup > Local storage` and select your archive. You can then select which items you want to restore, then click on 'Restore'.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/index.mdx:144
+#, no-wrap
+msgid "![picture of YunoHost's restore pannel](/img/webadmin/restore.png)\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/index.mdx:149
+#, no-wrap
+msgid "From the command line, you can run `yunohost backup list` to get the available archive names. They are basically their file name without extension.\n"
+msgstr ""
+
+#. type: Fenced div block (tip)
+#: docs/admin/40.backups/index.mdx:152
+#, no-wrap
+msgid "In the case of a complete restoration, it is possible to restore instead of launching the initial configuration.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/index.mdx:160
+#, no-wrap
+msgid "To restore an app, the domain on which it was installed should already be configured (or you need to restore the corresponding system configuration). You also cannot restore an app which is already installed... which means that to restore an old version of an app, you must first uninstall it.\n"
+msgstr ""
+
+#. type: Title ####
+#: docs/admin/40.backups/index.mdx:161
+#, no-wrap
+msgid "Uploading an archive"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/index.mdx:164
+#, no-wrap
+msgid "In many cases, the archive is not on the server on which you want to restore it. So it has to be uploaded, which depending on its size can take more or less time.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/index.mdx:169
+#, no-wrap
+msgid "Currently, the most accessible solution for uploading backups is to use the FileZilla program as explained in [this page](/admin/tutorials/filezilla).\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/index.mdx:171
+#, no-wrap
+msgid "By default, backups are to be placed in `/home/yunohost.backup/archives/`.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/index.mdx:176
+#, no-wrap
+msgid "You can use the `scp` (a command built on `ssh`) to copy files between two machines from CLI. For example for a Linux terminal:\n"
+msgstr ""
+

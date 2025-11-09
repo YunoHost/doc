@@ -1,0 +1,180 @@
+# Russian translations for YunoHost documentation package
+# Copyright (C) 2025 YunoHost Contributors
+# This file is distributed under the same license as the YunoHost documentation package.
+# Automatically generated, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: YunoHost documentation VERSION\n"
+"POT-Creation-Date: 2025-11-09 20:53+0100\n"
+"PO-Revision-Date: 2025-11-09 20:53+0100\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#. type: Yaml Front Matter Hash Value: description
+#: docs/admin/02.what_is_yunohost/index.mdx:1
+#, no-wrap
+msgid " "
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: title
+#: docs/admin/02.what_is_yunohost/index.mdx:1
+#, no-wrap
+msgid "What is YunoHost?"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/02.what_is_yunohost/index.mdx:9
+#, no-wrap
+msgid "YunoHost is an **operating system** aiming to simplify **server administration** and therefore democratize [self-hosting](/admin/about_self_hosting) while making sure it stays reliable, secure, ethical and lightweight. It is a copylefted libre software project maintained by volunteers. Technically, it can be seen as a server distribution based on [Debian GNU/Linux](https://debian.org).\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/02.what_is_yunohost/index.mdx:11
+#, no-wrap
+msgid "YunoHost can be installed on [many kinds of hardware](/admin/get_started/install_on), either at home or on a remote server (VPS).\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/02.what_is_yunohost/index.mdx:13
+#, no-wrap
+msgid "![General representation of a YunoHost server installation](/img/internet_topologies_with_ynh.png?resize=600)\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/02.what_is_yunohost/index.mdx:14
+#, no-wrap
+msgid "Features"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/02.what_is_yunohost/index.mdx:19
+#, no-wrap
+msgid "<SmallInline url='/img/icons/logo-debian.png' alt=\"debian logo\"/> Based on Debian, for a trustworthy & familiar base;\n"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/02.what_is_yunohost/index.mdx:19
+#, no-wrap
+msgid "<SmallInline url='/img/icons/icon-tools.png' alt=\"tools logo\"/> Administer your server through a **friendly web interface** as well as a handy CLI;\n"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/02.what_is_yunohost/index.mdx:19
+#, no-wrap
+msgid "<SmallInline url='/img/icons/icon-package.png' alt=\"package logo\"/> Deploy **apps in just a few clicks** from [our more than 500 apps catalog](https://apps.yunohost.org)!;\n"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/02.what_is_yunohost/index.mdx:22
+#, no-wrap
+msgid "<SmallInline url='/img/icons/icon-globe.png' alt=\"globe logo\"/> Manage **domain names**;\n"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/02.what_is_yunohost/index.mdx:22
+#, no-wrap
+msgid "<SmallInline url='/img/icons/icon-medic.png' alt=\"medic logo\"/> Create and restore **backups**;\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/02.what_is_yunohost/index.mdx:27
+#, no-wrap
+msgid "Origin"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/02.what_is_yunohost/index.mdx:30
+#, no-wrap
+msgid "YunoHost was created in February 2012 after something like this:\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/02.what_is_yunohost/index.mdx:32
+#, no-wrap
+msgid "> \"Shit, I'm too lazy to reconfigure my mail server... Beudbeud, how were you able to get your little server running with LDAP?\"\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/02.what_is_yunohost/index.mdx:35
+#, no-wrap
+msgid "All that was needed was an admin interface for Beudbeud's server to make something usable, so Kload decided to develop one. Finally, after automating several configs and packaging in some web apps, YunoHost v1 was finished.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/02.what_is_yunohost/index.mdx:37
+#, no-wrap
+msgid "Noting the growing enthusiasm around YunoHost and around self-hosting in general, the original developers along with new contributors decided to start work on version 2, a more extensible, more powerful, more easy-to-use, and at that, one that makes a nice cup of fair-trade coffee for the elves of Lapland.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/02.what_is_yunohost/index.mdx:39
+#, no-wrap
+msgid "The name **YunoHost** comes from the jargon \"[Y U NO](https://knowyourmeme.com/memes/y-u-no-guy) Host\". The [Internet meme](https://en.wikipedia.org/wiki/Internet_meme) should illustrate it:\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/02.what_is_yunohost/index.mdx:42
+#, no-wrap
+msgid "![The meme in question, showing a guy with a face bent in frustration and questioning \"Y U NO Host\"](/img/dude_yunohost.jpg)\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/02.what_is_yunohost/index.mdx:44
+#, no-wrap
+msgid "What YunoHost is not?"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/02.what_is_yunohost/index.mdx:47
+#, no-wrap
+msgid "YunoHost is *not* an enterprise or a for-profit entity. It is developed and maintained by volunteers. We do not sell services, we do not host or control your data or services in any way, and we have no intention or interest in monetizing anything. We also do not offer any formal guarantees. Our goal is simply to develop and maintain YunoHost in the hope that it contributes to a more decentralized internet and empowers people to reclaim autonomy over their digital services and technology. That said, we do our best to provide community support, and commercial support may be available through third parties if needed.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/02.what_is_yunohost/index.mdx:49
+#, no-wrap
+msgid "YunoHost as a project is *not* apolitical. By its very nature, YunoHost promotes a decentralized internet and technologies that empower people. We reject the flawed notion that technology is inherently neutral, or that software projects should remain neutral. Many contributors to the project remain vigilant about the social and political implications of technological developments, and emphasize the importance of solidarity and alignment with broader movements such as feminism, LGBTQIA+ rights and visibility, environmental justice and social justice. We stand firmly against fascism, sexism, racism, xenophobia, [bigotry](https://simple.wikipedia.org/wiki/Bigotry), ableism, imperialism, extractivism, [eugenics](https://en.wikipedia.org/wiki/Eugenics), and right-wing libertarianism. If you are not aligned with these values, you are encouraged to *not* use YunoHost and look for a different system.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/02.what_is_yunohost/index.mdx:51
+#, no-wrap
+msgid "YunoHost is *not* designed to \"scale\" in the traditional sense. It is intended for a relatively modest number of user accounts and simultaneous users. While there is no strict limit—since performance depends heavily on your specific setup — , we estimate that some technical adjustments may be necessary when reaching 250~500 user accounts, or about 50 simultaneous users on resource-intensive apps. That said, YunoHost can comfortably handle hosting a website or several lightweight services, even with thousands of daily visitors.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/02.what_is_yunohost/index.mdx:53
+#, no-wrap
+msgid "YunoHost is primarily designed for people who want things to \"just work\". Of course, it’s not perfect — we're constantly working to improve the user experience, robustness, and simplicity. Though YunoHost is \"tinkerable\", the first target public is *not* power users with complex or highly customized use cases in mind. We encourage you to keep your setup as simple as possible. That said, you are than welcome to experiment and share your feedback with us!\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/02.what_is_yunohost/index.mdx:55
+#, no-wrap
+msgid "YunoHost is *not* designed to be a *heavy* multi-tenant solution for providing services to completely separate organizations across different domains. While you *can* manage multiple domains and subdomains — such as hosting apps for friends, colleagues, an association — you should keep in mind that there is no strict isolation between apps. Under the hood, all applications share the same system and environment.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/02.what_is_yunohost/index.mdx:57
+#, no-wrap
+msgid "(Note for power users) YunoHost does not use \"hard\" containerization technologies such as Docker for its apps. This is partly for historical reasons, but also to keep the system lightweight — both in terms of resource usage and technical complexity. That said, we do take security seriously: applications run under dedicated user accounts with limited privileges and capabilities, and we're continuously working to enhance the system’s security.\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/02.what_is_yunohost/index.mdx:58
+#, no-wrap
+msgid "Artworks"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/02.what_is_yunohost/index.mdx:61
+#, no-wrap
+msgid "Black and white YunoHost by ToZz. Licence: CC-BY-SA 4.0. Logos and other artwork are available in [the Artworks repository](https://github.com/YunoHost/yunohost-artwork).\n"
+msgstr ""
