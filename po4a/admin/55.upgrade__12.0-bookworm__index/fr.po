@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2025-11-09 21:01+0100\n"
-"PO-Revision-Date: 2025-11-09 23:48+0000\n"
+"PO-Revision-Date: 2025-11-10 01:02+0000\n"
 "Last-Translator: Weblate Admin <yunohost@translate.yunohost.org>\n"
 "Language-Team: French <https://translate.yunohost.org/projects/"
 "doc-experimental/55upgrade__120-bookworm__index/fr/>\n"
@@ -83,72 +83,60 @@ msgstr "Depuis la ligne de commande"
 #. type: Plain text
 #: docs/admin/55.upgrade/11.0-bullseye.mdx:32
 #: docs/admin/55.upgrade/12.0-bookworm/index.mdx:38
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "then read carefully and accept the disclaimer.\n"
-msgstr ""
-"#-#-#-#-#  fr.po (YunoHost documentation VERSION)  #-#-#-#-#\n"
-"#-#-#-#-#  fr.po (PACKAGE VERSION)  #-#-#-#-#\n"
-"puis lisez attentivement l'avertissement et les instructions.\n"
+msgstr "puis lisez attentivement l'avertissement et les instructions.\n"
 
 #. type: Title ##
 #: docs/admin/55.upgrade/11.0-bullseye.mdx:33
 #: docs/admin/55.upgrade/12.0-bookworm/index.mdx:39
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "During the migration"
-msgstr ""
-"#-#-#-#-#  fr.po (YunoHost documentation VERSION)  #-#-#-#-#\n"
-"#-#-#-#-#  fr.po (PACKAGE VERSION)  #-#-#-#-#\n"
-"Pendant la migration"
+msgstr "Pendant la migration"
 
 #. type: Plain text
 #: docs/admin/55.upgrade/11.0-bullseye.mdx:40
 #: docs/admin/55.upgrade/12.0-bookworm/index.mdx:28
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Note that even if you close the webadmin page for some reason, the migration will continue in the background (but the webadmin will be partially unavailable).\n"
 msgstr ""
-"#-#-#-#-#  fr.po (YunoHost documentation VERSION)  #-#-#-#-#\n"
-"#-#-#-#-#  fr.po (PACKAGE VERSION)  #-#-#-#-#\n"
-"Notez que même si vous fermez la page d'admin, la migration continuera (par contre l'interface d'admin sera partiellement indisponible).\n"
+"Notez que même si vous fermez la page d'admin, la migration continuera "
+"(par contre l'interface d'admin sera partiellement indisponible).\n"
 
 #. type: Title ###
 #: docs/admin/55.upgrade/11.0-bullseye.mdx:82
 #: docs/admin/55.upgrade/12.0-bookworm/index.mdx:78
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Check that your applications are working"
-msgstr ""
-"#-#-#-#-#  fr.po (YunoHost documentation VERSION)  #-#-#-#-#\n"
-"#-#-#-#-#  fr.po (PACKAGE VERSION)  #-#-#-#-#\n"
-"Vérifiez que les applications fonctionnent"
+msgstr "Vérifiez que les applications fonctionnent"
 
 #. type: Plain text
 #: docs/admin/55.upgrade/11.0-bullseye.mdx:85
 #: docs/admin/55.upgrade/12.0-bookworm/index.mdx:81
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Test that your applications are working. If they aren't, you should try to upgrade them (it is also a good idea to upgrade them even if they are working anyway).\n"
 msgstr ""
-"#-#-#-#-#  fr.po (YunoHost documentation VERSION)  #-#-#-#-#\n"
-"#-#-#-#-#  fr.po (PACKAGE VERSION)  #-#-#-#-#\n"
-"Vérifiez que vos applications installées fonctionnent... Si elles ne fonctionnent pas, il est recommandé de tenter de les mettre à jour. (ou bien de manière générale, il est recommandé de les mettre à jour même si elles fonctionnent !).\n"
+"Vérifiez que vos applications installées fonctionnent... Si elles ne "
+"fonctionnent pas, il est recommandé de tenter de les mettre à jour. (ou bien "
+"de manière générale, il est recommandé de les mettre à jour même si elles "
+"fonctionnent !).\n"
 
 #. type: Plain text
 #: docs/admin/55.upgrade/11.0-bullseye.mdx:87
 #: docs/admin/55.upgrade/12.0-bookworm/index.mdx:83
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "If your app is broken and you were already with the latest version, you can rerun the upgrade thanks to the `-F|--force` option:\n"
 msgstr ""
-"#-#-#-#-#  fr.po (YunoHost documentation VERSION)  #-#-#-#-#\n"
-"#-#-#-#-#  fr.po (PACKAGE VERSION)  #-#-#-#-#\n"
-"Si votre app est cassée et que vous étiez déjà sur la dernière version d'une application, vous pouvez relancer la mise à jour grâce à l'option `--force`:\n"
+"Si votre app est cassée et que vous étiez déjà sur la dernière version d'une "
+"application, vous pouvez relancer la mise à jour grâce à l'option `--force`:"
+"\n"
 
 #. type: Title ##
 #: docs/admin/55.upgrade/11.0-bullseye.mdx:92
 #: docs/admin/55.upgrade/12.0-bookworm/index.mdx:88
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Current known issues after the migration"
-msgstr ""
-"#-#-#-#-#  fr.po (YunoHost documentation VERSION)  #-#-#-#-#\n"
-"#-#-#-#-#  fr.po (PACKAGE VERSION)  #-#-#-#-#\n"
-"Soucis connus après la migration"
+msgstr "Soucis connus après la migration"
 
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/55.upgrade/12.0-bookworm/index.mdx:1
