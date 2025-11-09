@@ -40,28 +40,28 @@ Aggiornando **Fail2Ban** il file `/etc/fail2ban/jail.conf` originale verrà sovr
 
 1. Comincia creando un nuovo file di configurazione della jail che verrà chiamato `yunohost-whitelist.conf`:
 
-    ```bash
-    sudo touch /etc/fail2ban/jail.d/yunohost-whitelist.conf
-    ```
+```bash
+sudo touch /etc/fail2ban/jail.d/yunohost-whitelist.conf
+```
 
 2. Modifica questo nuovo file con il tuo editor preferito (in questo esempio viene usato `nano`):
 
-    ```bash
-    sudo nano /etc/fail2ban/jail.d/yunohost-whitelist.conf
-    ```
+```bash
+sudo nano /etc/fail2ban/jail.d/yunohost-whitelist.conf
+```
 
 3. Incolla il seguente testo nel file cambiando l'indirizzo IP `XXX.XXX.XXX.XXX`:
 
-    ```bash
-    [DEFAULT]
+```bash
+[DEFAULT]
 
-    ignoreip = 127.0.0.1/8 XXX.XXX.XXX.XXX #<= the IP address (you can put more than one, separated by a space) that you want to whitelist
-    ```
+ignoreip = 127.0.0.1/8 XXX.XXX.XXX.XXX #<= the IP address (you can put more than one, separated by a space) that you want to whitelist
+```
 
 4. Salva il file e ricarica la configurazione di Fail2Ban:
 
-    ```bash
-    sudo fail2ban-client reload
-    ```
+```bash
+sudo fail2ban-client reload
+```
 
 Congratulazioni, non corrererai più il rischio di essere bannato dal tuo server YunoHost!

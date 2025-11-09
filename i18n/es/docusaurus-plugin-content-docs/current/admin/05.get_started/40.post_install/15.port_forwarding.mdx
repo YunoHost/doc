@@ -1,36 +1,27 @@
 ---
 title: Configure port-forwarding
+description: "Make your server accessible from outside your home"
 ---
 
-Si te estás auto-alojando en casa y sin VPN, tienes que redirigirse los puertos de tu router (caja/box).
-
-El esquema aquí abajo intenta explicar brevemente el rol de la redirección de los puertos durante la instalación de un servidor en tu casa.
+Si te estás auto-alojando en casa y sin VPN, tienes que redirigirse los puertos de tu router (caja/box). El esquema aquí abajo intenta explicar brevemente el rol de la redirección de los puertos durante la instalación de un servidor en tu casa. [Esta página](https://www.testdevelocidad.es/configuraciones/abrir-correctamente-los-puertos-router/) también propone explicaciones detalladas sobre el funcionamiento de los puertos, y las etapas de configuración para un router genérico.
 
 <Figure caption="Illustration of the importance of port-forwarding" src="/img/portForwarding_en.png" />
 
-[Esta página](https://www.testdevelocidad.es/configuraciones/abrir-correctamente-los-puertos-router/) también propone explicaciones detalladas sobre el funcionamiento de los puertos, y las etapas de configuración para un router genérico.
-
 ### 0. Diagnosticar los puertos abiertos
 
-Una vez que tienes la redirección configurada, deberías poder comprobar que los puertos están bien abiertos con esta herramienta :
-
-<a class="btn btn-default" href="http://ports.yunohost.org">Comprobar la redirección de los puertos</a>
+The new diagnosis tool introduced in 3.8 can be used to diagnose that ports are correctly exposed.
 
 ### 1. Acceder a la interfaz de administración de tu router/caja/box
 
-En general la interfaz de administración está accesible desde [http://192.168.0.1](http://192.168.0.1) o [http://192.168.1.1](http://192.168.1.1).
-Luego, es posible que tengas que autenticarte con los ID provechos pour tu proveedor de acceso a Internet.
+En general la interfaz de administración está accesible desde [http://192.168.0.1](http://192.168.0.1) o [http://192.168.1.1](http://192.168.1.1). Luego, es posible que tengas que autenticarte con los ID provechos pour tu proveedor de acceso a Internet.
 
 ### 2. Descubrir la IP local del servidor
 
-Identifica cuál es la IP local de tu servidor, o sea :
-
-
-- desde la interfaz de tu router/caja/box, donde tal vez estén listados los dipositivos conectados a la red local
-- desde la webadmin de YunoHost, en 'Estado del servidor', 'Red'
-- desde la línea de comandos en tu servidor, por ejemplo con `ip a | grep "scope global" | awk '{print $2}'`
+Identify the *local* IP of your server using one of the method listed [on the corresponding page](/admin/get_started/post_install/find_ip).
 
 En general una dirección IP local se parece a `192.168.xx.yy`, o `10.0.xx.yy`.
+
+The local IP address needs to be static, so that the port forwards that you are going to configure in the next step will always reach your server. You should go into your box/router and make sure that the local IP address of your server is static instead of dynamic.
 
 ### 3. Redirigir los puertos
 

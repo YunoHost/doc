@@ -67,10 +67,11 @@ Pour plus d'informations et d'options sur la création d'archives, consultez `yu
   </TabItem>
 </Tabs>
 
-#### Télécharger la sauvegarde
+### Télécharger la sauvegarde
 
 <Tabs groupId="admin-commands">
   <TabItem value="web" label="From the web interface">
+
 Après avoir créé des sauvegardes, il est possible de les lister et de les inspecter grâce aux vues correspondantes dans l'interface d'administration web. Un bouton propose de télécharger l'archive. Si l'archive fait plus de 3Go, il peut être préférable de procéder via SFTP.
 
 `Sauvegarde > Archives locales > <Nom de l'archive> > Télécharger`
@@ -85,9 +86,7 @@ Par défaut, les sauvegardes sont stockées dans `/home/yunohost.backup/archives
   </TabItem>
   <TabItem value="cli" label="From the command line">
 
-Les commandes `yunohost backup list` et `yunohost backup info <nom_d'archive>` permettent d'obtenir des infiormations sur les noms et tailles des sauvegardes.
-
-Il est possible d'utiliser `scp` (un programme basé sur [`ssh`](/admin/command_line)) pour copier des fichiers entre deux machines grâce à la ligne de commande. Ainsi, depuis une machine sous GNU/Linux, vous pouvez utiliser la commande suivante pour télécharger une archive :
+Il est possible d'utiliser `scp` (un programme basé sur `ssh`) pour copier des fichiers entre deux machines grâce à la ligne de commande. Ainsi, depuis une machine sous GNU/Linux, vous pouvez utiliser la commande suivante pour télécharger une archive :
 
 ```bash
 scp admin@votre.domaine.tld:/home/yunohost.backup/archives/<nom_darchive>.tar ./
@@ -162,6 +161,7 @@ Dans de nombreux cas, l'archive n'est pas sur le serveur sur lequel on souhaite 
 
 <Tabs groupId="admin-commands">
   <TabItem value="sftp" label="With a SFTP client">
+
 À l'heure actuelle, la solution la plus accessible pour téléverser les sauvegardes est d'utiliser le programme FileZilla comme expliqué dans [cette page](/admin/tutorials/filezilla).
 
 Par défaut, les sauvegardes sont à placer dans `/home/yunohost.backup/archives/`.

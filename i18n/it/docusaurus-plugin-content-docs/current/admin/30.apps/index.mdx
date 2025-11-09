@@ -16,7 +16,9 @@ Applications can be installed and managed through the webadmin interface in <Hig
 The application catalog and its categories can be browsed directly from the webadmin by clicking on the <HighlightAppInstall/> button in the apps list, or from this documentation.
 
 <div class="text--center">
-<Button url="https://apps.yunohost.org" color="orange"><FAIcon icon='fa-cubes'/> Applications Catalog</Button>
+  <Button url="https://apps.yunohost.org/" color="orange">
+    <FAIcon icon='fa-cubes'/> Applications catalog
+  </Button>
 </div>
 
 :::caution
@@ -37,7 +39,7 @@ Diciamo che volete installare una *Custom Webapp*. Prima di avviare i passi dell
   </TabItem>
 </Tabs>
 
-## Sotto-directory e domini individuale per le applicazioni
+### Sotto-directory e domini individuale per le applicazioni
 
 Fra le domande specifiche i form normalmente chiedono di scegliere un dominio ed un path da dove sarà accessibile l'applicazione.
 
@@ -76,13 +78,13 @@ Il form di installazione normalmente chiede se l'applicazione deve essere o meno
 Dopo l'installazione è possibile configurare questa cosa dall'interfaccia via web [Gestisci i gruppi e i permessi](/admin/users/groups_and_permissions) e allo stesso modo con la riga di comando con la categoria `yunohost user permission`.
 :::
 
-## Istruzioni post installazione
+### Istruzioni post installazione
 
 Alcune applicazioni, una volta installate, mostrano delle informazioni, possono essere URL o credenziali, per cui è necessario consultare la mail dell'account principale o dell'account amministratore selezionato prima dell'installazione se viene richiesto.
 
 ### Applicazioni multi-instanza
 
-Per alcune applicazioni è possibile installarne più copie (in diverse directory) ! Per fare ciò è sufficiente cliccare su `Applicazioni > [fa=plus /] Installa` e selezionare nuovamente l'applicazione da installare.
+Per alcune applicazioni è possibile installarne più copie (in diverse directory) ! Per fare ciò è sufficiente cliccare su <HighlightApplications/> → <HighlightAppInstall/> e selezionare nuovamente l'applicazione da installare.
 
 ## Integrazione LDAP / SSO
 
@@ -130,7 +132,7 @@ I pannelli di configurazione non sono realizzati per modificare ogni aspetto del
 <Tabs groupId="admin-commands">
   <TabItem value="web" label="From the web interface">
 
-È possibile accedere alla pagina relative alle operazioni dell'applicazione cliccando sul bottone `[fa=cogs /] Configurazione`.
+È possibile accedere alla pagina relative alle operazioni dell'applicazione cliccando sul bottone <Highlight no_break={true} color='darkblue'><FAIcon icon="fa-cogs"/> Config panel</Highlight>.
 
 <Figure alt="My Webapp configuration panel" src="/img/webadmin/app_config_panel.png" caption="Configuration panel for My Webapp"/>
 
@@ -173,8 +175,10 @@ In questo modo:
 
 Le applicazioni devono essere preparate (packaging) manualmente dai programmatori (packagers)/manutentori. Le applicazioni possono essere integrate con YunoHost perché supportino gli upgrade, i backup e restore e l'integrazione con LDAP/SSO fra le altre cose.
 
-## Integrazione e qualità
+If you want to learn or contribute to app packaging, please check the [contributor documentation](/dev/).
 
-Automated tests are being run regularly to test the integration and quality of all apps who were declared to be `working` by packagers. The result is a level between 0 and 8, whose meaning is detailed on [this page](/dev/packaging/test). Some tests results may also be available [on this dashboard](https://dash.yunohost.org/appci/branch/stable).
+### Integration and quality levels
+
+Automated tests are being run regularly to test the integration and quality of all apps who were declared to be `working` by packagers. The result is a level between 0 and 8, whose meaning is detailed on [this page](/dev/packaging/test). Some tests results may also be available [on this dashboard](https://apps.yunohost.org/dash).
 
 By default, only applications of sufficient quality are offered. When the quality of an application drops and until the problem is reolved, the app is hidden from the catalog to prevent its installation and its upgrades are put on hold.

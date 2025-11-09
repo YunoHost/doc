@@ -13,7 +13,10 @@ Questa pagina cercherà di trovare il problema, riottenere l'accesso ed eventual
 Controlla di riuscire ad accedere al server usando l'IP pubblico (lo puoi trovare su [https://ip.yunohost.org](https://ip.yunohost.org)). Se questo non funziona:
 
 - Assicurati di aver [impostato il forwarding](/admin/get_started/post_install/port_forwarding).
-- Alcuni ISP non supportano l'*hairpinning*, cosa che ti impedirà di raggiungere il tuo server dal nome di dominio dalla rete locale. Nel caso puoi usare una connessione cellulare o modificare il file `hosts` del tuo computer in modo da associare il nome di dominio all'indirizzo IP locale invece che a quello pubblico.
+- Alcuni ISP non supportano l'*hairpinning*, cosa che ti impedirà di raggiungere il tuo server dal nome di dominio dalla rete locale. If so, you can use one of the following workaround:
+  - use a cellular connection (4/5G)
+  - tweak your `/etc/hosts` file on each of your client devices
+  - add YunoHost's local IP as DNS resovler in your router (usually in the DHCP section) and open port `53` (UDP) in YunoHost's firewall, making sure to **not** enable UPnP forwarding. (Do **not** open port 53 on your router)
 
 ### Configura i record DNS
 

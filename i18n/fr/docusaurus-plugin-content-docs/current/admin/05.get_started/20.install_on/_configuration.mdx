@@ -34,7 +34,9 @@ Pour un VPS, utilisez l'adresse IP publique au lieu du domaine ou adresse locale
 ### <FAIcon icon="fa-globe"/> Domaine principal
 
 <details>
-<summary>Configuration spécifique WSL</summary>
+<summary>
+Configuration spécifique WSL
+</summary>
 
 Vous devrez choisir un faux nom de domaine, car il ne sera pas accessible de l'extérieur.
 Par exemple, `ynh.wsl`. L'étape compliqué est d'exposer ce nom de domaine à votre hôte.
@@ -88,15 +90,19 @@ Notamment, les installations WSL ou sur machines virtuelles ne seront générale
 
 <Tabs groupId="admin-commands">
   <TabItem value="web" label="(Recommandé) Depuis l'interface web">
+
     Pour lancer le diagnostic, allez dans l'Administration Web dans la partie Diagnostic. Vous devriez obtenir un écran comme celui-ci :
 
     <Figure caption="Capture d'écran du panneau de diagnostic" src="/img/webadmin/diagnostic.png"/>
+
   </TabItem>
   <TabItem value="cli" label="Depuis la ligne de commande">
-    ```bash
-    yunohost diagnosis run
-    yunohost diagnosis show --issues --human-readable
-    ```
+
+```bash
+yunohost diagnosis run
+yunohost diagnosis show --issues --human-readable
+```
+
   </TabItem>
 </Tabs>
 
@@ -108,12 +114,18 @@ Pour plus d'instructions détaillées, ou pour en savoir plus à propos des cert
 
 <Tabs groupId="admin-commands">
   <TabItem value="web" label="Depuis l'interface web">
+    
+    Allez dans Domaines > le domaine concerné > Certificat
+
     <Figure caption="Capture d'écran du panneau pour installer un certificat Let's Encrypt" src="/img/webadmin/certificate-before-LE.png"/>
+  
   </TabItem>
   <TabItem value="cli" label="Depuis la ligne de commande">
-    ```bash
-    yunohost domain cert install
-    ```
+
+```bash
+yunohost domain cert install
+```
+
   </TabItem>
 </Tabs>
 

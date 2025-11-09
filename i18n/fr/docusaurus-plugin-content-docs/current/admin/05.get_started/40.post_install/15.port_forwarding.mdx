@@ -1,5 +1,6 @@
 ---
 title: Configurer la redirection des ports
+description: Rendre accessible son serveur depuis l'extérieur
 ---
 
 Si vous vous auto-hébergez à la maison et sans VPN, il vous faut rediriger les ports de votre routeur ("machin-box"). Le schéma ci-dessous tente d'expliquer brièvement le rôle de la redirection des ports lors de la mise en place d'un serveur à la maison.
@@ -19,14 +20,11 @@ fournis par votre fournisseur d'accès à Internet (FAI).
 
 ### 3. Trouver l'IP locale de votre serveur
 
-Identifiez quelle est l'IP locale de votre serveur, soit :
-
-- depuis l'interface de votre routeur/box, qui liste peut-être les dispositifs
-  connectés;
-- depuis la webadmin de YunoHost, dans 'Diagnostic', section 'Connectivité Internet', cliquer sur 'Détails' à côté de la ligne sur IPv4.
-- depuis la webadmin de YunoHost, dans 'État du serveur', 'Réseau';
+Identifiez quelle est l'IP locale de votre serveur en utilisant l'une des méthodes listées sur [la page correspondante](/admin/get_started/post_install/find_ip).
 
 Une adresse IP locale ressemble généralement à `192.168.xx.yy`, ou `10.0.xx.yy`.
+
+The local IP address needs to be static, so that the port forwards that you are going to configure in the next step will always reach your server. You should go into your box/router and make sure that the local IP address of your server is static instead of dynamic.
 
 ### 4. Rediriger les ports
 

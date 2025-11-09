@@ -2,9 +2,7 @@
 title: Sécurité
 ---
 
-YunoHost a été développé dans l’optique de fournir une sécurité maximale tout en restant accessible et facilement installable.
-
-Tous les protocoles que YunoHost utilise sont **chiffrés**, les mots de passe ne sont pas stockés en clair, et par défaut chaque utilisateur n’accède qu’à son répertoire personnel.
+YunoHost a été développé dans l’optique de fournir une sécurité maximale tout en restant accessible et facilement installable. Tous les protocoles que YunoHost utilise sont **chiffrés**, les mots de passe ne sont pas stockés en clair, et par défaut chaque utilisateur n’accède qu’à son répertoire personnel.
 
 Deux points sont néanmoins importants à noter :
 
@@ -36,8 +34,6 @@ Ne fermez jamais votre connexion SSH initiale sans avoir vérifié que vos modif
 
 ### Authentification SSH par clé
 
-Voici un [tutoriel plus détaillé](http://doc.ubuntu-fr.org/ssh#authentification_par_un_systeme_de_cles_publiqueprivee).
-
 Par défaut, l’authentification SSH se fait avec le mot de passe d’administration. Il est conseillé de désactiver ce type d’authentification et de le remplacer par un mécanisme de clé de chiffrement.
 
 **Sur votre ordinateur de bureau :**
@@ -66,7 +62,8 @@ sudo yunohost settings set security.ssh.ssh_password_authentication -v no
 
 Pour éviter des tentatives de connexion SSH par des robots qui scannent tout Internet pour tenter des connexions SSH avec tout serveur accessible, on peut modifier le port SSH.
 C'est géré par un paramètre système, qui se charge de configurer les services SSH et Fail2Ban.  
-Il n'est pas utile de modifier ce port si vous avez désactivé l'authentification par mot de passe.
+
+Note that changing the port is still useful even if you've disabled password authentication, because that significantly reduces noise from brute force attempts in SSH logs.
 
 :::warning
 Si vous modifiez quoi que ce soit dans le fichier `/etc/ssh/sshd_config`, même si ce n'est que le port, YunoHost ne gérera plus ce fichier. Pour cette raison, utilisez toujours les outils d'administration de YunoHost pour effectuer des changements dans les fichiers de configuration du système !

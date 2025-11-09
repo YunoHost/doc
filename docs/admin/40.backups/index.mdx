@@ -18,10 +18,11 @@ You can manage backups either from the command line (`yunohost backup --help`) o
 
 The current default method consists in creating a `.tar` archive containing all relevant files.
 
-### Creating backups
+#### Creating backups
 
 <Tabs groupId="admin-commands">
   <TabItem value="web" label="From the web interface">
+
 You can easily create backup archives from the webadmin by going to `Backups > Local storage` and clicking on `New backup`. You will then be asked to select which configuration, data and apps you want to backup.
 
 ![picture of YunoHost's backup pannel](/img/webadmin/backup.png)
@@ -171,7 +172,7 @@ By default, backups are to be placed in `/home/yunohost.backup/archives/`.
   </TabItem>
   <TabItem value="cli" label="From the command line">
 
-You can upload a backup from a machine to your server with :
+You can use the `scp` (a command built on `ssh`) to copy files between two machines from CLI. For example for a Linux terminal:
 
 ```bash
 scp /path/to/your/<archive_name>.tar admin@your.domain.tld:/home/yunohost.backup/archives/

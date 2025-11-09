@@ -40,28 +40,28 @@ Lors d’une mise à jour du logiciel **Fail2Ban**, le fichier d’origine `/etc
 
 1. Commencez par créer le nouveau fichier de configuration des prisons qui s’appelera `yunohost-whitelist.conf` :
 
-    ```bash
-    sudo touch /etc/fail2ban/jail.d/yunohost-whitelist.conf
-    ```
+```bash
+sudo touch /etc/fail2ban/jail.d/yunohost-whitelist.conf
+```
 
 2. Éditez ce nouveau fichier avec votre éditeur préféré :
 
-    ```bash
-    sudo nano /etc/fail2ban/jail.d/yunohost-whitelist.conf
-    ```
+```bash
+sudo nano /etc/fail2ban/jail.d/yunohost-whitelist.conf
+```
 
 3. Coller le contenu suivant dans le fichier et adapter l’adresse IP `XXX.XXX.XXX.XXX` :
 
-    ```bash
-    [DEFAULT]
+```bash
+[DEFAULT]
 
-    ignoreip = 127.0.0.1/8 XXX.XXX.XXX.XXX #<= l'adresse IP (on peut en mettre plusieurs, séparées par un espace) que vous voulez passer en liste blanche / whitelist
-    ```
+ignoreip = 127.0.0.1/8 XXX.XXX.XXX.XXX #<= l'adresse IP (on peut en mettre plusieurs, séparées par un espace) que vous voulez passer en liste blanche / whitelist
+```
 
 4. Sauvegardez le fichier et rechargez la configuration de Fail2Ban :
 
-    ```bash
-    sudo fail2ban-client reload
-    ```
+```bash
+sudo fail2ban-client reload
+```
 
 Félicitations, plus de risques de se bannir de son propre serveur YunoHost !

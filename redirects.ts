@@ -30,7 +30,7 @@ const redirects_from_grav: Array<{ from: string; to: string }> = [
     { from: '/backup/migrate_or_merge_servers',         to: '/admin/backups/migrate_or_merge_servers', },
     { from: '/troubleshooting',                         to: '/admin/troubleshooting/', },
     { from: '/blacklist_forms',                         to: '/admin/troubleshooting/blacklist_forms', },
-    { from: '/change_admin_password',                   to: '/admin/troubleshooting/change_admin_password', },
+    { from: '/change_admin_password',                   to: '/admin/troubleshooting/change_root_password', },
     { from: '/cleanup',                                 to: '/admin/troubleshooting/cleanup', },
     { from: '/fail2ban',                                to: '/admin/troubleshooting/fail2ban', },
     { from: '/ipv6',                                    to: '/admin/troubleshooting/ipv6', },

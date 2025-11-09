@@ -71,26 +71,21 @@ Success! The SSOwat configuration has been generated
 Success! Successfully installed Let's Encrypt certificate for domain DOMAIN.TLD!
 ```
 
-Nach Abschluss der Installation, die ensprechende Domain mit Webbrowser
-in HTTPS-Modus besuchen um die Berücksichtigung des digitalen Zertifikats
-von Let's Encrypt zu überprüfen. Das digitale Zertifikat wird automatisch etwa alle drei Monate erneuert.
+Nach Abschluss der Installation, die ensprechende Domain mit Webbrowser in HTTPS-Modus besuchen um die Berücksichtigung des digitalen Zertifikats von Let's Encrypt zu überprüfen. Das digitale Zertifikat wird automatisch etwa alle drei Monate erneuert.
 
 </TabItem>
 </Tabs>
 
-##### Fehlerbehebung
+#### Fehlerbehebung
 
-Wenn das Zertifikat aufgrund einer schlechten Handhabung nicht funktionsfähig ist
-(z. B. Verlust des Zertifikats oder Dateien nicht lesbar), ist es trotzdem möglich
-ein selbst-signiertes Zertifikat zu regenerieren :
+Wenn das Zertifikat aufgrund einer schlechten Handhabung nicht funktionsfähig ist (z. B. Verlust des Zertifikats oder Dateien nicht lesbar), ist es trotzdem möglich ein selbst-signiertes Zertifikat zu regenerieren :
 
 ```bash
 yunohost domain cert install Ihre.domain.tld --self-signed --force
 ```
 
-Trotz einer sorgfältigen Überprüfung der DNS-Konfiguration und auch von außen
-die Möglichkeit mit HTTP-Modus Zugriff auf den Webserver besteht, kann YunoHost
-manchmal die Einstellungen verweigern. In diesem Fall ist es notwendig :
+Trotz einer sorgfältigen Überprüfung der DNS-Konfiguration und auch von außen die Möglichkeit mit HTTP-Modus Zugriff auf den Webserver besteht, kann YunoHost manchmal die Einstellungen verweigern. In diesem Fall ist es notwendig :
 
 - die Parameter `127.0.0.1 Ihre.domain.tld` auf der Datei `/etc/hosts` des Webserver hinzufügen.
-Wenn es immer noch nicht funktionsfähig ist, also die Überprüfungen deaktivieren mit `--no-checks` nach dem Befehl `cert install`.
+- Wenn es immer noch nicht funktionsfähig ist, also die Überprüfungen deaktivieren mit `--no-checks` nach dem Befehl `cert install`.
+

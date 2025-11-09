@@ -28,11 +28,16 @@ Beaucoup de fournisseurs existent dans ce domaine. Certains sont gratuits et d'a
 
 ### Étape 2 : Paramétrer sa zone DNS correctement
 
-Une fois inscrit, le paramétrage du relais SMTP demande de modifier la zone DNS de votre domaine. La procédure standard consiste à ajouter une clé DKIM, et SPF à la zone DNS. Les paramètres à modifier dépendent du fournisseur que vous aurez choisi.
+Once registered, the SMTP relay provider will usually ask you to modify your DNS.
+Standard procedure is to add a DKIM key and a SPF key to your DNS records.
+The way to modify these records and the value of the keys you'll have to add depend both on your domain name provider and SMTP relay provider.
 
-Habituellement les fournisseurs ont une documentation à ce sujet.
+Usually, the SMTP relay provider will provide you with a guide on how to modify these records, together with an automatic check tool that will tell you when your DNS have been setup correctly. That step is mandatory to prove "the world" that you, owner of your domain name, did explicitly authorize your SMTP relay provider to send emails on your behalf.
+
+Please note that modifying your DNS records could sometimes take over 24h to take effect, so be patient!
+
 :::warning
-<FAIcon icon="fa-exclamation-triangle"/>  Attention une fois la zone DNS enregistrée, le relais SMTP peut envoyer des e-mails à votre nom sans que vous ne le sachiez
+<FAIcon icon="fa-exclamation-triangle"/> Attention une fois la zone DNS enregistrée, le relais SMTP peut envoyer des e-mails à votre nom sans que vous ne le sachiez
 :::
 
 ### Étape 3 : Configurer YunoHost correctement
