@@ -3,18 +3,20 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2025-11-09 20:53+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2025-11-09 21:16+0000\n"
+"Last-Translator: Weblate Admin <yunohost@translate.yunohost.org>\n"
+"Language-Team: French <https://translate.yunohost.org/projects/"
+"doc-experimental/02what_is_yunohost__index/fr/>\n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.14.2\n"
 
 #. type: Yaml Front Matter Hash Value: description
 #: docs/admin/02.what_is_yunohost/index.mdx:1
@@ -24,9 +26,9 @@ msgstr " "
 
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/02.what_is_yunohost/index.mdx:1
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "What is YunoHost?"
-msgstr "Qu’est-ce que YunoHost?"
+msgstr "Qu’est-ce que YunoHost ?"
 
 #. type: Plain text
 #: docs/admin/02.what_is_yunohost/index.mdx:9
