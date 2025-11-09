@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2025-11-09 21:01+0100\n"
-"PO-Revision-Date: 2025-11-09 21:16+0000\n"
+"PO-Revision-Date: 2025-11-09 23:48+0000\n"
 "Last-Translator: Weblate Admin <yunohost@translate.yunohost.org>\n"
 "Language-Team: French <https://translate.yunohost.org/projects/"
 "doc-experimental/45tutorials__35email_configure_relay/fr/>\n"
@@ -43,9 +43,9 @@ msgstr "Si votre fournisseur d'accès à Internet bloque le port 25, ou si vous 
 
 #. type: Title ##
 #: docs/admin/45.tutorials/35.email_configure_relay.mdx:10
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "What is an SMTP relay?"
-msgstr "Qu'est-ce qu'un relais SMTP"
+msgstr "Qu'est-ce qu'un relais SMTP ?"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/35.email_configure_relay.mdx:14
