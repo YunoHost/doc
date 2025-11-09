@@ -3,18 +3,20 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2025-11-09 20:53+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2025-11-09 23:48+0000\n"
+"Last-Translator: Weblate Admin <yunohost@translate.yunohost.org>\n"
+"Language-Team: French <https://translate.yunohost.org/projects/"
+"doc-experimental/05get_started__10providers__10isp__index/fr/>\n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.14.2\n"
 
 #. type: Yaml Front Matter Hash Value: description
 #: docs/admin/05.get_started/10.providers/10.isp/index.mdx:1
@@ -30,7 +32,7 @@ msgstr "Fournisseurs d’accès à Internet"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/10.isp/index.mdx:19
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<Tabs\n"
 "defaultValue=\"europe\"\n"
@@ -46,12 +48,12 @@ msgstr ""
 "<Tabs\n"
 "defaultValue=\"europe\"\n"
 "values={[\n"
-"{label: 'Africa', value: 'africa'},\n"
-"{label: 'Asia', value: 'asia'},\n"
-"{label: 'Europe', value: 'europe'},\n"
-"{label: 'North America', value: 'northamerica'},\n"
-"{label: 'South America', value: 'southamerica'},\n"
-"{label: 'Oceania', value: 'oceania'},\n"
+"{label: 'Afrique', value : 'africa'},\n"
+"{label: 'Asie', value : 'asia'},\n"
+"{label: 'Europe', value : 'europe'},\n"
+"{label: 'Amérique du Nord', value : 'northamerica'},\n"
+"{label: 'Amérique du Sud', value : 'southamerica'},\n"
+"{label: 'Océanie', value : 'oceania'},\n"
 "]}>\n"
 
 #. type: Plain text
