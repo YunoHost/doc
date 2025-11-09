@@ -1,72 +1,78 @@
-# French translations for YunoHost documentation package
-# Copyright (C) 2025 YunoHost Contributors
-# This file is distributed under the same license as the YunoHost documentation package.
-# Automatically generated, 2025.
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2025-11-09 20:53+0100\n"
-"PO-Revision-Date: 2025-11-09 20:53+0100\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
-"Language: fr\n"
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2025-11-09 21:01+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #. type: Yaml Front Matter Hash Value: sidebar_label
 #: docs/admin/45.tutorials/65.sftp_on_apps.mdx:1
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Access apps via SFTP"
-msgstr ""
+msgstr "Accéder aux applications via SFTP"
 
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/45.tutorials/65.sftp_on_apps.mdx:1
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Give SFTP permission to edit an app"
-msgstr ""
+msgstr "Donner la permission SFTP d'éditer une application"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/65.sftp_on_apps.mdx:7
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "In YunoHost permission management web admin interface, you can specify which user can access your system through SFTP.\n"
-msgstr ""
+msgstr "Dans YunoHost, depuis la gestion des permissions par l'interface d'administration web, vous pouvez spécifier quel utilisateur peut accéder à votre système à travers SFTP.\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/65.sftp_on_apps.mdx:11
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "Go to : \n"
 "- Groups and permissions > Individual user permissions. \n"
 "- Click on add a permission and select SFTP\n"
 msgstr ""
+"Go to : \n"
+"- Groups and permissions > Individual user permissions. \n"
+"- Click on add a permission and select SFTP\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/65.sftp_on_apps.mdx:13
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "However, those user are chrooted in their home directory for security reasons.\n"
-msgstr ""
+msgstr "Cependant ces utilisateurs sont chrootés dans leur répertoire home pour des raisons de sécurité.\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/65.sftp_on_apps.mdx:15
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "If you want to give access to a specific apps through SFTP, here are additional steps to do after giving the SFTP permission in the web interface.\n"
-msgstr ""
+msgstr "Si vous désirez donner accès à une application spécifique à travers SFTP, voici les actions à faire après avoir donné les droits à l'utilisateur dans l'interface d'adminstration web.\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/65.sftp_on_apps.mdx:19
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "In instructions below, \n"
 "- USER is the user to whom you wish to give permission to edit wordpress files.\n"
 "- `/var/www/wordpress/wp-config.php` must be replaced by the path your app config file. For example, for yeswiki (`/var/www/yeswiki/wakka.config.php`)\n"
 msgstr ""
+"Dans les instructions suivantes:\n"
+"- USER est l'utilisateur à qui sont données les permissions d'éditer des fichiers wordpress.\n"
+"- `/var/www/wordpress/wp-config.php` est à remplacer par le chemin du fichier de config de l'app. Par exemple, pour YesWiki (`/var/www/yeswiki/wakka.config.php`)\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/65.sftp_on_apps.mdx:38
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "Quick commands explanation :\n"
 "- `mkdir -p /PATH` creates a folder in the specified PATH\n"
@@ -74,3 +80,8 @@ msgid ""
 "- `mount --bind` makes the contents of the source file or directory available at the target location without actually moving or copying the data.\n"
 "- `setfacl` set the file permissions\n"
 msgstr ""
+"Quick commands explanation :\n"
+"- `mkdir -p /PATH` creates a folder in the specified PATH\n"
+"- `touch` creates an empty file\n"
+"- `mount --bind` makes the contents of the source file or directory available at the target location without actually moving or copying the data.\n"
+"- `setfacl` set the file permissions\n"

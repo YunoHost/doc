@@ -1,53 +1,53 @@
-# Italian translations for YunoHost documentation package
-# Copyright (C) 2025 YunoHost Contributors
-# This file is distributed under the same license as the YunoHost documentation package.
-# Automatically generated, 2025.
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: YunoHost documentation VERSION\n"
+"Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2025-11-09 20:53+0100\n"
-"PO-Revision-Date: 2025-11-09 20:53+0100\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
-"Language: it\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/40.backups/35.migrate_or_merge_servers.mdx:1
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Migrate or merge servers"
-msgstr ""
+msgstr "Migrare o unire server"
 
 #. type: Title ##
 #: docs/admin/40.backups/35.migrate_or_merge_servers.mdx:6
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Migrate a server"
-msgstr ""
+msgstr "Migrare un server"
 
 #. type: Plain text
 #: docs/admin/40.backups/35.migrate_or_merge_servers.mdx:9
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "If YunoHost's archive system is not convenient enough to migrate a server, you can also [migrate from server to server with rsync](https://www.man42.net/blog/2017/07/how-to-migrate-a-debian-server/).\n"
-msgstr ""
+msgstr "Il sistema di archiviazione di YunoHost permette di migrare facilmente un server ma potete anche seguire [questo link per migrare un server ad un altro con rsync](https://www.man42.net/blog/2017/07/how-to-migrate-a-debian-server/).\n"
 
 #. type: Title ##
 #: docs/admin/40.backups/35.migrate_or_merge_servers.mdx:10
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Merge 2 YunoHost servers"
-msgstr ""
+msgstr "Aggregare 2 server YunoHost"
 
 #. type: Plain text
 #: docs/admin/40.backups/35.migrate_or_merge_servers.mdx:13
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "If you merge 2 servers together, you will need to recreate the users, domains and permissions of the first server on the destination server. Then you can restore app by app.\n"
-msgstr ""
+msgstr "Se volete aggregare 2 server dovrete ricreare i domini, gli account utenti e i relativi permessi dal primo al server di destinazione. In seguito potrete ripristinare i programmi uno alla volta.\n"
 
 #. type: Fenced div block (danger)
 #: docs/admin/40.backups/35.migrate_or_merge_servers.mdx:14
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "There is a limitation concerning apps that have the same ID. It will not be possible to restore them easily. Also be careful not to delete the eponymous app from the destination server :/\n"
-msgstr ""
+msgstr "Esiste però un limite che riguarda i programmi che hanno lo stesso ID che saranno difficilmente ripristinabili. Abbiate cura di non cancellare il programma eponymous del server di destinazione :/\n"

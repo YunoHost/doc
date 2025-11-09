@@ -1,48 +1,48 @@
-# Italian translations for YunoHost documentation package
-# Copyright (C) 2025 YunoHost Contributors
-# This file is distributed under the same license as the YunoHost documentation package.
-# Automatically generated, 2025.
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2025-11-09 20:53+0100\n"
-"PO-Revision-Date: 2025-11-09 20:53+0100\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
-"Language: it\n"
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2025-11-09 21:01+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/40.backups/30.custom_backup_methods.mdx:1
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Custom backup methods"
-msgstr ""
+msgstr "Metodi di backup personalizzati"
 
 #. type: Plain text
 #: docs/admin/40.backups/30.custom_backup_methods.mdx:6
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "It is possible to create your own backup method and link it to YunoHost's backup file collection system. This can be useful if you want to use your own backup software or conduct disk mount/dismount operations for example.\n"
-msgstr ""
+msgstr "È possibile creare un proprio metodo di backup e includerlo nel sistema di raccolta file di backup di YunoHost. Questo può essere utilizzato ad esempio, nel caso utilizziate un particolare programma di backup o vogliate effettuare delle operazioni di montaggio o smontaggio sui vostri HD.\n"
 
 #. type: Plain text
 #: docs/admin/40.backups/30.custom_backup_methods.mdx:8
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "This operation is done with a hook and will allow you to launch a backup this way:\n"
-msgstr ""
+msgstr "Dovrete creare un hook che lancerà il backup utilizzando il metodo personalizzato con questo comando:\n"
 
 #. type: Plain text
 #: docs/admin/40.backups/30.custom_backup_methods.mdx:14
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Below is a simplistic example that can be used to set up a rotational backup with different disks that are changed every week:\n"
-msgstr ""
+msgstr "Di seguito un esempio, semplificato, che esegue il backup con rotazione dei dischi, che vengono sostituiti ogni settimana.\n"
 
 #. type: Plain text
 #: docs/admin/40.backups/30.custom_backup_methods.mdx:16
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "`/etc/yunohost/hooks.d/backup_method/05-custom`\n"
-msgstr ""
+msgstr "`/etc/yunohost/hooks.d/backup_method/05-custom`\n"
 

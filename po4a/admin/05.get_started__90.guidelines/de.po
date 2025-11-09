@@ -1,185 +1,185 @@
-# German translations for YunoHost documentation package
-# Copyright (C) 2025 YunoHost Contributors
-# This file is distributed under the same license as the YunoHost documentation package.
-# Automatically generated, 2025.
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: YunoHost documentation VERSION\n"
+"Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2025-11-09 20:53+0100\n"
-"PO-Revision-Date: 2025-11-09 20:53+0100\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
-"Language: de\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/05.get_started/90.guidelines.mdx:1
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Advices and guidelines"
-msgstr ""
+msgstr "Hinweise und Leitlinien"
 
 #. type: Plain text
 #: docs/admin/05.get_started/90.guidelines.mdx:6
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "This page lists some advice and guidelines which every YunoHost administrator should be aware to take care of a YunoHost server :)\n"
-msgstr ""
+msgstr "Diese Seite listet einige Tipps und Richtlinien auf, die jeder YunoHost-Administrator kennen sollte, um sich um seinen Server zu kümmern :).\n"
 
 #. type: Title ##
 #: docs/admin/05.get_started/90.guidelines.mdx:7
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Do not break YunoHost"
-msgstr ""
+msgstr "YunoHost nicht beschädigen"
 
 #. type: Plain text
 #: docs/admin/05.get_started/90.guidelines.mdx:10
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "To put it another way: your server is either a production server (meant to work) or a test server on which you allow yourself to experiment.\n"
-msgstr ""
+msgstr "Das heißt : Entweder ist der Server für den tatsächlichen Betrieb gedacht, oder es handelt sich um einen Testserver, auf dem Sie experimentieren dürfen.\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/90.guidelines.mdx:12
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "If your goal is to run a production server:\n"
-msgstr ""
+msgstr "Ist Ihr Ziel, einen Produktionserver zu benutzen, so beachten Sie folgendes :\n"
 
 #. type: Bullet: '- '
 #: docs/admin/05.get_started/90.guidelines.mdx:17
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "be aware that servers are fragile system. Stay cautious, methodical and patient;\n"
-msgstr ""
+msgstr "ein Server ist ein empfindliches System : Seien Sie vorsichtig, methodisch und geduldig ;\n"
 
 #. type: Bullet: '- '
 #: docs/admin/05.get_started/90.guidelines.mdx:17
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "limit experimentations and customizations (for instance of config file);\n"
-msgstr ""
+msgstr "experimentieren und Anpassen einschränken - insbesondere von Konfigurationsdateien ;\n"
 
 #. type: Bullet: '- '
 #: docs/admin/05.get_started/90.guidelines.mdx:17
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "do not install dozens of apps just to see how they look;\n"
-msgstr ""
+msgstr "Nicht zahlreiche Anwendungen installieren, nur um zu sehen, wie sie aussehen ;\n"
 
 #. type: Bullet: '- '
 #: docs/admin/05.get_started/90.guidelines.mdx:17
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "use non-official apps with caution, and do not use apps that are still 'in progress', 'not working' or level 0;\n"
-msgstr ""
+msgstr "Vorsicht mit inoffiziellen Anwendungen, und verzichten auf solche, die noch \"in Bearbeitung\" sind, oder einen Level 0 haben ;\n"
 
 #. type: Title ##
 #: docs/admin/05.get_started/90.guidelines.mdx:19
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Keep it simple!"
-msgstr ""
+msgstr "Keep it simple !"
 
 #. type: Plain text
 #: docs/admin/05.get_started/90.guidelines.mdx:22
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "YunoHost is designed to work with general and simple use cases in mind. Deviating from those conditions will make things harder and you will need technical knowledge to make it work. For instance:\n"
-msgstr ""
+msgstr "YunoHost ist für allgemeine und einfache Anwendungsfälle konzipiert. Wenn Sie von diesen Bedingungen abweichen, wird es schwieriger, und Sie benötigen technisches Wissen, um sie zu erfüllen. Zum Beispiel:\n"
 
 #. type: Bullet: '- '
 #: docs/admin/05.get_started/90.guidelines.mdx:28
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "do not try to run YunoHost in a context where you cannot have control over ports 80 and 443 (or no internet at all);\n"
-msgstr ""
+msgstr "Versuchen Sie nicht, YunoHost in einem Kontext auszuführen, in dem Sie keine Kontrolle über die Ports 80 und 443 haben (oder überhaupt kein Internet);\n"
 
 #. type: Bullet: '- '
 #: docs/admin/05.get_started/90.guidelines.mdx:28
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "do not try to host five servers behind the same internet connection if you are not already an advanced user;\n"
-msgstr ""
+msgstr "Versuchen Sie nicht, fünf Server über dieselbe Internetverbindung zu hosten, wenn Sie nicht bereits ein fortgeschrittener Benutzer sind;\n"
 
 #. type: Bullet: '- '
 #: docs/admin/05.get_started/90.guidelines.mdx:28
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "do not fall into nerd whims such as willing to replace NGINX with Apache (or run both at the same time);\n"
-msgstr ""
+msgstr "Auf keinen Fall sollten Sie versuchen, NGINX durch Apache zu ersetzen (oder beides gleichzeitig laufen zu lassen);\n"
 
 #. type: Bullet: '- '
 #: docs/admin/05.get_started/90.guidelines.mdx:28
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "do not try to use custom SSL certificates if you don't really need them;\n"
-msgstr ""
+msgstr "Versuchen Sie nicht, benutzerdefinierte SSL-Zertifikate zu verwenden, wenn Sie diese nicht wirklich benötigen;\n"
 
 #. type: Bullet: '- '
 #: docs/admin/05.get_started/90.guidelines.mdx:28
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "...\n"
-msgstr ""
+msgstr "...\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/90.guidelines.mdx:30
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Keep things as simple as you can!\n"
-msgstr ""
+msgstr "Halten Sie die Dinge so einfach wie möglich!\n"
 
 #. type: Title ##
 #: docs/admin/05.get_started/90.guidelines.mdx:31
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Do not reinstall every day"
-msgstr ""
+msgstr "Das System soll nicht ständig wieder installiert werden"
 
 #. type: Plain text
 #: docs/admin/05.get_started/90.guidelines.mdx:34
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Some people tend to fall into \"the reinstallation spiral\" - where each time something breaks in the server and it is not obvious how to fix it, or because the server became \"dirty\", one ends up reinstalling the whole server from scratch because it looks like an \"easy\" and quick solution to clean the table.\n"
-msgstr ""
+msgstr "Manche Leute neigen dazu, in eine \"Neuinstallationsspirale\" zu verfallen - wo immer, wenn etwas im Server kaputt geht und es nicht offensichtlich ist, wie man es beheben kann, oder weil der Server instabil geworden ist, der Administrator damit endet, den gesamten Server von Grund auf neu zu installieren, weil es als ein \"einfacher\" und schneller Weg erscheint, alles wieder in Ordnung zu bringen.\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/90.guidelines.mdx:36
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Please don't do this. Reinstalling is a heavy operation and is not a good long-term strategy for fixing problems. You will get tired and won't learn anything. Forget the dream of having a \"clean\" server. A real-life server always end up being a bit \"dirty\". Also, you need to (progressively) learn how to solve issues when you encounter them. Reach for [help](/community/help) with detailed symptoms of what you are trying to do and what is happening, and fix the issues. Over time, you will get a much better control over your server than just blindly reinstalling every time.\n"
-msgstr ""
+msgstr "Vermeiden Sie das. Eine neue Installation ist mühsam und keine gute langfristige Strategie zur Problemlösung. Sie werden nur müde und lernen nichts dabei. Vergessen Sie den Traum von einem einwandfreien Server: Im Betrieb wird ein Server nach und nach immer instabil. Außerdem müssen Sie (allmählich) lernen, Probleme zu lösen, wenn Sie auf welche stoßen. [Bitten Sie um Hilfe](/community/help), geben Sie Details über die entsprechenden Probleme an und was Sie versuchen dagegen zu unternehmen. Beheben Sie dann die Probleme. Mit der Zeit werden Sie eine viel bessere Kontrolle über Ihren Server haben. Und im Gegensatz zu ständigen Neu-Installationen ist das ein großer Vorteil.\n"
 
 #. type: Title ##
 #: docs/admin/05.get_started/90.guidelines.mdx:37
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Do backups"
-msgstr ""
+msgstr "Backups erstellen"
 
 #. type: Plain text
 #: docs/admin/05.get_started/90.guidelines.mdx:40
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "If you host services and data that are important for your users, it is important that you setup a backup policy. Backups can be easily created from the webadmin - you can download it from the webadmin or via your favorite FTP client, such as FileZilla or your own terminal. You should perform backup regularly and keep them in a safe and different physical location from your server. More info on [the backup documentation](/admin/backups).\n"
-msgstr ""
+msgstr "Wenn Sie Dienste und Daten hosten, die für Ihre Benutzer wichtig sind, ist es wichtig, dass Sie über eine Sicherungsrichtlinie verfügen. Backups können einfach über die Webadministrationsoberfläche erstellt werden - allerdings können sie derzeit nicht von dort heruntergeladen werden (aber sie können auf anderem Wege heruntergeladen werden). Sie sollten regelmäßig Backups erstellen und diese an einem sicheren Ort aufbewahren, der physisch von Ihrem Server getrennt ist. Weitere Informationen finden Sie in [der Backup-Dokumentation](/admin/backups).\n"
 
 #. type: Title ##
 #: docs/admin/05.get_started/90.guidelines.mdx:41
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Check root’s email"
-msgstr ""
+msgstr "Die an Root gesendeten Emails lesen"
 
 #. type: Plain text
 #: docs/admin/05.get_started/90.guidelines.mdx:44
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "As an administrator, you should configure an email client to check emails sent to `root@your.domain.tld` (which should be an alias to the first user your added) or otherwise forward them to another address that you actively check. Those mails may contain information on what is happening on your server such as automated periodic tasks.\n"
-msgstr ""
+msgstr "Als Administrator sollten Sie einen E-Mail-Client so einrichten, dass er E-Mails prüft, die an `root@your.domain.tld` (das muss ein Alias für den ersten von Ihnen hinzugefügten Benutzer sein) gesendet werden, oder sie an eine andere Adresse weiterleitet, die Sie aktiv prüfen. Diese E-Mails können Informationen darüber enthalten, was auf Ihrem Server passiert, wie z. B. periodische automatisierte Aufgaben.\n"
 
 #. type: Title ##
 #: docs/admin/05.get_started/90.guidelines.mdx:45
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "YunoHost is free software, maintained by volunteers"
-msgstr ""
+msgstr "YunoHost ist freie Software, die von Freiwilligen instand gehalten wird"
 
 #. type: Plain text
 #: docs/admin/05.get_started/90.guidelines.mdx:48
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Finally, keep in mind that YunoHost is a free software maintained by volunteers - and that the goal of YunoHost (to democratize self-hosting) is not an easy one! It is provided without any warranty. The team of volunteers does its best to maintain and provide the best possible experience - yet features, applications and YunoHost as a whole are far from being perfect and you will experience small and big shortcomings at some points. When this happens, kindly [reach for help on the chat or forum, or report the issue](/community/help)! :)\n"
-msgstr ""
+msgstr "Schließlich sollten Sie bedenken, dass YunoHost eine freie Software ist, die von Freiwilligen gepflegt wird - und dass das Ziel von YunoHost (die Demokratisierung des Selbst-Hostings) nicht einfach ist! Die Software wird ohne jegliche Garantie zur Verfügung gestellt. Das YunoHost Team tut sein Bestes, um das bestmögliche Erlebnis zu erhalten und zu bieten - dennoch sind die Funktionen, Anwendungen und YunoHost als Ganzes weit davon entfernt, perfekt zu sein, und Sie werden früher oder später auf kleine oder große Probleme stoßen. Wenn das passiert, kommen Sie bitte [in den Chat oder das Forum und bitten um Hilfe, oder melden das Problem](/community/help) :)!\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/90.guidelines.mdx:50
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "If you like YunoHost and want to see the project being kept alive and make progress, feel free to leave a thank you note and to [donate](https://liberapay.com/YunoHost) to the project and talk about it around you!\n"
-msgstr ""
+msgstr "Wenn Ihnen YunoHost gefällt und Sie möchten, dass das Projekt am Leben erhalten wird und weiter voranschreitet, hinterlassen Sie bitte eine Dankesnachricht und [spenden](https://liberapay.com/YunoHost) für das Projekt und erzählen Sie anderen davon!\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/90.guidelines.mdx:51
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Last but not least, since YunoHost is a free software project, you are legitimate and welcomed to come and [contribute](/dev/) to the project, be it on the technical aspects (i.e. code) and less-technical aspects (such as contributing to this documentation! ;))\n"
-msgstr ""
+msgstr "Und da YunoHost schließlich ein Open-Source-Projekt ist, sind Sie herzlich dazu eingeladen, zum Projekt [beizutragen](/dev. Sowohl zu technischen (d.h. Code) als auch zu weniger technischen Aspekten (wie z.B. das Mitwirken an dieser Dokumentation ;) )!\n"

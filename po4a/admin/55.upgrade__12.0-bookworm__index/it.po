@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2025-11-09 20:53+0100\n"
+"POT-Creation-Date: 2025-11-09 21:01+0100\n"
 "PO-Revision-Date: 2025-11-09 20:53+0100\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -55,17 +55,25 @@ msgstr ""
 #: docs/admin/55.upgrade/11.0-bullseye.mdx:19
 #: docs/admin/55.upgrade/12.0-bookworm/index.mdx:23
 #: docs/admin/55.upgrade/index.mdx:5
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "From the webadmin"
 msgstr ""
+"#-#-#-#-#  it.po (YunoHost documentation VERSION)  #-#-#-#-#\n"
+"#-#-#-#-#  it.po (YunoHost documentation VERSION)  #-#-#-#-#\n"
+"#-#-#-#-#  it.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"Dalla pagina webadmin"
 
 #. type: Title ##
 #: docs/admin/55.upgrade/11.0-bullseye.mdx:23
 #: docs/admin/55.upgrade/12.0-bookworm/index.mdx:29
 #: docs/admin/55.upgrade/index.mdx:11
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "From the command line"
 msgstr ""
+"#-#-#-#-#  it.po (YunoHost documentation VERSION)  #-#-#-#-#\n"
+"#-#-#-#-#  it.po (YunoHost documentation VERSION)  #-#-#-#-#\n"
+"#-#-#-#-#  it.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"Da linea di comando"
 
 #. type: Plain text
 #: docs/admin/55.upgrade/11.0-bullseye.mdx:32

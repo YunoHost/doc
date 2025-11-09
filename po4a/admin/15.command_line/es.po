@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2025-11-09 20:53+0100\n"
+"POT-Creation-Date: 2025-11-09 21:01+0100\n"
 "PO-Revision-Date: 2025-11-09 20:53+0100\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -170,9 +170,13 @@ msgstr ""
 #: docs/admin/20.users/groups_and_permissions.mdx:187
 #: docs/admin/20.users/groups_and_permissions.mdx:244
 #: docs/admin/25.domains/certificate.mdx:26
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<TabItem value=\"web\" label=\"From the web interface\">\n"
 msgstr ""
+"#-#-#-#-#  es.po (YunoHost documentation VERSION)  #-#-#-#-#\n"
+"#-#-#-#-#  es.po (YunoHost documentation VERSION)  #-#-#-#-#\n"
+"#-#-#-#-#  es.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"<TabItem value=\"web\" label=\"From the web interface\">\n"
 
 #. type: Plain text
 #: docs/admin/15.command_line.mdx:78
@@ -202,9 +206,13 @@ msgstr ""
 #: docs/admin/20.users/groups_and_permissions.mdx:198
 #: docs/admin/20.users/groups_and_permissions.mdx:249
 #: docs/admin/25.domains/certificate.mdx:45
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<TabItem value=\"cli\" label=\"From the command line\">\n"
 msgstr ""
+"#-#-#-#-#  es.po (YunoHost documentation VERSION)  #-#-#-#-#\n"
+"#-#-#-#-#  es.po (YunoHost documentation VERSION)  #-#-#-#-#\n"
+"#-#-#-#-#  es.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"<TabItem value=\"cli\" label=\"From the command line\">\n"
 
 #. type: Plain text
 #: docs/admin/15.command_line.mdx:87

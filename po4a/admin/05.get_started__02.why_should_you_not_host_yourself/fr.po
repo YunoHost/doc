@@ -1,77 +1,77 @@
-# French translations for YunoHost documentation package
-# Copyright (C) 2025 YunoHost Contributors
-# This file is distributed under the same license as the YunoHost documentation package.
-# Automatically generated, 2025.
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: YunoHost documentation VERSION\n"
+"Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2025-11-09 20:53+0100\n"
-"PO-Revision-Date: 2025-11-09 20:53+0100\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
-"Language: fr\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/05.get_started/02.why_should_you_not_host_yourself.mdx:1
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Why should you (not?) host yourself ?"
-msgstr ""
+msgstr "Pourquoi (ne pas?) s'autohéberger ?"
 
 #. type: Title ##
 #: docs/admin/05.get_started/02.why_should_you_not_host_yourself.mdx:5
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Why should you host yourself ?"
-msgstr ""
+msgstr "Pourquoi s'auto-héberger ?"
 
 #. type: Bullet: '- '
 #: docs/admin/05.get_started/02.why_should_you_not_host_yourself.mdx:8
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "**You believe in a free, open and decentralized internet.** In a centralized internet, private companies and government can spy, analyze and influence people by dictating how they connect with each other, and by filtering content. YunoHost is developed by a community who believe in an open and decentralized internet, and we hope that you do, too!\n"
-msgstr ""
+msgstr "**Vous croyez en un internet libre, ouvert et décentralisé.** Dans un internet centralisé, les entités privées et les gouvernements peuvent espionner, analyser et influencer les personnes en dictant la façon dont elle peuvent interagir les unes avec les autres, ainsi qu'en filtrant du contenu. YunoHost est développé par une communauté qui croit en un internet ouvert et décentralisé. Nous espérons que vous aussi !\n"
 
 #. type: Bullet: '- '
 #: docs/admin/05.get_started/02.why_should_you_not_host_yourself.mdx:10
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "**You want to have control of your data and services.** Your pictures, chat messages, browsing history, and that text you are writing for school, have nothing to do on somebody else's server (a.k.a. The Cloud). They are part of your private life, but also part of your family's life, your friend's life, and so on. These data should be managed by *you*, not a random company in the US who wants your data to analyze them and sell the results.\n"
-msgstr ""
+msgstr "**Vous voulez avoir le contrôle de vos données et services.** Vos images, vos messages de chat, votre historique de navigation, et votre dissertation pour l'école n'ont rien à faire sur l'ordinateur de quelqu'un d'autre (a.k.a. le Cloud). Ces données font partie de votre vie privée, mais également de celle de votre famille, de vos amis, etc. Ces données devraient être gérées par *vous*, et non par une quelconque entreprise américaine qui cherche à analyser vos données pour revendre les résultats.\n"
 
 #. type: Bullet: '- '
 #: docs/admin/05.get_started/02.why_should_you_not_host_yourself.mdx:12
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "**You want to learn about how computers and the Internet work.** Operating your own server is a pretty good context to understand the basic mechanisms at the heart of operating systems and the Internet. You might have to deal with command line interface, network architecture, DNS configuration, SSH, and so on.\n"
-msgstr ""
+msgstr "**Vous souhaitez apprendre comment fonctionnent les ordinateurs et Internet.** Opérer son propre serveur est un bon contexte pour apprendre les mécanismes de base au cœur des systèmes d'exploitation (OS) et d'Internet. Il vous faudra possiblement toucher à la ligne de commande et à des morceaux de configuration réseau et DNS.\n"
 
 #. type: Bullet: '- '
 #: docs/admin/05.get_started/02.why_should_you_not_host_yourself.mdx:14
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "**You want to explore new possibilities and customize things.** Ever dreamed of running a Minecraft server for you friends, or a persistent IRC or XMPP client? With your very own server, you can manually install and run virtually any program you want, and customize every bit.\n"
-msgstr ""
+msgstr "**Vous voulez explorer de nouvelles possibilités et personnaliser votre espace.** Avez-vous déjà rêvé d'avoir votre propre serveur Minecraft pour vos ami·e·s, ou un client IRC ou XMPP persistant ? Avec votre propre serveur, vous pouvez manuellement installer et faire tourner n'importe quel programme et personnaliser chaque morceau.\n"
 
 #. type: Title ##
 #: docs/admin/05.get_started/02.why_should_you_not_host_yourself.mdx:15
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Why should you *not* host yourself ?"
-msgstr ""
+msgstr "Pourquoi ne *pas* s'auto-héberger ?"
 
 #. type: Bullet: '- '
 #: docs/admin/05.get_started/02.why_should_you_not_host_yourself.mdx:18
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "**Self-hosting requires some work and patience.** Hosting yourself is a bit like growing your own garden or vegetables: it requires work and patience. While YunoHost aims to do all the hard work for you, self-hosting still requires that you take time to learn and configure a few things to setup your server properly. You will also need to perform maintenance tasks (such as upgrades) from time to time, or to ask for support if some things break.\n"
-msgstr ""
+msgstr "**L'auto-hébergement requiert du travail et de la patience.** S'auto-héberger est un peu comme avoir son propre jardin ou potager : cela demande du travail et de la patience. Bien que YunoHost cherche à faire tout le travail compliqué pour vous, il vous faudra tout de même prendre le temps d'apprendre et configurer quelques détails pour que votre installation marche correctement. Il vous faudra aussi gérer quelques tâches de maintenance (telles que les mises à jour) de temps en temps, et demander de l'aide si des choses ne fonctionnent pas comme prévu.\n"
 
 #. type: Bullet: '- '
 #: docs/admin/05.get_started/02.why_should_you_not_host_yourself.mdx:20
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "**With great servers comes great responsibilities.** Operating a server means that you are responsible for the data you are hosting. Nobody will be able to recover them for you if they get lost. YunoHost provides backup features, which you should use regularly to backup the configurations and data you care about. You should also keep an eye on security news and recommendations so that your server or critical data don't get compromised.\n"
-msgstr ""
+msgstr "**Avec de grands serveurs viennent les grandes responsabilités.** Opérer un serveur implique d'être responsable des données que vous hébergez : personne ne pourra récupérer des données à votre place si vous les perdez. YunoHost fournit des fonctionnalités de sauvegarde qu'il est recommandé d'utiliser pour sauvegarder les configurations et données importantes. Il vous faut aussi garder un œil sur les recommandations et les nouvelles à propos de la sécurité pour que votre serveur ou vos données ne soient pas compromises.\n"
 
 #. type: Bullet: '- '
 #: docs/admin/05.get_started/02.why_should_you_not_host_yourself.mdx:21
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "**Quality and performance probably won't be as good as premium services.** YunoHost (and most of the applications packaged for it) are free and open-source software, developed by communities of people in their free time and on the basis of best effort. There is no absolute guarantee that software will work in every possible circumstance. The performance of your self-hosted server is also related to its CPU and RAM, and to the available internet connectivity.\n"
-msgstr ""
+msgstr "**La qualité et les performances ne seront probablement pas aussi bonnes que des services premium.** YunoHost (et la plupart des applications qui sont packagées) sont des logiciels libres et open-source, développés par des communautés bénévoles. Il n'y a pas de garantie absolue que ces logiciels fonctionneront dans toutes les circonstances possibles. Les performances de votre serveur auto-hébergé sont aussi liées au processeur, à la mémoire vive et à la connectivité internet.\n"

@@ -1,86 +1,94 @@
-# French translations for YunoHost documentation package
-# Copyright (C) 2025 YunoHost Contributors
-# This file is distributed under the same license as the YunoHost documentation package.
-# Automatically generated, 2025.
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: YunoHost documentation VERSION\n"
+"Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2025-11-09 20:53+0100\n"
-"PO-Revision-Date: 2025-11-09 20:53+0100\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
-"Language: fr\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #. type: Yaml Front Matter Hash Value: description
 #: docs/admin/05.get_started/10.providers/15.vpn/index.mdx:1
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "The guys that provide a private tunnel (and a public IP)"
-msgstr ""
+msgstr "Ceux qui fournissent un tunnel privé (et une IP publique)"
 
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/05.get_started/10.providers/15.vpn/index.mdx:1
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "VPN providers"
-msgstr ""
+msgstr "Fournisseurs VPN"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/15.vpn/index.mdx:9
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Since setting up a server at home is an uncommon practice, most Internet connections provided to individuals are unsuitable for this purpose especially if you desire to send mail. A net neutral VPN providing a dedicated fixed public IPv4 address and IPv6 addresses [can help to circumvent some limitations or difficulties](/admin/get_started/providers/vpn/vpn_advantage).\n"
-msgstr ""
+msgstr "Étant donné que la mise en place d'un serveur à domicile est une pratique peu courante, la plupart des connexions internet fournies aux particuliers ne sont pas adaptées à cette fin, en particulier si vous souhaitez envoyer des courriels. Un VPN neutre fournissant une adresse IPv4 publique fixe dédiée et des adresses IPv6 [peut aider à contourner certaines limitations ou difficultés](/admin/get_started/providers/vpn/vpn_advantage).\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/15.vpn/index.mdx:13
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "! If you *do* have such a threat model, especially against state threats, most of the providers listed below will **not** be of any help to you, since they will have to comply with police and judicial demands.\n"
 "! However, a VPN can help you to bypass port-forwarding limitations, or to get a stable IP address (if you ISP only provide dynamic IP) and this page will help you for that!\n"
 msgstr ""
+"! If you *do* have such a threat model, especially against state threats, most of the providers listed below will **not** be of any help to you, since they will have to comply with police and judicial demands.\n"
+"! However, a VPN can help you to bypass port-forwarding limitations, or to get a stable IP address (if you ISP only provide dynamic IP) and this page will help you for that!\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/15.vpn/index.mdx:15
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Below, you can find a list of providers compatible for self-hosting and especially those providing .cube format for VPNClient apps and those providing [internetcube](https://internetcu.be).\n"
-msgstr ""
+msgstr "Ci-dessous, vous trouverez une liste de fournisseurs compatibles avec l'auto-hébergement et en particulier ceux qui fournissent le format .cube pour les applications VPNClient et ceux qui fournissent [internetcube](https://internetcu.be).\n"
 
 #. type: Fenced div block (info)
 #: docs/admin/05.get_started/10.providers/15.vpn/index.mdx:16
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "By **compatible for self-hosting** we means VPN offers with at least:\n"
 "- a fixed dedicated public IPv4\n"
 "- port forwarding or opened features\n"
 "- net neutrality: no traffic analysis, no user data resale, no alteration of traffic (without legal obligations)...\n"
 msgstr ""
+"Par **compatible pour l'auto-hébergement**, nous entendons des offres VPN avec au moins :\n"
+"- un IPv4 public dédié fixe\n"
+"- des fonctionnalités de redirection de port ou d'ouverture\n"
+"- neutralité du réseau : pas d'analyse du trafic, pas de revente des données des utilisateurs, pas d'altération du trafic (sans obligations légales)...\n"
 
 #. type: Title ##
 #: docs/admin/05.get_started/10.providers/15.vpn/index.mdx:23
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "English-speaking sites"
-msgstr ""
+msgstr "Sites anglophones"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/15.vpn/index.mdx:27
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "| VPN provider | [VPNClient](https://github.com/labriqueinternet/vpnclient_ynh) compatibility | IPv6 | rDNS IPv4 | rDNS IPv6 | Price | Membership | Net Neutrality |\n"
 "| ------------ | ---------------------------------------------------------------------------- | ---- | --------- | --------- | ----- | ---------- | -------------- |\n"
 msgstr ""
+"| Fournisseur VPN | Compatibilité [VPNClient](https://github.com/labriqueinternet/vpnclient_ynh) | IPv6 | rDNS IPv4 | rDNS IPv6 | Prix | Adhésion | Neutralité du net |\n"
+"| ------------ | ---------------------------------------------------------------------------- | ---- | --------- | --------- | ----- | ---------- | -------------- |\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/15.vpn/index.mdx:30
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "¹ [Pay what you want](https://en.wikipedia.org/wiki/Pay_what_you_want)\n"
-msgstr ""
+msgstr "¹ [Payez ce que vous voulez](https://en.wikipedia.org/wiki/Pay_what_you_want)\n"
 
 #. type: Fenced div block (info)
 #: docs/admin/05.get_started/10.providers/15.vpn/index.mdx:31
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "If you try an other VPN provider that include **public dedicated ipv4 and port forwarding**, feel free to contribute to this documentation. We need people to test specific offers of those commercial providers:\n"
 "\n"
@@ -89,43 +97,53 @@ msgid ""
 "- [PureVPN](https://www.purevpn.fr/ip-vpn-dedie)\n"
 "- [RapidVPN](https://www.rapidvpn.com/vpn)\n"
 msgstr ""
+"Si vous essayez un autre fournisseur de VPN qui inclut **l'ipv4 public dédié et la redirection de port**, n'hésitez pas à contribuer à cette documentation. Nous avons besoin de personnes pour tester les offres spécifiques de ces fournisseurs commerciaux :\n"
+"\n"
+"- ✘ [VPN area](https://vpnarea.com/front/home/dedicated-ip) n'autorise pas la redirection du port 80. L'exécution d'un serveur web est contraire à leurs conditions d'utilisation.\n"
+"- [Trust zone](https://trust.zone/fr/order?p=25)\n"
+"- [PureVPN](https://www.purevpn.fr/ip-vpn-dedie)\n"
+"- [RapidVPN](https://www.rapidvpn.com/vpn)\n"
 
 #. type: Title ##
 #: docs/admin/05.get_started/10.providers/15.vpn/index.mdx:40
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "French-speaking sites"
-msgstr ""
+msgstr "Sites francophones"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/15.vpn/index.mdx:44
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "| Fournisseurs | Compatibilité [VPNClient](https://github.com/labriqueinternet/vpnclient_ynh) | IPv6 | rDNS IPv4 | rDNS IPv6 | Prix | Adhésion | Neutralité du net |\n"
 "| ------------ | ----------------------- | ---- | --------- | --------- | ----- | -------------- | -- |\n"
 msgstr ""
+"| Fournisseurs | Compatibilité [VPNClient](https://github.com/labriqueinternet/vpnclient_ynh) | IPv6 | rDNS IPv4 | rDNS IPv6 | Prix | Adhésion | Neutralité du net |\n"
+"| ------------ | ----------------------- | ---- | --------- | --------- | ----- | -------------- | -- |\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/15.vpn/index.mdx:55
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "| [Milkywan](https://milkywan.fr/prices#popupTunnel)    | ✔ (manuelle)               | ✔    | ✔         |  ✔        | 5 € / mois | incluse | |\n"
-msgstr ""
+msgstr "| [Milkywan](https://milkywan.fr/prices#popupTunnel)    | ✔ (manuelle)               | ✔    | ✔         |  ✔        | 5 € / mois | incluse | |\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/15.vpn/index.mdx:63
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "¹ Prix libre\n"
-msgstr ""
+msgstr "¹ Prix libre\n"
 
 #. type: Title ##
 #: docs/admin/05.get_started/10.providers/15.vpn/index.mdx:64
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "German-speaking sites"
-msgstr ""
+msgstr "Sites germanophones"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/15.vpn/index.mdx:68
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "| VPN provider | [VPNClient](https://github.com/labriqueinternet/vpnclient_ynh) compatibility | IPv6 | rDNS IPv4 | rDNS IPv6 | Price | Membership | Net Neutrality |\n"
 "| ------------ | ----------------------- | ---- | --------- | --------- | ----- | -------------- | --- |\n"
 msgstr ""
+"| Fournisseur VPN | Compatibilité [VPNClient](https://github.com/labriqueinternet/vpnclient_ynh) | IPv6 | rDNS IPv4 | rDNS IPv6 | Prix | Adhésion | Neutralité du net |\n"
+"| ------------ | ----------------------- | ---- | --------- | --------- | ----- | -------------- | --- |\n"

@@ -1,192 +1,196 @@
-# Spanish translations for YunoHost documentation package
-# Copyright (C) 2025 YunoHost Contributors
-# This file is distributed under the same license as the YunoHost documentation package.
-# Automatically generated, 2025.
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: YunoHost documentation VERSION\n"
+"Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2025-11-09 20:53+0100\n"
-"PO-Revision-Date: 2025-11-09 20:53+0100\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
-"Language: es\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. type: Title ##
 #: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:1
 #: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:12
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Advantages"
 msgstr ""
+"#-#-#-#-#  i18n/es/docusaurus-plugin-content-docs/current/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:1 (type Yaml Front Matter Hash Value: sidebar_label)  #-#-#-#-#\n"
+"Advantages\n"
+"#-#-#-#-#  i18n/es/docusaurus-plugin-content-docs/current/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:12 (type: Title ##)  #-#-#-#-#\n"
+"Ventajas"
 
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:1
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Advantage of a VPN for self-hosting"
-msgstr ""
+msgstr "Ventajas de una VPN para el autoalojamiento"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:7
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Since setting up a server at home is an uncommon practice, most Internet connections provided to individuals are unsuitable for this purpose. A net neutral VPN providing a static IPv4 address and IPv6 addresses can help to circumvent some limitations or difficulties.\n"
-msgstr ""
+msgstr "Dado que la instalación de un servidor en casa es una práctica poco habitual, la mayoría de las conexiones a Internet que se proporcionan a los particulares no son adecuadas para este fin. Una VPN de red neutra que proporcione una dirección IPv4 fija y direcciones IPv6 puede ayudar a superar algunas limitaciones o dificultades.\n"
 
 #. type: Fenced div block (caution)
 #: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:8
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Not all existing [VPN providers](/admin/get_started/providers/vpn/) meet these conditions, make sure the one you choose meets them.\n"
-msgstr ""
+msgstr "No todos los proveedores de [VPN existentes](/admin/get_started/providers/vpn/) cumplen estos requisitos, asegúrese de que el que elija los cumpla.\n"
 
 #. type: Title ###
 #: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:14
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Plug & Play"
-msgstr ""
+msgstr "Plug & Play"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:17
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "By setting up a VPN on your server, you'll be able to make it accessible to the rest of the Internet without having to change the configuration of the router you connect it to. This can be really handy if you are going on vacation, moving or have an Internet disconnection, as you will be able to easily connect it to someone you trust without having to configure the router of the person who is helping you.\n"
-msgstr ""
+msgstr "Configurando una VPN en tu servidor, podrás hacerlo accesible al resto de Internet sin tener que cambiar la configuración del router al que lo conectas. Esto puede ser realmente útil si te vas de vacaciones, te mudas de casa o si tienes un corte de Internet, porque podrás conectarlo fácilmente a una persona de confianza sin tener que configurar el router de la persona que te ayuda.\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:19
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "In the same way, you save yourself the trouble of opening your router's ports and bypassing hairpinning.\n"
-msgstr ""
+msgstr "De la misma manera, te ahorrarás abrir los puertos de tu router, así como evitar el hairpinning.\n"
 
 #. type: Title ###
 #: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:20
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "No micro DNS outages"
-msgstr ""
+msgstr "Sin microcortes DNS"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:23
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "If your Internet connection does not have a fixed public IP, you will be forced to set up a dynamic domain name (Dynamic DNS). This solution may be acceptable, but the DNS will only be updated at regular intervals (every two minutes if it is a `noho.st` or `nohost.me` domain name). So there is a chance that this will cause some display errors in the browser from time to time, or even that another site will be displayed (the risks are however reduced because the practice of self-hosting is not widespread).\n"
-msgstr ""
+msgstr "Si su conexión a Internet no tiene una IP pública fija, se verá obligado a configurar un nombre de dominio dinámico (DNS dinámico). Esto puede ser aceptable, pero el DNS sólo se actualizará a intervalos regulares (cada dos minutos si es un nombre de dominio noho.st o nohost.me). Por lo tanto, existe la posibilidad de que ocasionalmente se produzcan errores de visualización en el navegador, o incluso que se muestre otro sitio (los riesgos se reducen, sin embargo, porque la práctica del autoalojamiento no está muy extendida).\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:25
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "With a neutral VPN, this problem is circumvented because the VPN can be compared to a Virtual Internet connection, which has its own fixed IPv4 address, so no need to update the domain name.\n"
-msgstr ""
+msgstr "Con una VPN neutra, este problema se sortea porque la VPN puede compararse con una Conexión Virtual a Internet, que tiene su propia dirección IPv4 fija, por lo que no es necesario actualizar el nombre de dominio.\n"
 
 #. type: Title ###
 #: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:26
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "The case of email"
-msgstr ""
+msgstr "El caso del correo electrónico"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:29
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Email is one of the most complex protocols to self-host, usually it is what a user self-hosts last. Indeed, it is very easy to find yourself in a situation where emails sent by the server are refused by the recipient SMTP servers.\n"
-msgstr ""
+msgstr "El correo es uno de los protocolos más complejos de autoalojar, normalmente es lo último que autoaloja un usuario. De hecho, es muy fácil encontrarse en una situación en la que los correos electrónicos enviados por el servidor son rechazados por los servidores SMTP de los destinatarios.\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:31
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "To avoid this you need to:\n"
-msgstr ""
+msgstr "Para evitarlo, necesitas, entre otras cosas:\n"
 
 #. type: Bullet: '- '
 #: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:36
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "configure the reverse DNS of the server's Internet connection (or VPN)\n"
-msgstr ""
+msgstr "configurar el DNS inverso de la conexión a Internet del servidor (o VPN)\n"
 
 #. type: Bullet: '- '
 #: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:36
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "a fixed IPv4\n"
-msgstr ""
+msgstr "una IPv4 fija\n"
 
 #. type: Bullet: '- '
 #: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:36
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "that this IPv4 is removable from all blacklists (notably the IP must not be on the DUL)\n"
-msgstr ""
+msgstr "que esta IPv4 sea eliminada de todas las listas negras (en particular, la IP no debe estar en el DUL)\n"
 
 #. type: Bullet: '- '
 #: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:36
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "to be able to open port 25 (as well as the other SMTP ports)\n"
-msgstr ""
+msgstr "poder abrir el puerto 25 (así como otros puertos SMTP)\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:38
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Unfortunately, none of the most common French ISPs respect all these points.\n"
-msgstr ""
+msgstr "Desgraciadamente, ninguno de los ISP franceses más habituales respeta todos estos puntos.\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:40
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "To overcome this, the use of a VPN respecting these points can be an alternative.\n"
-msgstr ""
+msgstr "Para superar esto, el uso de una VPN que respete estos puntos puede ser una alternativa.\n"
 
 #. type: Title ###
 #: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:41
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Trust"
-msgstr ""
+msgstr "Confianza"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:44
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Finally, if you do not want the content of your server's communications to be spied on by equipment present on your ISP's network, you can use a VPN to encrypt your communications and deport your trust to a VPN provider. Remember, since 2015, the government officially deploys black boxes at the large network operators whose objective is to tap all French digital communications to preserve the scientific, economic and industrial interests of France.\n"
-msgstr ""
+msgstr "Por último, si no quiere que el contenido de las comunicaciones de su servidor sea espiable por los equipos presentes en la red de su proveedor de servicios de Internet, puede utilizar una VPN para cifrar sus comunicaciones y deportar su confianza a un proveedor de VPN. A modo de recordatorio, desde 2015, el gobierno despliega oficialmente cajas negras en los principales operadores de red cuyo objetivo es espiar todas las comunicaciones digitales francesas para, entre otras cosas, preservar los intereses científicos, económicos e industriales de Francia.\n"
 
 #. type: Title ##
 #: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:45
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Disadvantages"
-msgstr ""
+msgstr "Desvenjajas"
 
 #. type: Title ###
 #: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:47
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Cost"
-msgstr ""
+msgstr "Coste"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:50
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "A neutral VPN has a cost since the operator who provides it must run a server and use bandwidth. The prices of the FFDN's associative VPNs are around 6 € per month.\n"
-msgstr ""
+msgstr "Una VPN neutra tiene un coste, ya que el operador que la proporciona debe gestionar un servidor y utilizar el ancho de banda. Los precios de las VPN asociadas a FFDN rondan los 6 euros al mes.\n"
 
 #. type: Title ###
 #: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:51
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Packet path"
-msgstr ""
+msgstr "Enrutamiento de paquetes"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:54
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "When you set up a VPN on your server, if you don't set up any particular configuration, the transfer of a file from a computer on the local network to the server using the VPN, will go through the end of the VPN i.e. through the server of the VPN provider.\n"
-msgstr ""
+msgstr "Cuando se establece una VPN en el servidor, si no se establece una configuración particular, la transferencia de un archivo desde un ordenador de la red local al servidor que utiliza la VPN, pasará por el extremo de la VPN, es decir, por el servidor del proveedor de la VPN.\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:56
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "To solve this problem, there are two solutions:\n"
-msgstr ""
+msgstr "Para superar este punto, hay dos soluciones:\n"
 
 #. type: Bullet: '- '
 #: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:58
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "transform the server into a router and connect the home equipments to it, these equipments will then benefit from the VPN confidentiality too.\n"
-msgstr ""
+msgstr "transformando su servidor en un router y conectando su equipo doméstico a él, este equipo se beneficiará también de la confidencialidad de la VPN.\n"
 
 #. type: Bullet: '- '
 #: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:58
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "use the YunoHost server as a DNS resolver when you are at home, in order to redirect the server's domain names to the local IP rather than the public IP. This operation can be done either on each equipment or on the router (if the latter allows it).\n"
-msgstr ""
+msgstr "utilizar el servidor de YunoHost como resolvedor de DNS cuando estés en casa, para redirigir los nombres de dominio del servidor a la ip local en lugar de la ip pública. Esta operación puede realizarse en cada dispositivo o en el router (si éste lo permite).\n"

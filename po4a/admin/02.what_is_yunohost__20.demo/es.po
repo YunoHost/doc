@@ -1,73 +1,73 @@
-# Spanish translations for YunoHost documentation package
-# Copyright (C) 2025 YunoHost Contributors
-# This file is distributed under the same license as the YunoHost documentation package.
-# Automatically generated, 2025.
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: YunoHost documentation VERSION\n"
+"Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2025-11-09 20:53+0100\n"
-"PO-Revision-Date: 2025-11-09 20:53+0100\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
-"Language: es\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. type: Yaml Front Matter Hash Value: description
 #: docs/admin/02.what_is_yunohost/20.demo.mdx:1
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "A demo server"
-msgstr ""
+msgstr "A demo server"
 
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/02.what_is_yunohost/20.demo.mdx:1
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Try YunoHost"
-msgstr ""
+msgstr "Try YunoHost"
 
 #. type: Title #
 #: docs/admin/02.what_is_yunohost/20.demo.mdx:10
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Try YunoHost on a demo server"
-msgstr ""
+msgstr "Try YunoHost on a demo server"
 
 #. type: Fenced div block (caution)
 #: docs/admin/02.what_is_yunohost/20.demo.mdx:12
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "This demo server is reset *every 30 minutes* and could be down from time to time, but at least you can test and that's really cool :)\n"
-msgstr ""
+msgstr "This demo server is reset *every 30 minutes* and could be down from time to time, but at least you can test and that's really cool :)\n"
 
 #. type: Plain text
 #: docs/admin/02.what_is_yunohost/20.demo.mdx:20
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "  } <FAIcon icon='fa-user'/> User interface {\n"
-msgstr ""
+msgstr "  } <FAIcon icon='fa-user'/> User interface {\n"
 
 #. type: Plain text
 #: docs/admin/02.what_is_yunohost/20.demo.mdx:23
 #: docs/admin/02.what_is_yunohost/20.demo.mdx:33
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "  username: `demo`\n"
-msgstr ""
+msgstr "  username: `demo`\n"
 
 #. type: Plain text
 #: docs/admin/02.what_is_yunohost/20.demo.mdx:25
 #: docs/admin/02.what_is_yunohost/20.demo.mdx:35
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "  password: `demo`\n"
-msgstr ""
+msgstr "  password: `demo`\n"
 
 #. type: Plain text
 #: docs/admin/02.what_is_yunohost/20.demo.mdx:30
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "  } <FAIcon icon='fa-cog'/> Administration interface {\n"
-msgstr ""
+msgstr "  } <FAIcon icon='fa-cog'/> Administration interface {\n"
 
 #. type: Fenced div block (info)
 #: docs/admin/02.what_is_yunohost/20.demo.mdx:39
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "**Demo server gracefully provided by [Gitoyen](https://www.gitoyen.net?target=_blank) <FAIcon icon=\"fa-heart\" style={{color: \"green\"}}/>**\n"
-msgstr ""
+msgstr "**El servidor de demostración es ofrecido generosamente por [Gitoyen](https://www.gitoyen.net?target=_blank) <FAIcon icon=\"fa-heart\" style={{color: \"green\"}}/>**\n"

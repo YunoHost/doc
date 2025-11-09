@@ -1,108 +1,127 @@
-# French translations for YunoHost documentation package
-# Copyright (C) 2025 YunoHost Contributors
-# This file is distributed under the same license as the YunoHost documentation package.
-# Automatically generated, 2025.
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2025-11-09 20:53+0100\n"
-"PO-Revision-Date: 2025-11-09 20:53+0100\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
-"Language: fr\n"
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2025-11-09 21:01+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #. type: Title ###
 #: docs/admin/05.get_started/10.providers/05.registrar/ovh/manualdns.mdx:29
 #: docs/admin/05.get_started/40.post_install/20.dns_config.mdx:109
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Dynamic IP"
 msgstr ""
+"#-#-#-#-#  fr.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"IP dynamique\n"
+"#-#-#-#-#  fr.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"IP Dynamique"
 
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/05.get_started/40.post_install/20.dns_config.mdx:1
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "DNS zone configuration"
-msgstr ""
+msgstr "Configuration de la zone DNS"
 
 #. type: Plain text
 #: docs/admin/05.get_started/40.post_install/20.dns_config.mdx:9
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "DNS (domain name system) is a system that converts human-readable addresses\n"
 "(domain names) into machine-understandable addresses (IP). For your server to be\n"
 "easily accessible by human beings, and for some services like mail to work\n"
 "properly, DNS must be configured.\n"
 msgstr ""
+"DNS (système de nom de domaine) est un élément essentiel d'Internet qui permet\n"
+"de convertir des adresses compréhensibles par les êtres humains (les noms de\n"
+"domaines) en adresses compréhensibles par la machine (les adresses IP). Pour que\n"
+"votre serveur soit facilement accessible par d'autres êtres humains, et pour\n"
+"que certains services comme le mail fonctionnent correctement, il est nécessaire\n"
+"de configurer la zone DNS de votre domaine.\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/40.post_install/20.dns_config.mdx:14
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "If you're using an [automatic domain](/admin/tutorials/domains/dns_nohost_me) provided by the YunoHost Project, the configuration should be\n"
 "performed automatically. If you're using your own domain name (e.g. bought via\n"
 "a registrar), you should manually configure your domain on your registrar's\n"
 "interface.\n"
 msgstr ""
+"Si vous utilisez un [domaine automatique](/admin/tutorials/domains/dns_nohost_me) fourni par le Projet YunoHost,\n"
+"la configuration devrait être faite automatiquement. Si vous utilisez votre propre nom de domaine\n"
+"(e.g. acheté chez un registrar), il vous faut configurer manuellement votre\n"
+"domaine via l'interface de votre registrar.\n"
 
 #. type: Title ##
 #: docs/admin/05.get_started/40.post_install/20.dns_config.mdx:15
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Recommended DNS configuration"
-msgstr ""
+msgstr "Configuration DNS recommandée"
 
 #. type: Plain text
 #: docs/admin/05.get_started/40.post_install/20.dns_config.mdx:18
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "NB: Examples here use the placeholder `your.domain.tld`, you have to replace it with your real domain, such as `www.yunohost.org`.\n"
-msgstr ""
+msgstr "*NB : les exemples utilisent ici le texte `votre.domaine.tld`, à remplacer par votre propre domaine (par exemple `www.yunohost.org`).*\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/40.post_install/20.dns_config.mdx:20
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "YunoHost provides a recommended DNS configuration, available via:\n"
-msgstr ""
+msgstr "YunoHost fournit une configuration DNS recommandée, accessible via :\n"
 
 #. type: Bullet: '- '
 #: docs/admin/05.get_started/40.post_install/20.dns_config.mdx:23
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "the webadmin, in Domain > your.domain.tld > DNS configuration;\n"
-msgstr ""
+msgstr "la webadmin, dans Domaines > votre.domain.tld > Configuration DNS ;\n"
 
 #. type: Bullet: '- '
 #: docs/admin/05.get_started/40.post_install/20.dns_config.mdx:23
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "or the command line, `yunohost domain dns suggest your.domain.tld`\n"
-msgstr ""
+msgstr "ou la ligne de commande, `yunohost domain dns suggest votre.domaine.tld`\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/40.post_install/20.dns_config.mdx:27
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "For specific needs or specific setups, and if you know what you're doing, you\n"
 "might want or have to tweak these, or add additional ones (e.g. to handle\n"
 "subdomains).\n"
 msgstr ""
+"Pour certains besoins ou installations particulières, et si vous savez ce que\n"
+"vous faites, il vous faudra peut-être modifier cette recommandation ou ajouter\n"
+"d'autres enregistrements (e.g. pour gérer des sous-domaines).\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/40.post_install/20.dns_config.mdx:29
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "The recommended configuration typically looks like this:\n"
-msgstr ""
+msgstr "La configuration recommandée ressemble typiquement à :\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/40.post_install/20.dns_config.mdx:61
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Though it might be easier to understand it if displayed like this:\n"
 msgstr ""
+"Mais il est peut-être plus facile de la comprendre affichée de la façon\n"
+"suivante :\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/40.post_install/20.dns_config.mdx:78
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "| Type    | Name                   | Value                                                 |\n"
 "| :-----: | :--------------------: | :--------------------------------------------------:  |\n"
@@ -121,94 +140,118 @@ msgid ""
 "|   TXT   |  mail._domainkey       |  `\"v=DKIM1; k=rsa; p=someHuuuuuuugeKey\"`              |\n"
 "|   TXT   |  _dmarc                |  `\"v=DMARC1; p=none\"`                                 |\n"
 msgstr ""
+"| Type    | Nom                    | Valeur                                                 |\n"
+"| :-----: | :--------------------: | :----------------------------------------------------: |\n"
+"|  **A**  |   **@**                |  `111.222.333.444` (votre IPv4)                        |\n"
+"|    A    |   *                    |  `111.222.333.444` (votre IPv4)                        |\n"
+"|  AAAA   |   @                    |  `2222:444:8888:3333:bbbb:5555:3333:1111` (votre IPv6) |\n"
+"|  AAAA   |   *                    |  `2222:444:8888:3333:bbbb:5555:3333:1111` (votre IPv6) |\n"
+"| **SRV** | **_xmpp-client._tcp**  |  `0 5 5222 votre.domaine.tld.`                         |\n"
+"| **SRV** | **_xmpp-server._tcp**  |  `0 5 5269 votre.domaine.tld.`                         |\n"
+"|  CNAME  |   muc                  |  `@`                                                   |\n"
+"|  CNAME  |   pubsub               |  `@`                                                   |\n"
+"|  CNAME  |   vjud                 |  `@`                                                   |\n"
+"|  CNAME  |   xmpp-upload          |  `@`                                                   |\n"
+"| **MX**  | **@**                  |  `votre.domaine.tld.`     (et priorité: 10)            |\n"
+"|   TXT   |   @                    |  `\"v=spf1 a mx -all\"`                |\n"
+"|   TXT   |  mail._domainkey       |  `\"v=DKIM1; k=rsa; p=uneGrannnndeClef\"`                |\n"
+"|   TXT   |  _dmarc                |  `\"v=DMARC1; p=none\"`                                  |\n"
 
 #. type: Title ###
 #: docs/admin/05.get_started/40.post_install/20.dns_config.mdx:79
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "A few notes about this table"
-msgstr ""
+msgstr "Quelques notes à propos de cette table"
 
 #. type: Bullet: '- '
 #: docs/admin/05.get_started/40.post_install/20.dns_config.mdx:88
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Not all these lines are absolutely necessary. For a minimal setup, you only need the records in bold.\n"
-msgstr ""
+msgstr "Tous ces enregistrements ne sont pas nécessaires. Pour une installation minimale, seuls les enregistrements en gras sont nécessaires ;\n"
 
 #. type: Bullet: '- '
 #: docs/admin/05.get_started/40.post_install/20.dns_config.mdx:88
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "The dot at the end of `your.domain.tld.` is important ;);\n"
-msgstr ""
+msgstr "Le point à la fin de `votre.domaine.tld.` est important ;) ;\n"
 
 #. type: Bullet: '- '
 #: docs/admin/05.get_started/40.post_install/20.dns_config.mdx:88
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "`@` corresponds to `your.domain.tld`, and e.g. `muc` corresponds to `muc.your.domain.tld`;\n"
-msgstr ""
+msgstr "`@` correspond à `votre.domaine.tld`, et par ex. `muc` correspond à `muc.votre.domaine.tld` ;\n"
 
 #. type: Bullet: '- '
 #: docs/admin/05.get_started/40.post_install/20.dns_config.mdx:88
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "These are example values ! See your generated conf for the actual values you should use;\n"
-msgstr ""
+msgstr "Les valeurs montrées ici sont des valeurs d'exemple ! Référez-vous à la configuration générée chez vous pour savoir quelles valeurs utiliser ;\n"
 
 #. type: Bullet: '- '
 #: docs/admin/05.get_started/40.post_install/20.dns_config.mdx:88
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "We recommend a [TTL](https://en.wikipedia.org/wiki/Time_to_live#DNS_records) of 3600 (1 hour). But you can use something else if you know what you're doing;\n"
-msgstr ""
+msgstr "Nous recommandons un [TTL](https://fr.wikipedia.org/wiki/Time_to_Live#Le_Time_to_Live_dans_le_DNS) de 3600 (1 heure). Mais vous pouvez utiliser une autre valeur si vous savez ce que vous faîtes ;\n"
 
 #. type: Bullet: '- '
 #: docs/admin/05.get_started/40.post_install/20.dns_config.mdx:88
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Don't put an IPv6 record if you're not sure IPv6 really works on your server! You might have issues with Let's Encrypt if it doesn't.\n"
-msgstr ""
+msgstr "Ne mettez pas d'enregistrement IPv6 si vous n'êtes pas certain que l'IPv6 fonctionne sur votre serveur ! Vous aurez des problèmes avec Let's Encrypt si ce n'est pas le cas.\n"
 
 #. type: Bullet: '- '
 #: docs/admin/05.get_started/40.post_install/20.dns_config.mdx:88
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "If you're using the domain provider Namecheap the SRV DNS entries are formatted as **Service**: `_xmpp-client` **Protocol**: `_tcp` **Priority**: `0` **Weight**: `5` **Port**: `5222` **Target**: `your.domain.tld`\n"
-msgstr ""
+msgstr "Si vous utilisez le registrar Namecheap, les entrées SRV sont formattées comme **Service**: `_xmpp-client` **Protocol**: `_tcp` **Priority**: `0` **Weight**: `5` **Port**: `5222` **Target**: `votre.domaine.tld`\n"
 
 #. type: Title ###
 #: docs/admin/05.get_started/40.post_install/20.dns_config.mdx:89
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Reverse DNS"
-msgstr ""
+msgstr "Résolution DNS inverse"
 
 #. type: Plain text
 #: docs/admin/05.get_started/40.post_install/20.dns_config.mdx:95
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "If your ISP or VPS provider let you define a [Reverse DNS\n"
 "lookup](https://en.wikipedia.org/wiki/Reverse_DNS_lookup) for your public IPv4\n"
 "and/or IPv6 addresses, you must configure it. It will prevent you to be marked as\n"
 "spam by anti-spam filters.\n"
 msgstr ""
+"Si votre opérateur ou votre hébergeur le permet, nous vous encourageons à\n"
+"configurer une [résolution DNS\n"
+"inverse](https://fr.wikipedia.org/wiki/Domain_Name_System#R%C3%A9solution_inverse)\n"
+"pour vos adresses publiques IPv4 et/ou IPv6. Ceci vous évitera d'être marqué\n"
+"comme spammeur par les systèmes de filtrage anti-spams.\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/40.post_install/20.dns_config.mdx:97
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "**N.B.: the reverse DNS configuration happens on your Internet Service Provider or VPS provider. It is *not* handled by your domain's registrar.**\n"
-msgstr ""
+msgstr "**N.B. : la configuration du DNS inverse se passe au niveau de votre fournisseur d'accès à Internet, ou de votre hébergeur de VPS. Elle ne se fait *pas* sur le registrar de votre nom de domaine.**\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/40.post_install/20.dns_config.mdx:101
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "If your public IPv4 address is `111.222.333.444` and your DNS\n"
 "domain is `domain.tld`, you should get following answer when using `nslookup`\n"
 "command tool:\n"
 msgstr ""
+"Cela signifie que si votre adresse IPv4 publique est `111.222.333.444` et que\n"
+"votre nom de domaine est `domain.tld`, vous devez obtenir le résultat suivant\n"
+"en utilisant la commande `nslookup` :\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/40.post_install/20.dns_config.mdx:108
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "The diagnosis system available in the webadmin performs this checks automatically (in section Email).\n"
-msgstr ""
+msgstr "Le système de diagnostic présent dans l'interface d'administration fait cette vérification automatiquement (dans la section Email)\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/40.post_install/20.dns_config.mdx:111
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "If your global IP address is constantly changing, follow this [tutorial](/admin/tutorials/domains/dns_dynamicip).\n"
-msgstr ""
+msgstr "Si votre adresse IP publique change constamment, suivez ce [tutoriel](/admin/tutorials/domains/dns_dynamicip).\n"

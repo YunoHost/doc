@@ -1,136 +1,141 @@
-# German translations for YunoHost documentation package
-# Copyright (C) 2025 YunoHost Contributors
-# This file is distributed under the same license as the YunoHost documentation package.
-# Automatically generated, 2025.
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: YunoHost documentation VERSION\n"
+"Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2025-11-09 20:53+0100\n"
-"PO-Revision-Date: 2025-11-09 20:53+0100\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
-"Language: de\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/20.users/index.mdx:1
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "👥 Accounts and app portal"
-msgstr ""
+msgstr "👥 Accounts and app portal"
 
 #. type: Title ##
 #: docs/admin/20.users/index.mdx:5
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Users"
-msgstr ""
+msgstr "Benutzer"
 
 #. type: Plain text
 #: docs/admin/20.users/index.mdx:8
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Users are human being who have access to applications and other services on your server. The administrator can add and manage users through the web administration (in the User category) or through the command line (see `yunohost user --help`). After that, users obtain a personal email address (chosen by the admin), and can log in the user portal to access applications they have permissions over and configure other parameters.\n"
-msgstr ""
+msgstr "Benutzer sind Menschen, die Zugang zu Anwendungen und anderen Diensten auf Ihrem Server haben. Der Administrator kann Benutzer über die Webadministration (in der Kategorie Benutzer) oder über die Kommandozeile (siehe `yunohost user --help`) hinzufügen und verwalten. Danach erhalten die Benutzer eine persönliche E-Mail-Adresse (vom Administrator ausgewählt), und können sich im Benutzerportal anmelden, um auf Anwendungen zuzugreifen, für die sie Berechtigungen haben, und andere Parameter zu konfigurieren.\n"
 
 #. type: Plain text
 #: docs/admin/20.users/index.mdx:10
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "The first user created also automatically gets email aliases `root@main.domain.tld` and `admin@main.domain.tld`, such that mail sent to these addresses will end up in the first user's mailbox.\n"
-msgstr ""
+msgstr "Der erste Benutzer, der angelegt wird, erhält auch automatisch die E-Mail-Aliase `root@main.domain.tld` und `admin@main.domain.tld`, so dass E-Mails, die an diese Adressen geschickt werden, im Postfach des ersten Benutzers landen.\n"
 
 #. type: Fenced div block (caution)
 #: docs/admin/20.users/index.mdx:11
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "You should be careful about who you give your server access to. In terms of security, this largely increase the attack surface for someone who wants to mess with the server one way or another.\n"
-msgstr ""
+msgstr "Sie sollten vorsichtig sein, wem Sie Zugang zu Ihrem Server gewähren. Im Hinblick auf die Sicherheit vergrößert sich dadurch die Angriffsfläche für jemanden, der sich auf die eine oder andere Weise am Server zu schaffen machen will.\n"
 
 #. type: Title ##
 #: docs/admin/20.users/index.mdx:15
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "The user portal, or SSO"
-msgstr ""
+msgstr "Das Benutzerportal oder SSO"
 
 #. type: Plain text
 #: docs/admin/20.users/index.mdx:19
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "![User panel screenshot](/img/user_panel.jpg)\n"
 "The user portal, also called the SSO for 'Single Sign On' allows user to browse easily between the different apps they have access to. In particular, the term 'Single Sign On' comes from the fact that user only need to log in the portal to automatically be logged to all apps that require authentication (or at least those who are integrated with the SSO/LDAP, since this is sometimes technically complicated or not possible at all).\n"
 msgstr ""
+"![User panel screenshot](/img/user_panel.jpg)\n"
+"Das Benutzerportal, auch SSO für 'Single Sign On' genannt, ermöglicht es den Benutzern, einfach zwischen den verschiedenen Anwendungen, auf die sie Zugriff haben, zu wechseln. Der Begriff \"Single Sign On\" kommt daher, dass der Benutzer sich nur im Portal anmelden muss, um automatisch bei allen Anwendungen angemeldet zu werden, die eine Authentifizierung erfordern (oder zumindest bei denen, die mit SSO/LDAP integriert sind, da dies manchmal technisch kompliziert oder gar nicht möglich ist).\n"
 
 #. type: Plain text
 #: docs/admin/20.users/index.mdx:21
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "In the portal, users can also click on the avatar in the top-left to configure some other settings such as their identify, mail aliases, automatic mail forwards, or change their password.\n"
-msgstr ""
+msgstr "Im Portal können Benutzer auch auf den Avatar oben links klicken, um einige andere Einstellungen zu konfigurieren, z. B. ihre Identität, E-Mail-Aliase, automatische E-Mail-Weiterleitungen oder ihr Passwort zu ändern.\n"
 
 #. type: Fenced div block (info)
 #: docs/admin/20.users/index.mdx:22
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "You should be aware that the SSO can only be reached through the actual domain name (i.e. `https://the.domain.tld/yunohost/sso`), and NOT by just using the IP of the server (i.e. `https://11.22.33.44/yunohost/sso`), contrarily to the webadmin ! This is a bit confusing but is necessary for technical reason. If you are in a situation where you need to access the SSO without having your DNS properly configured for some reason, you might consider tweaking your `/etc/hosts` as described in [this page](/admin/tutorials/domains/dns_local_network).\n"
-msgstr ""
+msgstr "Sie sollten sich bewusst sein, dass das SSO nur über den tatsächlichen Domänennamen (z.B. `https://the.domain.tld/yunohost/sso`) erreicht werden kann, und NICHT über die IP des Servers (z.B. `https://11.22.33.44/yunohost/sso`), im Gegensatz zum Webadmin! Dies ist ein wenig verwirrend, aber aus technischen Gründen notwendig. Wenn Sie sich in einer Situation befinden, in der Sie auf das SSO zugreifen müssen, ohne dass Ihr DNS richtig konfiguriert ist, könnten Sie in Erwägung ziehen, Ihre `/etc/hosts` wie in [dieser Seite](/admin/tutorials/domains/dns_local_network) beschrieben zu verändern.\n"
 
 #. type: Title ##
 #: docs/admin/20.users/index.mdx:26
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Creating new users"
-msgstr ""
+msgstr "Creating new users"
 
 #. type: Plain text
 #: docs/admin/20.users/index.mdx:29
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Only the administrator can create new users. From the webadmin, open the `Users` menu and click on the `+ New user` main button. Fill in all the whole form.\n"
-msgstr ""
+msgstr "Only the administrator can create new users. From the webadmin, open the `Users` menu and click on the `+ New user` main button. Fill in all the whole form.\n"
 
 #. type: Plain text
 #: docs/admin/20.users/index.mdx:31
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Users are created with an associated email address with the format `username@domain.tld`. Additional email aliases and email forwards can later be added by the admin and the user.\n"
-msgstr ""
+msgstr "Users are created with an associated email address with the format `username@domain.tld`. Additional email aliases and email forwards can later be added by the admin and the user.\n"
 
 #. type: Plain text
 #: docs/admin/20.users/index.mdx:33
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "The password should be at least 8 characters - though it is good practice to use longer password (i.e. a passphrase) and/or to use various kind of characters (uppercase, lowercase, digits and special characters).\n"
-msgstr ""
+msgstr "The password should be at least 8 characters - though it is good practice to use longer password (i.e. a passphrase) and/or to use various kind of characters (uppercase, lowercase, digits and special characters).\n"
 
 #. type: Plain text
 #: docs/admin/20.users/index.mdx:35
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Finalize the user creation by clicking on the `Save` button.\n"
-msgstr ""
+msgstr "Finalize the user creation by clicking on the `Save` button.\n"
 
 #. type: Plain text
 #: docs/admin/20.users/index.mdx:39
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<Figure caption=\"From the main menu of the webadmin, open `Users`.\" alt=\"Main menu\" src=\"/img/webadmin/create_user_1.png\"/>\n"
 "<Figure caption=\"From the top of the users list, click on `+ New user`.\" alt=\"Users list\" src=\"/img/webadmin/create_user_2.png\"/>\n"
 "<Figure caption=\"Fill in the form.\" alt=\"User creation form\" src=\"/img/webadmin/create_user_3.png\"/>\n"
 msgstr ""
+"<Figure caption=\"From the main menu of the webadmin, open `Users`.\" alt=\"Main menu\" src=\"/img/webadmin/create_user_1.png\"/>\n"
+"<Figure caption=\"From the top of the users list, click on `+ New user`.\" alt=\"Users list\" src=\"/img/webadmin/create_user_2.png\"/>\n"
+"<Figure caption=\"Fill in the form.\" alt=\"User creation form\" src=\"/img/webadmin/create_user_3.png\"/>\n"
 
 #. type: Title ##
 #: docs/admin/20.users/index.mdx:40
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "User groups and permissions"
-msgstr ""
+msgstr "User groups and permissions"
 
 #. type: Plain text
 #: docs/admin/20.users/index.mdx:43
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "See [this dedicated page](/admin/users/groups_and_permissions).\n"
-msgstr ""
+msgstr "See [this dedicated page](/admin/users/groups_and_permissions).\n"
 
 #. type: Title ##
 #: docs/admin/20.users/index.mdx:44
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "SSH access"
-msgstr ""
+msgstr "SSH-Zugang"
 
 #. type: Plain text
 #: docs/admin/20.users/index.mdx:46
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "See [this dedicated page](/admin/command_line).\n"
-msgstr ""
+msgstr "Siehe [diese spezielle Seite](/admin/command_line).\n"

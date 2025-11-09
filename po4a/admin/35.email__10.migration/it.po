@@ -1,102 +1,102 @@
-# Italian translations for YunoHost documentation package
-# Copyright (C) 2025 YunoHost Contributors
-# This file is distributed under the same license as the YunoHost documentation package.
-# Automatically generated, 2025.
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2025-11-09 20:53+0100\n"
-"PO-Revision-Date: 2025-11-09 20:53+0100\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
-"Language: it\n"
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2025-11-09 21:01+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/35.email/10.migration.mdx:1
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Migrate emails to YunoHost"
-msgstr ""
+msgstr "Spostare le proprie mail da un server terzo a YunoHost"
 
 #. type: Plain text
 #: docs/admin/35.email/10.migration.mdx:6
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "*[Documentation linked to YunoHost email](/admin/email)*.\n"
-msgstr ""
+msgstr "*[Documentazione integrativa del paragrafo relativo alle email di YunoHost](/admin/email)*.\n"
 
 #. type: Plain text
 #: docs/admin/35.email/10.migration.mdx:8
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Migration of emails from one server to another can be done with two recommended tools: ImapSync or Larch.\n"
-msgstr ""
+msgstr "La migrazione delle proprie mail verso il proprio server YunoHost, può avvenire attraverso l'utilizzo di due programmi appositi : ImapSync o Larch.\n"
 
 #. type: Plain text
 #: docs/admin/35.email/10.migration.mdx:10
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "This tool must be installed on your desktop computer. The transfer method looks at this schema:\n"
-msgstr ""
+msgstr "Questi programmi dovranno essere installati su un pc che funge da client. La procedura di migrazione rispecchia lo schema seguente:\n"
 
 #. type: Plain text
 #: docs/admin/35.email/10.migration.mdx:12
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "**`Old email server −> desktop computer with ImapSync or Larch −> new email server`**\n"
-msgstr ""
+msgstr "**`Attuale server email −> pc client con installati ImapSync o Larch −> nuovo server email (YunoHost)`**\n"
 
 #. type: Title ###
 #: docs/admin/35.email/10.migration.mdx:13
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "ImapSync"
-msgstr ""
+msgstr "ImapSync"
 
 #. type: Plain text
 #: docs/admin/35.email/10.migration.mdx:16
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "[ImapSync site](http://imapsync.lamiral.info/)\n"
-msgstr ""
+msgstr "[Sito web di ImapSync](http://imapsync.lamiral.info/)\n"
 
 #. type: Plain text
 #: docs/admin/35.email/10.migration.mdx:18
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Install ImapSync on your client computer by following this [guide](http://imapsync.lamiral.info/INSTALL):\n"
-msgstr ""
+msgstr "Installate ImapSync sul pc client seguendo questa [guida](http://imapsync.lamiral.info/INSTALL) :\n"
 
 #. type: Plain text
 #: docs/admin/35.email/10.migration.mdx:24
 #: docs/admin/35.email/10.migration.mdx:43
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Transfer emails from one server to another:\n"
-msgstr ""
+msgstr "Spostate le mail dal vecchio al nuovo server:\n"
 
 #. type: Plain text
 #: docs/admin/35.email/10.migration.mdx:31
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Note that transfer settings `--port 993` and `--ssl` are specific to YunoHost email server.\n"
-msgstr ""
+msgstr "I parametri di migrazione `--port 993` e `--ssl` sono specifici di un server mail YunoHost.\n"
 
 #. type: Title ###
 #: docs/admin/35.email/10.migration.mdx:32
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Larch"
-msgstr ""
+msgstr "Larch"
 
 #. type: Plain text
 #: docs/admin/35.email/10.migration.mdx:35
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "[Larch site](https://github.com/rgrove/larch/)\n"
-msgstr ""
+msgstr "[Sito web di Larch](https://github.com/rgrove/larch/)\n"
 
 #. type: Plain text
 #: docs/admin/35.email/10.migration.mdx:37
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "After beforehand installed `gem`, install `larch` on your client computer:\n"
-msgstr ""
+msgstr "Installate `gem`, e in seguito installate `larch` sul pc client :\n"
 
 #. type: Plain text
 #: docs/admin/35.email/10.migration.mdx:48
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "For other types of transfer refer to [Larch documentation](https://github.com/rgrove/larch#label-Usage).\n"
-msgstr ""
+msgstr "Per altre tipologie di migrazione, fate riferimento alla [guida di Larch](https://github.com/rgrove/larch#label-Usage).\n"

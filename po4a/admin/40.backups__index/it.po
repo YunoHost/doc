@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2025-11-09 20:53+0100\n"
+"POT-Creation-Date: 2025-11-09 21:01+0100\n"
 "PO-Revision-Date: 2025-11-09 20:53+0100\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -23,9 +23,15 @@ msgstr ""
 #: docs/admin/40.backups/index.mdx:25 docs/admin/40.backups/index.mdx:74
 #: docs/admin/40.backups/index.mdx:140
 #: docs/admin/45.tutorials/35.email_configure_relay.mdx:49
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "  <TabItem value=\"web\" label=\"From the web interface\">\n"
 msgstr ""
+"#-#-#-#-#  it.po (YunoHost documentation VERSION)  #-#-#-#-#\n"
+"#-#-#-#-#  it.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"  <TabItem value=\"web\" label=\"From the web interface\">\n"
+"#-#-#-#-#  it.po (YunoHost documentation VERSION)  #-#-#-#-#\n"
+"#-#-#-#-#  it.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"  <TabItem value=\"web\" label=\"From the web interface\">\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/_configuration.mdx:100
@@ -33,15 +39,22 @@ msgstr ""
 #: docs/admin/30.apps/index.mdx:109 docs/admin/30.apps/index.mdx:139
 #: docs/admin/40.backups/index.mdx:32 docs/admin/40.backups/index.mdx:88
 #: docs/admin/40.backups/index.mdx:147 docs/admin/40.backups/index.mdx:174
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "  <TabItem value=\"cli\" label=\"From the command line\">\n"
 msgstr ""
+"#-#-#-#-#  it.po (YunoHost documentation VERSION)  #-#-#-#-#\n"
+"#-#-#-#-#  it.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"  <TabItem value=\"cli\" label=\"From the command line\">\n"
+"#-#-#-#-#  it.po (YunoHost documentation VERSION)  #-#-#-#-#\n"
 
 #. type: Plain text
 #: docs/admin/40.backups/05.evaluate.mdx:6 docs/admin/40.backups/index.mdx:12
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "In the context of self-hosting, backups are an important element to compensate for unexpected events (fire, database corruption, loss of access to the server, compromised server...). The backup policy to implement depends on the importance of the services and data you manage. For example, backing up a test server will be of little interest, while you will want to be very careful if you are managing critical data for an association or a company - and in such cases, you will want to store the backups *in a different location or locations*.\n"
 msgstr ""
+"#-#-#-#-#  it.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"In un contesto di self hosting le strategie di backup sono un fattore chiave per sopperire ad eventi inattesi (incendio, corruzione del database, impossibilità di accedere al server, compromissione del server...). La tipologia di backup da adottare dipende dalla importanza dei dati e dei servizi che vogliamo proteggere. Ad esempio, nel contesto di un server di test possiamo evitare un backup integrale (dati e sistema operativo), al contrario, dovremo porre molta più attenzione nel caso di un server in produzione che contenga dati importanti. In questo caso è necessario conservare più copie di backup *in posti diversi*.\n"
+"#-#-#-#-#  it.po (YunoHost documentation VERSION)  #-#-#-#-#\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/40.backups/index.mdx:1

@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2025-11-09 20:53+0100\n"
+"POT-Creation-Date: 2025-11-09 21:01+0100\n"
 "PO-Revision-Date: 2025-11-09 20:53+0100\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -19,37 +19,52 @@ msgstr ""
 #. type: Plain text
 #: docs/admin/25.domains/index.mdx:24
 #: docs/admin/45.tutorials/05.domains/dns_nohost_me.mdx:6
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "In order to make self-hosting as accessible as possible, the YunoHost Project provides a *free* and *automatically configured* domain name service. By using this service, you won't have to [configure DNS records](/admin/get_started/post_install/dns_config) yourself, which can be tedious and technical.\n"
 msgstr ""
+"#-#-#-#-#  fr.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"Afin de rendre l'auto-hébergement aussi accessible que possible, le projet YunoHost fournit un service de nom de domaine *gratuit* et *configuré automatiquement*. En utilisant ce service, vous n'aurez pas à [configurer les enregistrements DNS](/admin/get_started/post_install/dns_config) vous-même, ce qui peut être fastidieux et technique. Néanmoins, soyez conscient que vous n'êtes pas réellement propriétaire du domaine choisi...\n"
+"#-#-#-#-#  fr.po (YunoHost documentation VERSION)  #-#-#-#-#\n"
 
 #. type: Plain text
 #: docs/admin/25.domains/index.mdx:26
 #: docs/admin/45.tutorials/05.domains/dns_nohost_me.mdx:8
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "The following (sub)domains are offered:\n"
 msgstr ""
+"#-#-#-#-#  fr.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"Les (sous-)domaines suivants sont proposés :\n"
+"#-#-#-#-#  fr.po (YunoHost documentation VERSION)  #-#-#-#-#\n"
 
 #. type: Bullet: '- '
 #: docs/admin/25.domains/index.mdx:30
 #: docs/admin/45.tutorials/05.domains/dns_nohost_me.mdx:12
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "`whateveryouwant.nohost.me`;\n"
 msgstr ""
+"#-#-#-#-#  fr.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"`whateveryouwant.nohost.me` ;\n"
+"#-#-#-#-#  fr.po (YunoHost documentation VERSION)  #-#-#-#-#\n"
 
 #. type: Bullet: '- '
 #: docs/admin/25.domains/index.mdx:30
 #: docs/admin/45.tutorials/05.domains/dns_nohost_me.mdx:12
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "`whateveryouwant.noho.st`;\n"
 msgstr ""
+"#-#-#-#-#  fr.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"`whateveryouwant.noho.st` ;\n"
+"#-#-#-#-#  fr.po (YunoHost documentation VERSION)  #-#-#-#-#\n"
 
 #. type: Bullet: '- '
 #: docs/admin/25.domains/index.mdx:30
 #: docs/admin/45.tutorials/05.domains/dns_nohost_me.mdx:12
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "`whateveryouwant.ynh.fr`.\n"
 msgstr ""
+"#-#-#-#-#  fr.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"`whateveryouwant.ynh.fr`.\n"
+"#-#-#-#-#  fr.po (YunoHost documentation VERSION)  #-#-#-#-#\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/45.tutorials/05.domains/dns_nohost_me.mdx:1

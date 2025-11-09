@@ -1,53 +1,53 @@
-# Italian translations for YunoHost documentation package
-# Copyright (C) 2025 YunoHost Contributors
-# This file is distributed under the same license as the YunoHost documentation package.
-# Automatically generated, 2025.
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: YunoHost documentation VERSION\n"
+"Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2025-11-09 20:53+0100\n"
-"PO-Revision-Date: 2025-11-09 20:53+0100\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
-"Language: it\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/02.what_is_yunohost/10.structure.mdx:1
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Structure of a YunoHost server"
-msgstr ""
+msgstr "Tour guidato per l'amministratore"
 
 #. type: Plain text
 #: docs/admin/02.what_is_yunohost/10.structure.mdx:6
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "This page provide an overview of the ecosystem of a YunoHost server. While this overview contains several approximations, the purpose here is to introduce the global picture before digging into the different aspects.\n"
-msgstr ""
+msgstr "Questa pagina provvede a fornire una vista d'insieme dell'ecosistema di un server YunoHost. Pur contenendo delle approssimazioni e delle scorciatoie, permette di avere una prima vista globale prima di entrare più nel dettaglio dei differenti aspetti.\n"
 
 #. type: Plain text
 #: docs/admin/02.what_is_yunohost/10.structure.mdx:8
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "![Yunohost ecosystem graph](/img/ecosystem.png)\n"
-msgstr ""
+msgstr "![Yunohost ecosystem graph](/img/ecosystem.png)\n"
 
 #. type: Plain text
 #: docs/admin/02.what_is_yunohost/10.structure.mdx:10
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Everything starts with the special user **admin**. This is the administrator of the machine who can install, configure and manage things on the server through the web administration interface, or via SSH and the command line interface. *(If you are already familiar with GNU/Linux, it is quite similar to root. YunoHost has this additional 'admin' user for several technical reasons.)*\n"
-msgstr ""
+msgstr "Tutto inizia con l'utente speciale **admin**. È l'amministratore della macchina e può installare, configurare e gestire il server con l'interfaccia web di amministrazione, o via SSH attraverso la linea di comando. *(Se hai familiarità con GNU/Linux, è come l'utente root. YunoHost ha un utente aggiuntivo 'admin' per diverse ragioni tecniche.)*\n"
 
 #. type: Plain text
 #: docs/admin/02.what_is_yunohost/10.structure.mdx:12
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "The administrator can create users and install applications, among other admin actions. Users automatically have their own email address when they get created. Users will also be able to connect to the user portal (SSO) to access applications. Some applications can typically be installed either as publicly-accessible, or as private, i.e. only some users will have access to it.\n"
-msgstr ""
+msgstr "L'amministratore può creare utenti e installare le applicazioni, oltre alle altre azioni amministrative. Gli utenti hanno automaticamente un indirizzo mail. Gli utenti possono connettersi al portale (SSO) per aver accesso alle applicazioni. Alcune applicazioni possono tipicamente essere installate con un accesso pubblico o uno privato, cioè solo gli utenti del server vi possono accedere.\n"
 
 #. type: Plain text
 #: docs/admin/02.what_is_yunohost/10.structure.mdx:13
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Applications and their features of the server rely on different services to work properly. Services (sometimes also called daemons) are programs that are constantly running on the server to ensure various tasks are done, such as answering to web requests from web browsers, or relaying emails.\n"
-msgstr ""
+msgstr "Le applicazioni e le altre funzionalità del server si basano su diversi servizi per funzionare correttamente. I servizi (chiamati anche demoni) sono dei programmi che girano costantemente per assicurare i vari task, come rispondere alle richieste di navigazione web, o inoltrare email.\n"

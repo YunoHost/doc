@@ -1,158 +1,161 @@
-# German translations for YunoHost documentation package
-# Copyright (C) 2025 YunoHost Contributors
-# This file is distributed under the same license as the YunoHost documentation package.
-# Automatically generated, 2025.
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: YunoHost documentation VERSION\n"
+"Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2025-11-09 20:53+0100\n"
-"PO-Revision-Date: 2025-11-09 20:53+0100\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
-"Language: de\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/35.email/index.mdx:1
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "📬 Emails"
-msgstr ""
+msgstr "📬 Emails"
 
 #. type: Plain text
 #: docs/admin/35.email/index.mdx:9
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "YunoHost comes with a complete mail stack allowing you to host your own email server, and therefore to have your own email addresses in `something@your.domain.tld`.\n"
-msgstr ""
+msgstr "YunoHost wird mit einem kompletten Mail-Stack geliefert, der es Ihnen ermöglicht, Ihren eigenen E-Mail-Server zu hosten und somit Ihre eigenen E-Mail-Adressen in `irgendjemand@deine.domain.tld` zu haben.\n"
 
 #. type: Plain text
 #: docs/admin/35.email/index.mdx:11
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "The mail stack includes a SMTP server (postfix), an IMAP server (Dovecot), an antispam (rspamd) and DKIM configuration.\n"
-msgstr ""
+msgstr "Der Mail-Stack enthält einen SMTP-Server (Postfix), einen IMAP-Server (Dovecot), einen Antispam-Server (rspamd) und eine DKIM-Konfiguration.\n"
 
 #. type: Title ##
 #: docs/admin/35.email/index.mdx:12
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Making sure your setup is right"
-msgstr ""
+msgstr "Sicherstellen dass Ihre Einrichtungen richtig sind"
 
 #. type: Plain text
 #: docs/admin/35.email/index.mdx:15
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Email is a complicated ecosystem and quite a few details can prevent it from working properly.\n"
-msgstr ""
+msgstr "E-Mail ist ein kompliziertes Ökosystem und eine ganze Reihe von Details können sein ordnungsgemäßes Funktionieren verhindern.\n"
 
 #. type: Plain text
 #: docs/admin/35.email/index.mdx:17
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "To validate your setup:\n"
-msgstr ""
+msgstr "Um Ihre Einstellungen zu validieren:\n"
 
 #. type: Bullet: '- '
 #: docs/admin/35.email/index.mdx:21
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "if you are self-hosting at home and not using a VPN, ensure [your ISP won't block port 25](/admin/get_started/providers/isp/) ;\n"
-msgstr ""
+msgstr "Wenn Sie zu Hause selbst hosten und kein VPN verwenden, stellen Sie sicher das [Ihr ISP den Port 25 nicht blockiert](/admin/get_started/providers/isp/);\n"
 
 #. type: Bullet: '- '
 #: docs/admin/35.email/index.mdx:21
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "route ports according to [this documentation](/admin/get_started/post_install/port_forwarding) ;\n"
-msgstr ""
+msgstr "leiten Sie Ports weiter, wie in [dieser Dokumentation](/admin/get_started/post_install/port_forwarding) beschrieben;\n"
 
 #. type: Bullet: '- '
 #: docs/admin/35.email/index.mdx:21
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "carefully configure mail DNS records according to [this documentation](/admin/get_started/post_install/dns_config) ;\n"
-msgstr ""
+msgstr "Mail-DNS-Einträge nach [dieser Dokumentation](/admin/get_started/post_install/dns_config) sorgfältig konfigurieren;\n"
 
 #. type: Title ##
 #: docs/admin/35.email/index.mdx:23
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Email clients"
-msgstr ""
+msgstr "E-Mail-Programme"
 
 #. type: Plain text
 #: docs/admin/35.email/index.mdx:26
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "To interact with the email sever (read and send emails), you can either install a webclient such as Roundcube or Rainloop on your server - or configure a desktop/mobile client as described in [this page](/admin/email/clients).\n"
-msgstr ""
+msgstr "Um mit dem E-Mail-Server zu interagieren (E-Mails lesen und senden), können Sie entweder einen Webclient wie Roundcube oder Rainloop auf Ihrem Server installieren - oder einen Desktop-/Mobil-Client, wie auf [dieser Seite](/admin/email/clients) beschrieben, konfigurieren.\n"
 
 #. type: Plain text
 #: docs/admin/35.email/index.mdx:28
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Desktop and mobile clients have the advantage of copying your emails to the device, allowing offline viewing and relative protection against possible hardware failures of your server.\n"
-msgstr ""
+msgstr "Desktop- und Mobil-Clients haben den Vorteil, dass sie Ihre E-Mails auf das Gerät kopieren, was eine Offline-Anzeige und einen relativen Schutz gegen mögliche Hardware-Ausfälle Ihres Servers ermöglicht.\n"
 
 #. type: Title ##
 #: docs/admin/35.email/index.mdx:29
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Configuring email aliases and auto-forwards"
-msgstr ""
+msgstr "Konfigurieren von E-Mail-Aliasen und automatische Weiterleitungen"
 
 #. type: Plain text
 #: docs/admin/35.email/index.mdx:32
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Mail aliases and forwards can be configured for each users. For instance, the first user created on the server automatically has an alias `root@the.domain.tld` configured - meaning that an email sent to this address will end in the inbox of the first user. Automatic forwards may be configured, for instance if an user doesn't want to configure an additional email account and just wants to receive emails from the server on, say, his/her gmail address.\n"
-msgstr ""
+msgstr "Mail-Aliase und Weiterleitungen können für jeden Benutzer konfiguriert werden. Beispielsweise wird für den ersten,  auf dem Server angelegten Benutzer automatisch ein Alias `root@the.domain.tld` konfiguriert.  Das bedeutet das eine an diese Adresse gesendete E-Mail im Posteingang des ersten Benutzers endet. Automatische Weiterleitungen können konfiguriert werden, z.B. wenn ein Benutzer kein zusätzliches E-Mail-Konto einrichten möchte und nur E-Mails vom Server, z.B. auf seine E-Mail-Adresse, empfangen möchte.\n"
 
 #. type: Plain text
 #: docs/admin/35.email/index.mdx:34
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Another feature which few people know about is the use of suffixes beginning with \"+\". For example, emails sent to `johndoe+booking@the.domain.tld` will automatically land in the `booking` dir (lowercase) of John Doe's mailbox or in John Doe's inbox if `booking` directory doesn't exist . It is a practical technique for example to provide an e-mail address to a website, then easily sort (via automatic filters) the mail coming from this website.\n"
-msgstr ""
+msgstr "Eine weitere Funktion, die nur wenigen Leuten bekannt ist, ist die Verwendung von Suffixen, die mit \"+\" beginnen. Zum Beispiel landen E-Mails, die an `johndoe+buchung@die.domain.tld` gesendet werden, automatisch im Ordner `buchung` (Kleinbuchstaben) der Mailbox von John Doe oder im Posteingang von John Doe, wenn der Ordner `buchung` nicht existiert. Es ist eine praktische Technik, z.B. eine E-Mail-Adresse auf einer Website anzugeben und dann die von dieser Website kommende E-Mail einfach (über automatische Filter) zu sortieren.\n"
 
 #. type: Title ##
 #: docs/admin/35.email/index.mdx:37
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "What happens if my server becomes unavailable?"
-msgstr ""
+msgstr "Was passiert wenn mein Server nicht erreichbar ist?"
 
 #. type: Plain text
 #: docs/admin/35.email/index.mdx:40
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "If your server becomes unavailable, emails sent to your server will stay in a pending queue on the sender's side for as long as ~5 days. The sender's host will regularly try to resend the email, until it drops it if it was unable to send it.\n"
-msgstr ""
+msgstr "Wenn Ihr Server nicht mehr verfügbar ist, bleiben die an Ihren Server gesendeten E-Mails bis zu ~5 Tage lang in einer Warteschlange auf der Seite des Absenders. Der Hoster des Absenders wird regelmäßig versuchen, die E-Mail erneut zu senden, bis er sie verwirft, falls er sie nicht versenden konnte.\n"
 
 #. type: Title ##
 #: docs/admin/35.email/index.mdx:41
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Forms to remove its IP address from the blacklist"
-msgstr ""
+msgstr "Formulare zum Entfernen seiner IP-Adresse von der schwarzen Liste"
 
 #. type: Plain text
 #: docs/admin/35.email/index.mdx:46
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "It is possible that the emails sent from your YunoHost instance are considered as spam by the big email services.\n"
 "Is it possible that the IP address from your server have been previously been used to sent spam or that these email services consider your server as a spam sender.\n"
 "To ensure that your servers’ IP address isn't on these blacklists and to remove it from them, follow this [link](/admin/troubleshooting/blacklist_forms).\n"
 msgstr ""
+"It is possible that the emails sent from your YunoHost instance are considered as spam by the big email services.\n"
+"Is it possible that the IP address from your server have been previously been used to sent spam or that these email services consider your server as a spam sender.\n"
+"To ensure that your servers’ IP address isn't on these blacklists and to remove it from them, follow this [link](/admin/troubleshooting/blacklist_forms).\n"
 
 #. type: Title ##
 #: docs/admin/35.email/index.mdx:47
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Migrating email from an email provider to a YunoHost instance"
-msgstr ""
+msgstr "Eine Migration von E-Mails von einem E-Mail-Provider zu einer YunoHost-Instanz"
 
 #. type: Plain text
 #: docs/admin/35.email/index.mdx:50
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "See [this page](/admin/email/migration).\n"
-msgstr ""
+msgstr "Siehe [diese Seite](/admin/email/migration).\n"
 
 #. type: Title ##
 #: docs/admin/35.email/index.mdx:51
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Configuring SMTP relay"
-msgstr ""
+msgstr "Configuring SMTP relay"
 
 #. type: Plain text
 #: docs/admin/35.email/index.mdx:53
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "See [this page](/admin/tutorials/email_configure_relay).\n"
-msgstr ""
+msgstr "See [this page](/admin/tutorials/email_configure_relay).\n"

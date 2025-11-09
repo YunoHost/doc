@@ -1,141 +1,145 @@
-# Italian translations for YunoHost documentation package
-# Copyright (C) 2025 YunoHost Contributors
-# This file is distributed under the same license as the YunoHost documentation package.
-# Automatically generated, 2025.
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2025-11-09 20:53+0100\n"
-"PO-Revision-Date: 2025-11-09 20:53+0100\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
-"Language: it\n"
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2025-11-09 21:01+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/50.troubleshooting/20.ipv6.mdx:1
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Setting up IPv6"
-msgstr ""
+msgstr "Impostare IPv6"
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/20.ipv6.mdx:6
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "IPv6 may work out of the box in many cases. But in some cases or some specific provider, you may need to tweak things manually to enable IPv6.\n"
-msgstr ""
+msgstr "IPv6 dovrebbe funzionare automaticamente in molti casi ma in alcune situzioni o con alcuni provider può essere necessario configurare alcune impostazioni direttamante per abilitarlo.\n"
 
 #. type: Title ##
 #: docs/admin/50.troubleshooting/20.ipv6.mdx:7
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "With a VPS from OVH"
-msgstr ""
+msgstr "Usando una VPS di OVH"
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/20.ipv6.mdx:11
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "OVH gives one IPv4 address and one IPv6 address for VPS but by default, only IPv4 is OK.\n"
 "Please check [The OVH documentation](https://docs.ovh.com/gb/en/vps/configuring-ipv6/).\n"
 msgstr ""
+"OVH fornisce un indirizzo IPv4 e uno IPv6 ma di default funziona solo il primo.\n"
+"Please check [The OVH documentation](https://docs.ovh.com/gb/en/vps/configuring-ipv6/).\n"
 
 #. type: Title ###
 #: docs/admin/50.troubleshooting/20.ipv6.mdx:12
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Configure the DNS server"
-msgstr ""
+msgstr "Configurare il server DNS"
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/20.ipv6.mdx:15
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Also check [the documentation for subdomains](/admin/tutorials/domains/dns_subdomains).\n"
-msgstr ""
+msgstr "Also check [the documentation for subdomains](/admin/tutorials/domains/dns_subdomains).\n"
 
 #. type: Title ###
 #: docs/admin/50.troubleshooting/20.ipv6.mdx:16
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Configure the server"
-msgstr ""
+msgstr "Configurare il server"
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/20.ipv6.mdx:19
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "On the OVH panel, you will copy 3 elements:\n"
-msgstr ""
+msgstr "Nella pagina di configurazione di OVH dovrai copiare questi 3 elementi:\n"
 
 #. type: Bullet: '- '
 #: docs/admin/50.troubleshooting/20.ipv6.mdx:23
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "the IPv6 address\n"
-msgstr ""
+msgstr "l'indirizzo IPv6\n"
 
 #. type: Bullet: '- '
 #: docs/admin/50.troubleshooting/20.ipv6.mdx:23
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "the IPv6 gateway address\n"
-msgstr ""
+msgstr "l'indirizzo del gateway IPv6\n"
 
 #. type: Bullet: '- '
 #: docs/admin/50.troubleshooting/20.ipv6.mdx:23
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "the IPv6 prefix. On OVH's VPS SSD, prefixes are `/128` because you have only *one* IPv6 address.\n"
-msgstr ""
+msgstr "il prefisso IPv6. Nelle VPS SSD di OVH i prefissi sono `/128` perché hai a disposizione solo *uno* indirizzo IPv6.\n"
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/20.ipv6.mdx:26
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "On your VPS, create a backup of the network configuration with : `cp /etc/network/interfaces ~/interfaces` in home directory.\n"
 "Then, you can edit the configuration file (`/etc/network/interfaces`) with the following.\n"
 msgstr ""
+"Nella tua VPS crea un backup  della configurazione di rete con il comando: `cp /etc/network/interfaces ~/interfaces` nella directory home.\n"
+"Poi puoi modificare il file di configurazione (`/etc/network/interfaces`) come indicato di seguito. Considera però che:\n"
 
 #. type: Fenced div block (note)
 #: docs/admin/50.troubleshooting/20.ipv6.mdx:27
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "In this example, it is assumed that your network interface is `eth0`. If it's different (check with `ip a`) you need to adapt the example below.\n"
-msgstr ""
+msgstr "In questo esempio si assume che il nome della tua interfaccia di rete sia `eth0`. Nel caso invece che sia differente (controlla con il comando `ip a`) devi adattare di conseguenza l'esempio qui sotto.\n"
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/20.ipv6.mdx:42
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Now, save the file and restart the network service with : `service networking restart`. (TODO : ideally we should find a way to validate the content of the configuration, otherwise it could fuck up the network stack and get disconnected from the VPS ?)\n"
-msgstr ""
+msgstr "Now, save the file and restart the network service with : `service networking restart`. (TODO : ideally we should find a way to validate the content of the configuration, otherwise it could fuck up the network stack and get disconnected from the VPS ?)\n"
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/20.ipv6.mdx:44
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Check your configuration with these commands :\n"
-msgstr ""
+msgstr "Check your configuration with these commands :\n"
 
 #. type: Bullet: '- '
 #: docs/admin/50.troubleshooting/20.ipv6.mdx:49
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "`ip a` to display network interfaces and addresses\n"
-msgstr ""
+msgstr "`ip a` to display network interfaces and addresses\n"
 
 #. type: Bullet: '- '
 #: docs/admin/50.troubleshooting/20.ipv6.mdx:49
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "`hostname -I` to display the system IP addresses\n"
-msgstr ""
+msgstr "`hostname -I` to display the system IP addresses\n"
 
 #. type: Bullet: '- '
 #: docs/admin/50.troubleshooting/20.ipv6.mdx:49
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "try to ping an IPv6 server (for example you can use `ping6 ip6.yunohost.org`)\n"
-msgstr ""
+msgstr "try to ping an IPv6 server (for example you can use `ping6 ip6.yunohost.org`)\n"
 
 #. type: Bullet: '- '
 #: docs/admin/50.troubleshooting/20.ipv6.mdx:49
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "try to ping your server from your PC (assuming your PC has IPv6 enabled)\n"
-msgstr ""
+msgstr "try to ping your server from your PC (assuming your PC has IPv6 enabled)\n"
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/20.ipv6.mdx:50
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "If it's ok, it's ok !\n"
-msgstr ""
+msgstr "If it's ok, it's ok !\n"

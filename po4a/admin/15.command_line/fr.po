@@ -1,164 +1,164 @@
-# French translations for YunoHost documentation package
-# Copyright (C) 2025 YunoHost Contributors
-# This file is distributed under the same license as the YunoHost documentation package.
-# Automatically generated, 2025.
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2025-11-09 20:53+0100\n"
-"PO-Revision-Date: 2025-11-09 20:53+0100\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
-"Language: fr\n"
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2025-11-09 21:01+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/15.command_line.mdx:1
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "🛠️ SSH and command line"
-msgstr ""
+msgstr "🛠️ SSH et la ligne de commande"
 
 #. type: Title ##
 #: docs/admin/15.command_line.mdx:8
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "What's SSH?"
-msgstr ""
+msgstr "Qu’est-ce que SSH ?"
 
 #. type: Plain text
 #: docs/admin/15.command_line.mdx:11
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "**SSH** stands for Secure Shell, and refers to a protocol that allows to remotely control and administer a machine using the command line interface (CLI). It is available by default in any terminal on GNU/Linux and macOS. On Windows, you may want to use [MobaXterm](https://mobaxterm.mobatek.net/download-home-edition.html) (after launching it, click on Session then SSH).\n"
-msgstr ""
+msgstr "**SSH** est un acronyme pour Secure Shell, et désigne un protocole qui permet de contrôler et administrer à distance une machine via la ligne de commande (CLI). C'est aussi une commande disponible de base dans les terminaux de GNU/Linux et macOS. Sous Windows, il vous faudra utiliser le logiciel [MobaXterm](https://mobaxterm.mobatek.net/download-home-edition.html) (après l'avoir lancé, cliquer sur Session puis SSH).\n"
 
 #. type: Plain text
 #: docs/admin/15.command_line.mdx:13
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "The command line interface (CLI) is, in the computer world, the original (and more technical) way of interacting with a computer compared to graphical interface. Command line interfaces are generally said to be more complete, powerful or efficient than a graphical interface, though also more difficult to learn.\n"
-msgstr ""
+msgstr "L'interface en ligne de commande (CLI) est, en informatique, la manière originale (et plus technique) d'interagir avec un ordinateur, comparée aux interfaces graphiques. La ligne de commande est généralement considérée comme plus complète, puissante et efficace que les interfaces graphiques, bien que plus difficile à apprendre.\n"
 
 #. type: Title ##
 #: docs/admin/15.command_line.mdx:14
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "How to connect"
-msgstr ""
+msgstr "Comment se connecter ?"
 
 #. type: Title ###
 #: docs/admin/15.command_line.mdx:16
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Credentials *before* running the postinstall"
-msgstr ""
+msgstr "Identifiants *avant* la postinstall"
 
 #. type: Bullet: '- '
 #: docs/admin/15.command_line.mdx:20
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "If you are **installing at home**, the default credentials are login: `root` and password: `yunohost` (or `1234` if you flashed an armbian image)\n"
-msgstr ""
+msgstr "Si vous faites une **installation à la maison**, les identifiants par défaut sont login: `root`, mot de passe: `yunohost` (ou `1234` si vous partez d'une image armbian).\n"
 
 #. type: Bullet: '- '
 #: docs/admin/15.command_line.mdx:20
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "If you are **installing a remote server (VPS)**, your provider should have communicated you the login and password (or allowed you to configure an SSH key)\n"
-msgstr ""
+msgstr "Si vous faites une **installation sur un serveur distant (VPS)**, votre fournisseur devrait vous avoir communiqué le login et le mot de passe (ou vous proposer de configurer une clé SSH).\n"
 
 #. type: Title ###
 #: docs/admin/15.command_line.mdx:21
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Credentials *after* running the postinstall"
-msgstr ""
+msgstr "Identifiants *après* la postinstall"
 
 #. type: Plain text
 #: docs/admin/15.command_line.mdx:25
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "During the postinstall, you've been asked to choose an user and an administration password. This user account allows you to connect to the server through SSH. The password becomes also the new password for the `root` user. Additionally, **the `root` SSH login becomes disabled after the postinstall and you should log in using the user account created during postinstall !**. The only exception is that you may still be able to login using `root` *from the local network - or from a direct console on the server* (this is to cover the event where the LDAP server is broken and the users members of the `admins` group are unusables).\n"
-msgstr ""
+msgstr "Durant la post-installation, vous avez défini un compte et un mot de passe d'administration. Le compte défini lors de la post-installation vous permet de vous connecter en SSH. De plus, le mot de passe défini dans la post-installation devient le nouveau mot de passe pour l'utilisateur `root`. Enfin, **la connexion en SSH avec l'utilisateur `root` est désactivée et il vous faut utiliser le compte défini durant la post-installation !**. L'exception à cette règle est qu'il reste possible de se logger en root *depuis le réseau local - ou depuis une console en direct sur la machine* (ce qui peut être utile dans l'éventualité où le serveur LDAP est inactif et l'utilisateur admin ne fonctionne plus).\n"
 
 #. type: Fenced div block (tip)
 #: docs/admin/15.command_line.mdx:26
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "If you connected with the administration account and would like to become `root` for convenience (e.g. to avoid typing `sudo` in front of every command), you can become `root` using the command `sudo su` or `sudo -i`.\n"
-msgstr ""
+msgstr "Si vous êtes connecté en tant avec le compte d'administration et souhaitez devenir `root` pour plus de confort (par exemple, ne pas avoir à taper `sudo` à chaque commande), vous pouvez devenir `root` en tapant `sudo su` ou `sudo -i`.\n"
 
 #. type: Title ###
 #: docs/admin/15.command_line.mdx:30
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Address to use"
-msgstr ""
+msgstr "Adresse à utiliser"
 
 #. type: Plain text
 #: docs/admin/15.command_line.mdx:33
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "If you are **installing at home** (e.g. on a Raspberry Pi or OLinuXino or old computer):\n"
-msgstr ""
+msgstr "Si vous hébergez votre serveur **à la maison** (par ex. Raspberry Pi ou OLinuXino ou vieil ordinateur)\n"
 
 #. type: Bullet: '- '
 #: docs/admin/15.command_line.mdx:37
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "you should be able to connect to your server using `yunohost.local` (or `yunohost-2.local`, depending on how many servers are on your network).\n"
-msgstr ""
+msgstr "vous devriez pouvoir vous connecter à la machine en utilisant `yunohost.local` (ou `yunohost-2.local`, selon le nombre de serveurs sur le réseau).\n"
 
 #. type: Bullet: '- '
 #: docs/admin/15.command_line.mdx:37
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "if `yunohost.local` and the like do not work, your need to [find out the local IP of the server](/admin/get_started/post_install/find_ip).\n"
-msgstr ""
+msgstr "si `yunohost.local` et consorts ne fonctionnent pas, il vous faut [trouver l'IP locale de votre serveur](/admin/get_started/post_install/find_ip).\n"
 
 #. type: Bullet: '- '
 #: docs/admin/15.command_line.mdx:37
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "if you installed a server at home but are attempting to connect from outside your local network, make sure port 22 is correctly forwarded to your server.\n"
-msgstr ""
+msgstr "si vous avez installé votre serveur à la maison mais essayez d'y accéder depuis l'extérieur du réseau local, assurez-vous d'avoir bien configuré une redirection de port pour le port 22.\n"
 
 #. type: Plain text
 #: docs/admin/15.command_line.mdx:39
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "If your server is a remote server (VPS), your provider should have communicated you the IP address of the machine\n"
-msgstr ""
+msgstr "S'il s'agit d'une machine distante (VPS), votre fournisseur devrait vous avoir communiqué l'IP de votre machine.\n"
 
 #. type: Plain text
 #: docs/admin/15.command_line.mdx:41
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "In any cases, if you already configured a domain name pointing to the appropriate IP, it's much better to use `your.domain.tld` instead of the IP address.\n"
-msgstr ""
+msgstr "Dans tous les cas, si vous avez déjà configuré un nom de domaine qui pointe sur l'IP appropriée, il est plus pratique d'utiliser `votre.domaine.tld` plutôt que l'adresse IP.\n"
 
 #. type: Title ###
 #: docs/admin/15.command_line.mdx:42
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Connecting"
-msgstr ""
+msgstr "Se connecter"
 
 #. type: Plain text
 #: docs/admin/15.command_line.mdx:45
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "The SSH command typically looks like:\n"
-msgstr ""
+msgstr "Ci-dessous quelques exemples de commande SSH typiques :\n"
 
 #. type: Fenced div block (note)
 #: docs/admin/15.command_line.mdx:62
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "`fail2ban` will ban your IP for 10 minutes if you perform 10 failed login attempts. If you need to unban the IP, have a look at the page about [Fail2Ban](/admin/troubleshooting/fail2ban)\n"
-msgstr ""
+msgstr "`fail2ban` bannira votre IP pendant 10 minutes si vous échouez plus de 10 fois à vous identifier. Pour débannir une IP, vous pouvez regarder la page sur [Fail2Ban](/admin/troubleshooting/fail2ban).\n"
 
 #. type: Title ##
 #: docs/admin/15.command_line.mdx:66
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Which other users may connect to the server?"
-msgstr ""
+msgstr "Autoriser un utilisateur YunoHost standard"
 
 #. type: Plain text
 #: docs/admin/15.command_line.mdx:69
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "By default, only YunoHost users in the `admins` group can log in to YunoHost's SSH and SFTP servers. Non-admin YunoHost users can't connect via SSH for security reasons. With the permissions system it is possible to specifically grant SFTP or even SSH access to non-admin users.\n"
-msgstr ""
+msgstr "Par défaut, seuls les comptes dans le groupe `admins` peuvent se connecter en SSH et SFTP sur une instance YunoHost. Les comptes hors de ce groupe ne peuvent se connecter pour des raisons de sécurité. Avec le système de permissions il est possible d'autoriser la connexion en SFTP ou si c'est vraiment nécessaire en SSH.\n"
 
 #. type: Fenced div block (caution)
 #: docs/admin/15.command_line.mdx:70
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Be careful who you give SSH access to. This increases even more the attack surface available to a malicious user.\n"
-msgstr ""
+msgstr "Faites attention à qui vous donnez accès à SSH. Cela augmente encore plus la surface d'attaque disponible pour un utilisateur malveillant.\n"
 
 #. type: Plain text
 #: docs/admin/15.command_line.mdx:76
@@ -170,27 +170,27 @@ msgstr ""
 #: docs/admin/20.users/groups_and_permissions.mdx:187
 #: docs/admin/20.users/groups_and_permissions.mdx:244
 #: docs/admin/25.domains/certificate.mdx:26
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<TabItem value=\"web\" label=\"From the web interface\">\n"
-msgstr ""
+msgstr "<TabItem value=\"web\" label=\"From the web interface\">\n"
 
 #. type: Plain text
 #: docs/admin/15.command_line.mdx:78
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Go to `Users > Manage groups and permissions`.\n"
-msgstr ""
+msgstr "Se rendre dans `Utilisateurs > Gérer les groupes et les autorisations`\n"
 
 #. type: Plain text
 #: docs/admin/15.command_line.mdx:80
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "From here, you can add SFTP or SSH permissions to any user or group.\n"
-msgstr ""
+msgstr "À partir de là, il est possible d'ajouter les permissions SFTP ou SSH à un utilisateur ou un groupe au choix.\n"
 
 #. type: Plain text
 #: docs/admin/15.command_line.mdx:82
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "If you want to add an SSH public key to the user, you have to do it from the command line, as the web interface does not yet offer this feature.\n"
-msgstr ""
+msgstr "Si vous souhaitez ajouter une clé publique SSH à l'utilisateur, vous devez le faire en ligne de commande, l'interface web ne proposant pas encore cette fonctionnalité.\n"
 
 #. type: Plain text
 #: docs/admin/15.command_line.mdx:85
@@ -202,133 +202,133 @@ msgstr ""
 #: docs/admin/20.users/groups_and_permissions.mdx:198
 #: docs/admin/20.users/groups_and_permissions.mdx:249
 #: docs/admin/25.domains/certificate.mdx:45
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<TabItem value=\"cli\" label=\"From the command line\">\n"
-msgstr ""
+msgstr "<TabItem value=\"cli\" label=\"From the command line\">\n"
 
 #. type: Plain text
 #: docs/admin/15.command_line.mdx:87
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "To allow a user or group to access via SFTP or SSH:\n"
-msgstr ""
+msgstr "Pour autoriser un utilisateur ou un groupe à accéder en SFTP ou en SSH :\n"
 
 #. type: Plain text
 #: docs/admin/15.command_line.mdx:96
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "To remove permission:\n"
-msgstr ""
+msgstr "Pour enlever la permission :\n"
 
 #. type: Plain text
 #: docs/admin/15.command_line.mdx:105
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Finally, it is possible to add, delete and list SSH keys, to improve SSH access security, using the commands:\n"
-msgstr ""
+msgstr "Enfin, il est possible d'ajouter, de supprimer et de lister des clés SSH, pour améliorer la sécurité de l'accès SSH, avec les commandes :\n"
 
 #. type: Title ##
 #: docs/admin/15.command_line.mdx:115
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Security and SSH"
-msgstr ""
+msgstr "SSH et sécurité"
 
 #. type: Plain text
 #: docs/admin/15.command_line.mdx:118
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "A more extensive discussion about security & SSH can be found on the [dedicated page](/admin/tutorials/security).\n"
-msgstr ""
+msgstr "Une discussion plus complète sur la sécurité de SSH peut être trouvée sur [la page dédiée](/admin/tutorials/security).\n"
 
 #. type: Title ##
 #: docs/admin/15.command_line.mdx:119
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "The command line"
-msgstr ""
+msgstr "La ligne de commande"
 
 #. type: Fenced div block (info)
 #: docs/admin/15.command_line.mdx:121
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Providing a full tutorial about the command line is quite beyond the scope of the YunoHost documentation : for this, consider reading a dedicated tutorial such as [this one](https://ryanstutorials.net/linuxtutorial/) or [this one](http://linuxcommand.org/). But be reassured that you don't need to be a CLI expert to start using it !\n"
-msgstr ""
+msgstr "Fournir un tutoriel complet sur la ligne de commande est bien au-delà du cadre de la documentation de YunoHost : pour cela, référez-vous à des tutoriels comme [celui-ci](https://doc.ubuntu-fr.org/tutoriel/console_ligne_de_commande) ou [celui-ci (en)](http://linuxcommand.org/). Mais soyez rassuré, il n'y a pas besoin d'être un expert pour commencer à l'utiliser !\n"
 
 #. type: Title ###
 #: docs/admin/15.command_line.mdx:125
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "The `yunohost` command"
-msgstr ""
+msgstr "La commande `yunohost`"
 
 #. type: Plain text
 #: docs/admin/15.command_line.mdx:128
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "The `yunohost` command can be used to administer your server and perform the various actions similarly to what you do on the webadmin. The command must be launched either from the `root` user or from a user member of the `admins` group by preceeding them with `sudo`. (ProTip™ : you can become `root` with the command `sudo su` as an user member of `admins` group).\n"
-msgstr ""
+msgstr "La commande `yunohost` peut être utilisée pour administrer votre serveur ou réaliser les mêmes actions que celles disponibles sur la webadmin. Elle doit être lancée depuis l'utilisateur `root`, ou bien depuis un compte membre du groupe `admins` en précédant la commande de `sudo`. (ProTip™ : il est possible de devenir `root` via la commande `sudo su` en tant que membre du group `admins`.)\n"
 
 #. type: Plain text
 #: docs/admin/15.command_line.mdx:130
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "YunoHost commands usually have this kind of structure :\n"
-msgstr ""
+msgstr "Les commandes YunoHost ont ce type de structure :\n"
 
 #. type: Plain text
 #: docs/admin/15.command_line.mdx:139
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Don't hesitate to browse and ask for more information about a given category or action using the the `--help` option. For instance, those commands :\n"
-msgstr ""
+msgstr "N'hésitez pas à naviguer et demander des informations à propos d'une catégorie ou action donnée via l'option `--help`. Par exemple, ces commandes :\n"
 
 #. type: Plain text
 #: docs/admin/15.command_line.mdx:147
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "will successively list all the categories available, then the actions available in the `user` category, then the usage of the action `user create`. You might notice that the YunoHost command tree is built with a structure similar to the YunoHost admin pages.\n"
-msgstr ""
+msgstr "vont successivement lister toutes les catégories disponibles, puis les actions de la catégorie `user`, puis expliquer comment utiliser l'action `user create`. Vous devriez remarquer que l'arbre des commandes YunoHost suit une structure similaire aux pages de la webadmin.\n"
 
 #. type: Title ###
 #: docs/admin/15.command_line.mdx:148
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "The `yunopaste` command"
-msgstr ""
+msgstr "La commande `yunopaste`"
 
 #. type: Plain text
 #: docs/admin/15.command_line.mdx:151
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "This command allow you to share with an other person the output of a command.\n"
-msgstr ""
+msgstr "Cette commande est utile lorsque vous voulez communiquer à une autre personne le retour d'une commande.\n"
 
 #. type: Plain text
 #: docs/admin/15.command_line.mdx:153
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Example:\n"
-msgstr ""
+msgstr "Exemple :\n"
 
 #. type: Title ###
 #: docs/admin/15.command_line.mdx:158
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "The `ynh-vpnclient-loadcubefile.sh` command"
-msgstr ""
+msgstr "The `ynh-vpnclient-loadcubefile.sh` command"
 
 #. type: Plain text
 #: docs/admin/15.command_line.mdx:161
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "This command is only available if you have the `VPN Client` application installed. You can use it to load a new .cube in case you can't get to the VPN Client interface to do so.\n"
-msgstr ""
+msgstr "This command is only available if you have the `VPN Client` application installed. You can use it to load a new .cube in case you can't get to the VPN Client interface to do so.\n"
 
 #. type: Title ###
 #: docs/admin/15.command_line.mdx:166
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Some useful commands"
-msgstr ""
+msgstr "Quelques commandes utiles"
 
 #. type: Plain text
 #: docs/admin/15.command_line.mdx:169
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "If your administration web interface indicates that the API is unreachable, try starting `yunohost-api`:\n"
-msgstr ""
+msgstr "Si votre interface web d'administration indique que l'API est injoignable, essayez de démarrer `yunohost-api` :\n"
 
 #. type: Plain text
 #: docs/admin/15.command_line.mdx:175
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "If you can no longer connect with an user member of `admins` group via SSH and via the web interface, the `slapd` service may be down, try restarting it:\n"
-msgstr ""
+msgstr "Si vous ne parvenez plus à vous connecter avec l'utilisateur `admin` via SSH et via l'interface web, le service `slapd` est peut-être éteint, essayez de le redémarrer :\n"
 
 #. type: Plain text
 #: docs/admin/15.command_line.mdx:181
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "If you have manually modified configurations and want to know the changes:\n"
-msgstr ""
+msgstr "Si vous avez des configurations modifiées manuellement et souhaitez connaître les modifications :\n"
 

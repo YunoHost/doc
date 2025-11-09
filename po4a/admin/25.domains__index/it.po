@@ -1,272 +1,297 @@
-# Italian translations for YunoHost documentation package
-# Copyright (C) 2025 YunoHost Contributors
-# This file is distributed under the same license as the YunoHost documentation package.
-# Automatically generated, 2025.
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: YunoHost documentation VERSION\n"
+"Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2025-11-09 20:53+0100\n"
-"PO-Revision-Date: 2025-11-09 20:53+0100\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
-"Language: it\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/25.domains/index.mdx:1
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "🌐 Domains"
-msgstr ""
+msgstr "🌐 Domini"
 
 #. type: Plain text
 #: docs/admin/25.domains/index.mdx:9
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "YunoHost lets you manage and serve multiple domains on a single server. So you can host, for example, a blog and Nextcloud on a first domain `yolo.com`, and a webmail client on a second domain `swag.nohost.me`. Each domain is automatically configured to handle web services and e-mail.\n"
-msgstr ""
+msgstr "YunoHost permette l'installazione e la gestione di più domini sullo stesso server. Potrete quindi ospitare, ad esempio, un blog e un'istanza Nextcloud su un primo dominio `yolo.com`, e un client webmail su un secondo dominio `swag.nohost.me`. Ogni dominio viene automaticamente configurato affinché possa gestire i servizi web e l'email.\n"
 
 #. type: Plain text
 #: docs/admin/25.domains/index.mdx:11
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Domains can be managed in the 'Domains' section of the webadmin, or via the `yunohost domain` category of the command line.\n"
-msgstr ""
+msgstr "I domini possono essere configurati a partire dalla sezione 'Domini' della pagina webadmin, o attraverso la sezione `yunohost domain` da linea di comando.\n"
 
 #. type: Plain text
 #: docs/admin/25.domains/index.mdx:13
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Whenever you add a domain, it is assumed that you have purchased (or at least control) the domain, so that you can manage its [DNS configuration](/admin/get_started/post_install/dns_config). An exception is [domains in `.nohost.me`, `.noho.st` and `ynh.fr`](/admin/tutorials/domains/dns_nohost_me) which are offered by the YunoHost Project, and can be directly integrated with YunoHost through automatic DynDNS configuration. To limit abuse and costs, an instance can only have one domain offered at a time, but you can add as many sub-domains to it as you like. For example, if you choose `example.ynh.co.uk` you can then add the domains `video.example.ynh.co.uk` or `www.exemple.ynh.fr` or any other sub-domain you may require.\n"
-msgstr ""
+msgstr "Ogni volta che aggiungete un dominio, sia esso vostro o del quale abbiate facoltà di gestione, dovete averne il pieno controllo per la poter effettuare la [configurazione del DNS](/admin/get_started/post_install/dns_config). Fanno eccezione i [domini in .nohost.me, .noho.st et ynh.fr](/admin/tutorials/domains/dns_nohost_me) offerti dal progetto YunoHost, che possono essere direttamente integrati nel vostro server YunoHost grazie alla configurazione automatica di un servizio DynDns. Al fine di impedire abusi e limitare i costi, un'istanza YunoHost può essere configurata con un solo dominio offerto, tuttavia potete aggiungere tutti i suoi sottodomini che desiderate. Ad esempio, se scegliete il dominio `exemple.ynh.fr` potrete in un secondo tempo aggiungere i domini `video.exemple.ynh.fr` o `www.exemple.ynh.fr` o qualsiasi altro sottodominio che possa servirvi.\n"
 
 #. type: Plain text
 #: docs/admin/25.domains/index.mdx:15
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Domains can be managed in the 'Domain' section of the webadmin, or through the `yunohost domain` category of the command line.\n"
-msgstr ""
+msgstr "I domini possono essere configurati a partire dalla sezione 'Domini' della pagina webadmin, o attraverso la sezione `yunohost domain` da linea di comando.\n"
 
 #. type: Plain text
 #: docs/admin/25.domains/index.mdx:17
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "![A screenshot of the webadmin domain interface with an \"Add domain\" button and a list of domains](/img/webadmin/webadmin_domain.png)\n"
-msgstr ""
+msgstr "![L'interfaccia webadmin di gestione dei domini, con il pulsante \"Aggiungere un dominio\" e l'elenco dei domini](/img/webadmin/webadmin_domain.png)\n"
 
 #. type: Title ##
 #: docs/admin/25.domains/index.mdx:18
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "3 types of domains"
-msgstr ""
+msgstr "3 tipologie di domini"
 
 #. type: Plain text
 #: docs/admin/25.domains/index.mdx:22
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<TabItem value=\"nohost\" label=\"Yunohost's domains (the free and easy way)\">\n"
-msgstr ""
+msgstr "<TabItem value=\"nohost\" label=\"Yunohost's domains (the free and easy way)\">\n"
 
 #. type: Plain text
 #: docs/admin/25.domains/index.mdx:24
 #: docs/admin/45.tutorials/05.domains/dns_nohost_me.mdx:6
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "In order to make self-hosting as accessible as possible, the YunoHost Project provides a *free* and *automatically configured* domain name service. By using this service, you won't have to [configure DNS records](/admin/get_started/post_install/dns_config) yourself, which can be tedious and technical.\n"
 msgstr ""
+"#-#-#-#-#  it.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"Al fine di facillitare la gestione di un server, il progetto YunoHost fornisce un servizio di nomi di dominio *gratuiti* e *automaticamente configurati*. Utilizzando questo servizio, non dovrete [configurare i record DNS](/admin/get_started/post_install/dns_config) operazione delicata e tecnica. Prendete atto del fatto che non sarete i veri proprietari del dominio scelto.\n"
+"#-#-#-#-#  it.po (YunoHost documentation VERSION)  #-#-#-#-#\n"
 
 #. type: Plain text
 #: docs/admin/25.domains/index.mdx:26
 #: docs/admin/45.tutorials/05.domains/dns_nohost_me.mdx:8
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "The following (sub)domains are offered:\n"
 msgstr ""
+"#-#-#-#-#  it.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"Sono disponibili i seguenti (sotto) domini:\n"
+"#-#-#-#-#  it.po (YunoHost documentation VERSION)  #-#-#-#-#\n"
 
 #. type: Bullet: '- '
 #: docs/admin/25.domains/index.mdx:30
 #: docs/admin/45.tutorials/05.domains/dns_nohost_me.mdx:12
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "`whateveryouwant.nohost.me`;\n"
 msgstr ""
+"#-#-#-#-#  it.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"`miodominio.nohost.me` ;\n"
+"#-#-#-#-#  it.po (YunoHost documentation VERSION)  #-#-#-#-#\n"
 
 #. type: Bullet: '- '
 #: docs/admin/25.domains/index.mdx:30
 #: docs/admin/45.tutorials/05.domains/dns_nohost_me.mdx:12
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "`whateveryouwant.noho.st`;\n"
 msgstr ""
+"#-#-#-#-#  it.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"`miodominio.noho.st` ;\n"
+"#-#-#-#-#  it.po (YunoHost documentation VERSION)  #-#-#-#-#\n"
 
 #. type: Bullet: '- '
 #: docs/admin/25.domains/index.mdx:30
 #: docs/admin/45.tutorials/05.domains/dns_nohost_me.mdx:12
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "`whateveryouwant.ynh.fr`.\n"
 msgstr ""
+"#-#-#-#-#  it.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"`miodominio.ynh.fr`.\n"
+"#-#-#-#-#  it.po (YunoHost documentation VERSION)  #-#-#-#-#\n"
 
 #. type: Plain text
 #: docs/admin/25.domains/index.mdx:32
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "In more, YunoHost uses an integrated dynamic DNS mechanism, so your server can stay reachable even if your public IP change.\n"
-msgstr ""
+msgstr "YunoHost utilizza un sistema di DNS dinamico, assicurando al vostro server di essere sempre raggiungibile anche quando il vostro IP pubblico cambia.\n"
 
 #. type: Plain text
 #: docs/admin/25.domains/index.mdx:34
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "To get one of this domain you simply need to choose `I don't have a domaine name…` during the initial configuration (postinstall) or on the `Add domain` page.\n"
-msgstr ""
+msgstr "Per ottenere un dominio tra quelli proposti, sarà sufficiente scegliere `Non ho ancora un nome di dominio...` durante la configurazione post installazione o in un secondo tempo nella sezione `Aggiungere un dominio` della webadmin/domini.\n"
 
 #. type: Plain text
 #: docs/admin/25.domains/index.mdx:36
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "![Here a screenshot of the \"Add domain\" page where you can choose \"I don't have a domain name\"](/img/webadmin/webadmin_dyndns.png)\n"
-msgstr ""
+msgstr "![Pagina webadmin, sezione domini « Aggiungere un dominio » dove potete scegliere « Non ho ancora un nome di dominio »](/img/webadmin/webadmin_dyndns.png)\n"
 
 #. type: Fenced div block (info)
 #: docs/admin/25.domains/index.mdx:37
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "To limit resources costs and abuses, each instance may only have one of these domains setup at any given time, however you can add as many sub-domains of it as you wish. For example, if you choose `example.noho.st` you can later add the domains `video.example.noho.st` or `www.example.ynh.noho.st` or any other sub-domain you may need. In this case you need to select `I already have a domain name`.\n"
-msgstr ""
+msgstr "Al fine di impedire abusi e limitare i costi, una istanza YunoHost può essere configurata con un solo dominio offerto, tuttavia potete aggiungere tutti i suoi sotto domini che desiderate. Ad esempio, se scegliete il dominio `exemple.ynh.fr` potrete in un secondo tempo aggiungere i domini `video.exemple.ynh.fr` o `www.exemple.ynh.fr` o qualsiasi altro sottodominio che possa servirvi. In questo caso dovete scegliere `Possiedo un nome di dominio`.\n"
 
 #. type: Plain text
 #: docs/admin/25.domains/index.mdx:42
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "[More information on this domains](/admin/tutorials/domains/dns_nohost_me)\n"
-msgstr ""
+msgstr "[Per maggiori informazioni sui domini offerti dal progetto YunoHost](/admin/tutorials/domains/dns_nohost_me)\n"
 
 #. type: Plain text
 #: docs/admin/25.domains/index.mdx:45
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<TabItem value=\"own\" label=\"Your own domains\">\n"
-msgstr ""
+msgstr "<TabItem value=\"own\" label=\"Your own domains\">\n"
 
 #. type: Plain text
 #: docs/admin/25.domains/index.mdx:47
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Having your own domain brings several advantages:\n"
-msgstr ""
+msgstr "Possedere un proprio dominio comporta molti vantaggi:\n"
 
 #. type: Bullet: '- '
 #: docs/admin/25.domains/index.mdx:50
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "more control and autonomy\n"
-msgstr ""
+msgstr "maggiore controllo e maggiore autonomia\n"
 
 #. type: Bullet: '- '
 #: docs/admin/25.domains/index.mdx:50
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "simpler domain name (for example directly in .net or .org)\n"
-msgstr ""
+msgstr "un nome più semplice e più chiaro (con il solo .net, .org, ecc dopo il nome del dominio).\n"
 
 #. type: Plain text
 #: docs/admin/25.domains/index.mdx:52
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "However, you have to pay for it each year (about 15€/year ... depending on the TLD) and you have to do some extra configuration to [setup a correct DNS zone](/admin/get_started/post_install/dns_config). Our diagnosis tool can trigger alert to help you to do this configuration.\n"
-msgstr ""
+msgstr "Avere un proprio dominio implica però dei costi (a partire da circa 15€ per anno...) e dovrete effettuare alcune [configurazioni sulla zona DNS](/admin/get_started/post_install/dns_config). Lo strumento di diagnostica integrato in YunoHost, può esservi di aiuto nella configurazione dei record DNS.\n"
 
 #. type: Plain text
 #: docs/admin/25.domains/index.mdx:54
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "If you already have your own domain, you can simply click \"I already have a domain name…\". If you don't, in order to simplify and automate the DNS configuration, we suggest you to buy it from a [registrar whose API is supported by YunoHost](/admin/get_started/providers/registrar/).\n"
-msgstr ""
+msgstr "Se già possedete un nome di dominio, dovete semplicemente scegliere \"Ho già un nome di dominio…\". Nel caso non abbiate ancora un vostro dominio, vi suggeriamo di acquistarlo presso un registrar con [API supportate da YunoHost](/admin/get_started/providers/registrar/) semplificando così la configurazione del DNS.\n"
 
 #. type: Plain text
 #: docs/admin/25.domains/index.mdx:56
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "![Here a screenshot of the \"Add domain\" page where you can choose \"I already have a domain name\"](/img/webadmin/webadmin_domain_owndomain.png)\n"
-msgstr ""
+msgstr "![Pagina \"Aggiungere un dominio\" dove potere scegliere \"Ho già un nome di dominio\"](/img/webadmin/webadmin_domain_owndomain.png)\n"
 
 #. type: Plain text
 #: docs/admin/25.domains/index.mdx:58
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "[Know more on DNS zone configuration](/admin/get_started/post_install/dns_config)\n"
-msgstr ""
+msgstr "[Ulteriori informazioni sulla zona DNS](/admin/get_started/post_install/dns_config)\n"
 
 #. type: Plain text
 #: docs/admin/25.domains/index.mdx:61
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<TabItem value=\"local\" label=\"Local domains (only reachable in your local network)\">\n"
-msgstr ""
+msgstr "<TabItem value=\"local\" label=\"Local domains (only reachable in your local network)\">\n"
 
 #. type: Plain text
 #: docs/admin/25.domains/index.mdx:65
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "Starting from YunoHost v4.3, domains ending by `.local` are fully supported, in addition to the default `yunohost.local`.\n"
 "They do not use the DNS protocol, but the mDNS one (also known as Zeroconf, Bonjour), which allows them to be published with no specific configuration but exclusively on your local network or VPN.\n"
 "Their use is this especially suitable when you do not need your apps to be available on the Internet.\n"
 msgstr ""
+"Dalla versione v4.3 di YunoHost, i domini che terminano con `.local` sono pienamente supportati, oltre al `yunohost.local` di default.\n"
+"Questi non utilizzano il protocollo DNS ma il protocollo mDNS (chiamato anche Zeroconf, Bonjour), che permette la loro diffusione senza particolari configurazioni ma esclusivamente sulla LAN o sulla vostra VPN.\n"
+"Sono quindi perfettamente utilizzabili se non dovete esporre le vostre app in internet.\n"
 
 #. type: Plain text
 #: docs/admin/25.domains/index.mdx:67
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "![Here a screenshot of the \"Add domain\" page where you can choose \"I already have a domain name\" and setup your domain ending by .local](/img/webadmin/webadmin_domain_local.png)\n"
-msgstr ""
+msgstr "![Pagina \"Aggiungere un dominio\" dove potete scegliere \"Ho già un nome di dominio\" e configurare un dominio che termina con .local](/img/webadmin/webadmin_domain_local.png)\n"
 
 #. type: Fenced div block (info)
 #: docs/admin/25.domains/index.mdx:68
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "mDNS protocol does not allow for subdomains to be created. So `domain.local` will work, while `sub.domain.local` is not possible.\n"
-msgstr ""
+msgstr "Il protocollo mDNS non permette l'aggiunta di sotto domini. Quindi `miodominio.local` sarà valido, `sotto.miodominio.local` non lo sarà.\n"
 
 #. type: Plain text
 #: docs/admin/25.domains/index.mdx:75
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "`Yunomdns` service takes care of publishing your `.local` domains on your network.\n"
 "It has a configuration file, `/etc/yunohost/mdns.yml`, which allows you to choose which domains are published, and on which network interfaces.\n"
 "This file is automatically regenerated whenever you add or delete a `.local` domain.\n"
 msgstr ""
+"Il compito di annunciare l'esistenza dei vostri domini `.local` sulla LAN è affidato al servizio `yunomdns`\n"
+"Il suo file di configurazione `/etc/yunohost/mdns.yml` permette di scegliere quali domini diffondere e su quali interfacce di rete.\n"
+"Questo file viene rigenerato automaticamente ogni volta che aggiungete o cancellate un dominio `.local`.\n"
 
 #. type: Plain text
 #: docs/admin/25.domains/index.mdx:78
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "The service will always try to publish `yunohost.local`. If you have multiple YunoHost servers on your network, try `yunohost-2.local`, and so on.\n"
 "The number may change depending on which server starts first, so do not rely on it to use actual apps and create your own domains.\n"
 msgstr ""
+"Il servizio `yunomdns` cercherà di annunciare sempre il dominio `yunohost.local`. Se avete più di un server YunoHost sulla LAN, probabilmente esso prenderà il nome di `yunohost-2.local`, `yunohost-3.local` ecc.\n"
+"La numerazione rischia però di cambiare in base a quale server si avvierà per primo. Assegnate sempre un nome di dominio locale univoco ad ogni server.\n"
 
 #. type: Fenced div block (caution)
 #: docs/admin/25.domains/index.mdx:79
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "Unfortunately, Android devices before version 12 (released in 2021) do not seem to be listening to mDNS protocol.\n"
 "To be able to reach `.local` domains on your Android devices, you will have to add in their DNS settings your YunoHost server's local IP address.\n"
 msgstr ""
+"Purtroppo, i device con una versione di Android antecedente alla 12 (rilasciata nel 2021) non sempre gestiscono il protocollo mDNS.\n"
+"Per poter accedere ai server `.local` su tail device sarà necessario digitare l'indirizzo IP del vostro server YunoHost.\n"
 
 #. type: Title ##
 #: docs/admin/25.domains/index.mdx:87
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "DNS configuration"
-msgstr ""
+msgstr "Configurazione DNS"
 
 #. type: Plain text
 #: docs/admin/25.domains/index.mdx:90
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "DNS (Domain Name System) is a system that enables computers worldwide to translate human-readable domain names (such as `yolo.com`) into machine-readable IP addresses (such as `11.22.33.44`). For this translation (and other features) to work, DNS records need to be carefully configured.\n"
-msgstr ""
+msgstr "DNS (Domain Name System) è lo strumento che permette ai computer di tradurre i nomi di dominio, dal formato leggibile all'essere umano (ad esempio `yolo.com`) in indirizzi IP, leggibili dai computer (esempio `11.22.33.44`). Affinché questa traduzione (ed altre funzioni) avvenga è necessario configurare con cura i record DNS.\n"
 
 #. type: Plain text
 #: docs/admin/25.domains/index.mdx:92
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "YunoHost can generate a recommended DNS configuration for each domain, including the records required for e-mail. The recommended DNS configuration is available in the web administrator via Domains > (the domain) > DNS configuration, or with the command `yunohost domain dns suggest the.domain.tld`.\n"
-msgstr ""
+msgstr "YunoHost può generare una configurazione DNS consigliata per ogni dominio, compresi i record necessari al servizio mail. La configurazione DNS consigliata è disponibile nella pagina web di amministrazione nella sezione Domini > (dominio) > configurazione DNS, oppure tramite il comando `yunohost domain dns-conf suggest the.domain.tld`.\n"
 
 #. type: Title ##
 #: docs/admin/25.domains/index.mdx:93
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "About Non-latin characters"
-msgstr ""
+msgstr "Caratteri non latini"
 
 #. type: Plain text
 #: docs/admin/25.domains/index.mdx:96
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "If your domain has special, non-latin characters, it will be transformed by YunoHost into its [internationalized version](https://en.wikipedia.org/wiki/Internationalized_domain_name) through [Punycode](https://en.wikipedia.org/wiki/Punycode). So when you use the command line, you have to use the punycode format return for example by `yunohost domain list`.\n"
-msgstr ""
+msgstr "Se il vostro dominio include caratteri speciali non latini, essi verranno convertiti da YunoHost in [versione internazionale](https://en.wikipedia.org/wiki/Internationalized_domain_name) o in [Punycode](https://en.wikipedia.org/wiki/Punycode). Nel caso di utilizzo della linea di comando, dovete utilizzare il formato punycode restituito dal comando `yunohost domain list`.\n"
 
 #. type: Title ##
 #: docs/admin/25.domains/index.mdx:97
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "SSL/HTTPS certificates"
-msgstr ""
+msgstr "Certificati SSL/HTTPS"
 
 #. type: Plain text
 #: docs/admin/25.domains/index.mdx:99
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Another important aspect of domain configuration is the SSL/HTTPS certificate. YunoHost is integrated with Let's Encrypt, so once your server is correctly reachable from anybody on the internet through the domain name, the administrator can request a Let's Encrypt certificate. See the documentation about [certificates](/admin/domains/certificate) for more information.\n"
-msgstr ""
+msgstr "Un altro aspetto importante nella configurazioni dei domini è il certificato SSL/HTTPS. In YunoHost viene integrato il servizio Let's Encrypt, e quindi, al fine di rendere raggiungibile il vostro server da tutto l'internet tramite il nome  di dominio, l'amministratore può richiedere l'installazione del certificato Let's Encrypt. Vedi la documentazione sui [certificati](/admin/domains/certificate) per ulteriori informazioni.\n"

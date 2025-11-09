@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2025-11-09 20:53+0100\n"
+"POT-Creation-Date: 2025-11-09 21:01+0100\n"
 "PO-Revision-Date: 2025-11-09 20:53+0100\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -45,9 +45,15 @@ msgstr ""
 #: docs/admin/40.backups/index.mdx:25 docs/admin/40.backups/index.mdx:74
 #: docs/admin/40.backups/index.mdx:140
 #: docs/admin/45.tutorials/35.email_configure_relay.mdx:49
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "  <TabItem value=\"web\" label=\"From the web interface\">\n"
 msgstr ""
+"#-#-#-#-#  it.po (YunoHost documentation VERSION)  #-#-#-#-#\n"
+"#-#-#-#-#  it.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"  <TabItem value=\"web\" label=\"From the web interface\">\n"
+"#-#-#-#-#  it.po (YunoHost documentation VERSION)  #-#-#-#-#\n"
+"#-#-#-#-#  it.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"  <TabItem value=\"web\" label=\"From the web interface\">\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/_configuration.mdx:23
@@ -214,9 +220,13 @@ msgstr ""
 #: docs/admin/30.apps/index.mdx:109 docs/admin/30.apps/index.mdx:139
 #: docs/admin/40.backups/index.mdx:32 docs/admin/40.backups/index.mdx:88
 #: docs/admin/40.backups/index.mdx:147 docs/admin/40.backups/index.mdx:174
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "  <TabItem value=\"cli\" label=\"From the command line\">\n"
 msgstr ""
+"#-#-#-#-#  it.po (YunoHost documentation VERSION)  #-#-#-#-#\n"
+"#-#-#-#-#  it.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"  <TabItem value=\"cli\" label=\"From the command line\">\n"
+"#-#-#-#-#  it.po (YunoHost documentation VERSION)  #-#-#-#-#\n"
 
 #. type: Title ##
 #: docs/admin/05.get_started/20.install_on/_configuration.mdx:108

@@ -1,171 +1,175 @@
-# German translations for YunoHost documentation package
-# Copyright (C) 2025 YunoHost Contributors
-# This file is distributed under the same license as the YunoHost documentation package.
-# Automatically generated, 2025.
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: YunoHost documentation VERSION\n"
+"Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2025-11-09 20:53+0100\n"
-"PO-Revision-Date: 2025-11-09 20:53+0100\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
-"Language: de\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/35.email/05.clients.mdx:1
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Configure email clients"
-msgstr ""
+msgstr "E-Mail-Client konfigurieren"
 
 #. type: Plain text
 #: docs/admin/35.email/05.clients.mdx:9
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "You can fetch and send emails using your YunoHost instance from desktop email clients such as Thunderbird Desktop or on your smartphone with applications like K-9 Mail.\n"
-msgstr ""
+msgstr "Sie können E-Mails über Ihre YunoHost-Instanz von Desktop-E-Mail-Clients wie Thunderbird Desktop oder auf Ihrem Smartphone mit Anwendungen wie K-9 Mail abrufen und versenden.\n"
 
 #. type: Plain text
 #: docs/admin/35.email/05.clients.mdx:11
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Modern mail clients should be able to configure themselves automatically. If autoconfiguration fails, you can do it manually following the instructions below. (If the autoconfiguration fails though, it should be understood as a bug in YunoHost, and we would be glad to read your feedback to try to reproduce the issue on our side!)\n"
-msgstr ""
+msgstr "Moderne Mail-Clients sollten in der Lage sein, sich automatisch zu konfigurieren. Wenn die Autokonfiguration fehlschlägt, können Sie sie manuell vornehmen, indem Sie die folgenden Anweisungen befolgen. (Wenn die Autokonfiguration fehlschlägt, sollte dies als ein Fehler in YunoHost verstanden werden, und wir würden uns freuen, Ihr Feedback zu lesen, um das Problem auf unserer Seite zu reproduzieren).\n"
 
 #. type: Title ###
 #: docs/admin/35.email/05.clients.mdx:12
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Generic settings"
-msgstr ""
+msgstr "Allgemeine Einstellungen"
 
 #. type: Plain text
 #: docs/admin/35.email/05.clients.mdx:15
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Here are the element you should enter to manually configure your mail client (`domain.tld` refers to what's after the @ in your email address, and `username` what's before @).\n"
-msgstr ""
+msgstr "Hier sind die Elemente, die Sie eingeben sollten, um Ihren Mail-Client manuell zu konfigurieren (`domain.tld` bezieht sich auf das, was nach dem @ in Ihrer E-Mail Adresse steht, und `Benutzername` auf das, was vor dem @ steht).\n"
 
 #. type: Plain text
 #: docs/admin/35.email/05.clients.mdx:20
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "| Protocol | Port | Encryption | Authentication  | Username                               |\n"
 "| :--:     | :-:  | :--:       | :--:            | :--:                                   |\n"
 "| IMAP     | 993  | SSL/TLS    | Normal password | `username` (without the `@domain.tld`) |\n"
 "| SMTP     | 587  | STARTTLS   | Normal password | `username` (without the `@domain.tld`) |\n"
 msgstr ""
+"| Protokoll | Port | Verschlüsselung | Authentifizierung | Benutzername |\n"
+"| :--:     | :-:  | :--:       | :--:            | :--:                                   |\n"
+"| IMAP | 993 | SSL/TLS | Normales Passwort | `Benutzername` (ohne die `@domain.tld`) |\n"
+"| SMTP | 587 | STARTTLS | Normales Passwort | `Benutzername` (ohne die `@domain.tld`) |\n"
 
 #. type: Title ###
 #: docs/admin/35.email/05.clients.mdx:21
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Client by client"
-msgstr ""
+msgstr "Client für Client"
 
 #. type: Plain text
 #: docs/admin/35.email/05.clients.mdx:25
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<TabItem value=\"thunderbird\" label=\"Mozilla Thunderbird\">\n"
-msgstr ""
+msgstr "<TabItem value=\"thunderbird\" label=\"Mozilla Thunderbird\">\n"
 
 #. type: Title #####
 #: docs/admin/35.email/05.clients.mdx:26
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<SmallInline url='/img/icons/logo-thunderbird.png'/> Configure Thunderbird Desktop (on a desktop computer)"
-msgstr ""
+msgstr "<SmallInline url='/img/icons/logo-thunderbird.png'/> Thunderbird Desktop konfigurieren (auf einem Desktop-Computer)"
 
 #. type: Plain text
 #: docs/admin/35.email/05.clients.mdx:29
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "To manually configure a new account in Thunderbird Desktop, add the account information, then click on 'Configure manually'.\n"
-msgstr ""
+msgstr "Um ein neues Konto in Thunderbird Desktop manuell zu konfigurieren, fügen Sie die Kontoinformationen hinzu und wählen:\n"
 
 #. type: Bullet: '- '
 #: docs/admin/35.email/05.clients.mdx:33
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "For the incoming server, use IMAP with port 993 and SSL/TLS.\n"
-msgstr ""
+msgstr "dann Port 993 mit SSL/TLS für IMAP\n"
 
 #. type: Bullet: '- '
 #: docs/admin/35.email/05.clients.mdx:33
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "For outgoing server, use port 587 with STARTTLS. \n"
-msgstr ""
+msgstr "Port 587 mit STARTTLS für SMTP. \n"
 
 #. type: Bullet: '- '
 #: docs/admin/35.email/05.clients.mdx:33
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Select 'Normal Password' for the the authentication method of both. \n"
-msgstr ""
+msgstr "Wählen Sie anschließend \"Normales Passwort\" für die Authentifizierung und klicken Sie auf \"Erweiterte Konfiguration\".\n"
 
 #. type: Plain text
 #: docs/admin/35.email/05.clients.mdx:35
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "You may need to accept the certificate exceptions for fetching mails and after you send your first mail. Don't forget to remove the dot before the domain name.\n"
-msgstr ""
+msgstr "Möglicherweise müssen Sie die Zertifikatsausnahmen für das Abrufen von E-Mails und nach dem Senden Ihrer ersten E-Mail akzeptieren. Vergessen Sie nicht, den Punkt vor dem Domainnamen zu entfernen.\n"
 
 #. type: Bullet: '- '
 #: docs/admin/35.email/05.clients.mdx:40
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "[Manage alias mails](https://support.mozilla.org/en-US/kb/configuring-email-aliases)\n"
-msgstr ""
+msgstr "[Alias-Mails verwalten](https://support.mozilla.org/de/kb/configuring-email-aliases)\n"
 
 #. type: Plain text
 #: docs/admin/35.email/05.clients.mdx:43
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<TabItem value=\"k9\" label=\"K-9 Mail (Thunderbird Mobile)\">\n"
-msgstr ""
+msgstr "<TabItem value=\"k9\" label=\"K-9 Mail (Thunderbird Mobile)\">\n"
 
 #. type: Title #####
 #: docs/admin/35.email/05.clients.mdx:44
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<SmallInline url='/img/icons/logo-k9.png'/> Configure K-9 Mail / Thunderbird Mobile (on Android)"
-msgstr ""
+msgstr "<SmallInline url='/img/icons/logo-k9.png'/> K-9 Mail / Thunderbird Mobile konfigurieren (auf Android)"
 
 #. type: Plain text
 #: docs/admin/35.email/05.clients.mdx:47
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Follow the following steps. (As for Thunderbird Desktop, you might need to accept certificates at some points)\n"
-msgstr ""
+msgstr "Führen Sie die folgenden Schritte aus. (Wie bei Thunderbird Desktop müssen Sie möglicherweise an einigen Stellen Zertifikate akzeptieren)\n"
 
 #. type: Bullet: '- '
 #: docs/admin/35.email/05.clients.mdx:49
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Enter your email address then click \"Next\"\n"
-msgstr ""
+msgstr "Enter your email address then click \"Next\"\n"
 
 #. type: Bullet: '- '
 #: docs/admin/35.email/05.clients.mdx:52
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Enter your domain name in the \"Server\" field, fill the \"Security\" and \"Port\" fields as per the IMAP row in the table above, then enter your password in the \"Password\" field and click \"Next\"\n"
-msgstr ""
+msgstr "Enter your domain name in the \"Server\" field, fill the \"Security\" and \"Port\" fields as per the IMAP row in the table above, then enter your password in the \"Password\" field and click \"Next\"\n"
 
 #. type: Bullet: '- '
 #: docs/admin/35.email/05.clients.mdx:55
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Again, your domain name in the \"Server\" field, but fill the \"Security\" and \"Port\" fields as per the SMTP row in the table above, then enter your password in the \"Password\" field and click \"Next\"\n"
-msgstr ""
+msgstr "Again, your domain name in the \"Server\" field, but fill the \"Security\" and \"Port\" fields as per the SMTP row in the table above, then enter your password in the \"Password\" field and click \"Next\"\n"
 
 #. type: Plain text
 #: docs/admin/35.email/05.clients.mdx:60
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<TabItem value=\"dekko\" label=\"Dekko\">\n"
-msgstr ""
+msgstr "<TabItem value=\"dekko\" label=\"Dekko\">\n"
 
 #. type: Title #####
 #: docs/admin/35.email/05.clients.mdx:61
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<SmallInline url='/img/icons/logo-dekko.png'/> Configure Dekko (on Ubuntu Touch)"
-msgstr ""
+msgstr "<SmallInline url='/img/icons/logo-dekko.png'/> Dekko konfigurieren (auf Ubuntu Touch)"
 
 #. type: Plain text
 #: docs/admin/35.email/05.clients.mdx:64
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "The first time you can simply choose \"Add account\". If you already have an account configured, tap the hamburger menu then tap the gear, choose Mail, Accounts and press the '+'-symbol.\n"
-msgstr ""
+msgstr "Beim ersten Mal können Sie einfach \"Konto hinzufügen\" wählen. Wenn Sie bereits ein Konto eingerichtet haben, tippen Sie auf das Hamburger-Menü, dann auf das Zahnrad, wählen Sie Mail, Konten und drücken Sie das '+'-Symbol.\n"
 
 #. type: Plain text
 #: docs/admin/35.email/05.clients.mdx:66
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Then you choose IMAP. Fill in the fields and press Next. Now Dekko will look for the configuration. Check that all fields are correct. Make sure you have your YunoHost username, NOT your email address and choose \"Allow untrusted certificates\". Do this for IMAP and SMTP and press Next. Dekko will now synchronise the account after which you are done. Congratz!\n"
-msgstr ""
+msgstr "Dann wählen Sie IMAP. Füllen Sie die Felder aus und drücken Sie auf Weiter. Jetzt sucht Dekko nach der Konfiguration. Überprüfen Sie, ob alle Felder korrekt ausgefüllt sind. Vergewissern Sie sich, dass Sie Ihren YunoHost-Benutzernamen und NICHT Ihre Mailadresse eingeben und wählen Sie \"Nicht vertrauenswürdige Zertifikate zulassen\". Tun Sie dies für IMAP und SMTP und drücken Sie auf Weiter. Dekko wird nun das Konto synchronisieren, danach sind Sie fertig. Herzlichen Glückwunsch!\n"
