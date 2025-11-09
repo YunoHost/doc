@@ -2,8 +2,7 @@ import tempfile
 import os
 from pathlib import Path
 
-#langs = ["ar", "ca", "de", "es", "fr", "it", "oc", "ru"]
-langs = ["fr"]
+langs = ["ar", "ca", "de", "es", "fr", "it", "oc", "ru"]
 
 options = [
     "--master-language en",
@@ -23,6 +22,7 @@ tags_to_ignore_even_if_they_have_attributes = [
     "InitialConfiguration",
     "InstallScript",
     "LangRedirect",
+    "DocCardList",
 ]
 patterns_to_ignore = [
     r'import.*;',
@@ -39,7 +39,7 @@ conf = f"""
 [po4a_alias:markdown] text opt:"--option markdown --option breaks='{'|'.join(patterns_to_ignore)}' --option neverwrap --option yfm_keys={','.join(yaml_front_matter_keys_to_translate)}"
 
 [po4a_langs] {' '.join(langs)}
-[po4a_paths] po4a/$master/$master.pot $lang:po4a/$master/$lang.po
+[po4a_paths] po4a/admin/$master/$master.pot $lang:po4a/admin/$master/$lang.po
 
 """
 
@@ -47,13 +47,15 @@ base_dir = Path(__name__).parent.parent
 
 os.chdir(base_dir)
 for page in sorted(Path("./docs/admin").rglob("*.mdx")):
-    page = str(page).split("/", 1)[1]  # Remove the starting 'docs/'
-    pot_id = page.replace("/", "__")[:-len(".mdx")]
-    conf += f'\n[type: markdown] ./docs/{page} $lang:i18n/$lang/docusaurus-plugin-content-docs/current/{page} pot:{pot_id} opt:"--keep 0"'
+    page = str(page).split("/", 2)[-1]  # Remove the starting 'docs/admin'
+    pot = page.replace("/", "__")[:-len(".mdx")]
+    conf += f'\n[type: markdown] ./docs/admin/{page} $lang:i18n/$lang/docusaurus-plugin-content-docs/current/admin/{page} pot:{pot} opt:"--keep 0"'
+
+print(conf)
 
 with tempfile.NamedTemporaryFile(prefix="po4a_", suffix=".cfg", dir=base_dir) as po4a_conf:
     po4a_conf.write(conf.encode())
     os.system(f"po4a {po4a_conf.name} --no-translations")
 
-    # We dont want to translate code blocks, the vast majority is language agnostic
-    os.system("sed -i '/^#. type: Fenced .* block/,/^$/d' po4a/*/*.po po4a/*/*.pot")
+# We dont want to translate code blocks, the vast majority is language agnostic
+os.system("sed -i '/^#. type: Fenced code block/,/^$/d' po4a/admin/*/*.po po4a/admin/*/*.pot")
