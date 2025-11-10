@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2025-11-09 21:01+0100\n"
+"POT-Creation-Date: 2025-11-10 02:13+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,13 +18,43 @@ msgstr ""
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/_configuration.mdx:19
-#: docs/admin/05.get_started/20.install_on/_configuration.mdx:116
-#: docs/admin/30.apps/index.mdx:100 docs/admin/30.apps/index.mdx:132
-#: docs/admin/40.backups/index.mdx:25 docs/admin/40.backups/index.mdx:74
-#: docs/admin/40.backups/index.mdx:140
+#: docs/admin/05.get_started/20.install_on/_configuration.mdx:122
+#: docs/admin/15.command_line.mdx:76
+#: docs/admin/20.users/groups_and_permissions.mdx:35
+#: docs/admin/20.users/groups_and_permissions.mdx:63
+#: docs/admin/20.users/groups_and_permissions.mdx:84
+#: docs/admin/20.users/groups_and_permissions.mdx:128
+#: docs/admin/20.users/groups_and_permissions.mdx:153
+#: docs/admin/20.users/groups_and_permissions.mdx:187
+#: docs/admin/20.users/groups_and_permissions.mdx:244
+#: docs/admin/25.domains/certificate.mdx:26 docs/admin/30.apps/index.mdx:34
+#: docs/admin/30.apps/index.mdx:104 docs/admin/30.apps/index.mdx:136
+#: docs/admin/40.backups/index.mdx:22 docs/admin/40.backups/index.mdx:71
+#: docs/admin/40.backups/index.mdx:137
 #: docs/admin/45.tutorials/35.email_configure_relay.mdx:49
 #, no-wrap
-msgid "  <TabItem value=\"web\" label=\"From the web interface\">\n"
+msgid "<TabItem value=\"web\" label=\"From the web interface\">\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/_configuration.mdx:30
+#: docs/admin/05.get_started/20.install_on/_configuration.mdx:104
+#: docs/admin/05.get_started/20.install_on/_configuration.mdx:129
+#: docs/admin/15.command_line.mdx:85
+#: docs/admin/20.users/groups_and_permissions.mdx:42
+#: docs/admin/20.users/groups_and_permissions.mdx:70
+#: docs/admin/20.users/groups_and_permissions.mdx:95
+#: docs/admin/20.users/groups_and_permissions.mdx:135
+#: docs/admin/20.users/groups_and_permissions.mdx:160
+#: docs/admin/20.users/groups_and_permissions.mdx:198
+#: docs/admin/20.users/groups_and_permissions.mdx:249
+#: docs/admin/25.domains/certificate.mdx:45 docs/admin/30.apps/index.mdx:39
+#: docs/admin/30.apps/index.mdx:113 docs/admin/30.apps/index.mdx:143
+#: docs/admin/40.backups/index.mdx:29 docs/admin/40.backups/index.mdx:85
+#: docs/admin/40.backups/index.mdx:144 docs/admin/40.backups/index.mdx:171
+#: docs/admin/45.tutorials/35.email_configure_relay.mdx:66
+#, no-wrap
+msgid "<TabItem value=\"cli\" label=\"From the command line\">\n"
 msgstr ""
 
 #. type: Yaml Front Matter Hash Value: title
@@ -174,7 +204,7 @@ msgstr ""
 
 #. type: Fenced div block (warning)
 #: docs/admin/45.tutorials/35.email_configure_relay.mdx:58
-#: docs/admin/45.tutorials/35.email_configure_relay.mdx:73
+#: docs/admin/45.tutorials/35.email_configure_relay.mdx:74
 #, no-wrap
 msgid "<FAIcon icon=\"fa-exclamation-triangle\"/> Password with `#` char won't works properly due to postfix limitation (it's possible other chars are forbidden, don't hesitate to report it to update this doc).\n"
 msgstr ""
@@ -186,93 +216,91 @@ msgid "![Option-Relais-Smtp](/img/webadmin/relay_smtp_option_webadmin_en.png)\n"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/45.tutorials/35.email_configure_relay.mdx:67
+#: docs/admin/45.tutorials/35.email_configure_relay.mdx:68
 #, no-wrap
-msgid ""
-"  <TabItem value=\"cli\" label=\"From the command line\">\n"
-"In order to setup your YunoHost to use your SMTP relay, you will have to configure four things:\n"
+msgid "In order to setup your YunoHost to use your SMTP relay, you will have to configure four things:\n"
 msgstr ""
 
 #. type: Bullet: '1. '
-#: docs/admin/45.tutorials/35.email_configure_relay.mdx:72
+#: docs/admin/45.tutorials/35.email_configure_relay.mdx:73
 #, no-wrap
 msgid "Your SMTP relay URL (for this tutorial we will use `smtprelay.tld`)\n"
 msgstr ""
 
 #. type: Bullet: '2. '
-#: docs/admin/45.tutorials/35.email_configure_relay.mdx:72
+#: docs/admin/45.tutorials/35.email_configure_relay.mdx:73
 #, no-wrap
 msgid "The port on which you access the relay (for this tutorial we will use port 2525 below)\n"
 msgstr ""
 
 #. type: Bullet: '3. '
-#: docs/admin/45.tutorials/35.email_configure_relay.mdx:72
+#: docs/admin/45.tutorials/35.email_configure_relay.mdx:73
 #, no-wrap
 msgid "Your SMTP relay username (for this tutorial we will use `username`)\n"
 msgstr ""
 
 #. type: Bullet: '4. '
-#: docs/admin/45.tutorials/35.email_configure_relay.mdx:72
+#: docs/admin/45.tutorials/35.email_configure_relay.mdx:73
 #, no-wrap
 msgid "Your SMTP relay password (for this tutorial we will use `password`)\n"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/45.tutorials/35.email_configure_relay.mdx:78
+#: docs/admin/45.tutorials/35.email_configure_relay.mdx:79
 #, no-wrap
 msgid "Your SMTP relay will obviously provide you with these four things, that should be available in your control panel or whatsoever.\n"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/45.tutorials/35.email_configure_relay.mdx:80
+#: docs/admin/45.tutorials/35.email_configure_relay.mdx:81
 #, no-wrap
 msgid "You can log into your YunoHost server using SSH:\n"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/45.tutorials/35.email_configure_relay.mdx:86
+#: docs/admin/45.tutorials/35.email_configure_relay.mdx:87
 #, no-wrap
 msgid "Then you can update the three values as below:\n"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/45.tutorials/35.email_configure_relay.mdx:96
+#: docs/admin/45.tutorials/35.email_configure_relay.mdx:97
 #, no-wrap
 msgid "It may be a good idea to double confirm your settings by doing:\n"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/45.tutorials/35.email_configure_relay.mdx:105
+#: docs/admin/45.tutorials/35.email_configure_relay.mdx:106
 #, no-wrap
 msgid "Your SMTP relay is now configured!\n"
 msgstr ""
 
 #. type: Fenced div block (warning)
-#: docs/admin/45.tutorials/35.email_configure_relay.mdx:106
+#: docs/admin/45.tutorials/35.email_configure_relay.mdx:107
 #, no-wrap
 msgid "<FAIcon icon=\"fa-exclamation-triangle\"/> From now on, a non trusty SMTP relay provider could read or use the data of all the emails you send without telling you (but still won't be able to read nor to use the data from emails you receive).\n"
 msgstr ""
 
 #. type: Title ####
-#: docs/admin/45.tutorials/35.email_configure_relay.mdx:110
+#: docs/admin/45.tutorials/35.email_configure_relay.mdx:111
 #, no-wrap
 msgid "Relay all emails, even those from domains managed by YunoHost"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/45.tutorials/35.email_configure_relay.mdx:113
+#: docs/admin/45.tutorials/35.email_configure_relay.mdx:114
 #, no-wrap
 msgid "If you have plenty of trust in your SMTP relay, have a second IMAP server that you wish or are forced to use instead of the YunoHost one, you can choose to relay all emails even those from domain names managed by YunoHost by commenting the following two lines in `/etc/postfix/main.cf` :\n"
 msgstr ""
 
 #. type: Title ###
-#: docs/admin/45.tutorials/35.email_configure_relay.mdx:119
+#: docs/admin/45.tutorials/35.email_configure_relay.mdx:120
 #, no-wrap
 msgid "Step 4: Check your setup"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/45.tutorials/35.email_configure_relay.mdx:123
+#: docs/admin/45.tutorials/35.email_configure_relay.mdx:124
 #, no-wrap
 msgid ""
 "You can check your setup by sending emails and try if everything works.\n"

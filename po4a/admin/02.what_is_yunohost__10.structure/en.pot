@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2025-11-09 20:53+0100\n"
+"POT-Creation-Date: 2025-11-10 02:13+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -43,7 +43,7 @@ msgstr ""
 #. type: Plain text
 #: docs/admin/02.what_is_yunohost/10.structure.mdx:12
 #, no-wrap
-msgid "The administrator can create users and install applications, among other admin actions. Users automatically have their own email address when they get created. Users will also be able to connect to the user portal (SSO) to access applications. Some applications can typically be installed either as publicly-accessible, or as private, i.e. only some users will have access to it.\n"
+msgid "The administrator can create users and install applications, among other admin actions. Users automatically have their own email address when they get created. Users will also be able to connect to the user portal (SSO) to access applications. Some applications can typically be installed either as publicly-accessible, or as private, i.e. only some users will have access to it depending on which groups they are member of.\n"
 msgstr ""
 
 #. type: Plain text

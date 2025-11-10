@@ -6,11 +6,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-11-09 21:01+0100\n"
+"POT-Creation-Date: 2025-11-10 02:13+0100\n"
 "PO-Revision-Date: 2025-11-09 23:48+0000\n"
 "Last-Translator: Weblate Admin <yunohost@translate.yunohost.org>\n"
-"Language-Team: French <https://translate.yunohost.org/projects/"
-"doc-experimental/50troubleshooting__15noaccess/fr/>\n"
+"Language-Team: French <https://translate.yunohost.org/projects/doc-"
+"experimental/50troubleshooting__15noaccess/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -40,8 +40,7 @@ msgstr "Cette page va vous aider à diagnostiquer, obtenir un accès et si besoi
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:9
 #, no-wrap
 msgid "You have access to the server with its local IP address, but not its domain name"
-msgstr ""
-"Vous avez accès au serveur via l'adresse IP, mais pas avec le nom de domaine"
+msgstr "Vous avez accès au serveur via l'adresse IP, mais pas avec le nom de domaine"
 
 #. type: Title ###
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:11

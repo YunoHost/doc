@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2025-11-09 20:53+0100\n"
+"POT-Creation-Date: 2025-11-10 02:13+0100\n"
 "PO-Revision-Date: 2025-11-09 20:53+0100\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -43,99 +43,204 @@ msgid "If your host OS is 32 bits, be sure to download the 32-bit image.\n"
 msgstr ""
 
 #. type: Title ##
-#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:102
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:110
 #: docs/admin/05.get_started/20.install_on/virtualbox.mdx:68
 #, no-wrap
 msgid "<FAIcon icon=\"fa-rocket\"/> Launch the graphical install"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:105
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:113
 #: docs/admin/05.get_started/20.install_on/virtualbox.mdx:71
 #, no-wrap
 msgid "You should see a screen like this:\n"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:107
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:115
 #: docs/admin/05.get_started/20.install_on/virtualbox.mdx:73
 #, no-wrap
 msgid "<Figure caption=\"Preview of the ISO menu\" src=\"/img/softwares/virtualbox_3.png\"/>\n"
 msgstr ""
 
-#. type: Bullet: '    1. '
+#. type: Plain text
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:118
-#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:83
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:76
+#, fuzzy, no-wrap
+msgid "<TabItem value=\"classic\" label=\"Classic installation on a whole disk\">\n"
+msgstr "<TabItem value=\"fin\" label=\"Finland\">\n"
+
+#. type: Fenced div block (danger)
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:119
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:77
+#, no-wrap
+msgid "Once you have validated the keyboard layout, the installation will be launched and will completely erase the data on your hard disk!\n"
+msgstr ""
+
+#. type: Bullet: '1. '
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:126
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:84
 #, no-wrap
 msgid "Select `Graphical install`\n"
 msgstr ""
 
-#. type: Bullet: '    2. '
-#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:118
-#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:83
+#. type: Bullet: '2. '
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:126
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:84
 #, no-wrap
 msgid "Select your language, your location, your keyboard layout, and eventually your timezone.\n"
 msgstr ""
 
-#. type: Bullet: '    3. '
-#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:118
-#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:83
+#. type: Bullet: '3. '
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:126
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:84
 #, no-wrap
 msgid "The installer will then download and install all required packages.\n"
 msgstr ""
 
-#. type: Bullet: '      1. '
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:129
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:87
+#, no-wrap
+msgid "<TabItem value=\"expert\" label=\"Installation in expert mode\">\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:131
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:89
+#, no-wrap
+msgid "The YunoHost project simplified the classic installation as much as possible in order to avoid as many people as possible being lost with questions that are too technical or related to specific cases.\n"
+msgstr ""
+
+#. type: Plain text
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:133
-#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:97
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:91
+#, no-wrap
+msgid "With the expert mode installation, you have more possibilities, especially concerning the exact partitioning of your storage media. You can also decide to use the classic mode and [add your disks afterwards](/admin/tutorials/external_storage).\n"
+msgstr ""
+
+#. type: Title ###
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:134
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:92
+#, no-wrap
+msgid "Summary of the steps in expert mode"
+msgstr ""
+
+#. type: Bullet: '  1. '
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:141
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:99
 #, no-wrap
 msgid "Select `Expert graphical install`.\n"
 msgstr ""
 
-#. type: Bullet: '      2. '
-#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:133
-#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:97
+#. type: Bullet: '  2. '
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:141
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:99
 #, no-wrap
 msgid "Select your language, location, keyboard layout and possibly your timezone.\n"
 msgstr ""
 
-#. type: Bullet: '      3. '
-#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:133
-#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:97
+#. type: Bullet: '  3. '
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:141
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:99
 #, no-wrap
 msgid "Partition your disks. This is where you can set up a RAID or encrypt all or part of the server.\n"
 msgstr ""
 
-#. type: Bullet: '      4. '
-#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:133
-#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:97
+#. type: Bullet: '  4. '
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:141
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:99
 #, no-wrap
 msgid "Specify a possible HTTP proxy to use for the installation of the packages\n"
 msgstr ""
 
-#. type: Bullet: '      5. '
-#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:133
-#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:97
+#. type: Bullet: '  5. '
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:141
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:99
 #, no-wrap
 msgid "Specify on which volumes grub should be installed\n"
 msgstr ""
 
-#. type: Bullet: '    - '
+#. type: Title ###
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:142
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:100
+#, no-wrap
+msgid "Regarding partitioning"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:145
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:103
+#, no-wrap
+msgid "In general, we recommend against partitioning `/var`, `/opt`, `/usr`, `/bin`, `/etc`, `/lib`, `/tmp` and `/root` on separate partitions. This will prevent you from having to worry about full partitions that could crash your machine, cause app installations to fail, or even corrupt your databases.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:147
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:105
+#, no-wrap
+msgid "For performance reasons, it is recommended to mount your fastest storage (SSD) on the root `/`.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:149
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:107
+#, no-wrap
+msgid "If you have one or more hard drives to store data, you can choose to mount it on one of these folders depending on your usage.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:159
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:117
+#, no-wrap
+msgid "If you want flexibility and don't want to (re)size partitions, you can also choose to mount on `/mnt/hdd` and follow this [tutorial to mount all these folders with `mount --bind`](/admin/tutorials/external_storage).\n"
+msgstr ""
+
+#. type: Title ###
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:160
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:118
+#, no-wrap
+msgid "About encryption"
+msgstr ""
+
+#. type: Plain text
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:163
-#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:127
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:121
+#, no-wrap
+msgid "Be aware that if you encrypt all or part of your disks, you will have to type the passphrase every time you restart your server, which can be a problem if you are not on site. There are however solutions (quite difficult to implement) that allow you to type the passphrase via SSH or via a web page (search for \"dropbear encrypted disk\").\n"
+msgstr ""
+
+#. type: Title ###
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:164
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:122
+#, no-wrap
+msgid "About RAID"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:167
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:125
+#, no-wrap
+msgid "Keep in mind that:\n"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:171
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:129
 #, no-wrap
 msgid "the disks in your RAIDs must be of different brands, wear and tear or batches (especially if they are SSDs)\n"
 msgstr ""
 
-#. type: Bullet: '    - '
-#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:163
-#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:127
+#. type: Bullet: '- '
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:171
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:129
 #, no-wrap
 msgid "a RAID 1 (even without a spare) is more reliable than a RAID 5 from a probability point of view\n"
 msgstr ""
 
-#. type: Bullet: '    - '
-#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:163
-#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:127
+#. type: Bullet: '- '
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:171
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:129
 #, no-wrap
 msgid "hardware raids are dependent on the raid card, if the card fails you will need a replacement to read and rebuild the array\n"
 msgstr ""
@@ -233,108 +338,20 @@ msgid "If you encounter the error \"VT-x is not available\", you probably need t
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:79
-#, no-wrap
-msgid ""
-"  <TabItem value=\"classic\" label=\"Classic installation on a whole disk\">\n"
-"    :::danger\n"
-"    Once you have validated the keyboard layout, the installation will be launched and will completely erase the data on your hard disk!\n"
-"    :::\n"
-msgstr ""
-
-#. type: Plain text
-#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:85
-#, no-wrap
-msgid "  <TabItem value=\"expert\" label=\"Installation in expert mode\">\n"
-msgstr ""
-
-#. type: Plain text
-#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:87
-#, no-wrap
-msgid "    The YunoHost project simplified the classic installation as much as possible in order to avoid as many people as possible being lost with questions that are too technical or related to specific cases.\n"
-msgstr ""
-
-#. type: Plain text
-#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:89
-#, no-wrap
-msgid "    With the expert mode installation, you have more possibilities, especially concerning the exact partitioning of your storage media. You can also decide to use the classic mode and [add your disks afterwards](/admin/tutorials/external_storage).\n"
-msgstr ""
-
-#. type: Plain text
-#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:91
-#, no-wrap
-msgid "    ### Summary of the steps in expert mode\n"
-msgstr ""
-
-#. type: Plain text
-#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:99
-#, no-wrap
-msgid "    ### Regarding partitioning\n"
-msgstr ""
-
-#. type: Plain text
-#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:101
-#, no-wrap
-msgid "    In general, we recommend against partitioning `/var`, `/opt`, `/usr`, `/bin`, `/etc`, `/lib`, `/tmp` and `/root` on separate partitions. This will prevent you from having to worry about full partitions that could crash your machine, cause app installations to fail, or even corrupt your databases.\n"
-msgstr ""
-
-#. type: Plain text
-#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:103
-#, no-wrap
-msgid "    For performance reasons, it is recommended to mount your fastest storage (SSD) on the root `/`.\n"
-msgstr ""
-
-#. type: Plain text
-#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:105
-#, no-wrap
-msgid "    If you have one or more hard drives to store data, you can choose to mount it on one of these folders depending on your usage.\n"
-msgstr ""
-
-#. type: Plain text
-#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:113
-#, no-wrap
-msgid ""
-"    | Path | Contents |\n"
-"    |--------|---|\n"
-"    | `/home` | User folders accessible via SFTP |\n"
-"    | `/home/yunohost.backup/archives` | YunoHost backups to be placed ideally elsewhere than on the disks that manage the data |\n"
-"    | `/home/yunohost.app` | Heavy data from YunoHost applications (nextcloud, matrix...) |\n"
-"    | `/home/yunohost.multimedia` | Heavy data shared between several applications |\n"
-"    | `/var/mail` | User mail |\n"
-msgstr ""
-
-#. type: Plain text
 #: docs/admin/05.get_started/20.install_on/virtualbox.mdx:115
 #, no-wrap
-msgid "    If you want flexibility and don't want to (re)size partitions, you can also choose to mount on `/mnt/hdd` and follow this [tutorial to mount all these folders with `mount --bind`](/admin/tutorials/external_storage).\n"
-msgstr ""
-
-#. type: Plain text
-#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:117
-#, no-wrap
-msgid "    ### About encryption\n"
-msgstr ""
-
-#. type: Plain text
-#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:119
-#, no-wrap
-msgid "    Be aware that if you encrypt all or part of your disks, you will have to type the passphrase every time you restart your server, which can be a problem if you are not on site. There are however solutions (quite difficult to implement) that allow you to type the passphrase via SSH or via a web page (search for \"dropbear encrypted disk\").\n"
-msgstr ""
-
-#. type: Plain text
-#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:121
-#, no-wrap
-msgid "    ### About RAID\n"
-msgstr ""
-
-#. type: Plain text
-#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:123
-#, no-wrap
-msgid "    Keep in mind that:\n"
+msgid ""
+"| Path | Contents |\n"
+"|--------|---|\n"
+"| `/home` | User folders accessible via SFTP |\n"
+"| `/home/yunohost.backup/archives` | YunoHost backups to be placed ideally elsewhere than on the disks that manage the data |\n"
+"| `/home/yunohost.app` | Heavy data from YunoHost applications (nextcloud, matrix...) |\n"
+"| `/home/yunohost.multimedia` | Heavy data shared between several applications |\n"
+"| `/var/mail` | User mail |\n"
 msgstr ""
 
 #. type: Fenced div block (tip)
-#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:131
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:133
 #, no-wrap
 msgid "If the YunoHost installer fails and you can't solve the issue, know that it's also possible to install Debian and then install YunoHost on top. See [these instructions](/admin/get_started/install_on/on_top_of_debian#-run-the-install-script).\n"
 msgstr ""

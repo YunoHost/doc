@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2025-11-09 20:53+0100\n"
+"POT-Creation-Date: 2025-11-10 02:13+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -66,6 +66,8 @@ msgstr ""
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/15.vpn/index.mdx:27
+#: docs/admin/05.get_started/10.providers/15.vpn/index.mdx:44
+#: docs/admin/05.get_started/10.providers/15.vpn/index.mdx:68
 #, no-wrap
 msgid ""
 "| VPN provider | [VPNClient](https://github.com/labriqueinternet/vpnclient_ynh) compatibility | IPv6 | rDNS IPv4 | rDNS IPv6 | Price | Membership | Net Neutrality |\n"
@@ -74,6 +76,7 @@ msgstr ""
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/15.vpn/index.mdx:30
+#: docs/admin/05.get_started/10.providers/15.vpn/index.mdx:63
 #, no-wrap
 msgid "¹ [Pay what you want](https://en.wikipedia.org/wiki/Pay_what_you_want)\n"
 msgstr ""
@@ -97,35 +100,13 @@ msgid "French-speaking sites"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/05.get_started/10.providers/15.vpn/index.mdx:44
-#, no-wrap
-msgid ""
-"| Fournisseurs | Compatibilité [VPNClient](https://github.com/labriqueinternet/vpnclient_ynh) | IPv6 | rDNS IPv4 | rDNS IPv6 | Prix | Adhésion | Neutralité du net |\n"
-"| ------------ | ----------------------- | ---- | --------- | --------- | ----- | -------------- | -- |\n"
-msgstr ""
-
-#. type: Plain text
 #: docs/admin/05.get_started/10.providers/15.vpn/index.mdx:55
 #, no-wrap
-msgid "| [Milkywan](https://milkywan.fr/prices#popupTunnel)    | ✔ (manuelle)               | ✔    | ✔         |  ✔        | 5 € / mois | incluse | |\n"
-msgstr ""
-
-#. type: Plain text
-#: docs/admin/05.get_started/10.providers/15.vpn/index.mdx:63
-#, no-wrap
-msgid "¹ Prix libre\n"
+msgid "| [Milkywan](https://milkywan.fr/prices#popupTunnel)                   | ✔ (manuelle)         | ✔   | ✔  | ✔  | 5 € / mois          | incluse       | |\n"
 msgstr ""
 
 #. type: Title ##
 #: docs/admin/05.get_started/10.providers/15.vpn/index.mdx:64
 #, no-wrap
 msgid "German-speaking sites"
-msgstr ""
-
-#. type: Plain text
-#: docs/admin/05.get_started/10.providers/15.vpn/index.mdx:68
-#, no-wrap
-msgid ""
-"| VPN provider | [VPNClient](https://github.com/labriqueinternet/vpnclient_ynh) compatibility | IPv6 | rDNS IPv4 | rDNS IPv6 | Price | Membership | Net Neutrality |\n"
-"| ------------ | ----------------------- | ---- | --------- | --------- | ----- | -------------- | --- |\n"
 msgstr ""

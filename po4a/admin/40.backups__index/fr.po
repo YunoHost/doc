@@ -6,11 +6,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-11-09 21:01+0100\n"
+"POT-Creation-Date: 2025-11-10 02:13+0100\n"
 "PO-Revision-Date: 2025-11-09 21:16+0000\n"
 "Last-Translator: Weblate Admin <yunohost@translate.yunohost.org>\n"
-"Language-Team: French <https://translate.yunohost.org/projects/"
-"doc-experimental/40backups__index/fr/>\n"
+"Language-Team: French <https://translate.yunohost.org/projects/doc-"
+"experimental/40backups__index/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,39 +20,44 @@ msgstr ""
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/_configuration.mdx:19
-#: docs/admin/05.get_started/20.install_on/_configuration.mdx:116
-#: docs/admin/30.apps/index.mdx:100 docs/admin/30.apps/index.mdx:132
-#: docs/admin/40.backups/index.mdx:25 docs/admin/40.backups/index.mdx:74
-#: docs/admin/40.backups/index.mdx:140
+#: docs/admin/05.get_started/20.install_on/_configuration.mdx:122
+#: docs/admin/15.command_line.mdx:76
+#: docs/admin/20.users/groups_and_permissions.mdx:35
+#: docs/admin/20.users/groups_and_permissions.mdx:63
+#: docs/admin/20.users/groups_and_permissions.mdx:84
+#: docs/admin/20.users/groups_and_permissions.mdx:128
+#: docs/admin/20.users/groups_and_permissions.mdx:153
+#: docs/admin/20.users/groups_and_permissions.mdx:187
+#: docs/admin/20.users/groups_and_permissions.mdx:244
+#: docs/admin/25.domains/certificate.mdx:26 docs/admin/30.apps/index.mdx:34
+#: docs/admin/30.apps/index.mdx:104 docs/admin/30.apps/index.mdx:136
+#: docs/admin/40.backups/index.mdx:22 docs/admin/40.backups/index.mdx:71
+#: docs/admin/40.backups/index.mdx:137
 #: docs/admin/45.tutorials/35.email_configure_relay.mdx:49
-#, no-wrap
-msgid "  <TabItem value=\"web\" label=\"From the web interface\">\n"
-msgstr "  <TabItem value=\"web\" label=\"Depuis l'interface web\">\n"
+#, fuzzy, no-wrap
+msgid "<TabItem value=\"web\" label=\"From the web interface\">\n"
+msgstr "<TabItem value=\"web\" label=\"From the web interface\">\n"
 
 #. type: Plain text
-#: docs/admin/05.get_started/20.install_on/_configuration.mdx:100
-#: docs/admin/05.get_started/20.install_on/_configuration.mdx:123
-#: docs/admin/30.apps/index.mdx:109 docs/admin/30.apps/index.mdx:139
-#: docs/admin/40.backups/index.mdx:32 docs/admin/40.backups/index.mdx:88
-#: docs/admin/40.backups/index.mdx:147 docs/admin/40.backups/index.mdx:174
-#, no-wrap
-msgid "  <TabItem value=\"cli\" label=\"From the command line\">\n"
-msgstr "  <TabItem value=\"cli\" label=\"Depuis la ligne de commande\">\n"
-
-#. type: Plain text
-#: docs/admin/40.backups/05.evaluate.mdx:6 docs/admin/40.backups/index.mdx:12
-#, no-wrap
-msgid "In the context of self-hosting, backups are an important element to compensate for unexpected events (fire, database corruption, loss of access to the server, compromised server...). The backup policy to implement depends on the importance of the services and data you manage. For example, backing up a test server will be of little interest, while you will want to be very careful if you are managing critical data for an association or a company - and in such cases, you will want to store the backups *in a different location or locations*.\n"
-msgstr ""
-"Dans le contexte de l'auto-hébergement, les sauvegardes (backups) sont un "
-"élément important pour pallier les événements inattendus (incendies, "
-"corruption de base de données, perte d'accès au serveur, serveur "
-"compromis...). La politique de sauvegardes à mettre en place dépend de "
-"l'importance des services et des données que vous gérez. Par exemple, "
-"sauvegarder un serveur de test aura peu d'intérêt, tandis que vous voudrez "
-"être très prudent⋅e si vous gérez des données critiques pour une association "
-"ou une entreprise - et dans ce genre de cas, vous souhaiterez stocker les "
-"sauvegardes *dans un ou plusieurs endroits différents*.\n"
+#: docs/admin/05.get_started/20.install_on/_configuration.mdx:30
+#: docs/admin/05.get_started/20.install_on/_configuration.mdx:104
+#: docs/admin/05.get_started/20.install_on/_configuration.mdx:129
+#: docs/admin/15.command_line.mdx:85
+#: docs/admin/20.users/groups_and_permissions.mdx:42
+#: docs/admin/20.users/groups_and_permissions.mdx:70
+#: docs/admin/20.users/groups_and_permissions.mdx:95
+#: docs/admin/20.users/groups_and_permissions.mdx:135
+#: docs/admin/20.users/groups_and_permissions.mdx:160
+#: docs/admin/20.users/groups_and_permissions.mdx:198
+#: docs/admin/20.users/groups_and_permissions.mdx:249
+#: docs/admin/25.domains/certificate.mdx:45 docs/admin/30.apps/index.mdx:39
+#: docs/admin/30.apps/index.mdx:113 docs/admin/30.apps/index.mdx:143
+#: docs/admin/40.backups/index.mdx:29 docs/admin/40.backups/index.mdx:85
+#: docs/admin/40.backups/index.mdx:144 docs/admin/40.backups/index.mdx:171
+#: docs/admin/45.tutorials/35.email_configure_relay.mdx:66
+#, fuzzy, no-wrap
+msgid "<TabItem value=\"cli\" label=\"From the command line\">\n"
+msgstr "<TabItem value=\"cli\" label=\"From the command line\">\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/40.backups/index.mdx:1
@@ -60,236 +65,244 @@ msgstr ""
 msgid "🚑 Backups"
 msgstr "🚑 Sauvegardes"
 
+#. type: Plain text
+#: docs/admin/40.backups/index.mdx:9
+#, fuzzy, no-wrap
+#| msgid "In the context of self-hosting, backups are an important element to compensate for unexpected events (fire, database corruption, loss of access to the server, compromised server...). The backup policy to implement depends on the importance of the services and data you manage. For example, backing up a test server will be of little interest, while you will want to be very careful if you are managing critical data for an association or a company - and in such cases, you will want to store the backups *in a different location or locations*.\n"
+msgid "In the context of self-hosting, backups are essential for mitigating the impact of unexpected events—such as fires, database corruption, server access issues, or security breaches. The backup strategy you implement should be tailored to the importance of the services and data you are managing. For instance, backing up a test server will be of little interest, whereas when handling critical data for an NGO or business, backups become much more vital. In these cases, it’s crucial to store backups in one, or ideally **several** locations.\n"
+msgstr "Dans le contexte de l'auto-hébergement, les sauvegardes (backups) sont un élément important pour pallier les événements inattendus (incendies, corruption de base de données, perte d'accès au serveur, serveur compromis...). La politique de sauvegardes à mettre en place dépend de l'importance des services et des données que vous gérez. Par exemple, sauvegarder un serveur de test aura peu d'intérêt, tandis que vous voudrez être très prudent⋅e si vous gérez des données critiques pour une association ou une entreprise - et dans ce genre de cas, vous souhaiterez stocker les sauvegardes *dans un ou plusieurs endroits différents*.\n"
+
 #. type: Title ##
-#: docs/admin/40.backups/index.mdx:13
+#: docs/admin/40.backups/index.mdx:10
 #, fuzzy, no-wrap
 msgid "Manual backup"
 msgstr "Sauvegarde manuelle"
 
 #. type: Plain text
-#: docs/admin/40.backups/index.mdx:16
+#: docs/admin/40.backups/index.mdx:13
 #, fuzzy, no-wrap
 msgid "YunoHost comes with a backup system, that allows you to backup (and restore) system configurations and data (e.g. emails) and apps if they support it.\n"
 msgstr "YunoHost contient un système de sauvegarde, qui permet de sauvegarder (et restaurer) les configurations du système, les données « système » (comme les mails) et les applications si elles le supportent.\n"
 
 #. type: Plain text
-#: docs/admin/40.backups/index.mdx:18
+#: docs/admin/40.backups/index.mdx:15
 #, fuzzy, no-wrap
 msgid "You can manage backups either from the command line (`yunohost backup --help`) or from the web administration (in the Backups section), though some features are not yet available in the webadmin.\n"
 msgstr "Vous pouvez gérer vos sauvegardes via la ligne de commande (`yunohost backup --help`) ou la webadmin (dans la section Sauvegardes) bien que certaines fonctionnalités ne soient pas disponibles via celle-ci.\n"
 
 #. type: Plain text
-#: docs/admin/40.backups/index.mdx:20
+#: docs/admin/40.backups/index.mdx:17
 #, fuzzy, no-wrap
 msgid "The current default method consists in creating a `.tar` archive containing all relevant files.\n"
 msgstr "La méthode de sauvegarde actuelle consiste à créer des archives `.tar` qui contiennent les fichiers pertinents.\n"
 
 #. type: Title ####
-#: docs/admin/40.backups/index.mdx:21
+#: docs/admin/40.backups/index.mdx:18
 #, fuzzy, no-wrap
 msgid "Creating backups"
 msgstr "Créer une sauvegarde"
 
 #. type: Plain text
-#: docs/admin/40.backups/index.mdx:27
+#: docs/admin/40.backups/index.mdx:24
 #, fuzzy, no-wrap
 msgid "You can easily create backup archives from the webadmin by going to `Backups > Local storage` and clicking on `New backup`. You will then be asked to select which configuration, data and apps you want to backup.\n"
 msgstr "Vous pouvez facilement créer des archives depuis la webadmin en allant dans `Sauvegardes > Archives locales` et en cliquant sur `Nouvelle sauvegarde`. Vous pourrez ensuite sélectionner les éléments à sauvegarder (configuration, données \"système\", applications).\n"
 
 #. type: Plain text
-#: docs/admin/40.backups/index.mdx:29
+#: docs/admin/40.backups/index.mdx:26
 #, fuzzy, no-wrap
 msgid "![picture of YunoHost's backup pannel](/img/webadmin/backup.png)\n"
 msgstr "![Image de l'écran de sauvegarde de YunoHost dans la webadmin](/img/webadmin/backup.png)\n"
 
 #. type: Plain text
-#: docs/admin/40.backups/index.mdx:34
+#: docs/admin/40.backups/index.mdx:31
 #, fuzzy, no-wrap
 msgid "You can create a new backup archive from the command line. Here are a few simple examples of commands and their corresponding behavior:\n"
 msgstr "Vous pouvez créer de nouvelles archives depuis la ligne de commande. Voici quelques exemples de commandes et leur comportement correspondant :\n"
 
 #. type: Bullet: '- '
-#: docs/admin/40.backups/index.mdx:36
+#: docs/admin/40.backups/index.mdx:33
 #, fuzzy, no-wrap
 msgid "Backing up everything (all system parts and apps):\n"
 msgstr "Tout sauvegarder (système et apps) :\n"
 
 #. type: Bullet: '- '
-#: docs/admin/40.backups/index.mdx:42
+#: docs/admin/40.backups/index.mdx:39
 #, fuzzy, no-wrap
 msgid "Backing up only apps\n"
 msgstr "Sauvegarder seulement les apps :\n"
 
 #. type: Bullet: '- '
-#: docs/admin/40.backups/index.mdx:48
+#: docs/admin/40.backups/index.mdx:45
 #, fuzzy, no-wrap
 msgid "Backing up only two apps (wordpress and shaarli)\n"
 msgstr "Sauvegarder seulement deux apps (WordPress et Shaarli) :\n"
 
 #. type: Bullet: '- '
-#: docs/admin/40.backups/index.mdx:54
+#: docs/admin/40.backups/index.mdx:51
 #, fuzzy, no-wrap
 msgid "Backing up only emails\n"
 msgstr "Sauvegarder seulement les mails :\n"
 
 #. type: Bullet: '- '
-#: docs/admin/40.backups/index.mdx:60
+#: docs/admin/40.backups/index.mdx:57
 #, fuzzy, no-wrap
 msgid "Backing up emails and wordpress\n"
 msgstr "Sauvegarder les mails et WordPress :\n"
 
 #. type: Plain text
-#: docs/admin/40.backups/index.mdx:66
+#: docs/admin/40.backups/index.mdx:63
 #, fuzzy, no-wrap
 msgid "For more information and options about backup creation, consult `yunohost backup create --help`. You can also list the system parts that can be backed up with `yunohost hook list backup`.\n"
 msgstr "Pour plus d'informations et d'options sur la création d'archives, consultez `yunohost backup create --help`. Vous pouvez également lister les parties du système qui sont sauvegardables avec `yunohost hook list backup`.\n"
 
 #. type: Title ###
-#: docs/admin/40.backups/index.mdx:70
+#: docs/admin/40.backups/index.mdx:67
 #, fuzzy, no-wrap
 msgid "Downloading backups"
 msgstr "Télécharger la sauvegarde"
 
 #. type: Plain text
-#: docs/admin/40.backups/index.mdx:76
+#: docs/admin/40.backups/index.mdx:73
 #, fuzzy, no-wrap
 msgid "After creating backups, it is possible to list and inspect them using the corresponding views in the web administration interface. A button allows you to download the archive. If the archive is larger than 3GB, it may be better to proceed via SFTP.\n"
 msgstr "Après avoir créé des sauvegardes, il est possible de les lister et de les inspecter grâce aux vues correspondantes dans l'interface d'administration web. Un bouton propose de télécharger l'archive. Si l'archive fait plus de 3Go, il peut être préférable de procéder via SFTP.\n"
 
 #. type: Plain text
-#: docs/admin/40.backups/index.mdx:78
+#: docs/admin/40.backups/index.mdx:75
 #, fuzzy, no-wrap
 msgid "`Backup > Local Archives > <Archive name> > Download`\n"
 msgstr "`Sauvegarde > Archives locales > <Nom de l'archive> > Télécharger`\n"
 
 #. type: Plain text
-#: docs/admin/40.backups/index.mdx:81 docs/admin/40.backups/index.mdx:167
+#: docs/admin/40.backups/index.mdx:78 docs/admin/40.backups/index.mdx:164
 #, fuzzy, no-wrap
-msgid "  <TabItem value=\"sftp\" label=\"With a SFTP client\">\n"
+msgid "<TabItem value=\"sftp\" label=\"With a SFTP client\">\n"
 msgstr "  <TabItem value=\"sftp\" label=\"With a SFTP client\">\n"
 
 #. type: Plain text
-#: docs/admin/40.backups/index.mdx:83
+#: docs/admin/40.backups/index.mdx:80
 #, fuzzy, no-wrap
 msgid "Currently, the most accessible way to download big archives is to use the program FileZilla as explained in [this page](/admin/tutorials/filezilla).\n"
 msgstr "À l'heure actuelle, la solution la plus accessible pour récupérer les sauvegardes de grosse taille est d'utiliser le programme FileZilla comme expliqué dans [cette page](/admin/tutorials/filezilla).\n"
 
 #. type: Plain text
-#: docs/admin/40.backups/index.mdx:85
+#: docs/admin/40.backups/index.mdx:82
 #, fuzzy, no-wrap
 msgid "By default, backups are stored in `/home/yunohost.backup/archives/`.\n"
 msgstr "Par défaut, les sauvegardes sont stockées dans `/home/yunohost.backup/archives/`.\n"
 
 #. type: Plain text
-#: docs/admin/40.backups/index.mdx:92
+#: docs/admin/40.backups/index.mdx:89
 #, fuzzy, no-wrap
 msgid "It is possible to use `scp` (a program based on [`ssh`](/admin/command_line)) to copy files between two machines via the command line. So, from a GNU/Linux machine, you can use the following command to download an archive:\n"
 msgstr "Il est possible d'utiliser `scp` (un programme basé sur `ssh`) pour copier des fichiers entre deux machines grâce à la ligne de commande. Ainsi, depuis une machine sous GNU/Linux, vous pouvez utiliser la commande suivante pour télécharger une archive :\n"
 
 #. type: Plain text
-#: docs/admin/40.backups/index.mdx:98 docs/admin/40.backups/index.mdx:182
+#: docs/admin/40.backups/index.mdx:95 docs/admin/40.backups/index.mdx:179
 #, fuzzy, no-wrap
 msgid "If your SSH port is different from 22\n"
 msgstr "En cas de port SSH autre que 22 :\n"
 
 #. type: Fenced div block (caution)
-#: docs/admin/40.backups/index.mdx:107
+#: docs/admin/40.backups/index.mdx:104
 #, fuzzy, no-wrap
 msgid "Don't forget to store your backup in a different place to your server.\n"
 msgstr "N'oubliez pas de stocker votre sauvegarde dans un lieu différents de celui ou se trouve votre serveur.\n"
 
 #. type: Fenced div block (info)
-#: docs/admin/40.backups/index.mdx:111
+#: docs/admin/40.backups/index.mdx:108
 #, fuzzy, no-wrap
 msgid "If you want, you can connect an external disk to your server so that the archives arrive directly on it. See this guide to [Adding external storage to your server](/admin/tutorials/external_storage)\n"
 msgstr "Si vous le souhaitez, vous pouvez connecter un disque externe à votre serveur pour que les archives arrivent directement dessus. Voir ce guide pour [Ajouter un stockage externe à son serveur](/admin/tutorials/external_storage)\n"
 
 #. type: Title ###
-#: docs/admin/40.backups/index.mdx:115
+#: docs/admin/40.backups/index.mdx:112
 #, fuzzy, no-wrap
 msgid "Testing"
 msgstr "Tester"
 
 #. type: Plain text
-#: docs/admin/40.backups/index.mdx:118
+#: docs/admin/40.backups/index.mdx:115
 #, fuzzy, no-wrap
 msgid "You should regularly test your backups by at least listing the contents of the archives and checking the size of the associated data. It is best to practice restoring regularly.\n"
 msgstr "Vous devriez tester régulièrement vos sauvegardes à minima en listant le contenu des archives et en vérifiant le poids des données associées. Le mieux est de s'entrainer règulièrement à restaurer.\n"
 
 #. type: Title ###
-#: docs/admin/40.backups/index.mdx:130
+#: docs/admin/40.backups/index.mdx:127
 #, fuzzy, no-wrap
 msgid "Restoring backups"
 msgstr "Restaurer"
 
 #. type: Fenced div block (info)
-#: docs/admin/40.backups/index.mdx:132
+#: docs/admin/40.backups/index.mdx:129
 #, fuzzy, no-wrap
 msgid "SPOILER: The larger your data volume and the more applications you have, the more complex your recovery will be.\n"
 msgstr "SPOILER: Plus votre volume de données et le nombre d'applications sont important, plus votre restauration sera complexe.\n"
 
 #. type: Title ####
-#: docs/admin/40.backups/index.mdx:136
+#: docs/admin/40.backups/index.mdx:133
 #, fuzzy, no-wrap
 msgid "Simple case: little data, archive already present"
 msgstr "Cas simple : peu de données, archive déjà présente"
 
 #. type: Plain text
-#: docs/admin/40.backups/index.mdx:142
+#: docs/admin/40.backups/index.mdx:139
 #, fuzzy, no-wrap
 msgid "Go in `Backup > Local storage` and select your archive. You can then select which items you want to restore, then click on 'Restore'.\n"
 msgstr "Allez dans `Sauvegardes > Archives locales` et sélectionnez l'archive. Vous pouvez ensuite choisir les différents éléments que vous voulez restaurer puis cliquer sur \"Restaurer\".\n"
 
 #. type: Plain text
-#: docs/admin/40.backups/index.mdx:144
+#: docs/admin/40.backups/index.mdx:141
 #, fuzzy, no-wrap
 msgid "![picture of YunoHost's restore pannel](/img/webadmin/restore.png)\n"
 msgstr "![picture of YunoHost's restore pannel](/img/webadmin/restore.png)\n"
 
 #. type: Plain text
-#: docs/admin/40.backups/index.mdx:149
+#: docs/admin/40.backups/index.mdx:146
 #, fuzzy, no-wrap
 msgid "From the command line, you can run `yunohost backup list` to get the available archive names. They are basically their file name without extension.\n"
 msgstr "À partir de la ligne de commande, vous pouvez exécuter `yunohost backup list` pour obtenir les noms des archives disponibles. Il s'agit essentiellement de leur nom de fichier sans extension.\n"
 
 #. type: Fenced div block (tip)
-#: docs/admin/40.backups/index.mdx:152
+#: docs/admin/40.backups/index.mdx:149
 #, fuzzy, no-wrap
 msgid "In the case of a complete restoration, it is possible to restore instead of launching the initial configuration.\n"
 msgstr "Dans le cas d'une restauration complète, il est possible de restaurer à la place de lancer la configuration initiale.\n"
 
 #. type: Plain text
-#: docs/admin/40.backups/index.mdx:160
+#: docs/admin/40.backups/index.mdx:157
 #, fuzzy, no-wrap
 msgid "To restore an app, the domain on which it was installed should already be configured (or you need to restore the corresponding system configuration). You also cannot restore an app which is already installed... which means that to restore an old version of an app, you must first uninstall it.\n"
 msgstr "Pour restaurer une application, le domaine sur laquelle elle est installée doit déjà être configuré (ou il vous faut restaurer en même temps la configuration correspondante). Aussi, il n'est pas possible de restaurer une application déjà installée... ce qui veut dire que pour restaurer une sauvegarde d'une app, il vous faut déjà la désinstaller.\n"
 
 #. type: Title ####
-#: docs/admin/40.backups/index.mdx:161
+#: docs/admin/40.backups/index.mdx:158
 #, fuzzy, no-wrap
 msgid "Uploading an archive"
 msgstr "Téléverser une archive"
 
 #. type: Plain text
-#: docs/admin/40.backups/index.mdx:164
+#: docs/admin/40.backups/index.mdx:161
 #, fuzzy, no-wrap
 msgid "In many cases, the archive is not on the server on which you want to restore it. So it has to be uploaded, which depending on its size can take more or less time.\n"
 msgstr "Dans de nombreux cas, l'archive n'est pas sur le serveur sur lequel on souhaite la restaurer. Il faut donc la téléverser, ce qui selon son poids peut prend plus ou moins de temps.\n"
 
 #. type: Plain text
-#: docs/admin/40.backups/index.mdx:169
+#: docs/admin/40.backups/index.mdx:166
 #, fuzzy, no-wrap
 msgid "Currently, the most accessible solution for uploading backups is to use the FileZilla program as explained in [this page](/admin/tutorials/filezilla).\n"
 msgstr "À l'heure actuelle, la solution la plus accessible pour téléverser les sauvegardes est d'utiliser le programme FileZilla comme expliqué dans [cette page](/admin/tutorials/filezilla).\n"
 
 #. type: Plain text
-#: docs/admin/40.backups/index.mdx:171
+#: docs/admin/40.backups/index.mdx:168
 #, fuzzy, no-wrap
 msgid "By default, backups are to be placed in `/home/yunohost.backup/archives/`.\n"
 msgstr "Par défaut, les sauvegardes sont à placer dans `/home/yunohost.backup/archives/`.\n"
 
 #. type: Plain text
-#: docs/admin/40.backups/index.mdx:176
+#: docs/admin/40.backups/index.mdx:173
 #, fuzzy, no-wrap
 msgid "You can use the `scp` (a command built on `ssh`) to copy files between two machines from CLI. For example for a Linux terminal:\n"
 msgstr "Vous pouvez téléverser une sauvegarde depuis une machine vers votre serveur avec :\n"
+

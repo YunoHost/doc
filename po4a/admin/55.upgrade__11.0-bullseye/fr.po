@@ -6,11 +6,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2025-11-09 21:01+0100\n"
+"POT-Creation-Date: 2025-11-10 02:13+0100\n"
 "PO-Revision-Date: 2025-11-10 01:02+0000\n"
 "Last-Translator: Weblate Admin <yunohost@translate.yunohost.org>\n"
-"Language-Team: French <https://translate.yunohost.org/projects/"
-"doc-experimental/55upgrade__110-bullseye/fr/>\n"
+"Language-Team: French <https://translate.yunohost.org/projects/doc-"
+"experimental/55upgrade__110-bullseye/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -42,10 +42,7 @@ msgstr "Notes importantes"
 #: docs/admin/55.upgrade/12.0-bookworm/index.mdx:10
 #, no-wrap
 msgid "The YunoHost team did its best to make sure that the migration is as smooth as possible and was tested over the course of several months in several cases.\n"
-msgstr ""
-"L'équipe de YunoHost a fait de son mieux pour que cette migration se passe "
-"autant en douceur que possible. Elle a été testée durant plusieurs mois et "
-"sur plusieurs types d'installations.\n"
+msgstr "L'équipe de YunoHost a fait de son mieux pour que cette migration se passe autant en douceur que possible. Elle a été testée durant plusieurs mois et sur plusieurs types d'installations.\n"
 
 #. type: Bullet: '- '
 #: docs/admin/55.upgrade/11.0-bullseye.mdx:12
@@ -58,22 +55,14 @@ msgstr ""
 #: docs/admin/55.upgrade/12.0-bookworm/index.mdx:14
 #, no-wrap
 msgid "Please don't rush into thinking that you should need to reinstall your system from scratch thinking it would be \"simpler\" (sigh). (A common attitude is to be willing to reinstall a server at the slightest complication...). Instead, if you happen to run into issues, we encourage you to try to investigate and understand what's going on and [reach for help on the chat and the forum](/community/help).\n"
-msgstr ""
-"Ne vous précipitez pas à vouloir faire une réinstallation de votre système "
-"en pensant que cela serait \"plus simple\" (sigh). (Une attitude qui revient "
-"régulièrement est de vouloir réinstaller son système à la moindre "
-"complication...). À la place, si vous rencontrez des problèmes, nous vous "
-"encourageons à investiguer, chercher à comprendre et "
-"[trouver de l'aide sur le chat ou le forum](/community/help).\n"
+msgstr "Ne vous précipitez pas à vouloir faire une réinstallation de votre système en pensant que cela serait \"plus simple\" (sigh). (Une attitude qui revient régulièrement est de vouloir réinstaller son système à la moindre complication...). À la place, si vous rencontrez des problèmes, nous vous encourageons à investiguer, chercher à comprendre et [trouver de l'aide sur le chat ou le forum](/community/help).\n"
 
 #. type: Bullet: '- '
 #: docs/admin/55.upgrade/11.0-bullseye.mdx:16
 #: docs/admin/55.upgrade/12.0-bookworm/index.mdx:16
 #, fuzzy, no-wrap
 msgid "**You should watch the known issues at the bottom of this page, to be sure your migrations will work properly.**\n"
-msgstr ""
-"**You should watch the known issues at the bottom of this page, to be sure "
-"your migrations will work properly.**\n"
+msgstr "**You should watch the known issues at the bottom of this page, to be sure your migrations will work properly.**\n"
 
 #. type: Title ##
 #: docs/admin/55.upgrade/11.0-bullseye.mdx:17
@@ -141,9 +130,7 @@ msgstr ""
 #: docs/admin/55.upgrade/12.0-bookworm/index.mdx:28
 #, no-wrap
 msgid "Note that even if you close the webadmin page for some reason, the migration will continue in the background (but the webadmin will be partially unavailable).\n"
-msgstr ""
-"Notez que même si vous fermez la page d'admin, la migration continuera "
-"(par contre l'interface d'admin sera partiellement indisponible).\n"
+msgstr "Notez que même si vous fermez la page d'admin, la migration continuera (par contre l'interface d'admin sera partiellement indisponible).\n"
 
 #. type: Title ###
 #: docs/admin/55.upgrade/11.0-bullseye.mdx:41
@@ -308,21 +295,14 @@ msgstr "Vérifiez que les applications fonctionnent"
 #: docs/admin/55.upgrade/12.0-bookworm/index.mdx:81
 #, no-wrap
 msgid "Test that your applications are working. If they aren't, you should try to upgrade them (it is also a good idea to upgrade them even if they are working anyway).\n"
-msgstr ""
-"Vérifiez que vos applications installées fonctionnent... Si elles ne "
-"fonctionnent pas, il est recommandé de tenter de les mettre à jour. (ou bien "
-"de manière générale, il est recommandé de les mettre à jour même si elles "
-"fonctionnent !).\n"
+msgstr "Vérifiez que vos applications installées fonctionnent... Si elles ne fonctionnent pas, il est recommandé de tenter de les mettre à jour. (ou bien de manière générale, il est recommandé de les mettre à jour même si elles fonctionnent !).\n"
 
 #. type: Plain text
 #: docs/admin/55.upgrade/11.0-bullseye.mdx:87
 #: docs/admin/55.upgrade/12.0-bookworm/index.mdx:83
 #, no-wrap
 msgid "If your app is broken and you were already with the latest version, you can rerun the upgrade thanks to the `-F|--force` option:\n"
-msgstr ""
-"Si votre app est cassée et que vous étiez déjà sur la dernière version d'une "
-"application, vous pouvez relancer la mise à jour grâce à l'option `--force`:"
-"\n"
+msgstr "Si votre app est cassée et que vous étiez déjà sur la dernière version d'une application, vous pouvez relancer la mise à jour grâce à l'option `--force`:\n"
 
 #. type: Title ##
 #: docs/admin/55.upgrade/11.0-bullseye.mdx:92

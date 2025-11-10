@@ -9,8 +9,8 @@ msgstr ""
 "POT-Creation-Date: 2025-11-09 20:53+0100\n"
 "PO-Revision-Date: 2025-11-10 01:02+0000\n"
 "Last-Translator: Weblate Admin <yunohost@translate.yunohost.org>\n"
-"Language-Team: French <https://translate.yunohost.org/projects/"
-"doc-experimental/05get_started__05methods/fr/>\n"
+"Language-Team: French <https://translate.yunohost.org/projects/doc-"
+"experimental/05get_started__05methods/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -28,9 +28,7 @@ msgstr "Choisir son mode d'auto-hébergement"
 #: docs/admin/05.get_started/05.methods.mdx:6
 #, no-wrap
 msgid "You can host yourself at home (on a small computer), or on a remote server. Each solution has their pros and cons:\n"
-msgstr ""
-"Vous pouvez vous auto-héberger à la maison (sur un petit ordinateur), ou sur "
-"un serveur distant. Chaque solution a ses avantages et inconvénients :\n"
+msgstr "Vous pouvez vous auto-héberger à la maison (sur un petit ordinateur), ou sur un serveur distant. Chaque solution a ses avantages et inconvénients :\n"
 
 #. type: Title ##
 #: docs/admin/05.get_started/05.methods.mdx:7
@@ -42,28 +40,19 @@ msgstr "À la maison, par exemple sur une carte ARM ou un ancien ordinateur"
 #: docs/admin/05.get_started/05.methods.mdx:10
 #, no-wrap
 msgid "You can host yourself at home with an ARM board or a re-purposed regular computer, connected to your home router/box.\n"
-msgstr ""
-"Vous pouvez vous héberger chez vous, sur une carte ARM ou un vieil "
-"ordinateur, connecté à votre box internet.\n"
+msgstr "Vous pouvez vous héberger chez vous, sur une carte ARM ou un vieil ordinateur, connecté à votre box internet.\n"
 
 #. type: Bullet: '- '
 #: docs/admin/05.get_started/05.methods.mdx:13
 #, no-wrap
 msgid "**Pros**: you will have physical control of the machine and only need to buy the hardware;\n"
-msgstr ""
-"**Avantages** : vous aurez un contrôle physique sur la machine et avez "
-"seulement besoin d'acheter le matériel initial ;\n"
+msgstr "**Avantages** : vous aurez un contrôle physique sur la machine et avez seulement besoin d'acheter le matériel initial ;\n"
 
 #. type: Bullet: '- '
 #: docs/admin/05.get_started/05.methods.mdx:13
 #, no-wrap
 msgid "**Cons**: you will have to [manually configure your internet box](/admin/get_started/post_install/port_forwarding) and [might be limited by your ISP](/admin/get_started/providers/isp/).\n"
-msgstr ""
-"**Inconvénients** : il vous faudra "
-"[configurer manuellement votre box internet]"
-"(/admin/get_started/post_install/port_forwarding) et serez possiblement "
-"[limité par certains aspects de votre fournisseur d'accès à Internet]"
-"(/admin/get_started/providers/isp/).\n"
+msgstr "**Inconvénients** : il vous faudra [configurer manuellement votre box internet](/admin/get_started/post_install/port_forwarding) et serez possiblement [limité par certains aspects de votre fournisseur d'accès à Internet](/admin/get_started/providers/isp/).\n"
 
 #. type: Title ##
 #: docs/admin/05.get_started/05.methods.mdx:14
@@ -75,28 +64,19 @@ msgstr "À la maison, derrière un VPN"
 #: docs/admin/05.get_started/05.methods.mdx:17
 #, no-wrap
 msgid "A VPN is an encrypted tunnel between two machines. In practice, it makes it \"as if\" you were directly, locally, connected to your server machine, but actually from somewhere else on the Internet. This allows you to still host yourself at home, while bypassing possible limitations of your ISP. See also [the Internet Cube project](https://internetcu.be/) and [the FFDN](https://www.ffdn.org/).\n"
-msgstr ""
-"Un VPN est un tunnel chiffré entre deux machines. En pratique, cela permet "
-"de faire « comme si » une machine était connectée depuis ailleurs. Ceci "
-"permet de s'auto-héberger à la maison tout en contournant les limitations du "
-"fournisseur d'accès à Internet. Voir aussi [le projet Brique Internet]"
-"(https://labriqueinter.net/) et [la FFDN](https://www.ffdn.org/).\n"
+msgstr "Un VPN est un tunnel chiffré entre deux machines. En pratique, cela permet de faire « comme si » une machine était connectée depuis ailleurs. Ceci permet de s'auto-héberger à la maison tout en contournant les limitations du fournisseur d'accès à Internet. Voir aussi [le projet Brique Internet](https://labriqueinter.net/) et [la FFDN](https://www.ffdn.org/).\n"
 
 #. type: Bullet: '- '
 #: docs/admin/05.get_started/05.methods.mdx:20
 #, no-wrap
 msgid "**Pros**: you will have physical control of the machine, and the VPN hides your traffic from your ISP and allows you to bypass its limitations;\n"
-msgstr ""
-"**Avantages** : vous aurez un contrôle physique sur la machine, et le VPN "
-"permettra de cacher votre trafic vis-à-vis de votre FAI ainsi que de "
-"contourner ses limitations ;\n"
+msgstr "**Avantages** : vous aurez un contrôle physique sur la machine, et le VPN permettra de cacher votre trafic vis-à-vis de votre FAI ainsi que de contourner ses limitations ;\n"
 
 #. type: Bullet: '- '
 #: docs/admin/05.get_started/05.methods.mdx:20
 #, no-wrap
 msgid "**Cons**: you will have to pay a monthly subscription for the VPN.\n"
-msgstr ""
-"**Inconvénients** : il vous faudra payer des frais mensuels pour le VPN.\n"
+msgstr "**Inconvénients** : il vous faudra payer des frais mensuels pour le VPN.\n"
 
 #. type: Title ##
 #: docs/admin/05.get_started/05.methods.mdx:21
@@ -108,26 +88,19 @@ msgstr "Sur un serveur distant (VPS ou serveur dédié)"
 #: docs/admin/05.get_started/05.methods.mdx:24
 #, no-wrap
 msgid "You can rent a virtual private server or a dedicated machine from [associative](https://db.ffdn.org/) or [commercial](/admin/get_started/providers/servers) \"Cloud\" providers.\n"
-msgstr ""
-"Vous pouvez louer un serveur privé virtuel ou une machine dédiée à des "
-"hébergeurs [associatifs](https://db.ffdn.org/) ou [commerciaux]"
-"(/admin/get_started/providers/servers).\n"
+msgstr "Vous pouvez louer un serveur privé virtuel ou une machine dédiée à des hébergeurs [associatifs](https://db.ffdn.org/) ou [commerciaux](/admin/get_started/providers/servers).\n"
 
 #. type: Bullet: '- '
 #: docs/admin/05.get_started/05.methods.mdx:27
 #, no-wrap
 msgid "**Pros**: your server and its internet connectivity will be fast;\n"
-msgstr ""
-"**Avantages** : votre serveur sera rapide et la connectivité internet sera "
-"bonne ;\n"
+msgstr "**Avantages** : votre serveur sera rapide et la connectivité internet sera bonne ;\n"
 
 #. type: Bullet: '- '
 #: docs/admin/05.get_started/05.methods.mdx:27
 #, no-wrap
 msgid "**Cons**: you will have to pay a monthly subscription and won't have physical control of your server.\n"
-msgstr ""
-"**Inconvénients** : il vous faudra payer des frais mensuels pour la machine, "
-"et vous n'aurez pas de contrôle physique dessus.\n"
+msgstr "**Inconvénients** : il vous faudra payer des frais mensuels pour la machine, et vous n'aurez pas de contrôle physique dessus.\n"
 
 #. type: Title ##
 #: docs/admin/05.get_started/05.methods.mdx:28

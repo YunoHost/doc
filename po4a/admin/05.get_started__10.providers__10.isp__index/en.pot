@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2025-11-09 20:53+0100\n"
+"POT-Creation-Date: 2025-11-10 02:13+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -51,13 +51,13 @@ msgid "<TabItem value=\"africa\">\n"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/05.get_started/10.providers/10.isp/index.mdx:23
+#: docs/admin/05.get_started/10.providers/10.isp/index.mdx:24
 #, no-wrap
 msgid "<TabItem value=\"ivory\" label=\"Côte d'Ivoire\" default>\n"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/05.get_started/10.providers/10.isp/index.mdx:29
+#: docs/admin/05.get_started/10.providers/10.isp/index.mdx:30
 #, no-wrap
 msgid ""
 "| Fournisseur d’accès | Box/ routeur | uPnP activable | [Port 25 ouvrable](/admin/email)| [Hairpinning](http://fr.wikipedia.org/wiki/Hairpinning) | [Reverse DNS](https://en.wikipedia.org/wiki/Reverse_DNS_lookup) | IP fixe |\n"
@@ -68,19 +68,19 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/05.get_started/10.providers/10.isp/index.mdx:35
+#: docs/admin/05.get_started/10.providers/10.isp/index.mdx:36
 #, no-wrap
 msgid "<TabItem value=\"asia\">\n"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/05.get_started/10.providers/10.isp/index.mdx:37
+#: docs/admin/05.get_started/10.providers/10.isp/index.mdx:38
 #, no-wrap
 msgid "<TabItem value=\"southko\" label=\"South Korea\" default>\n"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/05.get_started/10.providers/10.isp/index.mdx:43
+#: docs/admin/05.get_started/10.providers/10.isp/index.mdx:44
 #, no-wrap
 msgid ""
 "| Service provider | Box (modem/router) | uPnP available | Port 25 openable | [Hairpinning](http://en.wikipedia.org/wiki/Hairpinning) | Customizable reverse DNS | Fix IP |\n"
@@ -91,13 +91,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/05.get_started/10.providers/10.isp/index.mdx:46
+#: docs/admin/05.get_started/10.providers/10.isp/index.mdx:47
 #, no-wrap
 msgid "<TabItem value=\"twn\" label=\"Taïwan\">\n"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/05.get_started/10.providers/10.isp/index.mdx:50
+#: docs/admin/05.get_started/10.providers/10.isp/index.mdx:51
 #, no-wrap
 msgid ""
 "| Service provider | Box (modem/router) | uPnP available | Port 25 openable | [Hairpinning](http://en.wikipedia.org/wiki/Hairpinning) | Customizable reverse DNS | Fix IP |\n"
@@ -106,19 +106,19 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/05.get_started/10.providers/10.isp/index.mdx:56
+#: docs/admin/05.get_started/10.providers/10.isp/index.mdx:57
 #, no-wrap
 msgid "<TabItem value=\"europe\">\n"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/05.get_started/10.providers/10.isp/index.mdx:58
+#: docs/admin/05.get_started/10.providers/10.isp/index.mdx:59
 #, no-wrap
 msgid "<TabItem value=\"belnl\" label=\"Belgium (nl)\">\n"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/05.get_started/10.providers/10.isp/index.mdx:64
+#: docs/admin/05.get_started/10.providers/10.isp/index.mdx:65
 #, no-wrap
 msgid ""
 "| Service provider | Box/ router | uPnP beschikbaar | [Poort 25 openen mogelijk](/admin/email)| [Hairpinning](http://fr.wikipedia.org/wiki/Hairpinning) | [Reverse DNS](https://en.wikipedia.org/wiki/Reverse_DNS_lookup) | vaste IP |\n"
@@ -129,19 +129,19 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (caution)
-#: docs/admin/05.get_started/10.providers/10.isp/index.mdx:65
+#: docs/admin/05.get_started/10.providers/10.isp/index.mdx:66
 #, no-wrap
 msgid "**Proximus** zou niet openstaan voor self-hosting. Het openen van de poorten zou moeilijker zijn om SPAM te voorkomen. Het loont de moeite om een vpn te gebruiken.\n"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/05.get_started/10.providers/10.isp/index.mdx:71
+#: docs/admin/05.get_started/10.providers/10.isp/index.mdx:72
 #, no-wrap
 msgid "<TabItem value=\"belfr\" label=\"Belgium (fr)\">\n"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/05.get_started/10.providers/10.isp/index.mdx:77
+#: docs/admin/05.get_started/10.providers/10.isp/index.mdx:78
 #, no-wrap
 msgid ""
 "| Fournisseur d’accès | Box/ routeur | uPnP activable | [Port 25 ouvrable](/admin/email)| [Hairpinning](http://fr.wikipedia.org/wiki/Hairpinning) | [Reverse DNS](https://en.wikipedia.org/wiki/Reverse_DNS_lookup) | IP fixe |\n"
@@ -152,48 +152,48 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (caution)
-#: docs/admin/05.get_started/10.providers/10.isp/index.mdx:78
+#: docs/admin/05.get_started/10.providers/10.isp/index.mdx:79
 #, no-wrap
 msgid "**Proximus** ne serait pas ouvert à l’auto-hébergement. L’ouverture des ports serait plus difficile afin d’éviter tout SPAM. Il serait préférable de passer par [Neutrinet](http://neutrinet.be), un des [membres de la Fédération French Data Network](http://www.ffdn.org/fr/membres).\n"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/05.get_started/10.providers/10.isp/index.mdx:84
+#: docs/admin/05.get_started/10.providers/10.isp/index.mdx:85
 #, no-wrap
 msgid "<TabItem value=\"fin\" label=\"Finland\">\n"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/05.get_started/10.providers/10.isp/index.mdx:90
+#: docs/admin/05.get_started/10.providers/10.isp/index.mdx:91
 #, no-wrap
 msgid ""
 "| Service provider | Box (modem/router) | uPnP available | Port 25 openable | [Hairpinning](http://en.wikipedia.org/wiki/Hairpinning) | Customizable reverse DNS | Fix IP |\n"
-"| --- | --- | --- | --- | --- | --- | --- |\n"
-"| DNA | Multiple | Yes | No | Yes | No | No. Only for business. |\n"
+"| ----- | --- | --- | --- | --- | --- | --- |\n"
+"| DNA   | Multiple | Yes | No | Yes | No | No. Only for business. |\n"
 "| Elisa | Multiple | Yes | No | Yes | Not available for consumers | No. Only for Business. |\n"
 "| Telia | Multiple | Yes | No | Yes | Not available for consumers | No. Only for Business. |\n"
 msgstr ""
 
 #. type: Fenced div block (caution)
-#: docs/admin/05.get_started/10.providers/10.isp/index.mdx:91
+#: docs/admin/05.get_started/10.providers/10.isp/index.mdx:92
 #, no-wrap
 msgid "Regulations in Finland prohibit the use of Port 25 for consumers.\n"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/05.get_started/10.providers/10.isp/index.mdx:97
+#: docs/admin/05.get_started/10.providers/10.isp/index.mdx:98
 #, no-wrap
 msgid "<TabItem value=\"fra\" label=\"France\">\n"
 msgstr ""
 
 #. type: Fenced div block (tip)
-#: docs/admin/05.get_started/10.providers/10.isp/index.mdx:98
+#: docs/admin/05.get_started/10.providers/10.isp/index.mdx:99
 #, no-wrap
 msgid "Tous les fournisseurs d’accès à Internet [membres de la Fédération French Data Network](http://www.ffdn.org/fr/membres) ont une politique favorable à l’auto-hébergement.\n"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/05.get_started/10.providers/10.isp/index.mdx:104
+#: docs/admin/05.get_started/10.providers/10.isp/index.mdx:105
 #, no-wrap
 msgid ""
 "| Fournisseur d’accès   | Box/routeur          | [UPnP](https://fr.wikipedia.org/wiki/Universal_Plug_and_Play) | [Port 25 ouvrable](/admin/email) | [Hairpinning](http://fr.wikipedia.org/wiki/Hairpinning) | [Reverse DNS](https://en.wikipedia.org/wiki/Reverse_DNS_lookup) personnalisable | [IP fixe](/admin/tutorials/domains/dns_dynamicip)                                       | [Non listé sur le DUL](https://en.wikipedia.org/wiki/Dialup_Users_List) |\n"
@@ -201,7 +201,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/05.get_started/10.providers/10.isp/index.mdx:108
+#: docs/admin/05.get_started/10.providers/10.isp/index.mdx:109
 #, no-wrap
 msgid ""
 "| [Free](./free)        | Freebox                  | ✔                                                                 | ✔                                   | ✔                                                           | ✔ (sauf IPv6, pas de support, et buggué sur certaines plages d'adresses ipv4)            | ✔                                                                   | ✘                                                                           |\n"
@@ -210,31 +210,31 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/05.get_started/10.providers/10.isp/index.mdx:110
+#: docs/admin/05.get_started/10.providers/10.isp/index.mdx:111
 #, no-wrap
 msgid "| Darty                 | Dartybox                 | ✔                                                                 | ✔                                   | ✔                                                           | ✘                                                                                        | …                                              | …                                                                           |\n"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/05.get_started/10.providers/10.isp/index.mdx:114
+#: docs/admin/05.get_started/10.providers/10.isp/index.mdx:115
 #, no-wrap
 msgid "Pour une liste plus complète et précise, référez-vous à la très bonne documentation de [wiki.auto-hebergement.fr](http://wiki.auto-hebergement.fr/fournisseurs/fai#d%C3%A9tail_des_fai).\n"
 msgstr ""
 
 #. type: Fenced div block (tip)
-#: docs/admin/05.get_started/10.providers/10.isp/index.mdx:115
+#: docs/admin/05.get_started/10.providers/10.isp/index.mdx:116
 #, no-wrap
 msgid "[FDN](http://www.fdn.fr) fournit des [VPN](http://www.fdn.fr/-VPN-.html) permettant de rapatrier une (ou plusieurs sur demande) IPv4 fixe et un /48 en IPv6 et ainsi « nettoyer » votre connexion si vous êtes chez l’un des FAI *limitants* du tableau ci-dessus.\n"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/05.get_started/10.providers/10.isp/index.mdx:121
+#: docs/admin/05.get_started/10.providers/10.isp/index.mdx:122
 #, no-wrap
 msgid "<TabItem value=\"hun\" label=\"Hungary\">\n"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/05.get_started/10.providers/10.isp/index.mdx:126
+#: docs/admin/05.get_started/10.providers/10.isp/index.mdx:127
 #, no-wrap
 msgid ""
 "| Service provider | Box (modem/router) | uPnP available | Port 25 openable | [Hairpinning](http://en.wikipedia.org/wiki/Hairpinning) | Customizable reverse DNS | Fix IP |\n"
@@ -244,19 +244,19 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tip)
-#: docs/admin/05.get_started/10.providers/10.isp/index.mdx:127
+#: docs/admin/05.get_started/10.providers/10.isp/index.mdx:128
 #, no-wrap
 msgid "DIGI allows non-business users to subscribe to their business plan, for roughly the same price as the regular plan. Fix IP is an additional subscription for business plan users.\n"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/05.get_started/10.providers/10.isp/index.mdx:133
+#: docs/admin/05.get_started/10.providers/10.isp/index.mdx:134
 #, no-wrap
 msgid "<TabItem value=\"irl\" label=\"Ireland\">\n"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/05.get_started/10.providers/10.isp/index.mdx:137
+#: docs/admin/05.get_started/10.providers/10.isp/index.mdx:138
 #, no-wrap
 msgid ""
 "| Service provider | Box (modem/router) | uPnP available | Port 25 openable | [Hairpinning](http://en.wikipedia.org/wiki/Hairpinning) | Customizable reverse DNS | Fix IP |\n"
@@ -265,13 +265,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/05.get_started/10.providers/10.isp/index.mdx:140
+#: docs/admin/05.get_started/10.providers/10.isp/index.mdx:141
 #, no-wrap
 msgid "<TabItem value=\"swe\" label=\"Sweden\">\n"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/05.get_started/10.providers/10.isp/index.mdx:146
+#: docs/admin/05.get_started/10.providers/10.isp/index.mdx:147
 #, no-wrap
 msgid ""
 "| Service provider | Box (modem/router) | uPnP available | Port 25 openable | [Hairpinning](http://en.wikipedia.org/wiki/Hairpinning) | Customizable reverse DNS | Fix IP |\n"
@@ -282,25 +282,25 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/05.get_started/10.providers/10.isp/index.mdx:148
+#: docs/admin/05.get_started/10.providers/10.isp/index.mdx:149
 #, no-wrap
 msgid "Ownit reserves port 3 and 4 of their router to TV. With a simple call to their hotline, explaining that you want to selfhost, they can reassign one of the ports to be in bridge mode. It means that your server will have its own public fixed IP address, in addition to the modem's.\n"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/05.get_started/10.providers/10.isp/index.mdx:151
+#: docs/admin/05.get_started/10.providers/10.isp/index.mdx:152
 #, no-wrap
 msgid "<TabItem value=\"che\" label=\"Switzerland\">\n"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/05.get_started/10.providers/10.isp/index.mdx:153
+#: docs/admin/05.get_started/10.providers/10.isp/index.mdx:154
 #, no-wrap
 msgid "Most of non business IP provided by ISP are blacklisted.\n"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/05.get_started/10.providers/10.isp/index.mdx:159
+#: docs/admin/05.get_started/10.providers/10.isp/index.mdx:160
 #, no-wrap
 msgid ""
 "| Service provider | Box (modem/router) | uPnP available | Port 25 openable | [Hairpinning](http://en.wikipedia.org/wiki/Hairpinning) | Customizable reverse DNS | Fix IP |\n"
@@ -311,13 +311,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/05.get_started/10.providers/10.isp/index.mdx:162
+#: docs/admin/05.get_started/10.providers/10.isp/index.mdx:163
 #, no-wrap
 msgid "<TabItem value=\"gbr\" label=\"UK\">\n"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/05.get_started/10.providers/10.isp/index.mdx:169
+#: docs/admin/05.get_started/10.providers/10.isp/index.mdx:170
 #, no-wrap
 msgid ""
 "| Service provider | Box (modem/router) | uPnP available | Port 25 openable | [Hairpinning](http://en.wikipedia.org/wiki/Hairpinning) | Customizable reverse DNS | Fix IP |\n"
@@ -329,19 +329,19 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/05.get_started/10.providers/10.isp/index.mdx:175
+#: docs/admin/05.get_started/10.providers/10.isp/index.mdx:176
 #, no-wrap
 msgid "<TabItem value=\"northamerica\">\n"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/05.get_started/10.providers/10.isp/index.mdx:177
+#: docs/admin/05.get_started/10.providers/10.isp/index.mdx:178
 #, no-wrap
 msgid "<TabItem value=\"canada\" label=\"Canada\" default>\n"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/05.get_started/10.providers/10.isp/index.mdx:182
+#: docs/admin/05.get_started/10.providers/10.isp/index.mdx:183
 #, no-wrap
 msgid ""
 "| Service provider | Box (modem/router) | uPnP available | Port 25 openable | [Hairpinning](http://en.wikipedia.org/wiki/Hairpinning) | Customizable reverse DNS | Fix IP |\n"
@@ -351,13 +351,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/05.get_started/10.providers/10.isp/index.mdx:185
+#: docs/admin/05.get_started/10.providers/10.isp/index.mdx:186
 #, no-wrap
 msgid "<TabItem value=\"usa\" label=\"USA\" default>\n"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/05.get_started/10.providers/10.isp/index.mdx:193
+#: docs/admin/05.get_started/10.providers/10.isp/index.mdx:194
 #, no-wrap
 msgid ""
 "| Service provider | Box (modem/router) | uPnP available | Port 25 openable | [Hairpinning](http://en.wikipedia.org/wiki/Hairpinning) | Customizable reverse DNS | Fix IP |\n"
@@ -370,19 +370,19 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/05.get_started/10.providers/10.isp/index.mdx:199
+#: docs/admin/05.get_started/10.providers/10.isp/index.mdx:200
 #, no-wrap
 msgid "<TabItem value=\"southamerica\">\n"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/05.get_started/10.providers/10.isp/index.mdx:201
+#: docs/admin/05.get_started/10.providers/10.isp/index.mdx:202
 #, no-wrap
 msgid "<TabItem value=\"brazil\" label=\"Brazil\" default>\n"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/05.get_started/10.providers/10.isp/index.mdx:205
+#: docs/admin/05.get_started/10.providers/10.isp/index.mdx:206
 #, no-wrap
 msgid ""
 "| Service provider | Box (modem/router) | uPnP available | Port 25 openable | [Hairpinning](http://en.wikipedia.org/wiki/Hairpinning) | Customizable reverse DNS | Fix IP |\n"
@@ -391,7 +391,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/05.get_started/10.providers/10.isp/index.mdx:211
+#: docs/admin/05.get_started/10.providers/10.isp/index.mdx:212
 #, no-wrap
 msgid "<TabItem value=\"oceania\">\n"
 msgstr ""

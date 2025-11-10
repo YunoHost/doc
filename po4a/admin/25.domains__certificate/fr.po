@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-11-09 21:01+0100\n"
+"POT-Creation-Date: 2025-11-10 02:13+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,6 +17,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #. type: Plain text
+#: docs/admin/05.get_started/20.install_on/_configuration.mdx:19
+#: docs/admin/05.get_started/20.install_on/_configuration.mdx:122
 #: docs/admin/15.command_line.mdx:76
 #: docs/admin/20.users/groups_and_permissions.mdx:35
 #: docs/admin/20.users/groups_and_permissions.mdx:63
@@ -25,12 +27,19 @@ msgstr ""
 #: docs/admin/20.users/groups_and_permissions.mdx:153
 #: docs/admin/20.users/groups_and_permissions.mdx:187
 #: docs/admin/20.users/groups_and_permissions.mdx:244
-#: docs/admin/25.domains/certificate.mdx:26
+#: docs/admin/25.domains/certificate.mdx:26 docs/admin/30.apps/index.mdx:34
+#: docs/admin/30.apps/index.mdx:104 docs/admin/30.apps/index.mdx:136
+#: docs/admin/40.backups/index.mdx:22 docs/admin/40.backups/index.mdx:71
+#: docs/admin/40.backups/index.mdx:137
+#: docs/admin/45.tutorials/35.email_configure_relay.mdx:49
 #, fuzzy, no-wrap
 msgid "<TabItem value=\"web\" label=\"From the web interface\">\n"
 msgstr "<TabItem value=\"web\" label=\"From the web interface\">\n"
 
 #. type: Plain text
+#: docs/admin/05.get_started/20.install_on/_configuration.mdx:30
+#: docs/admin/05.get_started/20.install_on/_configuration.mdx:104
+#: docs/admin/05.get_started/20.install_on/_configuration.mdx:129
 #: docs/admin/15.command_line.mdx:85
 #: docs/admin/20.users/groups_and_permissions.mdx:42
 #: docs/admin/20.users/groups_and_permissions.mdx:70
@@ -39,7 +48,11 @@ msgstr "<TabItem value=\"web\" label=\"From the web interface\">\n"
 #: docs/admin/20.users/groups_and_permissions.mdx:160
 #: docs/admin/20.users/groups_and_permissions.mdx:198
 #: docs/admin/20.users/groups_and_permissions.mdx:249
-#: docs/admin/25.domains/certificate.mdx:45
+#: docs/admin/25.domains/certificate.mdx:45 docs/admin/30.apps/index.mdx:39
+#: docs/admin/30.apps/index.mdx:113 docs/admin/30.apps/index.mdx:143
+#: docs/admin/40.backups/index.mdx:29 docs/admin/40.backups/index.mdx:85
+#: docs/admin/40.backups/index.mdx:144 docs/admin/40.backups/index.mdx:171
+#: docs/admin/45.tutorials/35.email_configure_relay.mdx:66
 #, fuzzy, no-wrap
 msgid "<TabItem value=\"cli\" label=\"From the command line\">\n"
 msgstr "<TabItem value=\"cli\" label=\"From the command line\">\n"

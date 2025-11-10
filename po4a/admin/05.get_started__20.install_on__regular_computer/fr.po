@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2025-11-09 21:01+0100\n"
+"POT-Creation-Date: 2025-11-10 02:13+0100\n"
 "PO-Revision-Date: 2025-11-09 20:53+0100\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -55,52 +55,63 @@ msgstr ""
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:49
 #: docs/admin/05.get_started/20.install_on/raspberry_pi.mdx:46
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:44
-#, no-wrap
-msgid "  <TabItem value=\"etcher\" label=\"With Etcher (recommended)\">\n"
-msgstr ""
+#, fuzzy, no-wrap
+msgid "<TabItem value=\"etcher\" label=\"With Etcher (recommended)\">\n"
+msgstr "<TabItem value=\"cli\" label=\"From the command line\">\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:55
-#: docs/admin/05.get_started/20.install_on/raspberry_pi.mdx:51
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:50
 #, no-wrap
-msgid "    ![Etcher](/img/softwares/etcher.gif)\n"
+msgid "![Etcher](/img/softwares/etcher.gif)\n"
 msgstr ""
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:58
-#: docs/admin/05.get_started/20.install_on/raspberry_pi.mdx:54
+#: docs/admin/05.get_started/20.install_on/raspberry_pi.mdx:55
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:53
+#, fuzzy, no-wrap
+msgid "<TabItem value=\"usbimager\" label=\"With USBimager\">\n"
+msgstr "<TabItem value=\"usbimage\" label=\"With USBimager\">\n"
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/arm_board.mdx:60
+#: docs/admin/05.get_started/20.install_on/raspberry_pi.mdx:57
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:55
 #, no-wrap
-msgid ""
-"  <TabItem value=\"usbimager\" label=\"With USBimager\">\n"
-"    Download [USBimager](https://bztsrc.gitlab.io/usbimager/) for your operating system and install it.\n"
+msgid "Download [USBimager](https://bztsrc.gitlab.io/usbimager/) for your operating system and install it.\n"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/05.get_started/20.install_on/arm_board.mdx:62
-#: docs/admin/05.get_started/20.install_on/raspberry_pi.mdx:58
-#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:57
-#, no-wrap
-msgid "    ![USBimager](/img/softwares/usbimager.png)\n"
-msgstr ""
-
-#. type: Plain text
-#: docs/admin/05.get_started/20.install_on/arm_board.mdx:65
+#: docs/admin/05.get_started/20.install_on/arm_board.mdx:64
 #: docs/admin/05.get_started/20.install_on/raspberry_pi.mdx:61
-#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:60
-#, no-wrap
-msgid ""
-"  <TabItem value=\"dd\" label=\"With dd\">\n"
-"    If you are on GNU/Linux / macOS and know your way around command line, you may also flash your USB stick or SD card with `dd`. You can identify which device corresponds to your USB stick or SD card with `fdisk -l` or `lsblk`. A typical SD card name is something like `/dev/mmcblk0`. BE CAREFUL and make sure you got the right name.\n"
-msgstr ""
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:59
+#, fuzzy, no-wrap
+msgid "![USBimager](/img/softwares/usbimager.png)\n"
+msgstr "   ![écran du gestionnaire de site](/img/softwares/filezilla_2.png)\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:67
-#: docs/admin/05.get_started/20.install_on/raspberry_pi.mdx:63
+#: docs/admin/05.get_started/20.install_on/raspberry_pi.mdx:64
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:62
+#, fuzzy, no-wrap
+msgid "<TabItem value=\"dd\" label=\"With dd\">\n"
+msgstr "<TabItem value=\"dd\" label=\"In command line with dd\">\n"
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/arm_board.mdx:69
+#: docs/admin/05.get_started/20.install_on/raspberry_pi.mdx:66
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:64
 #, no-wrap
-msgid "    Then run:\n"
+msgid "If you are on GNU/Linux / macOS and know your way around command line, you may also flash your USB stick or SD card with `dd`. You can identify which device corresponds to your USB stick or SD card with `fdisk -l` or `lsblk`. A typical SD card name is something like `/dev/mmcblk0`. BE CAREFUL and make sure you got the right name.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/arm_board.mdx:71
+#: docs/admin/05.get_started/20.install_on/raspberry_pi.mdx:68
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:66
+#, no-wrap
+msgid "Then run:\n"
 msgstr ""
 
 #. type: Title ##
@@ -170,263 +181,278 @@ msgstr ""
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:48
 #, no-wrap
-msgid "    Plug your USB key, select your image and click \"Flash\"\n"
+msgid "Plug your USB key, select your image and click \"Flash\"\n"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:55
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:57
 #, no-wrap
-msgid "    Plug your USB key, select your image and click \"Write\"\n"
+msgid "Plug your USB key, select your image and click \"Write\"\n"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:71
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:74
+#, fuzzy, no-wrap
+msgid "<TabItem value=\"cd_dvd\" label=\"Burning a CD/DVD\">\n"
+msgstr "<TabItem value=\"hun\" label=\"Hungary\">\n"
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:76
 #, no-wrap
-msgid ""
-"  <TabItem value=\"cd_dvd\" label=\"Burning a CD/DVD\">\n"
-"    For older devices, you might want to burn a CD/DVD. The software to use depends on your operating system.\n"
+msgid "For older devices, you might want to burn a CD/DVD. The software to use depends on your operating system.\n"
 msgstr ""
 
-#. type: Bullet: '    - '
-#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:75
+#. type: Bullet: '- '
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:80
 #, no-wrap
 msgid "On Windows, use [ImgBurn](http://www.imgburn.com/) to write the image file on the disc\n"
 msgstr ""
 
-#. type: Bullet: '    - '
-#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:75
+#. type: Bullet: '- '
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:80
 #, no-wrap
 msgid "On macOS, use [Disk Utility](http://support.apple.com/kb/ph7025)\n"
 msgstr ""
 
-#. type: Bullet: '    - '
-#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:75
+#. type: Bullet: '- '
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:80
 #, no-wrap
 msgid "On GNU/Linux, you have plenty of choices, like [Brasero](https://wiki.gnome.org/Apps/Brasero) or [K3b](http://www.k3b.org/)\n"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:78
-#, no-wrap
-msgid ""
-"  <TabItem value=\"ventoy\" label=\"Using Ventoy\">\n"
-"    Ventoy will be useful if you can't sucessfully boot the YunoHost image using the other methods.\n"
-msgstr ""
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:83
+#, fuzzy, no-wrap
+msgid "<TabItem value=\"ventoy\" label=\"Using Ventoy\">\n"
+msgstr "<TabItem value=\"hun\" label=\"Hungary\">\n"
 
 #. type: Plain text
-#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:80
-#, no-wrap
-msgid "    [Ventoy](https://www.ventoy.net/) is a nice tool that makes it really easy to put multiple linux images on a USB stick. When the computer refuses to boot from an image on a usb stick, Ventoy will usually be able to boot it anyway!\n"
-msgstr ""
-
-#. type: Bullet: '    1. '
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:85
 #, no-wrap
-msgid "Install [Ventoy](https://www.ventoy.net/) on the USB stick. Refer to the [install instructions](https://www.ventoy.net/en/doc_start.html).\n"
-msgstr ""
-
-#. type: Bullet: '        - '
-#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:85
-#, no-wrap
-msgid "This will create 2 partitions on the stick.\n"
-msgstr ""
-
-#. type: Bullet: '    2. '
-#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:85
-#, no-wrap
-msgid "Using your favorite file explorer app, copy the YunoHost image file on the big `Ventoy` partition (not \"VTOYEFI\")\n"
-msgstr ""
-
-#. type: Bullet: '        - '
-#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:85
-#, no-wrap
-msgid "Don't use *Balena Etcher*, USBImager or `dd` for this!\n"
+msgid "Ventoy will be useful if you can't sucessfully boot the YunoHost image using the other methods.\n"
 msgstr ""
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:87
 #, no-wrap
-msgid "    Later, when you'll boot the computer using this usb stick, Ventoy will appear and will list the images on the USB stick. Select the YunoHost image, then select GRUB2 launch option (or use whichever works for your computer 😉)\n"
+msgid "[Ventoy](https://www.ventoy.net/) is a nice tool that makes it really easy to put multiple linux images on a USB stick. When the computer refuses to boot from an image on a usb stick, Ventoy will usually be able to boot it anyway!\n"
+msgstr ""
+
+#. type: Bullet: '1. '
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:92
+#, no-wrap
+msgid "Install [Ventoy](https://www.ventoy.net/) on the USB stick. Refer to the [install instructions](https://www.ventoy.net/en/doc_start.html).\n"
+msgstr ""
+
+#. type: Bullet: '    - '
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:92
+#, no-wrap
+msgid "This will create 2 partitions on the stick.\n"
+msgstr ""
+
+#. type: Bullet: '2. '
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:92
+#, no-wrap
+msgid "Using your favorite file explorer app, copy the YunoHost image file on the big `Ventoy` partition (not \"VTOYEFI\")\n"
+msgstr ""
+
+#. type: Bullet: '    - '
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:92
+#, no-wrap
+msgid "Don't use *Balena Etcher*, USBImager or `dd` for this!\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:94
+#, no-wrap
+msgid "Later, when you'll boot the computer using this usb stick, Ventoy will appear and will list the images on the USB stick. Select the YunoHost image, then select GRUB2 launch option (or use whichever works for your computer 😉)\n"
 msgstr ""
 
 #. type: Title ##
-#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:90
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:98
 #, no-wrap
 msgid "<FAIcon icon=\"fa-plug\"/> Boot the machine on your USB stick"
 msgstr ""
 
 #. type: Bullet: '- '
-#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:95
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:103
 #, no-wrap
 msgid "Connect your computer to your home router via Ethernet\n"
 msgstr ""
 
 #. type: Bullet: '- '
-#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:95
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:103
 #, no-wrap
 msgid "Boot up your server with the USB stick or a CD-ROM inserted, and select it as **bootable device**.\n"
 msgstr ""
 
 #. type: Bullet: '  - '
-#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:95
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:103
 #, no-wrap
 msgid "Depending on your hardware, you will need to press one of the following keys:\n"
 msgstr ""
 
 #. type: Bullet: '  - '
-#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:97
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:105
 #, no-wrap
 msgid "N.B. : if the server was previously installed with a recent version of Windows (8+), you first need to tell Windows, to \"actually reboot\". This can be done somewhere in \"Advanced startup options\".\n"
 msgstr ""
 
 #. type: Fenced div block (tip)
-#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:98
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:106
 #, no-wrap
 msgid "If you can't boot the YunoHost image, try using Ventoy (select \"Ventoy\" in the section \"Flash the YunoHost image\" above).\n"
 msgstr ""
 
 #. type: Title ##
-#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:102
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:110
 #: docs/admin/05.get_started/20.install_on/virtualbox.mdx:68
 #, no-wrap
 msgid "<FAIcon icon=\"fa-rocket\"/> Launch the graphical install"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:105
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:113
 #: docs/admin/05.get_started/20.install_on/virtualbox.mdx:71
 #, no-wrap
 msgid "You should see a screen like this:\n"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:107
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:115
 #: docs/admin/05.get_started/20.install_on/virtualbox.mdx:73
 #, no-wrap
 msgid "<Figure caption=\"Preview of the ISO menu\" src=\"/img/softwares/virtualbox_3.png\"/>\n"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:110
-#, no-wrap
-msgid "  <TabItem value=\"classic\" label=\"Classic installation on a whole disk\">\n"
-msgstr ""
-
-#. type: Plain text
-#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:114
-#, no-wrap
-msgid ""
-"    :::danger\n"
-"    Once you have validated the keyboard layout, the installation will be launched and will completely erase the data on your hard disk!\n"
-"    :::\n"
-msgstr ""
-
-#. type: Bullet: '    1. '
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:118
-#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:83
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:76
+#, fuzzy, no-wrap
+msgid "<TabItem value=\"classic\" label=\"Classic installation on a whole disk\">\n"
+msgstr "<TabItem value=\"fin\" label=\"Finland\">\n"
+
+#. type: Fenced div block (danger)
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:119
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:77
+#, no-wrap
+msgid "Once you have validated the keyboard layout, the installation will be launched and will completely erase the data on your hard disk!\n"
+msgstr ""
+
+#. type: Bullet: '1. '
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:126
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:84
 #, no-wrap
 msgid "Select `Graphical install`\n"
 msgstr ""
 
-#. type: Bullet: '    2. '
-#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:118
-#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:83
+#. type: Bullet: '2. '
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:126
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:84
 #, no-wrap
 msgid "Select your language, your location, your keyboard layout, and eventually your timezone.\n"
 msgstr ""
 
-#. type: Bullet: '    3. '
-#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:118
-#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:83
+#. type: Bullet: '3. '
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:126
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:84
 #, no-wrap
 msgid "The installer will then download and install all required packages.\n"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:121
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:129
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:87
 #, no-wrap
 msgid "<TabItem value=\"expert\" label=\"Installation in expert mode\">\n"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:123
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:131
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:89
 #, no-wrap
 msgid "The YunoHost project simplified the classic installation as much as possible in order to avoid as many people as possible being lost with questions that are too technical or related to specific cases.\n"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:125
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:133
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:91
 #, no-wrap
 msgid "With the expert mode installation, you have more possibilities, especially concerning the exact partitioning of your storage media. You can also decide to use the classic mode and [add your disks afterwards](/admin/tutorials/external_storage).\n"
 msgstr ""
 
 #. type: Title ###
-#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:126
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:134
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:92
 #, no-wrap
 msgid "Summary of the steps in expert mode"
 msgstr ""
 
-#. type: Bullet: '      1. '
-#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:133
-#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:97
+#. type: Bullet: '  1. '
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:141
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:99
 #, no-wrap
 msgid "Select `Expert graphical install`.\n"
 msgstr ""
 
-#. type: Bullet: '      2. '
-#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:133
-#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:97
+#. type: Bullet: '  2. '
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:141
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:99
 #, no-wrap
 msgid "Select your language, location, keyboard layout and possibly your timezone.\n"
 msgstr ""
 
-#. type: Bullet: '      3. '
-#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:133
-#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:97
+#. type: Bullet: '  3. '
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:141
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:99
 #, no-wrap
 msgid "Partition your disks. This is where you can set up a RAID or encrypt all or part of the server.\n"
 msgstr ""
 
-#. type: Bullet: '      4. '
-#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:133
-#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:97
+#. type: Bullet: '  4. '
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:141
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:99
 #, no-wrap
 msgid "Specify a possible HTTP proxy to use for the installation of the packages\n"
 msgstr ""
 
-#. type: Bullet: '      5. '
-#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:133
-#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:97
+#. type: Bullet: '  5. '
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:141
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:99
 #, no-wrap
 msgid "Specify on which volumes grub should be installed\n"
 msgstr ""
 
 #. type: Title ###
-#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:134
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:142
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:100
 #, no-wrap
 msgid "Regarding partitioning"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:137
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:145
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:103
 #, no-wrap
 msgid "In general, we recommend against partitioning `/var`, `/opt`, `/usr`, `/bin`, `/etc`, `/lib`, `/tmp` and `/root` on separate partitions. This will prevent you from having to worry about full partitions that could crash your machine, cause app installations to fail, or even corrupt your databases.\n"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:139
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:147
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:105
 #, no-wrap
 msgid "For performance reasons, it is recommended to mount your fastest storage (SSD) on the root `/`.\n"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:141
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:149
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:107
 #, no-wrap
 msgid "If you have one or more hard drives to store data, you can choose to mount it on one of these folders depending on your usage.\n"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:149
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:157
 #, no-wrap
 msgid ""
 "| Path                             | Contents |\n"
@@ -439,58 +465,63 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:151
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:159
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:117
 #, no-wrap
 msgid "If you want flexibility and don't want to (re)size partitions, you can also choose to mount on `/mnt/hdd` and follow this [tutorial to mount all these folders with `mount --bind`](/admin/tutorials/external_storage).\n"
 msgstr ""
 
 #. type: Title ###
-#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:152
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:160
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:118
 #, no-wrap
 msgid "About encryption"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:155
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:163
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:121
 #, no-wrap
 msgid "Be aware that if you encrypt all or part of your disks, you will have to type the passphrase every time you restart your server, which can be a problem if you are not on site. There are however solutions (quite difficult to implement) that allow you to type the passphrase via SSH or via a web page (search for \"dropbear encrypted disk\").\n"
 msgstr ""
 
 #. type: Title ###
-#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:156
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:164
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:122
 #, no-wrap
 msgid "About RAID"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:159
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:167
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:125
 #, no-wrap
 msgid "Keep in mind that:\n"
 msgstr ""
 
-#. type: Bullet: '    - '
-#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:163
-#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:127
+#. type: Bullet: '- '
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:171
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:129
 #, no-wrap
 msgid "the disks in your RAIDs must be of different brands, wear and tear or batches (especially if they are SSDs)\n"
 msgstr ""
 
-#. type: Bullet: '    - '
-#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:163
-#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:127
+#. type: Bullet: '- '
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:171
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:129
 #, no-wrap
 msgid "a RAID 1 (even without a spare) is more reliable than a RAID 5 from a probability point of view\n"
 msgstr ""
 
-#. type: Bullet: '    - '
-#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:163
-#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:127
+#. type: Bullet: '- '
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:171
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:129
 #, no-wrap
 msgid "hardware raids are dependent on the raid card, if the card fails you will need a replacement to read and rebuild the array\n"
 msgstr ""
 
 #. type: Fenced div block (tip)
-#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:167
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:175
 #, no-wrap
 msgid "If the YunoHost installer fails and you can't solve the issue, know that it's also possible to install Debian and then install YunoHost on top. See [the specific instructions](/admin/get_started/install_on/on_top_of_debian#-run-the-install-script).\n"
 msgstr ""

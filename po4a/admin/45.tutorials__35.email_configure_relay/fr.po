@@ -6,11 +6,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-11-09 21:01+0100\n"
+"POT-Creation-Date: 2025-11-10 02:13+0100\n"
 "PO-Revision-Date: 2025-11-09 23:48+0000\n"
 "Last-Translator: Weblate Admin <yunohost@translate.yunohost.org>\n"
-"Language-Team: French <https://translate.yunohost.org/projects/"
-"doc-experimental/45tutorials__35email_configure_relay/fr/>\n"
+"Language-Team: French <https://translate.yunohost.org/projects/doc-"
+"experimental/45tutorials__35email_configure_relay/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,14 +20,44 @@ msgstr ""
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/_configuration.mdx:19
-#: docs/admin/05.get_started/20.install_on/_configuration.mdx:116
-#: docs/admin/30.apps/index.mdx:100 docs/admin/30.apps/index.mdx:132
-#: docs/admin/40.backups/index.mdx:25 docs/admin/40.backups/index.mdx:74
-#: docs/admin/40.backups/index.mdx:140
+#: docs/admin/05.get_started/20.install_on/_configuration.mdx:122
+#: docs/admin/15.command_line.mdx:76
+#: docs/admin/20.users/groups_and_permissions.mdx:35
+#: docs/admin/20.users/groups_and_permissions.mdx:63
+#: docs/admin/20.users/groups_and_permissions.mdx:84
+#: docs/admin/20.users/groups_and_permissions.mdx:128
+#: docs/admin/20.users/groups_and_permissions.mdx:153
+#: docs/admin/20.users/groups_and_permissions.mdx:187
+#: docs/admin/20.users/groups_and_permissions.mdx:244
+#: docs/admin/25.domains/certificate.mdx:26 docs/admin/30.apps/index.mdx:34
+#: docs/admin/30.apps/index.mdx:104 docs/admin/30.apps/index.mdx:136
+#: docs/admin/40.backups/index.mdx:22 docs/admin/40.backups/index.mdx:71
+#: docs/admin/40.backups/index.mdx:137
 #: docs/admin/45.tutorials/35.email_configure_relay.mdx:49
-#, no-wrap
-msgid "  <TabItem value=\"web\" label=\"From the web interface\">\n"
-msgstr "  <TabItem value=\"web\" label=\"Depuis l'interface web\">\n"
+#, fuzzy, no-wrap
+msgid "<TabItem value=\"web\" label=\"From the web interface\">\n"
+msgstr "<TabItem value=\"web\" label=\"From the web interface\">\n"
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/_configuration.mdx:30
+#: docs/admin/05.get_started/20.install_on/_configuration.mdx:104
+#: docs/admin/05.get_started/20.install_on/_configuration.mdx:129
+#: docs/admin/15.command_line.mdx:85
+#: docs/admin/20.users/groups_and_permissions.mdx:42
+#: docs/admin/20.users/groups_and_permissions.mdx:70
+#: docs/admin/20.users/groups_and_permissions.mdx:95
+#: docs/admin/20.users/groups_and_permissions.mdx:135
+#: docs/admin/20.users/groups_and_permissions.mdx:160
+#: docs/admin/20.users/groups_and_permissions.mdx:198
+#: docs/admin/20.users/groups_and_permissions.mdx:249
+#: docs/admin/25.domains/certificate.mdx:45 docs/admin/30.apps/index.mdx:39
+#: docs/admin/30.apps/index.mdx:113 docs/admin/30.apps/index.mdx:143
+#: docs/admin/40.backups/index.mdx:29 docs/admin/40.backups/index.mdx:85
+#: docs/admin/40.backups/index.mdx:144 docs/admin/40.backups/index.mdx:171
+#: docs/admin/45.tutorials/35.email_configure_relay.mdx:66
+#, fuzzy, no-wrap
+msgid "<TabItem value=\"cli\" label=\"From the command line\">\n"
+msgstr "<TabItem value=\"cli\" label=\"From the command line\">\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/45.tutorials/35.email_configure_relay.mdx:1
@@ -183,7 +213,7 @@ msgstr "**Mot de passe du relais SMTP** : Tout simplement le mot de passe.\n"
 
 #. type: Fenced div block (warning)
 #: docs/admin/45.tutorials/35.email_configure_relay.mdx:58
-#: docs/admin/45.tutorials/35.email_configure_relay.mdx:73
+#: docs/admin/45.tutorials/35.email_configure_relay.mdx:74
 #, fuzzy, no-wrap
 msgid "<FAIcon icon=\"fa-exclamation-triangle\"/> Password with `#` char won't works properly due to postfix limitation (it's possible other chars are forbidden, don't hesitate to report it to update this doc).\n"
 msgstr "<FAIcon icon=\"fa-exclamation-triangle\"/>  Les mots de passe avec le caractère `#` ne fonctionneront pas proprement à cause d'une limitation de postfix (d'autres caractères sont peut-être interdit, n'hésitez pas à rapporter ce genre de cas pour la mise à jour de cette doc).\n"
@@ -195,95 +225,93 @@ msgid "![Option-Relais-Smtp](/img/webadmin/relay_smtp_option_webadmin_en.png)\n"
 msgstr "![Option-Relais-Smtp](/img/webadmin/relay_smtp_option_webadmin_en.png)\n"
 
 #. type: Plain text
-#: docs/admin/45.tutorials/35.email_configure_relay.mdx:67
+#: docs/admin/45.tutorials/35.email_configure_relay.mdx:68
 #, fuzzy, no-wrap
-msgid ""
-"  <TabItem value=\"cli\" label=\"From the command line\">\n"
-"In order to setup your YunoHost to use your SMTP relay, you will have to configure four things:\n"
+msgid "In order to setup your YunoHost to use your SMTP relay, you will have to configure four things:\n"
 msgstr ""
 "  <TabItem value=\"cli\" label=\"From the command line\">\n"
 "Pour que YunoHost soit capable d'utiliser le relais, il faut paramétrer 4 choses.\n"
 
 #. type: Bullet: '1. '
-#: docs/admin/45.tutorials/35.email_configure_relay.mdx:72
+#: docs/admin/45.tutorials/35.email_configure_relay.mdx:73
 #, fuzzy, no-wrap
 msgid "Your SMTP relay URL (for this tutorial we will use `smtprelay.tld`)\n"
 msgstr "Votre url de relais SMTP (on utilisera `smtprelay.tld`).\n"
 
 #. type: Bullet: '2. '
-#: docs/admin/45.tutorials/35.email_configure_relay.mdx:72
+#: docs/admin/45.tutorials/35.email_configure_relay.mdx:73
 #, fuzzy, no-wrap
 msgid "The port on which you access the relay (for this tutorial we will use port 2525 below)\n"
 msgstr "Le port sur lequel on accède au relais (on utilisera le port 2525 ci-dessous)\n"
 
 #. type: Bullet: '3. '
-#: docs/admin/45.tutorials/35.email_configure_relay.mdx:72
+#: docs/admin/45.tutorials/35.email_configure_relay.mdx:73
 #, fuzzy, no-wrap
 msgid "Your SMTP relay username (for this tutorial we will use `username`)\n"
 msgstr "Votre nom d'utilisateur SMTP (on utilisera `username`).\n"
 
 #. type: Bullet: '4. '
-#: docs/admin/45.tutorials/35.email_configure_relay.mdx:72
+#: docs/admin/45.tutorials/35.email_configure_relay.mdx:73
 #, fuzzy, no-wrap
 msgid "Your SMTP relay password (for this tutorial we will use `password`)\n"
 msgstr "Votre mot de passe SMTP (on utilisera `password`).\n"
 
 #. type: Plain text
-#: docs/admin/45.tutorials/35.email_configure_relay.mdx:78
+#: docs/admin/45.tutorials/35.email_configure_relay.mdx:79
 #, fuzzy, no-wrap
 msgid "Your SMTP relay will obviously provide you with these four things, that should be available in your control panel or whatsoever.\n"
 msgstr "Le fournisseur SMTP vous fournit ces trois informations.\n"
 
 #. type: Plain text
-#: docs/admin/45.tutorials/35.email_configure_relay.mdx:80
+#: docs/admin/45.tutorials/35.email_configure_relay.mdx:81
 #, fuzzy, no-wrap
 msgid "You can log into your YunoHost server using SSH:\n"
 msgstr "Premièrement se connecter sur son serveur en SSH avec la commande :\n"
 
 #. type: Plain text
-#: docs/admin/45.tutorials/35.email_configure_relay.mdx:86
+#: docs/admin/45.tutorials/35.email_configure_relay.mdx:87
 #, fuzzy, no-wrap
 msgid "Then you can update the three values as below:\n"
 msgstr "Ensuite, mettre à jour les informations suivantes :\n"
 
 #. type: Plain text
-#: docs/admin/45.tutorials/35.email_configure_relay.mdx:96
+#: docs/admin/45.tutorials/35.email_configure_relay.mdx:97
 #, fuzzy, no-wrap
 msgid "It may be a good idea to double confirm your settings by doing:\n"
 msgstr "C'est une bonne idée de confirmer les informations en faisant :\n"
 
 #. type: Plain text
-#: docs/admin/45.tutorials/35.email_configure_relay.mdx:105
+#: docs/admin/45.tutorials/35.email_configure_relay.mdx:106
 #, fuzzy, no-wrap
 msgid "Your SMTP relay is now configured!\n"
 msgstr "Votre relais SMTP est maintenant configuré !\n"
 
 #. type: Fenced div block (warning)
-#: docs/admin/45.tutorials/35.email_configure_relay.mdx:106
+#: docs/admin/45.tutorials/35.email_configure_relay.mdx:107
 #, fuzzy, no-wrap
 msgid "<FAIcon icon=\"fa-exclamation-triangle\"/> From now on, a non trusty SMTP relay provider could read or use the data of all the emails you send without telling you (but still won't be able to read nor to use the data from emails you receive).\n"
 msgstr "<FAIcon icon=\"fa-exclamation-triangle\"/>  Maintenant le relais SMTP est capable de lire et d'utiliser toutes les informations contenues dans les emails que vous envoyez sans votre accord. Mais il ne sera pas capable de lire les informations des emails que vous recevez.\n"
 
 #. type: Title ####
-#: docs/admin/45.tutorials/35.email_configure_relay.mdx:110
+#: docs/admin/45.tutorials/35.email_configure_relay.mdx:111
 #, fuzzy, no-wrap
 msgid "Relay all emails, even those from domains managed by YunoHost"
 msgstr "Relayer tous les emails même ceux des noms de domaines gérés par YunoHost"
 
 #. type: Plain text
-#: docs/admin/45.tutorials/35.email_configure_relay.mdx:113
+#: docs/admin/45.tutorials/35.email_configure_relay.mdx:114
 #, fuzzy, no-wrap
 msgid "If you have plenty of trust in your SMTP relay, have a second IMAP server that you wish or are forced to use instead of the YunoHost one, you can choose to relay all emails even those from domain names managed by YunoHost by commenting the following two lines in `/etc/postfix/main.cf` :\n"
 msgstr "Si vous avez une grande confiance dans votre relais SMTP, que vous avez un second serveur IMAP que vous souhaitez ou êtes contraint d'utiliser en lieu et place de celui de YunoHost, vous pouvez choisir de relayer tous les emails même ceux des noms de domaines gérés par YunoHost en commentant les deux ligne suivantes dans `/etc/postfix/main.cf` :\n"
 
 #. type: Title ###
-#: docs/admin/45.tutorials/35.email_configure_relay.mdx:119
+#: docs/admin/45.tutorials/35.email_configure_relay.mdx:120
 #, fuzzy, no-wrap
 msgid "Step 4: Check your setup"
 msgstr "Étape 4 : Vérifier la configuration"
 
 #. type: Plain text
-#: docs/admin/45.tutorials/35.email_configure_relay.mdx:123
+#: docs/admin/45.tutorials/35.email_configure_relay.mdx:124
 #, fuzzy, no-wrap
 msgid ""
 "You can check your setup by sending emails and try if everything works.\n"

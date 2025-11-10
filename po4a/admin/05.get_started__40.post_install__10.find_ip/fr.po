@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-11-09 20:53+0100\n"
+"POT-Creation-Date: 2025-11-10 02:13+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -56,59 +56,63 @@ msgstr ""
 "[ui-tab title=\"(Recommandé) Avec AngryIP\"]\n"
 
 #. type: Plain text
-#: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:21
+#: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:20
 #, fuzzy, no-wrap
-msgid ""
-"<TabItem value=\"angryip\" label=\"With AngryIP (Recommended)\" default>\n"
-"You can use the [AngryIP](https://angryip.org/download/) software to achieve that. You just need to scan these local ip ranges in this order until you find the active IP corresponding to your server:\n"
+msgid "<TabItem value=\"angryip\" label=\"With AngryIP (Recommended)\" default>\n"
+msgstr "<TabItem value=\"ivory\" label=\"Côte d'Ivoire\" default>\n"
+
+#. type: Plain text
+#: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:22
+#, fuzzy, no-wrap
+msgid "You can use the [AngryIP](https://angryip.org/download/) software to achieve that. You just need to scan these local ip ranges in this order until you find the active IP corresponding to your server:\n"
 msgstr ""
 "<TabItem value=\"angryip\" label=\"With AngryIP (Recommended)\" default>\n"
 "Vous pouvez utiliser le logiciel [AngryIP](https://angryip.org/download/) pour y parvenir. Vous devez juste scanner ces plages d'IP dans cet ordre jusqu'à trouver l'IP correspondante à votre serveur :\n"
 
 #. type: Bullet: '- '
-#: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:27
+#: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:28
 #, fuzzy, no-wrap
 msgid "`192.168.0.0` -> `192.168.0.255`\n"
 msgstr "`192.168.0.0` -> `192.168.0.255`\n"
 
 #. type: Bullet: '- '
-#: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:27
+#: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:28
 #, fuzzy, no-wrap
 msgid "`192.168.1.0` -> `192.168.1.255`\n"
 msgstr "`192.168.1.0` -> `192.168.1.255`\n"
 
 #. type: Bullet: '- '
-#: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:27
+#: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:28
 #, fuzzy, no-wrap
 msgid "`192.168.2.0` -> `192.168.255.255`\n"
 msgstr "`192.168.2.0` -> `192.168.255.255`\n"
 
 #. type: Bullet: '- '
-#: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:27
+#: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:28
 #, fuzzy, no-wrap
 msgid "`10.0.0.0` -> `10.0.255.255`\n"
 msgstr "`10.0.0.0` -> `10.0.255.255`\n"
 
 #. type: Bullet: '- '
-#: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:27
+#: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:28
 #, fuzzy, no-wrap
 msgid "`172.16.0.0` -> `172.31.255.255`\n"
 msgstr "`172.16.0.0` -> `172.31.255.255`\n"
 
 #. type: Bullet: '- '
-#: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:28
+#: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:29
 #, fuzzy, no-wrap
 msgid "you can order by ping like on this screenshot to easily see effectively-used IP.\n"
 msgstr "vous pouvez ordonner par ping comme dans cette capture d'écran, pour voir plus facilement toutes les IP effectivement actives.\n"
 
 #. type: Bullet: '- '
-#: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:28
+#: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:29
 #, fuzzy, no-wrap
 msgid "your server should typically be displayed as listening on port 80 and 443\n"
 msgstr "votre serveur devrait être monté comme écoutant sur les ports 80 et 443\n"
 
 #. type: Bullet: '- '
-#: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:28
+#: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:29
 #, fuzzy, no-wrap
 msgid "in case of doubt, just type `https://192.168.x.y` in your browser to check if it's a YunoHost or not.\n"
 msgstr "en cas de doute, tapez directement dans votre navigateur `https://192.168.x.y` pour voir si c'est un YunoHost ou non.\n"
@@ -116,95 +120,107 @@ msgstr "en cas de doute, tapez directement dans votre navigateur `https://192.16
 #. type: Plain text
 #: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:39
 #, fuzzy, no-wrap
-msgid ""
-"<TabItem value=\"router\" label=\"With your internet router / box\">\n"
-"Connect to your internet box / router interface to list the machines connected.\n"
+msgid "<TabItem value=\"router\" label=\"With your internet router / box\">\n"
+msgstr "  <TabItem value=\"sftp\" label=\"With a SFTP client\">\n"
+
+#. type: Plain text
+#: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:41
+#, fuzzy, no-wrap
+msgid "Connect to your internet box / router interface to list the machines connected.\n"
 msgstr ""
 "<TabItem value=\"router\" label=\"Avec votre box internet\">\n"
 "Utilisez l'interface de votre box internet pour lister les machines connectées.\n"
 
 #. type: Plain text
-#: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:43
+#: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:44
 #, fuzzy, no-wrap
-msgid ""
-"<TabItem value=\"arp-scan\" label=\"With arp-scan\">\n"
-"If you're using Linux, you can open a terminal and use `sudo arp-scan --local` to list the IP on your local network (this may also work in Windows);\n"
+msgid "<TabItem value=\"arp-scan\" label=\"With arp-scan\">\n"
+msgstr "<TabItem value=\"fra\" label=\"France\">\n"
+
+#. type: Plain text
+#: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:46
+#, fuzzy, no-wrap
+msgid "If you're using Linux, you can open a terminal and use `sudo arp-scan --local` to list the IP on your local network (this may also work in Windows);\n"
 msgstr ""
 "<TabItem value=\"arp-scan\" label=\"With arp-scan\">\n"
 "Si vous êtes sous Linux, ouvrez un terminal et tapez `sudo arp-scan --local` pour lister les IP des machines sur le réseau local (ceci fonctionne aussi peut-être sous Windows) ;\n"
 
 #. type: Plain text
-#: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:45
+#: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:48
 #, fuzzy, no-wrap
 msgid "If the `arp-scan` command displays a confusing number of devices, you can check which ones are open to SSH with `nmap -p 22 192.168.1.0/24` to sort them out (adapt the IP range to your local network)\n"
 msgstr "Si la commande `arp-scan` vous affiche beaucoup de machines, vous pouvez vérifier lesquelles sont ouvertes au SSH avec `nmap -p 22 192.168.1.0/24` pour faire du tri (adaptez la plage IP selon votre réseau local)\n"
 
 #. type: Plain text
-#: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:49
+#: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:51
 #, fuzzy, no-wrap
-msgid ""
-"<TabItem value=\"direct\" label=\"With a direct access on the server\">\n"
-"Plug a screen on your server, log in and type `hostname --all-ip-address`.\n"
+msgid "<TabItem value=\"direct\" label=\"With a direct access on the server\">\n"
+msgstr "  <TabItem value=\"sftp\" label=\"With a SFTP client\">\n"
+
+#. type: Plain text
+#: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:53
+#, fuzzy, no-wrap
+msgid "Plug a screen on your server, log in and type `hostname --all-ip-address`.\n"
 msgstr ""
 "<TabItem value=\"direct\" label=\"Avec un accès direct au serveur\">\n"
 "Branchez un écran sur votre serveur, loggez-vous et tapez `hostname --all-ip-address`.\n"
 
 #. type: Plain text
-#: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:51
+#: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:55
 #, fuzzy, no-wrap
 msgid "The default credentials (before post-installation!) to log in are:\n"
 msgstr "Les identifiants par défaut (avant la post-installation !) sont :\n"
 
 #. type: Bullet: '- '
-#: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:54
+#: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:58
 #, fuzzy, no-wrap
 msgid "login: `root`\n"
 msgstr "login : `root`\n"
 
 #. type: Bullet: '- '
-#: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:54
+#: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:58
 #, fuzzy, no-wrap
 msgid "password: `yunohost`\n"
 msgstr "mot de passe : `yunohost`\n"
 
 #. type: Plain text
-#: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:56
+#: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:60
 #, fuzzy, no-wrap
 msgid "(If you are using a raw Armbian image instead of the pre-installed YunoHost image, the credentials are root / 1234)\n"
 msgstr "(Si vous utilisez une image Armbian brute plutôt que les images YunoHost pré-installées, les identifiants sont root / 1234)\n"
 
 #. type: Title ##
-#: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:60
+#: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:64
 #, fuzzy, no-wrap
 msgid "I still can't find my local IP"
 msgstr "Je ne trouve toujours pas mon IP locale"
 
 #. type: Plain text
-#: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:63
+#: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:67
 #, fuzzy, no-wrap
 msgid "If you are unable to find your server using any of the previous tricks, maybe your server did not boot correctly:\n"
 msgstr "Si vous n'êtes pas capable de trouver votre serveur avec les méthodes précédentes, alors peut-être que votre serveur n'a pas démarré correctement.\n"
 
 #. type: Bullet: '- '
-#: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:67
+#: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:71
 #, fuzzy, no-wrap
 msgid "Make sure that your server is properly plugged in;\n"
 msgstr "Assurez-vous que le serveur est correctement branché ;\n"
 
 #. type: Bullet: '- '
-#: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:67
+#: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:71
 #, fuzzy, no-wrap
 msgid "If you're using an SD card, make sure the connector is not too dusty;\n"
 msgstr "Si votre serveur a une carte SD, essayez de vous assurer que la connectique n'est pas trop poussiéreuse ;\n"
 
 #. type: Bullet: '- '
-#: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:67
+#: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:71
 #, fuzzy, no-wrap
 msgid "Plug a screen on your server and try to reboot to check that it's properly booting;\n"
 msgstr "Branchez un écran sur le serveur et essayez de le redémarrer pour valider que le serveur démarre bien ;\n"
 
 #. type: Bullet: '- '
-#: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:67
+#: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:71
 #, fuzzy, no-wrap
 msgid "Make sure that your ethernet cable is working and properly plugged in;\n"
 msgstr "Assurez-vous que le câble Ethernet est fonctionnel et correctement branché ;\n"
