@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-11-10 02:13+0100\n"
+"POT-Creation-Date: 2025-11-10 02:39+0100\n"
 "PO-Revision-Date: 2025-11-09 23:48+0000\n"
 "Last-Translator: Weblate Admin <yunohost@translate.yunohost.org>\n"
 "Language-Team: French <https://translate.yunohost.org/projects/doc-"
@@ -74,7 +74,7 @@ msgstr "L'une des fonctionnalités principales de YunoHost est la possibilité d
 #. type: Plain text
 #: docs/admin/30.apps/index.mdx:15
 #, fuzzy, no-wrap
-msgid "<Figure alt=\"Apps list\" caption=\"Apps list in the webadmin, with its Install button.\" src=\"/img/webadmin/apps_list.png\"/>\n"
+msgid "<Figure caption=\"Apps list in the webadmin, with its Install button.\" src=\"/img/webadmin/apps_list.png\"/>\n"
 msgstr "<Figure alt=\"Liste des applications\" caption=\"Liste d'applications dans l'interface web d'administration, avec le bouton Installer.\" src=\"/img/webadmin/apps_list.png\"/>\n"
 
 #. type: Plain text
@@ -108,7 +108,7 @@ msgstr "Let's say you want to install a *Custom Webapp*. Before actually running
 #. type: Plain text
 #: docs/admin/30.apps/index.mdx:36
 #, fuzzy, no-wrap
-msgid "<Figure alt=\"Custom Webapp install form\" src=\"/img/webadmin/app_install_form.png\" caption=\"Pre-installation form of the Custom Webapp\"/>\n"
+msgid "<Figure src=\"/img/webadmin/app_install_form.png\" caption=\"Pre-installation form of the Custom Webapp\"/>\n"
 msgstr ""
 "  <TabItem value=\"web\" label=\"From the web interface\">\n"
 "    <Figure alt=\"Custom Webapp install form\" src=\"/img/webadmin/app_install_form.png\" caption=\"Pre-installation form of the Custom Webapp\"/>\n"
@@ -116,7 +116,7 @@ msgstr ""
 #. type: Plain text
 #: docs/admin/30.apps/index.mdx:41
 #, fuzzy, no-wrap
-msgid "<Figure alt=\"Custom Webapp install form in CLI\" src=\"/img/app_install_form_cli.png\" caption=\"Pre-installation form of the Custom Webapp in CLI\"/>\n"
+msgid "<Figure src=\"/img/app_install_form_cli.png\" caption=\"Pre-installation form of the Custom Webapp in CLI\"/>\n"
 msgstr ""
 "  <TabItem value=\"cli\" label=\"From the command line\">\n"
 "    <Figure alt=\"Custom Webapp install form in CLI\" src=\"/img/app_install_form_cli.png\" caption=\"Pre-installation form of the Custom Webapp in CLI\"/>\n"
@@ -238,7 +238,7 @@ msgstr "You can access the app's operations page by clicking its name in the app
 #. type: Plain text
 #: docs/admin/30.apps/index.mdx:108
 #, fuzzy, no-wrap
-msgid "<Figure alt=\"Application operations page\" src=\"/img/webadmin/app_config_operations.png\" caption=\"Application operations page in the webadmin\"/>\n"
+msgid "<Figure src=\"/img/webadmin/app_config_operations.png\" caption=\"Application operations page in the webadmin\"/>\n"
 msgstr "<Figure alt=\"Application operations page\" src=\"/img/webadmin/app_config_operations.png\" caption=\"Application operations page in the webadmin\"/>\n"
 
 #. type: Plain text
@@ -274,7 +274,7 @@ msgstr "Configuration panels are *not* meant to tweak every aspects of the apps.
 #. type: Plain text
 #: docs/admin/30.apps/index.mdx:140
 #, fuzzy, no-wrap
-msgid "<Figure alt=\"My Webapp configuration panel\" src=\"/img/webadmin/app_config_panel.png\" caption=\"Configuration panel for My Webapp\"/>\n"
+msgid "<Figure src=\"/img/webadmin/app_config_panel.png\" caption=\"Configuration panel for My Webapp\"/>\n"
 msgstr "<Figure alt=\"My Webapp configuration panel\" src=\"/img/webadmin/app_config_panel.png\" caption=\"Configuration panel for My Webapp\"/>\n"
 
 #. type: Title ##

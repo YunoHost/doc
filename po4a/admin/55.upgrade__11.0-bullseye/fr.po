@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2025-11-10 02:13+0100\n"
+"POT-Creation-Date: 2025-11-10 02:39+0100\n"
 "PO-Revision-Date: 2025-11-10 01:02+0000\n"
 "Last-Translator: Weblate Admin <yunohost@translate.yunohost.org>\n"
 "Language-Team: French <https://translate.yunohost.org/projects/doc-"

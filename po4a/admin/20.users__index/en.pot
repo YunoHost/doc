@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2025-11-09 20:53+0100\n"
+"POT-Creation-Date: 2025-11-10 02:39+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -106,9 +106,9 @@ msgstr ""
 #: docs/admin/20.users/index.mdx:39
 #, no-wrap
 msgid ""
-"<Figure caption=\"From the main menu of the webadmin, open `Users`.\" alt=\"Main menu\" src=\"/img/webadmin/create_user_1.png\"/>\n"
-"<Figure caption=\"From the top of the users list, click on `+ New user`.\" alt=\"Users list\" src=\"/img/webadmin/create_user_2.png\"/>\n"
-"<Figure caption=\"Fill in the form.\" alt=\"User creation form\" src=\"/img/webadmin/create_user_3.png\"/>\n"
+"<Figure caption=\"From the main menu of the webadmin, open `Users`\" src=\"/img/webadmin/create_user_1.png\"/>\n"
+"<Figure caption=\"From the top of the users list, click on `+ New user`\" src=\"/img/webadmin/create_user_2.png\"/>\n"
+"<Figure caption=\"Fill in the form\" src=\"/img/webadmin/create_user_3.png\"/>\n"
 msgstr ""
 
 #. type: Title ##

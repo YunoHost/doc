@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2025-11-10 02:13+0100\n"
+"POT-Creation-Date: 2025-11-10 02:39+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -72,7 +72,7 @@ msgstr ""
 #. type: Plain text
 #: docs/admin/30.apps/index.mdx:15
 #, no-wrap
-msgid "<Figure alt=\"Apps list\" caption=\"Apps list in the webadmin, with its Install button.\" src=\"/img/webadmin/apps_list.png\"/>\n"
+msgid "<Figure caption=\"Apps list in the webadmin, with its Install button.\" src=\"/img/webadmin/apps_list.png\"/>\n"
 msgstr ""
 
 #. type: Plain text
@@ -104,13 +104,13 @@ msgstr ""
 #. type: Plain text
 #: docs/admin/30.apps/index.mdx:36
 #, no-wrap
-msgid "<Figure alt=\"Custom Webapp install form\" src=\"/img/webadmin/app_install_form.png\" caption=\"Pre-installation form of the Custom Webapp\"/>\n"
+msgid "<Figure src=\"/img/webadmin/app_install_form.png\" caption=\"Pre-installation form of the Custom Webapp\"/>\n"
 msgstr ""
 
 #. type: Plain text
 #: docs/admin/30.apps/index.mdx:41
 #, no-wrap
-msgid "<Figure alt=\"Custom Webapp install form in CLI\" src=\"/img/app_install_form_cli.png\" caption=\"Pre-installation form of the Custom Webapp in CLI\"/>\n"
+msgid "<Figure src=\"/img/app_install_form_cli.png\" caption=\"Pre-installation form of the Custom Webapp in CLI\"/>\n"
 msgstr ""
 
 #. type: Title ###
@@ -230,7 +230,7 @@ msgstr ""
 #. type: Plain text
 #: docs/admin/30.apps/index.mdx:108
 #, no-wrap
-msgid "<Figure alt=\"Application operations page\" src=\"/img/webadmin/app_config_operations.png\" caption=\"Application operations page in the webadmin\"/>\n"
+msgid "<Figure src=\"/img/webadmin/app_config_operations.png\" caption=\"Application operations page in the webadmin\"/>\n"
 msgstr ""
 
 #. type: Plain text
@@ -266,7 +266,7 @@ msgstr ""
 #. type: Plain text
 #: docs/admin/30.apps/index.mdx:140
 #, no-wrap
-msgid "<Figure alt=\"My Webapp configuration panel\" src=\"/img/webadmin/app_config_panel.png\" caption=\"Configuration panel for My Webapp\"/>\n"
+msgid "<Figure src=\"/img/webadmin/app_config_panel.png\" caption=\"Configuration panel for My Webapp\"/>\n"
 msgstr ""
 
 #. type: Title ##
