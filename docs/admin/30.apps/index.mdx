@@ -30,12 +30,16 @@ Be careful and stay reasonable on the number of installed applications. Each add
 Let's say you want to install a *Custom Webapp*. Before actually running the installation steps, YunoHost will usually have you fill in a form to properly set it up for you.
 
 <Tabs groupId="admin-commands">
-  <TabItem value="web" label="From the web interface">
-    <Figure alt="Custom Webapp install form" src="/img/webadmin/app_install_form.png" caption="Pre-installation form of the Custom Webapp"/>
-  </TabItem>
-  <TabItem value="cli" label="From the command line">
-    <Figure alt="Custom Webapp install form in CLI" src="/img/app_install_form_cli.png" caption="Pre-installation form of the Custom Webapp in CLI"/>
-  </TabItem>
+<TabItem value="web" label="From the web interface">
+
+<Figure alt="Custom Webapp install form" src="/img/webadmin/app_install_form.png" caption="Pre-installation form of the Custom Webapp"/>
+
+</TabItem>
+<TabItem value="cli" label="From the command line">
+
+<Figure alt="Custom Webapp install form in CLI" src="/img/app_install_form_cli.png" caption="Pre-installation form of the Custom Webapp in CLI"/>
+
+</TabItem>
 </Tabs>
 
 ### Subpaths vs. individual domains per apps
@@ -96,7 +100,7 @@ However, some applications do not support this as it can be either not implement
 After installation, some settings handled by YunoHost can be tweaked, such as user and group permissions, application's tile and label in the SSO page, or its access URL.
 
 <Tabs groupId="admin-commands">
-  <TabItem value="web" label="From the web interface">
+<TabItem value="web" label="From the web interface">
 
 You can access the app's operations page by clicking its name in the applications list.
 
@@ -104,8 +108,8 @@ You can access the app's operations page by clicking its name in the application
 
 You can also delete the application from this page.
 
-  </TabItem>
-  <TabItem value="cli" label="From the command line">
+</TabItem>
+<TabItem value="cli" label="From the command line">
 
 From the command line, you can change:
 
@@ -116,7 +120,7 @@ You can also delete the app: `yunohost app remove <app>`
 
 `<app>` is to be replaced with the app's ID. If this is the first instance of the app, like Nextcloud, the ID is `nextcloud`. If this is the second, then it's `nextcloud__2` and so on. To list all your apps and check their ID, you can run `yunohost app info`.
 
-  </TabItem>
+</TabItem>
 </Tabs>
 
 ### Configuration panels
@@ -128,14 +132,14 @@ Configuration panels are *not* meant to tweak every aspects of the apps. You wil
 :::
 
 <Tabs groupId="admin-commands">
-  <TabItem value="web" label="From the web interface">
+<TabItem value="web" label="From the web interface">
 
 The configuration panels are accessible in the webadmin in their operations page, trough the <Highlight no_break={true} color='darkblue'><FAIcon icon="fa-cogs"/> Config panel</Highlight> button.
 
 <Figure alt="My Webapp configuration panel" src="/img/webadmin/app_config_panel.png" caption="Configuration panel for My Webapp"/>
 
-  </TabItem>
-  <TabItem value="cli" label="From the command line">
+</TabItem>
+<TabItem value="cli" label="From the command line">
 
 From the command line, you can list the configuration panel settings with the following command: `yunohost app config get <app>`
 
@@ -156,7 +160,7 @@ To change a setting, either use `yunohost app config set <app>` to get prompted 
 
 The `<key>` is the setting name, for example `main.sftp.with_sftp` from above.
 
-  </TabItem>
+</TabItem>
 </Tabs>
 
 ## Execute commands within the app

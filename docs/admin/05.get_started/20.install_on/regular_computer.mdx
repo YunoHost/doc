@@ -40,51 +40,59 @@ If you wish to check the validity of our signed images, you can [download our pu
 Flash the image on the USB key or CD/DVD.
 
 <Tabs>
-  <TabItem value="etcher" label="With Etcher (recommended)">
+<TabItem value="etcher" label="With Etcher (recommended)">
 
-    Download <Link to="https://www.balena.io/etcher/" target="_blank">Etcher</Link> for your operating system and install it.
+Download <Link to="https://www.balena.io/etcher/" target="_blank">Etcher</Link> for your operating system and install it.
 
-    Plug your USB key, select your image and click "Flash"
+Plug your USB key, select your image and click "Flash"
 
-    ![Etcher](/img/softwares/etcher.gif)
-  </TabItem>
-  <TabItem value="usbimager" label="With USBimager">
-    Download [USBimager](https://bztsrc.gitlab.io/usbimager/) for your operating system and install it.
+![Etcher](/img/softwares/etcher.gif)
 
-    Plug your USB key, select your image and click "Write"
+</TabItem>
+<TabItem value="usbimager" label="With USBimager">
 
-    ![USBimager](/img/softwares/usbimager.png)
-  </TabItem>
-  <TabItem value="dd" label="With dd">
-    If you are on GNU/Linux / macOS and know your way around command line, you may also flash your USB stick or SD card with `dd`. You can identify which device corresponds to your USB stick or SD card with `fdisk -l` or `lsblk`. A typical SD card name is something like `/dev/mmcblk0`. BE CAREFUL and make sure you got the right name.
+Download [USBimager](https://bztsrc.gitlab.io/usbimager/) for your operating system and install it.
 
-    Then run:
+Plug your USB key, select your image and click "Write"
+
+![USBimager](/img/softwares/usbimager.png)
+
+</TabItem>
+<TabItem value="dd" label="With dd">
+
+If you are on GNU/Linux / macOS and know your way around command line, you may also flash your USB stick or SD card with `dd`. You can identify which device corresponds to your USB stick or SD card with `fdisk -l` or `lsblk`. A typical SD card name is something like `/dev/mmcblk0`. BE CAREFUL and make sure you got the right name.
+
+Then run:
 
 ```bash
 # Replace /dev/mmcblk0 if the name of your device is different...
 dd if=/path/to/armbian.img of=/dev/mmcblk0 status=progress ; sync
 ```
-  </TabItem>
 
-  <TabItem value="cd_dvd" label="Burning a CD/DVD">
-    For older devices, you might want to burn a CD/DVD. The software to use depends on your operating system.
+</TabItem>
+<TabItem value="cd_dvd" label="Burning a CD/DVD">
 
-    - On Windows, use [ImgBurn](http://www.imgburn.com/) to write the image file on the disc
-    - On macOS, use [Disk Utility](http://support.apple.com/kb/ph7025)
-    - On GNU/Linux, you have plenty of choices, like [Brasero](https://wiki.gnome.org/Apps/Brasero) or [K3b](http://www.k3b.org/)
-  </TabItem>
-  <TabItem value="ventoy" label="Using Ventoy">
-    Ventoy will be useful if you can't sucessfully boot the YunoHost image using the other methods.
+For older devices, you might want to burn a CD/DVD. The software to use depends on your operating system.
 
-    [Ventoy](https://www.ventoy.net/) is a nice tool that makes it really easy to put multiple linux images on a USB stick. When the computer refuses to boot from an image on a usb stick, Ventoy will usually be able to boot it anyway!
+- On Windows, use [ImgBurn](http://www.imgburn.com/) to write the image file on the disc
+- On macOS, use [Disk Utility](http://support.apple.com/kb/ph7025)
+- On GNU/Linux, you have plenty of choices, like [Brasero](https://wiki.gnome.org/Apps/Brasero) or [K3b](http://www.k3b.org/)
 
-    1. Install [Ventoy](https://www.ventoy.net/) on the USB stick. Refer to the [install instructions](https://www.ventoy.net/en/doc_start.html).
-        - This will create 2 partitions on the stick.
-    2. Using your favorite file explorer app, copy the YunoHost image file on the big `Ventoy` partition (not "VTOYEFI")
-        - Don't use *Balena Etcher*, USBImager or `dd` for this!
+</TabItem>
+<TabItem value="ventoy" label="Using Ventoy">
 
-    Later, when you'll boot the computer using this usb stick, Ventoy will appear and will list the images on the USB stick. Select the YunoHost image, then select GRUB2 launch option (or use whichever works for your computer 😉)
-  </TabItem>
+Ventoy will be useful if you can't sucessfully boot the YunoHost image using the other methods.
+
+[Ventoy](https://www.ventoy.net/) is a nice tool that makes it really easy to put multiple linux images on a USB stick. When the computer refuses to boot from an image on a usb stick, Ventoy will usually be able to boot it anyway!
+
+1. Install [Ventoy](https://www.ventoy.net/) on the USB stick. Refer to the [install instructions](https://www.ventoy.net/en/doc_start.html).
+    - This will create 2 partitions on the stick.
+2. Using your favorite file explorer app, copy the YunoHost image file on the big `Ventoy` partition (not "VTOYEFI")
+    - Don't use *Balena Etcher*, USBImager or `dd` for this!
+
+Later, when you'll boot the computer using this usb stick, Ventoy will appear and will list the images on the USB stick. Select the YunoHost image, then select GRUB2 launch option (or use whichever works for your computer 😉)
+
+</TabItem>
 </Tabs>
 
 ## <FAIcon icon="fa-plug"/> Boot the machine on your USB stick
@@ -106,15 +114,15 @@ You should see a screen like this:
 <Figure caption="Preview of the ISO menu" src="/img/softwares/virtualbox_3.png"/>
 
 <Tabs>
-  <TabItem value="classic" label="Classic installation on a whole disk">
+<TabItem value="classic" label="Classic installation on a whole disk">
 
-    :::danger
-    Once you have validated the keyboard layout, the installation will be launched and will completely erase the data on your hard disk!
-    :::
+:::danger
+Once you have validated the keyboard layout, the installation will be launched and will completely erase the data on your hard disk!
+:::
 
-    1. Select `Graphical install`
-    2. Select your language, your location, your keyboard layout, and eventually your timezone.
-    3. The installer will then download and install all required packages.
+1. Select `Graphical install`
+2. Select your language, your location, your keyboard layout, and eventually your timezone.
+3. The installer will then download and install all required packages.
 
 </TabItem>
 <TabItem value="expert" label="Installation in expert mode">

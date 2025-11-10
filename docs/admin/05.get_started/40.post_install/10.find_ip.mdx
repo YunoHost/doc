@@ -17,6 +17,7 @@ Any of these tricks should allow you to find the local IP of your server:
 
 <Tabs>
 <TabItem value="angryip" label="With AngryIP (Recommended)" default>
+
 You can use the [AngryIP](https://angryip.org/download/) software to achieve that. You just need to scan these local ip ranges in this order until you find the active IP corresponding to your server:
 
 - `192.168.0.0` -> `192.168.0.255`
@@ -32,19 +33,22 @@ You can use the [AngryIP](https://angryip.org/download/) software to achieve tha
 :::
 
 ![](/img/angryip.png)
-</TabItem>
 
+</TabItem>
 <TabItem value="router" label="With your internet router / box">
-Connect to your internet box / router interface to list the machines connected.
-</TabItem>
 
+Connect to your internet box / router interface to list the machines connected.
+
+</TabItem>
 <TabItem value="arp-scan" label="With arp-scan">
+
 If you're using Linux, you can open a terminal and use `sudo arp-scan --local` to list the IP on your local network (this may also work in Windows);
 
 If the `arp-scan` command displays a confusing number of devices, you can check which ones are open to SSH with `nmap -p 22 192.168.1.0/24` to sort them out (adapt the IP range to your local network)
-</TabItem>
 
+</TabItem>
 <TabItem value="direct" label="With a direct access on the server">
+
 Plug a screen on your server, log in and type `hostname --all-ip-address`.
 
 The default credentials (before post-installation!) to log in are:
@@ -53,8 +57,8 @@ The default credentials (before post-installation!) to log in are:
 - password: `yunohost`
 
 (If you are using a raw Armbian image instead of the pre-installed YunoHost image, the credentials are root / 1234)
-</TabItem>
 
+</TabItem>
 </Tabs>
 
 ## I still can't find my local IP

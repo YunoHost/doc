@@ -42,30 +42,35 @@ If you wish to check the validity of our signed images, you can [download our pu
 Now that you downloaded the image of YunoHost, you should flash it on a microSD card
 
 <Tabs>
-  <TabItem value="etcher" label="With Etcher (recommended)">
+<TabItem value="etcher" label="With Etcher (recommended)">
+
     Download <Link to="https://www.balena.io/etcher/" target="_blank">Etcher</Link> for your operating system and install it.
 
     Plug your SD card, select your image and click "Flash"
 
     ![Etcher](/img/softwares/etcher.gif)
-  </TabItem>
-  <TabItem value="usbimager" label="With USBimager">
-    Download [USBimager](https://bztsrc.gitlab.io/usbimager/) for your operating system and install it.
 
-    Plug your SD card, select your image and click "Write"
+</TabItem>
+<TabItem value="usbimager" label="With USBimager">
 
-    ![USBimager](/img/softwares/usbimager.png)
-  </TabItem>
-  <TabItem value="dd" label="With dd">
-    If you are on GNU/Linux / macOS and know your way around command line, you may also flash your USB stick or SD card with `dd`. You can identify which device corresponds to your USB stick or SD card with `fdisk -l` or `lsblk`. A typical SD card name is something like `/dev/mmcblk0`. BE CAREFUL and make sure you got the right name.
+Download [USBimager](https://bztsrc.gitlab.io/usbimager/) for your operating system and install it.
 
-    Then run:
+Plug your SD card, select your image and click "Write"
+
+![USBimager](/img/softwares/usbimager.png)
+
+</TabItem>
+<TabItem value="dd" label="With dd">
+
+If you are on GNU/Linux / macOS and know your way around command line, you may also flash your USB stick or SD card with `dd`. You can identify which device corresponds to your USB stick or SD card with `fdisk -l` or `lsblk`. A typical SD card name is something like `/dev/mmcblk0`. BE CAREFUL and make sure you got the right name.
+
+Then run:
 
 ```bash
 # Replace /dev/mmcblk0 if the name of your device is different...
 dd if=/path/to/yunohost.img of=/dev/mmcblk0 status=progress ; sync
 ```
-  </TabItem>
+</TabItem>
 </Tabs>
 
 ## <FAIcon icon="fa-plug"/> Power up the board

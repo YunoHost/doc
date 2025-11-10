@@ -18,14 +18,14 @@ The current default method consists in creating a `.tar` archive containing all 
 #### Creating backups
 
 <Tabs groupId="admin-commands">
-  <TabItem value="web" label="From the web interface">
+<TabItem value="web" label="From the web interface">
 
 You can easily create backup archives from the webadmin by going to `Backups > Local storage` and clicking on `New backup`. You will then be asked to select which configuration, data and apps you want to backup.
 
 ![picture of YunoHost's backup pannel](/img/webadmin/backup.png)
 
-  </TabItem>
-  <TabItem value="cli" label="From the command line">
+</TabItem>
+<TabItem value="cli" label="From the command line">
 
 You can create a new backup archive from the command line. Here are a few simple examples of commands and their corresponding behavior:
 
@@ -61,27 +61,27 @@ yunohost backup create --system data_mail --apps wordpress
 
 For more information and options about backup creation, consult `yunohost backup create --help`. You can also list the system parts that can be backed up with `yunohost hook list backup`.
 
-  </TabItem>
+</TabItem>
 </Tabs>
 
 ### Downloading backups
 
 <Tabs groupId="admin-commands">
-  <TabItem value="web" label="From the web interface">
+<TabItem value="web" label="From the web interface">
 
 After creating backups, it is possible to list and inspect them using the corresponding views in the web administration interface. A button allows you to download the archive. If the archive is larger than 3GB, it may be better to proceed via SFTP.
 
 `Backup > Local Archives > <Archive name> > Download`
 
-  </TabItem>
-  <TabItem value="sftp" label="With a SFTP client">
+</TabItem>
+<TabItem value="sftp" label="With a SFTP client">
 
 Currently, the most accessible way to download big archives is to use the program FileZilla as explained in [this page](/admin/tutorials/filezilla).
 
 By default, backups are stored in `/home/yunohost.backup/archives/`.
 
-  </TabItem>
-  <TabItem value="cli" label="From the command line">
+</TabItem>
+<TabItem value="cli" label="From the command line">
 
 The `yunohost backup list` and `yunohost backup info <archive_name>` commands provide information about the names and sizes of backups.
 
@@ -97,7 +97,7 @@ If your SSH port is different from 22
 scp -P ssh_port admin@your.domain.tld:/home/yunohost.backup/archives/<archive_name>.tar ./
 ```
 
-  </TabItem>
+</TabItem>
 </Tabs>
 
 
@@ -133,14 +133,14 @@ SPOILER: The larger your data volume and the more applications you have, the mor
 #### Simple case: little data, archive already present
 
 <Tabs groupId="admin-commands">
-  <TabItem value="web" label="From the web interface">
+<TabItem value="web" label="From the web interface">
 
 Go in `Backup > Local storage` and select your archive. You can then select which items you want to restore, then click on 'Restore'.
 
 ![picture of YunoHost's restore pannel](/img/webadmin/restore.png)
 
-  </TabItem>
-  <TabItem value="cli" label="From the command line">
+</TabItem>
+<TabItem value="cli" label="From the command line">
 
 From the command line, you can run `yunohost backup list` to get the available archive names. They are basically their file name without extension.
 
@@ -150,7 +150,7 @@ You can then run `yunohost backup restore <archivename>` (hence without its `.ta
 In the case of a complete restoration, it is possible to restore instead of launching the initial configuration.
 :::
 
-  </TabItem>
+</TabItem>
 </Tabs>
 
 To restore an app, the domain on which it was installed should already be configured (or you need to restore the corresponding system configuration). You also cannot restore an app which is already installed... which means that to restore an old version of an app, you must first uninstall it.
@@ -160,14 +160,14 @@ To restore an app, the domain on which it was installed should already be config
 In many cases, the archive is not on the server on which you want to restore it. So it has to be uploaded, which depending on its size can take more or less time.
 
 <Tabs groupId="admin-commands">
-  <TabItem value="sftp" label="With a SFTP client">
+<TabItem value="sftp" label="With a SFTP client">
 
 Currently, the most accessible solution for uploading backups is to use the FileZilla program as explained in [this page](/admin/tutorials/filezilla).
 
 By default, backups are to be placed in `/home/yunohost.backup/archives/`.
 
-  </TabItem>
-  <TabItem value="cli" label="From the command line">
+</TabItem>
+<TabItem value="cli" label="From the command line">
 
 You can use the `scp` (a command built on `ssh`) to copy files between two machines from CLI. For example for a Linux terminal:
 
@@ -181,5 +181,5 @@ If your SSH port is different from 22
 scp -P ssh_port /path/to/your/<archive_name>.tar admin@your.domain.tld:/home/yunohost.backup/archives/
 ```
 
-  </TabItem>
+</TabItem>
 </Tabs>
