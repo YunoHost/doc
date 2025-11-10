@@ -12,6 +12,8 @@ L'objectif cette page est de décrire le processus de migration d'une instance e
 
 - Ne vous précipitez pas à vouloir faire une réinstallation de votre système en pensant que cela serait "plus simple" (sigh). (Une attitude qui revient régulièrement est de vouloir réinstaller son système à la moindre complication...). À la place, si vous rencontrez des problèmes, nous vous encourageons à investiguer, chercher à comprendre et [trouver de l'aide sur le chat ou le forum](/community/help).
 
+- **You should watch the known issues at the bottom of this page, to be sure your migrations will work properly.**
+
 ## Procédure de migration
 
 Vous devez d'abord vous assurer que votre système est à jour. La migration est disponible à partir de la version 11.3.
@@ -40,15 +42,17 @@ En fonction de votre matériel et des paquets installés, la migration peut pren
 
 Les logs seront affichés dans la barre de message au centre de la page (vous pouvez approcher la souris dessus pour voir l'historique en entier). Ils seront également consultable après coup (comme les autres opérations) dans Outils > Journaux.
 
-### Si la migration a crashé / échoué à un moment
+## Si la migration échoue
 
 Si la migration a échoué a un moment donné, la première chose à faire est de tenter de la relancer. Si cela ne fonctionne toujours pas, il vous faut [trouver de l'aide](/community/help) (prière de fournir le/les messages correspondants ou tout élément qui vous fait penser que ça n'a pas marché).
 
-## Choses à vérifier après la migration
+## Après la migration
 
 ### Vérifier la version de Debian et YunoHost
 
-Pour cela allez dans l'outil de diagnostics ou regardez en bas de la page de la webadmin. En ligne de commande vous pouvez utiliser `lsb_release -a` et `yunohost --version`.
+Pour cela allez dans l'outil de diagnostics ou regardez en bas à droite de la webadmin pour trouver la version de YunoHost.
+
+En ligne de commande vous pouvez utiliser `lsb_release -a` et `yunohost --version`.
 
 ### Exécuter les nouvelles migrations
 
@@ -57,7 +61,15 @@ Après la mise à niveau, de nouvelles migrations sont apparues :
 - La recréation des virtualenvs de vos applis Python
 - La migration de PostgreSQL 13 à 15
 
-Vous devez les lances le plus tôt possible pour garantir le bon fonctionnement de vos applis.
+Vous devez les lancer le plus tôt possible pour garantir le bon fonctionnement de vos applis.
+
+#### Agreeing to the new Terms of Service via command line
+
+YunoHost 12.x now requires that you agree to the new [Terms of Service](https://doc.yunohost.org/terms_of_services/). After reading and accepting them you can run:
+
+```
+yunohost tools migrations run 0031_terms_of_services --accept-disclaimer
+```
 
 ### Vérifiez que le diagnostic ne rapporte pas de problème particulier
 

@@ -18,13 +18,15 @@ Any of these tricks should allow you to find the local IP of your server:
 <Tabs>
 <TabItem value="angryip" label="With AngryIP (Recommended)" default>
 
-You can use the [AngryIP](https://angryip.org/download/) software to achieve that. You just need to scan these local ip ranges in this order until you find the active IP corresponding to your server:
+You can use the [AngryIP](https://angryip.org/download/) software to achieve that. You can scan these local IP ranges in this order until you find the active IP corresponding to your server:
 
-- `192.168.0.0` -> `192.168.0.255`
-- `192.168.1.0` -> `192.168.1.255`
-- `192.168.2.0` -> `192.168.255.255`
-- `10.0.0.0` -> `10.0.255.255`
-- `172.16.0.0` -> `172.31.255.255`
+```
+192.168.0.0 -> 192.168.0.255
+192.168.1.0 -> 192.168.1.255
+192.168.2.0 -> 192.168.255.255
+10.0.0.0    -> 10.0.255.255
+172.16.0.0  -> 172.31.255.255
+```
 
 :::tip
 - you can order by ping like on this screenshot to easily see effectively-used IP.

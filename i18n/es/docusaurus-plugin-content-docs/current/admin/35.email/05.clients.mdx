@@ -6,6 +6,7 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 Es posible de consultar y enviar correos de tu YunoHost con un cliente de correo electrónico como Thunderbird Desktop o K-9 Mail en el teléfono.
+
 Normalmente, al añadir tu cuenta en el cliente de correo se va a configurar automáticamente, pero por si acaso no funciona, puedes configurarlo manualmente.
 
 ### Configuración general
@@ -24,13 +25,11 @@ A continuación puedes encontrar los elementos a configurar en el cliente de cor
 
 ##### <SmallInline url='/img/icons/logo-thunderbird.png'/> Configurar Thunderbird Desktop (en un ordenador)
 
-Para configurar manualmente un nuevo cuenta en Thunderbird Desktop, añadir las informaciones de la cuenta, y después seleccionar el puerto 993 con SSL/TLS para IMAP, y puerto 587 con STARTTLS para SMTP. Después seleccionar 'Normal Password' para Autenticación y haz click en el botón 'Advanced Config'. Se puede que tendrás que aceptar los certificados para que todo funciona normalmente.
+Para configurar manualmente un nuevo cuenta en Thunderbird Desktop, añadir las informaciones de la cuenta, y después
 
-To manually configure a new account in Thunderbird Desktop, add the account information, then click on 'Configure manually'.
-
-- For the incoming server, use IMAP with port 993 and SSL/TLS.
-- For outgoing server, use port 587 with STARTTLS. 
-- Select 'Normal Password' for the the authentication method of both. 
+- seleccionar el puerto 993 con SSL/TLS para IMAP,
+- y puerto 587 con STARTTLS para SMTP.
+- Después seleccionar 'Normal Password' para Autenticación y haz click en el botón 'Advanced Config'.
 
 You may need to accept the certificate exceptions for fetching mails and after you send your first mail. Don't forget to remove the dot before the domain name.
 

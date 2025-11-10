@@ -5,11 +5,6 @@ title: Configurare un programma per mail
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-import useBaseUrl from '@docusaurus/useBaseUrl'
-export function SmallInline({url, alt}) {
-  return (<img src={useBaseUrl(url)} width="60" style={{verticalAlign: "middle", margin: "5px"}} alt={alt}/>);
-}
-
 Con la vostra istanza YunoHost potete inviare e ricevere email grazie a programmi come Thunderbird Desktop sul pc o K-9 Mail sul vostro smartphone.
 
 Normalmente, il vostro client email si configura automaticamente quando aggiungete un account. Nel caso la configurazione automatica non funzionasse, è possibile configurare manualmente il client, seguendo i passaggi successivi. (la mancata configurazione automatica del client, è da considerarsi come un bug di YunoHost, sarebbe gentile da parte vostra farci pervenire una segnalazione, potremmo così cercare di correggere il problema!)
@@ -28,7 +23,7 @@ Ecco i valori da immettere per la configurazione manuale del vostro client mail 
 <Tabs>
 <TabItem value="thunderbird" label="Mozilla Thunderbird">
 
-#### <SmallInline url='/img/icons/logo-thunderbird.png'/>  Configurazione di Thunderbird Desktop (su computer desktop)
+##### <SmallInline url='/img/icons/logo-thunderbird.png'/>  Configurazione di Thunderbird Desktop (su computer desktop)
 
 To manually configure a new account in Thunderbird Desktop, add the account information, then click on 'Configure manually'.
 
@@ -45,6 +40,8 @@ You may need to accept the certificate exceptions for fetching mails and after y
 
 </TabItem>
 <TabItem value="k9" label="K-9 Mail (Thunderbird Mobile)">
+
+##### <SmallInline url='/img/icons/logo-k9.png'/> Configure K-9 Mail / Thunderbird Mobile (on Android)
 
 Follow the following steps. (As for Thunderbird Desktop, you might need to accept certificates at some points)
 

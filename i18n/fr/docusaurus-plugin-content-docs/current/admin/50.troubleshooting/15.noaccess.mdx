@@ -36,11 +36,9 @@ Vous pouvez valider que les enregistrements DNS sont corrects en comparant le r�
 
 ## Vous êtes face à une erreur de certificat qui vous empêche d’accéder à la webadmin
 
-- A certificate error may be displayed if you have made a typo in the address bar of your browser.
+- Une erreur de certificat peut être affichée dans certain cas où vous avez fait une faute de frappe dans la barre d'adresse de votre navigateur.
 
-Si vous venez d'installer votre serveur ou d'ajouter un nouveau domaine, il utilise pour le moment un certificat auto-signé. Dans ce cas, il devrait être possible et légitime d'ajouter *exceptionnellement* une exception de sécurité le temps d'[installer un certificat Let's Encrypt](/admin/domains/certificate) à condition d'être sur une connexion internet sûre (pas avec Tor Browser par exemple).
-
-Une erreur de certificat peut également être affichée dans certain cas où vous avez fait une faute de frappe dans la barre d'adresse de votre navigateur.
+- Si vous venez d'installer votre serveur ou d'ajouter un nouveau domaine, il utilise pour le moment un certificat auto-signé. Dans ce cas, il devrait être possible et légitime d'ajouter *exceptionnellement* une exception de sécurité le temps d'[installer un certificat Let's Encrypt](/admin/domains/certificate) à condition d'être sur une connexion internet sûre (pas avec Tor Browser par exemple).
 
 ## Vous avez accès en SSH mais pas à la Web admin ou inversement
 
@@ -74,6 +72,7 @@ Il se peut également que le serveur web (NGINX) ou le serveur ssh aient été t
 - Vous pouvez contrôler l'espace disque utilisé avec `df -h`. Si une de vos partitions est remplie à 100%, il faut identifier ce qui prend de la place sur votre système et faire de la place. Il est possible d'installer l'utilitaire `ncdu` avec `apt install ncdu` puis de faire `ncdu /` pour analyser la taille des dossiers de toute l'arborescence.
 - Vous pouvez contrôler l'utilisation de la RAM / swap avec `free -h`. En fonction des résultats, il peut être nécessaire d'optimiser votre serveur pour qu'il utilise moins de RAM (suppression d'app lourdes et inutiles...), d'ajouter de la RAM ou d'ajouter un fichier de swap.
 
+
 ### Votre serveur est accessible en IPv6 mais pas en IPv4 ou inversement
 
 Vous pouvez le vérifier en tentant de faire des ping sur votre serveur en IPv4 et en IPv6.
@@ -86,9 +85,7 @@ ping -6 yourdomain.tld # or its IPv6
 
 Dans un tel cas, il est possible que vous arriviez à accéder à votre web admin en IPv6 mais pas en SSH potentiellement en IPv4 par défaut...
 
-Dans ce cas il faut résoudre votre problème de connectivité.
-
-Dans certains, cas une mise à jour de votre box a activé l'IPv6, entraînant des problèmes de configuration au niveau de votre nom de domaine.
+Dans ce cas il faut résoudre votre problème de connectivité. Dans certains, cas une mise à jour de votre box a activé l'IPv6, entraînant des problèmes de configuration au niveau de votre nom de domaine.
 
 ## La webadmin fonctionne, mais certaines applications web me renvoient une erreur 502
 
@@ -102,6 +99,7 @@ Si vous êtes certain du mot de passe, il est possible que le service SLAPD qui 
 
 - Si votre serveur est chez vous, vous avez sans doute accès au réseau local du serveur. Depuis ce réseau, vous pouvez vous connecter [en SSH](/admin/command_line) avec l'utilisateur `root`.
 - Si vous êtes sur un VPS, votre hébergeur vous fournit peut-être la possibilité d'avoir une console sur votre serveur depuis le navigateur web.
+
 Une fois connecté, il vous faut regarder l'état du service avec la commande `yunohost service status slapd` et/ou tenter de réinitialiser votre mot de passe avec la commande `yunohost tools adminpw`.
 
 Si vous ne pouvez pas ou ne réussissez pas non plus à vous connecter en `root`, vous allez devoir opérer en mode rescue.
@@ -112,19 +110,15 @@ Si vous ne pouvez pas ou ne réussissez pas non plus à vous connecter en `root`
 
 ## Votre VPN a expiré ou ne se monte plus
 
+
 Si vous utilisez un VPN a IP fixe, peut être que celui-ci est arrivé à expiration ou que l'infrastructure de votre fournisseur est en difficulté.
 
-Dans ce cas, vous pouvez peut être accéder à votre serveur avec son IP locale s'agissant probablement d'un serveur auto-hébergé chez-vous.
+Dans ce cas, contactez votre fournisseur VPN pour le renouveller et mettre à jour ses paramètres dans l'app VPNclient.
 
-Pour connaître votre IP locale, certaines BOX proposent une cartographie du réseau en cours avec les équipements connectés. Sinon, en ligne de commande avec linux:
+Pendant de temps, il est sans doute possible d'accéder à votre serveur à la maison via:
 
-```bash
-sudo arp-scan --local
-```
-
-Vous pouvez aussi essayer avec le domaine `yunohost.local`, `yunohost-2.local`, etc. selon le nombre de serveurs YunoHost sur votre réseau.
-
-Il faut voir avec votre fournisseur de VPN pour renouveler le VPN et mettre à jour les paramètre de l'app VPN Client.
+- son IP locale, en utilisant l'une des méthodes [listées sur la page correspondante](/admin/get_started/post_install/find_ip)
+- via `yunohost.local`, si votre client support le Bonjour protocol (ou `yunohost-2.local`, etc. en fonction de si vous avez plusieurs serveurs YunoHost sur le même réseau)
 
 :::warning
 À compléter

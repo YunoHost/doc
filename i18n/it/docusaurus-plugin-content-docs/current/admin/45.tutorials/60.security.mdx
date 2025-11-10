@@ -63,6 +63,8 @@ sudo yunohost settings set security.ssh.ssh_password_authentication -v no
 Per prevenire i tentativi di connessione dei robot che fanno scan di internet alla ricerca di server con SSH attivato è possibile cambiare la porta SSH.
 Questa impostazione è gestita da un'impostazione di sistema che aggiorna le configurazioni di SSH e di fail2ban.
 
+Note that changing the port is still useful even if you've disabled password authentication, because that significantly reduces noise from brute force attempts in SSH logs.
+
 :::warning
 Se modificate una qualsiasi impostazione nel file `/etc/ssh/sshd_config`, anche solo la porta di ascolto, YunoHost non gestirà più il file. Per questa ragione è necessario usare sempre gli strumenti di amministrazione per fare modifiche ai file di configurazione del sistema.
 :::

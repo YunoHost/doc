@@ -1,5 +1,6 @@
 ---
 title: Configure port-forwarding
+description: "Make your server accessible from outside your home"
 ---
 
 Wenn Sie zu Hause selbst hosten und kein VPN nutzen, müssen Sie die Ports Ihres Routers umleiten ("Internet box"). Das folgende Schema versucht, die Rolle der Portweiterleitung beim Einrichten eines Servers zu Hause kurz zu erklären.
@@ -16,12 +17,7 @@ Ihre Box/Router-Administrationsoberfläche ist in der Regel erreichbar über [ht
 
 ### 2. Die lokale IP Ihres Servers finden
 
-Identifizieren Sie die lokale IP Ihres Servers, entweder :
-
-
-- von Ihrer Box/Router-Schnittstelle, die möglicherweise angeschlossene Geräte auflistet
-- über die YunoHost-Schnittstelle, Abschnitt "Internetkonnektivität", dann auf "Details" im IPv4-Bericht klicken.
-- von der Befehlszeile Ihres Servers aus, indem Sie `hostname -I` ausführen
+Identify the *local* IP of your server using one of the method listed [on the corresponding page](/admin/get_started/post_install/find_ip).
 
 Eine lokale IP-Adresse sieht typischerweise so aus:`192.168.xx.yy`, oder `10.0.xx.yy`.
 
