@@ -7,10 +7,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2025-11-10 02:13+0100\n"
-"PO-Revision-Date: 2025-11-09 23:48+0000\n"
+"PO-Revision-Date: 2025-11-10 01:35+0000\n"
 "Last-Translator: Weblate Admin <yunohost@translate.yunohost.org>\n"
-"Language-Team: French <https://translate.yunohost.org/projects/doc-"
-"experimental/30apps__index/fr/>\n"
+"Language-Team: French <https://translate.yunohost.org/projects/"
+"doc-experimental/30apps__index/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -34,9 +34,9 @@ msgstr ""
 #: docs/admin/40.backups/index.mdx:22 docs/admin/40.backups/index.mdx:71
 #: docs/admin/40.backups/index.mdx:137
 #: docs/admin/45.tutorials/35.email_configure_relay.mdx:49
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "<TabItem value=\"web\" label=\"From the web interface\">\n"
-msgstr "<TabItem value=\"web\" label=\"From the web interface\">\n"
+msgstr "<TabItem value=\"web\" label=\"Depuis la webadmin\">\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/_configuration.mdx:30
@@ -55,9 +55,9 @@ msgstr "<TabItem value=\"web\" label=\"From the web interface\">\n"
 #: docs/admin/40.backups/index.mdx:29 docs/admin/40.backups/index.mdx:85
 #: docs/admin/40.backups/index.mdx:144 docs/admin/40.backups/index.mdx:171
 #: docs/admin/45.tutorials/35.email_configure_relay.mdx:66
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "<TabItem value=\"cli\" label=\"From the command line\">\n"
-msgstr "<TabItem value=\"cli\" label=\"From the command line\">\n"
+msgstr "<TabItem value=\"cli\" label=\"Depuis la ligne de commande\">\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/30.apps/index.mdx:1
@@ -67,51 +67,66 @@ msgstr "📦 Applications"
 
 #. type: Plain text
 #: docs/admin/30.apps/index.mdx:11
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "One of the key feature of YunoHost is the ability to easily install applications which are then immediately usable. Example of applications include a blog system, a \"cloud\" (to host and sync files), a website, an RSS reader...\n"
-msgstr "L'une des fonctionnalités principales de YunoHost est la possibilité d'installer facilement des applications immédiatement utilisables. Pour donner des exemples d'application, il est possible d'installer un système de blog, un \"cloud\" (pour héberger et synchroniser des fichiers), un site web, un lecteur RSS...\n"
+msgstr ""
+"L'une des fonctionnalités principales de YunoHost est la possibilité "
+"d'installer facilement des applications immédiatement utilisables. Pour "
+"donner des exemples d'application, il est possible d'installer un système de "
+"blog, un \"cloud\" (pour héberger et synchroniser des fichiers), un site "
+"web, un lecteur RSS...\n"
 
 #. type: Plain text
 #: docs/admin/30.apps/index.mdx:15
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "<Figure alt=\"Apps list\" caption=\"Apps list in the webadmin, with its Install button.\" src=\"/img/webadmin/apps_list.png\"/>\n"
-msgstr "<Figure alt=\"Liste des applications\" caption=\"Liste d'applications dans l'interface web d'administration, avec le bouton Installer.\" src=\"/img/webadmin/apps_list.png\"/>\n"
+msgstr ""
+"<Figure alt=\"Liste des applications\" caption=\"Liste d'applications dans "
+"l'interface web d'administration, avec le bouton Installer.\" src=\"/img/"
+"webadmin/apps_list.png\"/>\n"
 
 #. type: Plain text
 #: docs/admin/30.apps/index.mdx:21
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "  <Button url=\"https://apps.yunohost.org/\" color=\"orange\">\n"
 "    <FAIcon icon='fa-cubes'/> Applications catalog\n"
 msgstr ""
-"    <Button url=\"https://apps.yunohost.org\" color=\"orange\">\n"
+"  <Button url=\"https://apps.yunohost.org\" color=\"orange\">\n"
 "        <FAIcon icon='fa-cubes'/> Catalogue d'applications\n"
 
 #. type: Fenced div block (caution)
 #: docs/admin/30.apps/index.mdx:24
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Be careful and stay reasonable on the number of installed applications. Each additional installation increases the attack surface and the risk of failure. Ideally, if you want to test, do it with another instance for example in [a virtual machine](/admin/get_started/install_on/virtualbox).\n"
-msgstr "Attention à rester raisonnable sur le nombre d'applications installées. Chaque installation supplémentaire augmente la surface d'attaque et les risques de panne. Idéalement, si vous souhaitez faire des tests, faites-le avec une autre instance par exemple dans [une machine virtuelle](/admin/get_started/install_on/virtualbox).\n"
+msgstr ""
+"Attention à rester raisonnable sur le nombre d'applications installées. "
+"Chaque installation supplémentaire augmente la surface d'attaque et les "
+"risques de panne. Idéalement, si vous souhaitez faire des tests, faites-le "
+"avec une autre instance par exemple dans [une machine virtuelle]"
+"(/admin/get_started/install_on/virtualbox).\n"
 
 #. type: Title ##
 #: docs/admin/30.apps/index.mdx:28
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Installing an app"
 msgstr "Installer une application"
 
 #. type: Plain text
 #: docs/admin/30.apps/index.mdx:31
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Let's say you want to install a *Custom Webapp*. Before actually running the installation steps, YunoHost will usually have you fill in a form to properly set it up for you.\n"
-msgstr "Let's say you want to install a *Custom Webapp*. Before actually running the installation steps, YunoHost will usually have you fill in a form to properly set it up for you.\n"
+msgstr ""
 
 #. type: Plain text
 #: docs/admin/30.apps/index.mdx:36
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "<Figure alt=\"Custom Webapp install form\" src=\"/img/webadmin/app_install_form.png\" caption=\"Pre-installation form of the Custom Webapp\"/>\n"
 msgstr ""
-"  <TabItem value=\"web\" label=\"From the web interface\">\n"
-"    <Figure alt=\"Custom Webapp install form\" src=\"/img/webadmin/app_install_form.png\" caption=\"Pre-installation form of the Custom Webapp\"/>\n"
+"<TabItem value=\"web\" label=\"From the web interface\">\n"
+"    <Figure alt=\"Formulaire d'installation de l'app 'custom webapp'\" src="
+"\"/img/webadmin/app_install_form.png\" caption="
+"\"Formulaire d'installation de l'app 'custom webapp'\"/>\n"
 
 #. type: Plain text
 #: docs/admin/30.apps/index.mdx:41
