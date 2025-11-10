@@ -6,11 +6,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-11-10 02:39+0100\n"
-"PO-Revision-Date: 2025-11-09 21:16+0000\n"
+"POT-Creation-Date: 2025-11-10 02:13+0100\n"
+"PO-Revision-Date: 2025-11-10 01:35+0000\n"
 "Last-Translator: Weblate Admin <yunohost@translate.yunohost.org>\n"
-"Language-Team: French <https://translate.yunohost.org/projects/doc-"
-"experimental/40backups__index/fr/>\n"
+"Language-Team: French <https://translate.yunohost.org/projects/"
+"doc-experimental/40backups__index/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -34,9 +34,9 @@ msgstr ""
 #: docs/admin/40.backups/index.mdx:22 docs/admin/40.backups/index.mdx:71
 #: docs/admin/40.backups/index.mdx:137
 #: docs/admin/45.tutorials/35.email_configure_relay.mdx:49
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "<TabItem value=\"web\" label=\"From the web interface\">\n"
-msgstr "<TabItem value=\"web\" label=\"From the web interface\">\n"
+msgstr "<TabItem value=\"web\" label=\"Depuis la webadmin\">\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/_configuration.mdx:30
@@ -55,9 +55,9 @@ msgstr "<TabItem value=\"web\" label=\"From the web interface\">\n"
 #: docs/admin/40.backups/index.mdx:29 docs/admin/40.backups/index.mdx:85
 #: docs/admin/40.backups/index.mdx:144 docs/admin/40.backups/index.mdx:171
 #: docs/admin/45.tutorials/35.email_configure_relay.mdx:66
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "<TabItem value=\"cli\" label=\"From the command line\">\n"
-msgstr "<TabItem value=\"cli\" label=\"From the command line\">\n"
+msgstr "<TabItem value=\"cli\" label=\"Depuis la ligne de commande\">\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/40.backups/index.mdx:1
@@ -305,4 +305,3 @@ msgstr "Par défaut, les sauvegardes sont à placer dans `/home/yunohost.backup/
 #, fuzzy, no-wrap
 msgid "You can use the `scp` (a command built on `ssh`) to copy files between two machines from CLI. For example for a Linux terminal:\n"
 msgstr "Vous pouvez téléverser une sauvegarde depuis une machine vers votre serveur avec :\n"
-
