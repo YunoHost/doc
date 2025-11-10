@@ -28,7 +28,9 @@ If your host OS is 32 bits, be sure to download the 32-bit image.
 :::
 
 :::note
-If you wish to check the validity of our signed images, you can [download our public key](https://forge.yunohost.org/keys/yunohost_bookworm.asc).
+(FIXME: this bit is currently broken...)
+
+Optionally, you can [download the project's public key](https://forge.yunohost.org/keys/yunohost_bookworm.asc) to check the authenticity of the images.
 :::
 
 <YunoHostImagesList hardware="virtualbox"/>
@@ -72,60 +74,62 @@ You should see a screen like this:
 <Figure caption="Preview of the ISO menu" src="/img/softwares/virtualbox_3.png"/>
 
 <Tabs>
-  <TabItem value="classic" label="Classic installation on a whole disk">
-    :::danger
-    Once you have validated the keyboard layout, the installation will be launched and will completely erase the data on your hard disk!
-    :::
+<TabItem value="classic" label="Classic installation on a whole disk">
 
-    1. Select `Graphical install`
-    2. Select your language, your location, your keyboard layout, and eventually your timezone.
-    3. The installer will then download and install all required packages.
-  </TabItem>
-  <TabItem value="expert" label="Installation in expert mode">
+:::danger
+Once you have validated the keyboard layout, the installation will be launched and will completely erase the data on your hard disk!
+:::
 
-    The YunoHost project simplified the classic installation as much as possible in order to avoid as many people as possible being lost with questions that are too technical or related to specific cases.
+1. Select `Graphical install`
+2. Select your language, your location, your keyboard layout, and eventually your timezone.
+3. The installer will then download and install all required packages.
 
-    With the expert mode installation, you have more possibilities, especially concerning the exact partitioning of your storage media. You can also decide to use the classic mode and [add your disks afterwards](/admin/tutorials/external_storage).
+</TabItem>
+<TabItem value="expert" label="Installation in expert mode">
 
-    ### Summary of the steps in expert mode
+The YunoHost project simplified the classic installation as much as possible in order to avoid as many people as possible being lost with questions that are too technical or related to specific cases.
 
-      1. Select `Expert graphical install`.
-      2. Select your language, location, keyboard layout and possibly your timezone.
-      3. Partition your disks. This is where you can set up a RAID or encrypt all or part of the server.
-      4. Specify a possible HTTP proxy to use for the installation of the packages
-      5. Specify on which volumes grub should be installed
+With the expert mode installation, you have more possibilities, especially concerning the exact partitioning of your storage media. You can also decide to use the classic mode and [add your disks afterwards](/admin/tutorials/external_storage).
 
-    ### Regarding partitioning
+### Summary of the steps in expert mode
 
-    In general, we recommend against partitioning `/var`, `/opt`, `/usr`, `/bin`, `/etc`, `/lib`, `/tmp` and `/root` on separate partitions. This will prevent you from having to worry about full partitions that could crash your machine, cause app installations to fail, or even corrupt your databases.
+  1. Select `Expert graphical install`.
+  2. Select your language, location, keyboard layout and possibly your timezone.
+  3. Partition your disks. This is where you can set up a RAID or encrypt all or part of the server.
+  4. Specify a possible HTTP proxy to use for the installation of the packages
+  5. Specify on which volumes grub should be installed
 
-    For performance reasons, it is recommended to mount your fastest storage (SSD) on the root `/`.
+### Regarding partitioning
 
-    If you have one or more hard drives to store data, you can choose to mount it on one of these folders depending on your usage.
+In general, we recommend against partitioning `/var`, `/opt`, `/usr`, `/bin`, `/etc`, `/lib`, `/tmp` and `/root` on separate partitions. This will prevent you from having to worry about full partitions that could crash your machine, cause app installations to fail, or even corrupt your databases.
 
-    | Path | Contents |
-    |--------|---|
-    | `/home` | User folders accessible via SFTP |
-    | `/home/yunohost.backup/archives` | YunoHost backups to be placed ideally elsewhere than on the disks that manage the data |
-    | `/home/yunohost.app` | Heavy data from YunoHost applications (nextcloud, matrix...) |
-    | `/home/yunohost.multimedia` | Heavy data shared between several applications |
-    | `/var/mail` | User mail |
+For performance reasons, it is recommended to mount your fastest storage (SSD) on the root `/`.
 
-    If you want flexibility and don't want to (re)size partitions, you can also choose to mount on `/mnt/hdd` and follow this [tutorial to mount all these folders with `mount --bind`](/admin/tutorials/external_storage).
+If you have one or more hard drives to store data, you can choose to mount it on one of these folders depending on your usage.
 
-    ### About encryption
+| Path | Contents |
+|--------|---|
+| `/home` | User folders accessible via SFTP |
+| `/home/yunohost.backup/archives` | YunoHost backups to be placed ideally elsewhere than on the disks that manage the data |
+| `/home/yunohost.app` | Heavy data from YunoHost applications (nextcloud, matrix...) |
+| `/home/yunohost.multimedia` | Heavy data shared between several applications |
+| `/var/mail` | User mail |
 
-    Be aware that if you encrypt all or part of your disks, you will have to type the passphrase every time you restart your server, which can be a problem if you are not on site. There are however solutions (quite difficult to implement) that allow you to type the passphrase via SSH or via a web page (search for "dropbear encrypted disk").
+If you want flexibility and don't want to (re)size partitions, you can also choose to mount on `/mnt/hdd` and follow this [tutorial to mount all these folders with `mount --bind`](/admin/tutorials/external_storage).
 
-    ### About RAID
+### About encryption
 
-    Keep in mind that:
+Be aware that if you encrypt all or part of your disks, you will have to type the passphrase every time you restart your server, which can be a problem if you are not on site. There are however solutions (quite difficult to implement) that allow you to type the passphrase via SSH or via a web page (search for "dropbear encrypted disk").
 
-    - the disks in your RAIDs must be of different brands, wear and tear or batches (especially if they are SSDs)
-    - a RAID 1 (even without a spare) is more reliable than a RAID 5 from a probability point of view
-    - hardware raids are dependent on the raid card, if the card fails you will need a replacement to read and rebuild the array
+### About RAID
 
-  </TabItem>
+Keep in mind that:
+
+- the disks in your RAIDs must be of different brands, wear and tear or batches (especially if they are SSDs)
+- a RAID 1 (even without a spare) is more reliable than a RAID 5 from a probability point of view
+- hardware raids are dependent on the raid card, if the card fails you will need a replacement to read and rebuild the array
+
+</TabItem>
 </Tabs>
 
 :::tip

@@ -45,7 +45,7 @@ Please note that modifying your DNS records could sometimes take over 24h to tak
 It can be configured either from the webadmin or the command line.
 
 <Tabs groupId="admin-commands">
-  <TabItem value="web" label="From the web interface">
+<TabItem value="web" label="From the web interface">
 
 Go to your web admin, in `Tools` > `Yunohost Settings` and `Email`.
 Now set all options requests :
@@ -61,8 +61,9 @@ Now set all options requests :
 
 ![Option-Relais-Smtp](/img/webadmin/relay_smtp_option_webadmin_en.png)
 
-    </TabItem>
-  <TabItem value="cli" label="From the command line">
+</TabItem>
+<TabItem value="cli" label="From the command line">
+
 In order to setup your YunoHost to use your SMTP relay, you will have to configure four things:
 
 1. Your SMTP relay URL (for this tutorial we will use `smtprelay.tld`)
@@ -98,7 +99,7 @@ It may be a good idea to double confirm your settings by doing:
 sudo yunohost settings list
 ```
 
-  </TabItem>
+</TabItem>
 </Tabs>
 
 Your SMTP relay is now configured!
