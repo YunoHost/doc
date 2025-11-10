@@ -1,6 +1,6 @@
 ---
 title: On a regular computer
-description: An old computer or a huge x86 rack server
+description: An old desktop computer or laptop, or any x86 machine
 sidebar_position: 4
 sidebar_custom_props:
   doc_card_image: /img/icons/icon-computer.png
@@ -17,20 +17,22 @@ import YunoHostImagesList from '@site/src/components/YunoHostImagesList';
 ## <FAIcon icon="fa-list-alt"/> Pre-requisites
 
 - A x86-compatible hardware dedicated to YunoHost with at least 512MB of RAM and 16GB of disk
-  - a laptop, nettop, netbook, desktop,…
+  - this may be an old laptop, desktop computer, or a proper server machine
 - A 1GB+ USB key
-- A [reasonable ISP](/admin/get_started/providers/isp/), preferably with a good and unlimited upstream bandwidth
+- A [reasonable ISP](/admin/get_started/providers/isp/), preferably with good and unlimited upstream bandwidth
 - An ethernet cable (RJ-45) to connect your server to your router.
 - A computer to read this guide, flash the image and access your server.
 
 ## <FAIcon icon="fa-download" /> Download the YunoHost image
 
 :::warning
-If your host OS is 32 bits, be sure to download the 32-bit image.
+If your machine is 32 bits, be sure to download the 32-bit image.
 :::
 
-:::note
-If you wish to check the validity of our signed images, you can [download our public key](https://forge.yunohost.org/keys/yunohost_bookworm.asc).
+:::info
+(FIXME: this bit is currently broken...)
+
+Optionally, you can [download the project's public key](https://forge.yunohost.org/keys/yunohost_bookworm.asc) to check the authenticity of the images.
 :::
 
 <YunoHostImagesList hardware="regular"/>
@@ -70,27 +72,18 @@ dd if=/path/to/armbian.img of=/dev/mmcblk0 status=progress ; sync
 ```
 
 </TabItem>
-<TabItem value="cd_dvd" label="Burning a CD/DVD">
-
-For older devices, you might want to burn a CD/DVD. The software to use depends on your operating system.
-
-- On Windows, use [ImgBurn](http://www.imgburn.com/) to write the image file on the disc
-- On macOS, use [Disk Utility](http://support.apple.com/kb/ph7025)
-- On GNU/Linux, you have plenty of choices, like [Brasero](https://wiki.gnome.org/Apps/Brasero) or [K3b](http://www.k3b.org/)
-
-</TabItem>
 <TabItem value="ventoy" label="Using Ventoy">
 
 Ventoy will be useful if you can't sucessfully boot the YunoHost image using the other methods.
 
-[Ventoy](https://www.ventoy.net/) is a nice tool that makes it really easy to put multiple linux images on a USB stick. When the computer refuses to boot from an image on a usb stick, Ventoy will usually be able to boot it anyway!
+[Ventoy](https://www.ventoy.net/) is a nice tool that makes it really easy to put multiple linux images on a USB stick. When the computer refuses to boot from an image on a USB stick, Ventoy will usually be able to boot it anyway!
 
 1. Install [Ventoy](https://www.ventoy.net/) on the USB stick. Refer to the [install instructions](https://www.ventoy.net/en/doc_start.html).
     - This will create 2 partitions on the stick.
 2. Using your favorite file explorer app, copy the YunoHost image file on the big `Ventoy` partition (not "VTOYEFI")
     - Don't use *Balena Etcher*, USBImager or `dd` for this!
 
-Later, when you'll boot the computer using this usb stick, Ventoy will appear and will list the images on the USB stick. Select the YunoHost image, then select GRUB2 launch option (or use whichever works for your computer 😉)
+Later, when you'll boot the computer using this USB stick, Ventoy will appear and will list the images on the USB stick. Select the YunoHost image, then select GRUB2 launch option (or use whichever works for your computer 😉)
 
 </TabItem>
 </Tabs>
@@ -172,7 +165,7 @@ Keep in mind that:
 </TabItem>
 </Tabs>
 
-:::tip
+:::info
 If the YunoHost installer fails and you can't solve the issue, know that it's also possible to install Debian and then install YunoHost on top. See [the specific instructions](/admin/get_started/install_on/on_top_of_debian#-run-the-install-script).
 :::
 
