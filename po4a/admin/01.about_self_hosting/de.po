@@ -1,0 +1,46 @@
+# Copyright (C) 2025 YunoHost Contributors
+# This file is distributed under the same license as the YunoHost documentation.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: YunoHost documentation VERSION\n"
+"POT-Creation-Date: 2025-11-09 20:53+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Yaml Front Matter Hash Value: title
+#: docs/admin/01.about_self_hosting.mdx:1
+#, no-wrap
+msgid "About self-hosting"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/01.about_self_hosting.mdx:6
+#, no-wrap
+msgid "Self-hosting means owning and administrating your own server, typically at home, to host your **personal data and services** yourself instead of relying exclusively on third parties. For instance, you can self-host your blog, such that it 'lives' on a machine that you have control of, instead of having it on somebody else's computer (a.k.a. FAANG or The Cloud) in exchange for money, advertisements, or private data.\n"
+msgstr ""
+"Self-Hosting ist das Hosten von Daten oder Software auf eigener IT-Infrastruktur.\n"
+"Ihren eigenen Server zu Hause zu haben und zu verwalten, um Ihre persönlichen Daten und Dienste selbst zu hosten, anstatt sich ausschließlich auf Dritte zu verlassen. Beispielsweise können Sie Ihren Blog selbst hosten, sodass er auf einem Computer \"lebt\", über den Sie die Kontrolle haben, anstatt ihn im Austausch gegen Geld, Werbung oder private Daten auf dem Computer eines anderen Benutzers (a.k.a. The Cloud) zu haben.\n"
+
+#. type: Plain text
+#: docs/admin/01.about_self_hosting.mdx:8
+#, no-wrap
+msgid "Self-hosting implies owning a server. **A server is a computer that is typically accessible on the network 24/7**, and usually does not have a screen or keyboard (it is instead controlled remotely). Contrary to a popular belief, a server is not necessarily a huge and extra-powerful machine: nowadays, a small, ~$30 ARM board is adequate for self-hosting.\n"
+msgstr "Self-Hosting bedeutet, einen Server zu besitzen. Ein Server ist ein Computer, auf den in der Regel rund um die Uhr im Netzwerk zugegriffen werden kann und der normalerweise keinen Bildschirm oder keine Tastatur hat (stattdessen wird er ferngesteuert). Entgegen der landläufigen Meinung ist ein Server nicht unbedingt ein riesiger und besonders leistungsfähiger Computer: Heutzutage ist ein kleines Board (Einplatinencomputer) mit ~ 40 € für das Self-Hosting ausreichend.\n"
+
+#. type: Plain text
+#: docs/admin/01.about_self_hosting.mdx:10
+#, no-wrap
+msgid "![Internet topologies diagram](/img/internet_topologies.png)\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/01.about_self_hosting.mdx:11
+#, no-wrap
+msgid "Self-hosting is not about making \"your Internet\" more secure and does not provide anonymity by itself. Instead, it is about being autonomous and in control of your services and data — which also means being responsible for them.\n"
+msgstr "Beim Self-Hosting geht es nicht darum, \"Ihr Internet\" sicherer zu machen, und es bietet auch keine Anonymität an sich. Stattdessen geht es darum, autonom zu sein und Ihre Dienste und Daten zu kontrollieren - was auch bedeutet, dafür verantwortlich zu sein.\n"

@@ -1,0 +1,59 @@
+# Copyright (C) 2025 YunoHost Contributors
+# This file is distributed under the same license as the YunoHost documentation.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: YunoHost documentation VERSION\n"
+"POT-Creation-Date: 2025-11-11 00:07+0100\n"
+"PO-Revision-Date: 2025-11-09 21:16+0000\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: French <https://translate.yunohost.org/projects/doc-"
+"experimental/05get_started__10providers__05registrar__gandi/fr/>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.14.2\n"
+
+#. type: Title ####
+#: docs/admin/05.get_started/10.providers/05.registrar/gandi.mdx:1
+#: docs/admin/45.tutorials/45.certificate_custom.mdx:66
+#, no-wrap
+msgid "Gandi"
+msgstr "Gandi"
+
+#. type: Yaml Front Matter Hash Value: title
+#: docs/admin/05.get_started/10.providers/05.registrar/gandi.mdx:1
+#, no-wrap
+msgid "Obtaining an API key from Gandi"
+msgstr "Obtenir une clef API chez Gandi"
+
+#. type: Plain text
+#: docs/admin/05.get_started/10.providers/05.registrar/gandi.mdx:7
+#, no-wrap
+msgid "This page is meant to guide you in obtaining an API key from Gandi in order to configure YunoHost's automatic DNS configuration mecanism\n"
+msgstr "Cette page a pour but de vous guider dans l'obtention d'une clé API auprès de Gandi afin de configurer le mécanisme de configuration automatique des DNS de YunoHost.\n"
+
+#. type: Fenced div block (caution)
+#: docs/admin/05.get_started/10.providers/05.registrar/gandi.mdx:8
+#: docs/admin/05.get_started/10.providers/05.registrar/ovh/autodns.mdx:8
+#, no-wrap
+msgid "**DO NOT share your API tokens with anybody!** A malicious attacker obtaining your tokens could take over your domain, and possibly your server!\n"
+msgstr "**NE partagez vos cléfs API avec PERSONNE !** Un attaquant malveillant qui obtiendrait vos jetons pourrait prendre le contrôle de votre domaine, et éventuellement de votre serveur !\n"
+
+#. type: Plain text
+#: docs/admin/05.get_started/10.providers/05.registrar/gandi.mdx:14
+#, no-wrap
+msgid ""
+"1. Go to [https://account.gandi.net/](https://account.gandi.net/)\n"
+"2. You should land on this page. Then click on 'Security'\n"
+msgstr ""
+"1. Allez à [https://account.gandi.net/](https://account.gandi.net/)\n"
+"2. Vous deviez atterir sur cette page. Puis cliquez sur 'Sécurité'\n"
+
+#. type: Plain text
+#: docs/admin/05.get_started/10.providers/05.registrar/gandi.mdx:16
+#, no-wrap
+msgid "3. In the next page, click on '(re)Generate the API key'.\n"
+msgstr "3. Dans la page suivante, clickez sur '(re)Generate the API key'.\n"

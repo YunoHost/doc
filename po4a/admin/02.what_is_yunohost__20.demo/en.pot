@@ -1,0 +1,75 @@
+# Copyright (C) 2025 YunoHost Contributors
+# This file is distributed under the same license as the YunoHost documentation.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: YunoHost documentation VERSION\n"
+"POT-Creation-Date: 2025-11-11 00:07+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Yaml Front Matter Hash Value: description
+#: docs/admin/02.what_is_yunohost/20.demo.mdx:1
+#, no-wrap
+msgid "A demo server"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: title
+#: docs/admin/02.what_is_yunohost/20.demo.mdx:1
+#, no-wrap
+msgid "Try YunoHost"
+msgstr ""
+
+#. type: Title #
+#: docs/admin/02.what_is_yunohost/20.demo.mdx:10
+#, no-wrap
+msgid "Try YunoHost on a demo server"
+msgstr ""
+
+#. type: Fenced div block (caution)
+#: docs/admin/02.what_is_yunohost/20.demo.mdx:12
+#, no-wrap
+msgid "This demo server is reset *every 30 minutes* and could be down from time to time, but at least you can test and that's really cool :)\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/02.what_is_yunohost/20.demo.mdx:21
+#, no-wrap
+msgid ""
+"  } <FAIcon icon='fa-user'/> User interface {\n"
+"  } </YunoHostDocsCardHeading>\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/02.what_is_yunohost/20.demo.mdx:23
+#: docs/admin/02.what_is_yunohost/20.demo.mdx:33
+#, no-wrap
+msgid "  username: `demo`\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/02.what_is_yunohost/20.demo.mdx:25
+#: docs/admin/02.what_is_yunohost/20.demo.mdx:35
+#, no-wrap
+msgid "  password: `demo`\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/02.what_is_yunohost/20.demo.mdx:31
+#, no-wrap
+msgid ""
+"  } <FAIcon icon='fa-cog'/> Administration interface {\n"
+"  } </YunoHostDocsCardHeading>\n"
+msgstr ""
+
+#. type: Fenced div block (info)
+#: docs/admin/02.what_is_yunohost/20.demo.mdx:39
+#, no-wrap
+msgid "**Demo server gracefully provided by [Gitoyen](https://www.gitoyen.net?target=_blank) <FAIcon icon=\"fa-heart\" style={{color: \"green\"}}/>**\n"
+msgstr ""

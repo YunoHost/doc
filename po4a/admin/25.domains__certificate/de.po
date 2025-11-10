@@ -1,0 +1,197 @@
+# Copyright (C) 2025 YunoHost Contributors
+# This file is distributed under the same license as the YunoHost documentation.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: YunoHost documentation VERSION\n"
+"POT-Creation-Date: 2025-11-11 01:24+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/_configuration.mdx:18
+#: docs/admin/05.get_started/20.install_on/_configuration.mdx:128
+#: docs/admin/15.command_line.mdx:76
+#: docs/admin/20.users/groups_and_permissions.mdx:35
+#: docs/admin/20.users/groups_and_permissions.mdx:63
+#: docs/admin/20.users/groups_and_permissions.mdx:84
+#: docs/admin/20.users/groups_and_permissions.mdx:128
+#: docs/admin/20.users/groups_and_permissions.mdx:153
+#: docs/admin/20.users/groups_and_permissions.mdx:187
+#: docs/admin/20.users/groups_and_permissions.mdx:244
+#: docs/admin/25.domains/certificate.mdx:26 docs/admin/30.apps/index.mdx:34
+#: docs/admin/30.apps/index.mdx:104 docs/admin/30.apps/index.mdx:136
+#: docs/admin/40.backups/index.mdx:22 docs/admin/40.backups/index.mdx:71
+#: docs/admin/40.backups/index.mdx:137
+#: docs/admin/45.tutorials/35.email_configure_relay.mdx:49
+#, fuzzy, no-wrap
+#| msgid "<TabItem value=\"thunderbird\" label=\"Mozilla Thunderbird\">\n"
+msgid "<TabItem value=\"web\" label=\"From the web interface\">\n"
+msgstr "<TabItem value=\"thunderbird\" label=\"Mozilla Thunderbird\">\n"
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/_configuration.mdx:36
+#: docs/admin/05.get_started/20.install_on/_configuration.mdx:110
+#: docs/admin/05.get_started/20.install_on/_configuration.mdx:135
+#: docs/admin/15.command_line.mdx:85
+#: docs/admin/20.users/groups_and_permissions.mdx:42
+#: docs/admin/20.users/groups_and_permissions.mdx:70
+#: docs/admin/20.users/groups_and_permissions.mdx:95
+#: docs/admin/20.users/groups_and_permissions.mdx:135
+#: docs/admin/20.users/groups_and_permissions.mdx:160
+#: docs/admin/20.users/groups_and_permissions.mdx:198
+#: docs/admin/20.users/groups_and_permissions.mdx:249
+#: docs/admin/25.domains/certificate.mdx:45 docs/admin/30.apps/index.mdx:39
+#: docs/admin/30.apps/index.mdx:113 docs/admin/30.apps/index.mdx:143
+#: docs/admin/40.backups/index.mdx:29 docs/admin/40.backups/index.mdx:85
+#: docs/admin/40.backups/index.mdx:144 docs/admin/40.backups/index.mdx:171
+#: docs/admin/45.tutorials/35.email_configure_relay.mdx:66
+#, fuzzy, no-wrap
+#| msgid "<TabItem value=\"dekko\" label=\"Dekko\">\n"
+msgid "<TabItem value=\"cli\" label=\"From the command line\">\n"
+msgstr "<TabItem value=\"dekko\" label=\"Dekko\">\n"
+
+#. type: Yaml Front Matter Hash Value: title
+#: docs/admin/25.domains/certificate.mdx:1
+#, no-wrap
+msgid "Certificate"
+msgstr "Zertifikat"
+
+#. type: Plain text
+#: docs/admin/25.domains/certificate.mdx:9
+#, no-wrap
+msgid "Certificates are used to guarantee the confidentiality and authenticity of the communication between a web browser and your server. In particular, they protect against attackers trying to impersonate your server.\n"
+msgstr "Digitale Zertifikate werden verwendet, um die Vertraulichkeit und Echtheit der Kommunikation zwischen einem Webbrowser und Ihrem Server zu gewährleisten. Insbesondere schützen sie vor Angreifern, die versuchen, Ihren Server zu identifizieren.\n"
+
+#. type: Plain text
+#: docs/admin/25.domains/certificate.mdx:11
+#, no-wrap
+msgid "YunoHost provides a **self-signed** certificate, it means that your server guaranties the certificate validity. It's enough **for personal usage**, because you trust your own server. But this could be a problem if you want to open access to anonymous like web user for a website.\n"
+msgstr "YunoHost bietet ein **selbstsigniertes-Zertifikat**. Es bedeutet, dass Ihr Server die Gültigkeit des Zertifikats garantiert. Es genügt **für eine persönliche Verwendung**, weil Sie Ihrem eigenen Server vertrauen. Dies könnte jedoch ein Problem sein, wenn Sie den Zugriff auf einem Fremden, wie Webbenutzer, für eine Website öffnen möchten.\n"
+
+#. type: Plain text
+#: docs/admin/25.domains/certificate.mdx:13
+#, no-wrap
+msgid "In practice, visitors will see a screen list this:\n"
+msgstr "Und zwar, werden die Benutzer eine solche Warnung auf dem Bildschirm sehen:\n"
+
+#. type: Plain text
+#: docs/admin/25.domains/certificate.mdx:17
+#, no-wrap
+msgid "Which basically asks the visitor : **\"Do you trust the server hosting this website?\"**. This can rightfully frighten a lot of people.\n"
+msgstr ""
+"Was im Wesentlichen den Besucher fragt: **\"Vertrauen Sie dem Server, der diese Website hostet?\"**.\n"
+"Dies kann viele Menschen selbstverständlich erschrecken.\n"
+
+#. type: Plain text
+#: docs/admin/25.domains/certificate.mdx:19
+#, no-wrap
+msgid "To avoid this confusion, it's possible to get a certificate signed a known authority named **Let's Encrypt** which provide free certificates directly recognized by browsers. YunoHost allows to directly install this certificate from the web administration interface or from the command line.\n"
+msgstr "Um diese Verwirrung zu vermeiden, ist es möglich, ein digitales Zertifikat zu erhalten, welches direkt von den Browsern anerkannt wurde, und von einer \"bekannten\" Zertifizierungsstelle unterzeichnet wird: **Let's Encrypt**, **Gandi**, **RapidSSL**, **StartSSL**, **Cacert**.\n"
+
+#. type: Title ###
+#: docs/admin/25.domains/certificate.mdx:20
+#, no-wrap
+msgid "Install a Let's Encrypt certificate"
+msgstr "Digitales Zertifikat Let's Encrypt installieren"
+
+#. type: Plain text
+#: docs/admin/25.domains/certificate.mdx:23
+#, no-wrap
+msgid "Before attempting to install a Let's Encrypt certificate, you should make sure that your DNS is correctly configured (your.domain.tld should point to your server's IP) and that your domain is accessible through HTTP from outside your local network (i.e. at least port 80 should be forwarded to your server).\n"
+msgstr "Bevor Sie ein Let's Encrypt-Zertifikat installieren, vergewissern Sie sich, dass Ihr DNS ordnungsgemäß konfiguriert ist (Ihre.Domain.tld sollte auf die IP Ihres Servers zeigen) und Ihre Website von außen in HTTP zugänglich ist (d. h. zumindest der Port 80 wird korrekt an Ihren Server umgeleitet).\n"
+
+#. type: Plain text
+#: docs/admin/25.domains/certificate.mdx:28
+#, no-wrap
+msgid "Go to the 'Domain' part of the admin interface, then in the section dedicated to your.domain.tld. You should find a 'SSL certificate' button:\n"
+msgstr ""
+"Gehen Sie zu dem Abschnitt \"Domaine\" der Administrationsoberfläche. Dann\n"
+"zu dem Abschnitt, der Ihrer Domain entspricht. Da steht einen Knopf 'Certificat SSL'.\n"
+
+#. type: Plain text
+#: docs/admin/25.domains/certificate.mdx:32
+#, no-wrap
+msgid "In the 'SSL certificate' section, you can see the status of the current certificate. If you just added the domain, it should be a self-signed certificate.\n"
+msgstr ""
+"Im Abschnitt 'Certificat SSL', wird der aktuelle Status angegeben.\n"
+"Wurde der Domain-Name vor kurzem hinzugefügt, so steht ein selbst-signiertes Zertifikat zur verfügung.\n"
+
+#. type: Plain text
+#: docs/admin/25.domains/certificate.mdx:36
+#, no-wrap
+msgid "If your domain is correctly configured, it is then possible to install the Let's Encrypt certificate via the green button.\n"
+msgstr ""
+"Wenn die Domain korrekt konfiguriert ist, dann ist es möglich\n"
+"mit dem grünen Knopf ein Let's Encrypt-Zertifikat einzusetzen.\n"
+
+#. type: Plain text
+#: docs/admin/25.domains/certificate.mdx:40
+#, no-wrap
+msgid "Once the install is made, you can check that the certificate is live via your browser by going to your domain in HTTPS. The certificate will automatically be renewed every three months.\n"
+msgstr ""
+"Nach Abschluss der Installation, die ensprechende Domain mit Webbrowser\n"
+"in HTTPS-Modus besuchen um die Berücksichtigung des digitalen Zertifikats\n"
+"von Let's Encrypt zu überprüfen. Das digitale Zertifikat wird automatisch etwa alle drei Monate erneuert.\n"
+
+#. type: Plain text
+#: docs/admin/25.domains/certificate.mdx:47
+#, no-wrap
+msgid "Connect to your server through SSH.\n"
+msgstr "SSH-Zugang auf Ihrem Server herstellen.\n"
+
+#. type: Plain text
+#: docs/admin/25.domains/certificate.mdx:49
+#, no-wrap
+msgid "You can check the status of your current certificate with:\n"
+msgstr "So können Sie den aktuellen Status des digitalen Zertifikats überprüfen\n"
+
+#. type: Plain text
+#: docs/admin/25.domains/certificate.mdx:55
+#, no-wrap
+msgid "Install a Let's Encrypt certificate with\n"
+msgstr "Dann Let's Encrypt-Zertifikat installieren\n"
+
+#. type: Plain text
+#: docs/admin/25.domains/certificate.mdx:61
+#, no-wrap
+msgid "This should return :\n"
+msgstr "Ergebnis sollte so aussehen :\n"
+
+#. type: Plain text
+#: docs/admin/25.domains/certificate.mdx:68
+#, no-wrap
+msgid "Once this is done, you can check that the certificate is live via your browser by going to your domain in HTTPS. The certificate will automatically be renewed every three months.\n"
+msgstr "Nach Abschluss der Installation, die ensprechende Domain mit Webbrowser in HTTPS-Modus besuchen um die Berücksichtigung des digitalen Zertifikats von Let's Encrypt zu überprüfen. Das digitale Zertifikat wird automatisch etwa alle drei Monate erneuert.\n"
+
+#. type: Title ####
+#: docs/admin/25.domains/certificate.mdx:72
+#, no-wrap
+msgid "Troubleshooting"
+msgstr "Fehlerbehebung"
+
+#. type: Plain text
+#: docs/admin/25.domains/certificate.mdx:75
+#, no-wrap
+msgid "If due to some bad tweaking, your certificate ends up in a bad state (e.g. lost the certificate or unable to read the files), you should be able to clean the situation by regenerating a self-signed certificate:\n"
+msgstr "Wenn das Zertifikat aufgrund einer schlechten Handhabung nicht funktionsfähig ist (z. B. Verlust des Zertifikats oder Dateien nicht lesbar), ist es trotzdem möglich ein selbst-signiertes Zertifikat zu regenerieren :\n"
+
+#. type: Plain text
+#: docs/admin/25.domains/certificate.mdx:81
+#, no-wrap
+msgid "If YunoHost thinks that your domain is badly configured despite the fact that you checked the DNS configuration and you have access in HTTP to your server from outside your local network, then you can:\n"
+msgstr "Trotz einer sorgfältigen Überprüfung der DNS-Konfiguration und auch von außen die Möglichkeit mit HTTP-Modus Zugriff auf den Webserver besteht, kann YunoHost manchmal die Einstellungen verweigern. In diesem Fall ist es notwendig :\n"
+
+#. type: Plain text
+#: docs/admin/25.domains/certificate.mdx:83
+#, fuzzy, no-wrap
+#| msgid "if the certificate installation still doesn't work, you can disable the checks with `--no-checks` after the `cert install` command.\n"
+msgid ""
+"- add a line `127.0.0.1 your.domain.tld` to the file `/etc/hosts` on your server;\n"
+"- if the certificate installation still doesn't work, you can disable the checks with `--no-checks` after the `cert install` command.\n"
+msgstr "Wenn es immer noch nicht funktionsfähig ist, also die Überprüfungen deaktivieren mit `--no-checks` nach dem Befehl `cert install`.\n"

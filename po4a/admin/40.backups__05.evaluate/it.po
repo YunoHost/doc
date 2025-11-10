@@ -1,0 +1,152 @@
+# Copyright (C) 2025 YunoHost Contributors
+# This file is distributed under the same license as the YunoHost documentation.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: YunoHost documentation VERSION\n"
+"POT-Creation-Date: 2025-11-11 00:07+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Yaml Front Matter Hash Value: title
+#: docs/admin/40.backups/05.evaluate.mdx:1
+#, no-wrap
+msgid "Backup strategies"
+msgstr "Strategie di backup"
+
+#. type: Plain text
+#: docs/admin/40.backups/05.evaluate.mdx:6
+#, no-wrap
+msgid "In the context of self-hosting, backups are an important element to compensate for unexpected events (fire, database corruption, loss of access to the server, compromised server...). The backup policy to implement depends on the importance of the services and data you manage. For example, backing up a test server will be of little interest, while you will want to be very careful if you are managing critical data for an association or a company - and in such cases, you will want to store the backups *in a different location or locations*.\n"
+msgstr "In un contesto di self hosting le strategie di backup sono un fattore chiave per sopperire ad eventi inattesi (incendio, corruzione del database, impossibilità di accedere al server, compromissione del server...). La tipologia di backup da adottare dipende dalla importanza dei dati e dei servizi che vogliamo proteggere. Ad esempio, nel contesto di un server di test possiamo evitare un backup integrale (dati e sistema operativo), al contrario, dovremo porre molta più attenzione nel caso di un server in produzione che contenga dati importanti. In questo caso è necessario conservare più copie di backup *in posti diversi*.\n"
+
+#. type: Title ##
+#: docs/admin/40.backups/05.evaluate.mdx:7
+#, no-wrap
+msgid "What is a good backup ?"
+msgstr "Ottimizzare il backup"
+
+#. type: Plain text
+#: docs/admin/40.backups/05.evaluate.mdx:10
+#, no-wrap
+msgid "A good backup consists of at least **3 copies of the data** (including the original data), on at least **2 separate storages**, in at least **2 separate locations** (far enough apart) and ideally with 2 separate methods. If your backups are encrypted **these rules also apply to the decryption phrase/key**.\n"
+msgstr "Un buon backuo consiste in almeno **tre copie dei dati** (compreso l'originale), salvate su almeno **due supporti distinti** che si trovano a loro volta **in due luoghi distinti** (sufficientemente lontani tra loro) e con due diversi sistemi di stoccaggio. Se il vostro backup è cifrato **questa regola aurea si applica anche alla password o frase di decifrazione**.\n"
+
+#. type: Plain text
+#: docs/admin/40.backups/05.evaluate.mdx:12
+#, no-wrap
+msgid "A good backup is also in many cases, a recent backup, so it takes either a lot of rigor or to **automate** the process.\n"
+msgstr "Un buon backup deve anche essere recente, dovrete quindi essere molto precisi e quando possibile **automatizzare il processo**.\n"
+
+#. type: Plain text
+#: docs/admin/40.backups/05.evaluate.mdx:14
+#, no-wrap
+msgid "A good backup is checked regularly to ensure the effectiveness and integrity of the data.\n"
+msgstr "Controllate sempre l'integrità del file di backup.\n"
+
+#. type: Plain text
+#: docs/admin/40.backups/05.evaluate.mdx:16
+#, no-wrap
+msgid "Finally, a good backup is one that is **restorable within an acceptable timeframe** for you. Remember to document your restoration method and to estimate the transfer time of a copy, especially if the Internet connections involved are not symmetrical.\n"
+msgstr "Per ultimo, un buon backup **deve essere facilmente e velocemente accessibile**. Ricorda di documentare il metodo di recupero e di controllare la velocità delle connessioni in download specialmente se la connessione Internet non è simmetrica.\n"
+
+#. type: Fenced div block (info)
+#: docs/admin/40.backups/05.evaluate.mdx:17
+#, no-wrap
+msgid ""
+"Example of **a robust and comfortable combination**:\n"
+"\n"
+"- a remote and automatic backup with borg\n"
+"- a backup on external disk and automatic with borg\n"
+"- a regular snapshot/image (and before updates)\n"
+"- a monitored RAID 1 array (or a commercial VPS that will also be on an array)\n"
+"- a decryption passphrase stored on 3 media in 2 locations\n"
+msgstr ""
+"Esempi di **backup sicuro e facilmente recuperabile**.\n"
+"\n"
+"- backup remoto e automatizzato con borg\n"
+"- backup automatizzato su unità locale esterna con borg\n"
+"- snapshot o immagine (eseguiti prima di ogni aggiornamento)\n"
+"- server monitorato con RAID 1 (o una VPS commerciale che può essere su un array)\n"
+"- password di decifratura salvata su (tre supporti e due luoghi diversi)\n"
+
+#. type: Title ##
+#: docs/admin/40.backups/05.evaluate.mdx:27
+#, no-wrap
+msgid "Some possible methods"
+msgstr "Alcuni esempi di esecuzione del backup"
+
+#. type: Plain text
+#: docs/admin/40.backups/05.evaluate.mdx:34
+#, no-wrap
+msgid ""
+"- [generate an archive and download it manually (default method of YunoHost)](/admin/backups/#manual-backup)\n"
+"- [backup automatically (recommended method)](/admin/backups/backup_methods)\n"
+"- [generate an archive directly on another disk](/admin/tutorials/external_storage)\n"
+"- [make a disk image or snapshot](/admin/backups/clone_filesystem)\n"
+"- [save useful data via a custom method](/admin/backups/custom_backup_methods)\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/40.backups/05.evaluate.mdx:35
+#, no-wrap
+msgid "Risks"
+msgstr "Rischi"
+
+#. type: Plain text
+#: docs/admin/40.backups/05.evaluate.mdx:38
+#, no-wrap
+msgid "Below, a list of risks sorted from the most to the least probable, whose probability remains to be adapted according to your situation (location of the server, quality of the installations, user profiles, etc.). It is up to you to put the cursor where it should be, especially considering the consequences of a data loss.\n"
+msgstr "Di seguito un elenco di errori in ordine crescente di pericolosità. L'ordine proposto varia in base alla vostra situazione (tipo di server, complessità dell'installazione, permessi degli utenti), ponete attenzione alla vostra configurazione, avendo ben presenti le conseguenze di una possibile perdita dei dati.\n"
+
+#. type: Fenced div block (caution)
+#: docs/admin/40.backups/05.evaluate.mdx:39
+#, no-wrap
+msgid "Keep in mind that real accidents are linked to the occurrence of 2 events simultaneously.\n"
+msgstr "Tenete presente che i rischi reali sono collegati all'evenienza di 2 eventi contemporanei\n"
+
+#. type: Plain text
+#: docs/admin/40.backups/05.evaluate.mdx:54
+#, no-wrap
+msgid ""
+"- **Lack of rigor**: strategies based on manual backups require a lot of rigor in the regularity\n"
+"- **Bad handling**: it can happen that a backup is erased by mistake during a restoration or if you rely on a synchronization system, you could delete a file and the deletion would be synchronized instantly\n"
+"- **Cryptolocker**: this is a virus that encrypts files and demands a ransomware. If your users are using nextcloud and windows, an infected windows could synchronize encrypted files and thus you lose your copy.\n"
+"- **Hardware failure**: SD cards are the least reliable media over time (~2 years of life in a server), followed by SSD disks (about 3 years of life) and hard drives (3 years). Note that a new equipment has also probability to break down during the first 6 months. In all cases, your copies should not be on the same physical media.\n"
+"- **Software failure/bug**: a software bug may result in data deletion or you may not know how to fix a problem and want to restore your system.\n"
+"- **Electricity or internet failure**: do you have a plan if this happens? What if you are on vacation?\n"
+"- **Disaster or natural or unnatural event**: a small child, a cat, lightning or a simple leak can destroy your equipment. Fires or floods can also destroy your backup copy at the other end of your home...\n"
+"- **Server compromise**: a malicious person or a robot could attack your server and delete your data\n"
+"- **Machine theft**: a burglary or theft of a computer on which your password manager is located to decrypt your backups\n"
+"- **Search**: whether you are guilty or not, a search can result in the seizure of the entire computer equipment of a place (or even several)\n"
+"- **Death/health problem**: you may not be able to type your passphrase anymore\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/40.backups/05.evaluate.mdx:55
+#, no-wrap
+msgid "About Nextcloud or Thunderbird (IMAP) synchronization"
+msgstr "Qualche info sulla sincronizzazione Nextcloud o Thunderbird (IMAP)"
+
+#. type: Plain text
+#: docs/admin/40.backups/05.evaluate.mdx:58
+#, no-wrap
+msgid "A method that allows a partial backup is to backup files and emails via synchronization software like Nextcloud client or ThunderBird. This way, you avoid the risk of hardware failure.\n"
+msgstr "Un metodo per un parziale backup consiste nello salvare i file e le mail tramite dei programmi di sincronizzazione quali Nextcloud o Thunderbird. In questo modo eviterete le perdite dovute ad un guasto fisico.\n"
+
+#. type: Plain text
+#: docs/admin/40.backups/05.evaluate.mdx:60
+#, no-wrap
+msgid "If this method is easy to set up, it is not without risk because of the synchronization itself. For example, if you are on Windows or Mac, you increase the risk of data loss following the encryption of files by a [cryptolocker](https://en.wikipedia.org/wiki/Ransomware) type virus. On any type of system, a false manipulation can delete all your copies on the server and on the equipment that synchronizes. This concern is aggravated by the fact that the deletion synchronization is usually rather instantaneous.\n"
+msgstr "La semplicità di tale operazione comporta qualche rischio intrinseco nella natura stessa del metodo, sopratutto se usato in ambiente mac o windows. Un [crytolocker](https://en.wikipedia.org/wiki/Ransomware) sul vostro pc porterebbe come conseguenza la perdita dei file sul server nextcloud, così come una involontaria cancellazione del file sul pc. Normalmente la sincronizzazione tra il pc e il server nextcloud è istantanea e quindi i danni sono irreparabili.\n"
+
+#. type: Plain text
+#: docs/admin/40.backups/05.evaluate.mdx:61
+#, no-wrap
+msgid "While the risk of false manipulation can be mitigated by desktop backup software such as TimeShift, the risk of false manipulation can only be mitigated by a backup on a hard drive. Only a backup on a disconnected external hard drive really protects you from ransomware.\n"
+msgstr "Anche se il rischio di evento del genere può essere attenuato con programmi quali Timeshift, solo il backup su un supporto non connesso vi proteggerà dai crytolocker.\n"

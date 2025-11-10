@@ -1,0 +1,285 @@
+# Copyright (C) 2025 YunoHost Contributors
+# This file is distributed under the same license as the YunoHost documentation.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: YunoHost documentation VERSION\n"
+"POT-Creation-Date: 2025-11-11 01:24+0100\n"
+"PO-Revision-Date: 2025-11-10 01:35+0000\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: French <https://translate.yunohost.org/projects/doc-"
+"experimental/45tutorials__35email_configure_relay/fr/>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.14.2\n"
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/_configuration.mdx:18
+#: docs/admin/05.get_started/20.install_on/_configuration.mdx:128
+#: docs/admin/15.command_line.mdx:76
+#: docs/admin/20.users/groups_and_permissions.mdx:35
+#: docs/admin/20.users/groups_and_permissions.mdx:63
+#: docs/admin/20.users/groups_and_permissions.mdx:84
+#: docs/admin/20.users/groups_and_permissions.mdx:128
+#: docs/admin/20.users/groups_and_permissions.mdx:153
+#: docs/admin/20.users/groups_and_permissions.mdx:187
+#: docs/admin/20.users/groups_and_permissions.mdx:244
+#: docs/admin/25.domains/certificate.mdx:26 docs/admin/30.apps/index.mdx:34
+#: docs/admin/30.apps/index.mdx:104 docs/admin/30.apps/index.mdx:136
+#: docs/admin/40.backups/index.mdx:22 docs/admin/40.backups/index.mdx:71
+#: docs/admin/40.backups/index.mdx:137
+#: docs/admin/45.tutorials/35.email_configure_relay.mdx:49
+#, no-wrap
+msgid "<TabItem value=\"web\" label=\"From the web interface\">\n"
+msgstr "<TabItem value=\"web\" label=\"Depuis la webadmin\">\n"
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/_configuration.mdx:36
+#: docs/admin/05.get_started/20.install_on/_configuration.mdx:110
+#: docs/admin/05.get_started/20.install_on/_configuration.mdx:135
+#: docs/admin/15.command_line.mdx:85
+#: docs/admin/20.users/groups_and_permissions.mdx:42
+#: docs/admin/20.users/groups_and_permissions.mdx:70
+#: docs/admin/20.users/groups_and_permissions.mdx:95
+#: docs/admin/20.users/groups_and_permissions.mdx:135
+#: docs/admin/20.users/groups_and_permissions.mdx:160
+#: docs/admin/20.users/groups_and_permissions.mdx:198
+#: docs/admin/20.users/groups_and_permissions.mdx:249
+#: docs/admin/25.domains/certificate.mdx:45 docs/admin/30.apps/index.mdx:39
+#: docs/admin/30.apps/index.mdx:113 docs/admin/30.apps/index.mdx:143
+#: docs/admin/40.backups/index.mdx:29 docs/admin/40.backups/index.mdx:85
+#: docs/admin/40.backups/index.mdx:144 docs/admin/40.backups/index.mdx:171
+#: docs/admin/45.tutorials/35.email_configure_relay.mdx:66
+#, no-wrap
+msgid "<TabItem value=\"cli\" label=\"From the command line\">\n"
+msgstr "<TabItem value=\"cli\" label=\"Depuis la ligne de commande\">\n"
+
+#. type: Yaml Front Matter Hash Value: title
+#: docs/admin/45.tutorials/35.email_configure_relay.mdx:1
+#, no-wrap
+msgid "Configure SMTP relay"
+msgstr "Configurer un relais SMTP"
+
+#. type: Plain text
+#: docs/admin/45.tutorials/35.email_configure_relay.mdx:9
+#, no-wrap
+msgid "If your ISP blocks port 25, if you can't set a reverseDNS on your server, or if you have any other troubles using the built-in SMTP server on YunoHost, you may want to setup your YunoHost server to use an SMTP relay.\n"
+msgstr "Si votre fournisseur d'accès à Internet bloque le port 25, ou si vous rencontrez un problème d’utilisation du serveur SMTP natif de YunoHost, vous pouvez configurer votre serveur YunoHost pour utiliser un relais SMTP.\n"
+
+#. type: Title ##
+#: docs/admin/45.tutorials/35.email_configure_relay.mdx:10
+#, no-wrap
+msgid "What is an SMTP relay?"
+msgstr "Qu'est-ce qu'un relais SMTP ?"
+
+#. type: Plain text
+#: docs/admin/45.tutorials/35.email_configure_relay.mdx:14
+#, no-wrap
+msgid ""
+"An SMTP relay is basically a third party hosted SMTP server that will send emails on behalf of your own SMTP server (Postfix service on YunoHost).\n"
+"Once setup correctly on YunoHost, its operation is transparent, both for you and for your correspondents: they will see emails as coming from your YunoHost main URL, but all the sending will be delegated to the SMTP relay you have chosen and configured.\n"
+msgstr ""
+"C'est un serveur SMTP tiers qui va envoyer les e-mails aux destinataires à la place de votre propre serveur SMTP.\n"
+"Une fois correctement installé, le fonctionnement est transparent pour l’utilisateur. Vos correspondants verront vos e-mails comme s’ils venaient de votre propre serveur, mais ils seront passés par le relais SMTP que vous aurez choisis et configurés.\n"
+
+#. type: Title ##
+#: docs/admin/45.tutorials/35.email_configure_relay.mdx:15
+#, no-wrap
+msgid "<FAIcon icon=\"fa-exclamation-triangle\"/> Disadvantages of SMTP relays"
+msgstr "<FAIcon icon=\"fa-exclamation-triangle\"/>  Inconvénients des relais SMTP"
+
+#. type: Plain text
+#: docs/admin/45.tutorials/35.email_configure_relay.mdx:18
+#, no-wrap
+msgid "It's important to note that using an SMTP relay has to be seen as a (big) compromise in the world of self-hosting. Indeed, when using an SMTP relay, not only a third party sends emails on your behalf, but it has full access to the content of all the emails you'll send and can also possibly modify them (For example, by default, MailJet rewrites the html hyperlinks contained in your emails, in order to track the activity of your correspondents). Be also aware that an SMTP relay is setup for your whole YunoHost server: you can't choose which emails or which users go through it because all future emails will.\n"
+msgstr "Il est important de noter que dans le monde de l'auto-hébergement, utiliser un relais SMTP est un énorme compromis ! En effet, le relais SMTP sera non seulement capable d'envoyer les e-mails de votre part, mais il a également accès au contenu intégral de vos e-mails et peut éventuellement les modifier (Par exemple, par défaut, MailJet réécrit les hyperliens html contenus dans vos mails, afin de traquer l'activité de vos correspondants). Il faut également savoir qu'une fois mis en place, tout le trafic e-mail sortant de votre serveur passera par ce relais ; il n'est pas possible de choisir de l'utiliser ou pas selon l'expéditeur ou la destination.\n"
+
+#. type: Plain text
+#: docs/admin/45.tutorials/35.email_configure_relay.mdx:20
+#, no-wrap
+msgid "Beyond the privacy considerations above, an SMTP relay can impose technical limitations that one would not have if port 25 was open. For example, with most relays, if a user of your YunoHost server declares **an external \"forwarding address\"** in order to automatically forward messages received on your YunoHost server to another mailbox, **such forwarding will not work** for emails originating from outside your server, without any warning. Indeed, relays generally require that the messages they forward have a sender address from your domain (to fight spam and preserve the reputation of their services), which is not the case for an \"automatic forward\" where the original sender of the mail is kept; the message is then blocked by the relay (which, normally, warns your YunoHost admin, but only afterwards)\n"
+msgstr "Au-delà des considérations de confidentialité ci-dessus, un relais SMTP peut imposer des limitations techniques que l'on n'aurait pas si le port 25 était ouvert. Par exemple, avec la plupart des relais, si un utilisateur de votre serveur YunoHost déclare **une \"adresse de transfert\" extérieure** dans le but de transférer automatiquement les messages reçus sur votre serveur YunoHost vers une autre boîte mail, **ce transfert ne fonctionnera pas** pour les courriels venant de l'extérieur de votre serveur, sans qu'il soit en averti. En effet, les relais exigent généralement que les messages qu'ils transmettent aient une adresse d'expéditeur de votre domaine (pour lutter contre le spam et préserver la réputation de leurs services), ce qui n'est pas le cas pour un \"forward automatique\" où l'expéditeur originel du mail est conservé ; le message est alors bloqué par le relais (qui, normalement, prévient votre admin YunoHost, mais seulement après coup).\n"
+
+#. type: Title ##
+#: docs/admin/45.tutorials/35.email_configure_relay.mdx:21
+#, no-wrap
+msgid "How to use an SMTP relay with YunoHost?"
+msgstr "Comment utiliser un relais SMTP avec YunoHost ?"
+
+#. type: Plain text
+#: docs/admin/45.tutorials/35.email_configure_relay.mdx:24
+#, no-wrap
+msgid "YunoHost has a built-in SMTP relay configuration, available from version 4.1. That configuration is not yet available from the admin web interface, though. You will have to use the command line interface.\n"
+msgstr "YunoHost supporte depuis la version 4.1 la configuration d'un relais SMTP. Pour le moment cette fonctionnalité n'est pas accessible depuis l'interface d'administration : le paramétrage doit être fait en ligne de commande.\n"
+
+#. type: Title ###
+#: docs/admin/45.tutorials/35.email_configure_relay.mdx:25
+#, no-wrap
+msgid "Step 1: Register with an SMTP relay provider"
+msgstr "Étape 1 : S'inscrire chez un fournisseur de relais SMTP"
+
+#. type: Plain text
+#: docs/admin/45.tutorials/35.email_configure_relay.mdx:28
+#, no-wrap
+msgid "Many providers exist. Some have free plans with or without limitations, it's up to you. As written above, you have to be careful with your choice as you will basically handover all your emails to that third party. Whether you can trust it or not, that's your call!\n"
+msgstr "Beaucoup de fournisseurs existent dans ce domaine. Certains sont gratuits et d'autres proposent des services payants contre différentes options. Comme écrit plus haut, vous devez être sûr de pouvoir lui faire confiance, mais cela reste à votre entier égard.\n"
+
+#. type: Title ###
+#: docs/admin/45.tutorials/35.email_configure_relay.mdx:29
+#, no-wrap
+msgid "Step 2: Setup your DNS records correctly"
+msgstr "Étape 2 : Paramétrer sa zone DNS correctement"
+
+#. type: Plain text
+#: docs/admin/45.tutorials/35.email_configure_relay.mdx:34
+#, no-wrap
+msgid ""
+"Once registered, the SMTP relay provider will usually ask you to modify your DNS.\n"
+"Standard procedure is to add a DKIM key and a SPF key to your DNS records.\n"
+"The way to modify these records and the value of the keys you'll have to add depend both on your domain name provider and SMTP relay provider.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/35.email_configure_relay.mdx:36
+#, no-wrap
+msgid "Usually, the SMTP relay provider will provide you with a guide on how to modify these records, together with an automatic check tool that will tell you when your DNS have been setup correctly. That step is mandatory to prove \"the world\" that you, owner of your domain name, did explicitly authorize your SMTP relay provider to send emails on your behalf.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/35.email_configure_relay.mdx:38
+#, no-wrap
+msgid "Please note that modifying your DNS records could sometimes take over 24h to take effect, so be patient!\n"
+msgstr ""
+
+#. type: Fenced div block (warning)
+#: docs/admin/45.tutorials/35.email_configure_relay.mdx:39
+#, no-wrap
+msgid "<FAIcon icon=\"fa-exclamation-triangle\"/> From now on, a non trusty SMTP relay provider could send emails from your main domain without telling you.\n"
+msgstr "<FAIcon icon=\"fa-exclamation-triangle\"/> Attention une fois la zone DNS enregistrée, le relais SMTP peut envoyer des e-mails à votre nom sans que vous ne le sachiez\n"
+
+#. type: Title ###
+#: docs/admin/45.tutorials/35.email_configure_relay.mdx:43
+#, no-wrap
+msgid "Step 3: Setup YunoHost correctly"
+msgstr "Étape 3 : Configurer YunoHost correctement"
+
+#. type: Plain text
+#: docs/admin/45.tutorials/35.email_configure_relay.mdx:46
+#, no-wrap
+msgid "It can be configured either from the webadmin or the command line.\n"
+msgstr "Il est possible de configurer soit via la webadmin ou en ligne de commande.\n"
+
+#. type: Plain text
+#: docs/admin/45.tutorials/35.email_configure_relay.mdx:52
+#, no-wrap
+msgid ""
+"Go to your web admin, in `Tools` > `Yunohost Settings` and `Email`.\n"
+"Now set all options requests :\n"
+msgstr ""
+"Depuis l'interface d'administration, dans la section `Outils` > `Paramètres de YunoHost`, et l'onglet `Email`.\n"
+"Il suffit d'activer l'option, et de renseigner les champs nécessaires :\n"
+
+#. type: Plain text
+#: docs/admin/45.tutorials/35.email_configure_relay.mdx:57
+#, no-wrap
+msgid ""
+"- **SMTP relay host** : SMTP server url.\n"
+"- **SMTP relay port** : Port use with the distant server.\n"
+"- **SMTP relay user** : Login or identification mail server.\n"
+"- **SMTP relay password** : Your SMTP relay password.\n"
+msgstr ""
+
+#. type: Fenced div block (warning)
+#: docs/admin/45.tutorials/35.email_configure_relay.mdx:58
+#: docs/admin/45.tutorials/35.email_configure_relay.mdx:74
+#, no-wrap
+msgid "<FAIcon icon=\"fa-exclamation-triangle\"/> Password with `#` char won't works properly due to postfix limitation (it's possible other chars are forbidden, don't hesitate to report it to update this doc).\n"
+msgstr "<FAIcon icon=\"fa-exclamation-triangle\"/>  Les mots de passe avec le caractère `#` ne fonctionneront pas proprement à cause d'une limitation de postfix (d'autres caractères sont peut-être interdit, n'hésitez pas à rapporter ce genre de cas pour la mise à jour de cette doc).\n"
+
+#. type: Plain text
+#: docs/admin/45.tutorials/35.email_configure_relay.mdx:63
+#, no-wrap
+msgid "![Option-Relais-Smtp](/img/webadmin/relay_smtp_option_webadmin_en.png)\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/35.email_configure_relay.mdx:68
+#, no-wrap
+msgid "In order to setup your YunoHost to use your SMTP relay, you will have to configure four things:\n"
+msgstr "Pour que YunoHost soit capable d'utiliser le relais, il faut paramétrer 4 choses.\n"
+
+#. type: Plain text
+#: docs/admin/45.tutorials/35.email_configure_relay.mdx:73
+#, no-wrap
+msgid ""
+"1. Your SMTP relay URL (for this tutorial we will use `smtprelay.tld`)\n"
+"2. The port on which you access the relay (for this tutorial we will use port 2525 below)\n"
+"3. Your SMTP relay username (for this tutorial we will use `username`)\n"
+"4. Your SMTP relay password (for this tutorial we will use `password`)\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/35.email_configure_relay.mdx:79
+#, no-wrap
+msgid "Your SMTP relay will obviously provide you with these four things, that should be available in your control panel or whatsoever.\n"
+msgstr "Le fournisseur SMTP vous fournit ces trois informations.\n"
+
+#. type: Plain text
+#: docs/admin/45.tutorials/35.email_configure_relay.mdx:81
+#, no-wrap
+msgid "You can log into your YunoHost server using SSH:\n"
+msgstr "Premièrement se connecter sur son serveur en SSH avec la commande :\n"
+
+#. type: Plain text
+#: docs/admin/45.tutorials/35.email_configure_relay.mdx:87
+#, no-wrap
+msgid "Then you can update the three values as below:\n"
+msgstr "Ensuite, mettre à jour les informations suivantes :\n"
+
+#. type: Plain text
+#: docs/admin/45.tutorials/35.email_configure_relay.mdx:97
+#, no-wrap
+msgid "It may be a good idea to double confirm your settings by doing:\n"
+msgstr "C'est une bonne idée de confirmer les informations en faisant :\n"
+
+#. type: Plain text
+#: docs/admin/45.tutorials/35.email_configure_relay.mdx:106
+#, no-wrap
+msgid "Your SMTP relay is now configured!\n"
+msgstr "Votre relais SMTP est maintenant configuré !\n"
+
+#. type: Fenced div block (warning)
+#: docs/admin/45.tutorials/35.email_configure_relay.mdx:107
+#, no-wrap
+msgid "<FAIcon icon=\"fa-exclamation-triangle\"/> From now on, a non trusty SMTP relay provider could read or use the data of all the emails you send without telling you (but still won't be able to read nor to use the data from emails you receive).\n"
+msgstr "<FAIcon icon=\"fa-exclamation-triangle\"/> Maintenant le relais SMTP est capable de lire et d'utiliser toutes les informations contenues dans les emails que vous envoyez sans votre accord. Mais il ne sera pas capable de lire les informations des emails que vous recevez.\n"
+
+#. type: Title ####
+#: docs/admin/45.tutorials/35.email_configure_relay.mdx:111
+#, no-wrap
+msgid "Relay all emails, even those from domains managed by YunoHost"
+msgstr "Relayer tous les emails même ceux des noms de domaines gérés par YunoHost"
+
+#. type: Plain text
+#: docs/admin/45.tutorials/35.email_configure_relay.mdx:114
+#, no-wrap
+msgid "If you have plenty of trust in your SMTP relay, have a second IMAP server that you wish or are forced to use instead of the YunoHost one, you can choose to relay all emails even those from domain names managed by YunoHost by commenting the following two lines in `/etc/postfix/main.cf` :\n"
+msgstr "Si vous avez une grande confiance dans votre relais SMTP, que vous avez un second serveur IMAP que vous souhaitez ou êtes contraint d'utiliser en lieu et place de celui de YunoHost, vous pouvez choisir de relayer tous les emails même ceux des noms de domaines gérés par YunoHost en commentant les deux ligne suivantes dans `/etc/postfix/main.cf` :\n"
+
+#. type: Title ###
+#: docs/admin/45.tutorials/35.email_configure_relay.mdx:120
+#, no-wrap
+msgid "Step 4: Check your setup"
+msgstr "Étape 4 : Vérifier la configuration"
+
+#. type: Plain text
+#: docs/admin/45.tutorials/35.email_configure_relay.mdx:124
+#, no-wrap
+msgid ""
+"You can check your setup by sending emails and try if everything works.\n"
+"Some of the SMTP relay will give you insights about the emails you send so that can also be a good way to check that everythings works as needed.\n"
+"Of course, you can always have a try with [mail-tester.com](https://www.mail-tester.com/) to check for any problem or discrepancy.\n"
+msgstr ""
