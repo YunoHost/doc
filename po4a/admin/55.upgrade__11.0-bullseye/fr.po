@@ -7,14 +7,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2025-11-09 21:01+0100\n"
-"PO-Revision-Date: 2025-11-09 20:53+0100\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2025-11-10 01:02+0000\n"
+"Last-Translator: Weblate Admin <yunohost@translate.yunohost.org>\n"
+"Language-Team: French <https://translate.yunohost.org/projects/"
+"doc-experimental/55upgrade__110-bullseye/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.14.2\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/55.upgrade/11.0-bullseye.mdx:1
@@ -31,22 +33,19 @@ msgstr ""
 #. type: Title ##
 #: docs/admin/55.upgrade/11.0-bullseye.mdx:7
 #: docs/admin/55.upgrade/12.0-bookworm/index.mdx:7
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Important notes"
-msgstr ""
-"#-#-#-#-#  fr.po (YunoHost documentation VERSION)  #-#-#-#-#\n"
-"#-#-#-#-#  fr.po (PACKAGE VERSION)  #-#-#-#-#\n"
-"Notes importantes"
+msgstr "Notes importantes"
 
 #. type: Bullet: '- '
 #: docs/admin/55.upgrade/11.0-bullseye.mdx:10
 #: docs/admin/55.upgrade/12.0-bookworm/index.mdx:10
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "The YunoHost team did its best to make sure that the migration is as smooth as possible and was tested over the course of several months in several cases.\n"
 msgstr ""
-"#-#-#-#-#  fr.po (YunoHost documentation VERSION)  #-#-#-#-#\n"
-"#-#-#-#-#  fr.po (PACKAGE VERSION)  #-#-#-#-#\n"
-"L'équipe de YunoHost a fait de son mieux pour que cette migration se passe autant en douceur que possible. Elle a été testée durant plusieurs mois et sur plusieurs types d'installations.\n"
+"L'équipe de YunoHost a fait de son mieux pour que cette migration se passe "
+"autant en douceur que possible. Elle a été testée durant plusieurs mois et "
+"sur plusieurs types d'installations.\n"
 
 #. type: Bullet: '- '
 #: docs/admin/55.upgrade/11.0-bullseye.mdx:12
@@ -57,12 +56,15 @@ msgstr ""
 #. type: Bullet: '- '
 #: docs/admin/55.upgrade/11.0-bullseye.mdx:14
 #: docs/admin/55.upgrade/12.0-bookworm/index.mdx:14
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Please don't rush into thinking that you should need to reinstall your system from scratch thinking it would be \"simpler\" (sigh). (A common attitude is to be willing to reinstall a server at the slightest complication...). Instead, if you happen to run into issues, we encourage you to try to investigate and understand what's going on and [reach for help on the chat and the forum](/community/help).\n"
 msgstr ""
-"#-#-#-#-#  fr.po (YunoHost documentation VERSION)  #-#-#-#-#\n"
-"#-#-#-#-#  fr.po (PACKAGE VERSION)  #-#-#-#-#\n"
-"Ne vous précipitez pas à vouloir faire une réinstallation de votre système en pensant que cela serait \"plus simple\" (sigh). (Une attitude qui revient régulièrement est de vouloir réinstaller son système à la moindre complication...). À la place, si vous rencontrez des problèmes, nous vous encourageons à investiguer, chercher à comprendre et [trouver de l'aide sur le chat ou le forum](/community/help).\n"
+"Ne vous précipitez pas à vouloir faire une réinstallation de votre système "
+"en pensant que cela serait \"plus simple\" (sigh). (Une attitude qui revient "
+"régulièrement est de vouloir réinstaller son système à la moindre "
+"complication...). À la place, si vous rencontrez des problèmes, nous vous "
+"encourageons à investiguer, chercher à comprendre et "
+"[trouver de l'aide sur le chat ou le forum](/community/help).\n"
 
 #. type: Bullet: '- '
 #: docs/admin/55.upgrade/11.0-bullseye.mdx:16
@@ -70,32 +72,23 @@ msgstr ""
 #, fuzzy, no-wrap
 msgid "**You should watch the known issues at the bottom of this page, to be sure your migrations will work properly.**\n"
 msgstr ""
-"#-#-#-#-#  fr.po (YunoHost documentation VERSION)  #-#-#-#-#\n"
-"#-#-#-#-#  fr.po (PACKAGE VERSION)  #-#-#-#-#\n"
-"**You should watch the known issues at the bottom of this page, to be sure your migrations will work properly.**\n"
+"**You should watch the known issues at the bottom of this page, to be sure "
+"your migrations will work properly.**\n"
 
 #. type: Title ##
 #: docs/admin/55.upgrade/11.0-bullseye.mdx:17
 #: docs/admin/55.upgrade/12.0-bookworm/index.mdx:17
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Migration procedure"
-msgstr ""
-"#-#-#-#-#  fr.po (YunoHost documentation VERSION)  #-#-#-#-#\n"
-"#-#-#-#-#  fr.po (PACKAGE VERSION)  #-#-#-#-#\n"
-"Procédure de migration"
+msgstr "Procédure de migration"
 
 #. type: Title ##
 #: docs/admin/55.upgrade/11.0-bullseye.mdx:19
 #: docs/admin/55.upgrade/12.0-bookworm/index.mdx:23
 #: docs/admin/55.upgrade/index.mdx:5
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "From the webadmin"
-msgstr ""
-"#-#-#-#-#  fr.po (YunoHost documentation VERSION)  #-#-#-#-#\n"
-"#-#-#-#-#  fr.po (PACKAGE VERSION)  #-#-#-#-#\n"
-"Depuis la webadmin\n"
-"#-#-#-#-#  fr.po (PACKAGE VERSION)  #-#-#-#-#\n"
-"Depuis la webadmin"
+msgstr "Depuis la webadmin"
 
 #. type: Plain text
 #: docs/admin/55.upgrade/11.0-bullseye.mdx:22
@@ -107,14 +100,9 @@ msgstr ""
 #: docs/admin/55.upgrade/11.0-bullseye.mdx:23
 #: docs/admin/55.upgrade/12.0-bookworm/index.mdx:29
 #: docs/admin/55.upgrade/index.mdx:11
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "From the command line"
-msgstr ""
-"#-#-#-#-#  fr.po (YunoHost documentation VERSION)  #-#-#-#-#\n"
-"#-#-#-#-#  fr.po (PACKAGE VERSION)  #-#-#-#-#\n"
-"Depuis la ligne de commande\n"
-"#-#-#-#-#  fr.po (PACKAGE VERSION)  #-#-#-#-#\n"
-"Depuis la ligne de commande"
+msgstr "Depuis la ligne de commande"
 
 #. type: Plain text
 #: docs/admin/55.upgrade/11.0-bullseye.mdx:26
@@ -125,22 +113,16 @@ msgstr ""
 #. type: Plain text
 #: docs/admin/55.upgrade/11.0-bullseye.mdx:32
 #: docs/admin/55.upgrade/12.0-bookworm/index.mdx:38
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "then read carefully and accept the disclaimer.\n"
-msgstr ""
-"#-#-#-#-#  fr.po (YunoHost documentation VERSION)  #-#-#-#-#\n"
-"#-#-#-#-#  fr.po (PACKAGE VERSION)  #-#-#-#-#\n"
-"puis lisez attentivement l'avertissement et les instructions.\n"
+msgstr "puis lisez attentivement l'avertissement et les instructions.\n"
 
 #. type: Title ##
 #: docs/admin/55.upgrade/11.0-bullseye.mdx:33
 #: docs/admin/55.upgrade/12.0-bookworm/index.mdx:39
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "During the migration"
-msgstr ""
-"#-#-#-#-#  fr.po (YunoHost documentation VERSION)  #-#-#-#-#\n"
-"#-#-#-#-#  fr.po (PACKAGE VERSION)  #-#-#-#-#\n"
-"Pendant la migration"
+msgstr "Pendant la migration"
 
 #. type: Plain text
 #: docs/admin/55.upgrade/11.0-bullseye.mdx:36
@@ -157,12 +139,11 @@ msgstr ""
 #. type: Plain text
 #: docs/admin/55.upgrade/11.0-bullseye.mdx:40
 #: docs/admin/55.upgrade/12.0-bookworm/index.mdx:28
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Note that even if you close the webadmin page for some reason, the migration will continue in the background (but the webadmin will be partially unavailable).\n"
 msgstr ""
-"#-#-#-#-#  fr.po (YunoHost documentation VERSION)  #-#-#-#-#\n"
-"#-#-#-#-#  fr.po (PACKAGE VERSION)  #-#-#-#-#\n"
-"Notez que même si vous fermez la page d'admin, la migration continuera (par contre l'interface d'admin sera partiellement indisponible).\n"
+"Notez que même si vous fermez la page d'admin, la migration continuera "
+"(par contre l'interface d'admin sera partiellement indisponible).\n"
 
 #. type: Title ###
 #: docs/admin/55.upgrade/11.0-bullseye.mdx:41
@@ -318,42 +299,37 @@ msgstr ""
 #. type: Title ###
 #: docs/admin/55.upgrade/11.0-bullseye.mdx:82
 #: docs/admin/55.upgrade/12.0-bookworm/index.mdx:78
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Check that your applications are working"
-msgstr ""
-"#-#-#-#-#  fr.po (YunoHost documentation VERSION)  #-#-#-#-#\n"
-"#-#-#-#-#  fr.po (PACKAGE VERSION)  #-#-#-#-#\n"
-"Vérifiez que les applications fonctionnent"
+msgstr "Vérifiez que les applications fonctionnent"
 
 #. type: Plain text
 #: docs/admin/55.upgrade/11.0-bullseye.mdx:85
 #: docs/admin/55.upgrade/12.0-bookworm/index.mdx:81
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Test that your applications are working. If they aren't, you should try to upgrade them (it is also a good idea to upgrade them even if they are working anyway).\n"
 msgstr ""
-"#-#-#-#-#  fr.po (YunoHost documentation VERSION)  #-#-#-#-#\n"
-"#-#-#-#-#  fr.po (PACKAGE VERSION)  #-#-#-#-#\n"
-"Vérifiez que vos applications installées fonctionnent... Si elles ne fonctionnent pas, il est recommandé de tenter de les mettre à jour. (ou bien de manière générale, il est recommandé de les mettre à jour même si elles fonctionnent !).\n"
+"Vérifiez que vos applications installées fonctionnent... Si elles ne "
+"fonctionnent pas, il est recommandé de tenter de les mettre à jour. (ou bien "
+"de manière générale, il est recommandé de les mettre à jour même si elles "
+"fonctionnent !).\n"
 
 #. type: Plain text
 #: docs/admin/55.upgrade/11.0-bullseye.mdx:87
 #: docs/admin/55.upgrade/12.0-bookworm/index.mdx:83
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "If your app is broken and you were already with the latest version, you can rerun the upgrade thanks to the `-F|--force` option:\n"
 msgstr ""
-"#-#-#-#-#  fr.po (YunoHost documentation VERSION)  #-#-#-#-#\n"
-"#-#-#-#-#  fr.po (PACKAGE VERSION)  #-#-#-#-#\n"
-"Si votre app est cassée et que vous étiez déjà sur la dernière version d'une application, vous pouvez relancer la mise à jour grâce à l'option `--force`:\n"
+"Si votre app est cassée et que vous étiez déjà sur la dernière version d'une "
+"application, vous pouvez relancer la mise à jour grâce à l'option `--force`:"
+"\n"
 
 #. type: Title ##
 #: docs/admin/55.upgrade/11.0-bullseye.mdx:92
 #: docs/admin/55.upgrade/12.0-bookworm/index.mdx:88
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Current known issues after the migration"
-msgstr ""
-"#-#-#-#-#  fr.po (YunoHost documentation VERSION)  #-#-#-#-#\n"
-"#-#-#-#-#  fr.po (PACKAGE VERSION)  #-#-#-#-#\n"
-"Soucis connus après la migration"
+msgstr "Soucis connus après la migration"
 
 #. type: Title ###
 #: docs/admin/55.upgrade/11.0-bullseye.mdx:94

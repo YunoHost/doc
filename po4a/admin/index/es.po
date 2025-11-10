@@ -17,31 +17,26 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. type: Yaml Front Matter Hash Value: title
-#: docs/admin/index.mdx:1
 #, no-wrap
 msgid "Welcome"
 msgstr ""
 
 #. type: Title #
-#: docs/admin/index.mdx:6
 #, no-wrap
 msgid "YunoHost admin documentation"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/index.mdx:9
 #, no-wrap
 msgid "Here, you'll learn [the basics of self-hosting](/admin/about_self_hosting), how to [install YunoHost](/admin/get_started/install_on) and configure it.\n"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/index.mdx:11
 #, no-wrap
 msgid "Then you'll be able to [add users](/admin/users), [domains](/admin/domains) and [apps](/admin/apps), and ensure [backups](/admin/backups) are done properly.\n"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/index.mdx:12
 #, no-wrap
 msgid "Don't hesitate to contact the [community](/community) to [ask for help](/community/help) !\n"
 msgstr ""

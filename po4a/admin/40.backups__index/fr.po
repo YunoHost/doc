@@ -3,18 +3,20 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2025-11-09 21:01+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2025-11-09 21:16+0000\n"
+"Last-Translator: Weblate Admin <yunohost@translate.yunohost.org>\n"
+"Language-Team: French <https://translate.yunohost.org/projects/"
+"doc-experimental/40backups__index/fr/>\n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.14.2\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/_configuration.mdx:19
@@ -23,17 +25,9 @@ msgstr ""
 #: docs/admin/40.backups/index.mdx:25 docs/admin/40.backups/index.mdx:74
 #: docs/admin/40.backups/index.mdx:140
 #: docs/admin/45.tutorials/35.email_configure_relay.mdx:49
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "  <TabItem value=\"web\" label=\"From the web interface\">\n"
-msgstr ""
-"#-#-#-#-#  fr.po (PACKAGE VERSION)  #-#-#-#-#\n"
-"  <TabItem value=\"web\" label=\"Depuis l'interface web\">\n"
-"#-#-#-#-#  fr.po (PACKAGE VERSION)  #-#-#-#-#\n"
-"  <TabItem value=\"web\" label=\"From the web interface\">\n"
-"#-#-#-#-#  fr.po (PACKAGE VERSION)  #-#-#-#-#\n"
-"  <TabItem value=\"web\" label=\"From the web interface\">\n"
-"#-#-#-#-#  fr.po (PACKAGE VERSION)  #-#-#-#-#\n"
-"  <TabItem value=\"web\" label=\"From the web interface\">\n"
+msgstr "  <TabItem value=\"web\" label=\"Depuis l'interface web\">\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/_configuration.mdx:100
@@ -41,25 +35,24 @@ msgstr ""
 #: docs/admin/30.apps/index.mdx:109 docs/admin/30.apps/index.mdx:139
 #: docs/admin/40.backups/index.mdx:32 docs/admin/40.backups/index.mdx:88
 #: docs/admin/40.backups/index.mdx:147 docs/admin/40.backups/index.mdx:174
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "  <TabItem value=\"cli\" label=\"From the command line\">\n"
-msgstr ""
-"#-#-#-#-#  fr.po (PACKAGE VERSION)  #-#-#-#-#\n"
-"  <TabItem value=\"cli\" label=\"Depuis la ligne de commande\">\n"
-"#-#-#-#-#  fr.po (PACKAGE VERSION)  #-#-#-#-#\n"
-"  <TabItem value=\"cli\" label=\"From the command line\">\n"
-"#-#-#-#-#  fr.po (PACKAGE VERSION)  #-#-#-#-#\n"
-"  <TabItem value=\"cli\" label=\"From the command line\">\n"
+msgstr "  <TabItem value=\"cli\" label=\"Depuis la ligne de commande\">\n"
 
 #. type: Plain text
 #: docs/admin/40.backups/05.evaluate.mdx:6 docs/admin/40.backups/index.mdx:12
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "In the context of self-hosting, backups are an important element to compensate for unexpected events (fire, database corruption, loss of access to the server, compromised server...). The backup policy to implement depends on the importance of the services and data you manage. For example, backing up a test server will be of little interest, while you will want to be very careful if you are managing critical data for an association or a company - and in such cases, you will want to store the backups *in a different location or locations*.\n"
 msgstr ""
-"#-#-#-#-#  fr.po (PACKAGE VERSION)  #-#-#-#-#\n"
-"Dans le contexte de l'auto-hébergement, les sauvegardes (backup) sont un élément important pour pallier les événements inattendus (incendies, corruption de base de données, perte d'accès au serveur, serveur compromis...). La politique de sauvegardes à mettre en place dépend de l'importance des services et des données que vous gérez. Par exemple, sauvegarder un serveur de test aura peu d'intérêt, tandis que vous voudrez montrer beaucoup plus de prudence si vous gérez des données critiques pour une association ou une entreprise - et dans ce genre de cas, vous souhaiterez stocker les sauvegardes *dans un ou des endroits différents*.\n"
-"#-#-#-#-#  fr.po (PACKAGE VERSION)  #-#-#-#-#\n"
-"Dans le contexte de l'auto-hébergement, les sauvegardes (backups) sont un élément important pour pallier les événements inattendus (incendies, corruption de base de données, perte d'accès au serveur, serveur compromis...). La politique de sauvegardes à mettre en place dépend de l'importance des services et des données que vous gérez. Par exemple, sauvegarder un serveur de test aura peu d'intérêt, tandis que vous voudrez être très prudent si vous gérez des données critiques pour une association ou une entreprise - et dans ce genre de cas, vous souhaiterez stocker les sauvegardes *dans un endroit différent*.\n"
+"Dans le contexte de l'auto-hébergement, les sauvegardes (backups) sont un "
+"élément important pour pallier les événements inattendus (incendies, "
+"corruption de base de données, perte d'accès au serveur, serveur "
+"compromis...). La politique de sauvegardes à mettre en place dépend de "
+"l'importance des services et des données que vous gérez. Par exemple, "
+"sauvegarder un serveur de test aura peu d'intérêt, tandis que vous voudrez "
+"être très prudent⋅e si vous gérez des données critiques pour une association "
+"ou une entreprise - et dans ce genre de cas, vous souhaiterez stocker les "
+"sauvegardes *dans un ou plusieurs endroits différents*.\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/40.backups/index.mdx:1
@@ -300,4 +293,3 @@ msgstr "Par défaut, les sauvegardes sont à placer dans `/home/yunohost.backup/
 #, fuzzy, no-wrap
 msgid "You can use the `scp` (a command built on `ssh`) to copy files between two machines from CLI. For example for a Linux terminal:\n"
 msgstr "Vous pouvez téléverser une sauvegarde depuis une machine vers votre serveur avec :\n"
-
