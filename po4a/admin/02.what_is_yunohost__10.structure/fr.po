@@ -7,10 +7,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2025-11-10 02:13+0100\n"
-"PO-Revision-Date: 2025-11-09 23:48+0000\n"
+"PO-Revision-Date: 2025-11-10 01:35+0000\n"
 "Last-Translator: Weblate Admin <yunohost@translate.yunohost.org>\n"
-"Language-Team: French <https://translate.yunohost.org/projects/doc-"
-"experimental/02what_is_yunohost__10structure/fr/>\n"
+"Language-Team: French <https://translate.yunohost.org/projects/"
+"doc-experimental/02what_is_yunohost__10structure/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -44,10 +44,16 @@ msgstr "Tout débute avec le compte spécial **admin**. C'est l'administrateur�
 
 #. type: Plain text
 #: docs/admin/02.what_is_yunohost/10.structure.mdx:12
-#, fuzzy, no-wrap
-#| msgid "The administrator can create users and install applications, among other admin actions. Users automatically have their own email address when they get created. Users will also be able to connect to the user portal (SSO) to access applications. Some applications can typically be installed either as publicly-accessible, or as private, i.e. only some users will have access to it.\n"
+#, no-wrap
 msgid "The administrator can create users and install applications, among other admin actions. Users automatically have their own email address when they get created. Users will also be able to connect to the user portal (SSO) to access applications. Some applications can typically be installed either as publicly-accessible, or as private, i.e. only some users will have access to it depending on which groups they are member of.\n"
-msgstr "L'admin peut créer des comptes et installer des applications, pour citer quelques actions d'administration. Les utilisateur⋅ice⋅s obtiennent une adresse qui leur est propre lors de leur création. Iels auront alors aussi la possibilité de se connecter au portail utilisateur (SSO) pour accèder aux applications. Typiquement certaines applications seront installées soit en accès public soit en accès privé, c'est-à-dire dont l'accès sera restreint aux personnes ayant des comptes membres d'un groupe.\n"
+msgstr ""
+"L'admin peut créer des comptes et installer des applications, pour citer "
+"quelques actions d'administration. Les utilisateur⋅ice⋅s obtiennent une "
+"adresse qui leur est propre lors de leur création. Iels auront alors aussi "
+"la possibilité de se connecter au portail utilisateur (SSO) pour accèder aux "
+"applications. Typiquement certaines applications seront installées soit en "
+"accès public soit en accès privé, c'est-à-dire dont l'accès sera restreint "
+"aux personnes ayant des comptes membres d'un groupe.\n"
 
 #. type: Plain text
 #: docs/admin/02.what_is_yunohost/10.structure.mdx:13
