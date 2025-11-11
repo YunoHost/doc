@@ -88,7 +88,7 @@ msgstr "Quelques méthodes possibles"
 #: docs/admin/40.backups/05.evaluate.mdx:34
 #, no-wrap
 msgid ""
-"- [generate an archive and download it manually (default method of YunoHost)](/admin/backups/#manual-backup)\n"
+"- [generate an archive and download it manually (default method of YunoHost)](/admin/backups)\n"
 "- [backup automatically (recommended method)](/admin/backups/backup_methods)\n"
 "- [generate an archive directly on another disk](/admin/tutorials/external_storage)\n"
 "- [make a disk image or snapshot](/admin/backups/clone_filesystem)\n"
