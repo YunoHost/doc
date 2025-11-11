@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2025-11-11 19:34+0100\n"
+"POT-Creation-Date: 2025-11-11 23:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -141,7 +141,7 @@ msgstr ""
 #. type: Plain text
 #: docs/admin/05.get_started/90.guidelines.mdx:50
 #, no-wrap
-msgid "If you like YunoHost and want to see the project being kept alive and make progress, feel free to leave a thank you note and to [donate](https://liberapay.com/YunoHost) to the project and talk about it around you!\n"
+msgid "If you like YunoHost and want to see the project being kept alive and make progress, feel free to leave a thank you note and to [donate](https://yunohost.org/donate.html) to the project and talk about it around you!\n"
 msgstr ""
 
 #. type: Plain text
