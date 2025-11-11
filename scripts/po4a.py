@@ -1,3 +1,4 @@
+import datetime
 import os
 import tempfile
 import sys
@@ -7,7 +8,7 @@ if len(sys.argv) < 2 or sys.argv[1] not in ['regen_po', 'build_translated_mdx']:
     raise Exception("This script expects 'regen_po' or 'build_translated_mdx' as first arg")
 action = sys.argv[1]
 
-langs = ["ar", "ca", "de", "es", "fr", "it", "oc", "ru"]
+langs = ["de", "es", "fr", "it", "ru"]
 
 options = [
     "--master-language en",
@@ -84,6 +85,9 @@ with tempfile.NamedTemporaryFile(prefix="po4a_", suffix=".cfg", dir=base_dir) as
 if action == "regen_po":
     # We don't want to update the .po, only the .pot ... Weblate will take care of the pot -> po workflow
     os.system("git checkout i18n/docs/admin/*/*.po")
+    # Boring unecessary headers
+    this_year = datetime.date.today().year
+    os.system(f"sed -i -e '/^# SOME DESCRIPTIVE TITLE$/d' -e '/^# FIRST AUTHOR /d' -e 's/^# Copyright (C) YEAR /# Copyright (C) {this_year} /g' ./i18n/docs/admin/*/*")
     # We dont want to translate code blocks, the vast majority is language agnostic
     os.system("sed -i '/^#. type: Fenced code block/,/^$/d' i18n/docs/admin/*/*.pot")
 elif action == "build_translated_mdx":
