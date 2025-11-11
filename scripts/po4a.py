@@ -1,6 +1,11 @@
-import tempfile
 import os
+import tempfile
+import sys
 from pathlib import Path
+
+if len(sys.argv) < 2 or sys.argv[1] not in ['regen_po', 'build_translated_mdx']:
+    raise Exception("This script expects 'regen_po' or 'build_translated_mdx' as first arg")
+action = sys.argv[1]
 
 langs = ["ar", "ca", "de", "es", "fr", "it", "oc", "ru"]
 
@@ -39,7 +44,7 @@ conf = f"""
 [po4a_alias:markdown] text opt:"--option markdown --option breaks='{'|'.join(patterns_to_ignore)}' --option neverwrap --option nobullets --option yfm_keys={','.join(yaml_front_matter_keys_to_translate)}"
 
 [po4a_langs] {' '.join(langs)}
-[po4a_paths] po4a/admin/$master/en.pot $lang:po4a/admin/$master/$lang.po
+[po4a_paths] i18n/docs/admin/$master/en.pot $lang:i18n/docs/admin/$master/$lang.po
 
 """
 
@@ -68,8 +73,16 @@ print("==========")
 
 with tempfile.NamedTemporaryFile(prefix="po4a_", suffix=".cfg", dir=base_dir) as po4a_conf:
     po4a_conf.write(conf.encode())
-    os.system(f"{cmd} {po4a_conf.name} --no-translations")
-    #os.system(f"{cmd} {po4a_conf.name} --no-update")
+    if action == "regen_po":
+        flags = "--no-translations"
+    elif action == "build_translated_mdx":
+        flags = "--no-update"
+    else:
+        falgs = "--help"
+    os.system(f"{cmd} {po4a_conf.name} {flags}")
 
-# We dont want to translate code blocks, the vast majority is language agnostic
-os.system("sed -i '/^#. type: Fenced code block/,/^$/d' po4a/admin/*/*.po po4a/admin/*/*.pot")
+if action == "regen_po":
+    # We don't want to update the .po, only the .pot ... Weblate will take care of the pot -> po workflow
+    os.system("git checkout i18n/docs/admin/*/*.po")
+    # We dont want to translate code blocks, the vast majority is language agnostic
+    os.system("sed -i '/^#. type: Fenced code block/,/^$/d' i18n/docs/admin/*/*.pot")

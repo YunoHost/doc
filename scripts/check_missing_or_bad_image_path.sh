@@ -4,13 +4,13 @@ cd -- "$(dirname $( dirname -- "${BASH_SOURCE[0]}" ) )"
 
 RET=0
 
-for FILE in $(grep -hro "/img/[^)\"'?]*" ./docs/ ./i18n/*/docusaurus-plugin-content-docs/current/ | sort | uniq)
+for FILE in $(grep -hro "/img/[^)\"'?]*" ./docs/ ./i18n/docs/admin/ | sort | uniq)
 do 
     if ! test -e ./static$FILE
     then
         echo "Image $FILE does not exists but is used as src in some file ?"
         echo "------------"
-        grep -nr "$FILE" ./docs/ ./i18n/*/docusaurus-plugin-content-docs/current/
+        grep -nr "$FILE" ./docs/ ./i18n/docs/admin/
         RET=1
     fi
 done
