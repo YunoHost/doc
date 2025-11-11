@@ -4,7 +4,7 @@ cd -- "$(dirname $( dirname -- "${BASH_SOURCE[0]}" ) )"
 
 RET=0
 
-for FILE in $(grep -hro "/img/[^)\"'?]*" ./docs/ ./i18n/docs/admin/ | sort | uniq)
+for FILE in $(grep -hro "/img/[^)\"'?\\]*" ./docs/ ./i18n/docs/admin/ | sort | uniq)
 do 
     if ! test -e ./static$FILE
     then
