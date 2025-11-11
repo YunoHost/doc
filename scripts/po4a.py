@@ -86,3 +86,6 @@ if action == "regen_po":
     os.system("git checkout i18n/docs/admin/*/*.po")
     # We dont want to translate code blocks, the vast majority is language agnostic
     os.system("sed -i '/^#. type: Fenced code block/,/^$/d' i18n/docs/admin/*/*.pot")
+elif action == "build_translated_mdx":
+    # List generated files
+    os.system("find i18n/*/docusaurus-plugin-content-docs/current/admin/ -name '*.mdx'")
