@@ -1,0 +1,36 @@
+# Copyright (C) 2025 YunoHost Contributors
+# This file is distributed under the same license as the YunoHost documentation.
+#
+# Languages add-on <noreply-addon-languages@weblate.org>, 2025.
+msgid ""
+msgstr "Project-Id-Version: YunoHost documentation VERSION\nPOT-Creation-Date: 2025-11-09 20:53+0100\nPO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\nLast-Translator: Automatically generated\nLanguage-Team: none\nLanguage: it\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. type: Yaml Front Matter Hash Value: title
+#: docs/admin/index.mdx:1
+#, no-wrap
+msgid "Welcome"
+msgstr ""
+
+#. type: Title #
+#: docs/admin/index.mdx:6
+#, no-wrap
+msgid "YunoHost admin documentation"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/index.mdx:9
+#, no-wrap
+msgid "Here, you'll learn [the basics of self-hosting](/admin/about_self_hosting), how to [install YunoHost](/admin/get_started/install_on) and configure it.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/index.mdx:11
+#, no-wrap
+msgid "Then you'll be able to [add users](/admin/users), [domains](/admin/domains) and [apps](/admin/apps), and ensure [backups](/admin/backups) are done properly.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/index.mdx:12
+#, no-wrap
+msgid "Don't hesitate to contact the [community](/community) to [ask for help](/community/help) !\n"
+msgstr ""

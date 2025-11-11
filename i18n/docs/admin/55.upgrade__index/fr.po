@@ -55,4 +55,3 @@ msgstr "Cliquez sur les boutons verts pour lancer les mises à jour du système 
 #, no-wrap
 msgid "Here are some example of corresponding command lines:\n"
 msgstr "Voici quelques exemples en ligne de commande correspondants :\n"
-

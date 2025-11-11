@@ -332,4 +332,3 @@ msgstr "Si vous ne parvenez plus à vous connecter avec l'utilisateur `admin` vi
 #, no-wrap
 msgid "If you have manually modified configurations and want to know the changes:\n"
 msgstr "Si vous avez des configurations modifiées manuellement et souhaitez connaître les modifications :\n"
-
