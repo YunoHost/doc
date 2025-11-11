@@ -22,6 +22,9 @@ runs:
     shell: bash
     run: yarn
 
+  - name: Install perl dependencies (for po4a)
+    run: sudo apt intall libyaml-tiny-perl -y
+
   - name: Check image paths consistency
     shell: bash
     run: bash scripts/check_missing_or_bad_image_path.sh
