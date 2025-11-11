@@ -24,7 +24,7 @@ runs:
 
   - name: Install perl dependencies (for po4a)
     shell: bash
-    run: sudo apt install libyaml-tiny-perl -y
+    run: sudo apt install libyaml-tiny-perl libsyntax-keyword-try-perl -y
 
   - name: Check image paths consistency
     shell: bash
