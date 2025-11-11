@@ -1,6 +1,6 @@
 ---
-sidebar_label: Add external storage
-title: Ajouter un stockage externe à son serveur
+sidebar_label: 'Ajouter un stockage externe'
+title: 'Ajouter un stockage externe à son serveur'
 ---
 
 ## Introduction
@@ -27,7 +27,7 @@ La méthode présentée ici va d'abord monter l'unique partition du disque dur, 
 
 - Connaître les commandes basiques `cd`, `ls`, `mkdir`, `rm`
 
-- Avoir une sauvegarde au cas où ça ne se passe pas comme prévu
+Avoir une sauvegarde au cas où ça ne se passe pas comme prévu
 
 - Disposer d'un stockage supplémentaire (disque SSD, disque dur, clé USB) branché à votre serveur en USB ou en SATA
 
@@ -89,7 +89,7 @@ Cette opération est optionnelle si votre disque est déjà formaté avec un sys
 Créons une partition sur le disque :
 
 ```bash
-fdisk /dev/VOTRE_DISQUE
+fdisk /dev/YOUR_DISK
 ```
 
 puis entrez successivement `n`, `p`, `1`, `Entrée`, `Entrée`, et `w` pour créer une nouvelle partition.
@@ -105,8 +105,8 @@ Avant de pouvoir utiliser votre disque, il doit être formaté.
 Pour formater la partition :
 
 ```bash
-mkfs.ext4 /dev/VOTRE_DISQUE1
-# puis 'y' pour valider
+mkfs.ext4 /dev/YOUR_DISK1
+# then 'y' to validate
 ```
 
 Remplacez `VOTRE_DISQUE1` par le nom de la première partition sur le disque par exemple `sda1`.
@@ -128,7 +128,7 @@ mkdir /mnt/hdd
 Puis nous pouvons monter le disque manuellement avec :
 
 ```bash
-mount /dev/VOTRE_DISQUE1 /mnt/hdd
+mount /dev/YOUR_DISK1 /mnt/hdd
 ```
 
 (Ici, `/dev/VOTRE_DISQUE1` correspond à la première partition sur le disque)
@@ -153,7 +153,7 @@ Puis, idéalement on passe en maintenance les applications qui pourraient être 
 Exemple, pour nextcloud:
 
 ```bash
-sudo -u nextcloud /var/www/nextcloud/occ maintenance:mode --on
+sudo -u nextcloud /usr/bin/php /var/www/nextcloud/occ maintenance:mode --on
 ```
 
 Exemple, pour le mail:
@@ -206,7 +206,7 @@ ls -la /var/mail/
 A partir de là vous pouvez arréter le mode maintenance, la commande ci-dessous est à adapter selon les services que vous avez arrétés.
 
 ```bash
-sudo -u nextcloud /var/www/nextcloud/occ maintenance:mode --off
+sudo -u nextcloud /usr/bin/php /var/www/nextcloud/occ maintenance:mode --off
 systemctl start postfix
 systemctl start dovecot
 ```
@@ -222,9 +222,7 @@ Si vos tests sont concluants, il faut pérenniser les points de montages, sinon 
 Pour commencer, trouvons l'UUID (identifiant universel) de notre disque avec :
 
 ```bash
-blkid | grep "/dev/VOTRE_DISQUE1:"
-# Retourne quelque chose comme :
-# /dev/sda1:UUID="cea0b7ae-2fbc-4f01-8884-3cb5884c8bb7" TYPE="ext4" PARTUUID="34e4b02c-02"
+lsblk -f
 ```
 
 Ajoutons alors une ligne au fichier `/etc/fstab` qui gère le montage des disques au démarrage. On ouvre donc le fichier avec `nano` :

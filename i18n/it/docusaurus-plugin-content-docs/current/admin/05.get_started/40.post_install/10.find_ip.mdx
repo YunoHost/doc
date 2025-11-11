@@ -1,5 +1,5 @@
 ---
-title: Finding your server's local IP
+title: "Find your server's local IP"
 ---
 
 import Tabs from '@theme/Tabs';
@@ -17,35 +17,41 @@ Uno dei seguenti metodi, vi permetterà di trovare l'indirizzo IP locale del ser
 
 <Tabs>
 <TabItem value="angryip" label="With AngryIP (Recommended)" default>
-Potete utilizzare il programma [AngryIP](https://angryip.org/download/). Eseguite la scansione degli intervalli IP nell'ordine riportato di seguito fino a trovare l'indirizzo del vostro server:
 
-- `192.168.0.0` -> `192.168.0.255`
-- `192.168.1.0` -> `192.168.1.255`
-- `192.168.2.0` -> `192.168.255.255`
-- `10.0.0.0` -> `10.0.255.255`
-- `172.16.0.0` -> `172.31.255.255`
+You can use the [AngryIP](https://angryip.org/download/) software to achieve that. You can scan these local IP ranges in this order until you find the active IP corresponding to your server:
+
+```
+192.168.0.0 -> 192.168.0.255
+192.168.1.0 -> 192.168.1.255
+192.168.2.0 -> 192.168.255.255
+10.0.0.0    -> 10.0.255.255
+172.16.0.0  -> 172.31.255.255
+```
 
 :::tip
-- ordinate per ping come nell'immagine sotto per visualizzare gli indirizzi IP realmente attivi.
-- il vostro server dovrebbe essere visualizzato come in ascolto sulle porte 80 e 443
-- nel dubbio digitate in un browser `https://192.168.x.y` per verificare che abbiate raggiunto davvero il server YunoHost.
+- you can order by ping like on this screenshot to easily see effectively-used IP.
+- your server should typically be displayed as listening on port 80 and 443
+- in case of doubt, just type `https://192.168.x.y` in your browser to check if it's a YunoHost or not.
 :::
 
 ![](/img/angryip.png)
-</TabItem>
 
-<TabItem value="router" label="Dal vostro modem/router">
-Cercate nella configurazione del vostro modem/router, troverete una sezione sugli indirizzi IP che il server DHCP ha assegnato alle varie macchine presenti in rete.
 </TabItem>
+<TabItem value="router" label="With your internet router / box">
 
+Connect to your internet box / router interface to list the machines connected.
+
+</TabItem>
 <TabItem value="arp-scan" label="With arp-scan">
-Se utilizzate Linux, aprite il terminale e digitate il comando `sudo arp-scan --local` per elencare gli indirizzi IP in uso sulla vostra rete locale (dovrebbe funzionare anche con Windows);
+
+If you're using Linux, you can open a terminal and use `sudo arp-scan --local` to list the IP on your local network (this may also work in Windows);
 
 Se il comando `arp-scan` restituisce un numero elevato di indirizzi, potere verificare quali di questi ha la porta SSH aperta con il comando `nmap -p 22 192.168.1.0/24` (usando l'insieme di indirizzi della vostra rete locale)
-</TabItem>
 
-<TabItem value="direct" label="Accesso diretto al server con uno schermo">
-Collegate uno schermo al server, effettuate il login e digitate `hostname --all-ip-address`.
+</TabItem>
+<TabItem value="direct" label="With a direct access on the server">
+
+Plug a screen on your server, log in and type `hostname --all-ip-address`.
 
 Le credenziali di default (prima della post installazione!) sono:
 
@@ -53,16 +59,15 @@ Le credenziali di default (prima della post installazione!) sono:
 - password: `yunohost`
 
 (Se utilizzate un'immagine Armbian grezza al posto di un immagine con YunoHost preinstallato, le credenziali saranno root / 1234)
-  
-</TabItem>
 
+</TabItem>
 </Tabs>
 
 ## Se nonostante tutto non trovo l'indirizzo
 
 Se non riuscite a trovare il vostro server con le istruzioni precedenti, forse il server non si è avviato correttamente:
 
-- assicuratevi che il server sia correttamente alimentato;
-- se il vostro server utilizza un scheda SD assicuratevi che la porta sul server sia pulita;
-- collegate uno schermo al server e riavviatelo per assicurarvi che non vi siano messaggi di errore;
-- assicuratevi che il cavo ethernet sia di buona qualità e correttamente collegato;
+- Make sure that your server is properly plugged in;
+- If you're using an SD card, make sure the connector is not too dusty;
+- Plug a screen on your server and try to reboot to check that it's properly booting;
+- Make sure that your ethernet cable is working and properly plugged in;

@@ -1,5 +1,5 @@
 ---
-title: E-Mail-Client konfigurieren
+title: 'E-Mail-Client konfigurieren'
 ---
 
 import Tabs from '@theme/Tabs';
@@ -27,9 +27,9 @@ Hier sind die Elemente, die Sie eingeben sollten, um Ihren Mail-Client manuell z
 
 Um ein neues Konto in Thunderbird Desktop manuell zu konfigurieren, fügen Sie die Kontoinformationen hinzu und wählen:
 
-- dann Port 993 mit SSL/TLS für IMAP
-- Port 587 mit STARTTLS für SMTP. 
-- Wählen Sie anschließend "Normales Passwort" für die Authentifizierung und klicken Sie auf "Erweiterte Konfiguration".
+- For the incoming server, use IMAP with port 993 and SSL/TLS.
+- For outgoing server, use port 587 with STARTTLS. 
+- Select 'Normal Password' for the the authentication method of both. 
 
 Möglicherweise müssen Sie die Zertifikatsausnahmen für das Abrufen von E-Mails und nach dem Senden Ihrer ersten E-Mail akzeptieren. Vergessen Sie nicht, den Punkt vor dem Domainnamen zu entfernen.
 
@@ -47,14 +47,15 @@ Führen Sie die folgenden Schritte aus. (Wie bei Thunderbird Desktop müssen Sie
 
 - Enter your email address then click "Next"
 
-<img src="/img/softwares/thunderbird_mobile_config_1.png" alt='' width="280"/>
+<img src="/img/softwares/thunderbird_mobile_config_1.png" width="280"/>
+
 - Enter your domain name in the "Server" field, fill the "Security" and "Port" fields as per the IMAP row in the table above, then enter your password in the "Password" field and click "Next"
 
+<img src="/img/softwares/thunderbird_mobile_config_2.png" width="280"/>
 
-<img src="/img/softwares/thunderbird_mobile_config_2.png" alt='' width="280"/>
 - Again, your domain name in the "Server" field, but fill the "Security" and "Port" fields as per the SMTP row in the table above, then enter your password in the "Password" field and click "Next"
 
-  <img src="/img/softwares/thunderbird_mobile_config_3.png" alt='' width="280"/>
+<img src="/img/softwares/thunderbird_mobile_config_3.png" width="280"/>
 
 </TabItem>
 <TabItem value="dekko" label="Dekko">
@@ -69,5 +70,6 @@ Dann wählen Sie IMAP. Füllen Sie die Felder aus und drücken Sie auf Weiter. J
 <img src="/img/softwares/dekko_config_2.png" width="280"/>
 <img src="/img/softwares/dekko_config_3.png" width="280"/>
 <img src="/img/softwares/dekko_config_4.png" width="280"/>
-  </TabItem>
+
+</TabItem>
 </Tabs>

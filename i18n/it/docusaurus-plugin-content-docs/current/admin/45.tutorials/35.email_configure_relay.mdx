@@ -1,5 +1,5 @@
 ---
-title: Configurare un relay SMTP
+title: 'Configurare un relay SMTP'
 ---
 
 import Tabs from '@theme/Tabs';
@@ -12,7 +12,7 @@ Se il vostro internet provider blocca la porta 25, o nel caso riscontriate dei p
 Si tratta di un server SMTP che si occupa dell'invio della posta elettronica in luogo del server SMTP locale (il servizio postfix di YunoHost).
 Una volta configurato correttamente l'utilizzo è trasparente per gli utenti e i vostri corrispondenti visualizzeranno i messaggi di posta, come se arrivassero dal vostro server YunoHost. In realtà sarà il server relay SMTP che si occuperà dell'invio.
 
-## <FAIcon icon="fa-exclamation-triangle"/>  Svantaggi del server relay
+## <FAIcon icon="fa-exclamation-triangle"/> Svantaggi del server relay
 
 È importante sottolineare che in un sistema di selfhosting, utilizzare un relay SMTP rappresenta un importante compromesso. In effetti non solo il RELAY SMTP sarà in grado di inviare le email per conto vostro, ma avrà accesso al contenuto e potrebbe anche modificarlo. (Ad esempio MailJet di default analizza i link HTML presenti nei messaggi per profilare l'attività degli utilizzatori del servizio.) Inoltre questa configurazione riguarderà tutto il server YunoHost: non sarà quindi possibile scegliere quale utente o quale indirizzo debba utilizzare il relay e quale no.
 
@@ -45,33 +45,34 @@ Notate che la modifica dei record DNS può avere effetto anche dopo 24 ore per c
 La configurazione può avvenire sia attraverso l'interfaccia web di amministrazione che da linea di comando.
 
 <Tabs groupId="admin-commands">
-  <TabItem value="web" label="From the web interface">
+<TabItem value="web" label="From the web interface">
 
 Dalla pagina web di amministrazione scegliere `Strumenti` > `Impostazioni` e scegliere la scheda `Email`.
 Attivate l'opzione e compilate i campi necessari:
 
-- **SMTP relay host** : l'indirizzo del server SMTP.
-- **SMTP relay port** : La porta utilizzata dal relay SMTP.
-- **SMTP relay user** : Utente del vostro account sul relay SMTP.
-- **SMTP relay password** : La password del vostro account sul relay SMTP.
+- **SMTP relay host** : SMTP server url.
+- **SMTP relay port** : Port use with the distant server.
+- **SMTP relay user** : Login or identification mail server.
+- **SMTP relay password** : Your SMTP relay password.
 
 :::warning
-<FAIcon icon="fa-exclamation-triangle"/>  Le password contenenti il carattere `#` non funzioneranno correttamente a causa di una regola di postfix (altri caratteri potrebbero non essere riconosciuti, se li scoprite comunicatelo agli sviluppatori di YunoHost affiché possano aggiornare questa guida).
+<FAIcon icon="fa-exclamation-triangle"/> Le password contenenti il carattere `#` non funzioneranno correttamente a causa di una regola di postfix (altri caratteri potrebbero non essere riconosciuti, se li scoprite comunicatelo agli sviluppatori di YunoHost affiché possano aggiornare questa guida).
 :::
 
 ![Option-Relais-Smtp](/img/webadmin/relay_smtp_option_webadmin_en.png)
 
-    </TabItem>
-  <TabItem value="cli" label="From the command line">
-Per configurare YunoHost per usare il relay, bisogna configurare questi quattro punti:
+</TabItem>
+<TabItem value="cli" label="From the command line">
 
-1. L'indirizzo del relay SMTP (per questo documento utilizzeremo `smtprelay.tld`)
-2. La porta che utilizzeremo per accedere al relay (per questo documento utilizzeremo la porta 2525)
-3. Il vostro nome utente SMTP (per questo documento utilizzeremo `username`)
-4. La password SMTP (per questo documento utilizzeremo password)
+In order to setup your YunoHost to use your SMTP relay, you will have to configure four things:
+
+1. Your SMTP relay URL (for this tutorial we will use `smtprelay.tld`)
+2. The port on which you access the relay (for this tutorial we will use port 2525 below)
+3. Your SMTP relay username (for this tutorial we will use `username`)
+4. Your SMTP relay password (for this tutorial we will use `password`)
 
 :::warning
-<FAIcon icon="fa-exclamation-triangle"/>  Le password contenenti il carattere `#` non funzioneranno correttamente a causa di una regola di postfix (altri caratteri potrebbero non essere riconosciuti, se li scoprite comunicatelo agli sviluppatori di YunoHost affiché possano aggiornare questa guida).
+<FAIcon icon="fa-exclamation-triangle"/> Le password contenenti il carattere `#` non funzioneranno correttamente a causa di una regola di postfix (altri caratteri potrebbero non essere riconosciuti, se li scoprite comunicatelo agli sviluppatori di YunoHost affiché possano aggiornare questa guida).
 :::
 
 Questi parametri devono essere ovviamente forniti dal provider relay SMTP e dovrebbero trovarsi in un pannello di controllo o che altro.
@@ -79,7 +80,7 @@ Questi parametri devono essere ovviamente forniti dal provider relay SMTP e dovr
 Per prima cosa colleghiamoci al proprio server via SSH:
 
 ```bash
-ssh admin@domain.tld
+ssh admin@yourdomain.tld
 ```
 
 Aggiorniamo le impostazioni seguenti:
@@ -98,7 +99,7 @@ Possiamo controllare le impostazioni con il comando:
 sudo yunohost settings list
 ```
 
-  </TabItem>
+</TabItem>
 </Tabs>
 
 La configurazione del relay SMTP è terminata!

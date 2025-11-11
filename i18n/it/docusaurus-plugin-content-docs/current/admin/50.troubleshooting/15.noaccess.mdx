@@ -1,5 +1,5 @@
 ---
-title: Riottenere l'accesso a YunoHost
+title: "Riottenere l'accesso a YunoHost"
 ---
 
 Ci possono essere diverse ragioni che possono portare al blocco parziale o totale degli accessi a amministratore ad un server YunoHost. Spesso però se un metodo di accesso è bloccato altri sono possibili.
@@ -12,8 +12,8 @@ Questa pagina cercherà di trovare il problema, riottenere l'accesso ed eventual
 
 Controlla di riuscire ad accedere al server usando l'IP pubblico (lo puoi trovare su [https://ip.yunohost.org](https://ip.yunohost.org)). Se questo non funziona:
 
-- Assicurati di aver [impostato il forwarding](/admin/get_started/post_install/port_forwarding).
-- Alcuni ISP non supportano l'*hairpinning*, cosa che ti impedirà di raggiungere il tuo server dal nome di dominio dalla rete locale. If so, you can use one of the following workaround:
+- Make sure you have [set up forwarding](/admin/get_started/post_install/port_forwarding)
+- Some ISP routers do not support *hairpinning*, which prevents you from reaching your server by its domain name from within your local network. If so, you can use one of the following workaround:
   - use a cellular connection (4/5G)
   - tweak your `/etc/hosts` file on each of your client devices
   - add YunoHost's local IP as DNS resovler in your router (usually in the DHCP section) and open port `53` (UDP) in YunoHost's firewall, making sure to **not** enable UPnP forwarding. (Do **not** open port 53 on your router)
@@ -30,15 +30,15 @@ Puoi verificare la correttezza dei record DNS confrontando i risultati dati da [
 
 ### Altre probabili cause
 
-- Il tuo dominio `noho.st`, `nohost.me` o `ynh.fr` non è raggiungibile a causa di un problema nell'infrastruttura di YunoHost. Controlla il [forum](https://forum.yunohost.org/) per annunci o post di persone relativi allo stesso problema.
-- Il tuo nome di dominio potrebbe essere scaduto. Controlla la pagina del registrar usato per la registrazione oppure usa il comando `whois yourdomain.tld`.
-- Stai usando un indirizzo IP dinamico. In questo caso è necessario impostare uno script o usare un client appositi per aggiornare con regolarità questo indirizzo. Leggi la pagina [DNS with a dynamic IP](/admin/tutorials/domains/dns_dynamicip) per vedere come. Puoi usare anche un dominio `nohost.me`, `noho.st` o `ynh.fr` che comprende queste opzioni.
+- You domain `noho.st`, `nohost.me`, or `ynh.fr` is unreachable following a failure on YunoHost's infrastructure. Check the [forum](https://forum.yunohost.org/) for announcements or people posting about the same issue.
+- Your domain name may be expired. Check that on your registrar's client panel, or by using the command `whois yourdomain.tld`.
+- You have a dynamic IP address. In that case, you need to set up a script or a client that takes care of regularly update it. Refer to the page on [DNS with a dynamic IP](/admin/tutorials/domains/dns_dynamicip) to see how. You can also use a domain `nohost.me`, `noho.st` or `ynh.fr` that includes this features.
 
 ## Stai ricevendo un errore sul certificato che non ti permette di raggiungere la pagina di amministrazione
 
-- Un errore sul certificato può essere visualizzato nel caso in cui hai scritto male l'indirizzo nella barra del browser.
+- A certificate error may be displayed if you have made a typo in the address bar of your browser.
 
-- Sei hai appena installato il tuo server o un nuovo dominio stai usando un certificato auto-firmato. In questo caso è possibile e comprensibile aggiungere una eccezione di sicurezza *temporanea* in modo che sia possibile [installare un certificato Let's Encrypt](/admin/domains/certificate), ammesso che tu abbian una connessione Internet sicura.
+- If you have just installed your server, or just installed a new domain, it uses a self-signed certificate. In that case, it is possible and understandable to add a *temporary* security exception so that you can [install a Let's Encrypt certificate](/admin/domains/certificate), provided you have a secure Internet connection.
 
 ## Puoi accedere via SSH ma non dalla pagina di amministrazione o l'inverso
 
@@ -114,8 +114,8 @@ In that case, contact your VPN provider to renew it and update the parameters of
 
 Meanwhile, try reaching your server if it is at home, by:
 
-- its local IP, retrievable from your router configuration panel or `sudo arp-scan --local`
-- reaching it at `yunohost.local`, or `yunohost-2.local`, etc. depending on how many YunoHost servers are on your network.
+- its local IP, using one of the method listed [on the corresponding page](/admin/get_started/post_install/find_ip)
+- reaching it at `yunohost.local`, assuming your client supports the Bonjour protocol (or `yunohost-2.local`, etc. depending on how many YunoHost servers are on your network)
 
 :::warning
 To be completed

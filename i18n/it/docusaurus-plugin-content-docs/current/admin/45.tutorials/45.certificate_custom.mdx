@@ -1,5 +1,5 @@
 ---
-title: Certificati personalizzati
+title: 'Certificati personalizzati'
 ---
 
 :::warning
@@ -8,8 +8,8 @@ Dalla versione 2.5 YunoHost integra la gestione automatizzata dei certificati Le
 
 Nel corso delle versioni, sono state introdotte delle modifiche che possono impattare sulle procedure descritte di seguito:
 
-- Il gruppo metronome non è più utilizzato direttamente ma viene usato ssl-cert.
-- La directory `/etc/yunohost/certs/DOMAIN.LTD-history/stamp` viene utilizzata per salvare le configurazioni create e viene creato un link simbolico.
+- Metronome group is no longer used directly but ssl-cert.
+- A `/etc/yunohost/certs/DOMAIN.LTD-history/stamp` directory is used to keep each configuration created and a symlink is created.
 
 ### Installazione di un certificato firmato da un'autorità diversa da Let's Encrypt
 
@@ -22,8 +22,8 @@ Il file key contiene dati sensibili, è strettamente personale e deve essere con
 Questi due file devono essere copiati sul server.
 
 ```bash
-scp CERTIFICAT.crt admin@DOMAIN.TLD:ssl.crt
-scp CLE.key admin@DOMAIN.TLD:ssl.key
+scp CERTIFICATE.crt admin@DOMAIN.TLD:ssl.crt
+scp KEY.key admin@DOMAIN.TLD:ssl.key
 ```
 
 Nelle versioni precedenti Windows 10, per utilizzare scp dovrete installare Putty e il plugin [pscp](http://the.earth.li/~sgtatham/putty/latest/x86/pscp.exe).
@@ -123,7 +123,7 @@ kSK6OOauBHItgiGI7C87u4EJaHDvGIUxHxQQGsUM0SCIIVGK7Lwm+8e9I2X0G2GP
 Infine mettete al sicuro i file del vostro certificato.
 
 ```bash
-sudo chown root:metronome crt.pem key.pem
+sudo chown root:ssl-cert crt.pem key.pem
 sudo chmod 640 crt.pem key.pem
 sudo chown root:root -R ae_certs
 sudo chmod 600 -R ae_certs

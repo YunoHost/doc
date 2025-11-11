@@ -1,10 +1,11 @@
 ---
-sidebar_label: Configure Tor Hidden Service
-title: Utiliser YunoHost comme un service caché Tor
+sidebar_label: ' Configurer un service caché Tor'
+title: 'Utiliser YunoHost comme un service caché Tor'
 ---
 
 :::warning
-Ce tuto n'est pas complet ! Des données peuvent être récupérées avec cette installation comme le nom de domaine principal de votre YunoHost, donc ce n'est pas un "service caché". Voir [The official Tor hidden service documentation](https://www.torproject.org/docs/tor-hidden-service.html.en) (anglais)
+Ce tuto n'est pas complet ! Des données peuvent être récupérées avec cette installation comme le nom de domaine principal de votre YunoHost, donc ce n'est pas un "service caché".
+Voir [la documentation officielle de Tor sur les services cachés](https://www.torproject.org/docs/tor-hidden-service.html.en) (en anglais)
 :::
 
 ### Installer Tor
@@ -26,7 +27,7 @@ HiddenServicePort 443 127.0.0.1:443
 ### Redémarrer Tor
 
 ```bash
-systemctl restart tor
+service tor restart
 ```
 
 ### Obtenir l’adresse du service caché
@@ -60,5 +61,5 @@ nginx -t
 ### Si tout est OK on applique les modifications de la configuration
 
 ```bash
-systemctl reload nginx
+service nginx restart
 ```

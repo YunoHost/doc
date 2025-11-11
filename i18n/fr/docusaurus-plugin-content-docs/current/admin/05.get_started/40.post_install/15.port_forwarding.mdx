@@ -1,24 +1,24 @@
 ---
-title: Configurer la redirection des ports
-description: Rendre accessible son serveur depuis l'extérieur
+description: "Rendre accessible son serveur depuis l'extérieur"
+title: 'Configurer la redirection des ports'
 ---
 
 Si vous vous auto-hébergez à la maison et sans VPN, il vous faut rediriger les ports de votre routeur ("machin-box"). Le schéma ci-dessous tente d'expliquer brièvement le rôle de la redirection des ports lors de la mise en place d'un serveur à la maison.
 
-<Figure caption="Illustration sur l’importance de la redirection des ports" src="/img/portForwarding_en.png" />
+<Figure caption="Illustration de l’importance de la redirection des ports" src="/img/portForwarding_en.png" />
 
-### 1. Diagnostiquer les ports ouverts
+### 0. Diagnostiquer les ports ouverts
 
 Une fois les redirections configurées, l'outil de diagnostic introduit dans
 YunoHost 3.8 vous permettra de vérifier si les ports sont correctement exposés.
 
-### 2. Accéder à l'interface d'administration de votre box/routeur
+### 1. Accéder à l'interface d'administration de votre box/routeur
 
 L'interface d'administration est généralement accessible via [http://192.168.0.1](http://192.168.0.1) ou [http://192.168.1.1](http://192.168.1.1).
 Ensuite, il vous faudra peut-être vous authentifier avec les identifiants
 fournis par votre fournisseur d'accès à Internet (FAI).
 
-### 3. Trouver l'IP locale de votre serveur
+### 2. Trouver l'IP locale de votre serveur
 
 Identifiez quelle est l'IP locale de votre serveur en utilisant l'une des méthodes listées sur [la page correspondante](/admin/get_started/post_install/find_ip).
 
@@ -26,7 +26,7 @@ Une adresse IP locale ressemble généralement à `192.168.xx.yy`, ou `10.0.xx.y
 
 The local IP address needs to be static, so that the port forwards that you are going to configure in the next step will always reach your server. You should go into your box/router and make sure that the local IP address of your server is static instead of dynamic.
 
-### 4. Rediriger les ports
+### 3. Rediriger les ports
 
 Dans l'interface d'administration de votre box/routeur, il vous faut trouver
 une catégorie comme 'Configuration du routeur', ou 'Redirections de ports'. Le
@@ -34,10 +34,10 @@ nom diffère suivant le type / marque de la box...
 
 Il vous faut ensuite rediriger chacun des ports listés ci-dessous vers l'IP locale de votre serveur pour que les différents services de YunoHost fonctionnent. Pour chacun d'eux, une redirection 'TCP' est nécessaire. Certaines interfaces font référence à un port « externe » et un port « interne » : dans notre cas il s'agit du même.
 
-- Web : `80` <small>(HTTP)</small>, `443` <small>(HTTPS)</small>
-- [SSH](/admin/command_line) : `22`
-- [XMPP](https://wikipedia.org/wiki/XMPP) : `5222` <small>(clients)</small>, `5269` <small>(serveurs)</small>
-- [Email](/admin/email) : `25`, `587` <small>(SMTP)</small>, `993` <small>(IMAP)</small>
+- Web: `80` <small>(HTTP)</small>, `443` <small>(HTTPS)</small>
+- [SSH](/admin/command_line): `22`
+- [XMPP](https://wikipedia.org/wiki/XMPP): `5222` <small>(clients)</small>, `5269` <small>(servers)</small>
+- [Email](/admin/email): `25`, `587` <small>(SMTP)</small>, `993` <small>(IMAP)</small>
 
 If you use both a modem and a router, then you need to do the following:
 

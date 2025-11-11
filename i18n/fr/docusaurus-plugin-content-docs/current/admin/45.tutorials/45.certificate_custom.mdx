@@ -1,5 +1,5 @@
 ---
-title: Certificats personnalisés
+title: 'Certificats personnalisés'
 ---
 
 :::warning
@@ -8,8 +8,8 @@ Depuis la version 2.5, YunoHost intègre la gestion automatisée de certificats 
 
 Quelques changements ont eu lieu qui impactent les procédures indiquées ci-dessous :
 
-- Le groupe metronome n'est plus utilisé directement mais ssl-cert.
-- Un repertoire `/etc/yunohost/certs/DOMAIN.LTD-history/stamp` est utilisé pour conserver chaque configuration créée et un lien symbolique est créé dessus.
+- Metronome group is no longer used directly but ssl-cert.
+- A `/etc/yunohost/certs/DOMAIN.LTD-history/stamp` directory is used to keep each configuration created and a symlink is created.
 
 ### Ajout d’un certificat signé par une autorité (autre que Let's Encrypt)
 
@@ -22,15 +22,15 @@ Attention, le fichier *key* est très sensible, il est strictement personnel et 
 Ces deux fichiers doivent être copiés sur le serveur, s’ils ne s’y trouvent pas déjà.
 
 ```bash
-scp CERTIFICAT.crt admin@DOMAIN.TLD:ssl.crt
-scp CLE.key admin@DOMAIN.TLD:ssl.key
+scp CERTIFICATE.crt admin@DOMAIN.TLD:ssl.crt
+scp KEY.key admin@DOMAIN.TLD:ssl.key
 ```
 
 Depuis Windows, scp est exploitable avec Putty, en téléchargeant l’outil [pscp](http://the.earth.li/~sgtatham/putty/latest/x86/pscp.exe)
 
 ```bash
-pscp -P 22 CERTIFICAT.crt admin@DOMAIN.TLD:ssl.crt
-pscp -P 22 CLE.key admin@DOMAIN.TLD:ssl.key
+pscp -P 22 CERTIFICATE.crt admin@DOMAIN.TLD:ssl.crt
+pscp -P 22 KEY.key admin@DOMAIN.TLD:ssl.key
 ```
 
 Dès lors que les fichiers sont sur le serveur, le reste du travail se fera sur celui-ci. En [ssh](/admin/command_line) ou en local.
@@ -123,7 +123,7 @@ kSK6OOauBHItgiGI7C87u4EJaHDvGIUxHxQQGsUM0SCIIVGK7Lwm+8e9I2X0G2GP
 Enfin, sécurisez les fichiers de votre certificat.
 
 ```bash
-sudo chown root:metronome crt.pem key.pem
+sudo chown root:ssl-cert crt.pem key.pem
 sudo chmod 640 crt.pem key.pem
 sudo chown root:root -R ae_certs
 sudo chmod 600 -R ae_certs

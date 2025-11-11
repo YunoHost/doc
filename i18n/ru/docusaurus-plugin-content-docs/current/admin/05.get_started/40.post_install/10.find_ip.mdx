@@ -1,5 +1,5 @@
 ---
-title: Finding your server's local IP
+title: "Find your server's local IP"
 ---
 
 import Tabs from '@theme/Tabs';
@@ -13,57 +13,61 @@ import TabItem from '@theme/TabItem';
 
 ## Как его найти ?
 
-Любой из этих приемов должен позволить вам найти локальный IP-адрес вашего сервера:
-[ui-tabs position="top-left" active="0" theme="lite"]
-[ui-tab title="(Рекомендуемый) используя AngryIP"]
+Any of these tricks should allow you to find the local IP of your server:
 
 <Tabs>
 <TabItem value="angryip" label="With AngryIP (Recommended)" default>
-Вы можете использовать [AngryIP](https://angryip.org/download/) для достижения этой цели. Вам просто нужно сканировать эти локальные диапазоны ip-адресов в таком порядке, пока вы не найдете активный IP-адрес, соответствующий вашему серверу:
 
-- `192.168.0.0` -> `192.168.0.255`
-- `192.168.1.0` -> `192.168.1.255`
-- `192.168.2.0` -> `192.168.255.255`
-- `10.0.0.0` -> `10.0.255.255`
-- `172.16.0.0` -> `172.31.255.255`
+You can use the [AngryIP](https://angryip.org/download/) software to achieve that. You can scan these local IP ranges in this order until you find the active IP corresponding to your server:
+
+```
+192.168.0.0 -> 192.168.0.255
+192.168.1.0 -> 192.168.1.255
+192.168.2.0 -> 192.168.255.255
+10.0.0.0    -> 10.0.255.255
+172.16.0.0  -> 172.31.255.255
+```
 
 :::tip
-- вы можете сделать отсортировать по ping, как показано на этом скриншоте, чтобы легко увидеть используемый IP.
-- обычно ваш сервер должен отображаться как прослушивающий на портах 80 и 443
-- в случае сомнений просто введите `https://192.168.x.y` в вашем браузере, чтобы проверить, является ли это YunoHost или нет.
+- you can order by ping like on this screenshot to easily see effectively-used IP.
+- your server should typically be displayed as listening on port 80 and 443
+- in case of doubt, just type `https://192.168.x.y` in your browser to check if it's a YunoHost or not.
 :::
 
 ![](/img/angryip.png)
-</TabItem>
 
-<TabItem value="router" label="С вашим интернет-маршрутизатором">
-Подключитесь к интерфейсу вашего маршрутизатора, чтобы просмотреть список подключенных компьютеров.
 </TabItem>
+<TabItem value="router" label="With your internet router / box">
 
+Connect to your internet box / router interface to list the machines connected.
+
+</TabItem>
 <TabItem value="arp-scan" label="With arp-scan">
-Если вы используете Linux, вы можете открыть терминал и использовать `sudo arp-scan --local`, чтобы вывести список IP-адресов в вашей локальной сети (это также может работать в Windows).;
+
+If you're using Linux, you can open a terminal and use `sudo arp-scan --local` to list the IP on your local network (this may also work in Windows);
 
 Если команда `arp-scan` отображает непонятное количество устройств, вы можете проверить, какие из них открыты для SSH с помощью `nmap -p 22 192.168.1.0/24`, чтобы разобраться в них (адаптируйте диапазон IP к вашей локальной сети).
-</TabItem>
 
-<TabItem value="direct" label="С прямым доступом к серверу">
-Подключите экран к своему серверу, войдите в систему и введите `hostname --all-ip-address`.
+</TabItem>
+<TabItem value="direct" label="With a direct access on the server">
+
+Plug a screen on your server, log in and type `hostname --all-ip-address`.
 
 Учетные данные по умолчанию (перед постустановкой!) для входа в систему:
 
-- логин: `root`
-- пароль: `yunohost`
+- login: `root`
+- password: `yunohost`
 
 (Если вы используете необработанный образ Armbian вместо предустановленного образа YunoHost, учетные данные - root / 1234)
-</TabItem>
 
+</TabItem>
 </Tabs>
 
 ## Я все еще не могу найти свой локальный IP-адрес
 
 Если вы не можете найти свой сервер, используя какой-либо из предыдущих приемов, возможно, ваш сервер загрузился неправильно:
 
-- Убедитесь, что ваш сервер правильно подключен;
-- Если вы используете SD-карту, убедитесь, что разъем не слишком запылился;
-- Подключите экран к вашему серверу и попробуйте перезагрузиться, чтобы проверить, правильно ли он загружается;
-- Убедитесь, что ваш кабель Ethernet исправен и правильно подключен;
+- Make sure that your server is properly plugged in;
+- If you're using an SD card, make sure the connector is not too dusty;
+- Plug a screen on your server and try to reboot to check that it's properly booting;
+- Make sure that your ethernet cable is working and properly plugged in;

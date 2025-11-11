@@ -1,5 +1,5 @@
 ---
-title: 🌐 Domaines
+title: '🌐 Domaines'
 ---
 
 import Tabs from '@theme/Tabs';
@@ -20,12 +20,12 @@ Les domaines peuvent être gérés dans la section "Domaine" de la webadmin, ou 
 <Tabs>
 <TabItem value="nohost" label="Yunohost's domains (the free and easy way)">
 
-Afin de rendre l'auto-hébergement aussi accessible que possible, le projet YunoHost fournit un service de nom de domaine *gratuit* et *configuré automatiquement*. En utilisant ce service, vous n'aurez pas à [configurer les enregistrements DNS](/admin/get_started/post_install/dns_config) vous-même, ce qui peut être fastidieux et technique. Néanmoins, soyez conscient que vous n'êtes pas réellement propriétaire du domaine choisi...
+Afin de rendre l'auto-hébergement aussi accessible que possible, le projet YunoHost fournit un service de nom de domaine *gratuit* et *configuré automatiquement*. En utilisant ce service, vous n'aurez pas à [configurer les enregistrements DNS](/admin/get_started/post_install/dns_config) vous-même, ce qui peut être fastidieux et technique.
 
-Les (sous-)domaines suivants sont proposés :
+Les (sous-)domaines suivants sont proposés :
 
-- `whateveryouwant.nohost.me` ;
-- `whateveryouwant.noho.st` ;
+- `whateveryouwant.nohost.me`;
+- `whateveryouwant.noho.st`;
 - `whateveryouwant.ynh.fr`.
 
 De plus, YunoHost utilise un mécanisme de DNS dynamique intégré, de sorte que votre serveur reste accessible même si votre IP publique change.
@@ -45,14 +45,14 @@ Pour limiter les coûts de ressources et les abus, chaque instance ne peut avoir
 
 Avoir son propre domaine apporte plusieurs avantages :
 
-- plus de contrôle et d'autonomie
-- un nom de domaine plus simple (par exemple directement en .net ou .org)
+- more control and autonomy
+- simpler domain name (for example directly in .net or .org)
 
 Cependant, vous devez payer pour cela chaque année (environ 15€/an ... en fonction du TLD) et vous devez faire quelques configurations supplémentaires pour [mettre en place une zone DNS correcte](/admin/get_started/post_install/dns_config). L'outil de diagnostic peut vous aider à effectuer cette configuration.
 
 Si vous avez déjà votre propre domaine, vous pouvez simplement cliquer sur « J'ai déjà un nom de domaine... ». Dans le cas contraire, afin de simplifier et d'automatiser la configuration DNS, nous vous suggérons de l'acheter auprès d'un [registrar dont l'API est supportée par YunoHost] (/admin/get_started/providers/registrar/).
 
-[Cpture d'écran de la page « Ajouter un domaine » où vous pouvez choisir « J'ai déjà un nom de domaine »](/img/webadmin/webadmin_domain_owndomain.png)
+[Capture d'écran de la page « Ajouter un domaine » où vous pouvez choisir « J'ai déjà un nom de domaine »](/img/webadmin/webadmin_domain_owndomain.png)
 
 [En savoir plus sur la configuration de la zone DNS](/admin/get_started/post_install/dns_config)
 
@@ -90,7 +90,7 @@ DNS (Domain Name System) est un système qui permet aux ordinateurs du monde ent
 
 YunoHost peut générer une configuration DNS recommandée pour chaque domaine, y compris les enregistrements nécessaires pour les emails. La configuration DNS recommandée est disponible dans l'administrateur web via Domaines > (le domaine) > configuration DNS, ou avec la commande `yunohost domain dns-conf the.domain.tld`.
 
-## A propos des caractères non-latins
+## À propos des caractères non-latins
 
 Si votre domaine comporte des caractères spéciaux non-latins, il sera transformé par YunoHost en [version internationalisée](https://en.wikipedia.org/wiki/Internationalized_domain_name) ou en [Punycode](https://en.wikipedia.org/wiki/Punycode). Ainsi, lorsque vous utilisez la ligne de commande, vous devez utiliser le format punycode renvoyé par exemple par `yunohost domain list`.
 

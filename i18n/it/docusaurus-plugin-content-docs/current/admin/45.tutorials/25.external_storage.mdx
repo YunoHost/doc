@@ -1,6 +1,6 @@
 ---
-sidebar_label: Add external storage
-title: Aggiungere un disco esterno al vostro server
+sidebar_label: 'Add external storage'
+title: 'Aggiungere un disco esterno al vostro server'
 ---
 
 ## Introduzione
@@ -21,15 +21,15 @@ Il procedimento presentato qui inizia montando l'unica partizione del disco, in 
 
 ## <FAIcon icon="fa-list-alt"/> Prerequisiti
 
-- Prevedere un periodo temporale nel quale gli utenti del vostro server possono sopportare una interruzione dei servizi. I passaggi da compiere, anche se relativamente semplici, sono tecnicamente complessi e necessitano di un lasso di tempo **da dedicare in modo esclusivo**.
+- Have some time at a moment when your server users can accept a shutdown. The steps to be performed, even if they are relatively simple, can sometimes seem technical and require in any case **to take your time**.
 
-- Conoscenza della connessione come root sul server anche via [SSH](/admin/command_line). (Nota bene: se siete connessi come utente `admin`, potete passare root con il comando `sudo su`)
+- Know how to connect as root on your system, for example via [SSH](/admin/command_line). (Note: while logged in as `admin`, you can root with `sudo su`)
 
-- Conoscere i comandi `cd`, `ls`, `mkdir`, `rm`.
+- Know the basic commands `cd`, `ls`, `mkdir`, `rm`.
 
-- Disporre di un backup nel caso le cose non vadano come previsto
+- Have a backup in case things don't work out as planned
 
-- Disporre di un disco aggiuntivo (SSD, hard disk, chiavetta USB) collegato al server via USB o SATA
+- Have extra storage (SSD, hard drive, USB stick) connected to your server via USB or SATA
 
 ## 1. Identificare le cartelle da spostare
 
@@ -89,7 +89,7 @@ Se il vostro disco è formattato con un filesystem supportato da Linux (quindi n
 Create un partizione sul disco:
 
 ```bash
-fdisk /dev/miodisco
+fdisk /dev/YOUR_DISK
 ```
 
 digitate in sequenza `n`, `p`, `1`, `Invio`, `Invio`, `w` per creare una nuova partizione
@@ -105,8 +105,8 @@ Prima di poter essere utilizzato il disco deve essere formattato.
 Per formattare la partizione digitate :
 
 ```bash
-mkfs.ext4 /dev/miodisco
-# e poi 'y' per confermare
+mkfs.ext4 /dev/YOUR_DISK1
+# then 'y' to validate
 ```
 
 Sostituite `miodisco` con il nome della prima partizione del disco di destinazione, nel nostro esempio `sda1`.
@@ -128,7 +128,7 @@ mkdir /mnt/hdd
 Montiamo il disco con il comando:
 
 ```bash
-mount /dev/miodisco /mnt/hdd
+mount /dev/YOUR_DISK1 /mnt/hdd
 ```
 
 (In questo caso, `/dev/miodisco` corrisponde alla prima partizione del disco)
@@ -153,7 +153,7 @@ Precauzionalmente portiamo nello stato di manutenzione le applicazioni che potre
 Ad esempio, per nextcloud:
 
 ```bash
-sudo -u nextcloud /var/www/nextcloud/occ maintenance:mode --on
+sudo -u nextcloud /usr/bin/php /var/www/nextcloud/occ maintenance:mode --on
 ```
 
 Per la mail:
@@ -206,7 +206,7 @@ ls -la /var/mail/
 Da questo momento potete uscire dalla modalità manutenzione, il comando illustrato qui sotto va adattato in base ai servizi che avevate sospeso o arrestato.
 
 ```bash
-sudo -u nextcloud /var/www/nextcloud/occ maintenance:mode --off
+sudo -u nextcloud /usr/bin/php /var/www/nextcloud/occ maintenance:mode --off
 systemctl start postfix
 systemctl start dovecot
 ```
@@ -222,9 +222,7 @@ Se i test di velocità sono soddisfacenti, bisogna rendere definitivo il punto d
 Iniziamo cercando l'UUID (universal identifier, identificatore universale) del nostro disco:
 
 ```bash
-blkid | grep "/dev/miodisco"
-# Restituisce una stringa del tipo :
-# /dev/sda1:UUID="cea0b7ae-2fbc-4f01-8884-3cb5884c8bb7" TYPE="ext4" PARTUUID="34e4b02c-02"
+lsblk -f
 ```
 
 Aggiungiamo una riga di codice al file `/etc/fstab` deputato alla gestione dei montaggi dei dischi all'avvio. Aprite il file con `nano`:

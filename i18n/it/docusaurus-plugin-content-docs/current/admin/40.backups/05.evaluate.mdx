@@ -1,5 +1,5 @@
 ---
-title: Strategie di backup
+title: 'Strategie di backup'
 ---
 
 In un contesto di self hosting le strategie di backup sono un fattore chiave per sopperire ad eventi inattesi (incendio, corruzione del database, impossibilità di accedere al server, compromissione del server...). La tipologia di backup da adottare dipende dalla importanza dei dati e dei servizi che vogliamo proteggere. Ad esempio, nel contesto di un server di test possiamo evitare un backup integrale (dati e sistema operativo), al contrario, dovremo porre molta più attenzione nel caso di un server in produzione che contenga dati importanti. In questo caso è necessario conservare più copie di backup *in posti diversi*.
@@ -26,11 +26,11 @@ Esempi di **backup sicuro e facilmente recuperabile**.
 
 ## Alcuni esempi di esecuzione del backup
 
-- [creare un file di backup e salvarlo manualmente (scelta di default per YunoHost)](/admin/backups/#manual-backup)
-- [backup automatizzato (scelta consigliata)](/admin/backups/backup_methods)
-- [backup su disco esterno](/admin/tutorials/external_storage)
-- [creazione di un'immagine o snapshot](/admin/backups/clone_filesystem)
-- [salvataggio dei dati con metodo personalizzato](/admin/backups/custom_backup_methods)
+- [generate an archive and download it manually (default method of YunoHost)](/admin/backups/#manual-backup)
+- [backup automatically (recommended method)](/admin/backups/backup_methods)
+- [generate an archive directly on another disk](/admin/tutorials/external_storage)
+- [make a disk image or snapshot](/admin/backups/clone_filesystem)
+- [save useful data via a custom method](/admin/backups/custom_backup_methods)
 
 ## Rischi
 
@@ -40,17 +40,17 @@ Di seguito un elenco di errori in ordine crescente di pericolosità. L'ordine pr
 Tenete presente che i rischi reali sono collegati all'evenienza di 2 eventi contemporanei
 :::
 
-- **Imprecisione**: i backup manuali richiedono rigore e regolarità
-- **Errata gestione**: cancellazione involontaria di un file di backup in un sistema di sincronizzazione client server di backup, cancellazione che si propaga instantaneamente
-- **Cryptolocker**: si tratta di virus che cifrano i file e chiedono un riscatto. Se i vostri utenti usano nextcloud e windows un sistema windows infetto può sincronizzare file cifrati perdendo così le copie di backup.
-- **Guasto hardware**: le schede SD sono i supporti meno affidabili nel tempo (si stima meno di 2 anni di vita in un server), seguite dai dischi SSD (circa 3 anni di vita) e i dischi HD (3 anni). Ricordate che neppure un'infrastruttura nuova è esente al 100% da guasti nei primi sei mesi di vita. In ogni caso le copie non devono stare sugli stessi supporti fisici.
-- **Bug software**: il malfunzionamento del software può portare alla perdita dei dati oppure potreste non sapere come risolvere un problema e quindi vorrete recuperare il vostro sistema.
-- **Assenza di energia elettrica o connessione**: prevedete un piano di azione se dovesse succedere...quando siete in vacanza.
-- **Catastrofi naturali e non**: un bambino o di un gatto, un fulmine o una perdita di acqua, incendio e inondazioni possono rovinare il vostro backup custodito nella stanza adiacente.
-- **Compromissione del server**: un attacco informatico diretto al vostro server potrebbe cancellarne i dati
-- **Furto**: nel caso di furto potreste perdere il software di gestione della password per decriptare il backup.
-- **Problemi legali**: per poter dimostrare la vostra innocenza i vostri pc potrebbero essere sequestrati, a casa vostra e altrove
-- **Decesso o malattia**: potreste non essere più in grado di digitare la vostra password
+- **Lack of rigor**: strategies based on manual backups require a lot of rigor in the regularity
+- **Bad handling**: it can happen that a backup is erased by mistake during a restoration or if you rely on a synchronization system, you could delete a file and the deletion would be synchronized instantly
+- **Cryptolocker**: this is a virus that encrypts files and demands a ransomware. If your users are using nextcloud and windows, an infected windows could synchronize encrypted files and thus you lose your copy.
+- **Hardware failure**: SD cards are the least reliable media over time (~2 years of life in a server), followed by SSD disks (about 3 years of life) and hard drives (3 years). Note that a new equipment has also probability to break down during the first 6 months. In all cases, your copies should not be on the same physical media.
+- **Software failure/bug**: a software bug may result in data deletion or you may not know how to fix a problem and want to restore your system.
+- **Electricity or internet failure**: do you have a plan if this happens? What if you are on vacation?
+- **Disaster or natural or unnatural event**: a small child, a cat, lightning or a simple leak can destroy your equipment. Fires or floods can also destroy your backup copy at the other end of your home...
+- **Server compromise**: a malicious person or a robot could attack your server and delete your data
+- **Machine theft**: a burglary or theft of a computer on which your password manager is located to decrypt your backups
+- **Search**: whether you are guilty or not, a search can result in the seizure of the entire computer equipment of a place (or even several)
+- **Death/health problem**: you may not be able to type your passphrase anymore
 
 ## Qualche info sulla sincronizzazione Nextcloud o Thunderbird (IMAP)
 

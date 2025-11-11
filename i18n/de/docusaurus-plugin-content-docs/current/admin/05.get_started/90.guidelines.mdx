@@ -1,5 +1,5 @@
 ---
-title: Hinweise und Leitlinien
+title: 'Hinweise und Leitlinien'
 ---
 
 Diese Seite listet einige Tipps und Richtlinien auf, die jeder YunoHost-Administrator kennen sollte, um sich um seinen Server zu kümmern :).
@@ -10,20 +10,20 @@ Das heißt : Entweder ist der Server für den tatsächlichen Betrieb gedacht, od
 
 Ist Ihr Ziel, einen Produktionserver zu benutzen, so beachten Sie folgendes :
 
-- ein Server ist ein empfindliches System : Seien Sie vorsichtig, methodisch und geduldig ;
-- experimentieren und Anpassen einschränken - insbesondere von Konfigurationsdateien ;
-- Nicht zahlreiche Anwendungen installieren, nur um zu sehen, wie sie aussehen ;
-- Vorsicht mit inoffiziellen Anwendungen, und verzichten auf solche, die noch "in Bearbeitung" sind, oder einen Level 0 haben ;
-- wenn etwas kaputt geht, überlegen Sie richtig, bevor Sie versuchen, es selbst zu reparieren, wenn Sie nicht wissen, was Sie tun. <small>(z. B., den Admin-Benutzer nicht selbst versuchen neu anzulegen, falls er komischerweise verschwunden ist.)</small>
+- be aware that servers are fragile system. Stay cautious, methodical and patient;
+- limit experimentations and customizations (for instance of config file);
+- do not install dozens of apps just to see how they look;
+- use non-official apps with caution, and do not use apps that are still 'in progress', 'not working' or level 0;
+- if something gets broken, think twice about fixing it by yourself if you don't know what you are doing. <small>(For instance, do not attempt to recreate yourself the admin user just because it mysteriously disappeared...)</small>
 
-## Keep it simple !
+## Keep it simple!
 
 YunoHost ist für allgemeine und einfache Anwendungsfälle konzipiert. Wenn Sie von diesen Bedingungen abweichen, wird es schwieriger, und Sie benötigen technisches Wissen, um sie zu erfüllen. Zum Beispiel:
 
-- Versuchen Sie nicht, YunoHost in einem Kontext auszuführen, in dem Sie keine Kontrolle über die Ports 80 und 443 haben (oder überhaupt kein Internet);
-- Versuchen Sie nicht, fünf Server über dieselbe Internetverbindung zu hosten, wenn Sie nicht bereits ein fortgeschrittener Benutzer sind;
-- Auf keinen Fall sollten Sie versuchen, NGINX durch Apache zu ersetzen (oder beides gleichzeitig laufen zu lassen);
-- Versuchen Sie nicht, benutzerdefinierte SSL-Zertifikate zu verwenden, wenn Sie diese nicht wirklich benötigen;
+- do not try to run YunoHost in a context where you cannot have control over ports 80 and 443 (or no internet at all);
+- do not try to host five servers behind the same internet connection if you are not already an advanced user;
+- do not fall into nerd whims such as willing to replace NGINX with Apache (or run both at the same time);
+- do not try to use custom SSL certificates if you don't really need them;
 - ...
 
 Halten Sie die Dinge so einfach wie möglich!

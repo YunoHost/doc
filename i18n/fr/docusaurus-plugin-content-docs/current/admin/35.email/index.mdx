@@ -1,5 +1,5 @@
 ---
-title: 📬 Courriels
+title: '📬 Courriels'
 ---
 
 import Highlight from '@site/src/components/Highlight';
@@ -15,9 +15,9 @@ Les emails sont un écosystème compliqué et un grand nombre de détails peuven
 
 Pour valider que votre configuration est correcte :
 
-- si vous vous hébergez chez vous et n'utilisez pas de VPN, assurez-vous que [votre FAI ne bloque pas le port 25](/admin/get_started/providers/isp/) ;
-- routez les ports selon [cette documentation](/admin/get_started/post_install/port_forwarding) ;
-- configurez soigneusement les enregistrements DNS du courrier électronique selon [cette documentation](/admin/get_started/post_install/dns_config) ;
+- if you are self-hosting at home and not using a VPN, ensure [your ISP won't block port 25](/admin/get_started/providers/isp/) ;
+- route ports according to [this documentation](/admin/get_started/post_install/port_forwarding) ;
+- carefully configure mail DNS records according to [this documentation](/admin/get_started/post_install/dns_config) ;
 - test your configuration using the diagnostic features (<HighlightWebAdmin/> → <HighlightDiagnosis/> → <Highlight no_break={true} color='grey'><FAIcon icon="fa-envelope"/> Email</Highlight> ). You can also use [mail-tester.com](https://mail-tester.com), a score of at least 8~9/10 is a reasonnable goal <small>(be careful : only 3 tests per domain per day are allowed)</small>
 
 ## Clients de messagerie
@@ -32,7 +32,7 @@ Des alias de messagerie et des redirections peuvent être configurés pour chaqu
 
 Une autre fonctionnalité méconnue est l'utilisation de suffixes commencant par "+". Par exemple, les emails envoyés à `johndoe+sncf@votre.domaine.tld` atteriront dans le dossier 'sncf' de la boîte mail de John Doe (ou bien directement dans la boîte mail si ce dossier n'existe pas). C'est une technique pratique pour, par exemple, fournir une adresse mail à un site puis facilement trier (via des filtres automatiques) les courriers venant de ce site.
 
-Les groupes aussi peuvent utiliser des alias, par défaut le groupe `admins` dispose de `root@<domain.tld>` ou encore `webmaster@<domain.tld>`. [Plus d'information dans la page dédiée](/admin/users/groups_and_permissions#gérer-les-alias-des-groupes).
+Groups also can use alias features, by default the group `admins` has aliases such as `root@<domain.tld>` and `webmaster@<domain.tld>`. [More info on the groups and permission page](/admin/users/groups_and_permissions).
 
 ## Que se passe-t-il si mon serveur devient indisponible ?
 

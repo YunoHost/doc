@@ -1,11 +1,12 @@
 ---
-title: Groupes et permissions
+title: 'Groupes et permissions'
 ---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-Vous pouvez accéder à l'interface de gestion des *groupes et des permissions* depuis l'admin web en allant dans la section "Utilisateurs" et en cliquant sur le bouton correspondant :
+Vous pouvez accéder à l'interface de gestion des *groupes et des permissions* depuis l'admin web
+en allant dans la section "Utilisateurs" et en cliquant sur le bouton correspondant :
 
 ![screenshot of users permission button](/img/webadmin/button_to_go_to_permission_interface.png)
 
@@ -21,23 +22,23 @@ Il est également possible de définir des alias mail pour un groupe, afin que l
 
 Par défaut, deux groupes spéciaux sont créés :
 
-- `all_users`, qui contient tous les utilisateurs enregistrés sur YunoHost,
-- `visitors`, c'est-à-dire les personnes qui consultent le serveur sans être connectées.
-- `admins`, ce groupe permet de gérer les administrateurs de la machine, chaque utilisateur aura alors (selon la configuration du serveur) accès en SSH ainsi que la webadmin.
+- `all_users`, that contain all users registered on YunoHost,
+- `visitors`, that applies to people viewing the server while not logged in.
+- `admins`, that contains YunoHost administrators, who will have SSH access as well as to the webadmin.
 
 Vous ne pouvez pas changer le contenu de ces groupes, seulement les permissions qui leur sont accordées.
 
 ### Lister les groupes existants
 
 <Tabs groupId="admin-commands">
-<TabItem value="web" label="From the web interface">
+<TabItem value="web" label="Depuis la webadmin">
 
 Les groupes existants sont listés en haut de la page *groupes et autorisations*.
 
 ![](/img/webadmin/groups_default-groups.png)
 
 </TabItem>
-<TabItem value="cli" label="From the command line">
+<TabItem value="cli" label="Depuis la ligne de commande">
 
 Pour obtenir la liste des groupes existants en ligne de commande :
 
@@ -58,14 +59,14 @@ groups:
 ### Créer un nouveau groupe
 
 <Tabs groupId="admin-commands">
-<TabItem value="web" label="From the web interface">
+<TabItem value="web" label="Depuis la webadmin">
 
 Pour créer un nouveau groupe, il suffit de cliquer sur le bouton "Nouveau groupe" en haut de la page. Vous ne pouvez choisir qu'un nom formé de lettres (majuscules et minuscules) et d'espaces. Le groupe est créé vide et sans aucune permission.
 
 ![screenshot of new group button](/img/webadmin/groups_button-new-group.png)
 
 </TabItem>
-<TabItem value="cli" label="From the command line">
+<TabItem value="cli" label="Depuis la ligne de commande">
 
 Dans la ligne de commande, pour créer un nouveau groupe appelé `yolo_crew`, il faut utiliser
 
@@ -79,7 +80,7 @@ yunohost user group create yolo_crew
 ### Mettre à jour un groupe
 
 <Tabs groupId="admin-commands">
-<TabItem value="web" label="From the web interface">
+<TabItem value="web" label="Depuis la webadmin">
 
 Ajoutons un premier utilisateur à ce groupe : dans le panneau du groupe, cliquez sur le bouton "Ajouter un utilisateur" et faites défiler jusqu'à l'utilisateur souhaité, puis cliquez dessus.
 
@@ -90,7 +91,7 @@ Pour supprimer un utilisateur, cliquez sur la croix à côté de son nom d'utili
 ![](/img/webadmin/groups_button-remove-user.png)
 
 </TabItem>
-<TabItem value="cli" label="From the command line">
+<TabItem value="cli" label="Depuis la ligne de commande">
 
 En ligne de commande, utilisez la commande suivante pour ajouter `charlie` et `delphine` au groupe `yolo_crew` :
 
@@ -123,14 +124,14 @@ groups:
 ### Supprimer un groupe
 
 <Tabs groupId="admin-commands">
-<TabItem value="web" label="From the web interface">
+<TabItem value="web" label="Depuis la webadmin">
 
 Pour supprimer un groupe, cliquez sur la croix rouge en haut à droite du panneau du groupes. Une confirmation vous sera demandée.
 
 ![](/img/webadmin/groups_button-delete-group.png)
 
 </TabItem>
-<TabItem value="cli" label="From the command line">
+<TabItem value="cli" label="Depuis la ligne de commande">
 
 Pour supprimer le groupe `yolo_crew` en ligne de commande, vous pouvez exécuter :
 
@@ -148,14 +149,14 @@ Le mécanisme de permissions permet de restreindre l'accès aux services (par ex
 ### Liste des permissions
 
 <Tabs groupId="admin-commands">
-<TabItem value="web" label="From the web interface">
+<TabItem value="web" label="Depuis la webadmin">
 
 La page des groupes liste les permissions données à chaque groupe, y compris les groupes spéciaux `all_users` et `visitors`.
 
 ![](/img/webadmin/groups_default-with-permissions.png)
 
 </TabItem>
-<TabItem value="cli" label="From the command line">
+<TabItem value="cli" label="Depuis la ligne de commande">
 
 Pour répertorier les permissions et les accès correspondants en ligne de commande :
 
@@ -182,7 +183,7 @@ Plus de détails peuvent être affichés en ajoutant l'option `--full` qui affic
 ### Ajouter des permissions à un groupe ou un utilisateur
 
 <Tabs groupId="admin-commands">
-<TabItem value="web" label="From the web interface">
+<TabItem value="web" label="Depuis la webadmin">
 
 Pour ajouter une permission à un groupe, il suffit de cliquer sur le bouton "+" dans le panneau du groupe, de faire défiler jusqu'à la permission souhaitée, puis de cliquer dessus.
 
@@ -193,7 +194,7 @@ Notez que vous pouvez également autoriser un seul utilisateur, en utilisant le 
 ![](/img/webadmin/groups_add-permission-user.png)
 
 </TabItem>
-<TabItem value="cli" label="From the command line">
+<TabItem value="cli" label="Depuis la ligne de commande">
 
 Pour permettre à un groupe d'accéder à l'interface d'administration de WordPress via la ligne de commande :
 
@@ -201,7 +202,7 @@ Pour permettre à un groupe d'accéder à l'interface d'administration de WordPr
 yunohost user permission update wordpress.admin --add yolo_crew
 ```
 
-Vous pouvez également autoriser un seul utilisateur :
+Notez que vous pouvez également autoriser un seul utilisateur, en utilisant le panneau spécifique en bas de la page.
 
 ```bash
 yunohost user permission update wordpress.admin --add alice
@@ -239,17 +240,17 @@ La webadmin émettra un avertissement si vous définissez une permission qui est
 Depuis YunoHost 4.1, il est possible de montrer/cacher certaines tuiles dans le portail.
 
 <Tabs groupId="admin-commands">
-<TabItem value="web" label="From the web interface">
+<TabItem value="web" label="Depuis la webadmin">
 
 Depuis la webadmin, vous pouvez changer cela en allant dans la vue de l'application à manipuler, puis dans `Gérer les étiquettes et les tuiles`, et cocher/décocher l'option `Montrer la tuile dans le portail utilisateur` pour la permission correspondante.
 
 </TabItem>
-<TabItem value="cli" label="From the command line">
+<TabItem value="cli" label="Depuis la ligne de commande">
 
 En ligne de commande, le même genre de chose peut être fait avec :
 
 ```bash
-# Activer la tuile pour l'interface d'admin de WordPress
+# Enable the tile for the WordPress admin interface
 yunohost user permission update wordpress.admin --show_tile True
 ```
 
@@ -278,5 +279,5 @@ yunohost user group info admins
 Il est possible de les ajouter avec l'action `add-mailalias` ou de les enlever avec `remove-mailalias`.
 
 ```bash
-yunohost user group add-mailalias <groupe> <adresse@domaine.tld>
+yunohost user group add-mailalias <group> <address@domaine.tld>
 ```

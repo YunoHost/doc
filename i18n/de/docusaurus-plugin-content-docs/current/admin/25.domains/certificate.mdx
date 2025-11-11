@@ -11,7 +11,7 @@ YunoHost bietet ein **selbstsigniertes-Zertifikat**. Es bedeutet, dass Ihr Serve
 
 Und zwar, werden die Benutzer eine solche Warnung auf dem Bildschirm sehen:
 
-![](/img/postinstall_error_de.png)
+![](/img/postinstall_error.png)
 
 Was im Wesentlichen den Besucher fragt: **"Vertrauen Sie dem Server, der diese Website hostet?"**.
 Dies kann viele Menschen selbstverständlich erschrecken.
@@ -40,7 +40,6 @@ mit dem grünen Knopf ein Let's Encrypt-Zertifikat einzusetzen.
 
 ![](/img/webadmin/certificate-after-LE.png)
 
-
 Nach Abschluss der Installation, die ensprechende Domain mit Webbrowser
 in HTTPS-Modus besuchen um die Berücksichtigung des digitalen Zertifikats
 von Let's Encrypt zu überprüfen. Das digitale Zertifikat wird automatisch etwa alle drei Monate erneuert.
@@ -55,13 +54,13 @@ SSH-Zugang auf Ihrem Server herstellen.
 So können Sie den aktuellen Status des digitalen Zertifikats überprüfen
 
 ```bash
-yunohost domain cert status Ihre.domain.tld
+yunohost domain cert status your.domain.tld
 ```
 
 Dann Let's Encrypt-Zertifikat installieren
 
 ```bash
-yunohost domain cert install Ihre.domain.tld
+yunohost domain cert install your.domain.tld
 ```
 
 Ergebnis sollte so aussehen :
@@ -81,11 +80,10 @@ Nach Abschluss der Installation, die ensprechende Domain mit Webbrowser in HTTPS
 Wenn das Zertifikat aufgrund einer schlechten Handhabung nicht funktionsfähig ist (z. B. Verlust des Zertifikats oder Dateien nicht lesbar), ist es trotzdem möglich ein selbst-signiertes Zertifikat zu regenerieren :
 
 ```bash
-yunohost domain cert install Ihre.domain.tld --self-signed --force
+yunohost domain cert install your.domain.tld --self-signed --force
 ```
 
 Trotz einer sorgfältigen Überprüfung der DNS-Konfiguration und auch von außen die Möglichkeit mit HTTP-Modus Zugriff auf den Webserver besteht, kann YunoHost manchmal die Einstellungen verweigern. In diesem Fall ist es notwendig :
 
-- die Parameter `127.0.0.1 Ihre.domain.tld` auf der Datei `/etc/hosts` des Webserver hinzufügen.
-- Wenn es immer noch nicht funktionsfähig ist, also die Überprüfungen deaktivieren mit `--no-checks` nach dem Befehl `cert install`.
-
+- add a line `127.0.0.1 your.domain.tld` to the file `/etc/hosts` on your server;
+- if the certificate installation still doesn't work, you can disable the checks with `--no-checks` after the `cert install` command.

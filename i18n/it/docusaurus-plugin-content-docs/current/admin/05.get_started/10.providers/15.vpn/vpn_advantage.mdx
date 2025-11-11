@@ -1,6 +1,6 @@
 ---
-sidebar_label: Advantages
-title: Vantaggi di una VPN per il self-hosting
+sidebar_label: Vantaggi
+title: 'Vantaggi di una VPN per il self-hosting'
 ---
 
 Poiché installare un server a casa è una pratica abbastanza poco comune molte connessioni Internet casalinghe non sono realmente utilizzabili per questo scopo. Una VPN rispettosa della neutralità di rete (net neutrality) con un indirizzo IPv4 fisso e indirizzi IPv6 può aiutare a superare alcune limitazioni e difficoltà.
@@ -29,10 +29,10 @@ La posta elettronica è uno dei protocolli più complessi per il self-hosting e 
 
 Per evitare questa situazione dovete:
 
-- configurare il reverse DNS della connessione ad Internet del server (o della VPN)
-- un Ipv4 statico
-- fare in modo che questo indirizzo IPv4 sia eliminabile da tutte le blacklist (in particolare l'IP non deve essere nel DUL)
-- riuscire ad aprire la porta 25 (così come tutte le altre porte SMTP)
+- configure the reverse DNS of the server's Internet connection (or VPN)
+- a fixed IPv4
+- that this IPv4 is removable from all blacklists (notably the IP must not be on the DUL)
+- to be able to open port 25 (as well as the other SMTP ports)
 
 Purtroppo quasi nessun IPS francese diffuso (e neanche italiano) permette di rispettare tutte queste necessità.
 
@@ -54,5 +54,5 @@ Usando una VPN su vostro server, a meno di particolari configurazioni, la strada
 
 Ci sono due possibili soluzioni a questo problema:
 
-- trasformare il server in un router e connettere attraverso questo gli apparecchi casalinghi che così anche questi godranno della protezione della VPN.
-- usare il server YunoHost in un resolver del DNS a casa di modo da redirigere i nomi a dominio locali ad indirizzi locali invece che quelli pubblici. Questa Questa operazione deve essere compiuta per tutti gli apparecchi oppure sul router (se lo permette).
+- transform the server into a router and connect the home equipments to it, these equipments will then benefit from the VPN confidentiality too.
+- use the YunoHost server as a DNS resolver when you are at home, in order to redirect the server's domain names to the local IP rather than the public IP. This operation can be done either on each equipment or on the router (if the latter allows it).

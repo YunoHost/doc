@@ -1,5 +1,5 @@
 ---
-title: Créer une image complète du système de fichier
+title: 'Créer une image complète du système de fichier'
 ---
 
 import Tabs from '@theme/Tabs';
@@ -18,7 +18,7 @@ Un snapshot permet de figer une image du système de fichiers. Les snapshots son
 En général, les snapshots sont assez économes en espace disque, le principe est que votre système de fichier va stocker les différences survenues depuis votre snapshot. Ainsi, seules les modifications consomment de l'espace.
 
 :::info
-Pensez à supprimer les anciens snapshots pour éviter de gâcher votre espace de stockage en stockant toutes les différences depuis cette date !
+Pensez à supprimer les anciens snapshots pour éviter de gâcher votre espace de stockage en stockant toutes les différences depuis cette date !
 :::
 
 Vous pouvez utiliser cette méthode avec la plupart des VPS (souvent payant), des gestionnaires de machines virtuelles ou si vous avez installé YunoHost avec un filesystem avancé comme btrfs, ceph ou ZFS, vous pouvez aussi créer des snapshots via la ligne de commande
@@ -48,11 +48,11 @@ Ensuite cliquer sur `Restore Snapshot`.
 </TabItem>
 <TabItem value="proxmox" label="Proxmox">
 
-- Sélectionner la machine virtuelle
-- Aller dans l'onglet `Backup`
-- Cliquer sur `Backup now`
-- Choisir le mode `Snapshot`
-- Valider
+- Select the virtual machine
+- Go to the `Backup` tab
+- Click on `Backup now`.
+- Choose `Snapshot` mode
+- Validate
 
 </TabItem>
 <TabItem value="btrfs" label="BTRFS">
@@ -86,11 +86,11 @@ btrfs subvolume delete /pool/volume/2021-07-22_16:12
 ```
 
 :::caution
-Attention de ne pas supprimer le volume original
+  Attention de ne pas supprimer le volume original
 :::
 
 :::tip
-Voir [ce tutoriel](https://www.linux.com/training-tutorials/how-create-and-manage-btrfs-snapshots-and-rollbacks-linux-part-2/) pour plus d'info
+  Voir [ce tutoriel](https://www.linux.com/training-tutorials/how-create-and-manage-btrfs-snapshots-and-rollbacks-linux-part-2/) pour plus d'info
 :::
 
 </TabItem>
@@ -154,7 +154,7 @@ zfs destroy pool/volume@2021-07-22_16:12
 </TabItem>
 </Tabs>
 
-## Créer une image du système de fichier à froid
+## Créer une image du système de fichier à froid 
 
 Vous pouvez cloner votre support (carte SD, disque ssd, volume de VPS...) pour créer une image disque. Cette image avant compression sera de la taille exacte de votre support, c'est pourquoi cette méthode s'applique plutôt aux machines de moins de 64Go.
 
@@ -163,15 +163,16 @@ Vous pouvez cloner votre support (carte SD, disque ssd, volume de VPS...) pour c
 <Tabs>
 <TabItem value="usbimage" label="With USBimager">
 
-Ceci peut être effectué avec [USBimager](https://bztsrc.gitlab.io/usbimager/) (N.B. : assurez-vous de télécharger la version 'Read-write' ! Pas la version 'Write-only' !). Le processus consiste ensuite à "l'inverse" du processus de flashage de la carte SD:
+Ceci peut être effectué avec [USBimager](https://bztsrc.gitlab.io/usbimager/) (N.B. : assurez-vous de télécharger la version 'Read-write' ! Pas la version 'Write-only' !). Le processus consiste ensuite à "l'inverse" du processus de flashage de la carte SD:
 
-- Éteignez votre serveur
-- Récupérez la carte SD et branchez-la dans votre ordinateur
-- Dans USBimager, cliquez sur "Read" pour créer une image ("photographie") de la carte SD. Vous pouvez utiliser le fichier obtenu pour plus tard restaurer le système en entier.
+- Turn off your server
+- Retrieve the SD card and plug it into your computer
+- In USBimager, click on "Read" to create an image ("photograph") of the SD card. You can use the resulting file to restore the whole system later.
 
 Plus de détails dans [la doc d'USBimager](https://gitlab.com/bztsrc/usbimager/#creating-backup-image-file-from-device)
+
 </TabItem>
-<TabItem value="dd" label="In command line with dd">
+<TabItem value="dd" label="En ligne de commande avec dd">
 
 Il est possible d'obtenir la même chose avec `dd` si vous êtes à l'aise avec la ligne de commande:
 

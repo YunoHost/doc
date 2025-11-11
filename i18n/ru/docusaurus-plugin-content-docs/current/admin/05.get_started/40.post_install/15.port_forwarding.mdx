@@ -1,6 +1,6 @@
 ---
-title: Configure port-forwarding
-description: "Make your server accessible from outside your home"
+description: 'Make your server accessible from outside your home'
+title: 'Configure port-forwarding'
 ---
 
 Если вы самостоятельно размещаетесь дома и у вас нет VPN, вам необходимо перенаправить порты на вашем домашнем маршрутизаторе. В приведенном ниже наброске предпринята попытка кратко описать роль и необходимость переадресации портов при настройке сервера дома.
@@ -29,15 +29,15 @@ Identify the *local* IP of your server using one of the method listed [on the co
 
 Открытие перечисленных ниже портов необходимо для работы различных сервисов, доступных в YunoHost. Для каждого из них необходима переадресация "TCP". Некоторые интерфейсы относятся к "внешним" и "внутренним" портам: в нашем случае это одно и то же.
 
-- Веб: 80 <small>(HTTP)</small>, 443 <small>(HTTPS)</small>
-- [SSH](/admin/command_line): 22
-- [XMPP](https://wikipedia.org/wiki/XMPP): 5222 <small>(клиенты)</small>, 5269 <small>(серверы)</small>
-- [Почтовые](/admin/email): 25, 587 <small>(SMTP)</small>, 993 <small>(IMAP)</small>
+- Web: `80` <small>(HTTP)</small>, `443` <small>(HTTPS)</small>
+- [SSH](/admin/command_line): `22`
+- [XMPP](https://wikipedia.org/wiki/XMPP): `5222` <small>(clients)</small>, `5269` <small>(servers)</small>
+- [Email](/admin/email): `25`, `587` <small>(SMTP)</small>, `993` <small>(IMAP)</small>
 
 Если вы используете и модем, и маршрутизатор, то вам необходимо выполнить следующее:
 
-1. сначала на модеме (поле, расположенном ближе всего к Интернету) создайте правила для перенаправления вышеуказанных портов на ваш маршрутизатор;
-2. затем на маршрутизаторе (поле между модемом и вашими устройствами) создайте правила для пересылки вышеуказанных портов на статический IP-адрес вашего сервера.
+1. first on the modem (the box closest to the internet) create rules to forward the above ports to your router;
+2. then on the router (the box between the modem and your devices) create rules to forward the above ports to the static IP address for your server.
 
 :::warning
 <FAIcon icon="fa-exclamation-triangle"/> Некоторые интернет-провайдеры по умолчанию блокируют порт 25 (почтовый SMTP) для борьбы со спамом. Некоторые другие интернет-провайдеры не позволяют свободно использовать порт 80/443 (веб), хотя это менее вероятно. В зависимости от провайдера, возможно, удастся открыть их в интерфейсе администратора... Проверьте [this page](/admin/get_started/providers/isp/) для получения дополнительной информации.

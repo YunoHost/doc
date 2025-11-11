@@ -1,5 +1,5 @@
 ---
-title: Éviter les pannes matérielles
+title: 'Éviter les pannes matérielles'
 ---
 
 ## Sécuriser physiquement votre serveur
@@ -43,12 +43,12 @@ Toutefois, ces techniques de grappes de disques ne devraient pas être considér
 
 Quelques exemples de situations connues des administrateurs systèmes professionnels:
 
-- les disques d'une grappe montée avec des disques de la même marque peuvent tomber en panne quasiment en même temps en moins de quelques heures
-- sans monitoring de la santé des disques, il y a de fortes chances que l'on ne remarque la panne d'un disque de la grappe que lorsqu'un deuxième tombe en panne (\>\<)
-- si on n'a pas de disque de rechange, le délai d'achat peut aboutir à un crash de l'autre disque
-- un disque à moitié fonctionnel qui produit des erreurs peut propager son erreur à travers la grappe
-- les connectiques des disques ou le contrôleur RAID peuvent produire des erreurs aussi ou tomber en panne
-- plus on complexifie l'architecture avec de nombreux composants, plus il y a de chances que l'un d'eux tombe en panne
+- the disks of a cluster mounted with disks of the same brand can fail almost at the same time within a few hours
+- without monitoring the health of the disks, there is a good chance that the failure of one disk in the cluster will only be noticed when a second one fails (\>\<)
+- if you don't have a spare disk, the delay in purchasing one may result in the other disk crashing
+- a half-functional disk that produces errors can propagate its error through the cluster
+- the disk connectors or the RAID controller can also produce errors or fail
+- the more complex you make the architecture with many components, the more likely it is that one of them will fail
 
 :::info
 Si vous souhaitez mettre en place une grappe RAID ou utiliser btrfs, le plus simple est de le faire à l'installation avec l'iso YunoHost en mode expert (lors du partitionnement du système).

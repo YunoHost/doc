@@ -1,5 +1,5 @@
 ---
-title: Trouver l’IP locale de son serveur
+title: 'Trouver l’IP locale de son serveur'
 ---
 
 import Tabs from '@theme/Tabs';
@@ -14,55 +14,60 @@ L'IP locale d'une machine est utilisée pour y faire référence à l'intérieur
 ## Comment la trouver ?
 
 L'une de ces astuces devrait permettre de trouver l'IP locale de votre serveur :
-[ui-tabs position="top-left" active="0" theme="lite"]
-[ui-tab title="(Recommandé) Avec AngryIP"]
 
 <Tabs>
 <TabItem value="angryip" label="With AngryIP (Recommended)" default>
-Vous pouvez utiliser le logiciel [AngryIP](https://angryip.org/download/) pour y parvenir. Vous devez juste scanner ces plages d'IP dans cet ordre jusqu'à trouver l'IP correspondante à votre serveur :
 
-- `192.168.0.0` -> `192.168.0.255`
-- `192.168.1.0` -> `192.168.1.255`
-- `192.168.2.0` -> `192.168.255.255`
-- `10.0.0.0` -> `10.0.255.255`
-- `172.16.0.0` -> `172.31.255.255`
+Vous pouvez utiliser le logiciel [AngryIP](https://angryip.org/download/) pour y parvenir. Vous pouvez scanner ces plages d'IP dans cet ordre jusqu'à trouver l'IP correspondante à votre serveur :
+
+```
+192.168.0.0 -> 192.168.0.255
+192.168.1.0 -> 192.168.1.255
+192.168.2.0 -> 192.168.255.255
+10.0.0.0    -> 10.0.255.255
+172.16.0.0  -> 172.31.255.255
+```
+
 :::tip
-- vous pouvez ordonner par ping comme dans cette capture d'écran, pour voir plus facilement toutes les IP effectivement actives.
-- votre serveur devrait être monté comme écoutant sur les ports 80 et 443
-- en cas de doute, tapez directement dans votre navigateur `https://192.168.x.y` pour voir si c'est un YunoHost ou non.
+- you can order by ping like on this screenshot to easily see effectively-used IP.
+- your server should typically be displayed as listening on port 80 and 443
+- in case of doubt, just type `https://192.168.x.y` in your browser to check if it's a YunoHost or not.
 :::
 
 ![](/img/angryip.png)
-</TabItem>
 
-<TabItem value="router" label="Avec votre box internet">
+</TabItem>
+<TabItem value="router" label="With your internet router / box">
+
 Utilisez l'interface de votre box internet pour lister les machines connectées.
-</TabItem>
 
+</TabItem>
 <TabItem value="arp-scan" label="With arp-scan">
+
 Si vous êtes sous Linux, ouvrez un terminal et tapez `sudo arp-scan --local` pour lister les IP des machines sur le réseau local (ceci fonctionne aussi peut-être sous Windows) ;
 
 Si la commande `arp-scan` vous affiche beaucoup de machines, vous pouvez vérifier lesquelles sont ouvertes au SSH avec `nmap -p 22 192.168.1.0/24` pour faire du tri (adaptez la plage IP selon votre réseau local)
-</TabItem>
 
-<TabItem value="direct" label="Avec un accès direct au serveur">
+</TabItem>
+<TabItem value="direct" label="With a direct access on the server">
+
 Branchez un écran sur votre serveur, loggez-vous et tapez `hostname --all-ip-address`.
 
 Les identifiants par défaut (avant la post-installation !) sont :
 
-- login : `root`
+- identifiant : `root`
 - mot de passe : `yunohost`
 
 (Si vous utilisez une image Armbian brute plutôt que les images YunoHost pré-installées, les identifiants sont root / 1234)
-</TabItem>
 
+</TabItem>
 </Tabs>
 
 ## Je ne trouve toujours pas mon IP locale
 
 Si vous n'êtes pas capable de trouver votre serveur avec les méthodes précédentes, alors peut-être que votre serveur n'a pas démarré correctement.
 
-- Assurez-vous que le serveur est correctement branché ;
-- Si votre serveur a une carte SD, essayez de vous assurer que la connectique n'est pas trop poussiéreuse ;
-- Branchez un écran sur le serveur et essayez de le redémarrer pour valider que le serveur démarre bien ;
-- Assurez-vous que le câble Ethernet est fonctionnel et correctement branché ;
+- Make sure that your server is properly plugged in;
+- If you're using an SD card, make sure the connector is not too dusty;
+- Plug a screen on your server and try to reboot to check that it's properly booting;
+- Make sure that your ethernet cable is working and properly plugged in;

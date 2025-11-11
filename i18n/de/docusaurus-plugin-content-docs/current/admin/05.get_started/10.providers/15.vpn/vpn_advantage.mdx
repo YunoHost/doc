@@ -1,6 +1,6 @@
 ---
-sidebar_label: Advantages
-title: Vorteil eines VPN für Selbst-Hosting
+sidebar_label: Vorteile
+title: 'Vorteil eines VPN für Selbst-Hosting'
 ---
 
 Es ist unüblich, zu Hause einen Server einzurichten, und die meisten Internetanschlüsse, die Privatpersonen zur Verfügung stehen, sind für diesen Zweck ungeeignet. Ein netzneutrales VPN, das eine feste IPv4-Adresse und IPv6-Adressen bereitstellt, kann helfen, einige der Einschränkungen oder Schwierigkeiten zu überwinden.
@@ -29,10 +29,10 @@ E-Mail ist eines der komplexesten Protokolle, die man selbst hosten kann, und in
 
 Um dies zu vermeiden, müssen Sie u. a. :
 
-- den umgekehrten DNS der Internetverbindung des Servers (oder VPN) konfigurieren
-- eine feste IPv4
-- dass diese IPv4 aus allen Blacklists entfernt werden kann (insbesondere darf die IP nicht in der DUL enthalten sein)
-- in der Lage sein, Port 25 (sowie die anderen SMTP-Ports) zu öffnen
+- configure the reverse DNS of the server's Internet connection (or VPN)
+- a fixed IPv4
+- that this IPv4 is removable from all blacklists (notably the IP must not be on the DUL)
+- to be able to open port 25 (as well as the other SMTP ports)
 
 Leider beachtet keiner der gängigsten französischen Internetanbieter alle diese Punkte.
 
@@ -54,5 +54,5 @@ Wenn Sie ein VPN auf Ihrem Server einrichten, wird die Übertragung einer Datei 
 
 Um dies zu vermeiden, gibt es zwei Lösungen :
 
-- Wenn Sie den Server in einen Router umwandeln und die Heimgeräte daran anschließen, profitieren auch diese Geräte von der VPN-Vertraulichkeit.
-- Verwenden Sie den YunoHost-Server als DNS-Resolver, wenn Sie zu Hause sind, um die Domänennamen des Servers auf die lokale IP und nicht auf die öffentliche IP umzuleiten. Dies kann entweder auf jedem Gerät oder auf dem Router erfolgen (sofern letzterer dies zulässt).
+- transform the server into a router and connect the home equipments to it, these equipments will then benefit from the VPN confidentiality too.
+- use the YunoHost server as a DNS resolver when you are at home, in order to redirect the server's domain names to the local IP rather than the public IP. This operation can be done either on each equipment or on the router (if the latter allows it).

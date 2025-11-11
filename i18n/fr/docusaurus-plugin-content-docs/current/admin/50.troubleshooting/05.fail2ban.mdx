@@ -1,5 +1,5 @@
 ---
-title: Débannir une adresse IP
+title: 'Débannir une adresse IP'
 ---
 
 **Fail2Ban** est un logiciel de prévention des intrusions qui protège les serveurs informatiques contre les attaques de brute-force. Il surveille certains journaux et bannira les adresses IP qui montrent un comportement de brute-forcing.
@@ -55,7 +55,7 @@ sudo nano /etc/fail2ban/jail.d/yunohost-whitelist.conf
 ```bash
 [DEFAULT]
 
-ignoreip = 127.0.0.1/8 XXX.XXX.XXX.XXX #<= l'adresse IP (on peut en mettre plusieurs, séparées par un espace) que vous voulez passer en liste blanche / whitelist
+ignoreip = 127.0.0.1/8 XXX.XXX.XXX.XXX #<= the IP address (you can put more than one, separated by a space) that you want to whitelist
 ```
 
 4. Sauvegardez le fichier et rechargez la configuration de Fail2Ban :

@@ -1,13 +1,11 @@
 ---
-title: Configuration de la zone DNS
+title: 'Configuration de la zone DNS'
 ---
 
-DNS (système de nom de domaine) est un élément essentiel d'Internet qui permet
-de convertir des adresses compréhensibles par les êtres humains (les noms de
-domaines) en adresses compréhensibles par la machine (les adresses IP). Pour que
-votre serveur soit facilement accessible par d'autres êtres humains, et pour
-que certains services comme le mail fonctionnent correctement, il est nécessaire
-de configurer la zone DNS de votre domaine.
+Le DNS (système de nom de domaine) est un élément essentiel d'Internet qui permet de convertir des adresses compréhensibles par les êtres humains
+(les noms de domaines) en adresses compréhensibles par la machine (les adresses IP). Pour que votre serveur soit
+facilement accessible par d'autres êtres humains, et pour que certains services comme le mail fonctionnent
+correctement, il est nécessaire de configurer la zone DNS de votre domaine.
 
 Si vous utilisez un [domaine automatique](/admin/tutorials/domains/dns_nohost_me) fourni par le Projet YunoHost,
 la configuration devrait être faite automatiquement. Si vous utilisez votre propre nom de domaine
@@ -20,7 +18,7 @@ domaine via l'interface de votre registrar.
 
 YunoHost fournit une configuration DNS recommandée, accessible via :
 
-- la webadmin, dans Domaines > votre.domain.tld > Configuration DNS ;
+- la webadmin, dans Domaines > votre.domaine.tld > Configuration DNS ;
 - ou la ligne de commande, `yunohost domain dns suggest votre.domaine.tld`
 
 Pour certains besoins ou installations particulières, et si vous savez ce que
@@ -31,31 +29,31 @@ La configuration recommandée ressemble typiquement à :
 
 ```bash
 #
-# Enregistrements IPv4/IPv6 basiques
+# Basic ipv4/ipv6 records
 #
 @ 3600 IN A 111.222.33.44
 * 3600 IN A 111.222.33.44
 
-# (Si votre serveur supporte l'IPv6, il a des enregistrements AAAA)
+# (If your server is IPv6 capable, there are some AAAA records)
 @ 3600 IN AAAA 2222:444:8888:3333:bbbb:5555:3333:1111
 * 3600 IN AAAA 2222:444:8888:3333:bbbb:5555:3333:1111
 
 #
 # XMPP
 #
-_xmpp-client._tcp 3600 IN SRV 0 5 5222 votre.domaine.tld.
-_xmpp-server._tcp 3600 IN SRV 0 5 5269 votre.domaine.tld.
+_xmpp-client._tcp 3600 IN SRV 0 5 5222 your.domain.tld.
+_xmpp-server._tcp 3600 IN SRV 0 5 5269 your.domain.tld.
 muc 3600 IN CNAME @
 pubsub 3600 IN CNAME @
 vjud 3600 IN CNAME @
 xmpp-upload 3600 IN CNAME @
 
 #
-# Mail (MX, SPF, DKIM et DMARC)
+# Mail (MX, SPF, DKIM and DMARC)
 #
-@ 3600 IN MX 10 votre.domaine.tld.
+@ 3600 IN MX 10 your.domain.tld.
 @ 3600 IN TXT "v=spf1 a mx -all"
-mail._domainkey 3600 IN TXT "v=DKIM1; k=rsa; p=uneGrannnnndeClef"
+mail._domainkey 3600 IN TXT "v=DKIM1; k=rsa; p=someHuuuuuuugeKey"
 _dmarc 3600 IN TXT "v=DMARC1; p=none"
 ```
 
@@ -81,13 +79,13 @@ suivante :
 
 ### Quelques notes à propos de cette table
 
-- Tous ces enregistrements ne sont pas nécessaires. Pour une installation minimale, seuls les enregistrements en gras sont nécessaires ;
-- Le point à la fin de `votre.domaine.tld.` est important ;) ;
-- `@` correspond à `votre.domaine.tld`, et par ex. `muc` correspond à `muc.votre.domaine.tld` ;
-- Les valeurs montrées ici sont des valeurs d'exemple ! Référez-vous à la configuration générée chez vous pour savoir quelles valeurs utiliser ;
-- Nous recommandons un [TTL](https://fr.wikipedia.org/wiki/Time_to_Live#Le_Time_to_Live_dans_le_DNS) de 3600 (1 heure). Mais vous pouvez utiliser une autre valeur si vous savez ce que vous faîtes ;
-- Ne mettez pas d'enregistrement IPv6 si vous n'êtes pas certain que l'IPv6 fonctionne sur votre serveur ! Vous aurez des problèmes avec Let's Encrypt si ce n'est pas le cas.
-- Si vous utilisez le registrar Namecheap, les entrées SRV sont formattées comme **Service**: `_xmpp-client` **Protocol**: `_tcp` **Priority**: `0` **Weight**: `5` **Port**: `5222` **Target**: `votre.domaine.tld`
+- Not all these lines are absolutely necessary. For a minimal setup, you only need the records in bold.
+- The dot at the end of `your.domain.tld.` is important ;);
+- `@` corresponds to `your.domain.tld`, and e.g. `muc` corresponds to `muc.your.domain.tld`;
+- These are example values ! See your generated conf for the actual values you should use;
+- We recommend a [TTL](https://en.wikipedia.org/wiki/Time_to_live#DNS_records) of 3600 (1 hour). But you can use something else if you know what you're doing;
+- Don't put an IPv6 record if you're not sure IPv6 really works on your server! You might have issues with Let's Encrypt if it doesn't.
+- If you're using the domain provider Namecheap the SRV DNS entries are formatted as **Service**: `_xmpp-client` **Protocol**: `_tcp` **Priority**: `0` **Weight**: `5` **Port**: `5222` **Target**: `your.domain.tld`
 
 ### Résolution DNS inverse
 
@@ -110,6 +108,6 @@ nslookup 111.222.333.444
 
 Le système de diagnostic présent dans l'interface d'administration fait cette vérification automatiquement (dans la section Email)
 
-### IP Dynamique
+### IP dynamique
 
 Si votre adresse IP publique change constamment, suivez ce [tutoriel](/admin/tutorials/domains/dns_dynamicip).

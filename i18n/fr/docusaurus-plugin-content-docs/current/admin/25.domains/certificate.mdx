@@ -16,7 +16,7 @@ En effet, les utilisateurs devront passer par un écran de ce type :
 Cet écran revient à demander **« Avez-vous confiance au serveur qui héberge ce site ? »**.
 Cela peut effrayer vos utilisateurs (à juste titre).
 
-Pour éviter cette confusion, il est possible d’obtenir un certificat, reconnu directement par les navigateurs, signé par une autorité « connue » : **Let's Encrypt**, **Gandi**, **RapidSSL**, **StartSSL**, **Cacert**.
+To avoid this confusion, it's possible to get a certificate signed a known authority named **Let's Encrypt** which provide free certificates directly recognized by browsers. YunoHost allows to directly install this certificate from the web administration interface or from the command line.
 
 ### Installer un certificat Let's Encrypt
 
@@ -26,22 +26,22 @@ de votre serveur) et que votre site est accessible en HTTP depuis l'extérieur
 (c.-à-d. qu'au moins le port 80 est correctement redirigé vers votre serveur).
 
 <Tabs groupId="admin-commands">
-<TabItem value="web" label="From the web interface">
+<TabItem value="web" label="Depuis la webadmin">
 
 Rendez-vous dans la partie 'Domaines' de l'interface d'administration, puis dans
 la section dédiée à votre domaine. Vous trouverez un bouton 'Certificat SSL'.
 
-![](/img/webadmin/domain-certificate-button-fr.png)
+![](/img/webadmin/domain-certificate-button.png)
 
 Dans la section 'Certificat SSL', vous pourrez voir l'état actuel du certificat.
 Si vous venez d'ajouter le domaine, il dispose d'un certificat auto-signé.
 
-![](/img/webadmin/certificate-before-LE-fr.png)
+![](/img/webadmin/certificate-before-LE.png)
 
 Si votre domaine est correctement configuré, il vous est alors possible de
 passer à un certificat Let's Encrypt via le bouton vert.
 
-![](/img/webadmin/certificate-after-LE-fr.png)
+![](/img/webadmin/certificate-after-LE.png)
 
 Une fois l'installation effectuée, vous pouvez vous rendre sur votre domaine
 via votre navigateur, en HTTPS, pour vérifier que votre certificat est bien
@@ -51,27 +51,27 @@ trois mois environ.
 ![](/img/softwares/certificate-signed-by-LE.png)
 
 </TabItem>
-<TabItem value="cli" label="From the command line">
+<TabItem value="cli" label="Depuis la ligne de commande">
 
 Connectez-vous sur votre serveur en SSH.
 
 Vous pouvez vérifier le statut actuel de votre certificat via :
 
 ```bash
-yunohost domain cert status votre.domaine.tld
+yunohost domain cert status your.domain.tld
 ```
 
 Installez le certificat Let's Encrypt via :
 
 ```bash
-yunohost domain cert install votre.domaine.tld
+yunohost domain cert install your.domain.tld
 ```
 
 Cette commande doit retourner :
 
 ```bash
 Success! The SSOwat configuration has been generated
-Success! Successfully installed Let's Encrypt certificate for domain votre.domaine.tld!
+Success! Successfully installed Let's Encrypt certificate for domain DOMAIN.TLD!
 ```
 
 Une fois l'installation effectuée, vous pouvez vous rendre sur votre domaine
@@ -90,12 +90,12 @@ certificat), il est possible de repartir sur des bases propres en regénérant u
 certificat auto-signé :
 
 ```bash
-yunohost domain cert install votre.domaine.tld --self-signed --force
+yunohost domain cert install your.domain.tld --self-signed --force
 ```
 
 Si YunoHost trouve que votre domaine est mal configuré quand bien même vous
 avez bien vérifié votre configuration DNS et avez bien accès à votre serveur en
 HTTP depuis l'extérieur, vous pouvez tenter :
 
-- d'ajouter une ligne `127.0.0.1 votre.domaine.tld` au fichier `/etc/hosts` sur votre serveur ;
-- si l'installation ne fonctionne toujours pas, de désactiver les vérifications en ajoutant `--no-checks` à la commande `cert install`.
+- add a line `127.0.0.1 your.domain.tld` to the file `/etc/hosts` on your server;
+- if the certificate installation still doesn't work, you can disable the checks with `--no-checks` after the `cert install` command.

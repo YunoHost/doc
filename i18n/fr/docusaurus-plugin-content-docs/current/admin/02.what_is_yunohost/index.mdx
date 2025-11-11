@@ -1,11 +1,10 @@
 ---
-title: Qu’est-ce que YunoHost?
-description: " "
+title: 'Qu’est-ce que YunoHost ?'
 ---
 
 <img src={require('/img/icons/logo-ynh_horizontal.png').default} alt="YunoHost logo" id="ynhlogo" style={{display: "block", textAlign: "center", margin: "auto", maxWidth: "300px", marginBottom: "1.5em"}}/>
 
-YunoHost est un **système d’exploitation** qui vise à simplifier autant que possible **l'administration d'un serveur** pour ainsi démocratiser [l’auto-hébergement](/admin/about_self_hosting) tout en restant fiable, sécurisé, éthique et léger. C'est un projet de logiciel libre maintenu exclusivement par des bénévoles. Techniquement, il peut être vu comme une distribution pour serveurs, basée sur [Debian GNU/Linux](https://debian.org).
+YunoHost est un **système d’exploitation** qui vise à simplifier autant que possible **l'administration d'un serveur** pour ainsi démocratiser [l’auto-hébergement](/admin/about_self_hosting) tout en restant fiable, sécurisé, éthique et léger. C'est un projet de logiciel libre maintenu par des bénévoles. Techniquement, il peut être vu comme une distribution pour serveurs, basée sur [Debian GNU/Linux](https://debian.org).
 
 YunoHost peut s'installer sur [différents types de matériel](/admin/get_started/install_on), à la maison ou sur un serveur en ligne (VPS).
 
@@ -13,51 +12,51 @@ YunoHost peut s'installer sur [différents types de matériel](/admin/get_starte
 
 ## Fonctionnalités
 
-- <SmallInline url='/img/icons/logo-debian.png' alt="debian logo"/> basé sur Debian, pour une base de confiance et familière;
-- <SmallInline url='/img/icons/icon-tools.png' alt="tools logo"/> administration via une **interface web simple et claire** ou en ligne de commande;
-- <SmallInline url='/img/icons/icon-package.png' alt="package logo"/> déployez des **applications en quelques clics**, parmi [un catalogue de plus de 500](https://apps.yunohost.org) !;
-- <SmallInline url='/img/icons/icon-users.png' alt="users logo"/> ajoutez des **utilisateurs** <small>(gérés via un annuaire LDAP)</small>;
-- <SmallInline url='/img/icons/icon-globe.png' alt="globe logo"/> gérez des **noms de domaine**;
-- <SmallInline url='/img/icons/icon-medic.png' alt="medic logo"/> créez et restaurez des **sauvegardes**;
-- <SmallInline url='/img/icons/icon-door.png' alt="door logo"/> connexion simultanée à toutes les apps via un **portail utilisateur** <small>(nginx, SSOwat)</small>;
-- <SmallInline url='/img/icons/icon-mail.png' alt="mail logo"/> fourni avec un **serveur mail complet** <small>(Postfix, Dovecot, Rspamd, DKIM)</small>;
-- <SmallInline url='/img/icons/icon-lock.png' alt="lock logo"/> gère les **certificats SSL** <small>(basé sur Let's Encrypt)</small>;
-- <SmallInline url='/img/icons/icon-shield.png' alt="shield logo"/> ... et des **systèmes de sécurité** <small>(`fail2ban`, `yunohost-firewall`)</small>.
+- <SmallInline url='/img/icons/logo-debian.png' alt="Debian logo"/> Based on Debian, for a trustworthy & familiar base;
+- <SmallInline url='/img/icons/icon-tools.png' /> Administer your server through a **friendly web interface** as well as a handy CLI;
+- <SmallInline url='/img/icons/icon-package.png' /> Deploy **apps in just a few clicks** from [our more than 500 apps catalog](https://apps.yunohost.org)!;
+- <SmallInline url='/img/icons/icon-users.png' /> Manage **users** <small>(based on LDAP)</small>;
+- <SmallInline url='/img/icons/icon-globe.png' /> Manage **domain names**;
+- <SmallInline url='/img/icons/icon-medic.png' /> Create and restore **backups**;
+- <SmallInline url='/img/icons/icon-door.png' /> Connect to all apps simultaneously through the **user portal** <small>(NGINX, SSOwat)</small>;
+- <SmallInline url='/img/icons/icon-mail.png' /> Includes a **full e-mail stack** <small>(Postfix, Dovecot, Rspamd, DKIM)</small>;
+- <SmallInline url='/img/icons/icon-lock.png' /> Manages **SSL certificates** <small>(based on Let's Encrypt)</small>;
+- <SmallInline url='/img/icons/icon-shield.png' />... and **security systems** <small>(`fail2ban`, `yunohost-firewall`)</small>.
 
 ## Origine
 
 YunoHost est un projet né en février 2012 à la suite d’à peu près ça :
 
-> « Merde, j’ai la flemme de me reconfigurer un serveur mail... Beudbeud, comment t’as fait pour configurer ton joli serveur sous LDAP ? »
-> <small>Kload, février 2012</small>
+> « Merde, j’ai la flemme de me reconfigurer un serveur mail... Beudbeud, comment t’as fait pour configurer ton joli serveur sous LDAP ? »
+> <small>*Kload, Février 2012*</small>
 
 Il ne manquait en fait qu’une interface d’administration au serveur de Beudbeud pour en faire quelque chose d’exploitable, alors Kload a décidé de la développer. Finalement, après l’automatisation de quelques configurations et le packaging de quelques applications web, la première version de YunoHost était sortie.
 
 Constatant l’engouement croissant autour de YunoHost et de l’auto-hébergement en général, les développeurs et les nouveaux contributeurs ont alors décidé de prendre le cap d’une version 2, plus accessible, plus extensible, plus puissante, et qui prépare du bon café commerce équitable pour les lutins de Laponie.
 
-Le nom **YunoHost** vient de l’argot Internet anglais « [Y U NO](https://knowyourmeme.com/memes/y-u-no-guy) Host » signifiant approximativement « Pourquoi toi ne pas héberger ». Le [mème Internet](http://fr.wikipedia.org/wiki/M%C3%A8me_Internet) qui l’illustre est à peu près celui-ci :
+Le nom **YunoHost** vient de l’argot Internet anglais « [Y U NO](https://knowyourmeme.com/memes/y-u-no-guy) Host » signifiant approximativement « Pourquoi toi ne pas héberger ». Ce [mème Internet](http://fr.wikipedia.org/wiki/M%C3%A8me_Internet) l’illustre:
 
 <center>
-![Le mème en question, montrant un bonhomme au visage déformé par la frustation et questionnant « Y U NO Host »](/img/dude_yunohost.jpg)
+![Un bonhomme au visage déformé par la frustation et questionnant « Y U NO Host »](/img/dude_yunohost.jpg)
 </center>
 
-## Qu’est-ce que YunoHost n’est pas ?
+## Qu’est-ce que YunoHost n’est pas ?
 
 YunoHost n'est *pas* une entreprise ou une entité à but lucratif. Le projet est développé et maintenu par des bénévoles. Nous ne vendons pas de services, nous n'hébergeons ni ne contrôlons vos données ou services d'aucune manière, et nous n'avons aucune intention ni aucun intérêt à monétiser quoi que ce soit. Nous n'offrons pas non plus de garanties formelles. Notre objectif est simplement de développer et de maintenir YunoHost dans l'espoir qu'il contribue à un internet plus décentralisé et qu'il permette aux plus grand nombre d'obtenir la maîtrise et l'autonomie sur leurs services numériques et la technologie. Ceci étant dit, nous faisons de notre mieux pour fournir un support communautaire, et un support commercial peut être disponible par l'intermédiaire de tiers si nécessaire.
 
 YunoHost en tant que projet n'est *pas* apolitique. Par sa nature même, YunoHost promeut un internet décentralisé et des technologies qui donnent du pouvoir au plus grand nombre. Nous rejetons l'idée selon laquelle la technologie serait intrinsèquement neutre, ou que les projets logiciels devraient rester neutres. De nombreux contributeurices au projet restent vigilant⋅e⋅s quant aux implications sociales et politiques de l'évolution des technologies, et soulignent l'importance d'être solidaire et de converger avec d'autres luttes telles que le féminisme, les droits et la visibilité des personnes LGBTQIA+, la justice environnementale et la justice sociale. Nous nous opposons fermement au fascisme, au sexisme, au racisme, à la xénophobie, à la [bigoterie](https://fr.wikipedia.org/wiki/Bigoterie), au validisme, à l'impérialisme, à l'extractivisme, à l'eugénisme et au [libertarianisme](https://fr.wikipedia.org/wiki/Libertarianisme) de droite. Si vous n'êtes pas en accord avec ces valeurs, nous vous encourageons à ne pas utiliser YunoHost et à chercher un autre système.
 
-YunoHost n'est *pas* conçu pour « passer à l'échelle » au sens traditionnel du terme. Il est conçu pour un nombre relativement modeste de comptes et d'utilisateurices simultanés. Bien qu'il n'y ait pas de limite stricte - puisque les performances dépendent fortement de votre configuration spécifique - nous estimons que des ajustements techniques peuvent s'avérer nécessaires à partir de 250 à 500 comptes, ou de ~50 utilisateur⋅ice⋅s simultanés sur des applications gourmandes. Ceci étant dit, YunoHost peut aisément héberger des sites web ou autres services légers recevant des milliers de visites quotidiennes.
+YunoHost n'est *pas* conçu pour « passer à l'échelle » au sens traditionnel du terme. Il est conçu pour un nombre relativement modeste de comptes et d'utilisateur⋅ice⋅s simultané⋅e⋅s. Bien qu'il n'y ait pas de limite stricte - puisque les performances dépendent fortement de votre configuration spécifique - nous estimons que des ajustements techniques peuvent s'avérer nécessaires à partir de 250 à 500 comptes, ou de ~50 utilisateur⋅ice⋅s simultanés sur des applications gourmandes. Ceci étant dit, YunoHost peut aisément héberger des sites web ou autres services légers recevant des milliers de visites quotidiennes.
 
-YunoHost est avant tout conçu pour les personnes qui veulent que ça "juste marche". Évidemment, le projet n'est pas parfait - nous travaillons constamment à l'amélioration de l'expérience utilisateurice, à la robustesse et à la simplicité du système. Bien que YunoHost soit "bidouillable", la cible principale n'est pas les "power users" qui ont en tête des cas d'utilisation complexes ou hautement avancés. Nous vous encourageons à garder votre installation **aussi simple que possible**. Ceci étant dit, vous êtes les bienvenu⋅e⋅s à expérimenter et à nous faire part de vos retours !
+YunoHost est avant tout conçu pour les personnes qui veulent que ça "juste marche". Évidemment, le projet n'est pas parfait - nous travaillons constamment à l'amélioration de l'expérience utilisateur⋅ice, à la robustesse et à la simplicité du système. Bien que YunoHost soit "bidouillable", la cible principale n'est pas les "power users" qui ont en tête des cas d'utilisation complexes ou hautement avancés. Nous vous encourageons à garder votre installation **aussi simple que possible**. Ceci étant dit, vous êtes les bienvenu⋅e⋅s à expérimenter et à nous faire part de vos retours !
 
 YunoHost n'est *pas* conçu pour être une solution de mutualisation *lourde* fournissant des services à de multiples organisations complètement séparées à travers différents domaines. Bien qu'il soit possible d'héberger des services pour des amis, des collègues, une association - le tout sous des domaines différents -, vous devez garder à l'esprit qu'il n'y a pas d'isolation stricte entre les applications. Sous le capot, toutes les applications partagent le même système et le même environnement.
 
-(Note pour les utilisateurs expérimentés) YunoHost n'utilise pas de technologie de conteneurisation "dure" telles que Docker pour les applications. Ceci découle à la fois de raisons historiques, mais aussi pour garder le système léger - à la fois en termes de ressources et de complexité technique. Cela dit, nous prenons la sécurité au sérieux : les applications fonctionnent sous des comptes d'utilisateurs dédiés avec des privilèges et des capacités limités, et nous travaillons continuellement à l'amélioration de la sécurité du système.
+(Note pour les utilisateurs expérimentés) YunoHost n'utilise pas de technologie de conteneurisation "dure" telles que Docker pour les applications. Ceci découle à la fois de raisons historiques, mais aussi pour garder le système léger - à la fois en termes de ressources et de complexité technique. Cela dit, nous prenons la sécurité au sérieux : les applications fonctionnent sous des comptes d'utilisateurs dédiés avec des privilèges et des capacités limités, et nous travaillons continuellement à l'amélioration de la sécurité du système.
 
 ## Logo
 
-Logo YunoHost noir et blanc réalisé par ToZz. Licence: CC-BY-SA 4.0. Les logos et autres artwork sont disponibles dans le [répertoire Github](https://github.com/YunoHost/yunohost-artwork).
+Logo YunoHost noir et blanc réalisé par ToZz. Licence : CC-BY-SA 4.0. Les logos et autres artworks sont disponibles dans le [répertoire Github](https://github.com/YunoHost/yunohost-artwork).
 
 <img src="https://raw.githubusercontent.com/YunoHost/yunohost-artwork/refs/heads/main/logos/png/yunohost-logo_black.png" width="220" id="darklogo"/>
 <img src="https://raw.githubusercontent.com/YunoHost/yunohost-artwork/refs/heads/main/logos/png/yunohost-logo_white.png" width="220" id="whitelogo"/>

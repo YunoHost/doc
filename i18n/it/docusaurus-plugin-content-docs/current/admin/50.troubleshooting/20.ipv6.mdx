@@ -1,5 +1,5 @@
 ---
-title: Impostare IPv6
+title: 'Impostare IPv6'
 ---
 
 IPv6 dovrebbe funzionare automaticamente in molti casi ma in alcune situzioni o con alcuni provider può essere necessario configurare alcune impostazioni direttamante per abilitarlo.
@@ -17,9 +17,9 @@ Also check [the documentation for subdomains](/admin/tutorials/domains/dns_subdo
 
 Nella pagina di configurazione di OVH dovrai copiare questi 3 elementi:
 
-- l'indirizzo IPv6
-- l'indirizzo del gateway IPv6
-- il prefisso IPv6. Nelle VPS SSD di OVH i prefissi sono `/128` perché hai a disposizione solo *uno* indirizzo IPv6.
+- the IPv6 address
+- the IPv6 gateway address
+- the IPv6 prefix. On OVH's VPS SSD, prefixes are `/128` because you have only *one* IPv6 address.
 
 Nella tua VPS crea un backup  della configurazione di rete con il comando: `cp /etc/network/interfaces ~/interfaces` nella directory home.
 Poi puoi modificare il file di configurazione (`/etc/network/interfaces`) come indicato di seguito. Considera però che:

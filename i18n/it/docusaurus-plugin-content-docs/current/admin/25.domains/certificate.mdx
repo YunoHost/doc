@@ -84,5 +84,5 @@ yunohost domain cert install your.domain.tld --self-signed --force
 
 Se YunoHost pensa che il vostro dominio non è configurato correttamente nonstante abbiate controllato la configurazione del DNS e riuscite a collegarvi in HTTP al vostro server anche dall'esterno della rete locale allora potete:
 
-- aggiungere una linea `127.0.0.1 vostrodominio.tld` nel file `/etc/hosts` sul vostro server;
-- se nonostante questo l'installazione del certificato dovesse ancora fallire potete disabilitare il controllo con l'opzione `--no-checks` dopo il comando `cert install`.
+- add a line `127.0.0.1 your.domain.tld` to the file `/etc/hosts` on your server;
+- if the certificate installation still doesn't work, you can disable the checks with `--no-checks` after the `cert install` command.

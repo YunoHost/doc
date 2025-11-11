@@ -1,11 +1,12 @@
 ---
-title: Configure port-forwarding
-description: "Make your server accessible from outside your home"
+description: 'Make your server accessible from outside your home'
+title: 'Configure port-forwarding'
 ---
 
 Wenn Sie zu Hause selbst hosten und kein VPN nutzen, müssen Sie die Ports Ihres Routers umleiten ("Internet box"). Das folgende Schema versucht, die Rolle der Portweiterleitung beim Einrichten eines Servers zu Hause kurz zu erklären.
 
 <Figure caption="Illustration of the importance of port-forwarding" src="/img/portForwarding_en.png" />
+
 ### 0. Offene Ports diagnostizieren
 
 Sobald die Umleitungen konfiguriert sind, können Sie mit dem in YunoHost 3.8 eingeführten Diagnosewerkzeug überprüfen, ob
@@ -36,8 +37,8 @@ Das Öffnen der unten aufgeführten Ports ist notwendig, damit die verschiedenen
 
 Wenn Sie sowohl ein Modem als auch einen Router verwenden, dann müssen Sie Folgendes tun:
 
-1. zuerst auf dem Modem (der Box, die dem Internet am nächsten ist) Regeln erstellen, um die oben genannten Ports an Ihren Router weiterzuleiten;
-2. dann auf dem Router (der Box zwischen dem Modem und Ihren Geräten) Regeln erstellen, um die oben genannten Ports an die statische IP-Adresse für Ihren Server weiterzuleiten.
+1. first on the modem (the box closest to the internet) create rules to forward the above ports to your router;
+2. then on the router (the box between the modem and your devices) create rules to forward the above ports to the static IP address for your server.
 
 :::warning
 <FAIcon icon="fa-exclamation-triangle"/> Einige ISPs blockieren standardmäßig den Port 25 (Mail-SMTP), um Spam zu bekämpfen. Andere (seltener) erlauben keine freie Nutzung der Ports 80/443. Abhängig von Ihrem ISP kann es möglich sein, diese Ports in der Schnittstelle zu öffnen... Siehe [diese Seite](/admin/get_started/providers/isp/) für weitere Informationen.

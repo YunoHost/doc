@@ -1,5 +1,5 @@
 ---
-title: 📦 Applications
+title: '📦 Applications'
 ---
 
 import Tabs from '@theme/Tabs';
@@ -11,7 +11,7 @@ Una delle caratteristiche principali di YunoHost è la possibilità di installar
 
 Applications can be installed and managed through the webadmin interface in <HighlightApplications/> or through commands of the `yunohost app` category.
 
-<Figure alt="Apps list" caption="Apps list in the webadmin, with its Install button." src="/img/webadmin/apps_list.png"/>
+<Figure caption="Apps list in the webadmin, with its Install button." src="/img/webadmin/apps_list.png"/>
 
 The application catalog and its categories can be browsed directly from the webadmin by clicking on the <HighlightAppInstall/> button in the apps list, or from this documentation.
 
@@ -31,12 +31,16 @@ di errori e attacchi dall'esterno. È preferibile, se desiderate effettuare dei 
 Diciamo che volete installare una *Custom Webapp*. Prima di avviare i passi dell'installazione YunoHost  normalmente richiede di compilare un form per eseguire correttamente l'installazione.
 
 <Tabs groupId="admin-commands">
-  <TabItem value="web" label="From the web interface">
-    <Figure alt="Custom Webapp install form" src="/img/webadmin/app_install_form.png" caption="Pre-installation form of the Custom Webapp"/>
-  </TabItem>
-  <TabItem value="cli" label="From the command line">
-    <Figure alt="Custom Webapp install form in CLI" src="/img/app_install_form_cli.png" caption="Pre-installation form of the Custom Webapp in CLI"/>
-  </TabItem>
+<TabItem value="web" label="From the web interface">
+
+<Figure src="/img/webadmin/app_install_form.png" caption="Pre-installation form of the Custom Webapp"/>
+
+</TabItem>
+<TabItem value="cli" label="From the command line">
+
+<Figure src="/img/app_install_form_cli.png" caption="Pre-installation form of the Custom Webapp in CLI"/>
+
+</TabItem>
 </Tabs>
 
 ### Sotto-directory e domini individuale per le applicazioni
@@ -84,7 +88,7 @@ Alcune applicazioni, una volta installate, mostrano delle informazioni, possono 
 
 ### Applicazioni multi-instanza
 
-Per alcune applicazioni è possibile installarne più copie (in diverse directory) ! Per fare ciò è sufficiente cliccare su <HighlightApplications/> → <HighlightAppInstall/> e selezionare nuovamente l'applicazione da installare.
+Some applications support the ability to be installed several times (at different locations) ! To do so, just go another time in <HighlightApplications/> → <HighlightAppInstall/>, and select again the application to install.
 
 ## Integrazione LDAP / SSO
 
@@ -97,29 +101,28 @@ Però alcune applicazioni non lo supportano e non è possibile neanche implement
 Alcune impostazioni possono essere gestite da YunoHost dopo l'installazione come ad esempio i permessi di utenti e gruppi, il tile e l'etichetta dell'applicazione nella pagina SSO e il relativo URL di connessione.
 
 <Tabs groupId="admin-commands">
-  <TabItem value="web" label="From the web interface">
+<TabItem value="web" label="From the web interface">
 
 È possibile accedere alla pagina relative alle operazioni dell'applicazione cliccando sul nome nella lista delle applicazioni.
 
-<Figure alt="Application operations page" src="/img/webadmin/app_config_operations.png" caption="Application operations page in the webadmin"/>
+<Figure src="/img/webadmin/app_config_operations.png" caption="Application operations page in the webadmin"/>
 
 Da questa pagina è anche possibile eliminare l'applicazione.
 
-  </TabItem>
-  <TabItem value="cli" label="From the command line">
+</TabItem>
+<TabItem value="cli" label="From the command line">
 
 Dalla riga di comando è possibile cambiare:
 
-- l'etichetta dell'applicazione nel sistema SSO: `yunohost app change-label <app> <new_label>`
-- l'url di connessione: `yunohost app change-url <app> [-d <DOMAIN>] [-p <PATH>]`
+- the app's label in the SSO: `yunohost app change-label <app> <new_label>`
+- the app's url: `yunohost app change-url app [-d <DOMAIN>] [-p <PATH>]`
 
-È anche possibile eliminare l'applicazione: `yunohost app remove <app>`
+You can also delete the app: `yunohost app remove <app>`
 
-dove `<app>` deve essere sostituito con l'identificativo dell'applicazione. Se questa ha una sola istanza, come ad esempio Nextcloud l'identificativo è `nextcloud`, se invece è il secondo allora è `nextcloud__2` e così via. È possibile elencare tutte le applicazioni e i loro identificativi con il comando `yunohost app info`.
+`<app>` is to be replaced with the app's ID. If this is the first instance of the app, like Nextcloud, the ID is `nextcloud`. If this is the second, then it's `nextcloud__2` and so on. To list all your apps and check their ID, you can run `yunohost app info`.
 
-  </TabItem>
+</TabItem>
 </Tabs>
-
 
 ### Pannelli di configurazione
 
@@ -130,16 +133,16 @@ I pannelli di configurazione non sono realizzati per modificare ogni aspetto del
 :::
 
 <Tabs groupId="admin-commands">
-  <TabItem value="web" label="From the web interface">
+<TabItem value="web" label="From the web interface">
 
-È possibile accedere alla pagina relative alle operazioni dell'applicazione cliccando sul bottone <Highlight no_break={true} color='darkblue'><FAIcon icon="fa-cogs"/> Config panel</Highlight>.
+The configuration panels are accessible in the webadmin in their operations page, trough the <Highlight no_break={true} color='darkblue'><FAIcon icon="fa-cogs"/> Config panel</Highlight> button.
 
-<Figure alt="My Webapp configuration panel" src="/img/webadmin/app_config_panel.png" caption="Configuration panel for My Webapp"/>
+<Figure src="/img/webadmin/app_config_panel.png" caption="Configuration panel for My Webapp"/>
 
-  </TabItem>
-  <TabItem value="cli" label="From the command line">
+</TabItem>
+<TabItem value="cli" label="From the command line">
 
-Dalla riga di comando è possibile elencare le impostazione del pannello di configurazione con il comando `yunohost app config get <app>`
+From the command line, you can list the configuration panel settings with the following command: `yunohost app config get <app>`
 
 ```bash
 $ yunohost app config get my_webapp
@@ -154,22 +157,22 @@ main.sftp.with_sftp:
   value: yes
 ```
 
-Per modificare una configurazione si può usare il comando `yunohost app config set <app>` per avere la richiesta di modifica di ogni impostazione oppure il comando`yunohost app config set <app>` per modficarne una specifica.
+To change a setting, either use `yunohost app config set <app>` to get prompted about all the settings, or use `yunohost app config set <app> <key> -v <new_value>` to alter a specific one.
 
-La parola `<key>` è il nome dell'impostazione come nell'esempio sopra `main.sftp.with_sftp`.
+The `<key>` is the setting name, for example `main.sftp.with_sftp` from above.
 
-  </TabItem>
+</TabItem>
 </Tabs>
 
 ## Eseguire comandi dall'applicazione
 
-Dalla versione di YunoHost v11.1.21.4 è possibile eseguire un comando con il binario dell'applicazione o comandi PHP con il comando `yunohost app shell <app>`.
-In questo modo:
+Starting YunoHost v11.1.21.4, if you need to execute commands with the app's binary, or PHP commands, etc., you can execute the command `yunohost app shell <app>`.
+It will:
 
-- verrà avviata una shell Bash come l'utente di sistema dell'applicazione
-- verrà aperta la directory di lavoro dell'applicazione (ad esempio `/var/www/<app>`)
-- carico di tutte le variabili d'ambiente come da file service dell'applicazione se queste esistono
-- verrà il usata la versione di `php` usata dall'applicazione
+- open a new Bash shell as the app's system user
+- open the app's working directory (e.g. `/var/www/<app>`)
+- preload the environment with variables taken from the app's service, if it exists
+- override `php`, so that it points to the PHP version used by the app
 
 ## Packaging delle applicazioni
 

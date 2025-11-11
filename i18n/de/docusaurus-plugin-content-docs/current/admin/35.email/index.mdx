@@ -1,5 +1,5 @@
 ---
-title: 📬 Emails
+title: '📬 Emails'
 ---
 
 import Highlight from '@site/src/components/Highlight';
@@ -15,9 +15,9 @@ E-Mail ist ein kompliziertes Ökosystem und eine ganze Reihe von Details können
 
 Um Ihre Einstellungen zu validieren:
 
-- Wenn Sie zu Hause selbst hosten und kein VPN verwenden, stellen Sie sicher das [Ihr ISP den Port 25 nicht blockiert](/admin/get_started/providers/isp/);
-- leiten Sie Ports weiter, wie in [dieser Dokumentation](/admin/get_started/post_install/port_forwarding) beschrieben;
-- Mail-DNS-Einträge nach [dieser Dokumentation](/admin/get_started/post_install/dns_config) sorgfältig konfigurieren;
+- if you are self-hosting at home and not using a VPN, ensure [your ISP won't block port 25](/admin/get_started/providers/isp/) ;
+- route ports according to [this documentation](/admin/get_started/post_install/port_forwarding) ;
+- carefully configure mail DNS records according to [this documentation](/admin/get_started/post_install/dns_config) ;
 - test your configuration using the diagnostic features (<HighlightWebAdmin/> → <HighlightDiagnosis/> → <Highlight no_break={true} color='grey'><FAIcon icon="fa-envelope"/> Email</Highlight> ). You can also use [mail-tester.com](https://mail-tester.com), a score of at least 8~9/10 is a reasonnable goal <small>(be careful : only 3 tests per domain per day are allowed)</small>
 
 ## E-Mail-Programme
@@ -32,6 +32,8 @@ Mail-Aliase und Weiterleitungen können für jeden Benutzer konfiguriert werden.
 
 Eine weitere Funktion, die nur wenigen Leuten bekannt ist, ist die Verwendung von Suffixen, die mit "+" beginnen. Zum Beispiel landen E-Mails, die an `johndoe+buchung@die.domain.tld` gesendet werden, automatisch im Ordner `buchung` (Kleinbuchstaben) der Mailbox von John Doe oder im Posteingang von John Doe, wenn der Ordner `buchung` nicht existiert. Es ist eine praktische Technik, z.B. eine E-Mail-Adresse auf einer Website anzugeben und dann die von dieser Website kommende E-Mail einfach (über automatische Filter) zu sortieren.
 
+Groups also can use alias features, by default the group `admins` has aliases such as `root@<domain.tld>` and `webmaster@<domain.tld>`. [More info on the groups and permission page](/admin/users/groups_and_permissions).
+
 ## Was passiert wenn mein Server nicht erreichbar ist?
 
 Wenn Ihr Server nicht mehr verfügbar ist, bleiben die an Ihren Server gesendeten E-Mails bis zu ~5 Tage lang in einer Warteschlange auf der Seite des Absenders. Der Hoster des Absenders wird regelmäßig versuchen, die E-Mail erneut zu senden, bis er sie verwirft, falls er sie nicht versenden konnte.
@@ -41,6 +43,7 @@ Wenn Ihr Server nicht mehr verfügbar ist, bleiben die an Ihren Server gesendete
 It is possible that the emails sent from your YunoHost instance are considered as spam by the big email services.
 Is it possible that the IP address from your server have been previously been used to sent spam or that these email services consider your server as a spam sender.
 To ensure that your servers’ IP address isn't on these blacklists and to remove it from them, follow this [link](/admin/troubleshooting/blacklist_forms).
+
 ## Eine Migration von E-Mails von einem E-Mail-Provider zu einer YunoHost-Instanz
 
 Siehe [diese Seite](/admin/email/migration).

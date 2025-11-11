@@ -1,5 +1,5 @@
 ---
-title: 📬 Emails
+title: '📬 Emails'
 ---
 
 import Highlight from '@site/src/components/Highlight';
@@ -15,9 +15,9 @@ Los emails son un ecosistema complicado y una multitud de detalles puedes impedi
 
 Para validar que tu configuración es correcta :
 
-- si te alojas en casa y que no tienes VPN, asegúrate de que [tu proveedor de Internet no esté bloqueando el puerto 25](/admin/get_started/providers/isp/) ;
-- redirige los puertos siguiendo [esta documentación](/admin/get_started/post_install/port_forwarding) ;
-- configura con cuidado los registros DNS del correo electrónico siguiendo [esta documentación](/admin/get_started/post_install/dns_config) ;
+- if you are self-hosting at home and not using a VPN, ensure [your ISP won't block port 25](/admin/get_started/providers/isp/) ;
+- route ports according to [this documentation](/admin/get_started/post_install/port_forwarding) ;
+- carefully configure mail DNS records according to [this documentation](/admin/get_started/post_install/dns_config) ;
 - test your configuration using the diagnostic features (<HighlightWebAdmin/> → <HighlightDiagnosis/> → <Highlight no_break={true} color='grey'><FAIcon icon="fa-envelope"/> Email</Highlight> ). You can also use [mail-tester.com](https://mail-tester.com), a score of at least 8~9/10 is a reasonnable goal <small>(be careful : only 3 tests per domain per day are allowed)</small>
 
 ## Clientes de mensajería
@@ -31,6 +31,8 @@ Los clientes Desktop o móvil tienen la ventaja de copiar tu emails en el equipo
 Aliases de mensajeras y redirecciones pueden ser configurados por cada usuario. Por ejemplo, el primer usuario creado en el servidor automáticamente dispone de un alias `root@tu.dominio.tld` - lo que significa que un email mandado hacia esta dirección se encontrará en el buzón de entrada de este usuario. Las redirecciones automáticas pueden ser configuradas, por ejemplo si un usuario no quiere configurar una cuenta de correo adicional y simplemente desea recibir correos del servidor en - por ejemplo - su dirección gmail.
 
 Otra función desconocida es el uso del sufijo "+". Por ejemplo, email mandados a `johndoe+sncf@tu.dominio.tld` llegarán en el directorio 'sncf' del buzón de correo de John Dos (o directamente en el buzón si este directorio no existe). Es una técnica práctica que permite proveer una dirección de mail a un sitio y automatizar la clasificación de los correos que te mandará este sitio.
+
+Groups also can use alias features, by default the group `admins` has aliases such as `root@<domain.tld>` and `webmaster@<domain.tld>`. [More info on the groups and permission page](/admin/users/groups_and_permissions).
 
 ## ¿ Qué ocurre si mi servidor se pone indisponible ?
 

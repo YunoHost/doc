@@ -1,14 +1,14 @@
 ---
-title: Migrer de 11.x vers 12.x
+title: 'Migrer de 11.x vers 12.x'
 ---
 
 L'objectif cette page est de décrire le processus de migration d'une instance en YunoHost 11.x (tournant sous Debian Bullseye) vers YunoHost 12.x (tournant sous Debian Bookworm).
 
 ## Notes importantes
 
-- L'équipe de YunoHost a fait de son mieux pour que cette migration se passe autant en douceur que possible. Elle a été testée durant plusieurs mois et sur plusieurs types d'installations.
+- The YunoHost team did its best to make sure that the migration is as smooth as possible and was tested over the course of several months in several cases.
 
-- [Faites des sauvegardes](/admin/backups) de votre serveur et de vos données ! Cette migration est une opération complexe et éviter tous les problèmes possibles est difficile. Dans tous les cas, soyez patients et attentifs durant la migration.
+- Please [backup your data and server](/admin/backups)! This migration is a complex operation and covering every pitfall is quite hard. And in any case, be patient and attentive during the migration.
 
 - Ne vous précipitez pas à vouloir faire une réinstallation de votre système en pensant que cela serait "plus simple" (sigh). (Une attitude qui revient régulièrement est de vouloir réinstaller son système à la moindre complication...). À la place, si vous rencontrez des problèmes, nous vous encourageons à investiguer, chercher à comprendre et [trouver de l'aide sur le chat ou le forum](/community/help).
 
@@ -31,7 +31,7 @@ Notez que même si vous fermez la page d'admin, la migration continuera (par con
 Lancez simplement :
 
 ```bash
-sudo yunohost tools migrations migrate
+sudo yunohost tools migrations run
 ```
 
 puis lisez attentivement l'avertissement et les instructions.
@@ -58,8 +58,8 @@ En ligne de commande vous pouvez utiliser `lsb_release -a` et `yunohost --versio
 
 Après la mise à niveau, de nouvelles migrations sont apparues :
 
-- La recréation des virtualenvs de vos applis Python
-- La migration de PostgreSQL 13 à 15
+- Rebuilding the virtualenvs of your Python apps
+- Migrate from PostgreSQL 13 to 15
 
 Vous devez les lancer le plus tôt possible pour garantir le bon fonctionnement de vos applis.
 
@@ -77,12 +77,12 @@ Dans l'outil de diagnostics de la webadmin, vérifiez qu'il n'y a pas de problè
 
 ### Vérifiez que les applications fonctionnent
 
-Vérifiez que vos applications installées fonctionnent... Si elles ne fonctionnent pas, il est recommandé de tenter de les mettre à jour. (ou bien de manière générale, il est recommandé de les mettre à jour même si elles fonctionnent !).
+Vérifiez que vos applications installées fonctionnent... Si elles ne fonctionnent pas, il est recommandé de tenter de les mettre à jour. (ou bien de manière générale, il est recommandé de les mettre à jour même si elles fonctionnent !).
 
 Si votre app est cassée et que vous étiez déjà sur la dernière version d'une application, vous pouvez relancer la mise à jour grâce à l'option `--force`:
 
 ```bash
-yunohost app upgrade --force NOM_APP
+yunohost app upgrade --force APP_NAME
 ```
 
 ## Soucis connus après la migration

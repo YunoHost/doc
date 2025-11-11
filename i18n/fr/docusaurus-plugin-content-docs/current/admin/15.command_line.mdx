@@ -1,5 +1,5 @@
 ---
-title: 🛠️ SSH et la ligne de commande
+title: '🛠️ SSH et la ligne de commande'
 ---
 
 import Tabs from '@theme/Tabs';
@@ -15,10 +15,11 @@ L'interface en ligne de commande (CLI) est, en informatique, la manière origina
 
 ### Identifiants *avant* la postinstall
 
-- Si vous faites une **installation à la maison**, les identifiants par défaut sont login: `root`, mot de passe: `yunohost` (ou `1234` si vous partez d'une image armbian).
-- Si vous faites une **installation sur un serveur distant (VPS)**, votre fournisseur devrait vous avoir communiqué le login et le mot de passe (ou vous proposer de configurer une clé SSH).
+- If you are **installing at home**, the default credentials are login: `root` and password: `yunohost` (or `1234` if you flashed an armbian image)
+- If you are **installing a remote server (VPS)**, your provider should have communicated you the login and password (or allowed you to configure an SSH key)
 
 ### Identifiants *après* la postinstall
+
 
 Durant la post-installation, vous avez défini un compte et un mot de passe d'administration. Le compte défini lors de la post-installation vous permet de vous connecter en SSH. De plus, le mot de passe défini dans la post-installation devient le nouveau mot de passe pour l'utilisateur `root`. Enfin, **la connexion en SSH avec l'utilisateur `root` est désactivée et il vous faut utiliser le compte défini durant la post-installation !**. L'exception à cette règle est qu'il reste possible de se logger en root *depuis le réseau local - ou depuis une console en direct sur la machine* (ce qui peut être utile dans l'éventualité où le serveur LDAP est inactif et l'utilisateur admin ne fonctionne plus).
 
@@ -30,9 +31,9 @@ Si vous êtes connecté en tant avec le compte d'administration et souhaitez dev
 
 Si vous hébergez votre serveur **à la maison** (par ex. Raspberry Pi ou OLinuXino ou vieil ordinateur)
 
-- vous devriez pouvoir vous connecter à la machine en utilisant `yunohost.local` (ou `yunohost-2.local`, selon le nombre de serveurs sur le réseau).
-- si `yunohost.local` et consorts ne fonctionnent pas, il vous faut [trouver l'IP locale de votre serveur](/admin/get_started/post_install/find_ip).
-- si vous avez installé votre serveur à la maison mais essayez d'y accéder depuis l'extérieur du réseau local, assurez-vous d'avoir bien configuré une redirection de port pour le port 22.
+- you should be able to connect to your server using `yunohost.local` (or `yunohost-2.local`, depending on how many servers are on your network).
+- if `yunohost.local` and the like do not work, your need to [find out the local IP of the server](/admin/get_started/post_install/find_ip).
+- if you installed a server at home but are attempting to connect from outside your local network, make sure port 22 is correctly forwarded to your server.
 
 S'il s'agit d'une machine distante (VPS), votre fournisseur devrait vous avoir communiqué l'IP de votre machine.
 
@@ -43,22 +44,21 @@ Dans tous les cas, si vous avez déjà configuré un nom de domaine qui pointe s
 Ci-dessous quelques exemples de commande SSH typiques :
 
 ```bash
-# avant la postinstall:
+# before the postinstall:
 ssh root@11.22.33.44
 
-# après la postinstall:
+# or after the postinstall:
 ssh username@11.22.33.44
 
-# avec le nom de domaine plutôt que l'IP (plus pratique):
-ssh username@votre.domaine.tld
+# using the domain name instead of the IP (more convenient)
+ssh username@your.domain.tld
 
-# avec le nom de domaine spécial yunohost.local:
+# using the local domain name instead of the IP (for local access)
 ssh username@yunohost.local
 
-# si vous avez changé le numéro de port pour SSH 
-ssh -p 2244 username@votre.domaine.tld
+# if you changed the SSH port
+ssh -p 2244 username@your.domain.tld
 ```
-
 :::note
 `fail2ban` bannira votre IP pendant 10 minutes si vous échouez plus de 10 fois à vous identifier. Pour débannir une IP, vous pouvez regarder la page sur [Fail2Ban](/admin/troubleshooting/fail2ban).
 :::
@@ -72,7 +72,7 @@ Faites attention à qui vous donnez accès à SSH. Cela augmente encore plus la 
 :::
 
 <Tabs>
-<TabItem value="web" label="From the web interface">
+<TabItem value="web" label="Depuis la webadmin">
 
 Se rendre dans `Utilisateurs > Gérer les groupes et les autorisations`
 
@@ -81,7 +81,7 @@ Se rendre dans `Utilisateurs > Gérer les groupes et les autorisations`
 Si vous souhaitez ajouter une clé publique SSH à l'utilisateur, vous devez le faire en ligne de commande, l'interface web ne proposant pas encore cette fonctionnalité.
 
 </TabItem>
-<TabItem value="cli" label="From the command line">
+<TabItem value="cli" label="Depuis la ligne de commande">
 
 Pour autoriser un utilisateur ou un groupe à accéder en SFTP ou en SSH :
 
@@ -132,7 +132,7 @@ Les commandes YunoHost ont ce type de structure :
 yunohost app install wordpress --label Webmail
           ^    ^        ^             ^
           |    |        |             |
-   catégorie  action  argument     options
+    category  action  argument      options
 ```
 
 N'hésitez pas à naviguer et demander des informations à propos d'une catégorie ou action donnée via l'option `--help`. Par exemple, ces commandes :

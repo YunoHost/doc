@@ -1,5 +1,5 @@
 ---
-title: Configurer un relais SMTP
+title: 'Configurer un relais SMTP'
 ---
 
 import Tabs from '@theme/Tabs';
@@ -7,7 +7,7 @@ import TabItem from '@theme/TabItem';
 
 Si votre fournisseur d'accès à Internet bloque le port 25, ou si vous rencontrez un problème d’utilisation du serveur SMTP natif de YunoHost, vous pouvez configurer votre serveur YunoHost pour utiliser un relais SMTP.
 
-## Qu'est-ce qu'un relais SMTP
+## Qu'est-ce qu'un relais SMTP ?
 
 C'est un serveur SMTP tiers qui va envoyer les e-mails aux destinataires à la place de votre propre serveur SMTP.
 Une fois correctement installé, le fonctionnement est transparent pour l’utilisateur. Vos correspondants verront vos e-mails comme s’ils venaient de votre propre serveur, mais ils seront passés par le relais SMTP que vous aurez choisis et configurés.
@@ -45,15 +45,15 @@ Please note that modifying your DNS records could sometimes take over 24h to tak
 Il est possible de configurer soit via la webadmin ou en ligne de commande.
 
 <Tabs groupId="admin-commands">
-  <TabItem value="web" label="From the web interface">
+<TabItem value="web" label="Depuis la webadmin">
 
 Depuis l'interface d'administration, dans la section `Outils` > `Paramètres de YunoHost`, et l'onglet `Email`.
 Il suffit d'activer l'option, et de renseigner les champs nécessaires :
 
-- **Adresse du relais SMTP** : L'url pour le serveur SMTP.
-- **Port du relais SMTP** : Le port utilisé sur le serveur renseigné.
-- **Utilisateur du relais SMTP** : Login ou mail d'identification pour le serveur.
-- **Mot de passe du relais SMTP** : Tout simplement le mot de passe.
+- **SMTP relay host** : SMTP server url.
+- **SMTP relay port** : Port use with the distant server.
+- **SMTP relay user** : Login or identification mail server.
+- **SMTP relay password** : Your SMTP relay password.
 
 :::warning
 <FAIcon icon="fa-exclamation-triangle"/>  Les mots de passe avec le caractère `#` ne fonctionneront pas proprement à cause d'une limitation de postfix (d'autres caractères sont peut-être interdit, n'hésitez pas à rapporter ce genre de cas pour la mise à jour de cette doc).
@@ -61,14 +61,15 @@ Il suffit d'activer l'option, et de renseigner les champs nécessaires :
 
 ![Option-Relais-Smtp](/img/webadmin/relay_smtp_option_webadmin_en.png)
 
-    </TabItem>
-  <TabItem value="cli" label="From the command line">
+</TabItem>
+<TabItem value="cli" label="Depuis la ligne de commande">
+
 Pour que YunoHost soit capable d'utiliser le relais, il faut paramétrer 4 choses.
 
-1. Votre url de relais SMTP (on utilisera `smtprelay.tld`).
-2. Le port sur lequel on accède au relais (on utilisera le port 2525 ci-dessous)
-3. Votre nom d'utilisateur SMTP (on utilisera `username`).
-4. Votre mot de passe SMTP (on utilisera `password`).
+1. Your SMTP relay URL (for this tutorial we will use `smtprelay.tld`)
+2. The port on which you access the relay (for this tutorial we will use port 2525 below)
+3. Your SMTP relay username (for this tutorial we will use `username`)
+4. Your SMTP relay password (for this tutorial we will use `password`)
 
 :::warning
 <FAIcon icon="fa-exclamation-triangle"/>  Les mots de passe avec le caractère `#` ne fonctionneront pas proprement à cause d'une limitation de postfix (d'autres caractères sont peut-être interdit, n'hésitez pas à rapporter ce genre de cas pour la mise à jour de cette doc).
@@ -79,7 +80,7 @@ Le fournisseur SMTP vous fournit ces trois informations.
 Premièrement se connecter sur son serveur en SSH avec la commande :
 
 ```bash
-ssh admin@domain.tld
+ssh admin@yourdomain.tld
 ```
 
 Ensuite, mettre à jour les informations suivantes :
@@ -98,13 +99,13 @@ C'est une bonne idée de confirmer les informations en faisant :
 sudo yunohost settings list
 ```
 
-  </TabItem>
+</TabItem>
 </Tabs>
 
 Votre relais SMTP est maintenant configuré !
 
 :::warning
-<FAIcon icon="fa-exclamation-triangle"/>  Maintenant le relais SMTP est capable de lire et d'utiliser toutes les informations contenues dans les emails que vous envoyez sans votre accord. Mais il ne sera pas capable de lire les informations des emails que vous recevez.
+<FAIcon icon="fa-exclamation-triangle"/> Maintenant le relais SMTP est capable de lire et d'utiliser toutes les informations contenues dans les emails que vous envoyez sans votre accord. Mais il ne sera pas capable de lire les informations des emails que vous recevez.
 :::
 
 #### Relayer tous les emails même ceux des noms de domaines gérés par YunoHost

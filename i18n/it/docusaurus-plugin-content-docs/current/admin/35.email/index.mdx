@@ -1,5 +1,5 @@
 ---
-title: 📬 Emails
+title: '📬 Emails'
 ---
 
 import Highlight from '@site/src/components/Highlight';
@@ -15,9 +15,9 @@ La posta elettronica è un ecosistema complesso con un numero elevato di dettagl
 
 Per assicurarsi una configurazione corretta:
 
-- se installate il server a casa e non utilizzate una VPN, assicuratevi che  [il vostro internet provider non blocchi la porta 25](/admin/get_started/providers/isp/) ;
-- reindirizzate le porte [seguendo questa documentazione](/admin/get_started/post_install/port_forwarding) ;
-- configurate con cura i record DNS riguardanti il servizio mail seguendo [questa documentazione](/admin/get_started/post_install/dns_config) ;
+- if you are self-hosting at home and not using a VPN, ensure [your ISP won't block port 25](/admin/get_started/providers/isp/) ;
+- route ports according to [this documentation](/admin/get_started/post_install/port_forwarding) ;
+- carefully configure mail DNS records according to [this documentation](/admin/get_started/post_install/dns_config) ;
 - test your configuration using the diagnostic features (<HighlightWebAdmin/> → <HighlightDiagnosis/> → <Highlight no_break={true} color='grey'><FAIcon icon="fa-envelope"/> Email</Highlight> ). You can also use [mail-tester.com](https://mail-tester.com), a score of at least 8~9/10 is a reasonnable goal <small>(be careful : only 3 tests per domain per day are allowed)</small>
 
 ## Programmi (client) per la posta elettronica
@@ -32,7 +32,7 @@ Per ogni utente possono essere configurati gli alias e l'inoltro dei messaggi. A
 
 Una funzione non molto conosciuta riguarda l'utilizzo dei suffissi contrassegnati con il simbolo "+".Ad esempio le mail inviate all'indirizzo `johndoe+sncf@mio.dominio.tld` finiranno nella cartella 'sncf' dell'account di John Doe (oppure semplicemente in Posta in Arrivo se la cartella 'sncf' non esiste). Questa funzione permette di ricevere le mail direttamente nella cartella di destinazione.
 
-I gruppi di utenti, possono utilizzare gli alias. Il gruppo `admins` di default dispone degli indirizzi `root@<mio.dominio.tld>` e `webmaster@<mio.dominio..tld>`. [Ulteriori informazioni qui](/admin/users/groups_and_permissions#config-alias-group).
+Groups also can use alias features, by default the group `admins` has aliases such as `root@<domain.tld>` and `webmaster@<domain.tld>`. [More info on the groups and permission page](/admin/users/groups_and_permissions).
 
 ## Cosa succede se il mio server è irraggiungibile?
 

@@ -1,5 +1,5 @@
 ---
-title: Snapshotting the entire filesystem
+title: 'Snapshotting the entire filesystem'
 ---
 
 import Tabs from '@theme/Tabs';
@@ -48,11 +48,11 @@ Infine cliccate su `Restore Snapshot`.
 </TabItem>
 <TabItem value="proxmox" label="Proxmox">
 
-- Selezionate la macchina virtuale
-- Andate al tab `Backup`
-- Cliccate su `Backup now`
-- Scegliete `Snapshot`
-- Confermate
+- Select the virtual machine
+- Go to the `Backup` tab
+- Click on `Backup now`.
+- Choose `Snapshot` mode
+- Validate
 
 </TabItem>
 <TabItem value="btrfs" label="BTRFS">
@@ -71,7 +71,7 @@ Elencare gli snapshots
 btrfs subvolume show /pool/volume
 ```
 
-Ripristinare uno snapshots
+Ripristinare uno snapshot
 
 ```bash
 btrfs sub del /pool/volume
@@ -98,13 +98,13 @@ Seguite [questo tutorial](https://www.linux.com/training-tutorials/how-create-an
 
 Nell'esempio seguente `pool/volume` è il volume che vogliamo salvare
 
-Creare uno snapshots
+Creare uno snapshot
 
 ```bash
 rbd snap create pool/volume@$(date +"%Y-%m-%d_%H:%M")
 ```
 
-Elencare gli snapshot
+Elencare gli snapshots
 
 ```bash
 rbd snap ls pool/volume
@@ -125,7 +125,7 @@ rbd snap rm pool/volume@2021-07-22_16:12
 </TabItem>
 <TabItem value="zfs" label="ZFS">
 
-Nell'esempio seguente `pool/volume` è il volume che vogliamo salvare.
+Nell'esempio seguente `pool/volume` è il volume che vogliamo salvare
 
 Creare uno snapshot
 
@@ -165,9 +165,9 @@ Questo metodo comporta lo spegnimento del server per il tempo necessario alla cr
 
 Questo può essere fatto con il programma [USBimager](https://bztsrc.gitlab.io/usbimager/) (N.B.: assicuratevi di scaricare la versione  'Read-write'! Non la versione 'Write-only'!). Il processo poi prosegue "all'opposto" della copia sulla scheda SD:
 
-- Spegnete il vostro server
-- Estraete la scheda SD e inseritela nel pc
-- Nel programma USBimage cliccate su "Read" per creare l'immagine ("photograph") della scheda SD. Il file ottenuto verrà utilizzato per il ripristino del sistema.
+- Turn off your server
+- Retrieve the SD card and plug it into your computer
+- In USBimager, click on "Read" to create an image ("photograph") of the SD card. You can use the resulting file to restore the whole system later.
 
 Maggiori informazioni [nella documentazione di USBimager](https://gitlab.com/bztsrc/usbimager/#creating-backup-image-file-from-device)
 

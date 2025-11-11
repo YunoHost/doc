@@ -1,5 +1,5 @@
 ---
-title: Sbannare un indirizzo IP
+title: 'Sbannare un indirizzo IP'
 ---
 
 **Fail2Ban** è un programma di prevenzione delle intrusioni che protegge i server contro gli attacchi di forza bruta (brute-force), controllando alcuni log e bannando (cioè impedendo ulteriori connessioni) gli indirizzi IP che mostrano questo tipo di comportamento.
@@ -38,19 +38,19 @@ Se vuoi impedire che un indirizzo IP "legittimo" venga bloccato da **YunoHost** 
 
 Aggiornando **Fail2Ban** il file `/etc/fail2ban/jail.conf` originale verrà sovrascritto quindi dovremo scrivere questi cambiamenti su un nuovo file che verrà mantenuto.
 
-1. Comincia creando un nuovo file di configurazione della jail che verrà chiamato `yunohost-whitelist.conf`:
+1. Start by creating the new jail configuration file which will be called `yunohost-whitelist.conf`:
 
 ```bash
 sudo touch /etc/fail2ban/jail.d/yunohost-whitelist.conf
 ```
 
-2. Modifica questo nuovo file con il tuo editor preferito (in questo esempio viene usato `nano`):
+2. Edit this new file with your favorite editor:
 
 ```bash
 sudo nano /etc/fail2ban/jail.d/yunohost-whitelist.conf
 ```
 
-3. Incolla il seguente testo nel file cambiando l'indirizzo IP `XXX.XXX.XXX.XXX`:
+3. Paste the following content into the file and adapt the IP address `XXX.XXX.XXX.XXX`:
 
 ```bash
 [DEFAULT]
@@ -58,7 +58,7 @@ sudo nano /etc/fail2ban/jail.d/yunohost-whitelist.conf
 ignoreip = 127.0.0.1/8 XXX.XXX.XXX.XXX #<= the IP address (you can put more than one, separated by a space) that you want to whitelist
 ```
 
-4. Salva il file e ricarica la configurazione di Fail2Ban:
+4. Save the file and reload the Fail2Ban configuration:
 
 ```bash
 sudo fail2ban-client reload

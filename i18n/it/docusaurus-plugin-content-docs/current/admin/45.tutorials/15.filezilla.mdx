@@ -1,6 +1,6 @@
 ---
-sidebar_label: Transfer files
-title: Scambiare i files con il proprio server tramite un'interfaccia grafica.
+sidebar_label: 'Transfer files'
+title: "Scambiare i files con il proprio server tramite un'interfaccia grafica."
 ---
 
 Questa parte spiega come scambiare dei files (backup, musica, foto, video...) con il proprio server, servendosi di un'interfaccia grafica. Utilizzeremo un metodo alternativo al tradizionale comando `scp` perché troppo tecnico e criptico, o alla installazione di un'applicazione come Nextcloud.
@@ -15,35 +15,35 @@ Installate e lanciate *FileZilla*
 
 ## Configurazione
 
-1. Cliccate sull'icona in alto a sinistra *Site Manager*.
+1. Click the *Site Manager* icon in the upper left to begin.
 
    ![Pagina principale di Filezilla](/img/softwares/filezilla_1.png)
 
-2. Cliccate su **New Site** e assegnate un nome al server che volete connettere: in questo esempio *Family*. Completate i parametri come nell'immagine (con i vostri dati) e cliccate su **Connect** (N.B. : se volete editare i file dell'applicazione [custom webapp](https://github.com/YunoHost-Apps/my_webapp_ynh), dovrete utilizzare un utente diverso da `admin`. Fate riferimento alla documentazione di custom webapp).
+2. Click **New Site** and give a name the server you will be using : *Family* here. Fill the settings as on the screenshot (replace the server address with your own and leave the port field empty unless you changed your SSH port number, in which case use this port number), and click on **Connect**. (N.B. : if you want to interact with the [custom webapp](https://github.com/YunoHost-Apps/my_webapp_ynh) files, you should use a different user than `admin`. Refer to the custom webapp documentation.)
 
    ![Schermata del site manager](/img/softwares/filezilla_2.png)
 
-3. Apparirà un avviso poiché vi state collegando per la prima volta al server. *Se è la prima connessione, potete ignorarlo*
+3. You will get a warning as you connect for the first time to the server. *You can ignore it safely the first time you get it.*
 
    ![Avviso per la fingerprint del server sconosciuta](/img/softwares/filezilla_3.png)
 
-4. Filezilla vi chiederà la password di `admin` del server.
+4. Filezilla is now asking the `admin` password to connect to your server.
 
    ![schermata per la richiesta della password](/img/softwares/filezilla_4.png)
 
-5. Una volta salvato nei segnalibri, il server verrà salvato e vedrete questa schermata.
+5. Once bookmarked, your server will be backup up and you will get this screen.
 
    ![Schermata del "site manager" con il server appena aggiunto](/img/softwares/filezilla_5.png)
 
 ## Utilizzo
 
-1. Collegatevi al server con le credenziali salvate in precedenza. *A volte viene richiesta la password*
+1. Connect to the Site created previously. *Your passwork might be asked again*
 
    La parte sinistra della finestra del programma si riferisce al vostro pc. La parte destra corrisponde al server YunoHost remoto. Potete navigare tra file e cartelle e effettuare drag-and-drop tra i due computer.
 
    ![vista della connessione al server remoto](/img/softwares/filezilla_6.png)
 
-2. Nel pannello di destra, raggiungete `/home/yunohost.backup/archives` dove si trovano gli [archivi di backup](/admin/backups/)
+2. In the right panel, you can browse to `/home/yunohost.backup/archives/` to find [backup archives](/admin/backups/).
 
    ![la directory dove si trovano i backup di YunoHost](/img/softwares/filezilla_7.png)
 
@@ -57,8 +57,8 @@ Installate e lanciate *FileZilla*
 
 Link a fonti esterne:
 
-- [Documentazione ufficiale](https://wiki.filezilla-project.org/FileZilla_Client_Tutorial_(en))
-- [Tutorial generale su FileZilla](https://www.rc.fas.harvard.edu/resources/documentation/sftp-file-transfer/)
+- [Official documentation](https://wiki.filezilla-project.org/FileZilla_Client_Tutorial_(en))
+- [General tutorial about using FileZilla](https://www.rc.fas.harvard.edu/resources/documentation/sftp-file-transfer/)
 
 ## Alternative a FileZilla
 
@@ -74,8 +74,8 @@ Nautilus di Gnome3 integra delle funzionalità simili a FileZilla:
 
 ### Windows
 
-- [WinSCP](https://winscp.net/) è un ottimo programma per Windows
+- [WinSCP](https://winscp.net/) is also a nice candidate for Windows
 
 ### MacOS
 
-- [Cyberduck](https://cyberduck.io/) un programma libero per macOS
+- [Cyberduck](https://cyberduck.io/) is a free software available on macOS

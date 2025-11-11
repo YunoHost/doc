@@ -1,5 +1,5 @@
 ---
-title: Configuración de la zona DNS
+title: 'Configuración de la zona DNS'
 ---
 
 DNS (sistema de nombre de dominios) es un elemento esencial de Internet que permite convertir direcciones comprensibles por seres humanos (los nombres de dominio) en direcciones comprensibles por la máquina (los IPs). Para que tu servidor esté fácilemente por otros seres humanos, y para que servicios como el mail funcionen correctamente, es preciso configurar la zona DNS de tu dominio.
@@ -12,8 +12,8 @@ Si utilizas un [dominio automático](/admin/tutorials/domains/dns_nohost_me) pro
 
 YunoHost provee una configuración DNS recomendada, accesible vía :
 
-- la webadmin, en Dominios > tu.dominio.tld > Configuración DNS ;
-- o la linea de comando, `yunohost domain dns suggest tu.dominio.tld`
+- the webadmin, in Domain > your.domain.tld > DNS configuration;
+- or the command line, `yunohost domain dns suggest your.domain.tld`
 
 Para algunas necesidades o instalaciones particulares, y si sabes lo que estás haciendo, a lo mejor tendrás que modificar esa recomendación o añadir otros registros (e.g. para administrar subdominios).
 
@@ -21,31 +21,31 @@ La configuración recomendada típicamente se parece a :
 
 ```bash
 #
-# Registros IPv4/IPv6 básicos
+# Basic ipv4/ipv6 records
 #
 @ 3600 IN A 111.222.33.44
 * 3600 IN A 111.222.33.44
 
-# (Si tu servidor es compatibles con el IPv6, habrá registros AAAA)
+# (If your server is IPv6 capable, there are some AAAA records)
 @ 3600 IN AAAA 2222:444:8888:3333:bbbb:5555:3333:1111
 * 3600 IN AAAA 2222:444:8888:3333:bbbb:5555:3333:1111
 
 #
 # XMPP
 #
-_xmpp-client._tcp 3600 IN SRV 0 5 5222 tu.dominio.tld.
-_xmpp-server._tcp 3600 IN SRV 0 5 5269 tu.dominio.tld.
+_xmpp-client._tcp 3600 IN SRV 0 5 5222 your.domain.tld.
+_xmpp-server._tcp 3600 IN SRV 0 5 5269 your.domain.tld.
 muc 3600 IN CNAME @
 pubsub 3600 IN CNAME @
 vjud 3600 IN CNAME @
 xmpp-upload 3600 IN CNAME @
 
 #
-# Mail (MX, SPF, DKIM et DMARC)
+# Mail (MX, SPF, DKIM and DMARC)
 #
-@ 3600 IN MX 10 votre.domaine.tld.
+@ 3600 IN MX 10 your.domain.tld.
 @ 3600 IN TXT "v=spf1 a mx -all"
-mail._domainkey 3600 IN TXT "v=DKIM1; k=rsa; p=uneGrannnnndeClef"
+mail._domainkey 3600 IN TXT "v=DKIM1; k=rsa; p=someHuuuuuuugeKey"
 _dmarc 3600 IN TXT "v=DMARC1; p=none"
 ```
 
@@ -70,12 +70,12 @@ Pero puede ser un poco más fácil entenderla viéndola de esta manera :
 
 ### Algunas notas a propósito de esta tabla
 
-- Todos los registros no son necesarios. Para una instalación mínima, solos los registros en negrita son necesarios.
-- El punto al final de `tu.dominio.tld.` es importante ;) ;
-- `@` corresponde a `tu.dominio.tld`, y por ejemplo `muc`corresponde a `muc.tu.dominio.tld` ;
-- ¡ Los valores mostrados son ejemplos ! Refiérete a la configuración generada por tu servidor qué valores utilizar.
-- Recomendamos un [TTL](https://en.wikipedia.org/wiki/Time_to_live) de 3600 (1 hora). Pero puedes utilizar otro valor si sabes lo que estás haciendo ;
-- ¡ No pongas registros IPv6 si no estás seguro que el IPv6 funcione en tu servidor ! Tendrás problemas con Let's Encrypt si no es el caso :-)
+- Not all these lines are absolutely necessary. For a minimal setup, you only need the records in bold.
+- The dot at the end of `your.domain.tld.` is important ;);
+- `@` corresponds to `your.domain.tld`, and e.g. `muc` corresponds to `muc.your.domain.tld`;
+- These are example values ! See your generated conf for the actual values you should use;
+- We recommend a [TTL](https://en.wikipedia.org/wiki/Time_to_live#DNS_records) of 3600 (1 hour). But you can use something else if you know what you're doing;
+- Don't put an IPv6 record if you're not sure IPv6 really works on your server! You might have issues with Let's Encrypt if it doesn't.
 - If you're using the domain provider Namecheap the SRV DNS entries are formatted as **Service**: `_xmpp-client` **Protocol**: `_tcp` **Priority**: `0` **Weight**: `5` **Port**: `5222` **Target**: `your.domain.tld`
 
 ### Reverse DNS

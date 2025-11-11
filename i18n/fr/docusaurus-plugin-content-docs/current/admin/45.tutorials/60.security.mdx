@@ -6,9 +6,9 @@ YunoHost a été développé dans l’optique de fournir une sécurité maximale
 
 Deux points sont néanmoins importants à noter :
 
-- L’installation d’applications supplémentaires **augmente le nombre de failles** potentielles. Il est donc conseillé de se renseigner sur chacune d’elle **avant l’installation**, d’en comprendre le fonctionnement et juger ainsi l’impact que provoquerait une potentielle attaque. N’installez **que** les applications qui semblent importantes pour votre usage.
+- L’installation d’applications supplémentaires **augmente le nombre de failles** potentielles. Il est donc conseillé de se renseigner sur chacune d’elle **avant l’installation**, d’en comprendre le fonctionnement et juger ainsi l’impact que provoquerait une potentielle attaque.
 
-- Le fait que YunoHost soit un logiciel répandu augmente les chances de subir une attaque. Si une faille est découverte, elle peut potentiellement **toucher toutes les instances YunoHost** à un temps donné. Nous nous efforçons de corriger ces failles le plus rapidement possible, pensez donc à **mettre à jour régulièrement** votre système.
+- The fact that YunoHost is a well-known and used piece of software increases the chances of an attack. If a flaw is discovered, it could potentially affect all YunoHost instances at once. Keep your system **up-to-date** to remain safe. Updates can be automated by installing the ["Unattended_upgrades" app](https://install-app.yunohost.org/?app=unattended_upgrades).
 
 :::tip
 Si vous avez besoin de conseil, n’hésitez pas à [nous demander](/community/help).
@@ -40,7 +40,7 @@ Par défaut, l’authentification SSH se fait avec le mot de passe d’administr
 
 ```bash
 ssh-keygen
-ssh-copy-id -i ~/.ssh/id_rsa.pub <nom_utilisateur@votre.domaine.tld>
+ssh-copy-id -i ~/.ssh/id_rsa.pub <username@your_yunohost_server>
 ```
 
 :::tip
@@ -70,7 +70,7 @@ Si vous modifiez quoi que ce soit dans le fichier `/etc/ssh/sshd_config`, même 
 :::
 
 ```bash
-sudo yunohost settings set security.ssh.ssh_port -v <votre_numero_de_port_ssh>
+sudo yunohost settings set security.ssh.ssh_port -v <new_ssh_port_number>
 ```
 
 **Lors de la prochaine connexion SSH**, vous devrez ajouter le paramètre `-p` suivi du port SSH.
@@ -78,7 +78,7 @@ sudo yunohost settings set security.ssh.ssh_port -v <votre_numero_de_port_ssh>
 **Exemple**:
 
 ```bash
-ssh -p <votre_numero_de_port_ssh> admin@<votre_serveur_yunohost>
+ssh -p <new_ssh_port_number> admin@<your_yunohost_server>
 ```
 
 ---
