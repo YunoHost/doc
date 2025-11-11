@@ -22,3 +22,5 @@ yarn-error.log*
 # Virtualenv for tools
 /.venv
 /venv
+
+.po4a

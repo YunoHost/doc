@@ -1,6 +1,7 @@
 import datetime
 import os
 import tempfile
+import subprocess
 import sys
 from pathlib import Path
 
@@ -64,13 +65,14 @@ if not Path("./.po4a").exists():
 assert Path("./.po4a/po4a").exists()
 cmd = "PERLLIB=./.po4a/lib/ ./.po4a/po4a"
 
+print("==========")
+print(conf)
+print("==========")
+
 for page in sorted(Path("./docs/admin").rglob("*.mdx")):
     page = str(page).split("/", 2)[-1]  # Remove the starting 'docs/admin'
     pot = page.replace("/", "__")[:-len(".mdx")]
     conf += f'\n[type: markdown] ./docs/admin/{page} $lang:i18n/$lang/docusaurus-plugin-content-docs/current/admin/{page} pot:{pot} opt:"--keep 10"'
-
-print(conf)
-print("==========")
 
 with tempfile.NamedTemporaryFile(prefix="po4a_", suffix=".cfg", dir=base_dir) as po4a_conf:
     po4a_conf.write(conf.encode())
@@ -90,6 +92,13 @@ if action == "regen_po":
     os.system(f"sed -i -e '/^# SOME DESCRIPTIVE TITLE$/d' -e '/^# FIRST AUTHOR /d' -e 's/^# Copyright (C) YEAR /# Copyright (C) {this_year} /g' ./i18n/docs/admin/*/*")
     # We dont want to translate code blocks, the vast majority is language agnostic
     os.system("sed -i '/^#. type: Fenced code block/,/^$/d' i18n/docs/admin/*/*.pot")
+
+    # Only add the files which are changes that are not just the timestamp...
+    files_to_git_add = subprocess.check_output("git --no-pager diff --ignore-matching-lines='^\"POT-Creation-Date:' | grep '^---\\s./.*.pot' | sed 's@^--- ./@@g'", shell=True).decode().replace("\n", " ")
+    os.system(f"git add {files_to_git_add}")
+    # and restore the other ones
+    os.system("git checkout -- i18n/docs/admin/")
+
 elif action == "build_translated_mdx":
     # List generated files
     os.system("find i18n/*/docusaurus-plugin-content-docs/current/admin/ -name '*.mdx'")
