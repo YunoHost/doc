@@ -1,0 +1,133 @@
+# Copyright (C) 2025 YunoHost Contributors
+# This file is distributed under the same license as the YunoHost documentation.
+#
+# Languages add-on <noreply-addon-languages@weblate.org>, 2025.
+msgid ""
+msgstr ""
+"Project-Id-Version: YunoHost documentation VERSION\n"
+"POT-Creation-Date: 2025-11-11 00:07+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. type: Yaml Front Matter Hash Value: title
+#: docs/admin/05.get_started/10.providers/15.vpn/index.mdx:1
+#, no-wrap
+msgid "VPN providers"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/10.providers/15.vpn/index.mdx:8
+#, no-wrap
+msgid "Since setting up a server at home is an uncommon practice, most Internet connections provided to individuals are unsuitable for this purpose especially if you desire to send mail. A net neutral VPN providing a dedicated fixed public IPv4 address and IPv6 addresses [can help to circumvent some limitations or difficulties](/admin/get_started/providers/vpn/vpn_advantage).\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/10.providers/15.vpn/index.mdx:12
+#, no-wrap
+msgid ""
+"! Note that except if you have a <a href=\"https://en.wikipedia.org/wiki/Threat_model\">threat model</a> that implies to really be \"hidden\", you do not need to hide your home IP address using a VPN. It is really not a huge deal to expose your IP address, do not trust the big commercial VPN companies who tries to sell you a product by inducing fear.\n"
+"! If you *do* have such a threat model, especially against state threats, most of the providers listed below will **not** be of any help to you, since they will have to comply with police and judicial demands.\n"
+"! However, a VPN can help you to bypass port-forwarding limitations, or to get a stable IP address (if you ISP only provide dynamic IP) and this page will help you for that!\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/10.providers/15.vpn/index.mdx:14
+#, no-wrap
+msgid "Below, you can find a list of providers compatible for self-hosting and especially those providing .cube format for VPNClient apps and those providing [internetcube](https://internetcu.be).\n"
+msgstr ""
+
+#. type: Fenced div block (info)
+#: docs/admin/05.get_started/10.providers/15.vpn/index.mdx:15
+#, no-wrap
+msgid ""
+"By **compatible for self-hosting** we means VPN offers with at least:\n"
+"- a fixed dedicated public IPv4\n"
+"- port forwarding or opened features\n"
+"- net neutrality: no traffic analysis, no user data resale, no alteration of traffic (without legal obligations)...\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/05.get_started/10.providers/15.vpn/index.mdx:22
+#, no-wrap
+msgid "English-speaking sites"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/10.providers/15.vpn/index.mdx:27
+#, no-wrap
+msgid ""
+"| VPN provider | [VPNClient](https://github.com/labriqueinternet/vpnclient_ynh) compatibility | IPv6 | rDNS IPv4 | rDNS IPv6 | Price | Membership | Net Neutrality |\n"
+"| ------------ | ---------------------------------------------------------------------------- | ---- | --------- | --------- | ----- | ---------- | -------------- |\n"
+"| [Neutrinet](https://neutrinet.be/en/vpn) | ✔ (.cube + [internetcube](https://internetcu.be)) | ✔   | ✔         | ✔         | ~10€¹/month or 30€/year | included | <HighlightFFDN/> <HighlightNonProfit/> |\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/10.providers/15.vpn/index.mdx:29
+#: docs/admin/05.get_started/10.providers/15.vpn/index.mdx:62
+#, no-wrap
+msgid "¹ [Pay what you want](https://en.wikipedia.org/wiki/Pay_what_you_want)\n"
+msgstr ""
+
+#. type: Fenced div block (info)
+#: docs/admin/05.get_started/10.providers/15.vpn/index.mdx:30
+#, no-wrap
+msgid ""
+"If you try an other VPN provider that include **public dedicated ipv4 and port forwarding**, feel free to contribute to this documentation. We need people to test specific offers of those commercial providers:\n"
+"\n"
+"- ✘ [VPN area](https://vpnarea.com/front/home/dedicated-ip) does not allow forwarding port 80. Running a webserver is against their TOS.\n"
+"- [Trust zone](https://trust.zone/fr/order?p=25)\n"
+"- [PureVPN](https://www.purevpn.fr/ip-vpn-dedie)\n"
+"- [RapidVPN](https://www.rapidvpn.com/vpn)\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/05.get_started/10.providers/15.vpn/index.mdx:39
+#, no-wrap
+msgid "French-speaking sites"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/10.providers/15.vpn/index.mdx:60
+#, no-wrap
+msgid ""
+"| VPN provider | [VPNClient](https://github.com/labriqueinternet/vpnclient_ynh) compatibility | IPv6 | rDNS IPv4 | rDNS IPv6 | Price | Membership | Net Neutrality |\n"
+"| ------------ | ---------------------------------------------------------------------------- | ---- | --------- | --------- | ----- | ---------- | -------------- |\n"
+"| [Aquilenet](https://www.aquilenet.fr/vpn/)                           | ✔ (.cube)            | ✔   | ✔  | ✔  | 3 à 5 / mois        | ~15€¹ /an      | <HighlightFFDN/> <HighlightNonProfit/> |\n"
+"| [Alsace Réseau Neutre](https://arn-fai.net/vpn)                      | ✔ (.cube + [internetcube](https://internetcu.be)) | ✔  | ✔  | ✔ | 4 € (ou [Ğ1](https://duniter.org/fr/monnaie-libre-g1/)) / mois | 15€ / an | <HighlightFFDN/> <HighlightNonProfit/> |\n"
+"| [Baionet](https://www.baionet.fr/nos-services/vpn/)                  | ✘ (wireguard)        | ?   | ?  | ?  | 2,5 € ou 5 € / mois | 5€ ou 40€ / an | <HighlightFFDN/> <HighlightNonProfit/> |\n"
+"| [FAImaison](https://www.faimaison.net/services/vpn.html)             | ✔ (.cube)            | ✘   | ✔  | ✘  | Prix libre          | 8 ou 16€ / an  | <HighlightFFDN/> <HighlightNonProfit/> |\n"
+"| [French Data Network](https://www.fdn.fr/services/vpn/)              | ✔ (.cube)            | ✔   | ✔  | ✔  | 6,5€ à 23€ / mois   | 15 ou 30€ / an | <HighlightFFDN/> <HighlightNonProfit/> |\n"
+"| [Franciliens](https://www.franciliens.net/acces-internet/vpn/)       | ✔ (.cube + [internetcube](https://internetcu.be)) | ✔  | ✔  | ✔ | 4€ à 23€ / mois | 15€ / an | <HighlightFFDN/> <HighlightNonProfit/> |\n"
+"| [Grifon](https://grifon.fr/services/vpn/)                            | ✔ (manuelle) + L2TP/IPSec | ✔   | ✔  | ✔  | 5€ / mois      | 15€ / an      | <HighlightFFDN/> <HighlightNonProfit/> |\n"
+"| [Igwan.net](https://igwan.net)                                       | ✘ (L2TP/IPSec)       | ?   | ?  | ?  | 4 ou 8€ / mois      | ? / an        | <HighlightFFDN/> <HighlightNonProfit/> |\n"
+"| [Illyse](https://www.illyse.net/acces-internet-par-vpn/)             | ✔ (manuelle)         | ✔   | ✔  | ✔  | 6 ou 8€ / mois      | 20€ / an      | <HighlightFFDN/> <HighlightNonProfit/> |\n"
+"| [ILOTH](https://iloth.net/vpn/)                                      | ✔ (.cube)            | ✘   | ✔  | ✘  | 80€ / an            | 5 à 100€ / an | <HighlightFFDN/> <HighlightNonProfit/> |\n"
+"| [Milkywan](https://milkywan.fr/prices#popupTunnel)                   | ✔ (manuelle)         | ✔   | ✔  | ✔  | 5 € / mois          | incluse       | |\n"
+"| [Mycélium](https://mycelium-fai.org/wiki/documentation/services/vpn) | ✔ (manuelle)         | ✘   | ✘  | ✘  | Prix libre | incluse<br/>Réservé aux nordistes(FR 59)       | <HighlightFFDN/> <HighlightNonProfit/> |\n"
+"| [Neutrinet](https://neutrinet.be/en/vpn)                             | ✔ (.cube + [internetcube](https://internetcu.be)) | ✔ | ✔ | ?   | ~8 €¹ / mois | incluse           | <HighlightFFDN/> <HighlightNonProfit/> |\n"
+"| [Rézine](https://www.rezine.org/acces_internet/tunnels_chiffr%C3%A9s/) | ✔ (manuelle)       | ✔   | ✔  | ✔  | 5 à 10€ / mois      | Prix libre                            | <HighlightFFDN/> <HighlightNonProfit/> |\n"
+"| [Swiss Neutral Network](https://www.swissneutral.net/?page_id=31)    | ✔ (.cube)            | ✔   | ✔  | ✔  | 30.- CHF/mois       | 50.- CHF / an<br/>Réservé aux suisses | <HighlightFFDN/> <HighlightNonProfit/> |\n"
+"| [Tetaneutral](https://tetaneutral.net/adherer/)                      | ✘ (wireguard)        | ?   | ?  | ?  | 5€¹ / mois          | 5 à 100€¹ / an                        | <HighlightFFDN/> <HighlightNonProfit/> |\n"
+"| [Touraine Data Network](https://tdn-fai.net/)                        | ✔ (.cube + [internetcube](https://internetcu.be))  | ✔ | ?      | ? | 5€ / mois | 10 à 20€ / an    | <HighlightFFDN/> <HighlightNonProfit/> |\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/05.get_started/10.providers/15.vpn/index.mdx:63
+#, no-wrap
+msgid "German-speaking sites"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/10.providers/15.vpn/index.mdx:67
+#, no-wrap
+msgid ""
+"| VPN provider | [VPNClient](https://github.com/labriqueinternet/vpnclient_ynh) compatibility | IPv6 | rDNS IPv4 | rDNS IPv6 | Price | Membership | Net Neutrality |\n"
+"| ------------ | ---------------------------------------------------------------------------- | ---- | --------- | --------- | ----- | ---------- | -------------- |\n"
+"| [In-Berlin](https://in-vpn.de/provider/vpn.html)    | ✔ (manuelle)                          | ✔    | ✔         | ✔         | 9 or 14€ / month | 20€ / an | <HighlightNonProfit/> |\n"
+msgstr ""
