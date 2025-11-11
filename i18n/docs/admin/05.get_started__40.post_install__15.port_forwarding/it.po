@@ -150,4 +150,3 @@ msgstr "Reindirizzamento automatico / UPnP"
 #, no-wrap
 msgid "A technology called UPnP is available on some internet boxes / routers and allows to automatically forward ports by the machine who needs them. If UPnP is enabled in your local network, then running this command should automatically open the port for you:\n"
 msgstr "Alcuni router dispongono permettono di attivare l'UPnP. L'UPnP si occupa di reindirizzare automaticamente le porte verso un computer che ne faccia richiesta. Se UPnP è attivo, eseguendo il comando:\n"
-
