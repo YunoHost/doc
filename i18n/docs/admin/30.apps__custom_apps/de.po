@@ -1,0 +1,95 @@
+# German translations for YunoHost documentation package
+# Copyright (C) 2025 YunoHost Contributors
+# This file is distributed under the same license as the YunoHost documentation package.
+# Automatically generated, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: YunoHost documentation VERSION\n"
+"POT-Creation-Date: 2025-11-11 19:34+0100\n"
+"PO-Revision-Date: 2025-11-11 19:34+0100\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. type: Yaml Front Matter Hash Value: title
+#: docs/admin/30.apps/custom_apps.mdx:1
+#, no-wrap
+msgid "Installing \"custom\" apps"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/30.apps/custom_apps.mdx:6
+#, no-wrap
+msgid "While YunoHost has many apps available in the catalog, you may want to install apps that are not available in the official catalog, or setup your very own website that you crafted using HTML / CSS / PHP ..\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/30.apps/custom_apps.mdx:7
+#, no-wrap
+msgid "Installing your very own webapp"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/30.apps/custom_apps.mdx:10
+#, no-wrap
+msgid "A special application exists called [My webapp](https://apps.yunohost.org/app/my_webapp).\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/30.apps/custom_apps.mdx:12
+#, no-wrap
+msgid "It can be seen as \"an empty shell\" in which you can drop your own HTML, CSS, JS, etc files through SFTP or other means. It also supports PHP, and an SQL database can be initialized.\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/30.apps/custom_apps.mdx:13
+#, no-wrap
+msgid "Adding a reverse proxy to an app that you manually installed, for example using Docker"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/30.apps/custom_apps.mdx:16
+#, no-wrap
+msgid "While YunoHost apps do not use Docker for reasons that are beyond the scope of this page, you can manually install Docker apps on your server (assuming you know what you do and won't tinker too much the base system ...). However, this is not limiter to Docker, you may have deployed \"manually\" an app using Python, Ruby or other language, and such app usually listen to a specific port.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/30.apps/custom_apps.mdx:18
+#, no-wrap
+msgid "Once your app or container is setup, you will probably need to actually *expose* the container on the web on a specific URL. This can be done using another special app called [Redirect](https://apps.yunohost.org/app/redirect).\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/30.apps/custom_apps.mdx:20
+#, no-wrap
+msgid "Make sure to chose the reverse proxy mode, and point it to something like `http://127.0.0.1:PORT` where `PORT` is the port of your custom app.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/30.apps/custom_apps.mdx:22
+#, no-wrap
+msgid "It will add the appropriate configuration bits in Nginx, SSOwat and a tile in the user portal.\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/30.apps/custom_apps.mdx:23
+#, no-wrap
+msgid "Adding a custom tile in the portal pointing to an external app"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/30.apps/custom_apps.mdx:26
+#, no-wrap
+msgid "The [Redirect app](https://apps.yunohost.org/app/redirect) can also be used add a \"shortcut\" tile in the user portal that points to an app or page located on a completly different server. Make sure to use the \"explicit redirect\" mode and the URL of the external page or app.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/30.apps/custom_apps.mdx:27
+#, no-wrap
+msgid "Generally, you should refrain from manually tinkering and installing apps, except if you are sure they will not interfere with your server. YunoHost proposes two generic apps to help you out:\n"
+msgstr ""
