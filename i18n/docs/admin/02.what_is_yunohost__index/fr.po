@@ -1,14 +1,15 @@
 # Copyright (C) 2025 YunoHost Contributors
 # This file is distributed under the same license as the YunoHost documentation.
 #
+# Weblate Admin <yunohost@translate.yunohost.org>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2025-11-11 01:24+0100\n"
-"PO-Revision-Date: 2025-11-10 01:02+0000\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: French <https://translate.yunohost.org/projects/doc-"
-"experimental/02what_is_yunohost__index/fr/>\n"
+"PO-Revision-Date: 2025-11-11 16:32+0000\n"
+"Last-Translator: Weblate Admin <yunohost@translate.yunohost.org>\n"
+"Language-Team: French <https://translate.yunohost.org/projects/yunohost-doc/"
+"02what_is_yunohost__index/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -61,6 +62,28 @@ msgid ""
 "- <SmallInline url='/img/icons/icon-lock.png' /> Manages **SSL certificates** <small>(based on Let's Encrypt)</small>;\n"
 "- <SmallInline url='/img/icons/icon-shield.png' />... and **security systems** <small>(`fail2ban`, `yunohost-firewall`)</small>.\n"
 msgstr ""
+"- <SmallInline url='/img/icons/logo-debian.png' alt=\"Debian logo\"/> basé "
+"sur Debian, pour une base de confiance et familière ;\n"
+"- <SmallInline url='/img/icons/icon-tools.png' /> administration via une **"
+"interface web simple et claire**, ou en ligne de commande ;\n"
+"- <SmallInline url='/img/icons/icon-package.png' /> déployez des **"
+"applications en quelques clics**, parmi [un catalogue de plus de 500 apps]"
+"(https://apps.yunohost.org) !\n"
+"- <SmallInline url='/img/icons/icon-users.png' /> ajoutez des "
+"**utilisateurs** <small>(based on LDAP)</small> ;\n"
+"- <SmallInline url='/img/icons/icon-globe.png' /> gérez des **noms de "
+"domaine** ;\n"
+"- <SmallInline url='/img/icons/icon-medic.png' /> créez et restaurez des "
+"**sauvegardes** ;\n"
+"- <SmallInline url='/img/icons/icon-door.png' /> connexion simultanée à "
+"toutes les apps via un **portail utilisateur** <small>(NGINX, SSOwat)</"
+"small> ;\n"
+"- <SmallInline url='/img/icons/icon-mail.png' /> fourni avec un **serveur "
+"mail complet** <small>(Postfix, Dovecot, Rspamd, DKIM)</small> ;\n"
+"- <SmallInline url='/img/icons/icon-lock.png' /> gère les **certificats SSL**"
+" <small>(basé sur Let's Encrypt)</small> ;\n"
+"- <SmallInline url='/img/icons/icon-shield.png' />... et des **systèmes de "
+"sécurité** <small>(`fail2ban`, `yunohost-firewall`)</small>.\n"
 
 #. type: Title ##
 #: docs/admin/02.what_is_yunohost/index.mdx:26
@@ -136,7 +159,16 @@ msgstr "YunoHost n'est *pas* conçu pour « passer à l'échelle » au sens trad
 #: docs/admin/02.what_is_yunohost/index.mdx:52
 #, no-wrap
 msgid "YunoHost is primarily designed for people who want things to \"just work\". Of course, it’s not perfect — we're constantly working to improve the user experience, robustness, and simplicity. Though YunoHost is \"tinkerable\", the first target public is *not* power users with complex or highly customized use cases in mind. We encourage you to keep your setup as simple as possible. That said, you are than welcome to experiment and share your feedback with us!\n"
-msgstr "YunoHost est avant tout conçu pour les personnes qui veulent que ça \"juste marche\". Évidemment, le projet n'est pas parfait - nous travaillons constamment à l'amélioration de l'expérience utilisateur⋅ice, à la robustesse et à la simplicité du système. Bien que YunoHost soit \"bidouillable\", la cible principale n'est pas les \"power users\" qui ont en tête des cas d'utilisation complexes ou hautement avancés. Nous vous encourageons à garder votre installation **aussi simple que possible**. Ceci étant dit, vous êtes les bienvenu⋅e⋅s à expérimenter et à nous faire part de vos retours !\n"
+msgstr ""
+"YunoHost est avant tout conçu pour les personnes qui veulent que ça "
+"\"juste marche\". Évidemment, le projet n'est pas parfait - nous travaillons "
+"constamment à l'amélioration de l'expérience utilisateur⋅ice, à la "
+"robustesse et à la simplicité du système. Bien que YunoHost soit "
+"\"bidouillable\", la cible principale n'est *pas* les \"power users\" qui "
+"ont en tête des cas d'utilisation complexes ou hautement avancés. Nous vous "
+"encourageons à garder votre installation aussi simple que possible. Ceci "
+"étant dit, vous êtes les bienvenu⋅e⋅s à expérimenter et à nous faire part de "
+"vos retours !\n"
 
 #. type: Plain text
 #: docs/admin/02.what_is_yunohost/index.mdx:54
