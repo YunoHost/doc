@@ -1,17 +1,21 @@
 # Copyright (C) 2025 YunoHost Contributors
 # This file is distributed under the same license as the YunoHost documentation.
 #
+# Weblate Admin <yunohost@translate.yunohost.org>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2025-11-11 00:07+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
-"Language: \n"
+"PO-Revision-Date: 2025-11-11 16:44+0000\n"
+"Last-Translator: Weblate Admin <yunohost@translate.yunohost.org>\n"
+"Language-Team: French <https://translate.yunohost.org/projects/yunohost-doc/"
+"05get_started__10providers__15vpn__vpn_advantage/fr/>\n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.14.2\n"
 
 #. type: Title ##
 #: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:1
@@ -101,6 +105,11 @@ msgid ""
 "- that this IPv4 is removable from all blacklists (notably the IP must not be on the DUL)\n"
 "- to be able to open port 25 (as well as the other SMTP ports)\n"
 msgstr ""
+"- configurer le reverse DNS de la connexion Internet (ou du VPN) du serveur\n"
+"- une IPv4 fixe\n"
+"- que cette IPv4 soit enlevable de toutes les listes noires "
+"(notamment l'IP ne doit pas être sur le DUL)\n"
+"- pouvoir ouvrir le port 25 (ainsi que les autres ports SMTP)\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:38

@@ -1,17 +1,21 @@
 # Copyright (C) 2025 YunoHost Contributors
 # This file is distributed under the same license as the YunoHost documentation.
 #
+# Weblate Admin <yunohost@translate.yunohost.org>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2025-11-11 00:07+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
-"Language: \n"
+"PO-Revision-Date: 2025-11-11 16:32+0000\n"
+"Last-Translator: Weblate Admin <yunohost@translate.yunohost.org>\n"
+"Language-Team: French <https://translate.yunohost.org/projects/yunohost-doc/"
+"05get_started__90guidelines/fr/>\n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.14.2\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/05.get_started/90.guidelines.mdx:1
@@ -53,6 +57,19 @@ msgid ""
 "- use non-official apps with caution, and do not use apps that are still 'in progress', 'not working' or level 0;\n"
 "- if something gets broken, think twice about fixing it by yourself if you don't know what you are doing. <small>(For instance, do not attempt to recreate yourself the admin user just because it mysteriously disappeared...)</small>\n"
 msgstr ""
+"- soyez conscient⋅e qu'un serveur est un système fragile : restez prudent⋅e, "
+"méthodique et patient⋅e ;\n"
+"- limitez les expérimentations et la personnalisation - notamment des "
+"fichiers de config ;\n"
+"- n'installez pas des douzaines d'applications juste pour voir de quoi elles "
+"ont l'air ;\n"
+"- utilisez les applications non-officielles avec prudence, et interdisez-"
+"vous d'utiliser celles marquées 'in progress', 'not working' ou qui sont en "
+"niveau 0 ;\n"
+"- si quelque chose casse, réfléchissez à deux fois avant de tenter de le "
+"réparer vous-même si vous ne savez pas ce que vous faites. <small>(Par "
+"exemple, n'essayez pas de recréer vous-même l'utilisateur admin juste parce "
+"qu'il a mystérieusement disparu...)</small>\n"
 
 #. type: Title ##
 #: docs/admin/05.get_started/90.guidelines.mdx:19
@@ -76,6 +93,15 @@ msgid ""
 "- do not try to use custom SSL certificates if you don't really need them;\n"
 "- ...\n"
 msgstr ""
+"- n'essayez pas d'exécuter YunoHost dans un contexte où vous ne pouvez pas "
+"avoir le contrôle des ports 80 et 443 (ou pas d'Internet du tout) ;\n"
+"- n'essayez pas d'héberger cinq serveurs derrière la même connexion Internet "
+"si vous n'êtes pas déjà un utilisateur avancé ;\n"
+"- ne vous tourmentez pas à vouloir remplacer NGINX par Apache "
+"(ou faire tourner les deux à la fois) ;\n"
+"- n'essayez pas d'utiliser des certificats SSL personnalisés si vous n'en "
+"avez pas vraiment besoin ;\n"
+"- ...\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/90.guidelines.mdx:30
@@ -111,7 +137,15 @@ msgstr "Faites des sauvegardes"
 #: docs/admin/05.get_started/90.guidelines.mdx:40
 #, no-wrap
 msgid "If you host services and data that are important for your users, it is important that you setup a backup policy. Backups can be easily created from the webadmin - you can download it from the webadmin or via your favorite FTP client, such as FileZilla or your own terminal. You should perform backup regularly and keep them in a safe and different physical location from your server. More info on [the backup documentation](/admin/backups).\n"
-msgstr "Si vous hébergez des services et des données qui sont importants pour vos utilisateurs, il est important que vous mettiez en place une politique de sauvegarde. Les sauvegardes peuvent être facilement créées à partir de la webadmin - et les archives peuvent être téléchargées depuis la webadmin, depuis un client FTP comme FileZilla, ou depuis un terminal avec `scp`. Vous devez effectuer régulièrement des sauvegardes et les conserver dans un endroit sûr et physiquement différent de votre serveur. Plus d'infos dans [la documentation des sauvegardes](/admin/backups).\n"
+msgstr ""
+"Si vous hébergez des services et des données qui sont importants pour vos "
+"utilisateurs, il est important que vous mettiez en place une politique de "
+"sauvegarde. Les sauvegardes peuvent être facilement créées à partir de la "
+"webadmin - et les archives peuvent être téléchargées depuis la webadmin, "
+"depuis un client FTP comme FileZilla, ou depuis un terminal. Vous devez "
+"effectuer régulièrement des sauvegardes et les conserver dans un endroit sûr "
+"et physiquement différent de votre serveur. Plus d'infos dans "
+"[la documentation des sauvegardes](/admin/backups).\n"
 
 #. type: Title ##
 #: docs/admin/05.get_started/90.guidelines.mdx:41
@@ -147,4 +181,8 @@ msgstr "Si vous aimez YunoHost et que vous voulez que le projet soit maintenu en
 #: docs/admin/05.get_started/90.guidelines.mdx:51
 #, no-wrap
 msgid "Last but not least, since YunoHost is a free software project, you are legitimate and welcomed to come and [contribute](/dev/) to the project, be it on the technical aspects (i.e. code) and less-technical aspects (such as contributing to this documentation! ;))\n"
-msgstr "Pour finir, puisque YunoHost est un projet de logiciel libre, vous êtes légitime et bienvenu pour [venir contribuer](/dev au projet, que ce soit sur les aspects techniques (c.-à-d. code) et moins techniques (comme par exemple contribuer à cette documentation ;)) !\n"
+msgstr ""
+"Pour finir, puisque YunoHost est un projet de logiciel libre, vous êtes "
+"légitime et bienvenu pour [venir contribuer](/dev) au projet, que ce soit "
+"sur les aspects techniques (c.-à-d. code) et moins techniques "
+"(comme par exemple contribuer à cette documentation ;)) !\n"
