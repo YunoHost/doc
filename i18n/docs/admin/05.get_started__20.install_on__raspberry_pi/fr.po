@@ -3,18 +3,21 @@
 # This file is distributed under the same license as the YunoHost documentation package.
 # Automatically generated, 2025.
 #
+# Weblate Admin <yunohost@translate.yunohost.org>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2025-11-11 19:34+0100\n"
-"PO-Revision-Date: 2025-11-11 19:34+0100\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2025-11-12 02:01+0000\n"
+"Last-Translator: Weblate Admin <yunohost@translate.yunohost.org>\n"
+"Language-Team: French <https://translate.yunohost.org/projects/yunohost-doc/"
+"05get_started__20install_on__raspberry_pi/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.14.2\n"
 
 #. type: Title ##
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:18
@@ -23,8 +26,7 @@ msgstr ""
 #: docs/admin/05.get_started/20.install_on/remote_server.mdx:14
 #: docs/admin/05.get_started/20.install_on/virtualbox.mdx:20
 #: docs/admin/05.get_started/20.install_on/wsl.mdx:21
-#, fuzzy, no-wrap
-#| msgid "<FAIcon icon=\"fa-list-alt\"/> Prerequisites"
+#, no-wrap
 msgid "<FAIcon icon=\"fa-list-alt\"/> Pre-requisites"
 msgstr "<FAIcon icon=\"fa-list-alt\"/> Pré-requis"
 
@@ -32,19 +34,17 @@ msgstr "<FAIcon icon=\"fa-list-alt\"/> Pré-requis"
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:49
 #: docs/admin/05.get_started/20.install_on/raspberry_pi.mdx:48
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:46
-#, fuzzy, no-wrap
-#| msgid "<TabItem value=\"sftp\" label=\"With a SFTP client\">\n"
+#, no-wrap
 msgid "<TabItem value=\"etcher\" label=\"With Etcher (recommended)\">\n"
-msgstr "<TabItem value=\"sftp\" label=\"Avec un client SFTP\">\n"
+msgstr "<TabItem value=\"etcher\" label=\"Avec Etcher (recommandé)\">\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:58
 #: docs/admin/05.get_started/20.install_on/raspberry_pi.mdx:57
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:55
-#, fuzzy, no-wrap
-#| msgid "<TabItem value=\"usbimage\" label=\"With USBimager\">\n"
+#, no-wrap
 msgid "<TabItem value=\"usbimager\" label=\"With USBimager\">\n"
-msgstr "<TabItem value=\"usbimage\" label=\"With USBimager\">\n"
+msgstr "<TabItem value=\"usbimager\" label=\"Avec USBimager\">\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:60
@@ -53,31 +53,31 @@ msgstr "<TabItem value=\"usbimage\" label=\"With USBimager\">\n"
 #, no-wrap
 msgid "Download [USBimager](https://bztsrc.gitlab.io/usbimager/) for your operating system and install it.\n"
 msgstr ""
+"Téléchargez [USBimager](https://bztsrc.gitlab.io/usbimager/) pour votre "
+"système d'exploitation et installez-le.\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:62
 #: docs/admin/05.get_started/20.install_on/raspberry_pi.mdx:61
 #, no-wrap
 msgid "Plug your SD card, select your image and click \"Write\"\n"
-msgstr ""
+msgstr "Insérez la carte SD, sélectionnez l'image puis cliquez sur \"Écrire\"\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:64
 #: docs/admin/05.get_started/20.install_on/raspberry_pi.mdx:63
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:61
-#, fuzzy, no-wrap
-#| msgid "   ![Site manager screen](/img/softwares/filezilla_2.png)\n"
+#, no-wrap
 msgid "![USBimager](/img/softwares/usbimager.png)\n"
-msgstr "   ![écran du gestionnaire de site](/img/softwares/filezilla_2.png)\n"
+msgstr "![USBimager](/img/softwares/usbimager.png)\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:67
 #: docs/admin/05.get_started/20.install_on/raspberry_pi.mdx:66
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:64
-#, fuzzy, no-wrap
-#| msgid "<TabItem value=\"dd\" label=\"In command line with dd\">\n"
+#, no-wrap
 msgid "<TabItem value=\"dd\" label=\"With dd\">\n"
-msgstr "<TabItem value=\"dd\" label=\"En ligne de commande avec dd\">\n"
+msgstr "<TabItem value=\"dd\" label=\"Avec dd\">\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:69
