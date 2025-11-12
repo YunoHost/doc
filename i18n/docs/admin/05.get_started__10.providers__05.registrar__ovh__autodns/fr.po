@@ -1,0 +1,73 @@
+# Copyright (C) 2025 YunoHost Contributors
+# This file is distributed under the same license as the YunoHost documentation.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: YunoHost documentation VERSION\n"
+"POT-Creation-Date: 2025-11-11 00:07+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Fenced div block (caution)
+#: docs/admin/05.get_started/10.providers/05.registrar/gandi.mdx:8
+#: docs/admin/05.get_started/10.providers/05.registrar/ovh/autodns.mdx:8
+#, no-wrap
+msgid "**DO NOT share your API tokens with anybody!** A malicious attacker obtaining your tokens could take over your domain, and possibly your server!\n"
+msgstr "**NE partagez vos cléfs API avec PERSONNE !** Un attaquant malveillant qui obtiendrait vos jetons pourrait prendre le contrôle de votre domaine, et éventuellement de votre serveur !\n"
+
+#. type: Yaml Front Matter Hash Value: sidebar_label
+#: docs/admin/05.get_started/10.providers/05.registrar/ovh/autodns.mdx:1
+#, no-wrap
+msgid "OVH DNS config via API"
+msgstr "Configuration DNS OVH via l’API"
+
+#. type: Yaml Front Matter Hash Value: title
+#: docs/admin/05.get_started/10.providers/05.registrar/ovh/autodns.mdx:1
+#, no-wrap
+msgid "Obtaining an API key from OVH"
+msgstr "Obtenir une clef API de OVH"
+
+#. type: Plain text
+#: docs/admin/05.get_started/10.providers/05.registrar/ovh/autodns.mdx:7
+#, no-wrap
+msgid "This page is meant to guide you in obtaining an API key from OVH in order to configure YunoHost's automatic DNS configuration mecanism\n"
+msgstr "Cette page a pour but de vous guider dans l'obtention d'une clé API auprès d'OVH afin de configurer le mécanisme de configuration automatique des DNS de YunoHost.\n"
+
+#. type: Plain text
+#: docs/admin/05.get_started/10.providers/05.registrar/ovh/autodns.mdx:13
+#, fuzzy, no-wrap
+msgid "1. Go to [the OVH token request page](https://eu.api.ovh.com/createToken/)\n"
+msgstr "1. Allez sur [la page de demande de jeton OVH](https://eu.api.ovh.com/createToken/)\n"
+
+#. type: Plain text
+#: docs/admin/05.get_started/10.providers/05.registrar/ovh/autodns.mdx:15
+#, fuzzy, no-wrap
+msgid "2. Fill the form with the required informations as shown below:\n"
+msgstr "2. Remplissez le formulaire avec les informations requises comme indiqué ci-dessous :\n"
+
+#. type: Plain text
+#: docs/admin/05.get_started/10.providers/05.registrar/ovh/autodns.mdx:26
+#, no-wrap
+msgid ""
+"    - Account ID or email address: This is your usual OVH login\n"
+"    - Password: This is your usual OVH password\n"
+"    - Script Name: for example `YunoHost Auto DNS`\n"
+"    - Script description: for example `YunoHost Auto DNS`\n"
+"    - Validity: `Unlimited`\n"
+"    - Rights: use the `+` button to add the following lines\n"
+"      - `GET` : `/domain/zone/*`\n"
+"      - `POST` : `/domain/zone/*`\n"
+"      - `PUT` : `/domain/zone/*`\n"
+"      - `DELETE` : `/domain/zone/*`\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/10.providers/05.registrar/ovh/autodns.mdx:29
+#, fuzzy, no-wrap
+msgid "3. You will obtain three tokens (an application key, a secret application key, and a consumer key) which should be used in YunoHost's configuration\n"
+msgstr "3. Vous obtiendrez trois jetons (une clé d'application, une clé d'application secrète et une clé de consommateur) qui doivent être utilisés dans la configuration de YunoHost.\n"

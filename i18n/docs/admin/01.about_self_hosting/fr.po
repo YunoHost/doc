@@ -1,0 +1,47 @@
+# Copyright (C) 2025 YunoHost Contributors
+# This file is distributed under the same license as the YunoHost documentation.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: YunoHost documentation VERSION\n"
+"POT-Creation-Date: 2025-11-09 20:53+0100\n"
+"PO-Revision-Date: 2025-11-09 23:48+0000\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: French <https://translate.yunohost.org/projects/doc-"
+"experimental/01about_self_hosting/fr/>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.14.2\n"
+
+#. type: Yaml Front Matter Hash Value: title
+#: docs/admin/01.about_self_hosting.mdx:1
+#, no-wrap
+msgid "About self-hosting"
+msgstr "À propos de l’auto-hébergement"
+
+#. type: Plain text
+#: docs/admin/01.about_self_hosting.mdx:6
+#, no-wrap
+msgid "Self-hosting means owning and administrating your own server, typically at home, to host your **personal data and services** yourself instead of relying exclusively on third parties. For instance, you can self-host your blog, such that it 'lives' on a machine that you have control of, instead of having it on somebody else's computer (a.k.a. FAANG or The Cloud) in exchange for money, advertisements, or private data.\n"
+msgstr "L'auto-hébergement est le fait d'avoir et d'administrer son propre serveur, typiquement chez soi, pour **héberger soi-même ses données personnelles et des services** plutôt que de se reposer exclusivement sur des tiers. Par exemple, il est possible d'auto-héberger son blog de sorte qu'il \"vive\" dans une machine que vous contrôlez, au lieu qu'il soit sur l'ordinateur de quelqu'un d'autre (a.k.a. le Cloud) en échange d'argent, de publicités ou de données privées.\n"
+
+#. type: Plain text
+#: docs/admin/01.about_self_hosting.mdx:8
+#, no-wrap
+msgid "Self-hosting implies owning a server. **A server is a computer that is typically accessible on the network 24/7**, and usually does not have a screen or keyboard (it is instead controlled remotely). Contrary to a popular belief, a server is not necessarily a huge and extra-powerful machine: nowadays, a small, ~$30 ARM board is adequate for self-hosting.\n"
+msgstr "L'auto-hébergement implique de disposer d'un serveur. **Un serveur est un ordinateur qui est destiné à être accessible sur le réseau en permanence**, et n'a généralement pas d'écran ni de clavier puisqu'il est administré à distance. Contrairement à une croyance répandue, les serveurs ne sont pas nécessairement des machines énormes et extrêmement puissantes : aujourd'hui, une petite carte ARM à ~30€ est adéquate pour de l'auto-hébergement.\n"
+
+#. type: Plain text
+#: docs/admin/01.about_self_hosting.mdx:10
+#, no-wrap
+msgid "![Internet topologies diagram](/img/internet_topologies.png)\n"
+msgstr "![Topologies d'Internet](/img/internet_topologies_fr.png)\n"
+
+#. type: Plain text
+#: docs/admin/01.about_self_hosting.mdx:11
+#, no-wrap
+msgid "Self-hosting is not about making \"your Internet\" more secure and does not provide anonymity by itself. Instead, it is about being autonomous and in control of your services and data — which also means being responsible for them.\n"
+msgstr "Pratiquer l'auto-hébergement ne rend pas \"votre internet\" plus sécurisé et ne fournit pas d'anonymat en tant que tel. L'objectif est généralement de pouvoir être autonome et au contrôle de ses services et de ses données - ce qui implique aussi d'en être responsable.\n"

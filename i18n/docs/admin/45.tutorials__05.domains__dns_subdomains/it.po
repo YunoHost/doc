@@ -1,0 +1,127 @@
+# Italian translations for YunoHost documentation package
+# Copyright (C) 2025 YunoHost Contributors
+# This file is distributed under the same license as the YunoHost documentation package.
+# Automatically generated, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: YunoHost documentation VERSION\n"
+"POT-Creation-Date: 2025-11-11 19:34+0100\n"
+"PO-Revision-Date: 2025-11-11 19:34+0100\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. type: Title ###
+#: docs/admin/45.tutorials/05.domains/dns_nohost_me.mdx:19
+#: docs/admin/45.tutorials/05.domains/dns_subdomains.mdx:5
+#, no-wrap
+msgid "Subdomains"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: title
+#: docs/admin/45.tutorials/05.domains/dns_subdomains.mdx:1
+#, no-wrap
+msgid "DNS and subdomains for the applications"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/05.domains/dns_subdomains.mdx:8
+#, no-wrap
+msgid "YunoHost allows the use of subdomains. If one owns a domain name `mydomain.com`, one first needs to create the subdomains in the DNS configuration (with one's registrar like Gandi).\n"
+msgstr ""
+
+#. type: Title ###
+#: docs/admin/45.tutorials/05.domains/dns_subdomains.mdx:9
+#, fuzzy, no-wrap
+#| msgid "DNS Configuration with OVH"
+msgid "Configuration example with Gandi"
+msgstr "Configurazioen del DNS con OVH"
+
+#. type: Plain text
+#: docs/admin/45.tutorials/05.domains/dns_subdomains.mdx:12
+#, no-wrap
+msgid "The DNS configuration needs an A record with an IPv4 address, an AAAA record with an IPv6 address, and various CNAME records, one for each desired subdomain.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/05.domains/dns_subdomains.mdx:14
+#, fuzzy, no-wrap
+#| msgid "DNS configuration"
+msgid "If your DNS configuration looks like:\n"
+msgstr "Configurazione DNS"
+
+#. type: Fenced code block (text)
+#: docs/admin/45.tutorials/05.domains/dns_subdomains.mdx:15
+#, no-wrap
+msgid ""
+"@         A            XYZ.XYZ.XYZ.XYZ\n"
+"@         AAAA         1234:1234:1234:FFAA:FFAA:FFAA:FFAA:AAFF\n"
+"*         CNAME        mydomain.com.\n"
+"agenda    CNAME        mydomain.com.\n"
+"blog      CNAME        mydomain.com.\n"
+"rss       CNAME        mydomain.com.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/05.domains/dns_subdomains.mdx:25
+#, no-wrap
+msgid "then you can access `agenda.mydomain.com`, `blog.mydomain.com` and `rss.mydomain.com` subdomains.\n"
+msgstr ""
+
+#. type: Title ###
+#: docs/admin/45.tutorials/05.domains/dns_subdomains.mdx:26
+#, no-wrap
+msgid "Install an application on a subdomain"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/05.domains/dns_subdomains.mdx:29
+#, no-wrap
+msgid "To install an application on a subdomain in YunoHost, for example `blog.mydomain.com`, the configuration is done in the administration panel. One first add the subdomain to the available domains list. The creation of a subdomain in YunoHost will create the corresponding configuration files for NGINX (the web server used in YunoHost).\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/05.domains/dns_subdomains.mdx:31
+#, no-wrap
+msgid "Then, in the applications>install panel, one follows the classic installation process by choosing the desired subdomain as domain (for example `blog.mydomain.com`). One needs to choose the path `/` (in place of `/wordpress` for example). A warning message will appear telling that it won't be possible to install other application to this subdomain. After validation, the installation starts.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/05.domains/dns_subdomains.mdx:33
+#, no-wrap
+msgid "The application is then available at `blog.mydomain.com` (and not `mydomain.com/wordpress`).\n"
+msgstr ""
+
+#. type: Title ###
+#: docs/admin/45.tutorials/05.domains/dns_subdomains.mdx:34
+#, no-wrap
+msgid "Moving an application to a subdomain"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/05.domains/dns_subdomains.mdx:40
+#, no-wrap
+msgid ""
+"What happens if the application is already installed? For example, one wants to move `mydomain.com/wordpress` to `blog.mydomain.com`.\n"
+"It depends on the application.\n"
+"Some applications allow the change of domain. In that case, one can proceed to the change through the administration panel: Applications > the_app_name > change URL.\n"
+"If the application doesn't allow URL change, then there is no easy way to do it. The best solution is to reinstall the application.\n"
+msgstr ""
+
+#. type: Title ###
+#: docs/admin/45.tutorials/05.domains/dns_subdomains.mdx:41
+#, fuzzy, no-wrap
+#| msgid "Installing an app"
+msgid "Reinstalling an application"
+msgstr "Installare un'applicazione"
+
+#. type: Plain text
+#: docs/admin/45.tutorials/05.domains/dns_subdomains.mdx:43
+#, no-wrap
+msgid "First, save the application data through the backup process. Then uninstall the application with the administration panel. Then reinstall the application to the desired domain. Finally, restore the backup.\n"
+msgstr ""

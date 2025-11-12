@@ -1,0 +1,138 @@
+# Copyright (C) 2025 YunoHost Contributors
+# This file is distributed under the same license as the YunoHost documentation.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: YunoHost documentation VERSION\n"
+"POT-Creation-Date: 2025-11-11 00:07+0100\n"
+"PO-Revision-Date: 2025-11-10 15:50+0000\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: French <https://translate.yunohost.org/projects/doc-"
+"experimental/20users__index/fr/>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.14.2\n"
+
+#. type: Yaml Front Matter Hash Value: title
+#: docs/admin/20.users/index.mdx:1
+#, no-wrap
+msgid "👥 Accounts and portal"
+msgstr "👥 Comptes et portail"
+
+#. type: Title ##
+#: docs/admin/20.users/index.mdx:5
+#, no-wrap
+msgid "Users"
+msgstr "Comptes"
+
+#. type: Plain text
+#: docs/admin/20.users/index.mdx:8
+#, no-wrap
+msgid "Users are human being who have access to applications and other services on your server. The administrator can add and manage users through the web administration (in the User category) or through the command line (see `yunohost user --help`). After that, users obtain a personal email address (chosen by the admin), and can log in the user portal to access applications they have permissions over and configure other parameters.\n"
+msgstr "Les comptes permettent aux utilisateurices sont les êtres humains qui ont accès aux applications et autres services sur votre serveur. L'administrateur peut ajouter et gérer des comptes via l'administration web (dans la catégorie Utilisateurs) ou via la catégorie `yunohost user` de la ligne de commande. Après cela, les utilisateurs obtiennent une adresse e-mail personnelle (choisie par l'administrateur), et peuvent se connecter au portail utilisateur (SSO) pour accéder aux applications pour lesquelles ils ont des permissions et configurer d'autres paramètres.\n"
+
+#. type: Plain text
+#: docs/admin/20.users/index.mdx:10
+#, no-wrap
+msgid "The first user created also automatically gets email aliases `root@main.domain.tld` and `admin@main.domain.tld`, such that mail sent to these addresses will end up in the first user's mailbox.\n"
+msgstr "Le premier utilisateur créé reçoit aussi automatiquement les alias email `root@main.domain.tld` et `admin@main.domain.tld`, de sorte que le courrier envoyé à ces adresses se retrouvera dans la boîte aux lettres de cet utilisateur.\n"
+
+#. type: Fenced div block (caution)
+#: docs/admin/20.users/index.mdx:11
+#, no-wrap
+msgid "You should be careful about who you give your server access to. In terms of security, this largely increase the attack surface for someone who wants to mess with the server one way or another.\n"
+msgstr "Vous devriez faire attention à qui vous donnez l'accès à votre serveur. En termes de sécurité, cela augmente considérablement la surface d'attaque pour quelqu'un qui veut perturber le serveur d'une manière ou d'une autre.\n"
+
+#. type: Title ##
+#: docs/admin/20.users/index.mdx:15
+#, no-wrap
+msgid "The user portal, or SSO"
+msgstr "Le portail utilisateur, ou SSO"
+
+#. type: Plain text
+#: docs/admin/20.users/index.mdx:19
+#, no-wrap
+msgid ""
+"![User panel screenshot](/img/user_panel.jpg)\n"
+"The user portal, also called the SSO for 'Single Sign On' allows user to browse easily between the different apps they have access to. In particular, the term 'Single Sign On' comes from the fact that user only need to log in the portal to automatically be logged to all apps that require authentication (or at least those who are integrated with the SSO/LDAP, since this is sometimes technically complicated or not possible at all).\n"
+msgstr ""
+"![Capture d'écran du portail utilisateur](/img/user_panel.jpg)\n"
+"Le portail utilisateur, également appelé SSO pour 'Single Sign On', permet aux utilisateur⋅ice⋅s de naviguer facilement entre les différentes applications auxquelles ils ont accès. En particulier, le terme 'Single Sign On' vient du fait qu'il n'est nécessaire de se connecter au portail qu'une seule fois pour être automatiquement connecté à toutes les applications qui nécessitent une authentification (ou du moins celles qui sont intégrées avec le SSO/LDAP, car cela est parfois techniquement compliqué ou pas possible du tout).\n"
+
+#. type: Plain text
+#: docs/admin/20.users/index.mdx:21
+#, no-wrap
+msgid "In the portal, users can also click on the avatar in the top-left to configure some other settings such as their identify, mail aliases, automatic mail forwards, or change their password.\n"
+msgstr "Dans le portail, les utilisateurs peuvent également cliquer sur l'avatar en haut à gauche pour configurer d'autres paramètres tels que leur identité, les alias de messagerie, les transferts automatiques de courrier ou leur mot de passe.\n"
+
+#. type: Fenced div block (info)
+#: docs/admin/20.users/index.mdx:22
+#, no-wrap
+msgid "You should be aware that the SSO can only be reached through the actual domain name (i.e. `https://the.domain.tld/yunohost/sso`), and NOT by just using the IP of the server (i.e. `https://11.22.33.44/yunohost/sso`), contrarily to the webadmin ! This is a bit confusing but is necessary for technical reason. If you are in a situation where you need to access the SSO without having your DNS properly configured for some reason, you might consider tweaking your `/etc/hosts` as described in [this page](/admin/tutorials/domains/dns_local_network).\n"
+msgstr "Vous devez être conscient que le SSO ne peut être atteint que par le nom de domaine (c.-à-d. `https://the.domain.tld/yunohost/sso`), et non pas en utilisant l'IP du serveur (c.-à-d. `https://11.22.33.44/yunohost/sso`), contrairement à la webadmin ! C'est un peu déroutant dans certaines situations, mais c'est nécessaire pour des raisons techniques. Si vous êtes dans une situation où vous avez besoin d'accéder au SSO sans avoir votre DNS correctement configuré pour une raison quelconque, vous pouvez envisager de modifier votre `/etc/hosts` comme décrit dans [cette page](/admin/tutorials/domains/dns_local_network).\n"
+
+#. type: Title ##
+#: docs/admin/20.users/index.mdx:26
+#, no-wrap
+msgid "Creating new users"
+msgstr "Créer de nouveau comptes utilisateurs"
+
+#. type: Plain text
+#: docs/admin/20.users/index.mdx:29
+#, no-wrap
+msgid "Only the administrator can create new users. From the webadmin, open the `Users` menu and click on the `+ New user` main button. Fill in all the whole form.\n"
+msgstr "Uniquement les membres du groupe admin peuvent créer de nouveaux comptes. Depuis la webadmin, dans la section \"Comptes\", cliquer sur \"+ Nouveau compte\" puis remplir le formulaire.\n"
+
+#. type: Plain text
+#: docs/admin/20.users/index.mdx:31
+#, no-wrap
+msgid "Users are created with an associated email address with the format `username@domain.tld`. Additional email aliases and email forwards can later be added by the admin and the user.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/20.users/index.mdx:33
+#, no-wrap
+msgid "The password should be at least 8 characters - though it is good practice to use longer password (i.e. a passphrase) and/or to use various kind of characters (uppercase, lowercase, digits and special characters).\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/20.users/index.mdx:35
+#, no-wrap
+msgid "Finalize the user creation by clicking on the `Save` button.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/20.users/index.mdx:39
+#, no-wrap
+msgid ""
+"<Figure caption=\"From the main menu of the webadmin, open `Users`\" src=\"/img/webadmin/create_user_1.png\"/>\n"
+"<Figure caption=\"From the top of the users list, click on `+ New user`\" src=\"/img/webadmin/create_user_2.png\"/>\n"
+"<Figure caption=\"Fill in the form\" src=\"/img/webadmin/create_user_3.png\"/>\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/20.users/index.mdx:40
+#, no-wrap
+msgid "User groups and permissions"
+msgstr "Groupes de comptes et permissions"
+
+#. type: Plain text
+#: docs/admin/20.users/index.mdx:43
+#, no-wrap
+msgid "See [this dedicated page](/admin/users/groups_and_permissions).\n"
+msgstr "Voir [la page dédiée](/admin/users/groups_and_permissions).\n"
+
+#. type: Title ##
+#: docs/admin/20.users/index.mdx:44
+#, no-wrap
+msgid "SSH access"
+msgstr "Accès SSH"
+
+#. type: Plain text
+#: docs/admin/20.users/index.mdx:46
+#, no-wrap
+msgid "See [this dedicated page](/admin/command_line).\n"
+msgstr "Voir [cette page de documentation dédiée](/admin/command_line).\n"

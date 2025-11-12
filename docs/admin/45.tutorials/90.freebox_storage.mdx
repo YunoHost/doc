@@ -1,0 +1,51 @@
+---
+title: Use Freebox's storage (French ISP)
+---
+
+This page is only relevant if you're using french ISP's « [Free](https://free.fr) »
+
+<hr/>
+
+Certaines Freebox [sont munies d'un disque dur connecté au réseau (NAS)](https://www.actusfree.fr/nas-freebox/) qui peut être utilisé comme espace de stockage depuis votre serveur.
+
+## Utiliser le NAS de la Freebox
+
+Il faut installer le paquet `cifs-utils`
+
+```bash
+sudo apt install cifs-utils
+```
+
+Il faut créer un point de montage (ici `/mount/freebox`)
+
+```bash
+mkdir -p /mount/freebox
+```
+
+On monte le répertoire NAS par défaut avec les droits de lecture / écriture pour tous
+
+```bash
+sudo mount -t cifs //mafreebox.freebox.fr/Disque\ dur/ /mount/freebox -o guest,iocharset=utf8,file_mode=0777,dir_mode=0777
+```
+
+### Automatiser le montage
+
+Une ligne à ajouter à la fin du `/etc/fstab` :
+
+```text
+//mafreebox.freebox.fr/Disque\040dur/ /mount/freebox cifs _netdev,guest,uid=monlogin,gid=users,iocharset=utf8 0 0
+```
+
+Le `_netdev` signale que c'est un périphérique réseau, afin que le système ne le monte que s'il a accès au réseau.
+`guest` est le mode d'identification à la Freebox : pour une connexion authentifiée, placez vos identifiants dans un fichier sous la forme
+
+```text
+username=your_user
+password=your_pass
+domain=FREEBOX
+```
+
+et remplacez `guest` par `credentials=/path/to/file` (c'est aussi possible de spécifier directement `username=xx,password=xx` dans le fstab, mais déconseillé pour des raisons de sécurité)
+`uid` et `gid` sont pour les id user et group auxquels appartiendra le répertoire une fois monté. Par défault (sur la Freebox V5 en tout cas), ils se retrouvent avec les uid/gid de 4242.
+Il est aussi possible de mettre des droits particuliers avec les paramètres `file_mode=0777,dir_mode=0777`.
+

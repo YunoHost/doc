@@ -1,0 +1,172 @@
+# Copyright (C) 2025 YunoHost Contributors
+# This file is distributed under the same license as the YunoHost documentation.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: YunoHost documentation VERSION\n"
+"POT-Creation-Date: 2025-11-11 00:07+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Title ##
+#: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:1
+#: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:12
+#, no-wrap
+msgid "Advantages"
+msgstr "Vorteile"
+
+#. type: Yaml Front Matter Hash Value: title
+#: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:1
+#, no-wrap
+msgid "Advantage of a VPN for self-hosting"
+msgstr "Vorteil eines VPN für Selbst-Hosting"
+
+#. type: Plain text
+#: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:7
+#, no-wrap
+msgid "Since setting up a server at home is an uncommon practice, most Internet connections provided to individuals are unsuitable for this purpose. A net neutral VPN providing a static IPv4 address and IPv6 addresses can help to circumvent some limitations or difficulties.\n"
+msgstr "Es ist unüblich, zu Hause einen Server einzurichten, und die meisten Internetanschlüsse, die Privatpersonen zur Verfügung stehen, sind für diesen Zweck ungeeignet. Ein netzneutrales VPN, das eine feste IPv4-Adresse und IPv6-Adressen bereitstellt, kann helfen, einige der Einschränkungen oder Schwierigkeiten zu überwinden.\n"
+
+#. type: Fenced div block (caution)
+#: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:8
+#, no-wrap
+msgid "Not all existing [VPN providers](/admin/get_started/providers/vpn/) meet these conditions, make sure the one you choose meets them.\n"
+msgstr ""
+
+#. type: Title ###
+#: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:14
+#, no-wrap
+msgid "Plug & Play"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:17
+#, no-wrap
+msgid "By setting up a VPN on your server, you'll be able to make it accessible to the rest of the Internet without having to change the configuration of the router you connect it to. This can be really handy if you are going on vacation, moving or have an Internet disconnection, as you will be able to easily connect it to someone you trust without having to configure the router of the person who is helping you.\n"
+msgstr "Indem Sie ein VPN auf Ihrem Server einrichten, können Sie ihn für den Rest des Internets zugänglich machen, ohne die Konfiguration des Routers, an den Sie ihn anschließen, ändern zu müssen. Dies kann sehr praktisch sein, wenn Sie in den Urlaub fahren, umziehen oder einen Internetausfall haben, da Sie das Gerät einfach an eine Person Ihres Vertrauens anschließen können, ohne den Router der Person konfigurieren zu müssen, die Ihnen hilft.\n"
+
+#. type: Plain text
+#: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:19
+#, no-wrap
+msgid "In the same way, you save yourself the trouble of opening your router's ports and bypassing hairpinning.\n"
+msgstr "Außerdem ersparen Sie sich die Mühe, die Ports Ihres Routers zu öffnen und das Hairpinning zu umgehen.\n"
+
+#. type: Title ###
+#: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:20
+#, no-wrap
+msgid "No micro DNS outages"
+msgstr "Keine Mikro-DNS-Ausfälle"
+
+#. type: Plain text
+#: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:23
+#, no-wrap
+msgid "If your Internet connection does not have a fixed public IP, you will be forced to set up a dynamic domain name (Dynamic DNS). This solution may be acceptable, but the DNS will only be updated at regular intervals (every two minutes if it is a `noho.st` or `nohost.me` domain name). So there is a chance that this will cause some display errors in the browser from time to time, or even that another site will be displayed (the risks are however reduced because the practice of self-hosting is not widespread).\n"
+msgstr "Wenn Ihr Internetanschluss keine feste öffentliche IP hat, müssen Sie einen dynamischen Domänennamen (Dynamic DNS) einrichten. Diese Lösung mag akzeptabel sein, aber das DNS wird nur in regelmäßigen Abständen aktualisiert (alle zwei Minuten, wenn es sich um einen `noho.st` oder `nohost.me` Domänennamen handelt). Es besteht also die Möglichkeit, dass dies gelegentlich zu Darstellungsfehlern im Browser führt oder dass sogar eine andere Website angezeigt wird (die Risiken sind jedoch geringer, da die Praxis des Self-Hosting nicht weit verbreitet ist).\n"
+
+#. type: Plain text
+#: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:25
+#, no-wrap
+msgid "With a neutral VPN, this problem is circumvented because the VPN can be compared to a Virtual Internet connection, which has its own fixed IPv4 address, so no need to update the domain name.\n"
+msgstr "Mit einem neutralen VPN wird dieses Problem umgangen, da das VPN mit einer virtuellen Internetverbindung verglichen werden kann, die eine eigene feste IPv4-Adresse hat, so dass der Domänenname nicht aktualisiert werden muss. \n"
+
+#. type: Title ###
+#: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:26
+#, no-wrap
+msgid "The case of email"
+msgstr "Der Fall der E-Mail"
+
+#. type: Plain text
+#: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:29
+#, no-wrap
+msgid "Email is one of the most complex protocols to self-host, usually it is what a user self-hosts last. Indeed, it is very easy to find yourself in a situation where emails sent by the server are refused by the recipient SMTP servers.\n"
+msgstr "E-Mail ist eines der komplexesten Protokolle, die man selbst hosten kann, und in der Regel ist es das, was ein Benutzer zuletzt selbst hostet. In der Tat kann es leicht passieren, dass vom Server gesendete E-Mails von den SMTP-Servern der Empfänger abgelehnt werden.\n"
+
+#. type: Plain text
+#: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:31
+#, no-wrap
+msgid "To avoid this you need to:\n"
+msgstr "Um dies zu vermeiden, müssen Sie u. a. :\n"
+
+#. type: Plain text
+#: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:36
+#, no-wrap
+msgid ""
+"- configure the reverse DNS of the server's Internet connection (or VPN)\n"
+"- a fixed IPv4\n"
+"- that this IPv4 is removable from all blacklists (notably the IP must not be on the DUL)\n"
+"- to be able to open port 25 (as well as the other SMTP ports)\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:38
+#, no-wrap
+msgid "Unfortunately, none of the most common French ISPs respect all these points.\n"
+msgstr "Leider beachtet keiner der gängigsten französischen Internetanbieter alle diese Punkte.\n"
+
+#. type: Plain text
+#: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:40
+#, no-wrap
+msgid "To overcome this, the use of a VPN respecting these points can be an alternative.\n"
+msgstr "Um dies zu vermeiden, kann die Verwendung eines VPN, das diese Punkte berücksichtigt, eine Alternative darstellen.\n"
+
+#. type: Title ###
+#: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:41
+#, no-wrap
+msgid "Trust"
+msgstr "Vertrauen"
+
+#. type: Plain text
+#: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:44
+#, no-wrap
+msgid "Finally, if you do not want the content of your server's communications to be spied on by equipment present on your ISP's network, you can use a VPN to encrypt your communications and deport your trust to a VPN provider. Remember, since 2015, the government officially deploys black boxes at the large network operators whose objective is to tap all French digital communications to preserve the scientific, economic and industrial interests of France.\n"
+msgstr "Wenn Sie nicht möchten, dass der Inhalt der Kommunikation Ihres Servers von Geräten im Netz Ihres Internetanbieters ausspioniert wird, können Sie ein VPN verwenden, um Ihre Kommunikation zu verschlüsseln und Ihr Vertrauen in einen VPN-Anbieter zu setzen. Zur Erinnerung: Seit 2015 hat die Regierung offiziell Blackboxes bei großen Netzbetreibern installiert, um die gesamte digitale Kommunikation in Frankreich abzuhören und so die wissenschaftlichen, wirtschaftlichen und industriellen Interessen Frankreichs zu schützen.\n"
+
+#. type: Title ##
+#: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:45
+#, no-wrap
+msgid "Disadvantages"
+msgstr "Benachteiligung"
+
+#. type: Title ###
+#: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:47
+#, no-wrap
+msgid "Cost"
+msgstr "Kosten"
+
+#. type: Plain text
+#: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:50
+#, no-wrap
+msgid "A neutral VPN has a cost since the operator who provides it must run a server and use bandwidth. The prices of the FFDN's associative VPNs are around 6 € per month.\n"
+msgstr "Ein neutrales VPN ist mit Kosten verbunden, da der Betreiber, der es bereitstellt, einen Server betreiben und Bandbreite nutzen muss. Die Preise für die assoziativen VPNs des FFDN liegen bei etwa 6 € pro Monat.\n"
+
+#. type: Title ###
+#: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:51
+#, no-wrap
+msgid "Packet path"
+msgstr "Packet Routing"
+
+#. type: Plain text
+#: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:54
+#, no-wrap
+msgid "When you set up a VPN on your server, if you don't set up any particular configuration, the transfer of a file from a computer on the local network to the server using the VPN, will go through the end of the VPN i.e. through the server of the VPN provider.\n"
+msgstr "Wenn Sie ein VPN auf Ihrem Server einrichten, wird die Übertragung einer Datei von einem Computer im lokalen Netzwerk zum Server, der das VPN nutzt, über das Ende des VPN, d.h. über den Server des VPN-Anbieters, laufen, wenn Sie keine besondere Konfiguration einrichten.\n"
+
+#. type: Plain text
+#: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:56
+#, no-wrap
+msgid "To solve this problem, there are two solutions:\n"
+msgstr "Um dies zu vermeiden, gibt es zwei Lösungen :\n"
+
+#. type: Plain text
+#: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:58
+#, fuzzy, no-wrap
+#| msgid "use the YunoHost server as a DNS resolver when you are at home, in order to redirect the server's domain names to the local IP rather than the public IP. This operation can be done either on each equipment or on the router (if the latter allows it).\n"
+msgid ""
+"- transform the server into a router and connect the home equipments to it, these equipments will then benefit from the VPN confidentiality too.\n"
+"- use the YunoHost server as a DNS resolver when you are at home, in order to redirect the server's domain names to the local IP rather than the public IP. This operation can be done either on each equipment or on the router (if the latter allows it).\n"
+msgstr "Verwenden Sie den YunoHost-Server als DNS-Resolver, wenn Sie zu Hause sind, um die Domänennamen des Servers auf die lokale IP und nicht auf die öffentliche IP umzuleiten. Dies kann entweder auf jedem Gerät oder auf dem Router erfolgen (sofern letzterer dies zulässt).\n"

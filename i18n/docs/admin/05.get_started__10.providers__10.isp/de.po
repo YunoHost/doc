@@ -1,0 +1,403 @@
+# German translations for YunoHost documentation package
+# Copyright (C) 2025 YunoHost Contributors
+# This file is distributed under the same license as the YunoHost documentation package.
+# Automatically generated, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: YunoHost documentation VERSION\n"
+"POT-Creation-Date: 2025-11-11 19:34+0100\n"
+"PO-Revision-Date: 2025-11-11 19:34+0100\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. type: Yaml Front Matter Hash Value: title
+#: docs/admin/05.get_started/10.providers/10.isp.mdx:1
+#, no-wrap
+msgid "Internet service providers"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/10.providers/10.isp.mdx:18
+#, no-wrap
+msgid ""
+"<Tabs\n"
+"defaultValue=\"europe\"\n"
+"values={[\n"
+"{label: 'Africa', value: 'africa'},\n"
+"{label: 'Asia', value: 'asia'},\n"
+"{label: 'Europe', value: 'europe'},\n"
+"{label: 'North America', value: 'northamerica'},\n"
+"{label: 'South America', value: 'southamerica'},\n"
+"{label: 'Oceania', value: 'oceania'},\n"
+"]}>\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/10.providers/10.isp.mdx:20
+#, fuzzy, no-wrap
+#| msgid "<TabItem value=\"dekko\" label=\"Dekko\">\n"
+msgid "<TabItem value=\"africa\">\n"
+msgstr "<TabItem value=\"dekko\" label=\"Dekko\">\n"
+
+#. type: Plain text
+#: docs/admin/05.get_started/10.providers/10.isp.mdx:23
+#, fuzzy, no-wrap
+#| msgid "<TabItem value=\"dekko\" label=\"Dekko\">\n"
+msgid "<TabItem value=\"ivory\" label=\"Côte d'Ivoire\" default>\n"
+msgstr "<TabItem value=\"dekko\" label=\"Dekko\">\n"
+
+#. type: Plain text
+#: docs/admin/05.get_started/10.providers/10.isp.mdx:29
+#, no-wrap
+msgid ""
+"| Fournisseur d’accès | Box/ routeur | uPnP activable | [Port 25 ouvrable](/admin/email)| [Hairpinning](http://fr.wikipedia.org/wiki/Hairpinning) | [Reverse DNS](https://en.wikipedia.org/wiki/Reverse_DNS_lookup) | IP fixe |\n"
+"| :---: | :---: | :---: | :---: | :---: | :---: | :---: |\n"
+"| **Orange** | Livebox2 | oui (activé) | non | **non** | **non** | **non** |\n"
+"| **Moov** |  | oui (activé) |  |  |  |  |\n"
+"| **MTN** |  | oui (activé) |  |  |  | |\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/10.providers/10.isp.mdx:35
+#, fuzzy, no-wrap
+#| msgid "<TabItem value=\"dekko\" label=\"Dekko\">\n"
+msgid "<TabItem value=\"asia\">\n"
+msgstr "<TabItem value=\"dekko\" label=\"Dekko\">\n"
+
+#. type: Plain text
+#: docs/admin/05.get_started/10.providers/10.isp.mdx:37
+#, fuzzy, no-wrap
+#| msgid "<TabItem value=\"dekko\" label=\"Dekko\">\n"
+msgid "<TabItem value=\"southko\" label=\"South Korea\" default>\n"
+msgstr "<TabItem value=\"dekko\" label=\"Dekko\">\n"
+
+#. type: Plain text
+#: docs/admin/05.get_started/10.providers/10.isp.mdx:43
+#, no-wrap
+msgid ""
+"| Service provider | Box (modem/router) | uPnP available | Port 25 openable | [Hairpinning](http://en.wikipedia.org/wiki/Hairpinning) | Customizable reverse DNS | Fix IP |\n"
+"| --- | --- | --- | --- | --- | --- | --- |\n"
+"| LG U+ (HelloVision) | Multiple | Yes | Yes (Without ISP Router) | No | - | Partial |\n"
+"| KT(SkyLife, Qook&Show) | Multiple | Yes | Yes | No | - | Partial |\n"
+"| SKT (SK Broadband) | Multiple | Yes | Yes | No | - | Partial |\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/10.providers/10.isp.mdx:46
+#, fuzzy, no-wrap
+#| msgid "<TabItem value=\"dekko\" label=\"Dekko\">\n"
+msgid "<TabItem value=\"twn\" label=\"Taïwan\">\n"
+msgstr "<TabItem value=\"dekko\" label=\"Dekko\">\n"
+
+#. type: Plain text
+#: docs/admin/05.get_started/10.providers/10.isp.mdx:50
+#, no-wrap
+msgid ""
+"| Service provider | Box (modem/router) | uPnP available | Port 25 openable | [Hairpinning](http://en.wikipedia.org/wiki/Hairpinning) | Customizable reverse DNS | Fix IP |\n"
+"| --- | --- | --- | --- | --- | --- | --- |\n"
+"| CHT (Chunghwa Telecom) | Multiple | Yes | Yes | Yes (Need hidden settings) | No | Partial |\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/10.providers/10.isp.mdx:56
+#, fuzzy, no-wrap
+#| msgid "<TabItem value=\"dekko\" label=\"Dekko\">\n"
+msgid "<TabItem value=\"europe\">\n"
+msgstr "<TabItem value=\"dekko\" label=\"Dekko\">\n"
+
+#. type: Plain text
+#: docs/admin/05.get_started/10.providers/10.isp.mdx:58
+#, fuzzy, no-wrap
+#| msgid "<TabItem value=\"dekko\" label=\"Dekko\">\n"
+msgid "<TabItem value=\"belnl\" label=\"Belgium (nl)\">\n"
+msgstr "<TabItem value=\"dekko\" label=\"Dekko\">\n"
+
+#. type: Plain text
+#: docs/admin/05.get_started/10.providers/10.isp.mdx:64
+#, no-wrap
+msgid ""
+"| Service provider | Box/ router | uPnP beschikbaar | [Poort 25 openen mogelijk](/admin/email)| [Hairpinning](http://fr.wikipedia.org/wiki/Hairpinning) | [Reverse DNS](https://en.wikipedia.org/wiki/Reverse_DNS_lookup) | vaste IP |\n"
+"| :---: | :---: | :---: | :---: | :---: | :---: | :---: |\n"
+"| **Proximus** | BBox2 | ja (geactiveerd) | ja | **nee** | **nee** | **nee** |\n"
+"| | BBox3 | ja (geactiveerd) | ja | **nee** | **nee** | **nee** |\n"
+"| **Scarlet** | BBox2 | ja (geactiveerd) | ja | **nee** | **nee** | **nee** |\n"
+msgstr ""
+
+#. type: Fenced div block (caution)
+#: docs/admin/05.get_started/10.providers/10.isp.mdx:65
+#, no-wrap
+msgid "**Proximus** zou niet openstaan voor self-hosting. Het openen van de poorten zou moeilijker zijn om SPAM te voorkomen. Het loont de moeite om een vpn te gebruiken.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/10.providers/10.isp.mdx:71
+#, fuzzy, no-wrap
+#| msgid "<TabItem value=\"dekko\" label=\"Dekko\">\n"
+msgid "<TabItem value=\"belfr\" label=\"Belgium (fr)\">\n"
+msgstr "<TabItem value=\"dekko\" label=\"Dekko\">\n"
+
+#. type: Plain text
+#: docs/admin/05.get_started/10.providers/10.isp.mdx:77
+#, no-wrap
+msgid ""
+"| Fournisseur d’accès | Box/ routeur | uPnP activable | [Port 25 ouvrable](/admin/email)| [Hairpinning](http://fr.wikipedia.org/wiki/Hairpinning) | [Reverse DNS](https://en.wikipedia.org/wiki/Reverse_DNS_lookup) | IP fixe |\n"
+"| :---: | :---: | :---: | :---: | :---: | :---: | :---: |\n"
+"| **Proximus** | BBox2 | oui (activé) | oui | **non** | **non** | **non** |\n"
+"| | BBox3 | oui (activé) | oui | **non** | **non** | **non** |\n"
+"| **Scarlet** | BBox2 | oui (activé) | oui | **non** | **non** | **non** |\n"
+msgstr ""
+
+#. type: Fenced div block (caution)
+#: docs/admin/05.get_started/10.providers/10.isp.mdx:78
+#, no-wrap
+msgid "**Proximus** ne serait pas ouvert à l’auto-hébergement. L’ouverture des ports serait plus difficile afin d’éviter tout SPAM. Il serait préférable de passer par [Neutrinet](http://neutrinet.be), un des [membres de la Fédération French Data Network](http://www.ffdn.org/fr/membres).\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/10.providers/10.isp.mdx:84
+#, fuzzy, no-wrap
+#| msgid "<TabItem value=\"dekko\" label=\"Dekko\">\n"
+msgid "<TabItem value=\"fin\" label=\"Finland\">\n"
+msgstr "<TabItem value=\"dekko\" label=\"Dekko\">\n"
+
+#. type: Plain text
+#: docs/admin/05.get_started/10.providers/10.isp.mdx:90
+#, no-wrap
+msgid ""
+"| Service provider | Box (modem/router) | uPnP available | Port 25 openable | [Hairpinning](http://en.wikipedia.org/wiki/Hairpinning) | Customizable reverse DNS | Fix IP |\n"
+"| ----- | --- | --- | --- | --- | --- | --- |\n"
+"| DNA   | Multiple | Yes | No | Yes | No | No. Only for business. |\n"
+"| Elisa | Multiple | Yes | No | Yes | Not available for consumers | No. Only for Business. |\n"
+"| Telia | Multiple | Yes | No | Yes | Not available for consumers | No. Only for Business. |\n"
+msgstr ""
+
+#. type: Fenced div block (caution)
+#: docs/admin/05.get_started/10.providers/10.isp.mdx:91
+#, no-wrap
+msgid "Regulations in Finland prohibit the use of Port 25 for consumers.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/10.providers/10.isp.mdx:97
+#, fuzzy, no-wrap
+#| msgid "<TabItem value=\"dekko\" label=\"Dekko\">\n"
+msgid "<TabItem value=\"fra\" label=\"France\" default>\n"
+msgstr "<TabItem value=\"dekko\" label=\"Dekko\">\n"
+
+#. type: Fenced div block (tip)
+#: docs/admin/05.get_started/10.providers/10.isp.mdx:98
+#, no-wrap
+msgid "Tous les fournisseurs d’accès à Internet [membres de la Fédération French Data Network](http://www.ffdn.org/fr/membres) ont une politique favorable à l’auto-hébergement.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/10.providers/10.isp.mdx:110
+#, no-wrap
+msgid ""
+"| Fournisseur d’accès   | Box/routeur          | [UPnP](https://fr.wikipedia.org/wiki/Universal_Plug_and_Play) | [Port 25 ouvrable](/admin/email) | [Hairpinning](http://fr.wikipedia.org/wiki/Hairpinning) | [Reverse DNS](https://en.wikipedia.org/wiki/Reverse_DNS_lookup) personnalisable | [IP fixe](/admin/tutorials/domains/dns_dynamicip)                                       | [Non listé sur le DUL](https://en.wikipedia.org/wiki/Dialup_Users_List) |\n"
+"|-----------------------|--------------------------|-------------------------------------------------------------------|--------------------------------------------------------|-------------------------------------------------------------|------------------------------------------------------------------------------------------|---------------------------------------------------------------------|-----------------------------------------------------------------------------|\n"
+"| OVH                   | Personnel<br/>ou Box OVH | ✔                                                                 | ✔                                   | ✔                                                           | ✔                                                                                        | ✔                                                                   | …                                                                           |\n"
+"| [Free](./free)        | Freebox                  | ✔                                                                 | ✔                                   | ✔                                                           | ✔ (sauf IPv6, pas de support, et buggué sur certaines plages d'adresses ipv4)            | ✔                                                                   | ✘                                                                           |\n"
+"| [SFR](./sfr)          | Neufbox                  | ✔                                                                 | ✔                                   | ✔/✘                                                         | …                                                                                        | ✔/✘                                                                 | …                                                                           |\n"
+"| [Orange](./orange)    | Livebox                  | ✔                                                                 | ✘                                   | ✔ (depuis la Livebox 4)                                     | ✘ (XXX.pro.dns-orange.fr disponible sur les abonnements orange pro)                      | ✘ (en option depuis la Livebox 3 et sur les abonnements orange pro) | …                                                                           |\n"
+"| Bouygues<br/>Télécom  | Bbox                     | ✔                                                                 | ✔                                   | ✔                                                           | ✘                                                                                        | …                                              | …                                                                           |\n"
+"| Darty                 | Dartybox                 | ✔                                                                 | ✔                                   | ✔                                                           | ✘                                                                                        | …                                              | …                                                                           |\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/10.providers/10.isp.mdx:114
+#, no-wrap
+msgid "Pour une liste plus complète et précise, référez-vous à la très bonne documentation de [wiki.auto-hebergement.fr](http://wiki.auto-hebergement.fr/fournisseurs/fai#d%C3%A9tail_des_fai).\n"
+msgstr ""
+
+#. type: Fenced div block (tip)
+#: docs/admin/05.get_started/10.providers/10.isp.mdx:115
+#, no-wrap
+msgid "[FDN](http://www.fdn.fr) fournit des [VPN](http://www.fdn.fr/-VPN-.html) permettant de rapatrier une (ou plusieurs sur demande) IPv4 fixe et un /48 en IPv6 et ainsi « nettoyer » votre connexion si vous êtes chez l’un des FAI *limitants* du tableau ci-dessus.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/10.providers/10.isp.mdx:121
+#, fuzzy, no-wrap
+#| msgid "<TabItem value=\"dekko\" label=\"Dekko\">\n"
+msgid "<TabItem value=\"hun\" label=\"Hungary\">\n"
+msgstr "<TabItem value=\"dekko\" label=\"Dekko\">\n"
+
+#. type: Plain text
+#: docs/admin/05.get_started/10.providers/10.isp.mdx:126
+#, no-wrap
+msgid ""
+"| Service provider | Box (modem/router) | uPnP available | Port 25 openable | [Hairpinning](http://en.wikipedia.org/wiki/Hairpinning) | Customizable reverse DNS | Fix IP |\n"
+"| --- | --- | --- | --- | --- | --- | --- |\n"
+"| DIGI Távközlési és Szolgáltató Kft. | Yes | Yes | No. Business only. | No | No. Business only | No. Business only |\n"
+"| Telekom Magyarország | Yes | Yes | No | No | No | No |\n"
+msgstr ""
+
+#. type: Fenced div block (tip)
+#: docs/admin/05.get_started/10.providers/10.isp.mdx:127
+#, no-wrap
+msgid "DIGI allows non-business users to subscribe to their business plan, for roughly the same price as the regular plan. Fix IP is an additional subscription for business plan users.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/10.providers/10.isp.mdx:133
+#, fuzzy, no-wrap
+#| msgid "<TabItem value=\"dekko\" label=\"Dekko\">\n"
+msgid "<TabItem value=\"irl\" label=\"Ireland\">\n"
+msgstr "<TabItem value=\"dekko\" label=\"Dekko\">\n"
+
+#. type: Plain text
+#: docs/admin/05.get_started/10.providers/10.isp.mdx:137
+#, no-wrap
+msgid ""
+"| Service provider | Box (modem/router) | uPnP available | Port 25 openable | [Hairpinning](http://en.wikipedia.org/wiki/Hairpinning) | Customizable reverse DNS | Fix IP |\n"
+"| --- | --- | --- | --- | --- | --- | --- |\n"
+"| Whizzy Internet | Multiple | Yes | Yes| Yes | Yes | Yes |\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/10.providers/10.isp.mdx:140
+#, fuzzy, no-wrap
+#| msgid "<TabItem value=\"dekko\" label=\"Dekko\">\n"
+msgid "<TabItem value=\"swe\" label=\"Sweden\">\n"
+msgstr "<TabItem value=\"dekko\" label=\"Dekko\">\n"
+
+#. type: Plain text
+#: docs/admin/05.get_started/10.providers/10.isp.mdx:146
+#, no-wrap
+msgid ""
+"| Service provider | Box (modem/router) | uPnP available | Port 25 openable | [Hairpinning](http://en.wikipedia.org/wiki/Hairpinning) | Customizable reverse DNS | Fix IP |\n"
+"| --- | --- | --- | --- | --- | --- | --- |\n"
+"| Telia | Multiple | Yes | No. Business only. | Yes | No. Business only. | No. Business only. |\n"
+"| Bredbandsbolaget | Multiple | Yes | No. Business only. | Yes | No. Business only. | No. Business only. |\n"
+"| Ownit | Multiple | Yes | Yes | N/A? | ? | Yes |\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/10.providers/10.isp.mdx:148
+#, no-wrap
+msgid "Ownit reserves port 3 and 4 of their router to TV. With a simple call to their hotline, explaining that you want to selfhost, they can reassign one of the ports to be in bridge mode. It means that your server will have its own public fixed IP address, in addition to the modem's.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/10.providers/10.isp.mdx:151
+#, fuzzy, no-wrap
+#| msgid "<TabItem value=\"dekko\" label=\"Dekko\">\n"
+msgid "<TabItem value=\"che\" label=\"Switzerland\">\n"
+msgstr "<TabItem value=\"dekko\" label=\"Dekko\">\n"
+
+#. type: Plain text
+#: docs/admin/05.get_started/10.providers/10.isp.mdx:153
+#, no-wrap
+msgid "Most of non business IP provided by ISP are blacklisted.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/10.providers/10.isp.mdx:159
+#, no-wrap
+msgid ""
+"| Service provider | Box (modem/router) | uPnP available | Port 25 openable | [Hairpinning](http://en.wikipedia.org/wiki/Hairpinning) | Customizable reverse DNS | Fix IP |\n"
+"| --- | --- | --- | --- | --- | --- | --- |\n"
+"| Sunrise | Multiple | No | Yes | No | - | - |\n"
+"| Swisscom | Multiple | No | Yes | No | No | No |\n"
+"| VTX | Multiple | No | Yes | No | - | - |\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/10.providers/10.isp.mdx:162
+#, fuzzy, no-wrap
+#| msgid "<TabItem value=\"dekko\" label=\"Dekko\">\n"
+msgid "<TabItem value=\"gbr\" label=\"UK\">\n"
+msgstr "<TabItem value=\"dekko\" label=\"Dekko\">\n"
+
+#. type: Plain text
+#: docs/admin/05.get_started/10.providers/10.isp.mdx:169
+#, no-wrap
+msgid ""
+"| Service provider | Box (modem/router) | uPnP available | Port 25 openable | [Hairpinning](http://en.wikipedia.org/wiki/Hairpinning) | Customizable reverse DNS | Fix IP |\n"
+"| --- | --- | --- | --- | --- | --- | --- |\n"
+"| BT Internet | Yes | - | Yes| - | - | No |\n"
+"| Virgin Media | Yes | - | - | - | No | No |\n"
+"| ZEN Internet | Yes | - | Yes | - | Yes | Yes |\n"
+"| PlusNet | Yes | Yes | Yes | No | Yes, if you raise a ticket | Small one off Charge |\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/10.providers/10.isp.mdx:175
+#, fuzzy, no-wrap
+#| msgid "<TabItem value=\"dekko\" label=\"Dekko\">\n"
+msgid "<TabItem value=\"northamerica\">\n"
+msgstr "<TabItem value=\"dekko\" label=\"Dekko\">\n"
+
+#. type: Plain text
+#: docs/admin/05.get_started/10.providers/10.isp.mdx:177
+#, fuzzy, no-wrap
+#| msgid "<TabItem value=\"dekko\" label=\"Dekko\">\n"
+msgid "<TabItem value=\"canada\" label=\"Canada\">\n"
+msgstr "<TabItem value=\"dekko\" label=\"Dekko\">\n"
+
+#. type: Plain text
+#: docs/admin/05.get_started/10.providers/10.isp.mdx:182
+#, no-wrap
+msgid ""
+"| Service provider | Box (modem/router) | uPnP available | Port 25 openable | [Hairpinning](http://en.wikipedia.org/wiki/Hairpinning) | Customizable reverse DNS | Fix IP |\n"
+"| --- | --- | --- | --- | --- | --- | --- |\n"
+"| Telus | Multiple | - | No. Extra charge | - | - | No. Extra charge |\n"
+"| TekSavvy | Multiple | - | Yes | No | - | No. Extra charge |\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/10.providers/10.isp.mdx:185
+#, fuzzy, no-wrap
+#| msgid "<TabItem value=\"dekko\" label=\"Dekko\">\n"
+msgid "<TabItem value=\"usa\" label=\"USA\" default>\n"
+msgstr "<TabItem value=\"dekko\" label=\"Dekko\">\n"
+
+#. type: Plain text
+#: docs/admin/05.get_started/10.providers/10.isp.mdx:193
+#, no-wrap
+msgid ""
+"| Service provider | Box (modem/router) | uPnP available | Port 25 openable | [Hairpinning](http://en.wikipedia.org/wiki/Hairpinning) | Customizable reverse DNS | Fix IP |\n"
+"| --- | --- | --- | --- | --- | --- | --- |\n"
+"| Cox | Multiple | Yes | No. Only for business class customer. | No | No | Yes, as a business class customer |\n"
+"| Charter | Multiple | Yes | No. Only for business class customer. | No | No | Yes, as a business class customer |\n"
+"| DSLExtreme | Multiple | Yes | Yes | No | No | Yes, extra charge. |\n"
+"| AT&T| Multiple | Yes | No. Only for business class customer. | unknown. | unknown. | unknown. |\n"
+"| Xfinity (Comcast)| Multiple | Yes | No. Only for business class customer. | unknown. | unknown. |  Yes, as a business class customer|\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/10.providers/10.isp.mdx:199
+#, fuzzy, no-wrap
+#| msgid "<TabItem value=\"dekko\" label=\"Dekko\">\n"
+msgid "<TabItem value=\"southamerica\">\n"
+msgstr "<TabItem value=\"dekko\" label=\"Dekko\">\n"
+
+#. type: Plain text
+#: docs/admin/05.get_started/10.providers/10.isp.mdx:201
+#, fuzzy, no-wrap
+#| msgid "<TabItem value=\"thunderbird\" label=\"Mozilla Thunderbird\">\n"
+msgid "<TabItem value=\"brazil\" label=\"Brazil\" default>\n"
+msgstr "<TabItem value=\"thunderbird\" label=\"Mozilla Thunderbird\">\n"
+
+#. type: Plain text
+#: docs/admin/05.get_started/10.providers/10.isp.mdx:205
+#, no-wrap
+msgid ""
+"| Service provider | Box (modem/router) | uPnP available | Port 25 openable | [Hairpinning](http://en.wikipedia.org/wiki/Hairpinning) | Customizable reverse DNS | Fix IP |\n"
+"| --- | --- | --- | --- | --- | --- | --- |\n"
+"| Global Village Telecom | Multiple | Yes | No. Only for Fix IP| No | No | Yes, extra charge. |\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/10.providers/10.isp.mdx:211
+#, fuzzy, no-wrap
+#| msgid "<TabItem value=\"dekko\" label=\"Dekko\">\n"
+msgid "<TabItem value=\"oceania\">\n"
+msgstr "<TabItem value=\"dekko\" label=\"Dekko\">\n"

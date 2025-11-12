@@ -1,0 +1,279 @@
+# Copyright (C) 2025 YunoHost Contributors
+# This file is distributed under the same license as the YunoHost documentation.
+#
+# Languages add-on <noreply-addon-languages@weblate.org>, 2025.
+msgid ""
+msgstr ""
+"Project-Id-Version: YunoHost documentation VERSION\n"
+"POT-Creation-Date: 2025-11-11 01:24+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+
+#. type: Yaml Front Matter Hash Value: title
+#: docs/admin/40.backups/15.clone_filesystem.mdx:1
+#, no-wrap
+msgid "Snapshotting the entire filesystem"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/15.clone_filesystem.mdx:9
+#, no-wrap
+msgid "YunoHost's backup tool only backs up useful files and relies on restore scripts to reinstall the dependencies of your applications. In other words, YunoHost's mechanism amounts to reinstalling and then reincorporating the data.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/15.clone_filesystem.mdx:11
+#, no-wrap
+msgid "Making full system images can be a complementary or alternative way to backup your machine. The advantage is that your system can be restored to the exact state it was in at the time of the backup.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/15.clone_filesystem.mdx:13
+#, no-wrap
+msgid "Depending on your type of installation, you can either create a snapshot or clone the storage medium by removing it from your server (turned off).\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/40.backups/15.clone_filesystem.mdx:14
+#, no-wrap
+msgid "Creating a snapshot"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/15.clone_filesystem.mdx:17
+#, no-wrap
+msgid "A snapshot allows you to freeze an image of the file system. Snapshots are very useful when doing an update or testing, because they allow you to easily go back in case of a glitch. On the other hand, apart from some very high availability clusters, snapshots do not really protect you against hardware failures or disasters (cf. OVH fire in Strasbourg in 2021).\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/15.clone_filesystem.mdx:19
+#, no-wrap
+msgid "In general, snapshots are quite disk space saving, the principle is that your file system will store the differences that occurred since your snapshot. Thus, only the modifications consume space.\n"
+msgstr ""
+
+#. type: Fenced div block (info)
+#: docs/admin/40.backups/15.clone_filesystem.mdx:20
+#, no-wrap
+msgid "Remember to delete the old snapshots to avoid wasting your storage space by storing all the differences since that date!\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/15.clone_filesystem.mdx:25
+#, no-wrap
+msgid "You can use this method with most VPS (often paying), virtual machine managers or if you have installed YunoHost with an advanced filesystem like btrfs, ceph or ZFS, you can also create snapshots via the command line\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/15.clone_filesystem.mdx:28
+#, no-wrap
+msgid "<TabItem value=\"vps\" label=\"VPS\">\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/15.clone_filesystem.mdx:30
+#, no-wrap
+msgid "Below, some documentation for the most known suppliers:\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/15.clone_filesystem.mdx:35
+#, no-wrap
+msgid ""
+"- [DigitalOcean (EN)](https://docs.digitalocean.com/products/images/snapshots/)\n"
+"- [Gandi](https://docs.gandi.net/fr/simple_hosting/operations_courantes/snapshots.html)\n"
+"- [OVH](https://docs.ovh.com/fr/vps/snapshot-vps/)\n"
+"- [Scaleway (EN)](https://www.scaleway.com/en/docs/backup-your-data-with-snapshots/)\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/15.clone_filesystem.mdx:38
+#, no-wrap
+msgid "<TabItem value=\"virtualbox\" label=\"VirtualBox\">\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/15.clone_filesystem.mdx:41
+#, no-wrap
+msgid ""
+"Select the virtual machine and click `Snapshots`, then specify the snapshot name and click `OK`.\n"
+"![The snapshot button is located at the top right](/img/softwares/virtualbox-snapshot2.webp)\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/15.clone_filesystem.mdx:43
+#, no-wrap
+msgid "To restore, select the virtual machine, click on `Snapshots` then `Restore Snapshot option`.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/15.clone_filesystem.mdx:46
+#, no-wrap
+msgid "Then click on `Restore Snapshot`.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/15.clone_filesystem.mdx:50
+#, no-wrap
+msgid "<TabItem value=\"proxmox\" label=\"Proxmox\">\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/15.clone_filesystem.mdx:56
+#, no-wrap
+msgid ""
+"- Select the virtual machine\n"
+"- Go to the `Backup` tab\n"
+"- Click on `Backup now`.\n"
+"- Choose `Snapshot` mode\n"
+"- Validate\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/15.clone_filesystem.mdx:59
+#, no-wrap
+msgid "<TabItem value=\"btrfs\" label=\"BTRFS\">\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/15.clone_filesystem.mdx:61
+#, no-wrap
+msgid "Below we consider that `/pool/volume` is the volume to snapshot.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/15.clone_filesystem.mdx:63
+#, no-wrap
+msgid "Create a read-only snapshot\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/15.clone_filesystem.mdx:69
+#: docs/admin/40.backups/15.clone_filesystem.mdx:108
+#: docs/admin/40.backups/15.clone_filesystem.mdx:137
+#, no-wrap
+msgid "List snapshots\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/15.clone_filesystem.mdx:75
+#: docs/admin/40.backups/15.clone_filesystem.mdx:114
+#: docs/admin/40.backups/15.clone_filesystem.mdx:143
+#, no-wrap
+msgid "Restore a snapshot\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/15.clone_filesystem.mdx:83
+#: docs/admin/40.backups/15.clone_filesystem.mdx:120
+#: docs/admin/40.backups/15.clone_filesystem.mdx:149
+#, no-wrap
+msgid "Delete a snapshot\n"
+msgstr ""
+
+#. type: Fenced div block (caution)
+#: docs/admin/40.backups/15.clone_filesystem.mdx:88
+#, no-wrap
+msgid "  Be careful not to delete the original volume\n"
+msgstr ""
+
+#. type: Fenced div block (tip)
+#: docs/admin/40.backups/15.clone_filesystem.mdx:92
+#, no-wrap
+msgid "  See [this tutorial](https://www.linux.com/training-tutorials/how-create-and-manage-btrfs-snapshots-and-rollbacks-linux-part-2/) for more info\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/15.clone_filesystem.mdx:98
+#, no-wrap
+msgid "<TabItem value=\"ceph\" label=\"CEPH\">\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/15.clone_filesystem.mdx:100
+#: docs/admin/40.backups/15.clone_filesystem.mdx:129
+#, no-wrap
+msgid "Below we consider that `pool/volume` is the volume to snapshot.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/15.clone_filesystem.mdx:102
+#: docs/admin/40.backups/15.clone_filesystem.mdx:131
+#, no-wrap
+msgid "Create a snapshot\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/15.clone_filesystem.mdx:127
+#, no-wrap
+msgid "<TabItem value=\"zfs\" label=\"ZFS\">\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/40.backups/15.clone_filesystem.mdx:157
+#, no-wrap
+msgid "Create a cold image of the file system "
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/15.clone_filesystem.mdx:160
+#, no-wrap
+msgid "You can clone your media (SD card, ssd disk, VPS volume...) to create a disk image. This image before compression will be the exact size of your media, that's why this method applies rather to machines of less than 64GB.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/15.clone_filesystem.mdx:162
+#, no-wrap
+msgid "Unless you can read a snapshot, this method requires you to stop the server while you create the image. With a VPS, you have to restart in rescue mode from your provider's interface.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/15.clone_filesystem.mdx:165
+#, no-wrap
+msgid "<TabItem value=\"usbimage\" label=\"With USBimager\">\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/15.clone_filesystem.mdx:167
+#, no-wrap
+msgid "This can be done with [USBimager](https://bztsrc.gitlab.io/usbimager/) (Note: make sure you download the 'Read-write' version! Not the 'Write-only' version!). The process then consists of the \"reverse\" of the SD card flashing process:\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/15.clone_filesystem.mdx:171
+#, no-wrap
+msgid ""
+"- Turn off your server\n"
+"- Retrieve the SD card and plug it into your computer\n"
+"- In USBimager, click on \"Read\" to create an image (\"photograph\") of the SD card. You can use the resulting file to restore the whole system later.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/15.clone_filesystem.mdx:173
+#, no-wrap
+msgid "More details in [USBimager documentation](https://gitlab.com/bztsrc/usbimager/#creating-backup-image-file-from-device)\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/15.clone_filesystem.mdx:176
+#, no-wrap
+msgid "<TabItem value=\"dd\" label=\"In command line with dd\">\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/15.clone_filesystem.mdx:178
+#, no-wrap
+msgid "It is possible to achieve the same thing with `dd` if you are comfortable with the command line:\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/15.clone_filesystem.mdx:184
+#, no-wrap
+msgid "(replace `/dev/mmcblk0` with the real name of your SD card or hard drive)\n"
+msgstr ""

@@ -1,0 +1,122 @@
+# Copyright (C) 2025 YunoHost Contributors
+# This file is distributed under the same license as the YunoHost documentation.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: YunoHost documentation VERSION\n"
+"POT-Creation-Date: 2025-11-11 01:24+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Yaml Front Matter Hash Value: title
+#: docs/admin/40.backups/20.avoid_hardware_failure.mdx:1
+#, no-wrap
+msgid "Avoid hardware failure"
+msgstr "Éviter les pannes matérielles"
+
+#. type: Title ##
+#: docs/admin/40.backups/20.avoid_hardware_failure.mdx:5
+#, no-wrap
+msgid "Physically secure your server"
+msgstr "Sécuriser physiquement votre serveur"
+
+#. type: Plain text
+#: docs/admin/40.backups/20.avoid_hardware_failure.mdx:8
+#, no-wrap
+msgid "Very often people who self-host don't have proper storage for their system. Leaving the server in several parts, in a high traffic area, accessible to children or pets, or in a poorly ventilated area can quickly turn into a disaster.\n"
+msgstr "Très souvent les personnes qui s'autohébergent n'ont pas de rangement correct pour leur système. Laisser le serveur en plusieurs parties, dans un lieu de passage, accessible à des enfants ou des animaux, ou dans un endroit peu aéré peut vite tourner à la catastrophe.\n"
+
+#. type: Title ##
+#: docs/admin/40.backups/20.avoid_hardware_failure.mdx:9
+#, no-wrap
+msgid "Secure your hard drives"
+msgstr "Fixer vos disques durs"
+
+#. type: Plain text
+#: docs/admin/40.backups/20.avoid_hardware_failure.mdx:12
+#, no-wrap
+msgid "Ideally, your hard disks should be fixed to prevent vibrations which can accelerate the wear of the equipment or even reduce its performance, especially if there is another disk next to it.\n"
+msgstr "Idéalement, vos disques durs doivent être fixés pour éviter les vibrations qui peuvent accélérer l'usure du matériel voire atténuer ses performances, notamment s'il y a un autre disque à côté.\n"
+
+#. type: Title ##
+#: docs/admin/40.backups/20.avoid_hardware_failure.mdx:13
+#, no-wrap
+msgid "Reduce swapiness for SD cards and SSDs"
+msgstr "Réduire la swapiness pour les cartes SD et disques SSD"
+
+#. type: Plain text
+#: docs/admin/40.backups/20.avoid_hardware_failure.mdx:16
+#, no-wrap
+msgid "If you use a swap file with an SSD or SD card with too much swapiness, your storage media could give up the ghost prematurely due to too many writes.\n"
+msgstr "Si vous utilisez un fichier de swap avec un SSD ou une carte SD avec une swapiness trop élevée, votre support de stockage pourrait rendre l'âme prématurément en raison d'un trop grand nombre d'écritures.\n"
+
+#. type: Plain text
+#: docs/admin/40.backups/20.avoid_hardware_failure.mdx:18
+#, no-wrap
+msgid "To prevent this:\n"
+msgstr "Pour éviter ça:\n"
+
+#. type: Plain text
+#: docs/admin/40.backups/20.avoid_hardware_failure.mdx:24
+#, no-wrap
+msgid "If it is above 10:\n"
+msgstr "Si elle est au-dessus de 10:\n"
+
+#. type: Plain text
+#: docs/admin/40.backups/20.avoid_hardware_failure.mdx:31
+#, no-wrap
+msgid "If present, change the vm.swappiness value to 10. Otherwise add the line:\n"
+msgstr "Si la ligne est présente, changez la valeur vm.swappiness à 10.Sinon, ajoutez la ligne:\n"
+
+#. type: Title ##
+#: docs/admin/40.backups/20.avoid_hardware_failure.mdx:36
+#, no-wrap
+msgid "Storage redundancy"
+msgstr "Redondance de stockage"
+
+#. type: Plain text
+#: docs/admin/40.backups/20.avoid_hardware_failure.mdx:39
+#, no-wrap
+msgid "In order to limit hardware failures of storage media, it can be relevant to set up a cluster of mirrored disks (RAID, ZFS). The idea here is that everything that is written to one disk will be written to the other. This way, if one fails, the other continues to work and the server is still fully functional.\n"
+msgstr "Afin de limiter les pannes matérielles des supports de stockage, il peut être pertinent de mettre en place une grappe de disques en miroir (RAID, ZFS). L'idée ici est que tout ce qui est écrit sur un disque le sera sur l'autre. Ainsi, si l'un tombe en panne, l'autre continue de fonctionner et le serveur est toujours pleinement fonctionnel.\n"
+
+#. type: Plain text
+#: docs/admin/40.backups/20.avoid_hardware_failure.mdx:41
+#, no-wrap
+msgid "There are also more advanced clusters that maximize fault tolerance (failure of 2 disks like RAID6) or storage (see RAID 5).\n"
+msgstr "Il existe aussi des grappes plus évoluées qui maximisent la tolérance de panne (panne de 2 disques comme le RAID6) ou le stockage (voir RAID 5).\n"
+
+#. type: Plain text
+#: docs/admin/40.backups/20.avoid_hardware_failure.mdx:43
+#, no-wrap
+msgid "However, these disk clustering techniques should not be considered as backups. A RAID array should be considered as a single storage medium. Indeed, if this technique prevents having to reinstall in case of a probable disk crash, it is far from zero risk.\n"
+msgstr "Toutefois, ces techniques de grappes de disques ne devraient pas être considérées comme des copies de sauvegarde. Une grappe RAID devrait être considérée comme un seul support de stockage. En effet, si cette technique permet d'éviter de devoir réinstaller en cas de crash probable d'un disque, on est loin du risque zéro.\n"
+
+#. type: Plain text
+#: docs/admin/40.backups/20.avoid_hardware_failure.mdx:45
+#, no-wrap
+msgid "Some examples of situations known to professional system administrators:\n"
+msgstr "Quelques exemples de situations connues des administrateurs systèmes professionnels:\n"
+
+#. type: Plain text
+#: docs/admin/40.backups/20.avoid_hardware_failure.mdx:52
+#, no-wrap
+msgid ""
+"- the disks of a cluster mounted with disks of the same brand can fail almost at the same time within a few hours\n"
+"- without monitoring the health of the disks, there is a good chance that the failure of one disk in the cluster will only be noticed when a second one fails (\\>\\<)\n"
+"- if you don't have a spare disk, the delay in purchasing one may result in the other disk crashing\n"
+"- a half-functional disk that produces errors can propagate its error through the cluster\n"
+"- the disk connectors or the RAID controller can also produce errors or fail\n"
+"- the more complex you make the architecture with many components, the more likely it is that one of them will fail\n"
+msgstr ""
+
+#. type: Fenced div block (info)
+#: docs/admin/40.backups/20.avoid_hardware_failure.mdx:53
+#, no-wrap
+msgid "If you want to set up a RAID array or use btrfs, the easiest way is to do it at installation with the YunoHost iso in expert mode (when partitioning the system).\n"
+msgstr "Si vous souhaitez mettre en place une grappe RAID ou utiliser btrfs, le plus simple est de le faire à l'installation avec l'iso YunoHost en mode expert (lors du partitionnement du système).\n"

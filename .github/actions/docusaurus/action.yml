@@ -22,13 +22,17 @@ runs:
     shell: bash
     run: yarn
 
+  - name: Install perl dependencies (for po4a)
+    shell: bash
+    run: sudo apt install gettext libyaml-tiny-perl libsyntax-keyword-try-perl libpod-parser-perl libsgmls-perl opensp perl liblocale-gettext-perl libterm-readkey-perl libtext-wrapi18n-perl libunicode-linebreak-perl -y
+
   - name: Check image paths consistency
     shell: bash
     run: bash scripts/check_missing_or_bad_image_path.sh
 
-  - name: Check translations pages consistency
+  - name: Build translated .mdx using the .po from po4a/weblate
     shell: bash
-    run: python3 ./scripts/check_i18n_consistency.py
+    run: python3 ./scripts/po4a.py build_translated_mdx
 
   - name: Build docs
     env:

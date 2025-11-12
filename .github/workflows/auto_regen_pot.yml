@@ -1,0 +1,30 @@
+name: Auto-regen the .pot used as source for translations (po4a/Weblate)
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  auto_regen_pot:
+    runs-on: ubuntu-latest
+    permissions:
+      # Give the default GITHUB_TOKEN write permission to commit and push the changed files back to the repository.
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install perl dependencies (for po4a)
+        shell: bash
+        run: sudo apt install gettext libyaml-tiny-perl libsyntax-keyword-try-perl libpod-parser-perl libsgmls-perl opensp perl liblocale-gettext-perl libterm-readkey-perl libtext-wrapi18n-perl libunicode-linebreak-perl -y
+
+      - name: Check image paths consistency
+        shell: bash
+        run: bash scripts/check_missing_or_bad_image_path.sh
+
+      - name: Build translated .mdx using the .po from po4a/weblate
+        shell: bash
+        run: python3 ./scripts/po4a.py regen_po
+
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "🌐 ${{ github.workflow }}"

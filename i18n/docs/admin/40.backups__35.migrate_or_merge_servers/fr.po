@@ -1,0 +1,50 @@
+# Copyright (C) 2025 YunoHost Contributors
+# This file is distributed under the same license as the YunoHost documentation.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: YunoHost documentation VERSION\n"
+"POT-Creation-Date: 2025-11-09 20:53+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Yaml Front Matter Hash Value: title
+#: docs/admin/40.backups/35.migrate_or_merge_servers.mdx:1
+#, no-wrap
+msgid "Migrate or merge servers"
+msgstr "Migrer ou fusionner des serveurs"
+
+#. type: Title ##
+#: docs/admin/40.backups/35.migrate_or_merge_servers.mdx:6
+#, no-wrap
+msgid "Migrate a server"
+msgstr "Migrer un serveur"
+
+#. type: Plain text
+#: docs/admin/40.backups/35.migrate_or_merge_servers.mdx:9
+#, no-wrap
+msgid "If YunoHost's archive system is not convenient enough to migrate a server, you can also [migrate from server to server with rsync](https://www.man42.net/blog/2017/07/how-to-migrate-a-debian-server/).\n"
+msgstr "Si le système d'archive de YunoHost est assez pratique pour migrer un serveur, on peut aussi [migrer de serveur à serveur avec rsync](https://www.man42.net/blog/2017/07/how-to-migrate-a-debian-server/).\n"
+
+#. type: Title ##
+#: docs/admin/40.backups/35.migrate_or_merge_servers.mdx:10
+#, no-wrap
+msgid "Merge 2 YunoHost servers"
+msgstr "Fusionner 2 serveurs YunoHost"
+
+#. type: Plain text
+#: docs/admin/40.backups/35.migrate_or_merge_servers.mdx:13
+#, no-wrap
+msgid "If you merge 2 servers together, you will need to recreate the users, domains and permissions of the first server on the destination server. Then you can restore app by app.\n"
+msgstr "Si vous fusionnez 2 serveurs ensemble, vous devrez recréer les utilisateurs et utilisatrices, ainsi que les domaines et les permissions du premier serveur sur le serveur de destination. Puis vous pourrez restaurer app par app.\n"
+
+#. type: Fenced div block (danger)
+#: docs/admin/40.backups/35.migrate_or_merge_servers.mdx:14
+#, no-wrap
+msgid "There is a limitation concerning apps that have the same ID. It will not be possible to restore them easily. Also be careful not to delete the eponymous app from the destination server :/\n"
+msgstr "Il existe tout de même une limite concernant les apps qui ont le même ID. Il ne sera pas possible de les restaurer facilement. Attention également à ne pas supprimer l'app éponyme du serveur de destination :/\n"

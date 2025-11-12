@@ -1,0 +1,49 @@
+# Italian translations for YunoHost documentation package
+# Copyright (C) 2025 YunoHost Contributors
+# This file is distributed under the same license as the YunoHost documentation package.
+# Automatically generated, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: YunoHost documentation VERSION\n"
+"POT-Creation-Date: 2025-11-11 19:34+0100\n"
+"PO-Revision-Date: 2025-11-11 19:34+0100\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. type: Yaml Front Matter Hash Value: title
+#: docs/admin/50.troubleshooting/03.cleanup.mdx:1
+#, no-wrap
+msgid "Cleanup"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/50.troubleshooting/03.cleanup.mdx:6
+#, no-wrap
+msgid "These are a few guidelines on how to perform some cleanup on the server, for instance when storage space becomes a bit short.\n"
+msgstr ""
+
+#. type: Title #
+#: docs/admin/50.troubleshooting/03.cleanup.mdx:7
+#, no-wrap
+msgid "Execute the basic-space-cleanup tool"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/50.troubleshooting/03.cleanup.mdx:11
+#, no-wrap
+msgid ""
+"One may use the following command, to perform basic space cleanup (apt, journalctl, logs, ...) :\n"
+"`sudo yunohost tools basic-space-cleanup`\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/50.troubleshooting/03.cleanup.mdx:12
+#, no-wrap
+msgid "Additional steps may be needed, to address current shortcomings : see [a logs cleanup issue](https://github.com/YunoHost/issues/issues/2329) for instance.\n"
+msgstr ""

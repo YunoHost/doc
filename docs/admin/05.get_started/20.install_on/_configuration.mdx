@@ -3,38 +3,50 @@ import TabItem from '@theme/TabItem';
 
 ## <FAIcon icon="fa-cog"/> Proceed with the initial configuration
 
-:::tip
+:::info
 If you are in the process of restoring a server using a YunoHost backup, you should skip this step and instead [restore the backup instead of the postinstall step](/admin/backups).
 :::
 
-:::note
+:::info
 This documentation assumes you're on the same local network as your YunoHost installation.
-[Find out its IP address](/admin/get_started/post_install/find_ip) before continuing.
 
 For a VPS, please use the public IP address instead of the local domain or address.
 :::
 
 <Tabs groupId="admin-commands">
-  <TabItem value="web" label="From the web interface">
+<TabItem value="web" label="From the web interface">
 
-    :::warning
-    During the first visit, you will very likely encounter a security warning related to the certificate used by the server. For now, your server uses a self-signed certificate. You will later be able to add a certificate automatically recognized by web browsers as described in the [certificate documentation](/admin/domains/certificate).  For now, you should add a security exception to accept the current certificate. (Though, PLEASE, do not take the habit of blindly accepting this kind of security alert!)
-    :::
+On a computer, open a browser and try to reach the webadmin:
+- if you're installing on a VPS, you probably used the `curl | bash` install method, and it should have pointed you with the address, typically `https://xx.xx.xx.xx` (with the **public IPv4** of your server)
+- if you're installing at home, and assuming that *you are on the same local network as the server*
+    - you can try to open https://yunohost.local (this may or may not work depending if your computer and network supports the Bonjour protocol)
+    - if you already know the local IP of the machine, go to `https://xx.xx.xx.xx` (with the **local** IP, typically starting with `192.168.`)
+    - otherwise you will need to [find out its local IP ](/admin/get_started/post_install/find_ip) before continuing.
 
-    You should then land on this page:
-    <Figure caption="Preview of the Web initial configuration page" src="/img/webadmin/postinstall_web.png"/>
-  </TabItem>
-  <TabItem value="cli" label="From the command line">
-    You can also perform the postinstallation with the command `yunohost tools postinstall` directly on the server, or [via SSH](/admin/command_line).
+:::warning
+During the first visit, you will very likely encounter a security warning related to the certificate used by the server. For now, your server uses a self-signed certificate. You will later be able to add a certificate automatically recognized by web browsers as described in the [certificate documentation](/admin/domains/certificate). For now, you should add a security exception to accept the current certificate. (Though, PLEASE, do not take the habit of blindly accepting this kind of security alert!)
+:::
 
-    <Figure caption="Preview of the command-line post-installation" src="/img/postinstall_cli.png"/>
-  </TabItem>
+You should then land on this page:
+
+<Figure caption="Preview of the Web initial configuration page" src="/img/webadmin/postinstall_web.png"/>
+
+</TabItem>
+<TabItem value="cli" label="From the command line">
+
+You can also perform the postinstallation with the command `yunohost tools postinstall` directly on the server, or [via SSH](/admin/command_line).
+
+<Figure caption="Preview of the command-line post-installation" src="/img/postinstall_cli.png"/>
+
+</TabItem>
 </Tabs>
 
 ### <FAIcon icon="fa-globe"/> Main domain
 
 <details>
-<summary>WSL specific configuration</summary>
+<summary>
+WSL specific configuration
+</summary>
 
 You will have to choose a fake domain, since it will not be accessible from outside.
 For example, `ynh.wsl`. The tricky part is advertising this domain to your host.
@@ -71,10 +83,10 @@ This user replaces the old `admin` user, which some old documentation page may s
 
 Once the postinstall is done, you should be able to actually log in the web admin interface using the credentials of the first user you just created.
 
-The diagnosis system is meant to provide an easy way to validate that all critical aspects of your server are properly configured - and guide you in how to fix issues. The diagnosis will run twice a day and send an alert if issues are detected.
+The diagnosis system is meant to provide an easy way to validate that all critical aspects of your server are properly configured - and guide you in how to fix issues. The diagnosis will run twice a day and send an alert by email if issues are detected.
 
 :::tip
-**Don't run away** ! The first time you run the diagnosis, it is quite expected to see a bunch of yellow/red alerts because you typically need to [configure DNS records](/admin/get_started/post_install/dns_config) (if not using a `.nohost.me`/`noho.st`/`ynh.fr` domain), add a swapfile if not enough ram as well as [port forwarding](/admin/get_started/post_install/port_forwarding) on your home's router.
+**Don't run away** ! The first time you run the diagnosis, it is quite expected to see a bunch of yellow/red alerts because you typically need to [configure DNS records](/admin/get_started/post_install/dns_config) (if not using a `.nohost.me`/`noho.st`/`ynh.fr` domain), as well as [port forwarding](/admin/get_started/post_install/port_forwarding) on your home's router.
 :::
 
 :::tip
@@ -87,17 +99,21 @@ Especially, installations on WSL or virtual machines will likely not be reachabl
 
 
 <Tabs groupId="admin-commands">
-  <TabItem value="web" label="(Recommended) From the web interface">
-    To run a diagnosis, go on Web Admin in the Diagnosis section. Click Run initial diagnosis and you should get a screen like this:
+<TabItem value="web" label="(Recommended) From the web interface">
 
-    <Figure caption="Preview of the diagnostic panel" src="/img/webadmin/diagnostic.png"/>
-  </TabItem>
-  <TabItem value="cli" label="From the command line">
-    ```bash
-    yunohost diagnosis run
-    yunohost diagnosis show --issues --human-readable
-    ```
-  </TabItem>
+To run a diagnosis, go on Web Admin in the Diagnosis section. Click Run initial diagnosis and you should get a screen like this:
+
+<Figure caption="Preview of the diagnostic panel" src="/img/webadmin/diagnostic.png"/>
+
+</TabItem>
+<TabItem value="cli" label="From the command line">
+
+```bash
+yunohost diagnosis run
+yunohost diagnosis show --issues --human-readable
+```
+
+</TabItem>
 </Tabs>
 
 
@@ -108,16 +124,20 @@ Once you configured DNS records and port forwarding (if needed), you should be a
 For more detailed instructions, or to lean more about SSL/TLS certificates, see [the corresponding page here](/admin/domains/certificate).
 
 <Tabs groupId="admin-commands">
-  <TabItem value="web" label="From the web interface">
-    Go in Domains > Click on your domain > SSL Certificate
+<TabItem value="web" label="From the web interface">
 
-    <Figure caption="Preview of the diagnostic panel" src="/img/webadmin/certificate-before-LE.png"/>
-  </TabItem>
-  <TabItem value="cli" label="From the command line">
-    ```bash
-    yunohost domain cert install
-    ```
-  </TabItem>
+Go in Domains > Click on your domain > Certificate
+
+<Figure caption="Preview of the diagnostic panel" src="/img/webadmin/certificate-before-LE.png"/>
+
+</TabItem>
+<TabItem value="cli" label="From the command line">
+
+```bash
+yunohost domain cert install
+```
+
+</TabItem>
 </Tabs>
 
 ## 🎉 Congratz!

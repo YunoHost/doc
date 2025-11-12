@@ -13,7 +13,10 @@ This page will help you diagnose the issue, get back access, and if needed repai
 Check that you are getting access to the server by using its public IP (you can find at [https://ip.yunohost.org](https://ip.yunohost.org). If this does not work:
 
 - Make sure you have [set up forwarding](/admin/get_started/post_install/port_forwarding)
-- Some ISP routers do not support *hairpinning*, which prevents you from reaching your server by its domain name from within your local network. If so, you can use a cellular connection, or tweak your `hosts` file on your computer to make it bind your domain name to the local IP address instead of the public one.
+- Some ISP routers do not support *hairpinning*, which prevents you from reaching your server by its domain name from within your local network. If so, you can use one of the following workaround:
+  - use a cellular connection (4/5G)
+  - tweak your `/etc/hosts` file on each of your client devices
+  - add YunoHost's local IP as DNS resovler in your router (usually in the DHCP section) and open port `53` (UDP) in YunoHost's firewall, making sure to **not** enable UPnP forwarding. (Do **not** open port 53 on your router)
 
 ### Configure DNS records
 
@@ -111,8 +114,8 @@ In that case, contact your VPN provider to renew it and update the parameters of
 
 Meanwhile, try reaching your server if it is at home, by:
 
-- its local IP, retrievable from your router configuration panel or `sudo arp-scan --local`
-- reaching it at `yunohost.local`, or `yunohost-2.local`, etc. depending on how many YunoHost servers are on your network.
+- its local IP, using one of the method listed [on the corresponding page](/admin/get_started/post_install/find_ip)
+- reaching it at `yunohost.local`, assuming your client supports the Bonjour protocol (or `yunohost-2.local`, etc. depending on how many YunoHost servers are on your network)
 
 :::warning
 To be completed
