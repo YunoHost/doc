@@ -46,21 +46,29 @@ The [project website](https://yunohost.org) and [application store](https://apps
 
 <div class="text--center">
   <Button url="https://translate.yunohost.org/projects/yunohost/landingpage/" color="lightgreen">Translate the project website <FAIcon icon='fa-arrow-right'/></Button>
-  {' '}
+</div>
+
+<div class="text--center">
   <Button url="https://translate.yunohost.org/projects/yunohost/store/" color="lightgreen">Translate the app store <FAIcon icon='fa-arrow-right'/></Button>
 </div>
 
 Here as well, translations are regularly synced to the corresponding Git repositories [here](https://github.com/YunoHost/landingpage) and [here](https://github.com/YunoHost/appstore), merged by the team, and automatically published.
 
-⚠️ Note that when we refer to the "app store," we are talking about the interface of the store itself, not the individual app descriptions or app-specific content (see the next section).
+:::caution
+When we refer to the "app store," we are talking about the interface of the store itself, not the individual app descriptions or app-specific content (see the next section).
+:::
 
-⚠️ Note that the catalog categories are not easily translatable yet either. The corresponding file is [here](https://github.com/YunoHost/apps/blob/main/categories.toml) and contains title/description for each category in each language. Ideally this will be in Weblate as well someday™. In the meantime, you can contribute to this as well, but this requires using Git/GitHub.
+:::caution
+The catalog categories are not easily translatable yet either. The corresponding file is [here](https://github.com/YunoHost/apps/blob/main/categories.toml) and contains title/description for each category in each language. Ideally this will be in Weblate as well someday™. In the meantime, you can contribute to this as well, but this requires using Git/GitHub.
+:::caution
 
 ## 📦 Individual apps
 
 Each individual YunoHost app has its own set of messages, such as descriptions, installation questions, and specific admin instructions.
 
-⚠️ Unfortunately, these are **not yet** easily translatable (= not integrated in Weblate), though it is goal for the project to make enable this in the mid- to long-term.
+:::caution
+Unfortunately, these are **not yet** easily translatable (= not integrated in Weblate), though it is goal for the project to make enable this in the mid- to long-term.
+:::
 
 Currently, translation work for apps can only be done through Git/GitHub. App-specific messages are part of each individual app repository (for example [this repo for Nextcloud](https://github.com/YunoHost-Apps/nextcloud_ynh)). More specifically:
 - the **app's `manifest.toml`**, for example [here for Nextcloud](https://github.com/YunoHost-Apps/nextcloud_ynh/blob/master/manifest.toml), contains:
