@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2025-11-11 19:34+0100\n"
+"POT-Creation-Date: 2025-11-12 01:45+0000\n"
 "PO-Revision-Date: 2025-11-11 19:34+0100\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -76,7 +76,7 @@ msgstr ""
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:39
 #, no-wrap
-msgid "  <Button url=\"https://www.armbian.com/download\" color=\"lightblue\"><SmallInline url=\"/img/icons/logo-armbian.png\" alt=\"armbian logo\"/> Armbian Download page</Button>\n"
+msgid "  <Button url=\"https://www.armbian.com/download\" color=\"skyblue\"><SmallInline url=\"/img/icons/logo-armbian.png\" alt=\"armbian logo\"/> Armbian Download page</Button>\n"
 msgstr ""
 
 #. type: Title ##
@@ -189,15 +189,6 @@ msgstr ""
 msgid "Then run:\n"
 msgstr ""
 
-#. type: Fenced code block (bash)
-#: docs/admin/05.get_started/20.install_on/arm_board.mdx:72
-#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:69
-#, no-wrap
-msgid ""
-"# Replace /dev/mmcblk0 if the name of your device is different...\n"
-"dd if=/path/to/armbian.img of=/dev/mmcblk0 status=progress ; sync\n"
-msgstr ""
-
 #. type: Title ##
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:80
 #: docs/admin/05.get_started/20.install_on/raspberry_pi.mdx:78
@@ -226,10 +217,4 @@ msgstr ""
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:91
 #, no-wrap
 msgid "Next you need to [find the local IP address of your server](/admin/get_started/post_install/find_ip) to connect as root user [via SSH](/admin/command_line) with the temporary password `1234` (see [the Armbian doc](https://docs.armbian.com/User-Guide_Getting-Started/#how-to-login)).\n"
-msgstr ""
-
-#. type: Fenced code block (bash)
-#: docs/admin/05.get_started/20.install_on/arm_board.mdx:92
-#, no-wrap
-msgid "ssh root@192.168.x.xxx\n"
 msgstr ""
