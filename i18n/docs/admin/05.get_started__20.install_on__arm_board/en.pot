@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2025-11-11 19:34+0100\n"
+"POT-Creation-Date: 2025-11-12 01:45+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -73,7 +73,7 @@ msgstr ""
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:39
 #, no-wrap
-msgid "  <Button url=\"https://www.armbian.com/download\" color=\"lightblue\"><SmallInline url=\"/img/icons/logo-armbian.png\" alt=\"armbian logo\"/> Armbian Download page</Button>\n"
+msgid "  <Button url=\"https://www.armbian.com/download\" color=\"skyblue\"><SmallInline url=\"/img/icons/logo-armbian.png\" alt=\"armbian logo\"/> Armbian Download page</Button>\n"
 msgstr ""
 
 #. type: Title ##

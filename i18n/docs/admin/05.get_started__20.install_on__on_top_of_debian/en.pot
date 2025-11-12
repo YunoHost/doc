@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2025-11-11 19:34+0100\n"
+"POT-Creation-Date: 2025-11-12 01:45+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -59,7 +59,7 @@ msgstr ""
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:26
 #, no-wrap
-msgid "  <Button url=\"https://www.debian.org/distrib/netinst\" color=\"lightblue\"><SmallInline url=\"/img/icons/logo-debian.png\" alt=\"Debian logo\"/> Debian Download page</Button>\n"
+msgid "  <Button url=\"https://www.debian.org/distrib/netinst\" color=\"skyblue\"><SmallInline url=\"/img/icons/logo-debian.png\" alt=\"Debian logo\"/> Debian Download page</Button>\n"
 msgstr ""
 
 #. type: Plain text
