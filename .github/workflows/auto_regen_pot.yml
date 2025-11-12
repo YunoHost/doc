@@ -2,7 +2,7 @@ name: Auto-regen the .pot used as source for translations (po4a/Weblate)
 
 on:
   push:
-    branches: [ "main", "po4a" ]
+    branches: [ "main" ]
 
 jobs:
   auto_regen_pot:
