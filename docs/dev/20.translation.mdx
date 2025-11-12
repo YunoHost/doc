@@ -1,0 +1,87 @@
+---
+title: 🌐 Working on translations
+---
+
+Translating YunoHost — not just the software, but also the documentation and app catalog — is essential to making the project accessible to a wider audience.
+
+We primarily use **[Weblate](https://weblate.org)**, an excellent self-hostable FOSS translation platform. **No development tool / skill <small>(such as Git)</small> is required to contribute to translations**: the point of Weblate is precisely to focus on translation. New translations are automatically synced with the development the development repositories behind the scenes. The YunoHost project hosts its own Weblate instance at https://translate.yunohost.org.
+
+<div class="text--center">
+  <Button url="https://translate.yunohost.org" color="green">
+    YunoHost translation platform (Weblate) <FAIcon icon='fa-arrow-right'/>
+  </Button>
+</div>
+
+If you're interested in contributing but need us to add your language, need help, or require assistance with unlocking components, please **don’t hesitate** to contact us. You can reach out via [the forum](https://forum.yunohost.org) or [the chatrooms](/community/chat_rooms).
+
+## ⚙️ Software
+
+YunoHost "core", webadmin, user portal and other software pieces are translated within the main project:
+
+<div class="text--center">
+  <Button url="https://translate.yunohost.org/projects/yunohost/#components" color="green">
+    Translate the software pieces <FAIcon icon='fa-arrow-right'/>
+  </Button>
+</div>
+
+Translations are automatically pushed to the corresponding Git repositories, merged by the team, and included in the next minor release of the corresponding software component.
+
+Under the hood, the strings are typically stored in JSON files, for example [here for the core](https://github.com/YunoHost/yunohost/blob/dev/locales/en.json) and [here for the webadmin](https://github.com/YunoHost/yunohost-admin/blob/dev/app/src/i18n/locales/en.json). You are also welcome to help improve the source messages, though this requires using Git/GitHub.
+
+## 📝 Documentation
+
+The documentation is also translated on our Weblate instance in a separate, dedicated project:
+
+<div class="text--center">
+  <Button url="https://translate.yunohost.org/projects/yunohost-doc/#components" color="green">
+    Translate the documentation <FAIcon icon='fa-arrow-right'/>
+  </Button>
+</div>
+
+Translations are regularly synced to [the corresponding Git repository](https://github.com/YunoHost/doc/), merged by the team, and automatically published.
+
+Currently, only the "admin" section of the documentation is translatable, though we may open specific pages from the contribution and community sections for translation in the future. We also need to integrate a translation workflow for the navigation bar, footer, and other elements.
+
+Under the hood, the documentation is written using Markdown [here](https://github.com/YunoHost/doc/tree/main/docs/admin). We use **[po4a](https://www.po4a.org/)** to extract strings out of the `.mdx`, into standard`.po`/`.pot` files, plugged in Weblate, and vice-versa.
+
+You are welcome to also improve the [source pages](https://github.com/YunoHost/doc/tree/main/docs/admin), but this requires to use Git/GitHub.
+
+## ✨ Project website and app store
+
+The [project website](https://yunohost.org) and [application store](https://apps.yunohost.org/) are also available to translation.
+
+<div class="text--center">
+  <Button url="https://translate.yunohost.org/projects/yunohost/landingpage/" color="green">
+    Translate the project website <FAIcon icon='fa-arrow-right'/>
+  </Button>
+</div>
+
+<div class="text--center">
+  <Button url="https://translate.yunohost.org/projects/yunohost/store/" color="green">
+    Translate the app store <FAIcon icon='fa-arrow-right'/>
+  </Button>
+</div>
+
+Here as well, translations are regularly synced to the corresponding Git repositories [here](https://github.com/YunoHost/landingpage) and [here](https://github.com/YunoHost/appstore), merged by the team, and automatically published.
+
+⚠️ Note that when we refer to the "app store," we are talking about the interface of the store itself, not the individual app descriptions or app-specific content (see the next section).
+
+⚠️ Note that the catalog categories are not easily translatable yet either. The corresponding file is [here](https://github.com/YunoHost/apps/blob/main/categories.toml) and contains title/description for each category in each language. Ideally this will be in Weblate as well someday™. In the meantime, you can contribute to this as well, but this requires using Git/GitHub.
+
+## 📦 Individual apps
+
+Each individual YunoHost app has its own set of messages, such as descriptions, installation questions, and specific admin instructions.
+
+⚠️ Unfortunately, these are **not yet** easily translatable (= not integrated in Weblate), though it is goal for the project to make enable this in the mid- to long-term.
+
+Currently, translation work for apps can only be done through Git/GitHub. App-specific messages are part of each individual app repository (for example [this repo for Nextcloud](https://github.com/YunoHost-Apps/nextcloud_ynh)). More specifically:
+- the **app's `manifest.toml`**, for example [here for Nextcloud](https://github.com/YunoHost-Apps/nextcloud_ynh/blob/master/manifest.toml), contains:
+    - `description.en`, `.fr`, ... for the short app description in english, french, ...
+    - possibly several `ask.en`, `.fr` for install questions - though some install questions are standardized in YunoHost's core.
+- the **app's `doc/` folder**, for example [here for Nextcloud](https://github.com/YunoHost-Apps/nextcloud_ynh/tree/master/doc), contains:
+    - `DESCRIPTION.md`, `_fr.md`, ... for the long app description in english, french, ...
+    - `ADMIN.md`, `_fr.md`, ... for specific admin instructions
+    - other notes like `POST_UPGRADE.md`, `_fr.md` for specific infos to be displayed after an upgrade. Similar files may exist to display messages before/after install/upgrades. Check [the corresponding page in the packaging doc](dev/packaging/doc) for more details.
+- some apps may include a **`config_panel.toml`** (configuration panel), for example [here for Nextcloud](https://github.com/YunoHost-Apps/nextcloud_ynh/blob/master/config_panel.toml) also containing inline translation such as `name.en`, `.fr` or `ask.en`, `ask.fr` titles or input descriptions.
+
+These informations appear both in the public app store, and inside YunoHost webadmin or CLI.
