@@ -18,10 +18,9 @@ msgstr ""
 
 #. type: Title ##
 #: docs/admin/05.get_started/20.install_on/_install_script.mdx:2
-#, fuzzy, no-wrap
-#| msgid "<FAIcon icon=\"fa-stethoscope\"/> Run the initial diagnosis"
+#, no-wrap
 msgid "<FAIcon icon=\"fa-rocket\"/> Run the install script"
-msgstr "<FAIcon icon=\"fa-stethoscope\"/> Lancer le diagnostic"
+msgstr "<FAIcon icon=\"fa-rocket\"/> Lancez le script d'installation"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/_install_script.mdx:7
@@ -31,6 +30,9 @@ msgid ""
 "- Make sure you are root (or type `sudo -i` to become root)\n"
 "- Run the following command:\n"
 msgstr ""
+"- Ouvrez un terminal sur votre serveur (soit directement, soit [via SSH](/admin/command_line))\n"
+"- Assurez-vous d'être `root` (ou tapez `sudo -i` pour devenir `root`)\n"
+"- Puis lancez la commande suivante :\n"
 
 #. type: Fenced code block (bash)
 #: docs/admin/05.get_started/20.install_on/_install_script.mdx:8
@@ -52,7 +54,7 @@ msgstr ""
 #: docs/admin/05.get_started/20.install_on/_install_script.mdx:19
 #, no-wrap
 msgid "Always ensure there's an `s` at the end of `https`.\n"
-msgstr ""
+msgstr "Assurez-vous toujours qu'il y ait un `s` à `https`.\n"
 
 #. type: Fenced div block (note)
 #: docs/admin/05.get_started/20.install_on/_install_script.mdx:23
