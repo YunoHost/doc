@@ -33,6 +33,8 @@ If you want to preview your changes, you will need to install npm/nodejs to buil
 
 Here, we'll only build locally and checkout the result using a local dev server.
 
+If your distribution doesn't ship an up to date version of `nodejs`/`npm`, you can use `n` to setup one:
+
 ```
 # Clone "n" which will be used to fetch a recent version of nodejs
 git clone https://github.com/tj/n --single-branch --depth 1
@@ -44,12 +46,27 @@ n/bin/n install latest
 # Make sure to use the nodejs/npm we installed
 NODE_BIN_PATH=$(dirname $(n/bin/n which latest))
 export PATH="$NODE_BIN_PATH:$PATH"
+```
 
-# Then inside your "doc" clone:
+# Then inside your "doc" clone, install the dependencies with:
+
+```
 npm install
-npm run start
+```
 
-# Open http://localhost:3000 while the dev server is running
+Then:
+
+```
+npm run start
+```
+
+And open http://localhost:3000 while the dev server is running
+
+You can also use:
+
+```
+npm run build
+npm run serve
 ```
 
 ## Contents of the repository
