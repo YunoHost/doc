@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2025-11-19 02:54+0000\n"
+"POT-Creation-Date: 2025-11-19 03:04+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -57,7 +57,7 @@ msgstr ""
 #, no-wrap
 msgid ""
 "<Button url=\"/admin/what_is_yunohost\">🤔 What's YunoHost?!</Button>\n"
-"<Button url=\"/admin/get_started/what_is_yunohost/demo\">⚗️ Try YunoHost</Button>\n"
+"<Button url=\"/admin/what_is_yunohost/demo\">⚗️ Try YunoHost</Button>\n"
 "<Button url=\"/admin/get_started/install_on\">🚀 Install</Button>\n"
 msgstr ""
 
