@@ -28,7 +28,6 @@ tags_to_ignore_even_if_they_have_attributes = [
     "Tabs",
     "InitialConfiguration",
     "InstallScript",
-    "LangRedirect",
     "DocCardList",
 ]
 patterns_to_ignore = [

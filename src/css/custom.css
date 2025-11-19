@@ -118,3 +118,10 @@ html[data-theme="dark"] {
 	display: none !important;
 }
 
+.bold {
+    font-weight: bold !important;
+}
+
+main article > div.markdown {
+    padding: 0 2em 0 2em;
+}
