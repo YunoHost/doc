@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2025-11-11 19:34+0100\n"
+"POT-Creation-Date: 2025-11-19 02:54+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,13 +21,13 @@ msgid "Server providers"
 msgstr ""
 
 #. type: Title ##
-#: docs/admin/05.get_started/10.providers/20.servers.mdx:7
+#: docs/admin/05.get_started/10.providers/20.servers.mdx:9
 #, no-wrap
 msgid "Pre-installed YunoHost Offers"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/05.get_started/10.providers/20.servers.mdx:14
+#: docs/admin/05.get_started/10.providers/20.servers.mdx:16
 #, no-wrap
 msgid ""
 "* [Alsace Réseau Neutre](https://arn-fai.net) (VPS) <HighlightFFDN/> <HighlightCHATONS/>\n"
@@ -38,13 +38,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: docs/admin/05.get_started/10.providers/20.servers.mdx:15
+#: docs/admin/05.get_started/10.providers/20.servers.mdx:17
 #, no-wrap
 msgid "YunoHost IT outsourcing"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/05.get_started/10.providers/20.servers.mdx:19
+#: docs/admin/05.get_started/10.providers/20.servers.mdx:21
 #, no-wrap
 msgid ""
 "* [ReflexLibre](https://reflexlibre.net) (France only) <HighlightCHATONS/>\n"

@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2025-11-11 19:34+0100\n"
+"POT-Creation-Date: 2025-11-19 02:54+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,17 +17,17 @@ msgstr ""
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/50.troubleshooting/03.cleanup.mdx:1
 #, no-wrap
-msgid "Cleanup"
+msgid "Cleaning up space"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/50.troubleshooting/03.cleanup.mdx:6
+#: docs/admin/50.troubleshooting/03.cleanup.mdx:7
 #, no-wrap
-msgid "These are a few guidelines on how to perform some cleanup on the server, for instance when storage space becomes a bit short.\n"
+msgid "If your system runs out of space, you may an emergency option to get back some bit of space, and investigate what's taking up space\n"
 msgstr ""
 
-#. type: Title #
-#: docs/admin/50.troubleshooting/03.cleanup.mdx:7
+#. type: Title ##
+#: docs/admin/50.troubleshooting/03.cleanup.mdx:8
 #, no-wrap
 msgid "Execute the basic-space-cleanup tool"
 msgstr ""
@@ -35,13 +35,35 @@ msgstr ""
 #. type: Plain text
 #: docs/admin/50.troubleshooting/03.cleanup.mdx:11
 #, no-wrap
-msgid ""
-"One may use the following command, to perform basic space cleanup (apt, journalctl, logs, ...) :\n"
-"`sudo yunohost tools basic-space-cleanup`\n"
+msgid "One may use the following command, to perform basic space cleanup (apt, journalctl, logs, ...) :\n"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/50.troubleshooting/03.cleanup.mdx:12
+#: docs/admin/50.troubleshooting/03.cleanup.mdx:17
 #, no-wrap
-msgid "Additional steps may be needed, to address current shortcomings : see [a logs cleanup issue](https://github.com/YunoHost/issues/issues/2329) for instance.\n"
+msgid "Additionaly, you may want to cleanup YunoHost operation logs if they are taking too much space, cf [this issue](https://github.com/YunoHost/issues/issues/2329).\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/50.troubleshooting/03.cleanup.mdx:18
+#, no-wrap
+msgid "Explore what's taking up space"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/50.troubleshooting/03.cleanup.mdx:21
+#, no-wrap
+msgid "Install `ncdu`:\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/50.troubleshooting/03.cleanup.mdx:27
+#, no-wrap
+msgid "Then use it to scan the filesystem and have a dynamic, browsable report of what's using space:\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/50.troubleshooting/03.cleanup.mdx:32
+#, no-wrap
+msgid "or `ncdu /var/`, for example to scan only `/var/`\n"
 msgstr ""

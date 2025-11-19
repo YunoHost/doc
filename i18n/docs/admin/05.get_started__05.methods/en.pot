@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2025-11-11 19:34+0100\n"
+"POT-Creation-Date: 2025-11-19 02:54+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,25 +21,25 @@ msgid "Choose your self-hosting mode"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/05.get_started/05.methods.mdx:6
+#: docs/admin/05.get_started/05.methods.mdx:7
 #, no-wrap
 msgid "You can host yourself at home (on a small computer), or on a remote server. Each solution has their pros and cons:\n"
 msgstr ""
 
 #. type: Title ##
-#: docs/admin/05.get_started/05.methods.mdx:7
+#: docs/admin/05.get_started/05.methods.mdx:8
 #, no-wrap
 msgid "At home, for instance on an ARM board or an old computer"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/05.get_started/05.methods.mdx:10
+#: docs/admin/05.get_started/05.methods.mdx:11
 #, no-wrap
 msgid "You can host yourself at home with an ARM board or a re-purposed regular computer, connected to your home router/box.\n"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/05.get_started/05.methods.mdx:13
+#: docs/admin/05.get_started/05.methods.mdx:14
 #, no-wrap
 msgid ""
 "- **Pros**: you will have physical control of the machine and only need to buy the hardware;\n"
@@ -47,19 +47,19 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: docs/admin/05.get_started/05.methods.mdx:14
+#: docs/admin/05.get_started/05.methods.mdx:15
 #, no-wrap
 msgid "At home, behind a VPN"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/05.get_started/05.methods.mdx:17
+#: docs/admin/05.get_started/05.methods.mdx:18
 #, no-wrap
 msgid "A VPN is an encrypted tunnel between two machines. In practice, it makes it \"as if\" you were directly, locally, connected to your server machine, but actually from somewhere else on the Internet. This allows you to still host yourself at home, while bypassing possible limitations of your ISP. See also [the Internet Cube project](https://internetcu.be/) and [the FFDN](https://www.ffdn.org/).\n"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/05.get_started/05.methods.mdx:20
+#: docs/admin/05.get_started/05.methods.mdx:21
 #, no-wrap
 msgid ""
 "- **Pros**: you will have physical control of the machine, and the VPN hides your traffic from your ISP and allows you to bypass its limitations;\n"
@@ -67,19 +67,19 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: docs/admin/05.get_started/05.methods.mdx:21
+#: docs/admin/05.get_started/05.methods.mdx:22
 #, no-wrap
 msgid "On a remote server (VPS or dedicated server)"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/05.get_started/05.methods.mdx:24
+#: docs/admin/05.get_started/05.methods.mdx:25
 #, no-wrap
 msgid "You can rent a virtual private server or a dedicated machine from [associative](https://db.ffdn.org/) or [commercial](/admin/get_started/providers/servers) \"Cloud\" providers.\n"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/05.get_started/05.methods.mdx:27
+#: docs/admin/05.get_started/05.methods.mdx:28
 #, no-wrap
 msgid ""
 "- **Pros**: your server and its internet connectivity will be fast;\n"
@@ -87,13 +87,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: docs/admin/05.get_started/05.methods.mdx:28
+#: docs/admin/05.get_started/05.methods.mdx:29
 #, no-wrap
 msgid "Summary"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/05.get_started/05.methods.mdx:48
+#: docs/admin/05.get_started/05.methods.mdx:49
 #, no-wrap
 msgid ""
 "export const styleNone = {\n"
@@ -117,7 +117,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/05.get_started/05.methods.mdx:56
+#: docs/admin/05.get_started/05.methods.mdx:57
 #, no-wrap
 msgid ""
 "      <th style={styleNone}>At home<br/><small>(e.g. ARM board, old computer)</small></th>\n"
@@ -126,7 +126,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/05.get_started/05.methods.mdx:63
+#: docs/admin/05.get_started/05.methods.mdx:64
 #, no-wrap
 msgid ""
 "      <td style={styleNone}>Hardware cost</td>\n"
@@ -135,7 +135,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/05.get_started/05.methods.mdx:69
+#: docs/admin/05.get_started/05.methods.mdx:70
 #, no-wrap
 msgid ""
 "      <td style={styleNone}>Monthly cost</td>\n"
@@ -145,7 +145,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/05.get_started/05.methods.mdx:75
+#: docs/admin/05.get_started/05.methods.mdx:76
 #, no-wrap
 msgid ""
 "      <td style={styleNone}>Physical control of the machine</td>\n"
@@ -155,7 +155,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/05.get_started/05.methods.mdx:81
+#: docs/admin/05.get_started/05.methods.mdx:82
 #, no-wrap
 msgid ""
 "      <td style={styleNone}>Manual port routing required</td>\n"
@@ -165,7 +165,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/05.get_started/05.methods.mdx:87
+#: docs/admin/05.get_started/05.methods.mdx:88
 #, no-wrap
 msgid ""
 "      <td style={styleNone}>Possible ISP limitations</td>\n"
@@ -175,7 +175,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/05.get_started/05.methods.mdx:92
+#: docs/admin/05.get_started/05.methods.mdx:93
 #, no-wrap
 msgid ""
 "      <td style={styleNone}>Internet connectivity</td>\n"
