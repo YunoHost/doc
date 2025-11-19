@@ -1,5 +1,6 @@
 ---
 title: Certificate
+hide_table_of_contents: true
 ---
 
 import Tabs from '@theme/Tabs';
@@ -17,7 +18,7 @@ Which basically asks the visitor : **"Do you trust the server hosting this websi
 
 To avoid this confusion, it's possible to get a certificate signed a known authority named **Let's Encrypt** which provide free certificates directly recognized by browsers. YunoHost allows to directly install this certificate from the web administration interface or from the command line.
 
-### Install a Let's Encrypt certificate
+## Install a Let's Encrypt certificate
 
 Before attempting to install a Let's Encrypt certificate, you should make sure that your DNS is correctly configured (your.domain.tld should point to your server's IP) and that your domain is accessible through HTTP from outside your local network (i.e. at least port 80 should be forwarded to your server).
 
@@ -69,7 +70,7 @@ Once this is done, you can check that the certificate is live via your browser b
 </TabItem>
 </Tabs>
 
-#### Troubleshooting
+## Troubleshooting
 
 If due to some bad tweaking, your certificate ends up in a bad state (e.g. lost the certificate or unable to read the files), you should be able to clean the situation by regenerating a self-signed certificate:
 

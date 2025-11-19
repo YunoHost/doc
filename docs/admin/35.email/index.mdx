@@ -38,16 +38,8 @@ Groups also can use alias features, by default the group `admins` has aliases su
 
 If your server becomes unavailable, emails sent to your server will stay in a pending queue on the sender's side for as long as ~5 days. The sender's host will regularly try to resend the email, until it drops it if it was unable to send it.
 
-## Forms to remove its IP address from the blacklist
+## See also
 
-It is possible that the emails sent from your YunoHost instance are considered as spam by the big email services.
-Is it possible that the IP address from your server have been previously been used to sent spam or that these email services consider your server as a spam sender.
-To ensure that your servers’ IP address isn't on these blacklists and to remove it from them, follow this [link](/admin/troubleshooting/blacklist_forms).
-
-## Migrating email from an email provider to a YunoHost instance
-
-See [this page](/admin/email/migration).
-
-## Configuring SMTP relay
-
-See [this page](/admin/tutorials/email_configure_relay).
+- [Removing your server’s IP/domain from antispam listings](/admin/troubleshooting/blacklist_forms).
+- [Migrating from an email provider to a YunoHost instance](/admin/email/migration)
+- [Configuring an SMTP relay](/admin/tutorials/email_configure_relay).

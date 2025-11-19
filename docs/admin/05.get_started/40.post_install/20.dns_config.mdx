@@ -86,7 +86,7 @@ Though it might be easier to understand it if displayed like this:
 - Don't put an IPv6 record if you're not sure IPv6 really works on your server! You might have issues with Let's Encrypt if it doesn't.
 - If you're using the domain provider Namecheap the SRV DNS entries are formatted as **Service**: `_xmpp-client` **Protocol**: `_tcp` **Priority**: `0` **Weight**: `5` **Port**: `5222` **Target**: `your.domain.tld`
 
-### Reverse DNS
+## Reverse DNS
 
 If your ISP or VPS provider let you define a [Reverse DNS
 lookup](https://en.wikipedia.org/wiki/Reverse_DNS_lookup) for your public IPv4
@@ -106,6 +106,6 @@ nslookup 111.222.333.444
 
 The diagnosis system available in the webadmin performs this checks automatically (in section Email).
 
-### Dynamic IP
+## Dynamic IP
 
 If your global IP address is constantly changing, follow this [tutorial](/admin/tutorials/domains/dns_dynamicip).

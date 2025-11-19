@@ -1,31 +1,30 @@
 ---
-title: Unblacklisting forms
+title: Removing your server’s IP/domain from antispam listings
 ---
 
-It could happen sometimes that your IP is blacklisted by some email provider, or anti-spam services. If you receive an alert from the diagnosis tool, click on details to find the unblocking forms.
+For various reasons, your IP or domain may end up in blocklists and get rejected by specific email providers, or anti-spam services. If you receive an alert from the diagnosis tool, clicking Details should point you to the appropriate form to contest the listing and get your server removed from it.
 
 ## Test your server
 
-To check your Email deliverability, YunoHost provide some tests avilables in the Diagnosis tool. This tools evalutes  a lot of configuration and ip reputation points. It gives you also an indicator if some mails are blocked inside the mail queue (waiting to be sent).
-all the points evaluated by [the well known mail-tester.com](https://www.mail-tester.com) except for mail content (usefull if you prepare a newsletter).
+To check your Email deliverability, YunoHost provide automatic tests in the Diagnosis section of the webadmin, checking the presence of your server on blocklists / RBL (Realtime Blackhole List), as well as compliance with other standard practice demonstrating that your server is legitimately sending email (as opposed to infected machines used by hackers/spammers/botnet), such as DNS records and reverse DNS configuration. The diagnosis will also indicate if there is a suspiciously high number of emails pending in the send queue.
 
-However, if you have a doubt on the internal diagnosis results, you could check on external tools:
-- by sending an emails : [Mail tester](https://www.mail-tester.com)
-- by providing the public ip : [MultiRBL Valli](https://multirbl.valli.org/) or [Whatismyip](https://whatismyipaddress.com/blacklist-check)
+Complementary to these checks, you may be interested in the following services:
+- by sending an email to the random test address indicated on [Mail tester](https://www.mail-tester.com) ... though most of the checks are covered by YunoHost's diagnosis.
+- by checking your server's public IP on : [MultiRBL Valli](https://multirbl.valli.org/) or [Whatismyip](https://whatismyipaddress.com/blacklist-check)
 
-## Check your mail logs
+## Checking email-related logs
 
-This command can help you to summarize which emails has been refused by other SMTP server and why.
+This command can help you to summarize which emails sent by your server got refused by other SMTP servers, and why:
 
 ```bash
 cat /var/log/mail.log | grep "deferred" | sed -E "s/(:[0-9][0-9]).+</\1\t/g" | sed -E "s/>.+dsn/\terror/g" | sed -E "s/, status=deferred \(/ /g" | sed -E "s/\)$//g"
 ```
 
-See [the list of SMTP return code](https://en.wikipedia.org/wiki/List_of_SMTP_server_return_codes) from wikipedia.
+You might want to compare this to [the list of SMTP return codes](https://en.wikipedia.org/wiki/List_of_SMTP_server_return_codes).
 
-## Untestable email providers
+## Specific email providers
 
-YunoHost is only able to test generic blacklist using the DNS RBL mechanism. However, Gmail, Microsoft, Yahoo or Free maintains their own blacklisting mechanism, so in some situation you may need to contact their teams through dedicated forms or use dedicated tools.
+YunoHost is only able to test generic blocklists using the DNS RBL mechanism. However, Gmail, Microsoft, Yahoo or Free maintains their own blocklisting mechanism. In some situation, you may need to contact their teams through dedicated forms or use dedicated tools.
 
 ### Microsoft
 
@@ -37,7 +36,7 @@ YunoHost is only able to test generic blacklist using the DNS RBL mechanism. How
   - [Smart Network Data Services (SNDS)](https://postmaster.live.com/snds/index.aspx)
 - [Get support form for deliverability issues](https://support.microsoft.com/supportrequestform/8ad563e3-288e-2a61-8122-3ba03d6b8d75) (Sadly you need a Microsoft account :/ )
 
-### Gmail
+### GMail
 
 - No way to test easily IP reputation
 - [Google guide for postmaster](https://support.google.com/a/topic/1354753)
@@ -53,13 +52,13 @@ YunoHost is only able to test generic blacklist using the DNS RBL mechanism. How
 - Reputation Management tools : [Complaint Feedback Loop](https://io.help.yahoo.com/contact/index?page=contactform&locale=en_US&token=Zh%2FBBVqXzLHlIbokbUqVWTUbuuQeXGkGnZzhKR2JQ4O6mMQdy9JSWdtWFXvjthcYCRj9bUIFfycOfG%2B4GOHPHoOGa8HwDO2%2B0kYRtTcdR8Nja5P9HWkKh3VWfS3pyu4UdjhvwG%2BBCvnYFl5dToDK%2Fw%3D%3D&selectedChannel=email-icon)
 - [Get support form for deliverability issues](https://senders.yahooinc.com/contact)
 
-### Free
+### Free (french ISP)
 
 You can find a tool to test your IP, advices, explanation of error code and a way to contact Free on [this page](https://postmaster.free.fr/)
 
-## Get alert about emails sent without SPF or DKIM
+## Receving alerts about emails sent without SPF or DKIM
 
-If you use your own domains and think that some mails are sent by unauthorized servers (so without SPF/DKIM), you  get report about this mail with.
+If you use your own domains and think that some mails are sent by unauthorized servers (so without SPF/DKIM), you can obtain reports from other mail server by declaring an email address in the DMARC DNS record:
 
 ```text
 _dmarc.DOMAIN 3600 IN TXT "v=DMARC1; p=none; fo=1; rua=mailto:example@domain.tld!10m"

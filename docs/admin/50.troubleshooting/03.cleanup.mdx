@@ -1,12 +1,32 @@
 ---
-title: Cleanup
+title: Cleaning up space
+hide_table_of_contents: true
 ---
 
-These are a few guidelines on how to perform some cleanup on the server, for instance when storage space becomes a bit short.
+If your system runs out of space, you may an emergency option to get back some bit of space, and investigate what's taking up space
 
-# Execute the basic-space-cleanup tool
+## Execute the basic-space-cleanup tool
 
 One may use the following command, to perform basic space cleanup (apt, journalctl, logs, ...) :
-`sudo yunohost tools basic-space-cleanup`
 
-Additional steps may be needed, to address current shortcomings : see [a logs cleanup issue](https://github.com/YunoHost/issues/issues/2329) for instance.
+```bash
+sudo yunohost tools basic-space-cleanup
+```
+
+Additionaly, you may want to cleanup YunoHost operation logs if they are taking too much space, cf [this issue](https://github.com/YunoHost/issues/issues/2329).
+
+## Explore what's taking up space
+
+Install `ncdu`:
+
+```bash
+sudo apt install ncdu
+```
+
+Then use it to scan the filesystem and have a dynamic, browsable report of what's using space:
+
+```bash
+ndcu /
+```
+
+or `ncdu /var/`, for example to scan only `/var/`
