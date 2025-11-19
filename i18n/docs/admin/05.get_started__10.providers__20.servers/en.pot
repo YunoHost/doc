@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2025-11-19 02:54+0000\n"
+"POT-Creation-Date: 2025-11-19 03:11+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -13,6 +13,14 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+
+#. type: Yaml Front Matter Hash Value: description
+#: docs/admin/05.get_started/02.why_should_you_not_host_yourself.mdx:1
+#: docs/admin/05.get_started/10.providers/10.isp.mdx:1
+#: docs/admin/05.get_started/10.providers/20.servers.mdx:1
+#, no-wrap
+msgid " "
+msgstr ""
 
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/05.get_started/10.providers/20.servers.mdx:1
