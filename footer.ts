@@ -3,7 +3,7 @@ import { MultiColumnFooter, } from '@docusaurus/theme-common';
 const footer: MultiColumnFooter = {
   logo: {
     alt: 'Yunohost Logo',
-    src: 'img/icons/ynh_logo_roundcorner.png',
+    src: 'img/icons/logo-ynh-roundcorner.png',
   },
   style: 'dark',
   links: [
