@@ -1,0 +1,135 @@
+# Copyright (C) 2025 YunoHost Contributors
+# This file is distributed under the same license as the YunoHost documentation package.
+#
+# Weblate Admin <yunohost@translate.yunohost.org>, 2025.
+msgid ""
+msgstr ""
+"Project-Id-Version: YunoHost documentation VERSION\n"
+"POT-Creation-Date: 2025-11-11 19:34+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: nn\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. type: Yaml Front Matter Hash Value: title
+#: docs/admin/45.tutorials/05.domains/dns_local_network.mdx:1
+#, no-wrap
+msgid "Local network access to your server"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/05.domains/dns_local_network.mdx:6
+#, no-wrap
+msgid "After completing your server installation, it is possible that your domain will not be accessible through the local network. This is an issue known as [hairpinning](http://en.wikipedia.org/wiki/Hairpinning) - a feature that is not well supported by some internet routers.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/05.domains/dns_local_network.mdx:8
+#, no-wrap
+msgid "To solve this issue you can:\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/05.domains/dns_local_network.mdx:11
+#, no-wrap
+msgid ""
+"- configure your router's DNS\n"
+"- or alternatively -  your /etc/hosts files on your clients workstation\n"
+msgstr ""
+
+#. type: Title ###
+#: docs/admin/45.tutorials/05.domains/dns_local_network.mdx:12
+#, no-wrap
+msgid "Find the local IP address of your server"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/05.domains/dns_local_network.mdx:15
+#, no-wrap
+msgid "First you need to find out the local IP of your server\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/05.domains/dns_local_network.mdx:19
+#, no-wrap
+msgid ""
+"- either using the tricks listed [here](/admin/get_started/post_install/find_ip)\n"
+"- or if in the webadmin, in the Diagnosis section, under Internet Connectivity, IPv4, click on 'Details' and you should find an entry for 'Local IP'\n"
+"- or using the command line on the server : `hostname -I`\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/45.tutorials/05.domains/dns_local_network.mdx:20
+#, no-wrap
+msgid "Configure DNS on your Internet router"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/05.domains/dns_local_network.mdx:23
+#, no-wrap
+msgid "The goal here is to create a network wide redirection handled by your router. The idea is to create a DNS redirection to your server's IP. You should access your router's configuration and look for DNS configuration, then add a redirection to your server's IP (e.g. redirect `yunohost.local` to `192.168.1.21`).\n"
+msgstr ""
+
+#. type: Title ###
+#: docs/admin/45.tutorials/05.domains/dns_local_network.mdx:24
+#, no-wrap
+msgid "SFR Box"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/05.domains/dns_local_network.mdx:26
+#, no-wrap
+msgid "If you haven't found your server private IP, you may find it using the SFR box admin panel:  \n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/05.domains/dns_local_network.mdx:28
+#, no-wrap
+msgid "    Go to Network tab > General\n"
+msgstr ""
+
+#. type: Title ####
+#: docs/admin/45.tutorials/05.domains/dns_local_network.mdx:31
+#, no-wrap
+msgid "Configure SFR box's DNS"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/05.domains/dns_local_network.mdx:34
+#, no-wrap
+msgid "Go to Network tab > DNS and add your domain name to the box's DNS.\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/45.tutorials/05.domains/dns_local_network.mdx:36
+#, no-wrap
+msgid "Configure [hosts](https://en.wikipedia.org/wiki/Host_%28Unix%29) file on client workstation"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/05.domains/dns_local_network.mdx:39
+#, no-wrap
+msgid "Modifying hosts file should be done only if you cannot alter your box's DNS or router, because hosts file will only impact the workstation where the file was modified.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/05.domains/dns_local_network.mdx:46
+#, no-wrap
+msgid ""
+"- Windows hosts file is located at:\n"
+"    `%SystemRoot%\\system32\\drivers\\etc\\`\n"
+"    > You MUST activate hidden and system file display to see the hosts file.\n"
+"- UNIX systems (GNU/Linux, macOS) hosts file is located at:\n"
+"    `/etc/hosts`\n"
+"    > You MUST have root privileges to modify the file.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/05.domains/dns_local_network.mdx:48
+#, no-wrap
+msgid "Add a line at the end of the file containing your server private IP followed by a space and your domain name\n"
+msgstr ""

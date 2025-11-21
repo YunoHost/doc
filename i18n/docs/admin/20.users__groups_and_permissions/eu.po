@@ -1,0 +1,363 @@
+# Copyright (C) 2025 YunoHost Contributors
+# This file is distributed under the same license as the YunoHost documentation package.
+#
+# Weblate Admin <yunohost@translate.yunohost.org>, 2025.
+msgid ""
+msgstr ""
+"Project-Id-Version: YunoHost documentation VERSION\n"
+"POT-Creation-Date: 2025-11-19 02:54+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: eu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/_configuration.mdx:18
+#: docs/admin/05.get_started/20.install_on/_configuration.mdx:128
+#: docs/admin/15.command_line.mdx:76
+#: docs/admin/20.users/groups_and_permissions.mdx:35
+#: docs/admin/20.users/groups_and_permissions.mdx:63
+#: docs/admin/20.users/groups_and_permissions.mdx:84
+#: docs/admin/20.users/groups_and_permissions.mdx:128
+#: docs/admin/20.users/groups_and_permissions.mdx:153
+#: docs/admin/20.users/groups_and_permissions.mdx:187
+#: docs/admin/20.users/groups_and_permissions.mdx:244
+#: docs/admin/25.domains/certificate.mdx:27 docs/admin/30.apps/index.mdx:32
+#: docs/admin/30.apps/index.mdx:102 docs/admin/30.apps/index.mdx:134
+#: docs/admin/40.backups/index.mdx:22 docs/admin/40.backups/index.mdx:71
+#: docs/admin/40.backups/index.mdx:137
+#: docs/admin/45.tutorials/35.email_configure_relay.mdx:49
+#, no-wrap
+msgid "<TabItem value=\"web\" label=\"From the web interface\">\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/_configuration.mdx:36
+#: docs/admin/05.get_started/20.install_on/_configuration.mdx:110
+#: docs/admin/05.get_started/20.install_on/_configuration.mdx:135
+#: docs/admin/15.command_line.mdx:85
+#: docs/admin/20.users/groups_and_permissions.mdx:42
+#: docs/admin/20.users/groups_and_permissions.mdx:70
+#: docs/admin/20.users/groups_and_permissions.mdx:95
+#: docs/admin/20.users/groups_and_permissions.mdx:135
+#: docs/admin/20.users/groups_and_permissions.mdx:160
+#: docs/admin/20.users/groups_and_permissions.mdx:198
+#: docs/admin/20.users/groups_and_permissions.mdx:249
+#: docs/admin/25.domains/certificate.mdx:46 docs/admin/30.apps/index.mdx:37
+#: docs/admin/30.apps/index.mdx:111 docs/admin/30.apps/index.mdx:141
+#: docs/admin/40.backups/index.mdx:29 docs/admin/40.backups/index.mdx:85
+#: docs/admin/40.backups/index.mdx:144 docs/admin/40.backups/index.mdx:171
+#: docs/admin/45.tutorials/35.email_configure_relay.mdx:66
+#, no-wrap
+msgid "<TabItem value=\"cli\" label=\"From the command line\">\n"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: title
+#: docs/admin/20.users/groups_and_permissions.mdx:1
+#, no-wrap
+msgid "Users groups and permissions"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/20.users/groups_and_permissions.mdx:10
+#, no-wrap
+msgid ""
+"You can access the *groups and permissions* management interface from the webadmin\n"
+"by going into the 'Users' section and clicking the corresponding button:\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/20.users/groups_and_permissions.mdx:12
+#, no-wrap
+msgid "![screenshot of users permission button](/img/webadmin/button_to_go_to_permission_interface.png)\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/20.users/groups_and_permissions.mdx:13
+#, no-wrap
+msgid "Managing groups"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/20.users/groups_and_permissions.mdx:16
+#, no-wrap
+msgid "The group mechanism can be used to define groups of users which then can be used to restrict permissions for applications and other services (such as mail or XMPP). Note that it is *not* mandatory to create a group to do so: you can also restrict access to an app or service on a user-per-user basis.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/20.users/groups_and_permissions.mdx:18
+#, no-wrap
+msgid "Using groups is however useful for semantics, for example if you host multiple groups of friends, associations or businesses on your server, you might want to create groups like `association1` and `association2` and add members of each association to the relevant group.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/20.users/groups_and_permissions.mdx:20
+#, no-wrap
+msgid "It's also possible to define mail aliases for a group, such that mails sent to `groupe@domain.tld` will be dispatched to all members of the group.\n"
+msgstr ""
+
+#. type: Title ###
+#: docs/admin/20.users/groups_and_permissions.mdx:21
+#, no-wrap
+msgid "Default groups"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/20.users/groups_and_permissions.mdx:24
+#, no-wrap
+msgid "By default, these special groups are created:\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/20.users/groups_and_permissions.mdx:28
+#, no-wrap
+msgid ""
+"- `all_users`, that contain all users registered on YunoHost,\n"
+"- `visitors`, that applies to people viewing the server while not logged in.\n"
+"- `admins`, that contains YunoHost administrators, who will have SSH access as well as to the webadmin.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/20.users/groups_and_permissions.mdx:30
+#, no-wrap
+msgid "The content of those groups cannot be changed, only the permissions given to them.\n"
+msgstr ""
+
+#. type: Title ###
+#: docs/admin/20.users/groups_and_permissions.mdx:31
+#, no-wrap
+msgid "List existing groups"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/20.users/groups_and_permissions.mdx:37
+#, no-wrap
+msgid "The existing groups are listed at the top of the *groups and permissions* page.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/20.users/groups_and_permissions.mdx:44
+#, no-wrap
+msgid "To list the currently existing groups in CLI :\n"
+msgstr ""
+
+#. type: Title ###
+#: docs/admin/20.users/groups_and_permissions.mdx:59
+#, no-wrap
+msgid "Creating a new group"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/20.users/groups_and_permissions.mdx:65
+#, no-wrap
+msgid "To create a new group, simply click on the \"New Group\" button at the top of the page. You may only choose a name formed with letters (uper- and lowercase) and spaces. The group is created empty and without any permission.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/20.users/groups_and_permissions.mdx:67
+#, no-wrap
+msgid "![screenshot of new group button](/img/webadmin/groups_button-new-group.png)\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/20.users/groups_and_permissions.mdx:72
+#, no-wrap
+msgid "In CLI, to create a new group called `yolo_crew`\n"
+msgstr ""
+
+#. type: Title ###
+#: docs/admin/20.users/groups_and_permissions.mdx:80
+#, no-wrap
+msgid "Updating a group"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/20.users/groups_and_permissions.mdx:86
+#, no-wrap
+msgid "Let's add a first to this group: in the group panel, click the button \"add a user\" and scroll to the desired user, then click on it.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/20.users/groups_and_permissions.mdx:90
+#, no-wrap
+msgid "To remove a user, click on the cross next to their username, in the group panel.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/20.users/groups_and_permissions.mdx:97
+#, no-wrap
+msgid "In CLI, use the following command to add `charlie` and `delphine`to the `yolo_crew` group:\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/20.users/groups_and_permissions.mdx:103
+#, no-wrap
+msgid "(similarly, `remove` can be used to remove members from a group)\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/20.users/groups_and_permissions.mdx:105
+#, no-wrap
+msgid "Now in the group list we should see:\n"
+msgstr ""
+
+#. type: Title ###
+#: docs/admin/20.users/groups_and_permissions.mdx:124
+#, no-wrap
+msgid "Deleting groups"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/20.users/groups_and_permissions.mdx:130
+#, no-wrap
+msgid "To delete a group, click on the red cross on the top right of the group panel. You will be asked for confirmation.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/20.users/groups_and_permissions.mdx:137
+#, no-wrap
+msgid "To delete the group `yolo_crew` in CLI, you may run\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/20.users/groups_and_permissions.mdx:145
+#, no-wrap
+msgid "Managing permissions"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/20.users/groups_and_permissions.mdx:148
+#, no-wrap
+msgid "The permission mechanism allow to restrict access to services (for example mail, XMPP...) and apps, or even specific parts of the apps (for example the administration interface of WordPress).\n"
+msgstr ""
+
+#. type: Title ###
+#: docs/admin/20.users/groups_and_permissions.mdx:149
+#, no-wrap
+msgid "List permissions"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/20.users/groups_and_permissions.mdx:155
+#, no-wrap
+msgid "The groups page lists the permissions given to each group, including the special groups `all_users` and `visitors`.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/20.users/groups_and_permissions.mdx:162
+#, no-wrap
+msgid "To list permissions and corresponding accesses in CLI:\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/20.users/groups_and_permissions.mdx:177
+#, no-wrap
+msgid "Here, we find that all registered users can use email, XMPP, and access the WordPress blog. However, nobody can access the WordPress admin interface.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/20.users/groups_and_permissions.mdx:179
+#, no-wrap
+msgid "More details can be displayed by adding the `--full` option which will display the list of users corresponding to groups allowed, as well as urls associated to a permission (relevant for web apps).\n"
+msgstr ""
+
+#. type: Title ###
+#: docs/admin/20.users/groups_and_permissions.mdx:183
+#, no-wrap
+msgid "Add accesses to group or users"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/20.users/groups_and_permissions.mdx:189
+#, no-wrap
+msgid "To add a permission to a group, simply click the \"+\" button in the group panel, scroll to the desired permission, then click on it.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/20.users/groups_and_permissions.mdx:193
+#: docs/admin/20.users/groups_and_permissions.mdx:206
+#, no-wrap
+msgid "Note that you can also allow a single user, by using the specific panel at the bottom of the page.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/20.users/groups_and_permissions.mdx:200
+#, no-wrap
+msgid "To allow a group to access the WordPress admin interface in CLI:\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/20.users/groups_and_permissions.mdx:212
+#, no-wrap
+msgid "And now we may see that both the YoloCrew and Alice have access to the WordPress admin interface:\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/20.users/groups_and_permissions.mdx:224
+#, no-wrap
+msgid "Note that, for example, if we want to restrict permission for email so that only Bob is allowed to email, we should also remove `all_users` from the permission, by deleting it from the `all_users` group panel, or in CLI:\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/20.users/groups_and_permissions.mdx:233
+#, no-wrap
+msgid "Note that some permissions may be \"protected\", meaning that you won't be able to add/remove the visitor group to this permission. Generally, this is because it would make no sense (or is a security risk) to do so.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/20.users/groups_and_permissions.mdx:235
+#, no-wrap
+msgid "The webadmin will issue a warning if you set a permission that is superseded by a wider permission.\n"
+msgstr ""
+
+#. type: Title ###
+#: docs/admin/20.users/groups_and_permissions.mdx:238
+#, no-wrap
+msgid "Hide/display specific tiles in the user portal"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/20.users/groups_and_permissions.mdx:241
+#, no-wrap
+msgid "Since YunoHost 4.1, you can choose to hide/display specific tiles in the SSO.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/20.users/groups_and_permissions.mdx:246
+#, no-wrap
+msgid "In the webadmin, you can do so by going in the corresponding app view, go in `Manage label and tiles` and check/uncheck the option `Display the tile in the user portal` for the corresponding permission.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/20.users/groups_and_permissions.mdx:251
+#, no-wrap
+msgid "In command line, this may be done with:\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/20.users/groups_and_permissions.mdx:260
+#, no-wrap
+msgid "Configuring group aliases"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/20.users/groups_and_permissions.mdx:263
+#, no-wrap
+msgid "Each group can use mail aliases, but their configuration is only available from the CLI so far. For example, the `admins` group is configured with aliases such as `admins@domain.tld`, `root@domain.tld` ... : mail sent to these addresses will be dispatched to all members of the `admins` group.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/20.users/groups_and_permissions.mdx:265
+#, no-wrap
+msgid "The command `yunohost user group info` will list them.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/20.users/groups_and_permissions.mdx:280
+#, no-wrap
+msgid "To add a new mail, use the action `add-mailalias` or `remove-mailalias` to delete it.\n"
+msgstr ""

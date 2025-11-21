@@ -1,0 +1,131 @@
+# Copyright (C) 2025 YunoHost Contributors
+# This file is distributed under the same license as the YunoHost documentation package.
+#
+# Weblate Admin <yunohost@translate.yunohost.org>, 2025.
+msgid ""
+msgstr ""
+"Project-Id-Version: YunoHost documentation VERSION\n"
+"POT-Creation-Date: 2025-11-19 02:54+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+
+#. type: Yaml Front Matter Hash Value: title
+#: docs/admin/35.email/index.mdx:1
+#, no-wrap
+msgid "📬 Emails"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/35.email/index.mdx:9
+#, no-wrap
+msgid "YunoHost comes with a complete mail stack allowing you to host your own email server, and therefore to have your own email addresses in `something@your.domain.tld`.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/35.email/index.mdx:11
+#, no-wrap
+msgid "The mail stack includes a SMTP server (postfix), an IMAP server (Dovecot), an antispam (rspamd) and DKIM configuration.\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/35.email/index.mdx:12
+#, no-wrap
+msgid "Making sure your setup is right"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/35.email/index.mdx:15
+#, no-wrap
+msgid "Email is a complicated ecosystem and quite a few details can prevent it from working properly.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/35.email/index.mdx:17
+#, no-wrap
+msgid "To validate your setup:\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/35.email/index.mdx:22
+#, no-wrap
+msgid ""
+"- if you are self-hosting at home and not using a VPN, ensure [your ISP won't block port 25](/admin/get_started/providers/isp/) ;\n"
+"- route ports according to [this documentation](/admin/get_started/post_install/port_forwarding) ;\n"
+"- carefully configure mail DNS records according to [this documentation](/admin/get_started/post_install/dns_config) ;\n"
+"- test your configuration using the diagnostic features (<HighlightWebAdmin/> → <HighlightDiagnosis/> → <Highlight no_break={true} color='grey'><FAIcon icon=\"fa-envelope\"/> Email</Highlight> ). You can also use [mail-tester.com](https://mail-tester.com), a score of at least 8~9/10 is a reasonnable goal <small>(be careful : only 3 tests per domain per day are allowed)</small>\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/35.email/index.mdx:23
+#, no-wrap
+msgid "Email clients"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/35.email/index.mdx:26
+#, no-wrap
+msgid "To interact with the email sever (read and send emails), you can either install a webclient such as Roundcube or Rainloop on your server - or configure a desktop/mobile client as described in [this page](/admin/email/clients).\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/35.email/index.mdx:28
+#, no-wrap
+msgid "Desktop and mobile clients have the advantage of copying your emails to the device, allowing offline viewing and relative protection against possible hardware failures of your server.\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/35.email/index.mdx:29
+#, no-wrap
+msgid "Configuring email aliases and auto-forwards"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/35.email/index.mdx:32
+#, no-wrap
+msgid "Mail aliases and forwards can be configured for each users. For instance, the first user created on the server automatically has an alias `root@the.domain.tld` configured - meaning that an email sent to this address will end in the inbox of the first user. Automatic forwards may be configured, for instance if an user doesn't want to configure an additional email account and just wants to receive emails from the server on, say, his/her gmail address.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/35.email/index.mdx:34
+#, no-wrap
+msgid "Another feature which few people know about is the use of suffixes beginning with \"+\". For example, emails sent to `johndoe+booking@the.domain.tld` will automatically land in the `booking` dir (lowercase) of John Doe's mailbox or in John Doe's inbox if `booking` directory doesn't exist . It is a practical technique for example to provide an e-mail address to a website, then easily sort (via automatic filters) the mail coming from this website.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/35.email/index.mdx:36
+#, no-wrap
+msgid "Groups also can use alias features, by default the group `admins` has aliases such as `root@<domain.tld>` and `webmaster@<domain.tld>`. [More info on the groups and permission page](/admin/users/groups_and_permissions).\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/35.email/index.mdx:37
+#, no-wrap
+msgid "What happens if my server becomes unavailable?"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/35.email/index.mdx:40
+#, no-wrap
+msgid "If your server becomes unavailable, emails sent to your server will stay in a pending queue on the sender's side for as long as ~5 days. The sender's host will regularly try to resend the email, until it drops it if it was unable to send it.\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/35.email/index.mdx:41
+#, no-wrap
+msgid "See also"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/35.email/index.mdx:45
+#, no-wrap
+msgid ""
+"- [Removing your server’s IP/domain from antispam listings](/admin/troubleshooting/blacklist_forms).\n"
+"- [Migrating from an email provider to a YunoHost instance](/admin/email/migration)\n"
+"- [Configuring an SMTP relay](/admin/tutorials/email_configure_relay).\n"
+msgstr ""
