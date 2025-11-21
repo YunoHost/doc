@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2025-11-11 01:24+0100\n"
+"POT-Creation-Date: 2025-11-19 02:54+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -20,19 +20,19 @@ msgid "Setting up IPv6"
 msgstr "Configuration de l'IPv6"
 
 #. type: Plain text
-#: docs/admin/50.troubleshooting/20.ipv6.mdx:6
+#: docs/admin/50.troubleshooting/20.ipv6.mdx:7
 #, no-wrap
 msgid "IPv6 may work out of the box in many cases. But in some cases or some specific provider, you may need to tweak things manually to enable IPv6.\n"
 msgstr "L'IPv6 peut fonctionner directement dans certains cas. Mais dans d'autres, ou chez certains hébergeurs spécifiques, vous devez activer l'IPv6 manuellement.\n"
 
 #. type: Title ##
-#: docs/admin/50.troubleshooting/20.ipv6.mdx:7
+#: docs/admin/50.troubleshooting/20.ipv6.mdx:8
 #, no-wrap
 msgid "With a VPS from OVH"
 msgstr "Avec un VPS chez OVH"
 
 #. type: Plain text
-#: docs/admin/50.troubleshooting/20.ipv6.mdx:11
+#: docs/admin/50.troubleshooting/20.ipv6.mdx:12
 #, no-wrap
 msgid ""
 "OVH gives one IPv4 address and one IPv6 address for VPS but by default, only IPv4 is OK.\n"
@@ -42,31 +42,31 @@ msgstr ""
 "Veuillez regarder [The OVH documentation](https://docs.ovh.com/gb/en/vps/configuring-ipv6/)\n"
 
 #. type: Title ###
-#: docs/admin/50.troubleshooting/20.ipv6.mdx:12
+#: docs/admin/50.troubleshooting/20.ipv6.mdx:13
 #, no-wrap
 msgid "Configure the DNS server"
 msgstr "Configurer le serveur DNS"
 
 #. type: Plain text
-#: docs/admin/50.troubleshooting/20.ipv6.mdx:15
+#: docs/admin/50.troubleshooting/20.ipv6.mdx:16
 #, no-wrap
 msgid "Also check [the documentation for subdomains](/admin/tutorials/domains/dns_subdomains).\n"
 msgstr "Also check [the documentation for subdomains](/admin/tutorials/domains/dns_subdomains).\n"
 
 #. type: Title ###
-#: docs/admin/50.troubleshooting/20.ipv6.mdx:16
+#: docs/admin/50.troubleshooting/20.ipv6.mdx:17
 #, no-wrap
 msgid "Configure the server"
 msgstr "Configurer le serveur"
 
 #. type: Plain text
-#: docs/admin/50.troubleshooting/20.ipv6.mdx:19
+#: docs/admin/50.troubleshooting/20.ipv6.mdx:20
 #, no-wrap
 msgid "On the OVH panel, you will copy 3 elements:\n"
 msgstr "Sur le panneau de gestion d'OVH, vous aller récupérer 3 informations :\n"
 
 #. type: Plain text
-#: docs/admin/50.troubleshooting/20.ipv6.mdx:23
+#: docs/admin/50.troubleshooting/20.ipv6.mdx:24
 #, fuzzy, no-wrap
 #| msgid "the IPv6 prefix. On OVH's VPS SSD, prefixes are `/128` because you have only *one* IPv6 address.\n"
 msgid ""
@@ -76,7 +76,7 @@ msgid ""
 msgstr "le préfixe IPv6. Les offres VPS SSD d'OVH ne fournissent qu'*une* seule adresse IPV6, le préfixe est donc `/128`\n"
 
 #. type: Plain text
-#: docs/admin/50.troubleshooting/20.ipv6.mdx:26
+#: docs/admin/50.troubleshooting/20.ipv6.mdx:27
 #, no-wrap
 msgid ""
 "On your VPS, create a backup of the network configuration with : `cp /etc/network/interfaces ~/interfaces` in home directory.\n"
@@ -86,7 +86,7 @@ msgstr ""
 "Then, you can edit the configuration file (`/etc/network/interfaces`) with the following.\n"
 
 #. type: Fenced div block (note)
-#: docs/admin/50.troubleshooting/20.ipv6.mdx:27
+#: docs/admin/50.troubleshooting/20.ipv6.mdx:28
 #, no-wrap
 msgid "In this example, it is assumed that your network interface is `eth0`. If it's different (check with `ip a`) you need to adapt the example below.\n"
 msgstr ""
@@ -94,19 +94,19 @@ msgstr ""
 "Dans cet exemple, nous considérons que votre interface réseau est `eth0`. Vous devez adapter l'exemple pour correspondre à votre situation.\n"
 
 #. type: Plain text
-#: docs/admin/50.troubleshooting/20.ipv6.mdx:42
+#: docs/admin/50.troubleshooting/20.ipv6.mdx:43
 #, no-wrap
 msgid "Now, save the file and restart the network service with : `service networking restart`. (TODO : ideally we should find a way to validate the content of the configuration, otherwise it could fuck up the network stack and get disconnected from the VPS ?)\n"
 msgstr "Maintenant, enregistrez le fichier et redémarrez les services réseau avec : `service networking restart`. (TODO : ideally we should find a way to validate the content of the configuration, otherwise it could fuck up the network stack and get disconnected from the VPS ?)\n"
 
 #. type: Plain text
-#: docs/admin/50.troubleshooting/20.ipv6.mdx:44
+#: docs/admin/50.troubleshooting/20.ipv6.mdx:45
 #, no-wrap
 msgid "Check your configuration with these commands :\n"
 msgstr "Vérifiez votre configuration avec les commandes :\n"
 
 #. type: Plain text
-#: docs/admin/50.troubleshooting/20.ipv6.mdx:49
+#: docs/admin/50.troubleshooting/20.ipv6.mdx:50
 #, no-wrap
 msgid ""
 "- `ip a` to display network interfaces and addresses\n"
@@ -116,7 +116,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/50.troubleshooting/20.ipv6.mdx:50
+#: docs/admin/50.troubleshooting/20.ipv6.mdx:51
 #, no-wrap
 msgid "If it's ok, it's ok !\n"
 msgstr "Et voilà !\n"

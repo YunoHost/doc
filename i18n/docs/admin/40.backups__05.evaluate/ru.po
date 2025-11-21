@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2025-11-11 00:07+0100\n"
+"POT-Creation-Date: 2025-11-19 02:54+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -31,7 +31,7 @@ msgstr ""
 #. type: Title ##
 #: docs/admin/40.backups/05.evaluate.mdx:7
 #, no-wrap
-msgid "What is a good backup ?"
+msgid "What is a good backup?"
 msgstr ""
 
 #. type: Plain text

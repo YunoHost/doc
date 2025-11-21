@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2025-11-11 01:24+0100\n"
+"POT-Creation-Date: 2025-11-19 02:54+0000\n"
 "PO-Revision-Date: 2025-11-10 01:35+0000\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: French <https://translate.yunohost.org/projects/doc-"
@@ -27,8 +27,8 @@ msgstr ""
 #: docs/admin/20.users/groups_and_permissions.mdx:153
 #: docs/admin/20.users/groups_and_permissions.mdx:187
 #: docs/admin/20.users/groups_and_permissions.mdx:244
-#: docs/admin/25.domains/certificate.mdx:26 docs/admin/30.apps/index.mdx:34
-#: docs/admin/30.apps/index.mdx:104 docs/admin/30.apps/index.mdx:136
+#: docs/admin/25.domains/certificate.mdx:27 docs/admin/30.apps/index.mdx:32
+#: docs/admin/30.apps/index.mdx:102 docs/admin/30.apps/index.mdx:134
 #: docs/admin/40.backups/index.mdx:22 docs/admin/40.backups/index.mdx:71
 #: docs/admin/40.backups/index.mdx:137
 #: docs/admin/45.tutorials/35.email_configure_relay.mdx:49
@@ -48,8 +48,8 @@ msgstr "<TabItem value=\"web\" label=\"Depuis la webadmin\">\n"
 #: docs/admin/20.users/groups_and_permissions.mdx:160
 #: docs/admin/20.users/groups_and_permissions.mdx:198
 #: docs/admin/20.users/groups_and_permissions.mdx:249
-#: docs/admin/25.domains/certificate.mdx:45 docs/admin/30.apps/index.mdx:39
-#: docs/admin/30.apps/index.mdx:113 docs/admin/30.apps/index.mdx:143
+#: docs/admin/25.domains/certificate.mdx:46 docs/admin/30.apps/index.mdx:37
+#: docs/admin/30.apps/index.mdx:111 docs/admin/30.apps/index.mdx:141
 #: docs/admin/40.backups/index.mdx:29 docs/admin/40.backups/index.mdx:85
 #: docs/admin/40.backups/index.mdx:144 docs/admin/40.backups/index.mdx:171
 #: docs/admin/45.tutorials/35.email_configure_relay.mdx:66
@@ -64,25 +64,25 @@ msgid "Certificate"
 msgstr "Certificat"
 
 #. type: Plain text
-#: docs/admin/25.domains/certificate.mdx:9
+#: docs/admin/25.domains/certificate.mdx:10
 #, no-wrap
 msgid "Certificates are used to guarantee the confidentiality and authenticity of the communication between a web browser and your server. In particular, they protect against attackers trying to impersonate your server.\n"
 msgstr "Les certificats sont utilisés pour garantir la confidentialité et l'authenticité des communications entre un navigateur web et votre serveur. En particulier, il permet de protéger les visiteurs contre des attaquants qui chercheraient à usurper l'identité du serveur.\n"
 
 #. type: Plain text
-#: docs/admin/25.domains/certificate.mdx:11
+#: docs/admin/25.domains/certificate.mdx:12
 #, no-wrap
 msgid "YunoHost provides a **self-signed** certificate, it means that your server guaranties the certificate validity. It's enough **for personal usage**, because you trust your own server. But this could be a problem if you want to open access to anonymous like web user for a website.\n"
 msgstr "YunoHost fournit par défaut un certificat **auto-signé**, ce qui veut dire que c’est votre serveur qui garantit la validité du certificat. C’est suffisant **pour un usage personnel**, car vous pouvez avoir confiance en votre serveur, en revanche cela posera problème si vous comptez ouvrir l’accès à votre serveur à des anonymes, par exemple pour héberger un site web.\n"
 
 #. type: Plain text
-#: docs/admin/25.domains/certificate.mdx:13
+#: docs/admin/25.domains/certificate.mdx:14
 #, no-wrap
 msgid "In practice, visitors will see a screen list this:\n"
 msgstr "En effet, les utilisateurs devront passer par un écran de ce type :\n"
 
 #. type: Plain text
-#: docs/admin/25.domains/certificate.mdx:17
+#: docs/admin/25.domains/certificate.mdx:18
 #, no-wrap
 msgid "Which basically asks the visitor : **\"Do you trust the server hosting this website?\"**. This can rightfully frighten a lot of people.\n"
 msgstr ""
@@ -90,19 +90,19 @@ msgstr ""
 "Cela peut effrayer vos utilisateurs (à juste titre).\n"
 
 #. type: Plain text
-#: docs/admin/25.domains/certificate.mdx:19
+#: docs/admin/25.domains/certificate.mdx:20
 #, no-wrap
 msgid "To avoid this confusion, it's possible to get a certificate signed a known authority named **Let's Encrypt** which provide free certificates directly recognized by browsers. YunoHost allows to directly install this certificate from the web administration interface or from the command line.\n"
 msgstr ""
 
-#. type: Title ###
-#: docs/admin/25.domains/certificate.mdx:20
+#. type: Title ##
+#: docs/admin/25.domains/certificate.mdx:21
 #, no-wrap
 msgid "Install a Let's Encrypt certificate"
 msgstr "Installer un certificat Let's Encrypt"
 
 #. type: Plain text
-#: docs/admin/25.domains/certificate.mdx:23
+#: docs/admin/25.domains/certificate.mdx:24
 #, no-wrap
 msgid "Before attempting to install a Let's Encrypt certificate, you should make sure that your DNS is correctly configured (your.domain.tld should point to your server's IP) and that your domain is accessible through HTTP from outside your local network (i.e. at least port 80 should be forwarded to your server).\n"
 msgstr ""
@@ -112,7 +112,7 @@ msgstr ""
 "(c.-à-d. qu'au moins le port 80 est correctement redirigé vers votre serveur).\n"
 
 #. type: Plain text
-#: docs/admin/25.domains/certificate.mdx:28
+#: docs/admin/25.domains/certificate.mdx:29
 #, no-wrap
 msgid "Go to the 'Domain' part of the admin interface, then in the section dedicated to your.domain.tld. You should find a 'SSL certificate' button:\n"
 msgstr ""
@@ -120,7 +120,7 @@ msgstr ""
 "la section dédiée à votre domaine. Vous trouverez un bouton 'Certificat SSL'.\n"
 
 #. type: Plain text
-#: docs/admin/25.domains/certificate.mdx:32
+#: docs/admin/25.domains/certificate.mdx:33
 #, no-wrap
 msgid "In the 'SSL certificate' section, you can see the status of the current certificate. If you just added the domain, it should be a self-signed certificate.\n"
 msgstr ""
@@ -128,7 +128,7 @@ msgstr ""
 "Si vous venez d'ajouter le domaine, il dispose d'un certificat auto-signé.\n"
 
 #. type: Plain text
-#: docs/admin/25.domains/certificate.mdx:36
+#: docs/admin/25.domains/certificate.mdx:37
 #, no-wrap
 msgid "If your domain is correctly configured, it is then possible to install the Let's Encrypt certificate via the green button.\n"
 msgstr ""
@@ -136,7 +136,7 @@ msgstr ""
 "passer à un certificat Let's Encrypt via le bouton vert.\n"
 
 #. type: Plain text
-#: docs/admin/25.domains/certificate.mdx:40
+#: docs/admin/25.domains/certificate.mdx:41
 #, no-wrap
 msgid "Once the install is made, you can check that the certificate is live via your browser by going to your domain in HTTPS. The certificate will automatically be renewed every three months.\n"
 msgstr ""
@@ -146,31 +146,31 @@ msgstr ""
 "trois mois environ.\n"
 
 #. type: Plain text
-#: docs/admin/25.domains/certificate.mdx:47
+#: docs/admin/25.domains/certificate.mdx:48
 #, no-wrap
 msgid "Connect to your server through SSH.\n"
 msgstr "Connectez-vous sur votre serveur en SSH.\n"
 
 #. type: Plain text
-#: docs/admin/25.domains/certificate.mdx:49
+#: docs/admin/25.domains/certificate.mdx:50
 #, no-wrap
 msgid "You can check the status of your current certificate with:\n"
 msgstr "Vous pouvez vérifier le statut actuel de votre certificat via :\n"
 
 #. type: Plain text
-#: docs/admin/25.domains/certificate.mdx:55
+#: docs/admin/25.domains/certificate.mdx:56
 #, no-wrap
 msgid "Install a Let's Encrypt certificate with\n"
 msgstr "Installez le certificat Let's Encrypt via :\n"
 
 #. type: Plain text
-#: docs/admin/25.domains/certificate.mdx:61
+#: docs/admin/25.domains/certificate.mdx:62
 #, no-wrap
 msgid "This should return :\n"
 msgstr "Cette commande doit retourner :\n"
 
 #. type: Plain text
-#: docs/admin/25.domains/certificate.mdx:68
+#: docs/admin/25.domains/certificate.mdx:69
 #, no-wrap
 msgid "Once this is done, you can check that the certificate is live via your browser by going to your domain in HTTPS. The certificate will automatically be renewed every three months.\n"
 msgstr ""
@@ -179,14 +179,14 @@ msgstr ""
 "signé par Let's Encrypt. Le certificat sera renouvelé automatiquement tous les\n"
 "trois mois environ.\n"
 
-#. type: Title ####
-#: docs/admin/25.domains/certificate.mdx:72
+#. type: Title ##
+#: docs/admin/25.domains/certificate.mdx:73
 #, no-wrap
 msgid "Troubleshooting"
 msgstr "En cas de problème"
 
 #. type: Plain text
-#: docs/admin/25.domains/certificate.mdx:75
+#: docs/admin/25.domains/certificate.mdx:76
 #, no-wrap
 msgid "If due to some bad tweaking, your certificate ends up in a bad state (e.g. lost the certificate or unable to read the files), you should be able to clean the situation by regenerating a self-signed certificate:\n"
 msgstr ""
@@ -196,7 +196,7 @@ msgstr ""
 "certificat auto-signé :\n"
 
 #. type: Plain text
-#: docs/admin/25.domains/certificate.mdx:81
+#: docs/admin/25.domains/certificate.mdx:82
 #, no-wrap
 msgid "If YunoHost thinks that your domain is badly configured despite the fact that you checked the DNS configuration and you have access in HTTP to your server from outside your local network, then you can:\n"
 msgstr ""
@@ -205,7 +205,7 @@ msgstr ""
 "HTTP depuis l'extérieur, vous pouvez tenter :\n"
 
 #. type: Plain text
-#: docs/admin/25.domains/certificate.mdx:83
+#: docs/admin/25.domains/certificate.mdx:84
 #, fuzzy, no-wrap
 #| msgid "if the certificate installation still doesn't work, you can disable the checks with `--no-checks` after the `cert install` command.\n"
 msgid ""

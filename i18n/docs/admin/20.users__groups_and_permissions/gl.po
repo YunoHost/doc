@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2025-11-11 19:34+0100\n"
+"POT-Creation-Date: 2025-11-19 02:54+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -26,8 +26,8 @@ msgstr ""
 #: docs/admin/20.users/groups_and_permissions.mdx:153
 #: docs/admin/20.users/groups_and_permissions.mdx:187
 #: docs/admin/20.users/groups_and_permissions.mdx:244
-#: docs/admin/25.domains/certificate.mdx:26 docs/admin/30.apps/index.mdx:34
-#: docs/admin/30.apps/index.mdx:104 docs/admin/30.apps/index.mdx:136
+#: docs/admin/25.domains/certificate.mdx:27 docs/admin/30.apps/index.mdx:32
+#: docs/admin/30.apps/index.mdx:102 docs/admin/30.apps/index.mdx:134
 #: docs/admin/40.backups/index.mdx:22 docs/admin/40.backups/index.mdx:71
 #: docs/admin/40.backups/index.mdx:137
 #: docs/admin/45.tutorials/35.email_configure_relay.mdx:49
@@ -47,8 +47,8 @@ msgstr ""
 #: docs/admin/20.users/groups_and_permissions.mdx:160
 #: docs/admin/20.users/groups_and_permissions.mdx:198
 #: docs/admin/20.users/groups_and_permissions.mdx:249
-#: docs/admin/25.domains/certificate.mdx:45 docs/admin/30.apps/index.mdx:39
-#: docs/admin/30.apps/index.mdx:113 docs/admin/30.apps/index.mdx:143
+#: docs/admin/25.domains/certificate.mdx:46 docs/admin/30.apps/index.mdx:37
+#: docs/admin/30.apps/index.mdx:111 docs/admin/30.apps/index.mdx:141
 #: docs/admin/40.backups/index.mdx:29 docs/admin/40.backups/index.mdx:85
 #: docs/admin/40.backups/index.mdx:144 docs/admin/40.backups/index.mdx:171
 #: docs/admin/45.tutorials/35.email_configure_relay.mdx:66
@@ -338,10 +338,10 @@ msgstr ""
 msgid "In command line, this may be done with:\n"
 msgstr ""
 
-#. type: Title ###
+#. type: Title ##
 #: docs/admin/20.users/groups_and_permissions.mdx:260
 #, no-wrap
-msgid "Config alias group"
+msgid "Configuring group aliases"
 msgstr ""
 
 #. type: Plain text

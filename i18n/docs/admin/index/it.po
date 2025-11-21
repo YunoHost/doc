@@ -3,34 +3,93 @@
 #
 # Languages add-on <noreply-addon-languages@weblate.org>, 2025.
 msgid ""
-msgstr "Project-Id-Version: YunoHost documentation VERSION\nPOT-Creation-Date: 2025-11-09 20:53+0100\nPO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\nLast-Translator: Automatically generated\nLanguage-Team: none\nLanguage: it\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=2; plural=n != 1;\n"
+msgstr ""
+"Project-Id-Version: YunoHost documentation VERSION\n"
+"POT-Creation-Date: 2025-11-19 03:04+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #. type: Yaml Front Matter Hash Value: title
-#: docs/admin/index.mdx:1
 #, no-wrap
-msgid "Welcome"
-msgstr ""
-
-#. type: Title #
-#: docs/admin/index.mdx:6
-#, no-wrap
-msgid "YunoHost admin documentation"
+msgid "Welcome!"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/index.mdx:9
 #, no-wrap
-msgid "Here, you'll learn [the basics of self-hosting](/admin/about_self_hosting), how to [install YunoHost](/admin/get_started/install_on) and configure it.\n"
+msgid "#\n"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/index.mdx:11
 #, no-wrap
-msgid "Then you'll be able to [add users](/admin/users), [domains](/admin/domains) and [apps](/admin/apps), and ensure [backups](/admin/backups) are done properly.\n"
+msgid ""
+"<img\n"
+"    class=\"text--center\"\n"
+"    src=\"/img/icons/logo-ynh-roundcorner.png\"\n"
+"    alt=\"YunoHost logo\"\n"
+"    style={{ marginTop: \"-2em\", maxWidth: \"7rem\", }}\n"
+"/>\n"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/index.mdx:12
 #, no-wrap
-msgid "Don't hesitate to contact the [community](/community) to [ask for help](/community/help) !\n"
+msgid ""
+"This is the documentation for YunoHost,<br/>\n"
+"an **operating system** aiming to **simplify server administration**!\n"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid "If you are an **impatient power user**, you may want to try YunoHost, or jump right away to install:\n"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"<Button url=\"/admin/what_is_yunohost\">🤔 What's YunoHost?!</Button>\n"
+"<Button url=\"/admin/what_is_yunohost/demo\">⚗️ Try YunoHost</Button>\n"
+"<Button url=\"/admin/get_started/install_on\">🚀 Install</Button>\n"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid "<Button url=\"https://apps.yunohost.org/\">📦 Browse the app catalog</Button>\n"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid "Are you **new to self-hosting and servers in general**? We recommend to take it slow and go through the pages presenting [self-hosting](/admin/about_self_hosting), the [different modes](/admin/get_started/methods) and [other](/admin/get_started/why_should_you_not_host_yourself) [things](/category/providers) you should know prior to jumping into the action! \n"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid "Are you **already using YunoHost**? You may want to get in touch with the community or reach for help:\n"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"<Button url=\"https://forum.yunohost.org\">📢 Forum</Button>\n"
+"<Button url=\"/community/chat_rooms\">🗫  Chat rooms</Button>\n"
+"<Button url=\"/community/help\">🛟 Help</Button>\n"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid "Finally, you can **support the project** or get involve in [different ways](/dev):\n"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"<Button url=\"https://yunohost.org/donate.html\">💰 Donate</Button>\n"
+"<Button url=\"/dev/doc\">📝 Improve the documentation</Button>\n"
+"<Button url=\"/dev/doc\">🌐 Work on translations</Button>\n"
+"<Button url=\"/dev/packaging\">📦 Learn app packaging</Button>\n"
+"<Button url=\"/dev/core\">⚙️  Develop on the core</Button>\n"
 msgstr ""

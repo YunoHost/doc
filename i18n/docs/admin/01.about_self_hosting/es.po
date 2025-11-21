@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2025-11-09 20:53+0100\n"
+"POT-Creation-Date: 2025-11-19 02:54+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -20,25 +20,25 @@ msgid "About self-hosting"
 msgstr "Sobre el autoalojamiento (self-hosting)"
 
 #. type: Plain text
-#: docs/admin/01.about_self_hosting.mdx:6
+#: docs/admin/01.about_self_hosting.mdx:7
 #, no-wrap
 msgid "Self-hosting means owning and administrating your own server, typically at home, to host your **personal data and services** yourself instead of relying exclusively on third parties. For instance, you can self-host your blog, such that it 'lives' on a machine that you have control of, instead of having it on somebody else's computer (a.k.a. FAANG or The Cloud) in exchange for money, advertisements, or private data.\n"
 msgstr "El **autoalojamiento** (o *self-hosting*) significa poseer y administrar tu propio servidor, normalmente en casa, para **alojar** tus **datos personales** y servicios, en lugar de depender exclusivamente de terceros. Por ejemplo, es posible el **autoalojamiento** de tu blog, de manera que este \"viva\" dentro de una máquina que **tú** controlas, en lugar de que se aloje en el ordenador de otra persona o empresa (**alias La Nube**) a cambio de dinero, publicidad o **cesión** de datos privados.\n"
 
 #. type: Plain text
-#: docs/admin/01.about_self_hosting.mdx:8
+#: docs/admin/01.about_self_hosting.mdx:9
 #, no-wrap
 msgid "Self-hosting implies owning a server. **A server is a computer that is typically accessible on the network 24/7**, and usually does not have a screen or keyboard (it is instead controlled remotely). Contrary to a popular belief, a server is not necessarily a huge and extra-powerful machine: nowadays, a small, ~$30 ARM board is adequate for self-hosting.\n"
 msgstr "El **autoalojamiento** implica disponer de un servidor. Un servidor es un ordenador destinado a ser accesible en la red las **24 horas del día** y que normalmente no tiene ni pantalla ni teclado, ya que se controla a distancia. **Contrariamente** a una creencia **extendida**, los servidores no son necesariamente máquinas enormes y muy potentes: en la actualidad, una pequeña placa **ARM** de unos **\\~30 €/$** es suficiente para el **autoalojamiento**.\n"
 
 #. type: Plain text
-#: docs/admin/01.about_self_hosting.mdx:10
+#: docs/admin/01.about_self_hosting.mdx:11
 #, no-wrap
 msgid "![Internet topologies diagram](/img/internet_topologies.png)\n"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/01.about_self_hosting.mdx:11
+#: docs/admin/01.about_self_hosting.mdx:12
 #, no-wrap
 msgid "Self-hosting is not about making \"your Internet\" more secure and does not provide anonymity by itself. Instead, it is about being autonomous and in control of your services and data — which also means being responsible for them.\n"
 msgstr "La práctica del **autoalojamiento** no convierte \"tu internet\" en algo más seguro y tampoco proporciona anonimato por **sí mismo**. El objetivo es generalmente generar autonomía y **control** de tus servicios y tus datos — lo que también implica una **responsabilidad**.\n"

@@ -8,11 +8,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2025-11-12 01:45+0000\n"
+"POT-Creation-Date: 2025-11-19 02:54+0000\n"
 "PO-Revision-Date: 2025-11-16 23:39+0000\n"
 "Last-Translator: ppr <pouetpouetratatouille@gmail.com>\n"
-"Language-Team: French <https://translate.yunohost.org/projects/yunohost-doc/"
-"05get_started__20install_on__arm_board/fr/>\n"
+"Language-Team: French <https://translate.yunohost.org/projects/yunohost-"
+"doc/05get_started__20install_on__arm_board/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -137,9 +137,7 @@ msgstr "<TabItem value=\"usbimager\" label=\"Avec USBimager\">\n"
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:57
 #, no-wrap
 msgid "Download [USBimager](https://bztsrc.gitlab.io/usbimager/) for your operating system and install it.\n"
-msgstr ""
-"Téléchargez [USBimager](https://bztsrc.gitlab.io/usbimager/) pour votre "
-"système d'exploitation et installez-le.\n"
+msgstr "Téléchargez [USBimager](https://bztsrc.gitlab.io/usbimager/) pour votre système d'exploitation et installez-le.\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:62
@@ -192,7 +190,7 @@ msgstr "<FAIcon icon=\"fa-key\"/> Premier compte utilisateur⋅ice"
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:87
 #, no-wrap
 msgid ""
-"- Put the SD card in your board\n"
+"- Insert the SD card in the board\n"
 "- Connect your board to your home router via Ethernet\n"
 "  - For advanced users requiring WiFi instead, please follow [the official documentation](https://docs.armbian.com/User-Guide_Autoconfig/#sample-config-file).\n"
 "- If you want to follow the initial boot, connect a screen and keyboard on your board.\n"

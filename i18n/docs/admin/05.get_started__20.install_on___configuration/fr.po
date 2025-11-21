@@ -5,11 +5,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2025-11-11 01:24+0100\n"
+"POT-Creation-Date: 2025-11-19 02:54+0000\n"
 "PO-Revision-Date: 2025-11-11 16:44+0000\n"
 "Last-Translator: Weblate Admin <yunohost@translate.yunohost.org>\n"
-"Language-Team: French <https://translate.yunohost.org/projects/yunohost-doc/"
-"05get_started__20install_on___configuration/fr/>\n"
+"Language-Team: French <https://translate.yunohost.org/projects/yunohost-"
+"doc/05get_started__20install_on___configuration/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -52,8 +52,8 @@ msgstr ""
 #: docs/admin/20.users/groups_and_permissions.mdx:153
 #: docs/admin/20.users/groups_and_permissions.mdx:187
 #: docs/admin/20.users/groups_and_permissions.mdx:244
-#: docs/admin/25.domains/certificate.mdx:26 docs/admin/30.apps/index.mdx:34
-#: docs/admin/30.apps/index.mdx:104 docs/admin/30.apps/index.mdx:136
+#: docs/admin/25.domains/certificate.mdx:27 docs/admin/30.apps/index.mdx:32
+#: docs/admin/30.apps/index.mdx:102 docs/admin/30.apps/index.mdx:134
 #: docs/admin/40.backups/index.mdx:22 docs/admin/40.backups/index.mdx:71
 #: docs/admin/40.backups/index.mdx:137
 #: docs/admin/45.tutorials/35.email_configure_relay.mdx:49
@@ -72,36 +72,18 @@ msgid ""
 "    - if you already know the local IP of the machine, go to `https://xx.xx.xx.xx` (with the **local** IP, typically starting with `192.168.`)\n"
 "    - otherwise you will need to [find out its local IP ](/admin/get_started/post_install/find_ip) before continuing.\n"
 msgstr ""
-"Depuis un ordinateur, ouvrez un navigateur et tenter d'accéder à la webadmin:"
-"\n"
-"- si vous installez sur un VPS, vous avez probablement utilisé la méthode "
-"d'installation basée sur `curl | bash`, et le script aurait du vous pointer "
-"vers l'adresse, typiquement `https://xx.xx.xx.xx` "
-"(avec l'**IPv4 publique** du serveur)\n"
-"- si vous installez à la maison, et en supposant que vous êtes *sur le même "
-"réseau local que le serveur*\n"
-"    - vous pouvez tenter d'ouvrir  https://yunohost.local (ceci peut ou peut "
-"ne pas fonctionner en fonction de si votre machine et réseau supporte le "
-"protocole Bonjour)\n"
-"    - si vous connaissez déjà l'IP locale du serveur, allez sur "
-"`https://xx.xx.xx.xx` "
-"(avec l'IP **locale**, typiquement qui commence par `192.168.`)\n"
-"    - autrement, il vous faut [trouver l'IP locale du serveur]"
-"(/admin/get_started/post_install/find_ip) pour continuer.\n"
+"Depuis un ordinateur, ouvrez un navigateur et tenter d'accéder à la webadmin:\n"
+"- si vous installez sur un VPS, vous avez probablement utilisé la méthode d'installation basée sur `curl | bash`, et le script aurait du vous pointer vers l'adresse, typiquement `https://xx.xx.xx.xx` (avec l'**IPv4 publique** du serveur)\n"
+"- si vous installez à la maison, et en supposant que vous êtes *sur le même réseau local que le serveur*\n"
+"    - vous pouvez tenter d'ouvrir  https://yunohost.local (ceci peut ou peut ne pas fonctionner en fonction de si votre machine et réseau supporte le protocole Bonjour)\n"
+"    - si vous connaissez déjà l'IP locale du serveur, allez sur `https://xx.xx.xx.xx` (avec l'IP **locale**, typiquement qui commence par `192.168.`)\n"
+"    - autrement, il vous faut [trouver l'IP locale du serveur](/admin/get_started/post_install/find_ip) pour continuer.\n"
 
 #. type: Fenced div block (warning)
 #: docs/admin/05.get_started/20.install_on/_configuration.mdx:26
 #, no-wrap
 msgid "During the first visit, you will very likely encounter a security warning related to the certificate used by the server. For now, your server uses a self-signed certificate. You will later be able to add a certificate automatically recognized by web browsers as described in the [certificate documentation](/admin/domains/certificate). For now, you should add a security exception to accept the current certificate. (Though, PLEASE, do not take the habit of blindly accepting this kind of security alert!)\n"
-msgstr ""
-"Lors de la première visite, vous rencontrerez très probablement un "
-"avertissement de sécurité lié au certificat utilisé. Pour le moment, votre "
-"serveur utilise un certificat auto-signé. Vous pourrez plus tard ajouter un "
-"certificat automatiquement reconnu par les navigateurs comme décrit dans "
-"[la page sur les certificats](/admin/domains/certificate). En attendant, "
-"ajoutez une exception de sécurité pour accepter le certificat actuel. ("
-"Toutefois, **s'il vous plaît**, ne prenez pas l'habitude d'accepter ce genre "
-"d'alerte de sécurité !)\n"
+msgstr "Lors de la première visite, vous rencontrerez très probablement un avertissement de sécurité lié au certificat utilisé. Pour le moment, votre serveur utilise un certificat auto-signé. Vous pourrez plus tard ajouter un certificat automatiquement reconnu par les navigateurs comme décrit dans [la page sur les certificats](/admin/domains/certificate). En attendant, ajoutez une exception de sécurité pour accepter le certificat actuel. (Toutefois, **s'il vous plaît**, ne prenez pas l'habitude d'accepter ce genre d'alerte de sécurité !)\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/_configuration.mdx:31
@@ -127,8 +109,8 @@ msgstr "<Figure caption=\"Capture d'écran de la page de configuration initiale\
 #: docs/admin/20.users/groups_and_permissions.mdx:160
 #: docs/admin/20.users/groups_and_permissions.mdx:198
 #: docs/admin/20.users/groups_and_permissions.mdx:249
-#: docs/admin/25.domains/certificate.mdx:45 docs/admin/30.apps/index.mdx:39
-#: docs/admin/30.apps/index.mdx:113 docs/admin/30.apps/index.mdx:143
+#: docs/admin/25.domains/certificate.mdx:46 docs/admin/30.apps/index.mdx:37
+#: docs/admin/30.apps/index.mdx:111 docs/admin/30.apps/index.mdx:141
 #: docs/admin/40.backups/index.mdx:29 docs/admin/40.backups/index.mdx:85
 #: docs/admin/40.backups/index.mdx:144 docs/admin/40.backups/index.mdx:171
 #: docs/admin/45.tutorials/35.email_configure_relay.mdx:66
@@ -180,9 +162,7 @@ msgstr "Éditez le fichier `C:\\Windows\\System32\\drivers\\etc\\hosts`. Vous de
 #: docs/admin/05.get_started/20.install_on/_configuration.mdx:61
 #, no-wrap
 msgid "If you want to create subdomains, do not forget to add them in the `hosts` file too:\n"
-msgstr ""
-"Si vous voulez des sous-domaines, n'oubliez pas de les y rajouter auss dans "
-"le fichier `hosts`:\n"
+msgstr "Si vous voulez des sous-domaines, n'oubliez pas de les y rajouter auss dans le fichier `hosts`:\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/_configuration.mdx:68
