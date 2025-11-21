@@ -1,0 +1,124 @@
+# Copyright (C) 2025 YunoHost Contributors
+# This file is distributed under the same license as the YunoHost documentation package.
+#
+# Languages add-on <noreply-addon-languages@weblate.org>, 2025.
+msgid ""
+msgstr ""
+"Project-Id-Version: YunoHost documentation VERSION\n"
+"POT-Creation-Date: 2025-11-11 19:34+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: ca\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. type: Yaml Front Matter Hash Value: title
+#: docs/admin/40.backups/25.include_exclude_files.mdx:1
+#, no-wrap
+msgid "Include or exclude files"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/40.backups/25.include_exclude_files.mdx:5
+#, no-wrap
+msgid "Include files"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/25.include_exclude_files.mdx:8
+#, no-wrap
+msgid "YunoHost usually already knows what needs to be backed up. However, if you have made manual changes, such as installing an app outside of the YunoHost application system, you may want to extend YunoHost's mechanism to specify other files to be backed up.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/25.include_exclude_files.mdx:10
+#, no-wrap
+msgid "By default, if configurations tracked by YunoHost are changed, they will be backed up. On the other hand, a database or an app added by hand, changes on some configurations not tracked, will not be backed up.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/25.include_exclude_files.mdx:12
+#, no-wrap
+msgid "You can create a backup hook and a restore hook to add data to backup. Here is an example:\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/25.include_exclude_files.mdx:14
+#, no-wrap
+msgid "`/etc/yunohost/hooks.d/backup/99-conf_custom`\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/25.include_exclude_files.mdx:55
+#, no-wrap
+msgid "`/etc/yunohost/hooks.d/restore/99-conf_custom`\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/40.backups/25.include_exclude_files.mdx:101
+#, no-wrap
+msgid "Exclude files"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/25.include_exclude_files.mdx:104
+#, no-wrap
+msgid "There is no mechanism to exclude specific files from a YunoHost backup, other than the 2 options presented below:\n"
+msgstr ""
+
+#. type: Title ###
+#: docs/admin/40.backups/25.include_exclude_files.mdx:105
+#, no-wrap
+msgid "Avoid backing up certain `/home` folders"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/25.include_exclude_files.mdx:108
+#, no-wrap
+msgid "If needed, you can specify that certain user `home` folders not be backed up by the `yunohost backup` command, by creating an empty file named `.nobackup` inside.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/25.include_exclude_files.mdx:110
+#, no-wrap
+msgid "Caution: this setup only works with **first-level subfolders of `/home`**, such as `/home/user1` or `/home/yunohost.multimedia`. It does not work for other levels of subfolders, like `/home/user1/bigfolder/`.\n"
+msgstr ""
+
+#. type: Title ###
+#: docs/admin/40.backups/25.include_exclude_files.mdx:111
+#, no-wrap
+msgid "Do not backup large amounts of data"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/25.include_exclude_files.mdx:113
+#, no-wrap
+msgid "Some apps like Nextcloud are potentially attached to large amounts of data. It is possible to not backup them by default. In this case, the app is said to \"backup only the core\" (of the app).  \n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/25.include_exclude_files.mdx:115
+#, no-wrap
+msgid "During an update, apps containing a large amount of data usually make a backup without these data.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/25.include_exclude_files.mdx:117
+#, no-wrap
+msgid "To temporarily disable backup of large data, for applications that implement this feature, you can set the `BACKUP_CORE_ONLY` variable. To do this, the variable must be set before the backup command:\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/25.include_exclude_files.mdx:123
+#, no-wrap
+msgid "Be careful: you will have to backup Nextcloud users' data yourself.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/25.include_exclude_files.mdx:125
+#, no-wrap
+msgid "If you want this behavior to be permanent:\n"
+msgstr ""

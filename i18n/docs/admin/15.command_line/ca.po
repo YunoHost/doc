@@ -1,0 +1,332 @@
+# Copyright (C) 2025 YunoHost Contributors
+# This file is distributed under the same license as the YunoHost documentation package.
+#
+# Languages add-on <noreply-addon-languages@weblate.org>, 2025.
+msgid ""
+msgstr ""
+"Project-Id-Version: YunoHost documentation VERSION\n"
+"POT-Creation-Date: 2025-11-19 02:54+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: ca\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/_configuration.mdx:18
+#: docs/admin/05.get_started/20.install_on/_configuration.mdx:128
+#: docs/admin/15.command_line.mdx:76
+#: docs/admin/20.users/groups_and_permissions.mdx:35
+#: docs/admin/20.users/groups_and_permissions.mdx:63
+#: docs/admin/20.users/groups_and_permissions.mdx:84
+#: docs/admin/20.users/groups_and_permissions.mdx:128
+#: docs/admin/20.users/groups_and_permissions.mdx:153
+#: docs/admin/20.users/groups_and_permissions.mdx:187
+#: docs/admin/20.users/groups_and_permissions.mdx:244
+#: docs/admin/25.domains/certificate.mdx:27 docs/admin/30.apps/index.mdx:32
+#: docs/admin/30.apps/index.mdx:102 docs/admin/30.apps/index.mdx:134
+#: docs/admin/40.backups/index.mdx:22 docs/admin/40.backups/index.mdx:71
+#: docs/admin/40.backups/index.mdx:137
+#: docs/admin/45.tutorials/35.email_configure_relay.mdx:49
+#, no-wrap
+msgid "<TabItem value=\"web\" label=\"From the web interface\">\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/_configuration.mdx:36
+#: docs/admin/05.get_started/20.install_on/_configuration.mdx:110
+#: docs/admin/05.get_started/20.install_on/_configuration.mdx:135
+#: docs/admin/15.command_line.mdx:85
+#: docs/admin/20.users/groups_and_permissions.mdx:42
+#: docs/admin/20.users/groups_and_permissions.mdx:70
+#: docs/admin/20.users/groups_and_permissions.mdx:95
+#: docs/admin/20.users/groups_and_permissions.mdx:135
+#: docs/admin/20.users/groups_and_permissions.mdx:160
+#: docs/admin/20.users/groups_and_permissions.mdx:198
+#: docs/admin/20.users/groups_and_permissions.mdx:249
+#: docs/admin/25.domains/certificate.mdx:46 docs/admin/30.apps/index.mdx:37
+#: docs/admin/30.apps/index.mdx:111 docs/admin/30.apps/index.mdx:141
+#: docs/admin/40.backups/index.mdx:29 docs/admin/40.backups/index.mdx:85
+#: docs/admin/40.backups/index.mdx:144 docs/admin/40.backups/index.mdx:171
+#: docs/admin/45.tutorials/35.email_configure_relay.mdx:66
+#, no-wrap
+msgid "<TabItem value=\"cli\" label=\"From the command line\">\n"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: title
+#: docs/admin/15.command_line.mdx:1
+#, no-wrap
+msgid "🛠️ SSH and command line"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/15.command_line.mdx:8
+#, no-wrap
+msgid "What's SSH?"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/15.command_line.mdx:11
+#, no-wrap
+msgid "**SSH** stands for Secure Shell, and refers to a protocol that allows to remotely control and administer a machine using the command line interface (CLI). It is available by default in any terminal on GNU/Linux and macOS. On Windows, you may want to use [MobaXterm](https://mobaxterm.mobatek.net/download-home-edition.html) (after launching it, click on Session then SSH).\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/15.command_line.mdx:13
+#, no-wrap
+msgid "The command line interface (CLI) is, in the computer world, the original (and more technical) way of interacting with a computer compared to graphical interface. Command line interfaces are generally said to be more complete, powerful or efficient than a graphical interface, though also more difficult to learn.\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/15.command_line.mdx:14
+#, no-wrap
+msgid "How to connect"
+msgstr ""
+
+#. type: Title ###
+#: docs/admin/15.command_line.mdx:16
+#, no-wrap
+msgid "Credentials *before* running the postinstall"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/15.command_line.mdx:20
+#, no-wrap
+msgid ""
+"- If you are **installing at home**, the default credentials are login: `root` and password: `yunohost` (or `1234` if you flashed an armbian image)\n"
+"- If you are **installing a remote server (VPS)**, your provider should have communicated you the login and password (or allowed you to configure an SSH key)\n"
+msgstr ""
+
+#. type: Title ###
+#: docs/admin/15.command_line.mdx:21
+#, no-wrap
+msgid "Credentials *after* running the postinstall"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/15.command_line.mdx:25
+#, no-wrap
+msgid "During the postinstall, you've been asked to choose an user and an administration password. This user account allows you to connect to the server through SSH. The password becomes also the new password for the `root` user. Additionally, **the `root` SSH login becomes disabled after the postinstall and you should log in using the user account created during postinstall !**. The only exception is that you may still be able to login using `root` *from the local network - or from a direct console on the server* (this is to cover the event where the LDAP server is broken and the users members of the `admins` group are unusables).\n"
+msgstr ""
+
+#. type: Fenced div block (tip)
+#: docs/admin/15.command_line.mdx:26
+#, no-wrap
+msgid "If you connected with the administration account and would like to become `root` for convenience (e.g. to avoid typing `sudo` in front of every command), you can become `root` using the command `sudo su` or `sudo -i`.\n"
+msgstr ""
+
+#. type: Title ###
+#: docs/admin/15.command_line.mdx:30
+#, no-wrap
+msgid "Address to use"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/15.command_line.mdx:33
+#, no-wrap
+msgid "If you are **installing at home** (e.g. on a Raspberry Pi or OLinuXino or old computer):\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/15.command_line.mdx:37
+#, no-wrap
+msgid ""
+"- you should be able to connect to your server using `yunohost.local` (or `yunohost-2.local`, depending on how many servers are on your network).\n"
+"- if `yunohost.local` and the like do not work, your need to [find out the local IP of the server](/admin/get_started/post_install/find_ip).\n"
+"- if you installed a server at home but are attempting to connect from outside your local network, make sure port 22 is correctly forwarded to your server.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/15.command_line.mdx:39
+#, no-wrap
+msgid "If your server is a remote server (VPS), your provider should have communicated you the IP address of the machine\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/15.command_line.mdx:41
+#, no-wrap
+msgid "In any cases, if you already configured a domain name pointing to the appropriate IP, it's much better to use `your.domain.tld` instead of the IP address.\n"
+msgstr ""
+
+#. type: Title ###
+#: docs/admin/15.command_line.mdx:42
+#, no-wrap
+msgid "Connecting"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/15.command_line.mdx:45
+#, no-wrap
+msgid "The SSH command typically looks like:\n"
+msgstr ""
+
+#. type: Fenced div block (note)
+#: docs/admin/15.command_line.mdx:62
+#, no-wrap
+msgid "`fail2ban` will ban your IP for 10 minutes if you perform 10 failed login attempts. If you need to unban the IP, have a look at the page about [Fail2Ban](/admin/troubleshooting/fail2ban)\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/15.command_line.mdx:66
+#, no-wrap
+msgid "Which other users may connect to the server?"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/15.command_line.mdx:69
+#, no-wrap
+msgid "By default, only YunoHost users in the `admins` group can log in to YunoHost's SSH and SFTP servers. Non-admin YunoHost users can't connect via SSH for security reasons. With the permissions system it is possible to specifically grant SFTP or even SSH access to non-admin users.\n"
+msgstr ""
+
+#. type: Fenced div block (caution)
+#: docs/admin/15.command_line.mdx:70
+#, no-wrap
+msgid "Be careful who you give SSH access to. This increases even more the attack surface available to a malicious user.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/15.command_line.mdx:78
+#, no-wrap
+msgid "Go to `Users > Manage groups and permissions`.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/15.command_line.mdx:80
+#, no-wrap
+msgid "From here, you can add SFTP or SSH permissions to any user or group.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/15.command_line.mdx:82
+#, no-wrap
+msgid "If you want to add an SSH public key to the user, you have to do it from the command line, as the web interface does not yet offer this feature.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/15.command_line.mdx:87
+#, no-wrap
+msgid "To allow a user or group to access via SFTP or SSH:\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/15.command_line.mdx:96
+#, no-wrap
+msgid "To remove permission:\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/15.command_line.mdx:105
+#, no-wrap
+msgid "Finally, it is possible to add, delete and list SSH keys, to improve SSH access security, using the commands:\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/15.command_line.mdx:115
+#, no-wrap
+msgid "Security and SSH"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/15.command_line.mdx:118
+#, no-wrap
+msgid "A more extensive discussion about security & SSH can be found on the [dedicated page](/admin/tutorials/security).\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/15.command_line.mdx:119
+#, no-wrap
+msgid "The command line"
+msgstr ""
+
+#. type: Fenced div block (info)
+#: docs/admin/15.command_line.mdx:121
+#, no-wrap
+msgid "Providing a full tutorial about the command line is quite beyond the scope of the YunoHost documentation : for this, consider reading a dedicated tutorial such as [this one](https://ryanstutorials.net/linuxtutorial/) or [this one](http://linuxcommand.org/). But be reassured that you don't need to be a CLI expert to start using it !\n"
+msgstr ""
+
+#. type: Title ###
+#: docs/admin/15.command_line.mdx:125
+#, no-wrap
+msgid "The `yunohost` command"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/15.command_line.mdx:128
+#, no-wrap
+msgid "The `yunohost` command can be used to administer your server and perform the various actions similarly to what you do on the webadmin. The command must be launched either from the `root` user or from a user member of the `admins` group by preceeding them with `sudo`. (ProTip™ : you can become `root` with the command `sudo su` as an user member of `admins` group).\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/15.command_line.mdx:130
+#, no-wrap
+msgid "YunoHost commands usually have this kind of structure :\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/15.command_line.mdx:139
+#, no-wrap
+msgid "Don't hesitate to browse and ask for more information about a given category or action using the the `--help` option. For instance, those commands :\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/15.command_line.mdx:147
+#, no-wrap
+msgid "will successively list all the categories available, then the actions available in the `user` category, then the usage of the action `user create`. You might notice that the YunoHost command tree is built with a structure similar to the YunoHost admin pages.\n"
+msgstr ""
+
+#. type: Title ###
+#: docs/admin/15.command_line.mdx:148
+#, no-wrap
+msgid "The `yunopaste` command"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/15.command_line.mdx:151
+#, no-wrap
+msgid "This command allow you to share with an other person the output of a command.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/15.command_line.mdx:153
+#, no-wrap
+msgid "Example:\n"
+msgstr ""
+
+#. type: Title ###
+#: docs/admin/15.command_line.mdx:158
+#, no-wrap
+msgid "The `ynh-vpnclient-loadcubefile.sh` command"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/15.command_line.mdx:161
+#, no-wrap
+msgid "This command is only available if you have the `VPN Client` application installed. You can use it to load a new .cube in case you can't get to the VPN Client interface to do so.\n"
+msgstr ""
+
+#. type: Title ###
+#: docs/admin/15.command_line.mdx:166
+#, no-wrap
+msgid "Some useful commands"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/15.command_line.mdx:169
+#, no-wrap
+msgid "If your administration web interface indicates that the API is unreachable, try starting `yunohost-api`:\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/15.command_line.mdx:175
+#, no-wrap
+msgid "If you can no longer connect with an user member of `admins` group via SSH and via the web interface, the `slapd` service may be down, try restarting it:\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/15.command_line.mdx:181
+#, no-wrap
+msgid "If you have manually modified configurations and want to know the changes:\n"
+msgstr ""

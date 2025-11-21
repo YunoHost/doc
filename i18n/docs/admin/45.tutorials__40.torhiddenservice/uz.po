@@ -1,0 +1,102 @@
+# Copyright (C) 2025 YunoHost Contributors
+# This file is distributed under the same license as the YunoHost documentation package.
+#
+# Languages add-on <noreply-addon-languages@weblate.org>, 2025.
+msgid ""
+msgstr ""
+"Project-Id-Version: YunoHost documentation VERSION\n"
+"POT-Creation-Date: 2025-11-11 19:34+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: uz\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. type: Yaml Front Matter Hash Value: sidebar_label
+#: docs/admin/45.tutorials/40.torhiddenservice.mdx:1
+#, no-wrap
+msgid "Configure Tor Hidden Service"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: title
+#: docs/admin/45.tutorials/40.torhiddenservice.mdx:1
+#, no-wrap
+msgid "Using YunoHost as a Tor Hidden Service"
+msgstr ""
+
+#. type: Fenced div block (warning)
+#: docs/admin/45.tutorials/40.torhiddenservice.mdx:6
+#, no-wrap
+msgid ""
+"This tuto is not finished ! Some data could leak with this setup like the main domain of your YunoHost, so it's not a \"Hidden Service\".\n"
+"See [The official Tor hidden service documentation](https://www.torproject.org/docs/tor-hidden-service.html.en).\n"
+msgstr ""
+
+#. type: Title ###
+#: docs/admin/45.tutorials/40.torhiddenservice.mdx:11
+#, no-wrap
+msgid " Installing Tor"
+msgstr ""
+
+#. type: Title ###
+#: docs/admin/45.tutorials/40.torhiddenservice.mdx:17
+#, no-wrap
+msgid " Configuring our hidden service"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/40.torhiddenservice.mdx:20
+#, no-wrap
+msgid "Edit `/etc/tor/torrc`, and add these lines:\n"
+msgstr ""
+
+#. type: Title ###
+#: docs/admin/45.tutorials/40.torhiddenservice.mdx:27
+#, no-wrap
+msgid " Restart Tor"
+msgstr ""
+
+#. type: Title ###
+#: docs/admin/45.tutorials/40.torhiddenservice.mdx:33
+#, no-wrap
+msgid "Get your Tor Hidden Service hostname"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/40.torhiddenservice.mdx:40
+#, no-wrap
+msgid "Your domain looks like *random123456789.onion*\n"
+msgstr ""
+
+#. type: Title ###
+#: docs/admin/45.tutorials/40.torhiddenservice.mdx:41
+#, no-wrap
+msgid "Add the .onion domain to YunoHost"
+msgstr ""
+
+#. type: Title ###
+#: docs/admin/45.tutorials/40.torhiddenservice.mdx:47
+#, no-wrap
+msgid "Avoid SSO redirection (optional)"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/40.torhiddenservice.mdx:50
+#, no-wrap
+msgid "If you want to avoid being redirected to the SSO portal at login, you can deactivate SSOwat for this specific tor domain, by editing the file `/etc/nginx/conf.d/random123456789.onion.conf` and commenting the following line (two times):\n"
+msgstr ""
+
+#. type: Title ###
+#: docs/admin/45.tutorials/40.torhiddenservice.mdx:55
+#, no-wrap
+msgid "Check for errors in NGINX configuration"
+msgstr ""
+
+#. type: Title ###
+#: docs/admin/45.tutorials/40.torhiddenservice.mdx:61
+#, no-wrap
+msgid "Restart NGINX"
+msgstr ""
