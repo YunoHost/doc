@@ -1,0 +1,181 @@
+# Copyright (C) 2025 YunoHost Contributors
+# This file is distributed under the same license as the YunoHost documentation package.
+#
+# Languages add-on <noreply-addon-languages@weblate.org>, 2025.
+msgid ""
+msgstr ""
+"Project-Id-Version: YunoHost documentation VERSION\n"
+"POT-Creation-Date: 2025-11-19 02:54+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+
+#. type: Title ##
+#: docs/admin/05.get_started/10.providers/05.registrar/ovh/manualdns.mdx:29
+#: docs/admin/05.get_started/40.post_install/20.dns_config.mdx:109
+#, no-wrap
+msgid "Dynamic IP"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: title
+#: docs/admin/05.get_started/40.post_install/20.dns_config.mdx:1
+#, no-wrap
+msgid "DNS zone configuration"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/40.post_install/20.dns_config.mdx:9
+#, no-wrap
+msgid ""
+"DNS (domain name system) is a system that converts human-readable addresses\n"
+"(domain names) into machine-understandable addresses (IP). For your server to be\n"
+"easily accessible by human beings, and for some services like mail to work\n"
+"properly, DNS must be configured.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/40.post_install/20.dns_config.mdx:14
+#, no-wrap
+msgid ""
+"If you're using an [automatic domain](/admin/tutorials/domains/dns_nohost_me) provided by the YunoHost Project, the configuration should be\n"
+"performed automatically. If you're using your own domain name (e.g. bought via\n"
+"a registrar), you should manually configure your domain on your registrar's\n"
+"interface.\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/05.get_started/40.post_install/20.dns_config.mdx:15
+#, no-wrap
+msgid "Recommended DNS configuration"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/40.post_install/20.dns_config.mdx:18
+#, no-wrap
+msgid "NB: Examples here use the placeholder `your.domain.tld`, you have to replace it with your real domain, such as `www.yunohost.org`.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/40.post_install/20.dns_config.mdx:20
+#, no-wrap
+msgid "YunoHost provides a recommended DNS configuration, available via:\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/40.post_install/20.dns_config.mdx:23
+#, no-wrap
+msgid ""
+"- the webadmin, in Domain > your.domain.tld > DNS configuration;\n"
+"- or the command line, `yunohost domain dns suggest your.domain.tld`\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/40.post_install/20.dns_config.mdx:27
+#, no-wrap
+msgid ""
+"For specific needs or specific setups, and if you know what you're doing, you\n"
+"might want or have to tweak these, or add additional ones (e.g. to handle\n"
+"subdomains).\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/40.post_install/20.dns_config.mdx:29
+#, no-wrap
+msgid "The recommended configuration typically looks like this:\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/40.post_install/20.dns_config.mdx:61
+#, no-wrap
+msgid "Though it might be easier to understand it if displayed like this:\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/40.post_install/20.dns_config.mdx:78
+#, no-wrap
+msgid ""
+"| Type    | Name                   | Value                                                 |\n"
+"| :-----: | :--------------------: | :--------------------------------------------------:  |\n"
+"|  **A**  |   **@**                |  `111.222.333.444` (your IPv4)                        |\n"
+"|    A    |   *                    |  `111.222.333.444` (your IPv4)                        |\n"
+"|  AAAA   |   @                    |  `2222:444:8888:3333:bbbb:5555:3333:1111` (your IPv6) |\n"
+"|  AAAA   |   *                    |  `2222:444:8888:3333:bbbb:5555:3333:1111` (your IPv6) |\n"
+"| **SRV** | **_xmpp-client._tcp**  |  `0 5 5222 your.domain.tld.`                          |\n"
+"| **SRV** | **_xmpp-server._tcp**  |  `0 5 5269 your.domain.tld.`                          |\n"
+"|  CNAME  |   muc                  |  `@`                                                  |\n"
+"|  CNAME  |   pubsub               |  `@`                                                  |\n"
+"|  CNAME  |   vjud                 |  `@`                                                  |\n"
+"|  CNAME  |   xmpp-upload          |  `@`                                                  |\n"
+"| **MX**  | **@**                  |  `your.domain.tld.`     (and priority: 10)            |\n"
+"|   TXT   |   @                    |  `\"v=spf1 a mx -all\"`               |\n"
+"|   TXT   |  mail._domainkey       |  `\"v=DKIM1; k=rsa; p=someHuuuuuuugeKey\"`              |\n"
+"|   TXT   |  _dmarc                |  `\"v=DMARC1; p=none\"`                                 |\n"
+msgstr ""
+
+#. type: Title ###
+#: docs/admin/05.get_started/40.post_install/20.dns_config.mdx:79
+#, no-wrap
+msgid "A few notes about this table"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/40.post_install/20.dns_config.mdx:88
+#, no-wrap
+msgid ""
+"- Not all these lines are absolutely necessary. For a minimal setup, you only need the records in bold.\n"
+"- The dot at the end of `your.domain.tld.` is important ;);\n"
+"- `@` corresponds to `your.domain.tld`, and e.g. `muc` corresponds to `muc.your.domain.tld`;\n"
+"- These are example values ! See your generated conf for the actual values you should use;\n"
+"- We recommend a [TTL](https://en.wikipedia.org/wiki/Time_to_live#DNS_records) of 3600 (1 hour). But you can use something else if you know what you're doing;\n"
+"- Don't put an IPv6 record if you're not sure IPv6 really works on your server! You might have issues with Let's Encrypt if it doesn't.\n"
+"- If you're using the domain provider Namecheap the SRV DNS entries are formatted as **Service**: `_xmpp-client` **Protocol**: `_tcp` **Priority**: `0` **Weight**: `5` **Port**: `5222` **Target**: `your.domain.tld`\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/05.get_started/40.post_install/20.dns_config.mdx:89
+#, no-wrap
+msgid "Reverse DNS"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/40.post_install/20.dns_config.mdx:95
+#, no-wrap
+msgid ""
+"If your ISP or VPS provider let you define a [Reverse DNS\n"
+"lookup](https://en.wikipedia.org/wiki/Reverse_DNS_lookup) for your public IPv4\n"
+"and/or IPv6 addresses, you must configure it. It will prevent you to be marked as\n"
+"spam by anti-spam filters.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/40.post_install/20.dns_config.mdx:97
+#, no-wrap
+msgid "**N.B.: the reverse DNS configuration happens on your Internet Service Provider or VPS provider. It is *not* handled by your domain's registrar.**\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/40.post_install/20.dns_config.mdx:101
+#, no-wrap
+msgid ""
+"If your public IPv4 address is `111.222.333.444` and your DNS\n"
+"domain is `domain.tld`, you should get following answer when using `nslookup`\n"
+"command tool:\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/40.post_install/20.dns_config.mdx:108
+#, no-wrap
+msgid "The diagnosis system available in the webadmin performs this checks automatically (in section Email).\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/40.post_install/20.dns_config.mdx:111
+#, no-wrap
+msgid "If your global IP address is constantly changing, follow this [tutorial](/admin/tutorials/domains/dns_dynamicip).\n"
+msgstr ""

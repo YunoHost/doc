@@ -1,0 +1,134 @@
+# Copyright (C) 2025 YunoHost Contributors
+# This file is distributed under the same license as the YunoHost documentation package.
+#
+# Languages add-on <noreply-addon-languages@weblate.org>, 2025.
+msgid ""
+msgstr ""
+"Project-Id-Version: YunoHost documentation VERSION\n"
+"POT-Creation-Date: 2025-11-11 19:34+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: id\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. type: Plain text
+#: docs/admin/25.domains/index.mdx:24
+#: docs/admin/45.tutorials/05.domains/dns_nohost_me.mdx:6
+#, no-wrap
+msgid "In order to make self-hosting as accessible as possible, the YunoHost Project provides a *free* and *automatically configured* domain name service. By using this service, you won't have to [configure DNS records](/admin/get_started/post_install/dns_config) yourself, which can be tedious and technical.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/25.domains/index.mdx:26
+#: docs/admin/45.tutorials/05.domains/dns_nohost_me.mdx:8
+#, no-wrap
+msgid "The following (sub)domains are offered:\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/25.domains/index.mdx:30
+#: docs/admin/45.tutorials/05.domains/dns_nohost_me.mdx:12
+#, no-wrap
+msgid ""
+"- `whateveryouwant.nohost.me`;\n"
+"- `whateveryouwant.noho.st`;\n"
+"- `whateveryouwant.ynh.fr`.\n"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: title
+#: docs/admin/45.tutorials/05.domains/dns_nohost_me.mdx:1
+#, no-wrap
+msgid "Nohost.me domains"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/05.domains/dns_nohost_me.mdx:14
+#, no-wrap
+msgid "To use this service, you simply have to choose such a domain during the post-installation set up. It will then be automatically configured by YunoHost!\n"
+msgstr ""
+
+#. type: Fenced div block (tip)
+#: docs/admin/45.tutorials/05.domains/dns_nohost_me.mdx:15
+#, no-wrap
+msgid "As a fairness measure, each instance may only have **one such domain** setup at any given time.\n"
+msgstr ""
+
+#. type: Title ###
+#: docs/admin/45.tutorials/05.domains/dns_nohost_me.mdx:19
+#: docs/admin/45.tutorials/05.domains/dns_subdomains.mdx:5
+#, no-wrap
+msgid "Subdomains"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/05.domains/dns_nohost_me.mdx:22
+#, no-wrap
+msgid "The `nohost.me`, `noho.st` and `ynh.fr` domain service allows the creation of subdomains.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/05.domains/dns_nohost_me.mdx:24
+#, no-wrap
+msgid "YunoHost allows the installation of applications on subdomains (for example, having the Nextcloud application accessible from the `cloud.mydomain.org` address), this feature is also allowed with the `nohost.me`, `noho.st` and `ynh.fr` domains and so it is possible to have a subdomain such as `my.application.mydomain.nohost.me`. To create a subdomain on `nohost.me`, `noho.st` and `ynh.fr`, you just have to add the subdomain to YunoHost like any other domains.\n"
+msgstr ""
+
+#. type: Title ###
+#: docs/admin/45.tutorials/05.domains/dns_nohost_me.mdx:25
+#, no-wrap
+msgid "Adding a `nohost.me`, `noho.st` or `ynh.fr` domain after the post-installation"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/05.domains/dns_nohost_me.mdx:28
+#, no-wrap
+msgid "If you already did the postinstall and want to add an automatic domain, you may do so from the \"Domains\" web interface, selecting the option \"I don't have a domain name...\"\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/05.domains/dns_nohost_me.mdx:30
+#, no-wrap
+msgid "Alternatively, the following commands can be used.\n"
+msgstr ""
+
+#. type: Title ###
+#: docs/admin/45.tutorials/05.domains/dns_nohost_me.mdx:47
+#, no-wrap
+msgid "Retrieve a `nohost.me`, `noho.st` or `ynh.fr` domain"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/05.domains/dns_nohost_me.mdx:50
+#, no-wrap
+msgid "If you reinstall your server and want to use a domain already used previously, you must request a domain reset on the forum [in the dedicated thread](https://forum.yunohost.org/t/nohost-domain-recovery/442).\n"
+msgstr ""
+
+#. type: Title ###
+#: docs/admin/45.tutorials/05.domains/dns_nohost_me.mdx:51
+#, no-wrap
+msgid "Change a `nohost.me`, `noho.st` or `ynh.fr` domain"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/05.domains/dns_nohost_me.mdx:54
+#, no-wrap
+msgid "If you wish to use a different automatic domain, you first have to remove your present domain registration. This is done in 3 steps:\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/05.domains/dns_nohost_me.mdx:58
+#, no-wrap
+msgid ""
+"1. Remove the domain from your instance (via webadmin or the `yunohost domain remove` in the CLI).\n"
+"2. Ask for registration removal [in the dedicated forum thread](https://forum.yunohost.org/t/nohost-domain-recovery/442).\n"
+"3. Remove automatic domain configuration files on your server, via CLI only: `sudo rm /etc/cron.d/yunohost-dyndns && sudo rm -r /etc/yunohost/dyndns`\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/05.domains/dns_nohost_me.mdx:59
+#, no-wrap
+msgid "You may then add a new domain.\n"
+msgstr ""
