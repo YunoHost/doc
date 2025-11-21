@@ -4,12 +4,13 @@
 # Automatically generated, 2025.
 #
 # Weblate Admin <yunohost@translate.yunohost.org>, 2025.
+# ppr <pouetpouetratatouille@gmail.com>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2025-11-12 01:45+0000\n"
-"PO-Revision-Date: 2025-11-12 02:01+0000\n"
-"Last-Translator: Weblate Admin <yunohost@translate.yunohost.org>\n"
+"PO-Revision-Date: 2025-11-16 23:39+0000\n"
+"Last-Translator: ppr <pouetpouetratatouille@gmail.com>\n"
 "Language-Team: French <https://translate.yunohost.org/projects/yunohost-doc/"
 "05get_started__20install_on__arm_board/fr/>\n"
 "Language: fr\n"
@@ -23,13 +24,13 @@ msgstr ""
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:1
 #, no-wrap
 msgid "Looks like a Raspberry Pi, isn't quite one"
-msgstr ""
+msgstr "Ça ressemble à un Raspberry Pi, mais ce n'en est pas vraiment un"
 
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:1
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "On an ARM board"
-msgstr ""
+msgstr "Pour une carte ARM"
 
 #. type: Title ##
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:18

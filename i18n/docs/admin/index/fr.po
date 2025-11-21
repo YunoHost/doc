@@ -2,20 +2,21 @@
 # This file is distributed under the same license as the YunoHost documentation.
 #
 # Languages add-on <noreply-addon-languages@weblate.org>, 2025.
+# ppr <pouetpouetratatouille@gmail.com>, 2025.
 msgid ""
-msgstr "Project-Id-Version: YunoHost documentation VERSION\nPOT-Creation-Date: 2025-11-09 20:53+0100\nPO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\nLast-Translator: Automatically generated\nLanguage-Team: none\nLanguage: fr\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=2; plural=n > 1;\n"
+msgstr "Project-Id-Version: YunoHost documentation VERSION\nPOT-Creation-Date: 2025-11-09 20:53+0100\nPO-Revision-Date: 2025-11-16 23:39+0000\nLast-Translator: ppr <pouetpouetratatouille@gmail.com>\nLanguage-Team: French <https://translate.yunohost.org/projects/yunohost-doc/index/fr/>\nLanguage: fr\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=2; plural=n > 1;\nX-Generator: Weblate 5.14.2\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/index.mdx:1
 #, no-wrap
 msgid "Welcome"
-msgstr ""
+msgstr "Bienvenue"
 
 #. type: Title #
 #: docs/admin/index.mdx:6
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "YunoHost admin documentation"
-msgstr ""
+msgstr "Documentation de l'administrateur YunoHost"
 
 #. type: Plain text
 #: docs/admin/index.mdx:9

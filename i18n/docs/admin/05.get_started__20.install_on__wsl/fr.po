@@ -4,12 +4,13 @@
 # Automatically generated, 2025.
 #
 # Weblate Admin <yunohost@translate.yunohost.org>, 2025.
+# ppr <pouetpouetratatouille@gmail.com>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2025-11-11 19:34+0100\n"
-"PO-Revision-Date: 2025-11-12 02:01+0000\n"
-"Last-Translator: Weblate Admin <yunohost@translate.yunohost.org>\n"
+"PO-Revision-Date: 2025-11-16 23:39+0000\n"
+"Last-Translator: ppr <pouetpouetratatouille@gmail.com>\n"
 "Language-Team: French <https://translate.yunohost.org/projects/yunohost-doc/"
 "05get_started__20install_on__wsl/fr/>\n"
 "Language: fr\n"
@@ -34,7 +35,7 @@ msgstr "<FAIcon icon=\"fa-list-alt\"/> Pré-requis"
 #: docs/admin/05.get_started/20.install_on/wsl.mdx:1
 #, no-wrap
 msgid "Experimental, for people who like cyberfrankensteins"
-msgstr ""
+msgstr "Expérimental, pour ceux qui aiment les cyberfrankensteins"
 
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/05.get_started/20.install_on/wsl.mdx:1
