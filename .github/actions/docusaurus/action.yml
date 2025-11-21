@@ -30,6 +30,10 @@ runs:
     shell: bash
     run: bash scripts/check_missing_or_bad_image_path.sh
 
+  - name: Tweak enabled locales according to Weblate statistics (keep langs with >= 5% translated)
+    shell: bash
+    run: bash scripts/patch_enabled_locales.sh
+
   - name: Build translated .mdx using the .po from po4a/weblate
     shell: bash
     run: python3 ./scripts/po4a.py build_translated_mdx

@@ -12,6 +12,10 @@ function getUrl() : string {
   return isMain ? 'https://doc.yunohost.org/' : 'https://doc.next.yunohost.org/';
 }
 
+// NB: this list is auto-updated during build using statistics from Weblate,
+// keeping the lang with at least 5% translations
+const enabled_locales = ["en", "fr", "de", "it", "es"];
+
 const config: Config = {
   title: 'Yunohost',
   tagline: 'Why you no host?',
@@ -33,7 +37,7 @@ const config: Config = {
     // en-GB to make possible to have english in the dropdown which redirect to /en
     // (as it’s a workaround, we don’t want to have it en-GB in the dropdown - Docusaurus will warn about it)
     defaultLocale: 'en-GB',
-    locales: ['de', 'en', 'es', 'fr', 'it', 'ru', 'en-GB'],
+    locales: enabled_locales.concat(['en-GB']),
     localeConfigs: {
       en: {
         path: 'en',
@@ -73,7 +77,7 @@ const config: Config = {
     [
       require.resolve('docusaurus-lunr-search'),
       {
-        languages: ['de', 'en', 'es', 'fr', 'it', 'ru'],
+        languages: enabled_locales,
       }
     ],
   ],
@@ -86,14 +90,11 @@ const config: Config = {
     {
       src: '/js/language-detect.js',
       async: true,
-      "data-language-redirect": JSON.stringify({
-        de: '/de/',
-        en: '/en/',
-        es: '/es/',
-        fr: '/fr/',
-        it: '/it/',
-        ru: '/ru/',
-      }),
+      // Map 'fr' to '/fr/', 'de' to '/de/' etc.
+      "data-language-redirect": JSON.stringify(enabled_locales.reduce(function(acc, locale) {
+        acc[locale] = '/' + locale + '/';
+        return acc;
+      }, {})),
     },
   ],
 
