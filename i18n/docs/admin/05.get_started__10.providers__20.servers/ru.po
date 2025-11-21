@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2025-11-11 00:07+0100\n"
+"POT-Creation-Date: 2025-11-19 03:11+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -16,6 +16,14 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 
+#. type: Yaml Front Matter Hash Value: description
+#: docs/admin/05.get_started/02.why_should_you_not_host_yourself.mdx:1
+#: docs/admin/05.get_started/10.providers/10.isp.mdx:1
+#: docs/admin/05.get_started/10.providers/20.servers.mdx:1
+#, no-wrap
+msgid " "
+msgstr ""
+
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/05.get_started/10.providers/20.servers.mdx:1
 #, no-wrap
@@ -23,13 +31,13 @@ msgid "Server providers"
 msgstr ""
 
 #. type: Title ##
-#: docs/admin/05.get_started/10.providers/20.servers.mdx:7
+#: docs/admin/05.get_started/10.providers/20.servers.mdx:9
 #, no-wrap
 msgid "Pre-installed YunoHost Offers"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/05.get_started/10.providers/20.servers.mdx:14
+#: docs/admin/05.get_started/10.providers/20.servers.mdx:16
 #, no-wrap
 msgid ""
 "* [Alsace Réseau Neutre](https://arn-fai.net) (VPS) <HighlightFFDN/> <HighlightCHATONS/>\n"
@@ -40,13 +48,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: docs/admin/05.get_started/10.providers/20.servers.mdx:15
+#: docs/admin/05.get_started/10.providers/20.servers.mdx:17
 #, no-wrap
 msgid "YunoHost IT outsourcing"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/05.get_started/10.providers/20.servers.mdx:19
+#: docs/admin/05.get_started/10.providers/20.servers.mdx:21
 #, no-wrap
 msgid ""
 "* [ReflexLibre](https://reflexlibre.net) (France only) <HighlightCHATONS/>\n"

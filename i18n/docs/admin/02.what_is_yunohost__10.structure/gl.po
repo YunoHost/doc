@@ -1,0 +1,54 @@
+# Copyright (C) 2025 YunoHost Contributors
+# This file is distributed under the same license as the YunoHost documentation package.
+#
+# "José M." <correo@xmgz.eu>, 2025.
+msgid ""
+msgstr ""
+"Project-Id-Version: YunoHost documentation VERSION\n"
+"POT-Creation-Date: 2025-11-19 02:54+0000\n"
+"PO-Revision-Date: 2025-11-16 16:45+0000\n"
+"Last-Translator: \"José M.\" <correo@xmgz.eu>\n"
+"Language-Team: Galician <https://translate.yunohost.org/projects/yunohost-"
+"doc/02what_is_yunohost__10structure/gl/>\n"
+"Language: gl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.14.2\n"
+
+#. type: Yaml Front Matter Hash Value: title
+#: docs/admin/02.what_is_yunohost/10.structure.mdx:1
+#, no-wrap
+msgid "Structure of a YunoHost server"
+msgstr "Estrutura dun servidor YunoHost"
+
+#. type: Plain text
+#: docs/admin/02.what_is_yunohost/10.structure.mdx:7
+#, no-wrap
+msgid "This page provide an overview of the ecosystem of a YunoHost server. While this overview contains several approximations, the purpose here is to introduce the global picture before digging into the different aspects.\n"
+msgstr "Nesta páxina tes unha vista xeral da organización dun servidor YunoHost. Aínda que se mostra de xeito aproximado, o propósito é presentar unha imaxe xeral antes de describir polo miúdo os diferentes aspectos.\n"
+
+#. type: Plain text
+#: docs/admin/02.what_is_yunohost/10.structure.mdx:9
+#, no-wrap
+msgid "![Yunohost ecosystem graph](/img/ecosystem.png)\n"
+msgstr "![gráfico cos compoñentes de YunoHost](/img/ecosystem.png)\n"
+
+#. type: Plain text
+#: docs/admin/02.what_is_yunohost/10.structure.mdx:11
+#, no-wrap
+msgid "Everything starts with the special user **admin**. This is the administrator of the machine who can install, configure and manage things on the server through the web administration interface, or via SSH and the command line interface. *(If you are already familiar with GNU/Linux, it is quite similar to root. YunoHost has this additional 'admin' user for several technical reasons.)*\n"
+msgstr "Todo comeza coa conta especial **admin**. Esta é a administradora da máquina e que pode instalar, configurar e xestionar os compoñentes do servidor a través da interface web de administración ou usando SSH e a interface de liña de ordes. *(Se che resultan familiares os sistemas GNU/Linux, é moi parecido a root. YunoHost ten esta conta 'admin' adicional por razóns técnicas.)*\n"
+
+#. type: Plain text
+#: docs/admin/02.what_is_yunohost/10.structure.mdx:13
+#, no-wrap
+msgid "The administrator can create users and install applications, among other admin actions. Users automatically have their own email address when they get created. Users will also be able to connect to the user portal (SSO) to access applications. Some applications can typically be installed either as publicly-accessible, or as private, i.e. only some users will have access to it depending on which groups they are member of.\n"
+msgstr "A conta administradora pode crear usuarias e instalar aplicacións, entre outras tarefas de administración. As usuarias teñen automaticamente o seu propio enderezo de correo electrónico ao ser creadas. As usuarias tamén poden acceder ao portal da usuaria (SSO) para acceder ás aplicacións. Algunhas aplicacións adoitan instalarse ben accesibles públicamente ou de xeito privado. Por exemplo, só algunhas usuarias terán acceso a elas dependendo dos grupos dos que formen parte.\n"
+
+#. type: Plain text
+#: docs/admin/02.what_is_yunohost/10.structure.mdx:14
+#, no-wrap
+msgid "Applications and their features of the server rely on different services to work properly. Services (sometimes also called daemons) are programs that are constantly running on the server to ensure various tasks are done, such as answering to web requests from web browsers, or relaying emails.\n"
+msgstr "As aplicacións e as súas características dependen de que diferentes servizos funcionen correctamente. Os servizos (a veces chamados daemons) son programas que están continuamente en funcionamento no servidor para asegurar que certas tarefas se realizan, tales como responder a peticións desde a internet como navegadores web ou para entregar correos electrónicos.\n"

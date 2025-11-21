@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2025-11-11 00:07+0100\n"
+"POT-Creation-Date: 2025-11-19 02:54+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -116,41 +116,44 @@ msgstr "Se il vostro server diventa non più raggiungibile le mail inviate al vo
 #. type: Title ##
 #: docs/admin/35.email/index.mdx:41
 #, no-wrap
-msgid "Forms to remove its IP address from the blacklist"
-msgstr "Cancellare il proprio IP dalle black lists"
+msgid "See also"
+msgstr ""
 
 #. type: Plain text
-#: docs/admin/35.email/index.mdx:46
+#: docs/admin/35.email/index.mdx:45
 #, no-wrap
 msgid ""
-"It is possible that the emails sent from your YunoHost instance are considered as spam by the big email services.\n"
-"Is it possible that the IP address from your server have been previously been used to sent spam or that these email services consider your server as a spam sender.\n"
-"To ensure that your servers’ IP address isn't on these blacklists and to remove it from them, follow this [link](/admin/troubleshooting/blacklist_forms).\n"
+"- [Removing your server’s IP/domain from antispam listings](/admin/troubleshooting/blacklist_forms).\n"
+"- [Migrating from an email provider to a YunoHost instance](/admin/email/migration)\n"
+"- [Configuring an SMTP relay](/admin/tutorials/email_configure_relay).\n"
 msgstr ""
-"Può succedere che le mail inviate dal vostro server YunoHost siano considerate come spam dai grandi provider di posta elettronica.\n"
-"A volte il vostro indirizzo IP viene considerato come dannoso o come fonte di spam perché è stato usato in precedenza per tale scopo da altri.\n"
-"Per accertarsi che il vostro indirizzo IP non sia presente nell'elenco degli indirizzi ritenuti dannosi, e nel caso rimuoverlo, potete seguire questo [link](/admin/troubleshooting/blacklist_forms).\n"
 
-#. type: Title ##
-#: docs/admin/35.email/index.mdx:47
 #, no-wrap
-msgid "Migrating email from an email provider to a YunoHost instance"
-msgstr "Migrazione delle vostre mail da un fornitore terzo al vostro server YunoHost"
+#~ msgid "Forms to remove its IP address from the blacklist"
+#~ msgstr "Cancellare il proprio IP dalle black lists"
 
-#. type: Plain text
-#: docs/admin/35.email/index.mdx:50
 #, no-wrap
-msgid "See [this page](/admin/email/migration).\n"
-msgstr "Consultate [questa pagina](/admin/email/migration).\n"
+#~ msgid ""
+#~ "It is possible that the emails sent from your YunoHost instance are considered as spam by the big email services.\n"
+#~ "Is it possible that the IP address from your server have been previously been used to sent spam or that these email services consider your server as a spam sender.\n"
+#~ "To ensure that your servers’ IP address isn't on these blacklists and to remove it from them, follow this [link](/admin/troubleshooting/blacklist_forms).\n"
+#~ msgstr ""
+#~ "Può succedere che le mail inviate dal vostro server YunoHost siano considerate come spam dai grandi provider di posta elettronica.\n"
+#~ "A volte il vostro indirizzo IP viene considerato come dannoso o come fonte di spam perché è stato usato in precedenza per tale scopo da altri.\n"
+#~ "Per accertarsi che il vostro indirizzo IP non sia presente nell'elenco degli indirizzi ritenuti dannosi, e nel caso rimuoverlo, potete seguire questo [link](/admin/troubleshooting/blacklist_forms).\n"
 
-#. type: Title ##
-#: docs/admin/35.email/index.mdx:51
 #, no-wrap
-msgid "Configuring SMTP relay"
-msgstr "Configurazione di un relay SMTP"
+#~ msgid "Migrating email from an email provider to a YunoHost instance"
+#~ msgstr "Migrazione delle vostre mail da un fornitore terzo al vostro server YunoHost"
 
-#. type: Plain text
-#: docs/admin/35.email/index.mdx:53
 #, no-wrap
-msgid "See [this page](/admin/tutorials/email_configure_relay).\n"
-msgstr "Consultate [questa pagina](/admin/tutorials/email_configure_relay).\n"
+#~ msgid "See [this page](/admin/email/migration).\n"
+#~ msgstr "Consultate [questa pagina](/admin/email/migration).\n"
+
+#, no-wrap
+#~ msgid "Configuring SMTP relay"
+#~ msgstr "Configurazione di un relay SMTP"
+
+#, no-wrap
+#~ msgid "See [this page](/admin/tutorials/email_configure_relay).\n"
+#~ msgstr "Consultate [questa pagina](/admin/tutorials/email_configure_relay).\n"

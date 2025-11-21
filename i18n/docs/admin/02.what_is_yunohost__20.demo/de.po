@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2025-11-11 00:07+0100\n"
+"POT-Creation-Date: 2025-11-19 02:54+0000\n"
 "PO-Revision-Date: 2025-11-11 00:07+0100\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -29,19 +29,19 @@ msgid "Try YunoHost"
 msgstr "YunoHost nicht beschädigen"
 
 #. type: Title #
-#: docs/admin/02.what_is_yunohost/20.demo.mdx:10
+#: docs/admin/02.what_is_yunohost/20.demo.mdx:11
 #, no-wrap
 msgid "Try YunoHost on a demo server"
 msgstr ""
 
 #. type: Fenced div block (caution)
-#: docs/admin/02.what_is_yunohost/20.demo.mdx:12
+#: docs/admin/02.what_is_yunohost/20.demo.mdx:13
 #, no-wrap
 msgid "This demo server is reset *every 30 minutes* and could be down from time to time, but at least you can test and that's really cool :)\n"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/02.what_is_yunohost/20.demo.mdx:21
+#: docs/admin/02.what_is_yunohost/20.demo.mdx:22
 #, no-wrap
 msgid ""
 "  } <FAIcon icon='fa-user'/> User interface {\n"
@@ -49,21 +49,21 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/02.what_is_yunohost/20.demo.mdx:23
-#: docs/admin/02.what_is_yunohost/20.demo.mdx:33
+#: docs/admin/02.what_is_yunohost/20.demo.mdx:24
+#: docs/admin/02.what_is_yunohost/20.demo.mdx:34
 #, no-wrap
 msgid "  username: `demo`\n"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/02.what_is_yunohost/20.demo.mdx:25
-#: docs/admin/02.what_is_yunohost/20.demo.mdx:35
+#: docs/admin/02.what_is_yunohost/20.demo.mdx:26
+#: docs/admin/02.what_is_yunohost/20.demo.mdx:36
 #, no-wrap
 msgid "  password: `demo`\n"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/02.what_is_yunohost/20.demo.mdx:31
+#: docs/admin/02.what_is_yunohost/20.demo.mdx:32
 #, no-wrap
 msgid ""
 "  } <FAIcon icon='fa-cog'/> Administration interface {\n"
@@ -71,7 +71,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (info)
-#: docs/admin/02.what_is_yunohost/20.demo.mdx:39
+#: docs/admin/02.what_is_yunohost/20.demo.mdx:40
 #, no-wrap
 msgid "**Demo server gracefully provided by [Gitoyen](https://www.gitoyen.net?target=_blank) <FAIcon icon=\"fa-heart\" style={{color: \"green\"}}/>**\n"
 msgstr ""

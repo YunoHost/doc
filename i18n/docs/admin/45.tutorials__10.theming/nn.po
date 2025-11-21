@@ -1,0 +1,155 @@
+# Copyright (C) 2025 YunoHost Contributors
+# This file is distributed under the same license as the YunoHost documentation package.
+#
+# Weblate Admin <yunohost@translate.yunohost.org>, 2025.
+msgid ""
+msgstr ""
+"Project-Id-Version: YunoHost documentation VERSION\n"
+"POT-Creation-Date: 2025-11-11 19:34+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: nn\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. type: Yaml Front Matter Hash Value: sidebar_label
+#: docs/admin/45.tutorials/10.theming.mdx:1
+#, no-wrap
+msgid "Theme the portal"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: title
+#: docs/admin/45.tutorials/10.theming.mdx:1
+#, no-wrap
+msgid "Customize the appearance of the user portal"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/10.theming.mdx:8
+#, no-wrap
+msgid ""
+"The portal is customizable from the webadmin:\n"
+" `Domains` > Choose a top level domain > `Features`\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/45.tutorials/10.theming.mdx:9
+#, no-wrap
+msgid "Options for the Portal customization"
+msgstr ""
+
+#. type: Title ###
+#: docs/admin/45.tutorials/10.theming.mdx:11
+#, no-wrap
+msgid "Show the list of public apps to visitors"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/10.theming.mdx:13
+#, no-wrap
+msgid "Visitors will see a 'public apps' page when ending up on the portal instead of just the login form.\n"
+msgstr ""
+
+#. type: Title ###
+#: docs/admin/45.tutorials/10.theming.mdx:14
+#, no-wrap
+msgid "Show other domain's apps"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/10.theming.mdx:17
+#, no-wrap
+msgid "All apps from all domains will be visible on the portal. Default value is `true`.\n"
+msgstr ""
+
+#. type: Title ###
+#: docs/admin/45.tutorials/10.theming.mdx:18
+#, no-wrap
+msgid "Custom title"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/10.theming.mdx:21
+#, no-wrap
+msgid "Choose a Title for the Portal\n"
+msgstr ""
+
+#. type: Title ###
+#: docs/admin/45.tutorials/10.theming.mdx:22
+#, no-wrap
+msgid "Custom logo"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/10.theming.mdx:25
+#, no-wrap
+msgid "Choose a image. Accept .svg, .png and .jpeg. Prefer a monochrome .svg with `fill: currentColor` so that the logo adapts to the themes.\n"
+msgstr ""
+
+#. type: Title ###
+#: docs/admin/45.tutorials/10.theming.mdx:26
+#, no-wrap
+msgid "Default color theme"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/10.theming.mdx:29
+#, no-wrap
+msgid "Choose a color theme. Users are allowed to choose another one in their settings.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/10.theming.mdx:34
+#, no-wrap
+msgid ""
+"* App tiles display theme\n"
+"    * simple = display apps icons\n"
+"    * descripitive = display apps icons and a descpriction of the application\n"
+"    * periodic = display tiles with name apps.\n"
+msgstr ""
+
+#. type: Title ###
+#: docs/admin/45.tutorials/10.theming.mdx:35
+#, no-wrap
+msgid "Search engine URL"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/10.theming.mdx:38
+#, no-wrap
+msgid "This is an optional feature, allowing to display a search bar in the portal (for example if you like to use your YunoHost portal as your browser's home page). This should be an URL with an empty query string such as `https://duckduckgo.com/?q=, with q=` as duckduckgo's empty query parameter\n"
+msgstr ""
+
+#. type: Title ###
+#: docs/admin/45.tutorials/10.theming.mdx:39
+#, no-wrap
+msgid "Custom user intro"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/10.theming.mdx:42
+#: docs/admin/45.tutorials/10.theming.mdx:46
+#, no-wrap
+msgid "You can use HTML, basic styles will be applied to generic elements.\n"
+msgstr ""
+
+#. type: Title ###
+#: docs/admin/45.tutorials/10.theming.mdx:43
+#, no-wrap
+msgid "Custom public intro"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/10.theming.mdx:48
+#, no-wrap
+msgid "* Custom CSS stylesheet\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/10.theming.mdx:50
+#, no-wrap
+msgid "This is for advanced admins willing to customize the appearance of the portal.\n"
+msgstr ""

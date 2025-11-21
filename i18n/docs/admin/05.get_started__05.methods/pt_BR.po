@@ -1,0 +1,185 @@
+# Copyright (C) 2025 YunoHost Contributors
+# This file is distributed under the same license as the YunoHost documentation package.
+#
+# Weblate Admin <yunohost@translate.yunohost.org>, 2025.
+msgid ""
+msgstr ""
+"Project-Id-Version: YunoHost documentation VERSION\n"
+"POT-Creation-Date: 2025-11-19 02:54+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+
+#. type: Yaml Front Matter Hash Value: title
+#: docs/admin/05.get_started/05.methods.mdx:1
+#, no-wrap
+msgid "Choose your self-hosting mode"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/05.methods.mdx:7
+#, no-wrap
+msgid "You can host yourself at home (on a small computer), or on a remote server. Each solution has their pros and cons:\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/05.get_started/05.methods.mdx:8
+#, no-wrap
+msgid "At home, for instance on an ARM board or an old computer"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/05.methods.mdx:11
+#, no-wrap
+msgid "You can host yourself at home with an ARM board or a re-purposed regular computer, connected to your home router/box.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/05.methods.mdx:14
+#, no-wrap
+msgid ""
+"- **Pros**: you will have physical control of the machine and only need to buy the hardware;\n"
+"- **Cons**: you will have to [manually configure your internet box](/admin/get_started/post_install/port_forwarding) and [might be limited by your ISP](/admin/get_started/providers/isp/).\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/05.get_started/05.methods.mdx:15
+#, no-wrap
+msgid "At home, behind a VPN"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/05.methods.mdx:18
+#, no-wrap
+msgid "A VPN is an encrypted tunnel between two machines. In practice, it makes it \"as if\" you were directly, locally, connected to your server machine, but actually from somewhere else on the Internet. This allows you to still host yourself at home, while bypassing possible limitations of your ISP. See also [the Internet Cube project](https://internetcu.be/) and [the FFDN](https://www.ffdn.org/).\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/05.methods.mdx:21
+#, no-wrap
+msgid ""
+"- **Pros**: you will have physical control of the machine, and the VPN hides your traffic from your ISP and allows you to bypass its limitations;\n"
+"- **Cons**: you will have to pay a monthly subscription for the VPN.\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/05.get_started/05.methods.mdx:22
+#, no-wrap
+msgid "On a remote server (VPS or dedicated server)"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/05.methods.mdx:25
+#, no-wrap
+msgid "You can rent a virtual private server or a dedicated machine from [associative](https://db.ffdn.org/) or [commercial](/admin/get_started/providers/servers) \"Cloud\" providers.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/05.methods.mdx:28
+#, no-wrap
+msgid ""
+"- **Pros**: your server and its internet connectivity will be fast;\n"
+"- **Cons**: you will have to pay a monthly subscription and won't have physical control of your server.\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/05.get_started/05.methods.mdx:29
+#, no-wrap
+msgid "Summary"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/05.methods.mdx:49
+#, no-wrap
+msgid ""
+"export const styleNone = {\n"
+"  textAlign: 'center',\n"
+"};\n"
+"export const styleGood = {\n"
+"  textAlign: 'center',\n"
+"  backgroundColor: 'green',\n"
+"  color: 'white',\n"
+"};\n"
+"export const styleMeh = {\n"
+"  textAlign: 'center',\n"
+"  backgroundColor: 'darkgoldenrod',\n"
+"  color: 'white',\n"
+"};\n"
+"export const styleDanger = {\n"
+"  textAlign: 'center',\n"
+"  backgroundColor: 'brown',\n"
+"  color: 'white',\n"
+"};\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/05.methods.mdx:57
+#, no-wrap
+msgid ""
+"      <th style={styleNone}>At home<br/><small>(e.g. ARM board, old computer)</small></th>\n"
+"      <th style={styleNone}>At home<br/>behind a VPN</th>\n"
+"      <th style={styleNone}>On a remote server<br/>(VPS or dedicated)</th>\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/05.methods.mdx:64
+#, no-wrap
+msgid ""
+"      <td style={styleNone}>Hardware cost</td>\n"
+"      <td style={styleMeh} colspan=\"2\">About 50€<br/><small>(e.g. a Raspberry Pi)</small></td>\n"
+"      <td style={styleGood}>None</td>\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/05.methods.mdx:70
+#, no-wrap
+msgid ""
+"      <td style={styleNone}>Monthly cost</td>\n"
+"      <td style={styleGood}>Negligible<br/><small>(electricity)</small></td>\n"
+"      <td style={styleMeh}>Around 5€<br/><small>(VPN)</small></td>\n"
+"      <td style={styleMeh}>Starting at ~3€<br/><small>(VPS)</small></td>\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/05.methods.mdx:76
+#, no-wrap
+msgid ""
+"      <td style={styleNone}>Physical control of the machine</td>\n"
+"      <td style={styleGood}>Yes</td>\n"
+"      <td style={styleGood}>Yes</td>\n"
+"      <td style={styleDanger}>No</td>\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/05.methods.mdx:82
+#, no-wrap
+msgid ""
+"      <td style={styleNone}>Manual port routing required</td>\n"
+"      <td style={styleMeh}>Yes</td>\n"
+"      <td style={styleGood}>No</td>\n"
+"      <td style={styleGood}>No</td>\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/05.methods.mdx:88
+#, no-wrap
+msgid ""
+"      <td style={styleNone}>Possible ISP limitations</td>\n"
+"      <td style={styleDanger}>Yes<br/><small>(see <Link to=\"/admin/get_started/providers/isp\">here</Link>)</small></td>\n"
+"      <td style={styleGood}>Bypassed by VPN</td>\n"
+"      <td style={styleGood}>Typically no</td>\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/05.methods.mdx:93
+#, no-wrap
+msgid ""
+"      <td style={styleNone}>Internet connectivity</td>\n"
+"      <td style={styleMeh} colspan=\"2\">Depends on home connectivity</td>\n"
+"      <td style={styleGood}>Typically pretty good</td>\n"
+msgstr ""

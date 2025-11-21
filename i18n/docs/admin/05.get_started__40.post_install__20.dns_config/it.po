@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2025-11-11 01:24+0100\n"
+"POT-Creation-Date: 2025-11-19 02:54+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#. type: Title ###
+#. type: Title ##
 #: docs/admin/05.get_started/10.providers/05.registrar/ovh/manualdns.mdx:29
 #: docs/admin/05.get_started/40.post_install/20.dns_config.mdx:109
 #, no-wrap
@@ -136,7 +136,7 @@ msgid ""
 "- If you're using the domain provider Namecheap the SRV DNS entries are formatted as **Service**: `_xmpp-client` **Protocol**: `_tcp` **Priority**: `0` **Weight**: `5` **Port**: `5222` **Target**: `your.domain.tld`\n"
 msgstr ""
 
-#. type: Title ###
+#. type: Title ##
 #: docs/admin/05.get_started/40.post_install/20.dns_config.mdx:89
 #, no-wrap
 msgid "Reverse DNS"

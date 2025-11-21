@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2025-11-11 01:24+0100\n"
+"POT-Creation-Date: 2025-11-19 02:54+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -139,14 +139,10 @@ msgstr "Successivamente sul router (l'apparecchio che sta in mezzo fra il modem 
 msgid "<FAIcon icon=\"fa-exclamation-triangle\"/> Some internet service providers block port 25 (mail SMTP) by default to fight spam. Some other ISP don't allow to use port 80/443 (web) freely, though it's less likely. Depending on the ISP, it might be possible to open them in the admin interface... Check [this page](/admin/get_started/providers/isp/) for more info.\n"
 msgstr "<FAIcon icon=\"fa-exclamation-triangle\"/> Alcuni internet provider bloccano l'apertura della porta 25 (mail SMTP) per combattere lo spam. Altri, più raramente, non permettono l'uso delle porte 80/443. A seconda dell'ISP è possibile aprirle nella configurazione del router... Controllate [questa pagina](/admin/get_started/providers/isp/) per maggiori informazioni.\n"
 
-#. type: Title ##
-#: docs/admin/05.get_started/40.post_install/15.port_forwarding.mdx:47
 #, no-wrap
-msgid "Automatic port forwarding / UPnP"
-msgstr "Reindirizzamento automatico / UPnP"
+#~ msgid "Automatic port forwarding / UPnP"
+#~ msgstr "Reindirizzamento automatico / UPnP"
 
-#. type: Plain text
-#: docs/admin/05.get_started/40.post_install/15.port_forwarding.mdx:50
 #, no-wrap
-msgid "A technology called UPnP is available on some internet boxes / routers and allows to automatically forward ports by the machine who needs them. If UPnP is enabled in your local network, then running this command should automatically open the port for you:\n"
-msgstr "Alcuni router dispongono permettono di attivare l'UPnP. L'UPnP si occupa di reindirizzare automaticamente le porte verso un computer che ne faccia richiesta. Se UPnP è attivo, eseguendo il comando:\n"
+#~ msgid "A technology called UPnP is available on some internet boxes / routers and allows to automatically forward ports by the machine who needs them. If UPnP is enabled in your local network, then running this command should automatically open the port for you:\n"
+#~ msgstr "Alcuni router dispongono permettono di attivare l'UPnP. L'UPnP si occupa di reindirizzare automaticamente le porte verso un computer che ne faccia richiesta. Se UPnP è attivo, eseguendo il comando:\n"

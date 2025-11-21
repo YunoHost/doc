@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2025-11-11 01:24+0100\n"
+"POT-Creation-Date: 2025-11-19 02:54+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -20,91 +20,91 @@ msgid "IP address unban"
 msgstr "Débannir une adresse IP"
 
 #. type: Plain text
-#: docs/admin/50.troubleshooting/05.fail2ban.mdx:6
+#: docs/admin/50.troubleshooting/05.fail2ban.mdx:7
 #, no-wrap
 msgid "**Fail2Ban** is an intrusion prevention software that protects computer servers against brute-force attacks. It monitors certain logs and will ban IP addresses that show brute-force-like behavior.\n"
 msgstr "**Fail2Ban** est un logiciel de prévention des intrusions qui protège les serveurs informatiques contre les attaques de brute-force. Il surveille certains journaux et bannira les adresses IP qui montrent un comportement de brute-forcing.\n"
 
 #. type: Plain text
-#: docs/admin/50.troubleshooting/05.fail2ban.mdx:8
+#: docs/admin/50.troubleshooting/05.fail2ban.mdx:9
 #, no-wrap
 msgid "In particular, **Fail2Ban** monitors `SSH` connection attempts. After 5 failed SSH connection attempts, Fail2Ban will ban the IP address from connecting via SSH for 10 minutes. If this address fails several times, it might get banned for a week.\n"
 msgstr "En particulier, **Fail2Ban** surveille les tentatives de connexion `SSH`. Après 5 tentatives de connexion échouées sur SSH, Fail2Ban banniera l’adresse IP pendant 10 minutes. Si cette adresse récidive plusieurs fois, elle peut être bannie pendant une semaine.\n"
 
 #. type: Title ##
-#: docs/admin/50.troubleshooting/05.fail2ban.mdx:9
+#: docs/admin/50.troubleshooting/05.fail2ban.mdx:10
 #, no-wrap
 msgid "Unban an IP address"
 msgstr "Débannir une adresse IP"
 
 #. type: Plain text
-#: docs/admin/50.troubleshooting/05.fail2ban.mdx:12
+#: docs/admin/50.troubleshooting/05.fail2ban.mdx:13
 #, no-wrap
 msgid "To unblock an IP address, you must first access your server by some means (for example from another IP address or from another internet connection than the banned one).\n"
 msgstr "Pour débloquer une adresse IP, vous devez d’abord accéder à votre serveur par un moyen quelconque (par exemple à partir d’une autre adresse IP ou d’une autre connexion internet que celle bannie).\n"
 
 #. type: Plain text
-#: docs/admin/50.troubleshooting/05.fail2ban.mdx:14
+#: docs/admin/50.troubleshooting/05.fail2ban.mdx:15
 #, no-wrap
 msgid "Then, look at the **Fail2Ban’s log** to identify in which `jail` the IP address has been banned:\n"
 msgstr "Ensuite, regardez le **journal de Fail2Ban** pour identifier dans quelle `prison` ou `jail` l’adresse IP a été bannie :\n"
 
 #. type: Plain text
-#: docs/admin/50.troubleshooting/05.fail2ban.mdx:27
+#: docs/admin/50.troubleshooting/05.fail2ban.mdx:28
 #, no-wrap
 msgid "Here, the `11.22.33.44` IP address has been banned in the `sshd` and `recidive` jails.\n"
 msgstr "Ici, l’adresse IP `11.22.33.44` a été bannie dans les jails `sshd` et `recidive`.\n"
 
 #. type: Plain text
-#: docs/admin/50.troubleshooting/05.fail2ban.mdx:29
+#: docs/admin/50.troubleshooting/05.fail2ban.mdx:30
 #, no-wrap
 msgid "Then deban the IP address with the following commands:\n"
 msgstr "Puis débanissez l’adresse IP avec les commandes suivantes :\n"
 
 #. type: Title ##
-#: docs/admin/50.troubleshooting/05.fail2ban.mdx:35
+#: docs/admin/50.troubleshooting/05.fail2ban.mdx:36
 #, no-wrap
 msgid "Whitelist an IP address"
 msgstr "Passer une adresse IP en liste blanche / whitelist"
 
 #. type: Plain text
-#: docs/admin/50.troubleshooting/05.fail2ban.mdx:38
+#: docs/admin/50.troubleshooting/05.fail2ban.mdx:39
 #, no-wrap
 msgid "If you don’t want a \"legitimate\" IP address to be blocked by **YunoHost** anymore, then you have to fill it in the whitelist of the `jail` configuration file.\n"
 msgstr "Si vous ne voulez plus qu’une adresse IP « légitime » soit bloquée par **YunoHost**, alors il faut la renseigner dans la liste blanche ou whitelist du fichier de configuration de la `prison`.\n"
 
 #. type: Plain text
-#: docs/admin/50.troubleshooting/05.fail2ban.mdx:40
+#: docs/admin/50.troubleshooting/05.fail2ban.mdx:41
 #, no-wrap
 msgid "When updating the **Fail2Ban** software, the original `/etc/fail2ban/jail.conf` file is overwritten. So it is on a new dedicated file that we will store the changes. They will thus be preserved over time.\n"
 msgstr "Lors d’une mise à jour du logiciel **Fail2Ban**, le fichier d’origine `/etc/fail2ban/jail.conf` est écrasé. C’est donc dans un nouveau fichier que nous allons stocker les modifications. Elles seront ainsi conservées dans le temps.\n"
 
 #. type: Plain text
-#: docs/admin/50.troubleshooting/05.fail2ban.mdx:42
+#: docs/admin/50.troubleshooting/05.fail2ban.mdx:43
 #, no-wrap
 msgid "1. Start by creating the new jail configuration file which will be called `yunohost-whitelist.conf`:\n"
 msgstr "1. Commencez par créer le nouveau fichier de configuration des prisons qui s’appelera `yunohost-whitelist.conf` :\n"
 
 #. type: Plain text
-#: docs/admin/50.troubleshooting/05.fail2ban.mdx:48
+#: docs/admin/50.troubleshooting/05.fail2ban.mdx:49
 #, no-wrap
 msgid "2. Edit this new file with your favorite editor:\n"
 msgstr "2. Éditez ce nouveau fichier avec votre éditeur préféré :\n"
 
 #. type: Plain text
-#: docs/admin/50.troubleshooting/05.fail2ban.mdx:54
+#: docs/admin/50.troubleshooting/05.fail2ban.mdx:55
 #, no-wrap
 msgid "3. Paste the following content into the file and adapt the IP address `XXX.XXX.XXX.XXX`:\n"
 msgstr "3. Coller le contenu suivant dans le fichier et adapter l’adresse IP `XXX.XXX.XXX.XXX` :\n"
 
 #. type: Plain text
-#: docs/admin/50.troubleshooting/05.fail2ban.mdx:62
+#: docs/admin/50.troubleshooting/05.fail2ban.mdx:63
 #, no-wrap
 msgid "4. Save the file and reload the Fail2Ban configuration:\n"
 msgstr "4. Sauvegardez le fichier et rechargez la configuration de Fail2Ban :\n"
 
 #. type: Plain text
-#: docs/admin/50.troubleshooting/05.fail2ban.mdx:67
+#: docs/admin/50.troubleshooting/05.fail2ban.mdx:68
 #, no-wrap
 msgid "Congratulations, no more risks of banning yourself from your own YunoHost server!\n"
 msgstr "Félicitations, plus de risques de se bannir de son propre serveur YunoHost !\n"

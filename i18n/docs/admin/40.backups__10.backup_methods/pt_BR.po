@@ -1,0 +1,101 @@
+# Copyright (C) 2025 YunoHost Contributors
+# This file is distributed under the same license as the YunoHost documentation package.
+#
+# Weblate Admin <yunohost@translate.yunohost.org>, 2025.
+msgid ""
+msgstr ""
+"Project-Id-Version: YunoHost documentation VERSION\n"
+"POT-Creation-Date: 2025-11-11 19:34+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+
+#. type: Yaml Front Matter Hash Value: title
+#: docs/admin/40.backups/10.backup_methods.mdx:1
+#, no-wrap
+msgid "Backup methods"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/10.backup_methods.mdx:6
+#, no-wrap
+msgid "YunoHost currently has three apps integrating backup solutions offering more features than the simple \".tar\" mechanism shipped in YunoHost, in particular automatic and remote backups.\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/40.backups/10.backup_methods.mdx:7
+#, no-wrap
+msgid "[BorgBackup](https://www.borgbackup.org/) (cf the [Borg \"client\"](https://apps.yunohost.org/app/borg) and [Borg \"server\"](https://apps.yunohost.org/app/borgserver) apps)"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/10.backup_methods.mdx:14
+#, no-wrap
+msgid ""
+"- backup of data on an external disk or on a remote Borg repository\n"
+"- deduplication and compression of files, which makes it possible to keep many previous copies without too much storage overhead\n"
+"- data encryption, which allows you to store data with a third party\n"
+"- to define the frequency and type of data to be backed up\n"
+"- a mail alert system in case of backup failure.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/10.backup_methods.mdx:16
+#, no-wrap
+msgid "There are [remote borg repository providers](https://www.borgbackup.org/support/commercial.html), it is also possible to create your own repository on another YunoHost with the [borgserver application](https://github.com/YunoHost-Apps/borgserver_ynh).\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/40.backups/10.backup_methods.mdx:17
+#, no-wrap
+msgid "[Restic](https://restic.net/) (cf the [Restic app](https://apps.yunohost.org/app/restic))"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/10.backup_methods.mdx:24
+#, no-wrap
+msgid ""
+"- backup of data to remote storage (support for different types of storage: currently SFTP, S3 is planned)\n"
+"- deduplication and compression of files, which makes it possible to keep many previous copies without too much storage overhead\n"
+"- data encryption, which allows to store data at a third party\n"
+"- to define the frequency and type of data to be backed up\n"
+"- a mail alert system in case of backup failure.\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/40.backups/10.backup_methods.mdx:25
+#, no-wrap
+msgid "[Archivist](https://apps.yunohost.org/app/archivist)"
+msgstr ""
+
+#. type: Fenced div block (warning)
+#: docs/admin/40.backups/10.backup_methods.mdx:27
+#, no-wrap
+msgid "This application is currently broken!\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/10.backup_methods.mdx:34
+#, no-wrap
+msgid ""
+"- based on rsync and GPG\n"
+"- backup of data on a remote storage (support for different types of storage)\n"
+"- data encryption, which allows to store data at a third party\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/10.backup_methods.mdx:36
+#, no-wrap
+msgid "The package also allows you to finely define the frequency and type of data to be backed up and integrates an email alert system in case of backup failure.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/10.backup_methods.mdx:37
+#, no-wrap
+msgid "More info [on the forum](https://forum.yunohost.org/t/new-app-archivist/3747).\n"
+msgstr ""

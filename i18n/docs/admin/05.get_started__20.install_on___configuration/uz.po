@@ -1,0 +1,286 @@
+# Copyright (C) 2025 YunoHost Contributors
+# This file is distributed under the same license as the YunoHost documentation package.
+#
+# Weblate Admin <yunohost@translate.yunohost.org>, 2025.
+msgid ""
+msgstr ""
+"Project-Id-Version: YunoHost documentation VERSION\n"
+"POT-Creation-Date: 2025-11-19 02:54+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: uz\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. type: Title ##
+#: docs/admin/05.get_started/20.install_on/_configuration.mdx:4
+#, no-wrap
+msgid "<FAIcon icon=\"fa-cog\"/> Proceed with the initial configuration"
+msgstr ""
+
+#. type: Fenced div block (info)
+#: docs/admin/05.get_started/20.install_on/_configuration.mdx:6
+#, no-wrap
+msgid "If you are in the process of restoring a server using a YunoHost backup, you should skip this step and instead [restore the backup instead of the postinstall step](/admin/backups).\n"
+msgstr ""
+
+#. type: Fenced div block (info)
+#: docs/admin/05.get_started/20.install_on/_configuration.mdx:10
+#, no-wrap
+msgid ""
+"This documentation assumes you're on the same local network as your YunoHost installation.\n"
+"\n"
+"For a VPS, please use the public IP address instead of the local domain or address.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/_configuration.mdx:18
+#: docs/admin/05.get_started/20.install_on/_configuration.mdx:128
+#: docs/admin/15.command_line.mdx:76
+#: docs/admin/20.users/groups_and_permissions.mdx:35
+#: docs/admin/20.users/groups_and_permissions.mdx:63
+#: docs/admin/20.users/groups_and_permissions.mdx:84
+#: docs/admin/20.users/groups_and_permissions.mdx:128
+#: docs/admin/20.users/groups_and_permissions.mdx:153
+#: docs/admin/20.users/groups_and_permissions.mdx:187
+#: docs/admin/20.users/groups_and_permissions.mdx:244
+#: docs/admin/25.domains/certificate.mdx:27 docs/admin/30.apps/index.mdx:32
+#: docs/admin/30.apps/index.mdx:102 docs/admin/30.apps/index.mdx:134
+#: docs/admin/40.backups/index.mdx:22 docs/admin/40.backups/index.mdx:71
+#: docs/admin/40.backups/index.mdx:137
+#: docs/admin/45.tutorials/35.email_configure_relay.mdx:49
+#, no-wrap
+msgid "<TabItem value=\"web\" label=\"From the web interface\">\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/_configuration.mdx:25
+#, no-wrap
+msgid ""
+"On a computer, open a browser and try to reach the webadmin:\n"
+"- if you're installing on a VPS, you probably used the `curl | bash` install method, and it should have pointed you with the address, typically `https://xx.xx.xx.xx` (with the **public IPv4** of your server)\n"
+"- if you're installing at home, and assuming that *you are on the same local network as the server*\n"
+"    - you can try to open https://yunohost.local (this may or may not work depending if your computer and network supports the Bonjour protocol)\n"
+"    - if you already know the local IP of the machine, go to `https://xx.xx.xx.xx` (with the **local** IP, typically starting with `192.168.`)\n"
+"    - otherwise you will need to [find out its local IP ](/admin/get_started/post_install/find_ip) before continuing.\n"
+msgstr ""
+
+#. type: Fenced div block (warning)
+#: docs/admin/05.get_started/20.install_on/_configuration.mdx:26
+#, no-wrap
+msgid "During the first visit, you will very likely encounter a security warning related to the certificate used by the server. For now, your server uses a self-signed certificate. You will later be able to add a certificate automatically recognized by web browsers as described in the [certificate documentation](/admin/domains/certificate). For now, you should add a security exception to accept the current certificate. (Though, PLEASE, do not take the habit of blindly accepting this kind of security alert!)\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/_configuration.mdx:31
+#, no-wrap
+msgid "You should then land on this page:\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/_configuration.mdx:33
+#, no-wrap
+msgid "<Figure caption=\"Preview of the Web initial configuration page\" src=\"/img/webadmin/postinstall_web.png\"/>\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/_configuration.mdx:36
+#: docs/admin/05.get_started/20.install_on/_configuration.mdx:110
+#: docs/admin/05.get_started/20.install_on/_configuration.mdx:135
+#: docs/admin/15.command_line.mdx:85
+#: docs/admin/20.users/groups_and_permissions.mdx:42
+#: docs/admin/20.users/groups_and_permissions.mdx:70
+#: docs/admin/20.users/groups_and_permissions.mdx:95
+#: docs/admin/20.users/groups_and_permissions.mdx:135
+#: docs/admin/20.users/groups_and_permissions.mdx:160
+#: docs/admin/20.users/groups_and_permissions.mdx:198
+#: docs/admin/20.users/groups_and_permissions.mdx:249
+#: docs/admin/25.domains/certificate.mdx:46 docs/admin/30.apps/index.mdx:37
+#: docs/admin/30.apps/index.mdx:111 docs/admin/30.apps/index.mdx:141
+#: docs/admin/40.backups/index.mdx:29 docs/admin/40.backups/index.mdx:85
+#: docs/admin/40.backups/index.mdx:144 docs/admin/40.backups/index.mdx:171
+#: docs/admin/45.tutorials/35.email_configure_relay.mdx:66
+#, no-wrap
+msgid "<TabItem value=\"cli\" label=\"From the command line\">\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/_configuration.mdx:38
+#, no-wrap
+msgid "You can also perform the postinstallation with the command `yunohost tools postinstall` directly on the server, or [via SSH](/admin/command_line).\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/_configuration.mdx:40
+#, no-wrap
+msgid "<Figure caption=\"Preview of the command-line post-installation\" src=\"/img/postinstall_cli.png\"/>\n"
+msgstr ""
+
+#. type: Title ###
+#: docs/admin/05.get_started/20.install_on/_configuration.mdx:44
+#, no-wrap
+msgid "<FAIcon icon=\"fa-globe\"/> Main domain"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/_configuration.mdx:49
+#, no-wrap
+msgid "WSL specific configuration\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/_configuration.mdx:53
+#, no-wrap
+msgid ""
+"You will have to choose a fake domain, since it will not be accessible from outside.\n"
+"For example, `ynh.wsl`. The tricky part is advertising this domain to your host.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/_configuration.mdx:55
+#, no-wrap
+msgid "Alter your `C:\\Windows\\System32\\drivers\\etc\\hosts` file. You should have a line starting by `::1`, update it or add it if needed to get:\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/_configuration.mdx:61
+#, no-wrap
+msgid "If you want to create subdomains, do not forget to add them in the `hosts` file too:\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/_configuration.mdx:68
+#, no-wrap
+msgid "This will be the domain used by your server's users to access the **authentication portal**. You can later add other domains, and change which one is the main domain if needed.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/_configuration.mdx:71
+#, no-wrap
+msgid ""
+"- If you're new to self-hosting and do not already have a domain name, we recommend using a **.nohost.me** / **.noho.st** / **.ynh.fr** (e.g. `homersimpson.nohost.me`). Provided that it's not already taken, the domain will be configured automatically and you won't need any further configuration step. Please note that the downside is that you won't have full-control over the DNS configuration.\n"
+"- If you already own a domain name, you probably want to use it here. You will later need to configure DNS records as explained [here](/admin/get_started/post_install/dns_config).\n"
+msgstr ""
+
+#. type: Fenced div block (tip)
+#: docs/admin/05.get_started/20.install_on/_configuration.mdx:72
+#, no-wrap
+msgid "Yes, you *have to* configure a domain name. If you don't have any domain name and don't want a **.nohost.me** / **.noho.st** / **.ynh.fr** either, you can set up a dummy domain such as `yolo.test` and tweak your **local** `/etc/hosts` file such that this dummy domain [points to the appropriate IP, as explained here](/admin/tutorials/domains/dns_local_network).\n"
+msgstr ""
+
+#. type: Title ###
+#: docs/admin/05.get_started/20.install_on/_configuration.mdx:76
+#, no-wrap
+msgid "<FAIcon icon=\"fa-key\"/> First user"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/_configuration.mdx:79
+#, no-wrap
+msgid "The first user is now created at this stage. You should pick a username and a reasonably complex password. (We cannot stress enough that the password should be **robust**!) This user will be added to the Admins group, and will therefore be able to access the user portal, the web admin interface, and connect [via **SSH**](/admin/command_line) or [**SFTP**](/admin/tutorials/filezilla). Admins will also receive emails sent to `root@yourdomain.tld` and `admin@yourdomain.tld`: these emails may be used to send technical informations or alerts. You can later add additional users, which you can also add to the Admins group.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/_configuration.mdx:81
+#, no-wrap
+msgid "This user replaces the old `admin` user, which some old documentation page may still refer to. In which case: just replace `admin` with your username.\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/05.get_started/20.install_on/_configuration.mdx:82
+#, no-wrap
+msgid "<FAIcon icon=\"fa-stethoscope\"/> Run the initial diagnosis"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/_configuration.mdx:85
+#, no-wrap
+msgid "Once the postinstall is done, you should be able to actually log in the web admin interface using the credentials of the first user you just created.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/_configuration.mdx:87
+#, no-wrap
+msgid "The diagnosis system is meant to provide an easy way to validate that all critical aspects of your server are properly configured - and guide you in how to fix issues. The diagnosis will run twice a day and send an alert by email if issues are detected.\n"
+msgstr ""
+
+#. type: Fenced div block (tip)
+#: docs/admin/05.get_started/20.install_on/_configuration.mdx:88
+#, no-wrap
+msgid "**Don't run away** ! The first time you run the diagnosis, it is quite expected to see a bunch of yellow/red alerts because you typically need to [configure DNS records](/admin/get_started/post_install/dns_config) (if not using a `.nohost.me`/`noho.st`/`ynh.fr` domain), as well as [port forwarding](/admin/get_started/post_install/port_forwarding) on your home's router.\n"
+msgstr ""
+
+#. type: Fenced div block (tip)
+#: docs/admin/05.get_started/20.install_on/_configuration.mdx:92
+#, no-wrap
+msgid "If an alert is not relevant (for example because you don't intend on using a specific feature), it is perfectly fine to flag the issue as 'ignored' by going in the webadmin > Diagnosis, and clicking the ignore button for this specifc issue.\n"
+msgstr ""
+
+#. type: Fenced div block (warning)
+#: docs/admin/05.get_started/20.install_on/_configuration.mdx:96
+#, no-wrap
+msgid "Especially, installations on WSL or virtual machines will likely not be reachable from outside without further network configuration on Virtualbox and your machine.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/_configuration.mdx:103
+#, no-wrap
+msgid "<TabItem value=\"web\" label=\"(Recommended) From the web interface\">\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/_configuration.mdx:105
+#, no-wrap
+msgid "To run a diagnosis, go on Web Admin in the Diagnosis section. Click Run initial diagnosis and you should get a screen like this:\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/_configuration.mdx:107
+#, no-wrap
+msgid "<Figure caption=\"Preview of the diagnostic panel\" src=\"/img/webadmin/diagnostic.png\"/>\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/05.get_started/20.install_on/_configuration.mdx:120
+#, no-wrap
+msgid "<FAIcon icon=\"fa-lock\"/> Get a Let's Encrypt certificate"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/_configuration.mdx:123
+#, no-wrap
+msgid "Once you configured DNS records and port forwarding (if needed), you should be able to install a Let's Encrypt certificate. This will get rid of the spooky security warning from earlier for new visitors.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/_configuration.mdx:125
+#, no-wrap
+msgid "For more detailed instructions, or to lean more about SSL/TLS certificates, see [the corresponding page here](/admin/domains/certificate).\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/_configuration.mdx:130
+#, no-wrap
+msgid "Go in Domains > Click on your domain > Certificate\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/_configuration.mdx:132
+#, no-wrap
+msgid "<Figure caption=\"Preview of the diagnostic panel\" src=\"/img/webadmin/certificate-before-LE.png\"/>\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/05.get_started/20.install_on/_configuration.mdx:143
+#, no-wrap
+msgid "🎉 Congratz!"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/_configuration.mdx:145
+#, no-wrap
+msgid "You now have a pretty well configured server. If you're new to YunoHost, we recommend to have a look at [the guided tour](/admin/webadmin). You should also be able to [install your favourite applications](https://apps.yunohost.org/). Don't forget to [plan backups](/admin/backups) !\n"
+msgstr ""

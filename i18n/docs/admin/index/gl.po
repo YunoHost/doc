@@ -1,0 +1,116 @@
+# Copyright (C) 2025 YunoHost Contributors
+# This file is distributed under the same license as the YunoHost documentation package.
+#
+# "José M." <correo@xmgz.eu>, 2025.
+msgid ""
+msgstr ""
+"Project-Id-Version: YunoHost documentation VERSION\n"
+"POT-Creation-Date: 2025-11-19 03:04+0000\n"
+"PO-Revision-Date: 2025-11-16 13:17+0000\n"
+"Last-Translator: \"José M.\" <correo@xmgz.eu>\n"
+"Language-Team: Galician <https://translate.yunohost.org/projects/yunohost-doc/index/gl/>\n"
+"Language: gl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.14.2\n"
+
+#. type: Yaml Front Matter Hash Value: title
+#, no-wrap
+msgid "Welcome!"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid "#\n"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"<img\n"
+"    class=\"text--center\"\n"
+"    src=\"/img/icons/logo-ynh-roundcorner.png\"\n"
+"    alt=\"YunoHost logo\"\n"
+"    style={{ marginTop: \"-2em\", maxWidth: \"7rem\", }}\n"
+"/>\n"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"This is the documentation for YunoHost,<br/>\n"
+"an **operating system** aiming to **simplify server administration**!\n"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid "If you are an **impatient power user**, you may want to try YunoHost, or jump right away to install:\n"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"<Button url=\"/admin/what_is_yunohost\">🤔 What's YunoHost?!</Button>\n"
+"<Button url=\"/admin/what_is_yunohost/demo\">⚗️ Try YunoHost</Button>\n"
+"<Button url=\"/admin/get_started/install_on\">🚀 Install</Button>\n"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid "<Button url=\"https://apps.yunohost.org/\">📦 Browse the app catalog</Button>\n"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid "Are you **new to self-hosting and servers in general**? We recommend to take it slow and go through the pages presenting [self-hosting](/admin/about_self_hosting), the [different modes](/admin/get_started/methods) and [other](/admin/get_started/why_should_you_not_host_yourself) [things](/category/providers) you should know prior to jumping into the action! \n"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid "Are you **already using YunoHost**? You may want to get in touch with the community or reach for help:\n"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"<Button url=\"https://forum.yunohost.org\">📢 Forum</Button>\n"
+"<Button url=\"/community/chat_rooms\">🗫  Chat rooms</Button>\n"
+"<Button url=\"/community/help\">🛟 Help</Button>\n"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid "Finally, you can **support the project** or get involve in [different ways](/dev):\n"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"<Button url=\"https://yunohost.org/donate.html\">💰 Donate</Button>\n"
+"<Button url=\"/dev/doc\">📝 Improve the documentation</Button>\n"
+"<Button url=\"/dev/doc\">🌐 Work on translations</Button>\n"
+"<Button url=\"/dev/packaging\">📦 Learn app packaging</Button>\n"
+"<Button url=\"/dev/core\">⚙️  Develop on the core</Button>\n"
+msgstr ""
+
+#, no-wrap
+#~ msgid "Welcome"
+#~ msgstr "Benvida"
+
+#, no-wrap
+#~ msgid "YunoHost admin documentation"
+#~ msgstr "Documentación para Administración"
+
+#, no-wrap
+#~ msgid "Here, you'll learn [the basics of self-hosting](/admin/about_self_hosting), how to [install YunoHost](/admin/get_started/install_on) and configure it.\n"
+#~ msgstr "Aqui poderás aprender o [fundamental da auto-hospedaxe](/admin/about_self_hosting), como [instalar YunoHost](/admin/get_started/install_on) e configuralo.\n"
+
+#, no-wrap
+#~ msgid "Then you'll be able to [add users](/admin/users), [domains](/admin/domains) and [apps](/admin/apps), and ensure [backups](/admin/backups) are done properly.\n"
+#~ msgstr "A continuación poderás [engadir usuarias](/admin/users), [dominios](/admin/domains) e [aplicacións](/admin/apps), así como crear [copias de apoio](/admin/backups) de xeito correcto.\n"
+
+#, no-wrap
+#~ msgid "Don't hesitate to contact the [community](/community) to [ask for help](/community/help) !\n"
+#~ msgstr "Non temas contactar coa [comunidade](/community) para [pedir axuda](/community/help) !\n"

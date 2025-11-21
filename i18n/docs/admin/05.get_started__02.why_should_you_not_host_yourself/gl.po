@@ -1,0 +1,89 @@
+# Copyright (C) 2025 YunoHost Contributors
+# This file is distributed under the same license as the YunoHost documentation package.
+#
+# "José M." <correo@xmgz.eu>, 2025.
+msgid ""
+msgstr ""
+"Project-Id-Version: YunoHost documentation VERSION\n"
+"POT-Creation-Date: 2025-11-19 03:11+0000\n"
+"PO-Revision-Date: 2025-11-17 11:12+0000\n"
+"Last-Translator: \"José M.\" <correo@xmgz.eu>\n"
+"Language-Team: Galician <https://translate.yunohost.org/projects/yunohost-"
+"doc/05get_started__02why_should_you_not_host_yourself/gl/>\n"
+"Language: gl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.14.2\n"
+
+#. type: Yaml Front Matter Hash Value: description
+#: docs/admin/05.get_started/02.why_should_you_not_host_yourself.mdx:1
+#: docs/admin/05.get_started/10.providers/10.isp.mdx:1
+#: docs/admin/05.get_started/10.providers/20.servers.mdx:1
+#, no-wrap
+msgid " "
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: title
+#: docs/admin/05.get_started/02.why_should_you_not_host_yourself.mdx:1
+#, fuzzy, no-wrap
+#| msgid "Why should you (not?) host yourself ?"
+msgid "Why should you (not?) host yourself?"
+msgstr "Por que (non?) deberías auto-hospedarte?"
+
+#. type: Title ##
+#: docs/admin/05.get_started/02.why_should_you_not_host_yourself.mdx:8
+#, fuzzy, no-wrap
+#| msgid "Why should you host yourself ?"
+msgid "Why should you host yourself?"
+msgstr "Por que non deberías auto hospedarte?"
+
+#. type: Plain text
+#: docs/admin/05.get_started/02.why_should_you_not_host_yourself.mdx:11
+#, no-wrap
+msgid "- **You believe in a free, open and decentralized internet.** In a centralized internet, private companies and government can spy, analyze and influence people by dictating how they connect with each other, and by filtering content. YunoHost is developed by a community who believe in an open and decentralized internet, and we hope that you do, too!\n"
+msgstr "- **Cres nunha internet libre, aberta e descentralizada.** Na internet centralizada as empresas privadas e os governos poden espiar, analizar e influenciar nas persoas establecendo o xeito en que se conectan entre elas, e filtrando os contidos. YunoHost desenvólveo unha comunidade que cre nunha internet aberta e descentralizada, e agardamos que ti tamén!\n"
+
+#. type: Plain text
+#: docs/admin/05.get_started/02.why_should_you_not_host_yourself.mdx:13
+#, no-wrap
+msgid "- **You want to have control of your data and services.** Your pictures, chat messages, browsing history, and that text you are writing for school, have nothing to do on somebody else's server (a.k.a. The Cloud). They are part of your private life, but also part of your family's life, your friend's life, and so on. These data should be managed by *you*, not a random company in the US who wants your data to analyze them and sell the results.\n"
+msgstr "- **Queres ter control sobre os teus datos e servizos.** As túas fotos, mensaxes nas conversas, historial de navegacion, ese texto que escribiches para a escola, non son do interese do servidor de ninguén (a.k.a. A Nube). Son parte da túa vida privada, pero tamén da vida da túa familiza, amizades, etc. Estes datos deberíalos xestionar *ti*, e non unha empresa calquera de EEUU que quere os teus datos para analizalos e vender os resultados.\n"
+
+#. type: Plain text
+#: docs/admin/05.get_started/02.why_should_you_not_host_yourself.mdx:15
+#, no-wrap
+msgid "- **You want to learn about how computers and the Internet work.** Operating your own server is a pretty good context to understand the basic mechanisms at the heart of operating systems and the Internet. You might have to deal with command line interface, network architecture, DNS configuration, SSH, and so on.\n"
+msgstr "- **Queres aprender como funcionan as computadoras e Internet.** Xestionar o teu propio servidor é un bo xeito para comprender o funcionamento básico dentro dos sistemas operativos e de Internet. Poderías ter que usar a liña de ordes, a arquitectura da rede, configuración DNS, SSH, e máis elementos.\n"
+
+#. type: Plain text
+#: docs/admin/05.get_started/02.why_should_you_not_host_yourself.mdx:17
+#, no-wrap
+msgid "- **You want to explore new possibilities and customize things.** Ever dreamed of running a Minecraft server for you friends, or a persistent IRC or XMPP client? With your very own server, you can manually install and run virtually any program you want, and customize every bit.\n"
+msgstr "- **Queres explorar novas posibilidades e personalizar as ferramentas.** Soñaches con ter un servidor Minecraft para as túas amizadas, ou un servizo IRC ou XMPP permanentes? Co teu propio servidor podes instalar manualmente e correr virtualmente calquera programa que queiras, e personalizalo.\n"
+
+#. type: Title ##
+#: docs/admin/05.get_started/02.why_should_you_not_host_yourself.mdx:18
+#, fuzzy, no-wrap
+#| msgid "Why should you *not* host yourself ?"
+msgid "Why should you *not* host yourself?"
+msgstr "Por que *non* deberías auto hospedarte ?"
+
+#. type: Plain text
+#: docs/admin/05.get_started/02.why_should_you_not_host_yourself.mdx:21
+#, no-wrap
+msgid "- **Self-hosting requires some work and patience.** Hosting yourself is a bit like growing your own garden or vegetables: it requires work and patience. While YunoHost aims to do all the hard work for you, self-hosting still requires that you take time to learn and configure a few things to setup your server properly. You will also need to perform maintenance tasks (such as upgrades) from time to time, or to ask for support if some things break.\n"
+msgstr "- **A auto-hospedaxe require paciencia e traballo.** É un pouco como coidar da túa propia horta ou xardín: requiren traballo e paciencia. YunoHost pretende simplificar e facer o traballo complicado por ti, aínda así a auto-hospedaxe require que ti dediques tempo a aprender e configurar varios elementos do teu servidor. Tamén deberás realizar tarefas de mantemento (como as actualizacións) cada certo tempo, ou pedir axuda se algo falla.\n"
+
+#. type: Plain text
+#: docs/admin/05.get_started/02.why_should_you_not_host_yourself.mdx:23
+#, no-wrap
+msgid "- **With great servers comes great responsibilities.** Operating a server means that you are responsible for the data you are hosting. Nobody will be able to recover them for you if they get lost. YunoHost provides backup features, which you should use regularly to backup the configurations and data you care about. You should also keep an eye on security news and recommendations so that your server or critical data don't get compromised.\n"
+msgstr "- **Con grandes servidores veñen grandes responsabilidades.** Xestionar un servidor significa que es responsable dos datos que hospedas. Ninguén poderá recuperalos se os perdes. YunHost proporciona un sistema de copias de apoio que deberías usar con regularidade para copiar as configuracións e datos do teu interese. Deberías tamén estar ao día das novas de seguridade e recomendacións para que o teu servidor ou datos importantes non se vexan comprometidos.\n"
+
+#. type: Plain text
+#: docs/admin/05.get_started/02.why_should_you_not_host_yourself.mdx:24
+#, no-wrap
+msgid "- **Quality and performance probably won't be as good as premium services.** YunoHost (and most of the applications packaged for it) are free and open-source software, developed by communities of people in their free time and on the basis of best effort. There is no absolute guarantee that software will work in every possible circumstance. The performance of your self-hosted server is also related to its CPU and RAM, and to the available internet connectivity.\n"
+msgstr "- **A calidade e rendemento probablemente non están á par dos servizos premium.** YunoHost (e a maioría das aplicacións empaquetadas nel) son software libre e de código aberto, desenvoltas por comunidades de persoas no seu tempo libre e coa mellor vontade. Non hai garantía absoluta de que o software vaia funcionar en toda circunstancia. O rendemento do teu servido auto-hospedado tamén ten relación coa CPU e RAM, así como da calidade da conexión a internet.\n"

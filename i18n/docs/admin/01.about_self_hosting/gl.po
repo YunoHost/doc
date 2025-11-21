@@ -1,0 +1,48 @@
+# Copyright (C) 2025 YunoHost Contributors
+# This file is distributed under the same license as the YunoHost documentation package.
+#
+# "José M." <correo@xmgz.eu>, 2025.
+msgid ""
+msgstr ""
+"Project-Id-Version: YunoHost documentation VERSION\n"
+"POT-Creation-Date: 2025-11-19 02:54+0000\n"
+"PO-Revision-Date: 2025-11-16 13:17+0000\n"
+"Last-Translator: \"José M.\" <correo@xmgz.eu>\n"
+"Language-Team: Galician <https://translate.yunohost.org/projects/yunohost-"
+"doc/01about_self_hosting/gl/>\n"
+"Language: gl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.14.2\n"
+
+#. type: Yaml Front Matter Hash Value: title
+#: docs/admin/01.about_self_hosting.mdx:1
+#, no-wrap
+msgid "About self-hosting"
+msgstr "Sobre auto-hospedaxe"
+
+#. type: Plain text
+#: docs/admin/01.about_self_hosting.mdx:7
+#, no-wrap
+msgid "Self-hosting means owning and administrating your own server, typically at home, to host your **personal data and services** yourself instead of relying exclusively on third parties. For instance, you can self-host your blog, such that it 'lives' on a machine that you have control of, instead of having it on somebody else's computer (a.k.a. FAANG or The Cloud) in exchange for money, advertisements, or private data.\n"
+msgstr "A auto-hospedaxe ten por obxecto posuír e administrar o teu propio servidor, habitualmente na túa casa, para hospedar **datos persoais e servizos** e non depender en exclusiva de terceiras partes. Por exemplo, podes hospedar o teu blog, de xeito que 'viva' na máquina que ti controlas, e non telo na computadora doutra persoa (na Nube ou GAFAM) a cambio de cartos, publicidade ou os teus datos privados.\n"
+
+#. type: Plain text
+#: docs/admin/01.about_self_hosting.mdx:9
+#, no-wrap
+msgid "Self-hosting implies owning a server. **A server is a computer that is typically accessible on the network 24/7**, and usually does not have a screen or keyboard (it is instead controlled remotely). Contrary to a popular belief, a server is not necessarily a huge and extra-powerful machine: nowadays, a small, ~$30 ARM board is adequate for self-hosting.\n"
+msgstr "A auto-hospedaxe implica posuír un servidor. **Un servidor é unha computadora que é accesible de xeito contínuo**, e normalmente non ten pantalla ou teclado (contrólase de xeito remoto). En contra da crenza popular, un servidor non é necesariamente unha máquina enorme e que require moita enerxía: hoxe en día, unha pequena placa ARM duns ~30€ abonda para auto-hospedarte.\n"
+
+#. type: Plain text
+#: docs/admin/01.about_self_hosting.mdx:11
+#, no-wrap
+msgid "![Internet topologies diagram](/img/internet_topologies.png)\n"
+msgstr "![diagrama da topoloxía de internet](/img/internet_topologies.png)\n"
+
+#. type: Plain text
+#: docs/admin/01.about_self_hosting.mdx:12
+#, no-wrap
+msgid "Self-hosting is not about making \"your Internet\" more secure and does not provide anonymity by itself. Instead, it is about being autonomous and in control of your services and data — which also means being responsible for them.\n"
+msgstr "A auto-hospedaxe non trata sobre facer «o teu internet» máis seguro e en si mesmo non proporciona anonimato. Pola contra, trata sobre ser unha persoa autónoma en control dos seus datos e servizos ― o que tamén implica responsabilidade sobre eles.\n"

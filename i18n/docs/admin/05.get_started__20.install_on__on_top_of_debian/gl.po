@@ -1,0 +1,157 @@
+# Copyright (C) 2025 YunoHost Contributors
+# This file is distributed under the same license as the YunoHost documentation package.
+#
+# "José M." <correo@xmgz.eu>, 2025.
+msgid ""
+msgstr ""
+"Project-Id-Version: YunoHost documentation VERSION\n"
+"POT-Creation-Date: 2025-11-12 01:45+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: gl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. type: Yaml Front Matter Hash Value: description
+#: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:1
+#, no-wrap
+msgid "Typically on a VPS, or if you can't use preinstalled images"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: title
+#: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:1
+#, no-wrap
+msgid "On top of Debian"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:15
+#, no-wrap
+msgid "YunoHost is easily installable on Debian !\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:17
+#, no-wrap
+msgid "This can be useful if you already have a Debian machine or can't use the recommended methods. \n"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:18
+#, no-wrap
+msgid "<FAIcon icon=\"fa-download\" /> Get Debian"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:21
+#, no-wrap
+msgid "You should download the version **Bookworm** (Debian 12) and select the architecture for your PC.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:23
+#, no-wrap
+msgid "When in doubt, select `amd64`, or `i386` for a pre-2010 PC.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:26
+#, no-wrap
+msgid "  <Button url=\"https://www.debian.org/distrib/netinst\" color=\"skyblue\"><SmallInline url=\"/img/icons/logo-debian.png\" alt=\"Debian logo\"/> Debian Download page</Button>\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:29
+#, no-wrap
+msgid "Alternatively, you can browse the [Debian archive](https://cdimage.debian.org/mirror/cdimage/archive) for the latest 12.x version, select your architecture, the select `iso-cd` and download the `netinst` iso.\n"
+msgstr ""
+
+#. type: Title ####
+#: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:32
+#, no-wrap
+msgid "Installation"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:35
+#, no-wrap
+msgid "You might want to **wipe the hard drive** before starting the Debian installer.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:37
+#, no-wrap
+msgid "Burn the iso to your USB key, for example using [Etcher](https://www.balena.io/etcher/).\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:39
+#, no-wrap
+msgid "Debian installer will ask for a **hostname** and a **domain name**. You can use `yunohost` and `yunohost.local`. It is not that important since the YunoHost Installer will overwrite those anyway.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:41
+#, no-wrap
+msgid "Debian will ask for a **root password**, which should be reaonably complex as it is your primary defense to possible attacks.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:43
+#, no-wrap
+msgid "The installer will also ask for a **user account** and another password.\n"
+msgstr ""
+
+#. type: Fenced div block (warning)
+#: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:43
+#, no-wrap
+msgid "**IMPORTANT:** this username should be DIFFERENT from the first YunoHost user which you will choose during YunoHost's posinstall… For example, you can name it `debian`. Be sure to also use a long complex password.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:48
+#, no-wrap
+msgid "When the install asks where to install and how to **create disk partitions**, select the option to **use the whole disk**, unless you know what you're doing.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:51
+#, no-wrap
+msgid ""
+"- We recommend not to separate the `/home`, `/var` or `/tmp` partitions. Use the option to “keep all files in one partition”.\n"
+"- If you don't know what you're doing, don't encrypt the disk (Decryption at power-on will be an issue)\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:53
+#, no-wrap
+msgid "The installer will ask about **mirrors**. Select a country and server close to your location, or use the default options.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:57
+#, no-wrap
+msgid ""
+"The installer will ask which **desktop environment** you want. This is generally useless and might waste resources.\n"
+"- Unselect all desktop environment\n"
+"- Keep “standard system utilities” checked\n"
+msgstr ""
+
+#. type: Title ####
+#: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:58
+#, no-wrap
+msgid "After installing Debian"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:64
+#, no-wrap
+msgid ""
+"1. Remove the installation media (unplug the USB stick)\n"
+"2. Reboot\n"
+"3. Login as `root`\n"
+"4. Install curl by typing `apt install curl`\n"
+msgstr ""

@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2025-11-09 20:53+0100\n"
+"POT-Creation-Date: 2025-11-19 02:54+0000\n"
 "PO-Revision-Date: 2025-11-09 23:48+0000\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: French <https://translate.yunohost.org/projects/doc-"
@@ -23,19 +23,19 @@ msgid "⭐ Webadmin interface"
 msgstr "⭐ Interface d'admin web"
 
 #. type: Plain text
-#: docs/admin/12.webadmin.mdx:6
+#: docs/admin/12.webadmin.mdx:7
 #, no-wrap
 msgid "YunoHost has an administrator web interface. The other way to administrate your YunoHost install is through the [command line](/admin/command_line).\n"
 msgstr "YunoHost est fourni avec une interface graphique d’administration (aussi appelée webadmin). L’autre méthode d'administration est d’utiliser la [ligne de commande](/admin/command_line).\n"
 
 #. type: Plain text
-#: docs/admin/12.webadmin.mdx:8
+#: docs/admin/12.webadmin.mdx:9
 #, no-wrap
 msgid "The webadmin can be accessed at `https://yourdomain.tld/yunohost/admin` or using the local IP or global IP of your server (`https://1.2.3.4/yunohost/admin`)\n"
 msgstr "La webadmin est accessible à l’adresse `https://votredomaine.tld/yunohost/admin` ou via l'adresse IP locale ou globale (`https://1.2.3.4/yunohost/admin`)\n"
 
 #. type: Plain text
-#: docs/admin/12.webadmin.mdx:9
+#: docs/admin/12.webadmin.mdx:10
 #, no-wrap
 msgid "![Webadmin screenshot](/img/webadmin/webadmin.jpg)\n"
 msgstr "![Capture d'écran de la webadmin](/img/webadmin/webadmin.jpg)\n"

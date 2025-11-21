@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2025-11-09 20:53+0100\n"
+"POT-Creation-Date: 2025-11-19 02:54+0000\n"
 "PO-Revision-Date: 2025-11-09 21:16+0000\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: Italian <https://translate.yunohost.org/projects/doc-"
@@ -23,25 +23,25 @@ msgid "About self-hosting"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/01.about_self_hosting.mdx:6
+#: docs/admin/01.about_self_hosting.mdx:7
 #, no-wrap
 msgid "Self-hosting means owning and administrating your own server, typically at home, to host your **personal data and services** yourself instead of relying exclusively on third parties. For instance, you can self-host your blog, such that it 'lives' on a machine that you have control of, instead of having it on somebody else's computer (a.k.a. FAANG or The Cloud) in exchange for money, advertisements, or private data.\n"
 msgstr "Il self-hosting permette di avere e di amministrare un tuo server, generalmente in proprio, per hostare i propri dati personali e servizi piuttosto che ospitarli presso terzi. Per esempio, è possibile gestire il proprio blog per farlo \"vivere\" su una macchina sotto il tuo controllo, piuttosto che installarlo su un computer di qualcun altro (a.k.a. il Cloud) in cambio di soldi, di pubblicità o di dati personali.\n"
 
 #. type: Plain text
-#: docs/admin/01.about_self_hosting.mdx:8
+#: docs/admin/01.about_self_hosting.mdx:9
 #, no-wrap
 msgid "Self-hosting implies owning a server. **A server is a computer that is typically accessible on the network 24/7**, and usually does not have a screen or keyboard (it is instead controlled remotely). Contrary to a popular belief, a server is not necessarily a huge and extra-powerful machine: nowadays, a small, ~$30 ARM board is adequate for self-hosting.\n"
 msgstr "Il self-hosting implica di avere a disposizione un server. Un server è un computer che è destinato ad essere accessibile in rete in modo permanente, e generalmente non ha un desktop o una tastiera perché è amministrato a distanza. Al contrario di quello che si crede, i server non sono necessariamente delle macchine enormi ed estremamente potenti: oggi una piccola scheda ARM a ~30 € è sufficiente per il self-hosting.\n"
 
 #. type: Plain text
-#: docs/admin/01.about_self_hosting.mdx:10
+#: docs/admin/01.about_self_hosting.mdx:11
 #, no-wrap
 msgid "![Internet topologies diagram](/img/internet_topologies.png)\n"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/01.about_self_hosting.mdx:11
+#: docs/admin/01.about_self_hosting.mdx:12
 #, no-wrap
 msgid "Self-hosting is not about making \"your Internet\" more secure and does not provide anonymity by itself. Instead, it is about being autonomous and in control of your services and data — which also means being responsible for them.\n"
 msgstr "Praticare il self-hosting non rende il \"tuo internet\" più sicuro e non fornisce un sufficiente anonimato. L'obiettivo è generalmente quello dell'autonomia e del controllo dei propri servizi e dei propri dati, che implica anche l'esserne responsabili.\n"

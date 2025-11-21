@@ -2,18 +2,21 @@
 # This file is distributed under the same license as the YunoHost documentation.
 # Automatically generated, 2025.
 #
+# ppr <pouetpouetratatouille@gmail.com>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2025-11-11 00:07+0100\n"
-"PO-Revision-Date: 2025-11-11 00:07+0100\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2025-11-16 23:39+0000\n"
+"Last-Translator: ppr <pouetpouetratatouille@gmail.com>\n"
+"Language-Team: French <https://translate.yunohost.org/projects/yunohost-doc/"
+"05get_started__10providers__10isp__index/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.14.2\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/05.get_started/10.providers/10.isp/index.mdx:1
@@ -24,7 +27,7 @@ msgstr "Fournisseurs de serveurs"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/10.isp/index.mdx:18
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<Tabs\n"
 "defaultValue=\"europe\"\n"
@@ -37,6 +40,16 @@ msgid ""
 "{label: 'Oceania', value: 'oceania'},\n"
 "]}>\n"
 msgstr ""
+"<Tabs\n"
+"defaultValue=\"europe\"\n"
+"values={[\n"
+"{label: “Afrique”, value: “africa”},\n"
+"{label: “Asie”, value: “asia”},\n"
+"{label: “Europe”, value: “europe”},\n"
+"{label: “Amérique du Nord”, value: “northamerica”},\n"
+"{label: “Amérique du Sud”, value: “southamerica”},\n"
+"{label: “Océanie”, value: “oceania”},\n"
+"]}>\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/10.isp/index.mdx:20
