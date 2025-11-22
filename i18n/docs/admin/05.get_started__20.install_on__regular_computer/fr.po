@@ -7,11 +7,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2025-11-11 19:34+0100\n"
+"POT-Creation-Date: 2025-11-22 20:46+0000\n"
 "PO-Revision-Date: 2025-11-22 20:21+0000\n"
 "Last-Translator: Weblate Admin <yunohost@translate.yunohost.org>\n"
-"Language-Team: French <https://translate.yunohost.org/projects/yunohost-doc/"
-"05get_started__20install_on__regular_computer/fr/>\n"
+"Language-Team: French <https://translate.yunohost.org/projects/yunohost-"
+"doc/05get_started__20install_on__regular_computer/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -43,9 +43,7 @@ msgstr "<TabItem value=\"etcher\" label=\"Avec Etcher (recommandé)\">\n"
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:48
 #, no-wrap
 msgid "Download <Link to=\"https://www.balena.io/etcher/\" target=\"_blank\">Etcher</Link> for your operating system and install it.\n"
-msgstr ""
-"Téléchargez <Link to=\"https://www.balena.io/etcher/\" target=\"_blank\""
-">Etcher</Link> pour votre système d'exploitation, et installez-le.\n"
+msgstr "Téléchargez <Link to=\"https://www.balena.io/etcher/\" target=\"_blank\">Etcher</Link> pour votre système d'exploitation, et installez-le.\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:55
@@ -68,9 +66,7 @@ msgstr "<TabItem value=\"usbimager\" label=\"Avec USBimager\">\n"
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:57
 #, no-wrap
 msgid "Download [USBimager](https://bztsrc.gitlab.io/usbimager/) for your operating system and install it.\n"
-msgstr ""
-"Téléchargez [USBimager](https://bztsrc.gitlab.io/usbimager/) pour votre "
-"système d'exploitation et installez-le.\n"
+msgstr "Téléchargez [USBimager](https://bztsrc.gitlab.io/usbimager/) pour votre système d'exploitation et installez-le.\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:64
@@ -94,13 +90,7 @@ msgstr "<TabItem value=\"dd\" label=\"Avec dd\">\n"
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:66
 #, no-wrap
 msgid "If you are on GNU/Linux / macOS and know your way around command line, you may also flash your USB stick or SD card with `dd`. You can identify which device corresponds to your USB stick or SD card with `fdisk -l` or `lsblk`. A typical SD card name is something like `/dev/mmcblk0`. BE CAREFUL and make sure you got the right name.\n"
-msgstr ""
-"Si vous êtes sur GNU/Linux / macOS et que vous êtes à l'aise avec la ligne "
-"de commande, vous pouvez flasher votre clef USB ou carte SD avec la commande "
-"`dd`. Vous pouvez identifier le périphérique qui corresponds à votre clef "
-"USB ou carte SD avec `fdisk -l` ou `lsblk`. Typiquement, une carte SD a un "
-"nom comme `/dev/mmcblk0`. FAITES ATTENTION et assurez vous d'avoir le bon "
-"nom.\n"
+msgstr "Si vous êtes sur GNU/Linux / macOS et que vous êtes à l'aise avec la ligne de commande, vous pouvez flasher votre clef USB ou carte SD avec la commande `dd`. Vous pouvez identifier le périphérique qui corresponds à votre clef USB ou carte SD avec `fdisk -l` ou `lsblk`. Typiquement, une carte SD a un nom comme `/dev/mmcblk0`. FAITES ATTENTION et assurez vous d'avoir le bon nom.\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:71
@@ -109,15 +99,6 @@ msgstr ""
 #, no-wrap
 msgid "Then run:\n"
 msgstr "Puis lancez:\n"
-
-#. type: Fenced code block (bash)
-#: docs/admin/05.get_started/20.install_on/arm_board.mdx:72
-#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:69
-#, no-wrap
-msgid ""
-"# Replace /dev/mmcblk0 if the name of your device is different...\n"
-"dd if=/path/to/armbian.img of=/dev/mmcblk0 status=progress ; sync\n"
-msgstr ""
 
 #. type: Title ##
 #: docs/admin/05.get_started/20.install_on/raspberry_pi.mdx:32
@@ -430,5 +411,5 @@ msgstr ""
 #. type: Fenced div block (info)
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:168
 #, no-wrap
-msgid "If the YunoHost installer fails and you can't solve the issue, know that it's also possible to install Debian and then install YunoHost on top. See [the specific instructions](/admin/get_started/install_on/on_top_of_debian#-run-the-install-script).\n"
+msgid "If the YunoHost installer fails and you can't solve the issue, know that it's also possible to install Debian and then install YunoHost on top. See [the specific instructions](/admin/get_started/install_on/on_top_of_debian).\n"
 msgstr ""
