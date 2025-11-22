@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2025-11-19 02:54+0000\n"
+"POT-Creation-Date: 2025-11-22 20:23+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,7 +16,7 @@ msgstr ""
 
 #. type: Title ##
 #: docs/admin/05.get_started/10.providers/05.registrar/ovh/manualdns.mdx:29
-#: docs/admin/05.get_started/40.post_install/20.dns_config.mdx:109
+#: docs/admin/05.get_started/40.post_install/20.dns_config.mdx:93
 #, no-wrap
 msgid "Dynamic IP"
 msgstr ""
@@ -89,13 +89,13 @@ msgid "The recommended configuration typically looks like this:\n"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/05.get_started/40.post_install/20.dns_config.mdx:61
+#: docs/admin/05.get_started/40.post_install/20.dns_config.mdx:51
 #, no-wrap
 msgid "Though it might be easier to understand it if displayed like this:\n"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/05.get_started/40.post_install/20.dns_config.mdx:78
+#: docs/admin/05.get_started/40.post_install/20.dns_config.mdx:62
 #, no-wrap
 msgid ""
 "| Type    | Name                   | Value                                                 |\n"
@@ -104,12 +104,6 @@ msgid ""
 "|    A    |   *                    |  `111.222.333.444` (your IPv4)                        |\n"
 "|  AAAA   |   @                    |  `2222:444:8888:3333:bbbb:5555:3333:1111` (your IPv6) |\n"
 "|  AAAA   |   *                    |  `2222:444:8888:3333:bbbb:5555:3333:1111` (your IPv6) |\n"
-"| **SRV** | **_xmpp-client._tcp**  |  `0 5 5222 your.domain.tld.`                          |\n"
-"| **SRV** | **_xmpp-server._tcp**  |  `0 5 5269 your.domain.tld.`                          |\n"
-"|  CNAME  |   muc                  |  `@`                                                  |\n"
-"|  CNAME  |   pubsub               |  `@`                                                  |\n"
-"|  CNAME  |   vjud                 |  `@`                                                  |\n"
-"|  CNAME  |   xmpp-upload          |  `@`                                                  |\n"
 "| **MX**  | **@**                  |  `your.domain.tld.`     (and priority: 10)            |\n"
 "|   TXT   |   @                    |  `\"v=spf1 a mx -all\"`               |\n"
 "|   TXT   |  mail._domainkey       |  `\"v=DKIM1; k=rsa; p=someHuuuuuuugeKey\"`              |\n"
@@ -117,13 +111,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: docs/admin/05.get_started/40.post_install/20.dns_config.mdx:79
+#: docs/admin/05.get_started/40.post_install/20.dns_config.mdx:63
 #, no-wrap
 msgid "A few notes about this table"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/05.get_started/40.post_install/20.dns_config.mdx:88
+#: docs/admin/05.get_started/40.post_install/20.dns_config.mdx:72
 #, no-wrap
 msgid ""
 "- Not all these lines are absolutely necessary. For a minimal setup, you only need the records in bold.\n"
@@ -136,13 +130,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: docs/admin/05.get_started/40.post_install/20.dns_config.mdx:89
+#: docs/admin/05.get_started/40.post_install/20.dns_config.mdx:73
 #, no-wrap
 msgid "Reverse DNS"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/05.get_started/40.post_install/20.dns_config.mdx:95
+#: docs/admin/05.get_started/40.post_install/20.dns_config.mdx:79
 #, no-wrap
 msgid ""
 "If your ISP or VPS provider let you define a [Reverse DNS\n"
@@ -152,13 +146,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/05.get_started/40.post_install/20.dns_config.mdx:97
+#: docs/admin/05.get_started/40.post_install/20.dns_config.mdx:81
 #, no-wrap
 msgid "**N.B.: the reverse DNS configuration happens on your Internet Service Provider or VPS provider. It is *not* handled by your domain's registrar.**\n"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/05.get_started/40.post_install/20.dns_config.mdx:101
+#: docs/admin/05.get_started/40.post_install/20.dns_config.mdx:85
 #, no-wrap
 msgid ""
 "If your public IPv4 address is `111.222.333.444` and your DNS\n"
@@ -167,13 +161,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/05.get_started/40.post_install/20.dns_config.mdx:108
+#: docs/admin/05.get_started/40.post_install/20.dns_config.mdx:92
 #, no-wrap
 msgid "The diagnosis system available in the webadmin performs this checks automatically (in section Email).\n"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/05.get_started/40.post_install/20.dns_config.mdx:111
+#: docs/admin/05.get_started/40.post_install/20.dns_config.mdx:95
 #, no-wrap
 msgid "If your global IP address is constantly changing, follow this [tutorial](/admin/tutorials/domains/dns_dynamicip).\n"
 msgstr ""
