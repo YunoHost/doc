@@ -7,9 +7,9 @@ After completing your server installation, it is possible that your domain will 
 To solve this issue you can:
 
 - configure your router's DNS
-- or alternatively -  your /etc/hosts files on your clients workstation
+- or alternatively -  your `/etc/hosts` files on your clients workstation
 
-### Find the local IP address of your server
+## Find the local IP address of your server
 
 First you need to find out the local IP of your server
 
@@ -20,18 +20,6 @@ First you need to find out the local IP of your server
 ## Configure DNS on your Internet router
 
 The goal here is to create a network wide redirection handled by your router. The idea is to create a DNS redirection to your server's IP. You should access your router's configuration and look for DNS configuration, then add a redirection to your server's IP (e.g. redirect `yunohost.local` to `192.168.1.21`).
-
-### SFR Box
-
-If you haven't found your server private IP, you may find it using the SFR box admin panel:  
-    Go to Network tab > General
-
-<img src="/img/providers/ip_serveur.png" width="800"/>
-
-#### Configure SFR box's DNS
-
-Go to Network tab > DNS and add your domain name to the box's DNS.
-<img src="/img/providers/dns_9box.png" width="800"/>
 
 ## Configure [hosts](https://en.wikipedia.org/wiki/Host_%28Unix%29) file on client workstation
 
