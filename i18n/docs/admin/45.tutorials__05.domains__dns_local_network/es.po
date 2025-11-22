@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2025-11-11 19:34+0100\n"
+"POT-Creation-Date: 2025-11-22 19:23+0000\n"
 "PO-Revision-Date: 2025-11-11 19:34+0100\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -40,10 +40,10 @@ msgstr "Para evitarlo, necesitas, entre otras cosas:\n"
 #, no-wrap
 msgid ""
 "- configure your router's DNS\n"
-"- or alternatively -  your /etc/hosts files on your clients workstation\n"
+"- or alternatively -  your `/etc/hosts` files on your clients workstation\n"
 msgstr ""
 
-#. type: Title ###
+#. type: Title ##
 #: docs/admin/45.tutorials/05.domains/dns_local_network.mdx:12
 #, fuzzy, no-wrap
 #| msgid "2. Find the local IP of your server"
@@ -78,50 +78,20 @@ msgstr ""
 msgid "The goal here is to create a network wide redirection handled by your router. The idea is to create a DNS redirection to your server's IP. You should access your router's configuration and look for DNS configuration, then add a redirection to your server's IP (e.g. redirect `yunohost.local` to `192.168.1.21`).\n"
 msgstr ""
 
-#. type: Title ###
-#: docs/admin/45.tutorials/05.domains/dns_local_network.mdx:24
-#, no-wrap
-msgid "SFR Box"
-msgstr ""
-
-#. type: Plain text
-#: docs/admin/45.tutorials/05.domains/dns_local_network.mdx:26
-#, no-wrap
-msgid "If you haven't found your server private IP, you may find it using the SFR box admin panel:  \n"
-msgstr ""
-
-#. type: Plain text
-#: docs/admin/45.tutorials/05.domains/dns_local_network.mdx:28
-#, no-wrap
-msgid "    Go to Network tab > General\n"
-msgstr ""
-
-#. type: Title ####
-#: docs/admin/45.tutorials/05.domains/dns_local_network.mdx:31
-#, no-wrap
-msgid "Configure SFR box's DNS"
-msgstr ""
-
-#. type: Plain text
-#: docs/admin/45.tutorials/05.domains/dns_local_network.mdx:34
-#, no-wrap
-msgid "Go to Network tab > DNS and add your domain name to the box's DNS.\n"
-msgstr ""
-
 #. type: Title ##
-#: docs/admin/45.tutorials/05.domains/dns_local_network.mdx:36
+#: docs/admin/45.tutorials/05.domains/dns_local_network.mdx:24
 #, no-wrap
 msgid "Configure [hosts](https://en.wikipedia.org/wiki/Host_%28Unix%29) file on client workstation"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/45.tutorials/05.domains/dns_local_network.mdx:39
+#: docs/admin/45.tutorials/05.domains/dns_local_network.mdx:27
 #, no-wrap
 msgid "Modifying hosts file should be done only if you cannot alter your box's DNS or router, because hosts file will only impact the workstation where the file was modified.\n"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/45.tutorials/05.domains/dns_local_network.mdx:46
+#: docs/admin/45.tutorials/05.domains/dns_local_network.mdx:34
 #, no-wrap
 msgid ""
 "- Windows hosts file is located at:\n"
@@ -133,13 +103,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/45.tutorials/05.domains/dns_local_network.mdx:48
+#: docs/admin/45.tutorials/05.domains/dns_local_network.mdx:36
 #, no-wrap
 msgid "Add a line at the end of the file containing your server private IP followed by a space and your domain name\n"
-msgstr ""
-
-#. type: Fenced code block (bash)
-#: docs/admin/45.tutorials/05.domains/dns_local_network.mdx:49
-#, no-wrap
-msgid "192.168.1.62 domain.tld\n"
 msgstr ""
