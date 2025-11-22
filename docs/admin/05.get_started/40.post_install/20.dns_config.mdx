@@ -39,16 +39,6 @@ The recommended configuration typically looks like this:
 * 3600 IN AAAA 2222:444:8888:3333:bbbb:5555:3333:1111
 
 #
-# XMPP
-#
-_xmpp-client._tcp 3600 IN SRV 0 5 5222 your.domain.tld.
-_xmpp-server._tcp 3600 IN SRV 0 5 5269 your.domain.tld.
-muc 3600 IN CNAME @
-pubsub 3600 IN CNAME @
-vjud 3600 IN CNAME @
-xmpp-upload 3600 IN CNAME @
-
-#
 # Mail (MX, SPF, DKIM and DMARC)
 #
 @ 3600 IN MX 10 your.domain.tld.
@@ -65,12 +55,6 @@ Though it might be easier to understand it if displayed like this:
 |    A    |   *                    |  `111.222.333.444` (your IPv4)                        |
 |  AAAA   |   @                    |  `2222:444:8888:3333:bbbb:5555:3333:1111` (your IPv6) |
 |  AAAA   |   *                    |  `2222:444:8888:3333:bbbb:5555:3333:1111` (your IPv6) |
-| **SRV** | **_xmpp-client._tcp**  |  `0 5 5222 your.domain.tld.`                          |
-| **SRV** | **_xmpp-server._tcp**  |  `0 5 5269 your.domain.tld.`                          |
-|  CNAME  |   muc                  |  `@`                                                  |
-|  CNAME  |   pubsub               |  `@`                                                  |
-|  CNAME  |   vjud                 |  `@`                                                  |
-|  CNAME  |   xmpp-upload          |  `@`                                                  |
 | **MX**  | **@**                  |  `your.domain.tld.`     (and priority: 10)            |
 |   TXT   |   @                    |  `"v=spf1 a mx -all"`               |
 |   TXT   |  mail._domainkey       |  `"v=DKIM1; k=rsa; p=someHuuuuuuugeKey"`              |
