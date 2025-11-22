@@ -5,11 +5,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2025-11-11 01:24+0100\n"
+"POT-Creation-Date: 2025-11-22 20:20+0000\n"
 "PO-Revision-Date: 2025-11-22 20:21+0000\n"
 "Last-Translator: Weblate Admin <yunohost@translate.yunohost.org>\n"
-"Language-Team: French <https://translate.yunohost.org/projects/yunohost-doc/"
-"45tutorials__25external_storage/fr/>\n"
+"Language-Team: French <https://translate.yunohost.org/projects/yunohost-"
+"doc/45tutorials__25external_storage/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -73,55 +73,36 @@ msgid "<FAIcon icon=\"fa-list-alt\"/> Prerequisites"
 msgstr "<FAIcon icon=\"fa-list-alt\"/> Pré-requis"
 
 #. type: Plain text
-#: docs/admin/45.tutorials/25.external_storage.mdx:25
-#, no-wrap
-msgid "- Have some time at a moment when your server users can accept a shutdown. The steps to be performed, even if they are relatively simple, can sometimes seem technical and require in any case **to take your time**.\n"
-msgstr "- Avoir un peu de temps à un moment où les utilisateurs de votre serveur peuvent accepter un arrêt des services. Les étapes à réaliser, même si elles sont relativement simples, peuvent parfois paraître techniques et nécessitent dans tous les cas **de prendre son temps**.\n"
-
-#. type: Plain text
-#: docs/admin/45.tutorials/25.external_storage.mdx:27
-#, no-wrap
-msgid "- Know how to connect as root on your system, for example via [SSH](/admin/command_line). (Note: while logged in as `admin`, you can root with `sudo su`)\n"
-msgstr "- Savoir se connecter en root sur votre système, par exemple via [SSH](/admin/command_line). (Note : en étant connecté en tant qu'utilisateur `admin`, vous pouvez passer root avec `sudo su`)\n"
-
-#. type: Plain text
 #: docs/admin/45.tutorials/25.external_storage.mdx:29
 #, no-wrap
-msgid "- Know the basic commands `cd`, `ls`, `mkdir`, `rm`.\n"
-msgstr "- Connaître les commandes basiques `cd`, `ls`, `mkdir`, `rm`\n"
-
-#. type: Plain text
-#: docs/admin/45.tutorials/25.external_storage.mdx:31
-#, no-wrap
-msgid "- Have a backup in case things don't work out as planned\n"
-msgstr "Avoir une sauvegarde au cas où ça ne se passe pas comme prévu\n"
-
-#. type: Plain text
-#: docs/admin/45.tutorials/25.external_storage.mdx:33
-#, no-wrap
-msgid "- Have extra storage (SSD, hard drive, USB stick) connected to your server via USB or SATA\n"
-msgstr "- Disposer d'un stockage supplémentaire (disque SSD, disque dur, clé USB) branché à votre serveur en USB ou en SATA\n"
+msgid ""
+"- Have some time at a moment when your server users can accept a shutdown. The steps to be performed, even if they are relatively simple, can sometimes seem technical and require in any case **to take your time**.\n"
+"- Know how to connect as root on your system, for example via [SSH](/admin/command_line). (Note: while logged in as `admin`, you can root with `sudo su`)\n"
+"- Know the basic commands `cd`, `ls`, `mkdir`, `rm`.\n"
+"- Have a backup in case things don't work out as planned\n"
+"- Have extra storage (SSD, hard drive, USB stick) connected to your server via USB or SATA\n"
+msgstr ""
 
 #. type: Title ##
-#: docs/admin/45.tutorials/25.external_storage.mdx:34
+#: docs/admin/45.tutorials/25.external_storage.mdx:30
 #, no-wrap
 msgid "1. Identify directories to be moved"
 msgstr "1. Identifier les dossiers à déplacer"
 
 #. type: Plain text
-#: docs/admin/45.tutorials/25.external_storage.mdx:37
+#: docs/admin/45.tutorials/25.external_storage.mdx:33
 #, no-wrap
 msgid "The `ncdu /` command allows you to browse the folders on your server to see how big they are.\n"
 msgstr "La commande `ncdu /` vous permet de naviguer dans les dossiers de votre serveur afin de constater leurs tailles.\n"
 
 #. type: Plain text
-#: docs/admin/45.tutorials/25.external_storage.mdx:39
+#: docs/admin/45.tutorials/25.external_storage.mdx:35
 #, no-wrap
 msgid "Below is an explanation of some of the paths that can take up weight with some comments to help you reduce their weight or choose to move them.\n"
 msgstr "Ci-dessous, une explication de certains chemins qui peuvent prendre du poids avec quelques commentaires pour vous aider à réduire leur poids ou à choisir de les déplacer.\n"
 
 #. type: Plain text
-#: docs/admin/45.tutorials/25.external_storage.mdx:53
+#: docs/admin/45.tutorials/25.external_storage.mdx:49
 #, no-wrap
 msgid ""
 "| Paths | Contents | Tips |\n"
@@ -153,331 +134,340 @@ msgstr ""
 "| `/boot`                       | Noyaux et fichiers de démarrage | Ne pas déplacer sauf si vous savez ce que vous faites. Il peut arriver que trop de noyaux soient conservés, il est possible de faire du nettoyage. |\n"
 
 #. type: Title ##
-#: docs/admin/45.tutorials/25.external_storage.mdx:54
+#: docs/admin/45.tutorials/25.external_storage.mdx:50
 #, no-wrap
 msgid "2. Connect and identify the disk"
 msgstr "2. Connecter et identifier le disque"
 
 #. type: Plain text
-#: docs/admin/45.tutorials/25.external_storage.mdx:57
+#: docs/admin/45.tutorials/25.external_storage.mdx:53
 #, no-wrap
 msgid "Start by connecting your disk to your system. You must then identify the name under which the disk is designated by the system.\n"
 msgstr "Commencez par brancher votre disque à votre système. Il faut ensuite identifier sous quel nom est désigné le disque par le système.\n"
 
 #. type: Plain text
-#: docs/admin/45.tutorials/25.external_storage.mdx:59
+#: docs/admin/45.tutorials/25.external_storage.mdx:55
 #, no-wrap
 msgid "To do this, use the command :\n"
 msgstr "Pour cela, utilisez la commande :\n"
 
 #. type: Plain text
-#: docs/admin/45.tutorials/25.external_storage.mdx:65
+#: docs/admin/45.tutorials/25.external_storage.mdx:61
 #, no-wrap
 msgid "It may return something like :\n"
 msgstr "Elle peut renvoyer quelque chose comme :\n"
 
 #. type: Plain text
-#: docs/admin/45.tutorials/25.external_storage.mdx:76
+#: docs/admin/45.tutorials/25.external_storage.mdx:72
 #, no-wrap
 msgid "Here, `mmcblk0` corresponds to a 16GB SD card (you can see that the `mmcblk0p1` and `mmcblk0p2` partitions correspond to the `/boot` partition and the `/` system partition). The hard drive connected corresponds to `sda` which is about 1TB, and contains a single `sda1` partition which is not mounted (no \"MOUNTPOINT\").\n"
 msgstr "Ici, `mmcblk0` correspond à une carte SD de 16Go (on voit que les partitions `mmcblk0p1` et `mmcblk0p2` correspondent à la partition de démarrage `/boot` et à la partition système `/`). Le disque dur branché correspond à `sda` qui fait environ 1To, et contient une seule partition `sda1` qui n'est pas monté (pas de \"MOUNTPOINT\").\n"
 
 #. type: Fenced div block (warning)
-#: docs/admin/45.tutorials/25.external_storage.mdx:77
+#: docs/admin/45.tutorials/25.external_storage.mdx:73
 #, no-wrap
 msgid "<FAIcon icon=\"fa-exclamation-triangle\"/> On another system, it may be that your system is installed on `sda` and your disk is then `sdb` for example.\n"
-msgstr ""
-"<FAIcon icon=\"fa-exclamation-triangle\"/> Sur un autre système, il se peut "
-"que votre système soit installé sur `sda` et que votre disque soit alors "
-"`sdb` par exemple.\n"
+msgstr "<FAIcon icon=\"fa-exclamation-triangle\"/> Sur un autre système, il se peut que votre système soit installé sur `sda` et que votre disque soit alors `sdb` par exemple.\n"
 
 #. type: Fenced div block (tip)
-#: docs/admin/45.tutorials/25.external_storage.mdx:81
+#: docs/admin/45.tutorials/25.external_storage.mdx:77
 #, no-wrap
 msgid "If the size of the disk is not enough for you to recognise it, you can unplug the disk, run the `lsblk` command, then plug the disk back in, run `lsblk` and deduce the differences.\n"
-msgstr ""
-"Si la taille du disque ne vous suffit pas pour le reconnaître, vous pouvez "
-"débrancher le disque, lancer la commande `lsblk`, puis rebrancher le disque, "
-"lancer `lsblk` et en déduire les différences.\n"
+msgstr "Si la taille du disque ne vous suffit pas pour le reconnaître, vous pouvez débrancher le disque, lancer la commande `lsblk`, puis rebrancher le disque, lancer `lsblk` et en déduire les différences.\n"
 
 #. type: Title ##
-#: docs/admin/45.tutorials/25.external_storage.mdx:85
+#: docs/admin/45.tutorials/25.external_storage.mdx:81
 #, no-wrap
 msgid "3. (Optional) Format the disk"
 msgstr "3. (Optionnel) Formater le disque"
 
 #. type: Plain text
-#: docs/admin/45.tutorials/25.external_storage.mdx:88
+#: docs/admin/45.tutorials/25.external_storage.mdx:84
 #, no-wrap
 msgid "This operation is optional if your disk is already formatted with a file system supported by linux (so not NTFS or FAT32).\n"
 msgstr "Cette opération est optionnelle si votre disque est déjà formaté avec un système de fichiers supportés par linux (donc pas NTFS ou FAT32).\n"
 
 #. type: Plain text
-#: docs/admin/45.tutorials/25.external_storage.mdx:90
+#: docs/admin/45.tutorials/25.external_storage.mdx:86
 #, no-wrap
 msgid "Let's create a partition on the disk:\n"
 msgstr "Créons une partition sur le disque :\n"
 
 #. type: Plain text
-#: docs/admin/45.tutorials/25.external_storage.mdx:96
+#: docs/admin/45.tutorials/25.external_storage.mdx:92
 #, no-wrap
 msgid "then enter `n`, `p`, `1`, `Enter`, `Enter`, and `w` successively to create a new partition.\n"
 msgstr "puis entrez successivement `n`, `p`, `1`, `Entrée`, `Entrée`, et `w` pour créer une nouvelle partition.\n"
 
 #. type: Plain text
-#: docs/admin/45.tutorials/25.external_storage.mdx:98
+#: docs/admin/45.tutorials/25.external_storage.mdx:94
 #, no-wrap
 msgid "Check with `lsblk` that you have your disk containing a single partition.\n"
 msgstr "Vérifiez avec `lsblk` que vous avez bien votre disque contenant une seule partition.\n"
 
 #. type: Plain text
-#: docs/admin/45.tutorials/25.external_storage.mdx:100
+#: docs/admin/45.tutorials/25.external_storage.mdx:96
 #, no-wrap
 msgid "Before you can use your disk, it must be formatted.\n"
 msgstr "Avant de pouvoir utiliser votre disque, il doit être formaté.\n"
 
 #. type: Fenced div block (warning)
-#: docs/admin/45.tutorials/25.external_storage.mdx:101
-#, no-wrap
-msgid "<FAIcon icon=\"fa-exclamation-triangle\"/> **Formatting a disk means deleting all the data on it! Be careful not to get the name wrong, as this may result in formatting a different disk than the one you want! In the example given earlier, it was `/dev/sda`. If your disk is already \"clean\", you can skip this step.\n"
-msgstr ""
-"<FAIcon icon=\"fa-exclamation-triangle\"/> **Formater un disque implique de "
-"supprimer toutes les données inscrites dessus !**. Attention à ne pas vous "
-"tromper de nom, car cela peut avoir pour conséquence de formater un autre "
-"disque que celui voulu ! Dans l'exemple donné précédemment, il s'agissait de "
-"`/dev/sda`. Si votre disque est déjà \"propre\", vous pouvez passer cette "
-"étape.\n"
+#: docs/admin/45.tutorials/25.external_storage.mdx:97
+#, fuzzy, no-wrap
+#| msgid "<FAIcon icon=\"fa-exclamation-triangle\"/> **Formatting a disk means deleting all the data on it! Be careful not to get the name wrong, as this may result in formatting a different disk than the one you want! In the example given earlier, it was `/dev/sda`. If your disk is already \"clean\", you can skip this step.\n"
+msgid "<FAIcon icon=\"fa-exclamation-triangle\"/> **Formatting a disk means deleting all the data on it!** Be careful not to get the name wrong, as this may result in formatting a different disk than the one you want! In the example given earlier, it was `/dev/sda`. If your disk is already \"clean\", you can skip this step.\n"
+msgstr "<FAIcon icon=\"fa-exclamation-triangle\"/> **Formater un disque implique de supprimer toutes les données inscrites dessus !**. Attention à ne pas vous tromper de nom, car cela peut avoir pour conséquence de formater un autre disque que celui voulu ! Dans l'exemple donné précédemment, il s'agissait de `/dev/sda`. Si votre disque est déjà \"propre\", vous pouvez passer cette étape.\n"
 
 #. type: Plain text
-#: docs/admin/45.tutorials/25.external_storage.mdx:106
+#: docs/admin/45.tutorials/25.external_storage.mdx:102
 #, no-wrap
 msgid "To format the :\n"
 msgstr "Pour formater la partition :\n"
 
 #. type: Plain text
-#: docs/admin/45.tutorials/25.external_storage.mdx:113
+#: docs/admin/45.tutorials/25.external_storage.mdx:109
 #, no-wrap
 msgid "Replace `YOUR_DISK1` with the name of the first partition on the disk e.g. `sda1`.\n"
 msgstr "Remplacez `VOTRE_DISQUE1` par le nom de la première partition sur le disque par exemple `sda1`.\n"
 
 #. type: Fenced div block (tip)
-#: docs/admin/45.tutorials/25.external_storage.mdx:114
+#: docs/admin/45.tutorials/25.external_storage.mdx:110
 #, no-wrap
 msgid "It is possible to adapt this step, for example to create a raid 1 volume (mirrored disks) or encrypt the folder.\n"
 msgstr "Il est possible d'adapter cette étape, pour par exemple créer un volume raid 1 (disques en miroir) ou chiffrer le dossier.\n"
 
 #. type: Title ##
-#: docs/admin/45.tutorials/25.external_storage.mdx:118
+#: docs/admin/45.tutorials/25.external_storage.mdx:114
 #, no-wrap
 msgid "4. Mount the disk"
 msgstr "4. Monter le disque"
 
 #. type: Plain text
-#: docs/admin/45.tutorials/25.external_storage.mdx:121
+#: docs/admin/45.tutorials/25.external_storage.mdx:117
 #, no-wrap
 msgid "Unlike Windows where disks are accessed with letters (C:/), under Linux, disks are made accessible via the file tree. \"Mounting\" a disk means making it effectively accessible in the file tree. We will arbitrarily choose to mount the disk in `/mnt/hdd` but you can name it differently (e.g. `/mnt/disk` ...).\n"
 msgstr "Contrairement à Windows où les disques sont accessibles avec des lettres (C:/), sous linux, les disques sont rendus accessibles via l'arborescence. \"Monter\" un disque signifie le rendre effectivement accessible dans l'arborescence des fichiers. Nous allons choisir arbitrairement de monter le disque dans `/mnt/hdd` mais vous pouvez le nommer différemment (par exemple `/mnt/disque` ...).\n"
 
 #. type: Plain text
-#: docs/admin/45.tutorials/25.external_storage.mdx:123
+#: docs/admin/45.tutorials/25.external_storage.mdx:119
 #, no-wrap
 msgid "Let's start by creating the directory :\n"
 msgstr "Commençons par créer le répertoire :\n"
 
 #. type: Plain text
-#: docs/admin/45.tutorials/25.external_storage.mdx:129
+#: docs/admin/45.tutorials/25.external_storage.mdx:125
 #, no-wrap
 msgid "Then we can mount the disk manually with :\n"
 msgstr "Puis nous pouvons monter le disque manuellement avec :\n"
 
 #. type: Plain text
-#: docs/admin/45.tutorials/25.external_storage.mdx:135
+#: docs/admin/45.tutorials/25.external_storage.mdx:131
 #, no-wrap
 msgid "(Here, `/dev/YOUR_DISK1` corresponds to the first partition on the disk)\n"
 msgstr "(Ici, `/dev/VOTRE_DISQUE1` correspond à la première partition sur le disque)\n"
 
 #. type: Title ##
-#: docs/admin/45.tutorials/25.external_storage.mdx:136
+#: docs/admin/45.tutorials/25.external_storage.mdx:132
 #, no-wrap
 msgid "5. Mount a `/mnt/hdd` folder on one of the folders you want to move data from"
 msgstr "5. Monter un dossier de `/mnt/hdd` sur un des dossiers dont on veut déplacer les données"
 
 #. type: Plain text
-#: docs/admin/45.tutorials/25.external_storage.mdx:139
+#: docs/admin/45.tutorials/25.external_storage.mdx:135
 #, no-wrap
 msgid "Here we will consider that you want to move the big data of the applications which are in `/home/yunohost.app` and the mails on your hard disk.\n"
 msgstr "Ici on va considérer que vous souhaitez déplacer les grosses données des applications qui se trouvent dans `/home/yunohost.app` ainsi que les mails sur votre disque dur.\n"
 
 #. type: Title ###
-#: docs/admin/45.tutorials/25.external_storage.mdx:140
+#: docs/admin/45.tutorials/25.external_storage.mdx:136
 #, no-wrap
 msgid "5.1 Creating subfolders on the disk"
 msgstr "5.1 Création des sous-dossiers sur le disque"
 
 #. type: Plain text
-#: docs/admin/45.tutorials/25.external_storage.mdx:143
+#: docs/admin/45.tutorials/25.external_storage.mdx:139
 #, no-wrap
 msgid "To begin with, we create a folder on the hard drive\n"
 msgstr "Pour commencer, on crée un dossier dans le disque dur\n"
 
 #. type: Title ###
-#: docs/admin/45.tutorials/25.external_storage.mdx:149
+#: docs/admin/45.tutorials/25.external_storage.mdx:145
 #, no-wrap
 msgid "5.2 Switching to maintenance mode"
 msgstr "5.2 Passage en mode maintenance"
 
 #. type: Plain text
-#: docs/admin/45.tutorials/25.external_storage.mdx:152
+#: docs/admin/45.tutorials/25.external_storage.mdx:148
 #, no-wrap
 msgid "Then, ideally, we switch to maintenance mode the applications that might be writing data.\n"
 msgstr "Puis, idéalement on passe en maintenance les applications qui pourraient être en train d'écrire des données.\n"
 
 #. type: Plain text
-#: docs/admin/45.tutorials/25.external_storage.mdx:154
+#: docs/admin/45.tutorials/25.external_storage.mdx:150
 #, no-wrap
 msgid "Example, for nextcloud:\n"
 msgstr "Exemple, pour nextcloud:\n"
 
 #. type: Plain text
-#: docs/admin/45.tutorials/25.external_storage.mdx:160
+#: docs/admin/45.tutorials/25.external_storage.mdx:156
 #, no-wrap
 msgid "Example, for mail:\n"
 msgstr "Exemple, pour le mail:\n"
 
 #. type: Fenced div block (warning)
-#: docs/admin/45.tutorials/25.external_storage.mdx:166
+#: docs/admin/45.tutorials/25.external_storage.mdx:162
 #, no-wrap
 msgid "If you wish to move databases such as mariadb (mysql), it is imperative that you stop the services for these databases otherwise it is almost certain that your data will be corrupted.\n"
 msgstr "Si vous souhaitez déplacer les base de données comme mariadb (mysql), il est impératif de stopper les services de ces bases de données sans quoi il est presque sûr que vos données seront corrompues.\n"
 
 #. type: Title ###
-#: docs/admin/45.tutorials/25.external_storage.mdx:170
+#: docs/admin/45.tutorials/25.external_storage.mdx:166
 #, no-wrap
 msgid "5.3 Creating the mount points"
 msgstr "5.3 Création des points de montages"
 
 #. type: Plain text
-#: docs/admin/45.tutorials/25.external_storage.mdx:173
+#: docs/admin/45.tutorials/25.external_storage.mdx:169
 #, no-wrap
 msgid "Next, we will rename the original folder and create an empty eponymous folder.\n"
 msgstr "Ensuite, on va renommer le dossier d'origine et créer un dossier vide éponyme.\n"
 
 #. type: Plain text
-#: docs/admin/45.tutorials/25.external_storage.mdx:182
+#: docs/admin/45.tutorials/25.external_storage.mdx:178
 #, no-wrap
 msgid "We can then use the `mount --bind` command to mount the folder on our hard drive to the new empty location in the tree.\n"
 msgstr "On peut alors grâce à la commande `mount --bind` monter le dossier de notre disque dur sur le nouvel emplacement vide de l'arborescence.\n"
 
 #. type: Title ###
-#: docs/admin/45.tutorials/25.external_storage.mdx:188
+#: docs/admin/45.tutorials/25.external_storage.mdx:184
 #, no-wrap
 msgid "5.4 Copying the data"
 msgstr "5.4 Copie des données"
 
 #. type: Plain text
-#: docs/admin/45.tutorials/25.external_storage.mdx:191
+#: docs/admin/45.tutorials/25.external_storage.mdx:187
 #, no-wrap
 msgid "Next, we copy the data, keeping all the folder and file properties. This operation can take a little time, with another terminal, you can control the evolution by observing the weight associated with the mount point with `df -h`\n"
 msgstr "Puis, on copie les données en conservant toutes les propriétés des dossiers et des fichiers. Cette opération peut prendre un peu de temps, avec un autre terminal, vous pourrez controler l'évolution en observant le poids associé au point de montage avec `df -h`\n"
 
 #. type: Plain text
-#: docs/admin/45.tutorials/25.external_storage.mdx:198
+#: docs/admin/45.tutorials/25.external_storage.mdx:194
 #, no-wrap
 msgid "Once this is done, check with `ls` that the contents are there:\n"
 msgstr "Une fois que c'est fini, vérifiez avec `ls` que le contenu est bien là:\n"
 
 #. type: Title ###
-#: docs/admin/45.tutorials/25.external_storage.mdx:204
+#: docs/admin/45.tutorials/25.external_storage.mdx:200
 #, no-wrap
 msgid "5.5 Exiting maintenance mode"
 msgstr "5.5 Sortir du mode maintenance"
 
 #. type: Plain text
-#: docs/admin/45.tutorials/25.external_storage.mdx:207
+#: docs/admin/45.tutorials/25.external_storage.mdx:203
 #, no-wrap
 msgid "From here you can stop maintenance mode, the command below is to be adapted depending on the services you have stopped.\n"
 msgstr "A partir de là vous pouvez arréter le mode maintenance, la commande ci-dessous est à adapter selon les services que vous avez arrétés.\n"
 
 #. type: Plain text
-#: docs/admin/45.tutorials/25.external_storage.mdx:215
+#: docs/admin/45.tutorials/25.external_storage.mdx:211
 #, no-wrap
 msgid "From this point on, your services are running with their data on disk, so it's time to test to see how much of an impact this has on performance (especially if you are using USB 2.0).\n"
 msgstr "A partir de cette étape, vos services tournent avec leurs données sur le disque, il est donc temps de tester pour voir dans quelle mesure il y a un impact sur les performances (notamment si vus utilisez de l'USB 2.0).\n"
 
 #. type: Title ##
-#: docs/admin/45.tutorials/25.external_storage.mdx:216
+#: docs/admin/45.tutorials/25.external_storage.mdx:212
 #, no-wrap
 msgid "6. Automatically mount on boot"
 msgstr "6. Monter automatiquement au démarrage"
 
 #. type: Plain text
-#: docs/admin/45.tutorials/25.external_storage.mdx:219
+#: docs/admin/45.tutorials/25.external_storage.mdx:215
 #, no-wrap
 msgid "So far we have manually mounted the disk and subfolders. However, it is necessary to configure the system to automatically mount the disk after a boot.\n"
 msgstr "Jusqu'ici, nous avons monté manuellement le disque et les sous-dossiers. Cependant, il est nécessaire de configurer le système pour qu'il monte automatiquement le disque après un démarrage.\n"
 
 #. type: Plain text
-#: docs/admin/45.tutorials/25.external_storage.mdx:221
+#: docs/admin/45.tutorials/25.external_storage.mdx:217
 #, no-wrap
 msgid "If your tests are successful, you should keep the mount points, otherwise you should hurry up and go back to maintenance first.\n"
 msgstr "Si vos tests sont concluants, il faut pérenniser les points de montages, sinon dépêchez-vous de faire machine arrière en commençant par remettre en maintenance.\n"
 
 #. type: Plain text
-#: docs/admin/45.tutorials/25.external_storage.mdx:223
+#: docs/admin/45.tutorials/25.external_storage.mdx:219
 #, no-wrap
 msgid "To begin with, let's find the UUID (universal identifier) of our disk with :\n"
 msgstr "Pour commencer, trouvons l'UUID (identifiant universel) de notre disque avec :\n"
 
 #. type: Plain text
-#: docs/admin/45.tutorials/25.external_storage.mdx:229
+#: docs/admin/45.tutorials/25.external_storage.mdx:225
 #, no-wrap
 msgid "Let's add a line to the `/etc/fstab` file that handles the mounting of disks at boot time. So we open the file with `nano` :\n"
 msgstr "Ajoutons alors une ligne au fichier `/etc/fstab` qui gère le montage des disques au démarrage. On ouvre donc le fichier avec `nano` :\n"
 
 #. type: Plain text
-#: docs/admin/45.tutorials/25.external_storage.mdx:235
+#: docs/admin/45.tutorials/25.external_storage.mdx:231
 #, no-wrap
 msgid "Then add these lines to the end of the file:\n"
 msgstr "Puis on ajoute ces lignes à la fin du fichier :\n"
 
 #. type: Plain text
-#: docs/admin/45.tutorials/25.external_storage.mdx:243
+#: docs/admin/45.tutorials/25.external_storage.mdx:239
 #, no-wrap
 msgid "(this line must be adapted according to the previous information and choices)\n"
 msgstr "(il faut adapter cette ligne en fonction des informations et choix précédents)\n"
 
 #. type: Plain text
-#: docs/admin/45.tutorials/25.external_storage.mdx:245
+#: docs/admin/45.tutorials/25.external_storage.mdx:241
 #, no-wrap
 msgid "Use Ctrl+X then `y` to save.\n"
 msgstr "Utiliser Ctrl+X puis `o` pour sauvegarder.\n"
 
 #. type: Plain text
-#: docs/admin/45.tutorials/25.external_storage.mdx:247
+#: docs/admin/45.tutorials/25.external_storage.mdx:243
 #, no-wrap
 msgid "You can then try rebooting the system to check if the disk and subfolders are mounted automatically.\n"
 msgstr "Vous pouvez ensuite tester de redémarrer le système pour vérifier si le disque et les sous-dossiers sont montés automatiquement.\n"
 
 #. type: Title ##
-#: docs/admin/45.tutorials/25.external_storage.mdx:248
+#: docs/admin/45.tutorials/25.external_storage.mdx:244
 #, no-wrap
 msgid "7. Clean up old data"
 msgstr "7. Nettoyer les anciennes données"
 
 #. type: Plain text
-#: docs/admin/45.tutorials/25.external_storage.mdx:251
+#: docs/admin/45.tutorials/25.external_storage.mdx:247
 #, no-wrap
 msgid "Once your new setup is validated, you can proceed to delete the old data from step 5.3:\n"
 msgstr "Dès que votre nouveau setup est validé, vous pouvez procéder à la suppression des anciennes données issues de l'étape 6.3:\n"
 
 #. type: Title ##
-#: docs/admin/45.tutorials/25.external_storage.mdx:257
+#: docs/admin/45.tutorials/25.external_storage.mdx:253
 #, no-wrap
 msgid "🎉 Congratulations!"
 msgstr "🎉 Félicitations !"
 
 #. type: Plain text
-#: docs/admin/45.tutorials/25.external_storage.mdx:259
+#: docs/admin/45.tutorials/25.external_storage.mdx:255
 #, no-wrap
 msgid "If you have made it this far without damage, you now have a server that takes advantage of one or more storage disks.\n"
 msgstr "Si vous êtes arrivé jusqu'ici sans dommage, vous avez désormais un serveur qui tire parti d'un ou de plusieurs disques de stockage.\n"
+
+#, no-wrap
+#~ msgid "- Have some time at a moment when your server users can accept a shutdown. The steps to be performed, even if they are relatively simple, can sometimes seem technical and require in any case **to take your time**.\n"
+#~ msgstr "- Avoir un peu de temps à un moment où les utilisateurs de votre serveur peuvent accepter un arrêt des services. Les étapes à réaliser, même si elles sont relativement simples, peuvent parfois paraître techniques et nécessitent dans tous les cas **de prendre son temps**.\n"
+
+#, no-wrap
+#~ msgid "- Know how to connect as root on your system, for example via [SSH](/admin/command_line). (Note: while logged in as `admin`, you can root with `sudo su`)\n"
+#~ msgstr "- Savoir se connecter en root sur votre système, par exemple via [SSH](/admin/command_line). (Note : en étant connecté en tant qu'utilisateur `admin`, vous pouvez passer root avec `sudo su`)\n"
+
+#, no-wrap
+#~ msgid "- Know the basic commands `cd`, `ls`, `mkdir`, `rm`.\n"
+#~ msgstr "- Connaître les commandes basiques `cd`, `ls`, `mkdir`, `rm`\n"
+
+#, no-wrap
+#~ msgid "- Have a backup in case things don't work out as planned\n"
+#~ msgstr "Avoir une sauvegarde au cas où ça ne se passe pas comme prévu\n"
+
+#, no-wrap
+#~ msgid "- Have extra storage (SSD, hard drive, USB stick) connected to your server via USB or SATA\n"
+#~ msgstr "- Disposer d'un stockage supplémentaire (disque SSD, disque dur, clé USB) branché à votre serveur en USB ou en SATA\n"
