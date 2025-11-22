@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2025-11-11 19:34+0100\n"
+"POT-Creation-Date: 2025-11-22 20:46+0000\n"
 "PO-Revision-Date: 2025-11-11 19:34+0100\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -315,5 +315,5 @@ msgstr ""
 #. type: Fenced div block (tip)
 #: docs/admin/05.get_started/20.install_on/virtualbox.mdx:135
 #, no-wrap
-msgid "If the YunoHost installer fails and you can't solve the issue, know that it's also possible to install Debian and then install YunoHost on top. See [these instructions](/admin/get_started/install_on/on_top_of_debian#-run-the-install-script).\n"
+msgid "If the YunoHost installer fails and you can't solve the issue, know that it's also possible to install Debian and then install YunoHost on top. See [these instructions](/admin/get_started/install_on/on_top_of_debian).\n"
 msgstr ""

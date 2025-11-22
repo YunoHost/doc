@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2025-11-11 19:34+0100\n"
+"POT-Creation-Date: 2025-11-22 20:46+0000\n"
 "PO-Revision-Date: 2025-11-11 19:34+0100\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -105,15 +105,6 @@ msgstr ""
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:68
 #, no-wrap
 msgid "Then run:\n"
-msgstr ""
-
-#. type: Fenced code block (bash)
-#: docs/admin/05.get_started/20.install_on/arm_board.mdx:72
-#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:69
-#, no-wrap
-msgid ""
-"# Replace /dev/mmcblk0 if the name of your device is different...\n"
-"dd if=/path/to/armbian.img of=/dev/mmcblk0 status=progress ; sync\n"
 msgstr ""
 
 #. type: Title ##
@@ -429,5 +420,5 @@ msgstr ""
 #. type: Fenced div block (info)
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:168
 #, no-wrap
-msgid "If the YunoHost installer fails and you can't solve the issue, know that it's also possible to install Debian and then install YunoHost on top. See [the specific instructions](/admin/get_started/install_on/on_top_of_debian#-run-the-install-script).\n"
+msgid "If the YunoHost installer fails and you can't solve the issue, know that it's also possible to install Debian and then install YunoHost on top. See [the specific instructions](/admin/get_started/install_on/on_top_of_debian).\n"
 msgstr ""
