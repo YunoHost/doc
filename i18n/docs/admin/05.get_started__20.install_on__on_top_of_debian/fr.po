@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2025-11-22 20:34+0000\n"
+"POT-Creation-Date: 2025-11-22 21:03+0000\n"
 "PO-Revision-Date: 2025-11-22 20:34+0000\n"
 "Last-Translator: Weblate Admin <yunohost@translate.yunohost.org>\n"
 "Language-Team: French <https://translate.yunohost.org/projects/yunohost-"
@@ -64,7 +64,7 @@ msgstr "  <Button url=\"https://www.debian.org/distrib/netinst\" color=\"skyblue
 msgid "Alternatively, you can browse the [Debian archive](https://cdimage.debian.org/mirror/cdimage/archive) for the latest 12.x version, select your architecture, the select `iso-cd` and download the `netinst` iso.\n"
 msgstr "Alternativement, vous pouvez naviguer dans les [archives de Debian](https://cdimage.debian.org/mirror/cdimage/archive) pour trouver la version 12.x, choisir votre architecture, puis choisissez `iso-cd` et téléchargez l'ISO `netinst`.\n"
 
-#. type: Title ####
+#. type: Title ###
 #: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:26
 #, fuzzy, no-wrap
 #| msgid " Installing Tor"
@@ -136,7 +136,7 @@ msgid ""
 "- Keep “standard system utilities” checked\n"
 msgstr ""
 
-#. type: Title ####
+#. type: Title ###
 #: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:52
 #, fuzzy, no-wrap
 #| msgid "Installing an app"
