@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2025-11-11 19:34+0100\n"
+"POT-Creation-Date: 2025-11-22 19:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,7 +16,7 @@ msgstr ""
 
 #. type: Title ####
 #: docs/admin/05.get_started/10.providers/05.registrar/gandi.mdx:1
-#: docs/admin/45.tutorials/45.certificate_custom.mdx:66
+#: docs/admin/80.advanced/45.certificate_custom.mdx:66
 #, no-wrap
 msgid "Gandi"
 msgstr ""

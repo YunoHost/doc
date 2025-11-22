@@ -1,0 +1,36 @@
+# Copyright (C) 2025 YunoHost Contributors
+# This file is distributed under the same license as the YunoHost documentation package.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: YunoHost documentation VERSION\n"
+"POT-Creation-Date: 2025-11-22 19:19+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Yaml Front Matter Hash Value: description
+#: docs/admin/80.advanced/70.chatons.mdx:1
+#, no-wrap
+msgid "See the tutorial on chatons.org"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: title
+#: docs/admin/80.advanced/70.chatons.mdx:1
+#, no-wrap
+msgid "Create a CHATONS ↗"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/80.advanced/70.chatons.mdx:10
+#, no-wrap
+msgid ""
+"<DocumentedHardRedirect\n"
+"    url=\"https://wiki.chatons.org/doku.php/heberger/administration_systeme/yunohost\"\n"
+"    description=\"the CHATONS documentation\"/>\n"
+msgstr ""
