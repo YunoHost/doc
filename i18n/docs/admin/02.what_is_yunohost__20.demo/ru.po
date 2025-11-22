@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2025-11-19 02:54+0000\n"
+"POT-Creation-Date: 2025-11-22 19:10+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -38,38 +38,47 @@ msgid "This demo server is reset *every 30 minutes* and could be down from time 
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/02.what_is_yunohost/20.demo.mdx:22
+#: docs/admin/02.what_is_yunohost/20.demo.mdx:21
 #, no-wrap
-msgid ""
-"  } <FAIcon icon='fa-user'/> User interface {\n"
-"  } </YunoHostDocsCardHeading>\n"
+msgid "<span><FAIcon icon='fa-user' /> User interface</span>\n"
 msgstr ""
 
 #. type: Plain text
 #: docs/admin/02.what_is_yunohost/20.demo.mdx:24
-#: docs/admin/02.what_is_yunohost/20.demo.mdx:34
 #, no-wrap
-msgid "  username: `demo`\n"
+msgid "https://demo.yunohost.org\n"
 msgstr ""
 
 #. type: Plain text
 #: docs/admin/02.what_is_yunohost/20.demo.mdx:26
-#: docs/admin/02.what_is_yunohost/20.demo.mdx:36
+#: docs/admin/02.what_is_yunohost/20.demo.mdx:38
 #, fuzzy, no-wrap
 #| msgid "password: `yunohost`\n"
-msgid "  password: `demo`\n"
+msgid "username: `demo`\n"
 msgstr "пароль: `yunohost`\n"
 
 #. type: Plain text
-#: docs/admin/02.what_is_yunohost/20.demo.mdx:32
+#: docs/admin/02.what_is_yunohost/20.demo.mdx:28
+#: docs/admin/02.what_is_yunohost/20.demo.mdx:40
+#, fuzzy, no-wrap
+#| msgid "password: `yunohost`\n"
+msgid "password: `demo`\n"
+msgstr "пароль: `yunohost`\n"
+
+#. type: Plain text
+#: docs/admin/02.what_is_yunohost/20.demo.mdx:33
 #, no-wrap
-msgid ""
-"  } <FAIcon icon='fa-cog'/> Administration interface {\n"
-"  } </YunoHostDocsCardHeading>\n"
+msgid "<span><FAIcon icon='fa-cog'/> Administration interface</span>\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/02.what_is_yunohost/20.demo.mdx:36
+#, no-wrap
+msgid "https://demo.yunohost.org/yunohost/admin/\n"
 msgstr ""
 
 #. type: Fenced div block (info)
-#: docs/admin/02.what_is_yunohost/20.demo.mdx:40
+#: docs/admin/02.what_is_yunohost/20.demo.mdx:44
 #, no-wrap
 msgid "**Demo server gracefully provided by [Gitoyen](https://www.gitoyen.net?target=_blank) <FAIcon icon=\"fa-heart\" style={{color: \"green\"}}/>**\n"
 msgstr "**Демонстрационный сервер, любезно предоставленный [Gitoyen](https://www.gitoyen.net?target=_blank) <FAIcon icon=\"fa-heart\" style={{color: \"green\"}}/>**\n"

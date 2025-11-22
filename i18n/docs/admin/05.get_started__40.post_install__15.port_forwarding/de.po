@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2025-11-19 02:54+0000\n"
+"POT-Creation-Date: 2025-11-22 19:10+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -27,8 +27,9 @@ msgstr ""
 
 #. type: Plain text
 #: docs/admin/05.get_started/40.post_install/15.port_forwarding.mdx:7
-#, no-wrap
-msgid "If you are self-hosting at home and without a VPN, you need to forward ports on your home router (\"Internet box\"). The sketch below tries to briefly summarize the role and necessity of port forwarding when setting up a server at home.\n"
+#, fuzzy, no-wrap
+#| msgid "If you are self-hosting at home and without a VPN, you need to forward ports on your home router (\"Internet box\"). The sketch below tries to briefly summarize the role and necessity of port forwarding when setting up a server at home.\n"
+msgid "If you are self-hosting at home and without a VPN, you will probably want to forward ports on your home router (\"Internet box\") if you want your server to be reachable from outside your local network. The sketch below tries to briefly summarize the role and necessity of port forwarding when setting up a server at home.\n"
 msgstr "Wenn Sie zu Hause selbst hosten und kein VPN nutzen, müssen Sie die Ports Ihres Routers umleiten (\"Internet box\"). Das folgende Schema versucht, die Rolle der Portweiterleitung beim Einrichten eines Servers zu Hause kurz zu erklären.\n"
 
 #. type: Plain text
@@ -44,87 +45,88 @@ msgid "0. Diagnose ports opened"
 msgstr "0. Offene Ports diagnostizieren"
 
 #. type: Plain text
-#: docs/admin/05.get_started/40.post_install/15.port_forwarding.mdx:14
-#, no-wrap
-msgid ""
-"The new diagnosis tool introduced in 3.8 can be used to diagnose that ports are\n"
-"correctly exposed.\n"
+#: docs/admin/05.get_started/40.post_install/15.port_forwarding.mdx:13
+#, fuzzy, no-wrap
+#| msgid ""
+#| "The new diagnosis tool introduced in 3.8 can be used to diagnose that ports are\n"
+#| "correctly exposed.\n"
+msgid "The diagnosis tool can be used to verify that all necessary ports are exposed to the Internet.\n"
 msgstr ""
 "Sobald die Umleitungen konfiguriert sind, können Sie mit dem in YunoHost 3.8 eingeführten Diagnosewerkzeug überprüfen, ob\n"
 "die Ports korrekt freigegeben sind.\n"
 
 #. type: Title ###
-#: docs/admin/05.get_started/40.post_install/15.port_forwarding.mdx:15
+#: docs/admin/05.get_started/40.post_install/15.port_forwarding.mdx:14
 #, no-wrap
 msgid "1. Access your box/router administration interface"
 msgstr "1. Auf die Administrationsoberfläche Ihrer Box/Ihres Routers zugreifen"
 
 #. type: Plain text
-#: docs/admin/05.get_started/40.post_install/15.port_forwarding.mdx:18
+#: docs/admin/05.get_started/40.post_install/15.port_forwarding.mdx:17
 #, no-wrap
 msgid "Your box/router admin interface is usually reachable via [http://192.168.0.1](http://192.168.0.1) or [http://192.168.1.1](http://192.168.1.1). Then, you will probably need to authenticate yourself the credentials given by your internet server provider.\n"
 msgstr "Ihre Box/Router-Administrationsoberfläche ist in der Regel erreichbar über [http://192.168.0.1](http://192.168.0.1) oder [http://192.168.1.1](http://192.168.1.1). Als Nächstes müssen Sie sich möglicherweise mit den von Ihrem Internetdienstanbieter (ISP) bereitgestellten Anmeldedaten authentifizieren.\n"
 
 #. type: Title ###
-#: docs/admin/05.get_started/40.post_install/15.port_forwarding.mdx:19
+#: docs/admin/05.get_started/40.post_install/15.port_forwarding.mdx:18
 #, no-wrap
 msgid "2. Find the local IP of your server"
 msgstr "2. Die lokale IP Ihres Servers finden"
 
 #. type: Plain text
-#: docs/admin/05.get_started/40.post_install/15.port_forwarding.mdx:22
+#: docs/admin/05.get_started/40.post_install/15.port_forwarding.mdx:21
 #, no-wrap
 msgid "Identify the *local* IP of your server using one of the method listed [on the corresponding page](/admin/get_started/post_install/find_ip).\n"
 msgstr "Identify the *local* IP of your server using one of the method listed [on the corresponding page](/admin/get_started/post_install/find_ip).\n"
 
 #. type: Plain text
-#: docs/admin/05.get_started/40.post_install/15.port_forwarding.mdx:24
+#: docs/admin/05.get_started/40.post_install/15.port_forwarding.mdx:23
 #, no-wrap
 msgid "A local IP address typically looks like `192.168.xx.yy`, or `10.0.xx.yy`.\n"
 msgstr "Eine lokale IP-Adresse sieht typischerweise so aus:`192.168.xx.yy`, oder `10.0.xx.yy`.\n"
 
 #. type: Plain text
-#: docs/admin/05.get_started/40.post_install/15.port_forwarding.mdx:26
+#: docs/admin/05.get_started/40.post_install/15.port_forwarding.mdx:25
 #, no-wrap
 msgid "The local IP address needs to be static, so that the port forwards that you are going to configure in the next step will always reach your server. You should go into your box/router and make sure that the local IP address of your server is static instead of dynamic.\n"
 msgstr "Die lokale IP-Adresse muss statisch sein, damit die Port-Weiterleitungen, die Sie im nächsten Schritt konfigurieren werden, Ihren Server immer erreichen. Sie sollten in Ihren Rechner/Router gehen und sicherstellen, dass die lokale IP-Adresse Ihres Servers statisch und nicht dynamisch ist.\n"
 
 #. type: Title ###
-#: docs/admin/05.get_started/40.post_install/15.port_forwarding.mdx:27
+#: docs/admin/05.get_started/40.post_install/15.port_forwarding.mdx:26
 #, no-wrap
 msgid "3. Forwarding ports"
 msgstr "3. Ports weiterleiten"
 
 #. type: Plain text
-#: docs/admin/05.get_started/40.post_install/15.port_forwarding.mdx:30
-#, no-wrap
-msgid "In your router admin interface, look for something like 'router configuration' or 'port forwarding'. The naming differs among the various kinds of boxes.\n"
+#: docs/admin/05.get_started/40.post_install/15.port_forwarding.mdx:29
+#, fuzzy, no-wrap
+#| msgid "In your router admin interface, look for something like 'router configuration' or 'port forwarding'. The naming differs among the various kinds of boxes.\n"
+msgid "In your router admin interface, look for something like \"router configuration\" or \"port forwarding\". The naming differs among the various kinds of router models.\n"
 msgstr "Suchen Sie in der Verwaltungsoberfläche Ihres Routers nach etwas wie \"Router-Konfiguration\" oder \"Port-Weiterleitung\". Die Benennung unterscheidet sich bei den verschiedenen Arten von Boxen.\n"
 
 #. type: Plain text
-#: docs/admin/05.get_started/40.post_install/15.port_forwarding.mdx:32
+#: docs/admin/05.get_started/40.post_install/15.port_forwarding.mdx:31
 #, no-wrap
 msgid "Opening the ports listed below is necessary for the various services available in YunoHost to work. For each of them, the 'TCP' forwarding is needed. Some interfaces refer to 'external' and 'internal' ports: these are the same in our case.\n"
 msgstr "Das Öffnen der unten aufgeführten Ports ist notwendig, damit die verschiedenen in YunoHost verfügbaren Dienste funktionieren. Für jeden von ihnen wird die 'TCP'-Weiterleitung benötigt. Einige Schnittstellen beziehen sich auf 'externe' und 'interne' Ports : diese sind in unserem Fall gleich.\n"
 
 #. type: Plain text
-#: docs/admin/05.get_started/40.post_install/15.port_forwarding.mdx:37
+#: docs/admin/05.get_started/40.post_install/15.port_forwarding.mdx:35
 #, no-wrap
 msgid ""
 "- Web: `80` <small>(HTTP)</small>, `443` <small>(HTTPS)</small>\n"
 "- [SSH](/admin/command_line): `22`\n"
-"- [XMPP](https://wikipedia.org/wiki/XMPP): `5222` <small>(clients)</small>, `5269` <small>(servers)</small>\n"
 "- [Email](/admin/email): `25`, `587` <small>(SMTP)</small>, `993` <small>(IMAP)</small>\n"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/05.get_started/40.post_install/15.port_forwarding.mdx:39
+#: docs/admin/05.get_started/40.post_install/15.port_forwarding.mdx:37
 #, no-wrap
 msgid "If you use both a modem and a router, then you need to do the following:\n"
 msgstr "Wenn Sie sowohl ein Modem als auch einen Router verwenden, dann müssen Sie Folgendes tun:\n"
 
 #. type: Plain text
-#: docs/admin/05.get_started/40.post_install/15.port_forwarding.mdx:42
+#: docs/admin/05.get_started/40.post_install/15.port_forwarding.mdx:40
 #, fuzzy, no-wrap
 #| msgid "then on the router (the box between the modem and your devices) create rules to forward the above ports to the static IP address for your server.\n"
 msgid ""
@@ -133,9 +135,10 @@ msgid ""
 msgstr "dann auf dem Router (der Box zwischen dem Modem und Ihren Geräten) Regeln erstellen, um die oben genannten Ports an die statische IP-Adresse für Ihren Server weiterzuleiten.\n"
 
 #. type: Fenced div block (warning)
-#: docs/admin/05.get_started/40.post_install/15.port_forwarding.mdx:43
-#, no-wrap
-msgid "<FAIcon icon=\"fa-exclamation-triangle\"/> Some internet service providers block port 25 (mail SMTP) by default to fight spam. Some other ISP don't allow to use port 80/443 (web) freely, though it's less likely. Depending on the ISP, it might be possible to open them in the admin interface... Check [this page](/admin/get_started/providers/isp/) for more info.\n"
+#: docs/admin/05.get_started/40.post_install/15.port_forwarding.mdx:41
+#, fuzzy, no-wrap
+#| msgid "<FAIcon icon=\"fa-exclamation-triangle\"/> Some internet service providers block port 25 (mail SMTP) by default to fight spam. Some other ISP don't allow to use port 80/443 (web) freely, though it's less likely. Depending on the ISP, it might be possible to open them in the admin interface... Check [this page](/admin/get_started/providers/isp/) for more info.\n"
+msgid "<FAIcon icon=\"fa-exclamation-triangle\"/> Many internet service providers (ISP) block outgoing traffic on port 25 by default, to fight spam. Port 25 is however necessary if you want your server to be able to send email. In other extreme cases, some ISP may not even allow to use port 80/443 (web) freely... Depending on the ISP, it might be possible to open them in the admin interface... Check [this page](/admin/get_started/providers/isp/) for more info.\n"
 msgstr "<FAIcon icon=\"fa-exclamation-triangle\"/> Einige ISPs blockieren standardmäßig den Port 25 (Mail-SMTP), um Spam zu bekämpfen. Andere (seltener) erlauben keine freie Nutzung der Ports 80/443. Abhängig von Ihrem ISP kann es möglich sein, diese Ports in der Schnittstelle zu öffnen... Siehe [diese Seite](/admin/get_started/providers/isp/) für weitere Informationen.\n"
 
 #, no-wrap
