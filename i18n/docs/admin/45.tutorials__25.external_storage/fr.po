@@ -1,14 +1,15 @@
 # Copyright (C) 2025 YunoHost Contributors
 # This file is distributed under the same license as the YunoHost documentation.
 #
+# Weblate Admin <yunohost@translate.yunohost.org>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2025-11-11 01:24+0100\n"
-"PO-Revision-Date: 2025-11-09 21:16+0000\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: French <https://translate.yunohost.org/projects/doc-"
-"experimental/45tutorials__25external_storage/fr/>\n"
+"PO-Revision-Date: 2025-11-22 20:21+0000\n"
+"Last-Translator: Weblate Admin <yunohost@translate.yunohost.org>\n"
+"Language-Team: French <https://translate.yunohost.org/projects/yunohost-doc/"
+"45tutorials__25external_storage/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -185,13 +186,19 @@ msgstr "Ici, `mmcblk0` correspond à une carte SD de 16Go (on voit que les parti
 #: docs/admin/45.tutorials/25.external_storage.mdx:77
 #, no-wrap
 msgid "<FAIcon icon=\"fa-exclamation-triangle\"/> On another system, it may be that your system is installed on `sda` and your disk is then `sdb` for example.\n"
-msgstr "<FAIcon icon=\"fa-exclamation-triangle\"/>  Sur un autre système, il se peut que votre système soit installé sur `sda` et que votre disque soit alors `sdb` par exemple.\n"
+msgstr ""
+"<FAIcon icon=\"fa-exclamation-triangle\"/> Sur un autre système, il se peut "
+"que votre système soit installé sur `sda` et que votre disque soit alors "
+"`sdb` par exemple.\n"
 
 #. type: Fenced div block (tip)
 #: docs/admin/45.tutorials/25.external_storage.mdx:81
 #, no-wrap
 msgid "If the size of the disk is not enough for you to recognise it, you can unplug the disk, run the `lsblk` command, then plug the disk back in, run `lsblk` and deduce the differences.\n"
-msgstr "Astuce: si la taille du disque ne vous suffit pas pour le reconnaître, vous pouvez débrancher le disque lancer la commande `lsblk`, puis rebrancher le disque, lancer `lsblk` et en déduire les différences.\n"
+msgstr ""
+"Si la taille du disque ne vous suffit pas pour le reconnaître, vous pouvez "
+"débrancher le disque, lancer la commande `lsblk`, puis rebrancher le disque, "
+"lancer `lsblk` et en déduire les différences.\n"
 
 #. type: Title ##
 #: docs/admin/45.tutorials/25.external_storage.mdx:85
@@ -233,7 +240,13 @@ msgstr "Avant de pouvoir utiliser votre disque, il doit être formaté.\n"
 #: docs/admin/45.tutorials/25.external_storage.mdx:101
 #, no-wrap
 msgid "<FAIcon icon=\"fa-exclamation-triangle\"/> **Formatting a disk means deleting all the data on it! Be careful not to get the name wrong, as this may result in formatting a different disk than the one you want! In the example given earlier, it was `/dev/sda`. If your disk is already \"clean\", you can skip this step.\n"
-msgstr "<FAIcon icon=\"fa-exclamation-triangle\"/>  **Formater un disque implique de supprimer toutes les données inscrites dessus !**. Attention à ne pas vous tromper de nom, car cela peut avoir pour conséquence de formater un autre disque que celui voulu ! Dans l'exemple donné précédemment, il s'agissait de `/dev/sda`. Si votre disque est déjà \"propre\", vous pouvez passer cette étape.\n"
+msgstr ""
+"<FAIcon icon=\"fa-exclamation-triangle\"/> **Formater un disque implique de "
+"supprimer toutes les données inscrites dessus !**. Attention à ne pas vous "
+"tromper de nom, car cela peut avoir pour conséquence de formater un autre "
+"disque que celui voulu ! Dans l'exemple donné précédemment, il s'agissait de "
+"`/dev/sda`. Si votre disque est déjà \"propre\", vous pouvez passer cette "
+"étape.\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/25.external_storage.mdx:106

@@ -3,8 +3,9 @@
 #
 # Languages add-on <noreply-addon-languages@weblate.org>, 2025.
 # ppr <pouetpouetratatouille@gmail.com>, 2025.
+# Weblate Admin <yunohost@translate.yunohost.org>, 2025.
 msgid ""
-msgstr "Project-Id-Version: YunoHost documentation VERSION\nPOT-Creation-Date: 2025-11-19 03:04+0000\nPO-Revision-Date: 2025-11-22 18:27+0000\nLast-Translator: ppr <pouetpouetratatouille@gmail.com>\nLanguage-Team: French <https://translate.yunohost.org/projects/yunohost-doc/index/fr/>\nLanguage: fr\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=2; plural=n > 1;\nX-Generator: Weblate 5.14.2\n"
+msgstr "Project-Id-Version: YunoHost documentation VERSION\nPOT-Creation-Date: 2025-11-19 03:04+0000\nPO-Revision-Date: 2025-11-22 20:21+0000\nLast-Translator: Weblate Admin <yunohost@translate.yunohost.org>\nLanguage-Team: French <https://translate.yunohost.org/projects/yunohost-doc/index/fr/>\nLanguage: fr\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=2; plural=n > 1;\nX-Generator: Weblate 5.14.2\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #, no-wrap
@@ -12,12 +13,12 @@ msgid "Welcome!"
 msgstr "Bienvenue !"
 
 #. type: Plain text
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "#\n"
 msgstr "#\n"
 
 #. type: Plain text
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<img\n"
 "    class=\"text--center\"\n"
@@ -25,7 +26,7 @@ msgid ""
 "    alt=\"YunoHost logo\"\n"
 "    style={{ marginTop: \"-2em\", maxWidth: \"7rem\", }}\n"
 "/>\n"
-msgstr "<img\n    class=\"text--center\"\n    src=\"/img/icons/logo-ynh-roundcorner.png\"\n    alt=\"YunoHost logo\"\n    style={{ marginTop: \"-2em\", maxWidth: \"7rem\", }}\n/>\n"
+msgstr "<img\n    class=\"text--center\"\n    src=\"/img/icons/logo-ynh-roundcorner.png\"\n    alt=\"Logo de YunoHost\"\n    style={{ marginTop: \"-2em\", maxWidth: \"7rem\", }}\n/>\n"
 
 #. type: Plain text
 #, no-wrap
@@ -40,7 +41,7 @@ msgid "If you are an **impatient power user**, you may want to try YunoHost, or 
 msgstr "Si vous êtes un **utilisateur chevronné et impatient**, vous pouvez essayer YunoHost ou passer directement à l'installation :\n"
 
 #. type: Plain text
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<Button url=\"/admin/what_is_yunohost\">🤔 What's YunoHost?!</Button>\n"
 "<Button url=\"/admin/what_is_yunohost/demo\">⚗️ Try YunoHost</Button>\n"
@@ -53,12 +54,12 @@ msgid "<Button url=\"https://apps.yunohost.org/\">📦 Browse the app catalog</B
 msgstr "<Button url=\"https://apps.yunohost.org/\">📦 Parcourir le catalogue d'applications</Button>\n"
 
 #. type: Plain text
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Are you **new to self-hosting and servers in general**? We recommend to take it slow and go through the pages presenting [self-hosting](/admin/about_self_hosting), the [different modes](/admin/get_started/methods) and [other](/admin/get_started/why_should_you_not_host_yourself) [things](/category/providers) you should know prior to jumping into the action! \n"
 msgstr "Vous êtes **débutant en matière d'auto-hébergement et de serveurs en général** ? Nous vous recommandons de prendre votre temps et de parcourir les pages présentant l'[auto-hébergement](/admin/about_self_hosting), les [différents modes](/admin/get_started/methods) et [autres](/admin/get_started/why_should_you_not_host_yourself) [éléments](/category/providers) que vous devez connaître avant de vous lancer ! \n"
 
 #. type: Plain text
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Are you **already using YunoHost**? You may want to get in touch with the community or reach for help:\n"
 msgstr "**Vous utilisez déjà YunoHost** ? Vous pouvez contacter la communauté ou demander de l'aide :\n"
 
@@ -71,12 +72,12 @@ msgid ""
 msgstr "<Button url=\"https://forum.yunohost.org\">📢 Forum</Button>\n<Button url=\"/community/chat_rooms\">🗫  Salons de discussion</Button>\n<Button url=\"/community/help\">🛟 Aide</Button>\n"
 
 #. type: Plain text
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Finally, you can **support the project** or get involve in [different ways](/dev):\n"
 msgstr "Enfin, vous pouvez **soutenir le projet** ou vous impliquer de [différentes manières](/dev) :\n"
 
 #. type: Plain text
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<Button url=\"https://yunohost.org/donate.html\">💰 Donate</Button>\n"
 "<Button url=\"/dev/doc\">📝 Improve the documentation</Button>\n"

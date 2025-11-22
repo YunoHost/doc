@@ -8,10 +8,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2025-11-19 02:54+0000\n"
-"PO-Revision-Date: 2025-11-12 02:01+0000\n"
+"PO-Revision-Date: 2025-11-22 20:21+0000\n"
 "Last-Translator: Weblate Admin <yunohost@translate.yunohost.org>\n"
-"Language-Team: French <https://translate.yunohost.org/projects/yunohost-"
-"doc/05get_started__20install_on__raspberry_pi/fr/>\n"
+"Language-Team: French <https://translate.yunohost.org/projects/yunohost-doc/"
+"05get_started__20install_on__raspberry_pi/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -84,6 +84,12 @@ msgstr "<TabItem value=\"dd\" label=\"Avec dd\">\n"
 #, no-wrap
 msgid "If you are on GNU/Linux / macOS and know your way around command line, you may also flash your USB stick or SD card with `dd`. You can identify which device corresponds to your USB stick or SD card with `fdisk -l` or `lsblk`. A typical SD card name is something like `/dev/mmcblk0`. BE CAREFUL and make sure you got the right name.\n"
 msgstr ""
+"Si vous êtes sur GNU/Linux / macOS et que vous êtes à l'aise avec la ligne "
+"de commande, vous pouvez flasher votre clef USB ou carte SD avec la commande "
+"`dd`. Vous pouvez identifier le périphérique qui corresponds à votre clef "
+"USB ou carte SD avec `fdisk -l` ou `lsblk`. Typiquement, une carte SD a un "
+"nom comme `/dev/mmcblk0`. FAITES ATTENTION et assurez vous d'avoir le bon "
+"nom.\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:71
@@ -91,15 +97,14 @@ msgstr ""
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:68
 #, no-wrap
 msgid "Then run:\n"
-msgstr ""
+msgstr "Puis lancez:\n"
 
 #. type: Title ##
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:80
 #: docs/admin/05.get_started/20.install_on/raspberry_pi.mdx:78
-#, fuzzy, no-wrap
-#| msgid "<FAIcon icon=\"fa-key\"/> First user"
+#, no-wrap
 msgid "<FAIcon icon=\"fa-plug\"/> Power up the board"
-msgstr "<FAIcon icon=\"fa-key\"/> Premier compte utilisateur⋅ice"
+msgstr "<FAIcon icon=\"fa-plug\"/> Allumez la carte"
 
 #. type: Yaml Front Matter Hash Value: description
 #: docs/admin/05.get_started/20.install_on/raspberry_pi.mdx:1
