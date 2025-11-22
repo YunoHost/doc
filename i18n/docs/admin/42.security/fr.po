@@ -116,14 +116,6 @@ msgstr ""
 msgid "**On your client**:\n"
 msgstr ""
 
-#. type: Fenced code block (bash)
-#: docs/admin/42.security.mdx:56
-#, no-wrap
-msgid ""
-"ssh-keygen\n"
-"ssh-copy-id -i ~/.ssh/id_rsa.pub <username@your_yunohost_server>\n"
-msgstr ""
-
 #. type: Fenced div block (tip)
 #: docs/admin/42.security.mdx:61
 #, no-wrap
@@ -142,12 +134,6 @@ msgstr ""
 #: docs/admin/42.security.mdx:69
 #, no-wrap
 msgid "**On your server**, editing the SSH configuration file to deactivate password authentication is handled by a system setting:\n"
-msgstr ""
-
-#. type: Fenced code block (bash)
-#: docs/admin/42.security.mdx:70
-#, no-wrap
-msgid "sudo yunohost settings set security.ssh.ssh_password_authentication -v no\n"
 msgstr ""
 
 #. type: Fenced div block (danger)
@@ -182,22 +168,10 @@ msgstr ""
 msgid "If you manually modify anything in the SSH server configuration (`/etc/ssh/sshd_config`), YunoHost's regen-conf mechanism will no longer automatically update this file. For this reason, always use the YunoHost admin tools to make changes to the systems configuration files!\n"
 msgstr ""
 
-#. type: Fenced code block (bash)
-#: docs/admin/42.security.mdx:90
-#, no-wrap
-msgid "sudo yunohost settings set security.ssh.ssh_port -v <new_ssh_port_number>\n"
-msgstr ""
-
 #. type: Plain text
 #: docs/admin/42.security.mdx:95
 #, no-wrap
 msgid "**For subsequent SSH connections**, you need to add the `-p` option followed by the SSH port number.\n"
-msgstr ""
-
-#. type: Fenced code block (bash)
-#: docs/admin/42.security.mdx:96
-#, no-wrap
-msgid "ssh -p <new_ssh_port_number> admin@<your_yunohost_server>\n"
 msgstr ""
 
 #. type: Title ##
@@ -224,22 +198,10 @@ msgstr ""
 msgid "**On your server**, change the policy for NGINX\n"
 msgstr ""
 
-#. type: Fenced code block (bash)
-#: docs/admin/42.security.mdx:113
-#, no-wrap
-msgid "sudo yunohost settings set security.nginx.nginx_compatibility -v modern\n"
-msgstr ""
-
 #. type: Plain text
 #: docs/admin/42.security.mdx:118
 #, no-wrap
 msgid "**On your server**, change the policy for SSH\n"
-msgstr ""
-
-#. type: Fenced code block (bash)
-#: docs/admin/42.security.mdx:119
-#, no-wrap
-msgid "sudo yunohost settings set security.ssh.ssh_compatibility -v modern\n"
 msgstr ""
 
 #. type: Title ##
@@ -262,22 +224,8 @@ msgid ""
 "Proceed only if you are comfortable with exclusively using the command line from now on.\n"
 msgstr ""
 
-#. type: Fenced code block (bash)
-#: docs/admin/42.security.mdx:132
-#, no-wrap
-msgid ""
-"sudo systemctl disable yunohost-api\n"
-"sudo systemctl stop yunohost-api\n"
-msgstr ""
-
 #. type: Plain text
 #: docs/admin/42.security.mdx:138
 #, no-wrap
 msgid "As `yunohost-api` is now disabled and not running, Diagnosis will report an error. This error can be ignored using:\n"
-msgstr ""
-
-#. type: Fenced code block (bash)
-#: docs/admin/42.security.mdx:139
-#, no-wrap
-msgid "sudo yunohost diagnosis ignore --filter services service=yunohost-api\n"
 msgstr ""
