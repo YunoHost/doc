@@ -7,11 +7,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2025-11-11 19:34+0100\n"
+"POT-Creation-Date: 2025-11-22 21:03+0000\n"
 "PO-Revision-Date: 2025-11-22 20:21+0000\n"
 "Last-Translator: Weblate Admin <yunohost@translate.yunohost.org>\n"
-"Language-Team: French <https://translate.yunohost.org/projects/yunohost-doc/"
-"05get_started__20install_on___install_script/fr/>\n"
+"Language-Team: French <https://translate.yunohost.org/projects/yunohost-"
+"doc/05get_started__20install_on___install_script/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -37,14 +37,15 @@ msgstr ""
 "- Assurez-vous d'être `root` (ou tapez `sudo -i` pour devenir `root`)\n"
 "- Puis lancez la commande suivante :\n"
 
-#. type: Fenced code block (bash)
-#: docs/admin/05.get_started/20.install_on/_install_script.mdx:8
-#, no-wrap
-msgid "curl https://install.yunohost.org | bash\n"
-msgstr "curl https://install.yunohost.org | bash\n"
+#. type: Fenced div block (danger)
+#: docs/admin/05.get_started/20.install_on/_install_script.mdx:12
+#, fuzzy, no-wrap
+#| msgid "Always ensure there's an `s` at the end of `https`.\n"
+msgid "Always make sure there's an `s` at the end of `https`.\n"
+msgstr "Assurez-vous toujours qu'il y ait un `s` à `https`.\n"
 
 #. type: Fenced div block (warning)
-#: docs/admin/05.get_started/20.install_on/_install_script.mdx:12
+#: docs/admin/05.get_started/20.install_on/_install_script.mdx:16
 #, no-wrap
 msgid ""
 "You might need to first install `curl` and `ca-certificates` by running:\n"
@@ -52,26 +53,17 @@ msgid ""
 "apt install curl ca-certificates\n"
 "```\n"
 msgstr ""
-"Il vous faudra peut-être installer `curl` at `ca-certificates` avec la "
-"commande suivante:\n"
+"Il vous faudra peut-être installer `curl` at `ca-certificates` avec la commande suivante:\n"
 "```bash\n"
 "apt install curl ca-certificates\n"
 "```\n"
-
-#. type: Fenced div block (danger)
-#: docs/admin/05.get_started/20.install_on/_install_script.mdx:19
-#, no-wrap
-msgid "Always ensure there's an `s` at the end of `https`.\n"
-msgstr "Assurez-vous toujours qu'il y ait un `s` à `https`.\n"
 
 #. type: Fenced div block (note)
 #: docs/admin/05.get_started/20.install_on/_install_script.mdx:23
 #, no-wrap
 msgid "**For advanced users concerned with the `curl | bash` approach:** consider reading [\"Is curl|bash insecure?\"](https://sandstorm.io/news/2015-09-24-is-curl-bash-insecure-pgp-verified-install) on Sandstom's blog, and possibly [this discussion on Hacker News](https://news.ycombinator.com/item?id=12766350&noprocess).\n"
-msgstr ""
-"**Pour les personnes avancées qui ne sont pas convaincues par l'approche`"
-"curl | bash`** vous pouvez lire cet article [\"Is curl|bash insecure?\"]"
-"(https://sandstorm.io/news/2015-09-24-is-curl-bash-insecure-pgp-verified-"
-"install) du bloq de Standstorm, et possiblement "
-"[cette discussions sur Hacker News]"
-"(https://news.ycombinator.com/item?id=12766350&noprocess).\n"
+msgstr "**Pour les personnes avancées qui ne sont pas convaincues par l'approche`curl | bash`** vous pouvez lire cet article [\"Is curl|bash insecure?\"](https://sandstorm.io/news/2015-09-24-is-curl-bash-insecure-pgp-verified-install) du bloq de Standstorm, et possiblement [cette discussions sur Hacker News](https://news.ycombinator.com/item?id=12766350&noprocess).\n"
+
+#, no-wrap
+#~ msgid "curl https://install.yunohost.org | bash\n"
+#~ msgstr "curl https://install.yunohost.org | bash\n"

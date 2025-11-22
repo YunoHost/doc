@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2025-11-22 20:34+0000\n"
+"POT-Creation-Date: 2025-11-22 21:03+0000\n"
 "PO-Revision-Date: 2025-11-11 19:34+0100\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -59,7 +59,7 @@ msgstr ""
 msgid "Alternatively, you can browse the [Debian archive](https://cdimage.debian.org/mirror/cdimage/archive) for the latest 12.x version, select your architecture, the select `iso-cd` and download the `netinst` iso.\n"
 msgstr ""
 
-#. type: Title ####
+#. type: Title ###
 #: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:26
 #, no-wrap
 msgid "Installation"
@@ -130,7 +130,7 @@ msgid ""
 "- Keep “standard system utilities” checked\n"
 msgstr ""
 
-#. type: Title ####
+#. type: Title ###
 #: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:52
 #, no-wrap
 msgid "After installing Debian"
