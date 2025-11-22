@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2025-11-19 02:54+0000\n"
+"POT-Creation-Date: 2025-11-22 19:31+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -232,7 +232,7 @@ msgstr ""
 #. type: Plain text
 #: docs/admin/15.command_line.mdx:118
 #, no-wrap
-msgid "A more extensive discussion about security & SSH can be found on the [dedicated page](/admin/tutorials/security).\n"
+msgid "A more extensive discussion about security & SSH can be found on the [dedicated page](/admin/security).\n"
 msgstr ""
 
 #. type: Title ##
