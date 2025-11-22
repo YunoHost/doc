@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2025-11-11 19:34+0100\n"
+"POT-Creation-Date: 2025-11-22 20:20+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -71,55 +71,36 @@ msgid "<FAIcon icon=\"fa-list-alt\"/> Prerequisites"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/45.tutorials/25.external_storage.mdx:25
-#, no-wrap
-msgid "- Have some time at a moment when your server users can accept a shutdown. The steps to be performed, even if they are relatively simple, can sometimes seem technical and require in any case **to take your time**.\n"
-msgstr ""
-
-#. type: Plain text
-#: docs/admin/45.tutorials/25.external_storage.mdx:27
-#, no-wrap
-msgid "- Know how to connect as root on your system, for example via [SSH](/admin/command_line). (Note: while logged in as `admin`, you can root with `sudo su`)\n"
-msgstr ""
-
-#. type: Plain text
 #: docs/admin/45.tutorials/25.external_storage.mdx:29
 #, no-wrap
-msgid "- Know the basic commands `cd`, `ls`, `mkdir`, `rm`.\n"
-msgstr ""
-
-#. type: Plain text
-#: docs/admin/45.tutorials/25.external_storage.mdx:31
-#, no-wrap
-msgid "- Have a backup in case things don't work out as planned\n"
-msgstr ""
-
-#. type: Plain text
-#: docs/admin/45.tutorials/25.external_storage.mdx:33
-#, no-wrap
-msgid "- Have extra storage (SSD, hard drive, USB stick) connected to your server via USB or SATA\n"
+msgid ""
+"- Have some time at a moment when your server users can accept a shutdown. The steps to be performed, even if they are relatively simple, can sometimes seem technical and require in any case **to take your time**.\n"
+"- Know how to connect as root on your system, for example via [SSH](/admin/command_line). (Note: while logged in as `admin`, you can root with `sudo su`)\n"
+"- Know the basic commands `cd`, `ls`, `mkdir`, `rm`.\n"
+"- Have a backup in case things don't work out as planned\n"
+"- Have extra storage (SSD, hard drive, USB stick) connected to your server via USB or SATA\n"
 msgstr ""
 
 #. type: Title ##
-#: docs/admin/45.tutorials/25.external_storage.mdx:34
+#: docs/admin/45.tutorials/25.external_storage.mdx:30
 #, no-wrap
 msgid "1. Identify directories to be moved"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/45.tutorials/25.external_storage.mdx:37
+#: docs/admin/45.tutorials/25.external_storage.mdx:33
 #, no-wrap
 msgid "The `ncdu /` command allows you to browse the folders on your server to see how big they are.\n"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/45.tutorials/25.external_storage.mdx:39
+#: docs/admin/45.tutorials/25.external_storage.mdx:35
 #, no-wrap
 msgid "Below is an explanation of some of the paths that can take up weight with some comments to help you reduce their weight or choose to move them.\n"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/45.tutorials/25.external_storage.mdx:53
+#: docs/admin/45.tutorials/25.external_storage.mdx:49
 #, no-wrap
 msgid ""
 "| Paths | Contents | Tips |\n"
@@ -138,319 +119,319 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: docs/admin/45.tutorials/25.external_storage.mdx:54
+#: docs/admin/45.tutorials/25.external_storage.mdx:50
 #, no-wrap
 msgid "2. Connect and identify the disk"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/45.tutorials/25.external_storage.mdx:57
+#: docs/admin/45.tutorials/25.external_storage.mdx:53
 #, no-wrap
 msgid "Start by connecting your disk to your system. You must then identify the name under which the disk is designated by the system.\n"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/45.tutorials/25.external_storage.mdx:59
+#: docs/admin/45.tutorials/25.external_storage.mdx:55
 #, no-wrap
 msgid "To do this, use the command :\n"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/45.tutorials/25.external_storage.mdx:65
+#: docs/admin/45.tutorials/25.external_storage.mdx:61
 #, no-wrap
 msgid "It may return something like :\n"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/45.tutorials/25.external_storage.mdx:76
+#: docs/admin/45.tutorials/25.external_storage.mdx:72
 #, no-wrap
 msgid "Here, `mmcblk0` corresponds to a 16GB SD card (you can see that the `mmcblk0p1` and `mmcblk0p2` partitions correspond to the `/boot` partition and the `/` system partition). The hard drive connected corresponds to `sda` which is about 1TB, and contains a single `sda1` partition which is not mounted (no \"MOUNTPOINT\").\n"
 msgstr ""
 
 #. type: Fenced div block (warning)
-#: docs/admin/45.tutorials/25.external_storage.mdx:77
+#: docs/admin/45.tutorials/25.external_storage.mdx:73
 #, no-wrap
 msgid "<FAIcon icon=\"fa-exclamation-triangle\"/> On another system, it may be that your system is installed on `sda` and your disk is then `sdb` for example.\n"
 msgstr ""
 
 #. type: Fenced div block (tip)
-#: docs/admin/45.tutorials/25.external_storage.mdx:81
+#: docs/admin/45.tutorials/25.external_storage.mdx:77
 #, no-wrap
 msgid "If the size of the disk is not enough for you to recognise it, you can unplug the disk, run the `lsblk` command, then plug the disk back in, run `lsblk` and deduce the differences.\n"
 msgstr ""
 
 #. type: Title ##
-#: docs/admin/45.tutorials/25.external_storage.mdx:85
+#: docs/admin/45.tutorials/25.external_storage.mdx:81
 #, no-wrap
 msgid "3. (Optional) Format the disk"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/45.tutorials/25.external_storage.mdx:88
+#: docs/admin/45.tutorials/25.external_storage.mdx:84
 #, no-wrap
 msgid "This operation is optional if your disk is already formatted with a file system supported by linux (so not NTFS or FAT32).\n"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/45.tutorials/25.external_storage.mdx:90
+#: docs/admin/45.tutorials/25.external_storage.mdx:86
 #, no-wrap
 msgid "Let's create a partition on the disk:\n"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/45.tutorials/25.external_storage.mdx:96
+#: docs/admin/45.tutorials/25.external_storage.mdx:92
 #, no-wrap
 msgid "then enter `n`, `p`, `1`, `Enter`, `Enter`, and `w` successively to create a new partition.\n"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/45.tutorials/25.external_storage.mdx:98
+#: docs/admin/45.tutorials/25.external_storage.mdx:94
 #, no-wrap
 msgid "Check with `lsblk` that you have your disk containing a single partition.\n"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/45.tutorials/25.external_storage.mdx:100
+#: docs/admin/45.tutorials/25.external_storage.mdx:96
 #, no-wrap
 msgid "Before you can use your disk, it must be formatted.\n"
 msgstr ""
 
 #. type: Fenced div block (warning)
-#: docs/admin/45.tutorials/25.external_storage.mdx:101
+#: docs/admin/45.tutorials/25.external_storage.mdx:97
 #, no-wrap
-msgid "<FAIcon icon=\"fa-exclamation-triangle\"/> **Formatting a disk means deleting all the data on it! Be careful not to get the name wrong, as this may result in formatting a different disk than the one you want! In the example given earlier, it was `/dev/sda`. If your disk is already \"clean\", you can skip this step.\n"
+msgid "<FAIcon icon=\"fa-exclamation-triangle\"/> **Formatting a disk means deleting all the data on it!** Be careful not to get the name wrong, as this may result in formatting a different disk than the one you want! In the example given earlier, it was `/dev/sda`. If your disk is already \"clean\", you can skip this step.\n"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/45.tutorials/25.external_storage.mdx:106
+#: docs/admin/45.tutorials/25.external_storage.mdx:102
 #, no-wrap
 msgid "To format the :\n"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/45.tutorials/25.external_storage.mdx:113
+#: docs/admin/45.tutorials/25.external_storage.mdx:109
 #, no-wrap
 msgid "Replace `YOUR_DISK1` with the name of the first partition on the disk e.g. `sda1`.\n"
 msgstr ""
 
 #. type: Fenced div block (tip)
-#: docs/admin/45.tutorials/25.external_storage.mdx:114
+#: docs/admin/45.tutorials/25.external_storage.mdx:110
 #, no-wrap
 msgid "It is possible to adapt this step, for example to create a raid 1 volume (mirrored disks) or encrypt the folder.\n"
 msgstr ""
 
 #. type: Title ##
-#: docs/admin/45.tutorials/25.external_storage.mdx:118
+#: docs/admin/45.tutorials/25.external_storage.mdx:114
 #, no-wrap
 msgid "4. Mount the disk"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/45.tutorials/25.external_storage.mdx:121
+#: docs/admin/45.tutorials/25.external_storage.mdx:117
 #, no-wrap
 msgid "Unlike Windows where disks are accessed with letters (C:/), under Linux, disks are made accessible via the file tree. \"Mounting\" a disk means making it effectively accessible in the file tree. We will arbitrarily choose to mount the disk in `/mnt/hdd` but you can name it differently (e.g. `/mnt/disk` ...).\n"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/45.tutorials/25.external_storage.mdx:123
+#: docs/admin/45.tutorials/25.external_storage.mdx:119
 #, no-wrap
 msgid "Let's start by creating the directory :\n"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/45.tutorials/25.external_storage.mdx:129
+#: docs/admin/45.tutorials/25.external_storage.mdx:125
 #, no-wrap
 msgid "Then we can mount the disk manually with :\n"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/45.tutorials/25.external_storage.mdx:135
+#: docs/admin/45.tutorials/25.external_storage.mdx:131
 #, no-wrap
 msgid "(Here, `/dev/YOUR_DISK1` corresponds to the first partition on the disk)\n"
 msgstr ""
 
 #. type: Title ##
-#: docs/admin/45.tutorials/25.external_storage.mdx:136
+#: docs/admin/45.tutorials/25.external_storage.mdx:132
 #, no-wrap
 msgid "5. Mount a `/mnt/hdd` folder on one of the folders you want to move data from"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/45.tutorials/25.external_storage.mdx:139
+#: docs/admin/45.tutorials/25.external_storage.mdx:135
 #, no-wrap
 msgid "Here we will consider that you want to move the big data of the applications which are in `/home/yunohost.app` and the mails on your hard disk.\n"
 msgstr ""
 
 #. type: Title ###
-#: docs/admin/45.tutorials/25.external_storage.mdx:140
+#: docs/admin/45.tutorials/25.external_storage.mdx:136
 #, no-wrap
 msgid "5.1 Creating subfolders on the disk"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/45.tutorials/25.external_storage.mdx:143
+#: docs/admin/45.tutorials/25.external_storage.mdx:139
 #, no-wrap
 msgid "To begin with, we create a folder on the hard drive\n"
 msgstr ""
 
 #. type: Title ###
-#: docs/admin/45.tutorials/25.external_storage.mdx:149
+#: docs/admin/45.tutorials/25.external_storage.mdx:145
 #, no-wrap
 msgid "5.2 Switching to maintenance mode"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/45.tutorials/25.external_storage.mdx:152
+#: docs/admin/45.tutorials/25.external_storage.mdx:148
 #, no-wrap
 msgid "Then, ideally, we switch to maintenance mode the applications that might be writing data.\n"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/45.tutorials/25.external_storage.mdx:154
+#: docs/admin/45.tutorials/25.external_storage.mdx:150
 #, no-wrap
 msgid "Example, for nextcloud:\n"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/45.tutorials/25.external_storage.mdx:160
+#: docs/admin/45.tutorials/25.external_storage.mdx:156
 #, no-wrap
 msgid "Example, for mail:\n"
 msgstr ""
 
 #. type: Fenced div block (warning)
-#: docs/admin/45.tutorials/25.external_storage.mdx:166
+#: docs/admin/45.tutorials/25.external_storage.mdx:162
 #, no-wrap
 msgid "If you wish to move databases such as mariadb (mysql), it is imperative that you stop the services for these databases otherwise it is almost certain that your data will be corrupted.\n"
 msgstr ""
 
 #. type: Title ###
-#: docs/admin/45.tutorials/25.external_storage.mdx:170
+#: docs/admin/45.tutorials/25.external_storage.mdx:166
 #, no-wrap
 msgid "5.3 Creating the mount points"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/45.tutorials/25.external_storage.mdx:173
+#: docs/admin/45.tutorials/25.external_storage.mdx:169
 #, no-wrap
 msgid "Next, we will rename the original folder and create an empty eponymous folder.\n"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/45.tutorials/25.external_storage.mdx:182
+#: docs/admin/45.tutorials/25.external_storage.mdx:178
 #, no-wrap
 msgid "We can then use the `mount --bind` command to mount the folder on our hard drive to the new empty location in the tree.\n"
 msgstr ""
 
 #. type: Title ###
-#: docs/admin/45.tutorials/25.external_storage.mdx:188
+#: docs/admin/45.tutorials/25.external_storage.mdx:184
 #, no-wrap
 msgid "5.4 Copying the data"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/45.tutorials/25.external_storage.mdx:191
+#: docs/admin/45.tutorials/25.external_storage.mdx:187
 #, no-wrap
 msgid "Next, we copy the data, keeping all the folder and file properties. This operation can take a little time, with another terminal, you can control the evolution by observing the weight associated with the mount point with `df -h`\n"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/45.tutorials/25.external_storage.mdx:198
+#: docs/admin/45.tutorials/25.external_storage.mdx:194
 #, no-wrap
 msgid "Once this is done, check with `ls` that the contents are there:\n"
 msgstr ""
 
 #. type: Title ###
-#: docs/admin/45.tutorials/25.external_storage.mdx:204
+#: docs/admin/45.tutorials/25.external_storage.mdx:200
 #, no-wrap
 msgid "5.5 Exiting maintenance mode"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/45.tutorials/25.external_storage.mdx:207
+#: docs/admin/45.tutorials/25.external_storage.mdx:203
 #, no-wrap
 msgid "From here you can stop maintenance mode, the command below is to be adapted depending on the services you have stopped.\n"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/45.tutorials/25.external_storage.mdx:215
+#: docs/admin/45.tutorials/25.external_storage.mdx:211
 #, no-wrap
 msgid "From this point on, your services are running with their data on disk, so it's time to test to see how much of an impact this has on performance (especially if you are using USB 2.0).\n"
 msgstr ""
 
 #. type: Title ##
-#: docs/admin/45.tutorials/25.external_storage.mdx:216
+#: docs/admin/45.tutorials/25.external_storage.mdx:212
 #, no-wrap
 msgid "6. Automatically mount on boot"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/45.tutorials/25.external_storage.mdx:219
+#: docs/admin/45.tutorials/25.external_storage.mdx:215
 #, no-wrap
 msgid "So far we have manually mounted the disk and subfolders. However, it is necessary to configure the system to automatically mount the disk after a boot.\n"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/45.tutorials/25.external_storage.mdx:221
+#: docs/admin/45.tutorials/25.external_storage.mdx:217
 #, no-wrap
 msgid "If your tests are successful, you should keep the mount points, otherwise you should hurry up and go back to maintenance first.\n"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/45.tutorials/25.external_storage.mdx:223
+#: docs/admin/45.tutorials/25.external_storage.mdx:219
 #, no-wrap
 msgid "To begin with, let's find the UUID (universal identifier) of our disk with :\n"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/45.tutorials/25.external_storage.mdx:229
+#: docs/admin/45.tutorials/25.external_storage.mdx:225
 #, no-wrap
 msgid "Let's add a line to the `/etc/fstab` file that handles the mounting of disks at boot time. So we open the file with `nano` :\n"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/45.tutorials/25.external_storage.mdx:235
+#: docs/admin/45.tutorials/25.external_storage.mdx:231
 #, no-wrap
 msgid "Then add these lines to the end of the file:\n"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/45.tutorials/25.external_storage.mdx:243
+#: docs/admin/45.tutorials/25.external_storage.mdx:239
 #, no-wrap
 msgid "(this line must be adapted according to the previous information and choices)\n"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/45.tutorials/25.external_storage.mdx:245
+#: docs/admin/45.tutorials/25.external_storage.mdx:241
 #, no-wrap
 msgid "Use Ctrl+X then `y` to save.\n"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/45.tutorials/25.external_storage.mdx:247
+#: docs/admin/45.tutorials/25.external_storage.mdx:243
 #, no-wrap
 msgid "You can then try rebooting the system to check if the disk and subfolders are mounted automatically.\n"
 msgstr ""
 
 #. type: Title ##
-#: docs/admin/45.tutorials/25.external_storage.mdx:248
+#: docs/admin/45.tutorials/25.external_storage.mdx:244
 #, no-wrap
 msgid "7. Clean up old data"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/45.tutorials/25.external_storage.mdx:251
+#: docs/admin/45.tutorials/25.external_storage.mdx:247
 #, no-wrap
 msgid "Once your new setup is validated, you can proceed to delete the old data from step 5.3:\n"
 msgstr ""
 
 #. type: Title ##
-#: docs/admin/45.tutorials/25.external_storage.mdx:257
+#: docs/admin/45.tutorials/25.external_storage.mdx:253
 #, no-wrap
 msgid "🎉 Congratulations!"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/45.tutorials/25.external_storage.mdx:259
+#: docs/admin/45.tutorials/25.external_storage.mdx:255
 #, no-wrap
 msgid "If you have made it this far without damage, you now have a server that takes advantage of one or more storage disks.\n"
 msgstr ""

@@ -9,10 +9,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2025-11-19 02:54+0000\n"
-"PO-Revision-Date: 2025-11-16 23:39+0000\n"
-"Last-Translator: ppr <pouetpouetratatouille@gmail.com>\n"
-"Language-Team: French <https://translate.yunohost.org/projects/yunohost-"
-"doc/05get_started__20install_on__arm_board/fr/>\n"
+"PO-Revision-Date: 2025-11-22 20:21+0000\n"
+"Last-Translator: Weblate Admin <yunohost@translate.yunohost.org>\n"
+"Language-Team: French <https://translate.yunohost.org/projects/yunohost-doc/"
+"05get_started__20install_on__arm_board/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -28,7 +28,7 @@ msgstr "Ça ressemble à un Raspberry Pi, mais ce n'en est pas vraiment un"
 
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:1
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "On an ARM board"
 msgstr "Pour une carte ARM"
 
@@ -54,6 +54,18 @@ msgid ""
 "- An ethernet cable (RJ-45) to connect your server to your router.\n"
 "- A computer to read this guide, flash the image and access your server.\n"
 msgstr ""
+"- Une carte ARM avec au moins 512Mo de RAM ;\n"
+"- Une alimentation secteur (via un adaptateur ou un câble USB) pour votre "
+"carte ;\n"
+"- Une carte microSD d'au moins 16Go, [classe \"A1\"]"
+"(https://en.wikipedia.org/wiki/SD_card#Class) recommandée (comme par exemple "
+"[cette carte SanDisk A1 card](https://www.amazon.fr/SanDisk-microSDHC-"
+"Adaptateur-homologu%C3%A9e-Nouvelle/dp/B073JWXGNT/)) ;\n"
+"- Un [FAI correct](/admin/get_started/providers/isp/), idéalement avec bonne "
+"bande passante et traffic illimité ;\n"
+"- Un câble etherner (RJ-45) pour connecter votre serveur à votre routeur / "
+"box internet ;\n"
+"- Un ordinateur pour lire ce guide, flasher l'image et accéder au serveur.\n"
 
 #. type: Fenced div block (warning)
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:27
@@ -63,37 +75,47 @@ msgid ""
 "\n"
 "Please follow the Armbian documentation first!\n"
 msgstr ""
+"Chaque carte ARM est différent et il y a peut-être des instructions "
+"spécifiques à votre carte.\n"
+"\n"
+"Commencez par suivre la documentation Armbian!\n"
 
 #. type: Title ##
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:33
-#, fuzzy, no-wrap
-#| msgid "<FAIcon icon=\"fa-globe\"/> Main domain"
+#, no-wrap
 msgid "<FAIcon icon=\"fa-download\" /> Download the Armbian image"
-msgstr "<FAIcon icon=\"fa-globe\"/> Domaine principal"
+msgstr "<FAIcon icon=\"fa-download\" /> Téléchargez l'image Armbian"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:36
 #, no-wrap
 msgid "You should download the Armbian **Bookworm** (Debian 12) image from your vendor's or Armbian's website. \n"
 msgstr ""
+"Il faut télécharger l'image **Bookworm** (Debian 12) du site de Armbian ou "
+"du fabriquant de la carte. \n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:39
 #, no-wrap
 msgid "  <Button url=\"https://www.armbian.com/download\" color=\"skyblue\"><SmallInline url=\"/img/icons/logo-armbian.png\" alt=\"armbian logo\"/> Armbian Download page</Button>\n"
 msgstr ""
+"  <Button url=\"https://www.armbian.com/download\" color=\"skyblue\""
+"><SmallInline url=\"/img/icons/logo-armbian.png\" alt=\"Logo d'Armbian\"/> "
+"Page de téléchargement d'Armbian</Button>\n"
 
 #. type: Title ##
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:43
 #, no-wrap
 msgid "<FAIcon icon=\"sim-card\"/> Flash the Armbian image"
-msgstr ""
+msgstr "<FAIcon icon=\"sim-card\"/> Flasher l'image Armbian"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:46
 #, no-wrap
 msgid "Now that you downloaded the image of Armbian, you should flash it on a microSD card\n"
 msgstr ""
+"Maintenant que vous avez téléchargé l'image Armbian, il vous faut la flasher "
+"sur la carte microSD\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:49
@@ -109,19 +131,22 @@ msgstr "<TabItem value=\"etcher\" label=\"Avec Etcher (recommandé)\">\n"
 #, no-wrap
 msgid "Download <Link to=\"https://www.balena.io/etcher/\" target=\"_blank\">Etcher</Link> for your operating system and install it.\n"
 msgstr ""
+"Téléchargez <Link to=\"https://www.balena.io/etcher/\" target=\"_blank\""
+">Etcher</Link> pour votre système d'exploitation, et installez-le.\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:53
 #, no-wrap
 msgid "Plug your SD card, select your image and click \"Flash\"\n"
 msgstr ""
+"Insérez la carte SD, sélectionner votre iamge, et cliquez sur \"Flash\"\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:55
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:52
 #, no-wrap
 msgid "![Etcher](/img/softwares/etcher.gif)\n"
-msgstr ""
+msgstr "![Etcher](/img/softwares/etcher.gif)\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:58
@@ -169,6 +194,12 @@ msgstr "<TabItem value=\"dd\" label=\"Avec dd\">\n"
 #, no-wrap
 msgid "If you are on GNU/Linux / macOS and know your way around command line, you may also flash your USB stick or SD card with `dd`. You can identify which device corresponds to your USB stick or SD card with `fdisk -l` or `lsblk`. A typical SD card name is something like `/dev/mmcblk0`. BE CAREFUL and make sure you got the right name.\n"
 msgstr ""
+"Si vous êtes sur GNU/Linux / macOS et que vous êtes à l'aise avec la ligne "
+"de commande, vous pouvez flasher votre clef USB ou carte SD avec la commande "
+"`dd`. Vous pouvez identifier le périphérique qui corresponds à votre clef "
+"USB ou carte SD avec `fdisk -l` ou `lsblk`. Typiquement, une carte SD a un "
+"nom comme `/dev/mmcblk0`. FAITES ATTENTION et assurez vous d'avoir le bon "
+"nom.\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:71
@@ -176,15 +207,14 @@ msgstr ""
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:68
 #, no-wrap
 msgid "Then run:\n"
-msgstr ""
+msgstr "Puis lancez:\n"
 
 #. type: Title ##
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:80
 #: docs/admin/05.get_started/20.install_on/raspberry_pi.mdx:78
-#, fuzzy, no-wrap
-#| msgid "<FAIcon icon=\"fa-key\"/> First user"
+#, no-wrap
 msgid "<FAIcon icon=\"fa-plug\"/> Power up the board"
-msgstr "<FAIcon icon=\"fa-key\"/> Premier compte utilisateur⋅ice"
+msgstr "<FAIcon icon=\"fa-plug\"/> Allumez la carte"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:87
@@ -196,16 +226,28 @@ msgid ""
 "- If you want to follow the initial boot, connect a screen and keyboard on your board.\n"
 "- Power up the board\n"
 msgstr ""
+"- Insérez la carte SD dans la carte ARM ;\n"
+"- Connectez la carte ARM à votre box internet avec le câble Ethernet\n"
+"  - Pour les personnes avancées qui veulent plutôt utiliser le WiFi, suivre "
+"[la documentation officielle de Armbian]"
+"(https://docs.armbian.com/User-Guide_Autoconfig/#sample-config-file).\n"
+"- Si vous voulez suivre le lancement initial de la carte, connectez un écran "
+"et clavier sur la carte ;\n"
+"- Branchez la carte.\n"
 
 #. type: Title ##
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:88
-#, fuzzy, no-wrap
-#| msgid "<FAIcon icon=\"fa-key\"/> First user"
+#, no-wrap
 msgid "<FAIcon icon=\"fa-terminal\"/> Connect to the board"
-msgstr "<FAIcon icon=\"fa-key\"/> Premier compte utilisateur⋅ice"
+msgstr "<FAIcon icon=\"fa-terminal\"/> Se connecter à la carte"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:91
 #, no-wrap
 msgid "Next you need to [find the local IP address of your server](/admin/get_started/post_install/find_ip) to connect as root user [via SSH](/admin/command_line) with the temporary password `1234` (see [the Armbian doc](https://docs.armbian.com/User-Guide_Getting-Started/#how-to-login)).\n"
 msgstr ""
+"Il vous faut ensuite [trouver l'IP locale du serveur]"
+"(/admin/get_started/post_install/find_ip) pour vous connecter avec "
+"l'utilisateur root [via SSH](/admin/command_line) avec le mot de passe "
+"temporaire `1234` (vois [la documentation d'Armbian]"
+"(https://docs.armbian.com/User-Guide_Getting-Started/#how-to-login)).\n"

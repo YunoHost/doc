@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2025-11-12 01:45+0000\n"
+"POT-Creation-Date: 2025-11-22 20:34+0000\n"
 "PO-Revision-Date: 2025-11-11 19:34+0100\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -31,97 +31,85 @@ msgstr ""
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:15
 #, no-wrap
-msgid "YunoHost is easily installable on Debian !\n"
-msgstr ""
-
-#. type: Plain text
-#: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:17
-#, no-wrap
-msgid "This can be useful if you already have a Debian machine or can't use the recommended methods. \n"
+msgid "YunoHost can be installed \"on top\" of Debian. This can be useful if you already have a Debian machine or can't use the recommended methods. Note that there is no actual difference in your resulting YunoHost installation between doing this and using the other methods involving pre-installed images: the pre-installed images are just convenient to skip a bunch of steps and having the system already shipped with everything needed.\n"
 msgstr ""
 
 #. type: Title ##
-#: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:18
+#: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:16
 #, fuzzy, no-wrap
 #| msgid "<FAIcon icon=\"fa-list-alt\"/> Prerequisites"
 msgid "<FAIcon icon=\"fa-download\" /> Get Debian"
 msgstr "<FAIcon icon=\"fa-list-alt\"/> Prerequisiti"
 
 #. type: Plain text
-#: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:21
+#: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:19
 #, no-wrap
-msgid "You should download the version **Bookworm** (Debian 12) and select the architecture for your PC.\n"
+msgid "You should download the version **Bookworm** (Debian 12) and select the architecture for your PC. When in doubt, select `amd64`, or `i386` for a pre-2010 PC.\n"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:23
-#, no-wrap
-msgid "When in doubt, select `amd64`, or `i386` for a pre-2010 PC.\n"
-msgstr ""
-
-#. type: Plain text
-#: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:26
+#: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:22
 #, no-wrap
 msgid "  <Button url=\"https://www.debian.org/distrib/netinst\" color=\"skyblue\"><SmallInline url=\"/img/icons/logo-debian.png\" alt=\"Debian logo\"/> Debian Download page</Button>\n"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:29
+#: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:25
 #, no-wrap
 msgid "Alternatively, you can browse the [Debian archive](https://cdimage.debian.org/mirror/cdimage/archive) for the latest 12.x version, select your architecture, the select `iso-cd` and download the `netinst` iso.\n"
 msgstr ""
 
 #. type: Title ####
-#: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:32
+#: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:26
 #, fuzzy, no-wrap
 #| msgid " Installing Tor"
 msgid "Installation"
 msgstr "Installare Tor"
 
 #. type: Plain text
-#: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:35
+#: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:29
 #, no-wrap
 msgid "You might want to **wipe the hard drive** before starting the Debian installer.\n"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:37
+#: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:31
 #, no-wrap
-msgid "Burn the iso to your USB key, for example using [Etcher](https://www.balena.io/etcher/).\n"
+msgid "Flash the ISO your USB key, for example using [Etcher](https://www.balena.io/etcher/), [USBimager](https://bztsrc.gitlab.io/usbimager/) or `dd`.\n"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:39
+#: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:33
 #, no-wrap
 msgid "Debian installer will ask for a **hostname** and a **domain name**. You can use `yunohost` and `yunohost.local`. It is not that important since the YunoHost Installer will overwrite those anyway.\n"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:41
+#: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:35
 #, no-wrap
 msgid "Debian will ask for a **root password**, which should be reaonably complex as it is your primary defense to possible attacks.\n"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:43
+#: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:37
 #, no-wrap
 msgid "The installer will also ask for a **user account** and another password.\n"
 msgstr ""
 
 #. type: Fenced div block (warning)
-#: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:43
+#: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:37
 #, no-wrap
 msgid "**IMPORTANT:** this username should be DIFFERENT from the first YunoHost user which you will choose during YunoHost's posinstall… For example, you can name it `debian`. Be sure to also use a long complex password.\n"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:48
+#: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:42
 #, no-wrap
 msgid "When the install asks where to install and how to **create disk partitions**, select the option to **use the whole disk**, unless you know what you're doing.\n"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:51
+#: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:45
 #, no-wrap
 msgid ""
 "- We recommend not to separate the `/home`, `/var` or `/tmp` partitions. Use the option to “keep all files in one partition”.\n"
@@ -129,13 +117,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:53
+#: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:47
 #, no-wrap
 msgid "The installer will ask about **mirrors**. Select a country and server close to your location, or use the default options.\n"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:57
+#: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:51
 #, no-wrap
 msgid ""
 "The installer will ask which **desktop environment** you want. This is generally useless and might waste resources.\n"
@@ -144,14 +132,14 @@ msgid ""
 msgstr ""
 
 #. type: Title ####
-#: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:58
+#: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:52
 #, fuzzy, no-wrap
 #| msgid "Installing an app"
 msgid "After installing Debian"
 msgstr "Installare un'applicazione"
 
 #. type: Plain text
-#: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:64
+#: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:58
 #, no-wrap
 msgid ""
 "1. Remove the installation media (unplug the USB stick)\n"
