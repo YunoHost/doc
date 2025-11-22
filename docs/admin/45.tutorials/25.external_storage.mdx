@@ -22,13 +22,9 @@ The method presented here will first mount the single partition of the hard disk
 ## <FAIcon icon="fa-list-alt"/> Prerequisites
 
 - Have some time at a moment when your server users can accept a shutdown. The steps to be performed, even if they are relatively simple, can sometimes seem technical and require in any case **to take your time**.
-
 - Know how to connect as root on your system, for example via [SSH](/admin/command_line). (Note: while logged in as `admin`, you can root with `sudo su`)
-
 - Know the basic commands `cd`, `ls`, `mkdir`, `rm`.
-
 - Have a backup in case things don't work out as planned
-
 - Have extra storage (SSD, hard drive, USB stick) connected to your server via USB or SATA
 
 ## 1. Identify directories to be moved
@@ -99,7 +95,7 @@ Check with `lsblk` that you have your disk containing a single partition.
 Before you can use your disk, it must be formatted.
 
 :::warning
-<FAIcon icon="fa-exclamation-triangle"/> **Formatting a disk means deleting all the data on it! Be careful not to get the name wrong, as this may result in formatting a different disk than the one you want! In the example given earlier, it was `/dev/sda`. If your disk is already "clean", you can skip this step.
+<FAIcon icon="fa-exclamation-triangle"/> **Formatting a disk means deleting all the data on it!** Be careful not to get the name wrong, as this may result in formatting a different disk than the one you want! In the example given earlier, it was `/dev/sda`. If your disk is already "clean", you can skip this step.
 :::
 
 To format the :
