@@ -87,10 +87,10 @@ Then you can update the three values as below:
 
 ```bash
 sudo yunohost settings set email.smtp.smtp_relay_enabled -v yes
-sudo yunohost settings set smtp.relay.host -v smtprelay.tld
-sudo yunohost settings set smtp.relay.port -v 2525
-sudo yunohost settings set smtp.relay.user -v username
-sudo yunohost settings set smtp.relay.password -v password
+sudo yunohost settings set email.smtp.smtp_relay_host -v smtprelay.tld
+sudo yunohost settings set email.smtp.smtp_relay_port -v 2525
+sudo yunohost settings set email.smtp.smtp_relay_user -v username
+sudo yunohost settings set email.smtp.smtp_relay_password -v password
 ```
 
 It may be a good idea to double confirm your settings by doing:
