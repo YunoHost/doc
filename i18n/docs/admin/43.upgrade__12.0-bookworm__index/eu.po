@@ -1,0 +1,262 @@
+# Copyright (C) 2025 YunoHost Contributors
+# This file is distributed under the same license as the YunoHost documentation package.
+#
+# Languages add-on <noreply-addon-languages@weblate.org>, 2025.
+msgid ""
+msgstr ""
+"Project-Id-Version: YunoHost documentation VERSION\n"
+"POT-Creation-Date: 2025-11-22 19:19+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: eu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. type: Title ##
+#: docs/admin/43.upgrade/11.0-bullseye.mdx:7
+#: docs/admin/43.upgrade/12.0-bookworm/index.mdx:7
+#, no-wrap
+msgid "Important notes"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/43.upgrade/11.0-bullseye.mdx:10
+#: docs/admin/43.upgrade/12.0-bookworm/index.mdx:10
+#, no-wrap
+msgid "- The YunoHost team did its best to make sure that the migration is as smooth as possible and was tested over the course of several months in several cases.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/43.upgrade/11.0-bullseye.mdx:14
+#: docs/admin/43.upgrade/12.0-bookworm/index.mdx:14
+#, no-wrap
+msgid "- Please don't rush into thinking that you should need to reinstall your system from scratch thinking it would be \"simpler\" (sigh). (A common attitude is to be willing to reinstall a server at the slightest complication...). Instead, if you happen to run into issues, we encourage you to try to investigate and understand what's going on and [reach for help on the chat and the forum](/community/help).\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/43.upgrade/11.0-bullseye.mdx:16
+#: docs/admin/43.upgrade/12.0-bookworm/index.mdx:16
+#, no-wrap
+msgid "- **You should watch the known issues at the bottom of this page, to be sure your migrations will work properly.**\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/43.upgrade/11.0-bullseye.mdx:17
+#: docs/admin/43.upgrade/12.0-bookworm/index.mdx:17
+#, no-wrap
+msgid "Migration procedure"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/43.upgrade/11.0-bullseye.mdx:19
+#: docs/admin/43.upgrade/12.0-bookworm/index.mdx:23
+#: docs/admin/43.upgrade/index.mdx:5
+#, no-wrap
+msgid "From the webadmin"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/43.upgrade/11.0-bullseye.mdx:23
+#: docs/admin/43.upgrade/12.0-bookworm/index.mdx:29
+#: docs/admin/43.upgrade/index.mdx:11
+#, no-wrap
+msgid "From the command line"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/43.upgrade/11.0-bullseye.mdx:32
+#: docs/admin/43.upgrade/12.0-bookworm/index.mdx:38
+#, no-wrap
+msgid "then read carefully and accept the disclaimer.\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/43.upgrade/11.0-bullseye.mdx:33
+#: docs/admin/43.upgrade/12.0-bookworm/index.mdx:39
+#, no-wrap
+msgid "During the migration"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/43.upgrade/11.0-bullseye.mdx:40
+#: docs/admin/43.upgrade/12.0-bookworm/index.mdx:28
+#, no-wrap
+msgid "Note that even if you close the webadmin page for some reason, the migration will continue in the background (but the webadmin will be partially unavailable).\n"
+msgstr ""
+
+#. type: Title ###
+#: docs/admin/43.upgrade/11.0-bullseye.mdx:82
+#: docs/admin/43.upgrade/12.0-bookworm/index.mdx:78
+#, no-wrap
+msgid "Check that your applications are working"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/43.upgrade/11.0-bullseye.mdx:85
+#: docs/admin/43.upgrade/12.0-bookworm/index.mdx:81
+#, no-wrap
+msgid "Test that your applications are working. If they aren't, you should try to upgrade them (it is also a good idea to upgrade them even if they are working anyway).\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/43.upgrade/11.0-bullseye.mdx:87
+#: docs/admin/43.upgrade/12.0-bookworm/index.mdx:83
+#, no-wrap
+msgid "If your app is broken and you were already with the latest version, you can rerun the upgrade thanks to the `-F|--force` option:\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/43.upgrade/11.0-bullseye.mdx:92
+#: docs/admin/43.upgrade/12.0-bookworm/index.mdx:88
+#, no-wrap
+msgid "Current known issues after the migration"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: title
+#: docs/admin/43.upgrade/12.0-bookworm/index.mdx:1
+#, no-wrap
+msgid "Migrating from 11.x to 12.x"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/43.upgrade/12.0-bookworm/index.mdx:6
+#, no-wrap
+msgid "This page is dedicated to help you migrating an instance from YunoHost 11.x (running on Debian Bullseye) to YunoHost 12 (running on Debian Bookworm).\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/43.upgrade/12.0-bookworm/index.mdx:12
+#, no-wrap
+msgid "- Please [backup your data and server](/admin/backups)! This migration is a complex operation and covering every pitfall is quite hard. And in any case, be patient and attentive during the migration.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/43.upgrade/12.0-bookworm/index.mdx:20
+#, no-wrap
+msgid "You first need to ensure your system is up to date. The migration is available starting with the version 11.3.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/43.upgrade/12.0-bookworm/index.mdx:22
+#, no-wrap
+msgid "It is recommended to run the migration from the command line, but it can still be done from the webadmin.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/43.upgrade/12.0-bookworm/index.mdx:26
+#, no-wrap
+msgid "Go to Tools > Migrations to access the migrations interface. You will have to read carefully and accept the disclaimer then launch the migration.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/43.upgrade/12.0-bookworm/index.mdx:32
+#, no-wrap
+msgid "Run :\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/43.upgrade/12.0-bookworm/index.mdx:42
+#, no-wrap
+msgid "Depending on your hardware and installed apps and packages, the migration can take up to one or two hours.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/43.upgrade/12.0-bookworm/index.mdx:44
+#, no-wrap
+msgid "Logs will be displayed in the webadmin's modal window in the middle of the page. They will also be browsable after the migration like any other major operation under Tools > Logs.\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/43.upgrade/12.0-bookworm/index.mdx:45
+#, no-wrap
+msgid "If the migration fails at some point"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/43.upgrade/12.0-bookworm/index.mdx:48
+#, no-wrap
+msgid "If the migration fails, the first thing to try should be relaunch it. If it still doesn't work, your should [ask for help to the community](/community/help) (please provide error message, full logs and any context element that would help debugging the issue).\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/43.upgrade/12.0-bookworm/index.mdx:49
+#, no-wrap
+msgid "After the migration"
+msgstr ""
+
+#. type: Title ###
+#: docs/admin/43.upgrade/12.0-bookworm/index.mdx:51
+#, no-wrap
+msgid "Check that you actually are on Debian Bookworm and YunoHost 12.x"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/43.upgrade/12.0-bookworm/index.mdx:54
+#, no-wrap
+msgid "Go to Diagnosis (category Base system) or look at the bottom-right of the webadmin to check YunoHost's version.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/43.upgrade/12.0-bookworm/index.mdx:56
+#, no-wrap
+msgid "From the command line, you can use `lsb_release -a` and `yunohost --version`.\n"
+msgstr ""
+
+#. type: Title ###
+#: docs/admin/43.upgrade/12.0-bookworm/index.mdx:57
+#, no-wrap
+msgid "Run the new pending migrations"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/43.upgrade/12.0-bookworm/index.mdx:60
+#, no-wrap
+msgid "Some more migrations appeared after the upgrade:\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/43.upgrade/12.0-bookworm/index.mdx:63
+#, no-wrap
+msgid ""
+"- Rebuilding the virtualenvs of your Python apps\n"
+"- Migrate from PostgreSQL 13 to 15\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/43.upgrade/12.0-bookworm/index.mdx:65
+#, no-wrap
+msgid "You should run those as soon as possible to ensure your apps work properly.\n"
+msgstr ""
+
+#. type: Title ####
+#: docs/admin/43.upgrade/12.0-bookworm/index.mdx:66
+#, no-wrap
+msgid "Agreeing to the new Terms of Service via command line"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/43.upgrade/12.0-bookworm/index.mdx:69
+#, no-wrap
+msgid "YunoHost 12.x now requires that you agree to the new [Terms of Service](https://doc.yunohost.org/terms_of_services/). After reading and accepting them you can run:\n"
+msgstr ""
+
+#. type: Title ###
+#: docs/admin/43.upgrade/12.0-bookworm/index.mdx:74
+#, no-wrap
+msgid "Check the Diagnosis"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/43.upgrade/12.0-bookworm/index.mdx:77
+#, no-wrap
+msgid "In the webadmin Diagnosis section, make sure that no specific issue appeared after running the migration (for example a service that crashed for some reason).\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/43.upgrade/12.0-bookworm/index.mdx:90
+#, no-wrap
+msgid "Please check the [issues FAQ](/admin/upgrade/12.0-bookworm/issues_faq/).\n"
+msgstr ""
