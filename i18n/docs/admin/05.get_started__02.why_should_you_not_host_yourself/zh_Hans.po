@@ -2,18 +2,22 @@
 # This file is distributed under the same license as the YunoHost documentation package.
 #
 # Weblate Admin <yunohost@translate.yunohost.org>, 2025.
+# Wesley Wang <aidezp2@gmail.com>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2025-11-19 03:11+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2025-11-24 11:50+0000\n"
+"Last-Translator: Wesley Wang <aidezp2@gmail.com>\n"
+"Language-Team: Chinese (Simplified Han script) <https://"
+"translate.yunohost.org/projects/yunohost-doc/"
+"05get_started__02why_should_you_not_host_yourself/zh_Hans/>\n"
 "Language: zh_Hans\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.14.2\n"
 
 #. type: Yaml Front Matter Hash Value: description
 #: docs/admin/05.get_started/02.why_should_you_not_host_yourself.mdx:1
@@ -21,7 +25,7 @@ msgstr ""
 #: docs/admin/05.get_started/10.providers/20.servers.mdx:1
 #, no-wrap
 msgid " "
-msgstr ""
+msgstr " ， "
 
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/05.get_started/02.why_should_you_not_host_yourself.mdx:1
