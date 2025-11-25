@@ -5,12 +5,13 @@
 #
 # Weblate Admin <yunohost@translate.yunohost.org>, 2025.
 # ppr <pouetpouetratatouille@gmail.com>, 2025.
+# Éric Gaspar <junk.eg@free.fr>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2025-11-11 19:34+0100\n"
-"PO-Revision-Date: 2025-11-16 23:39+0000\n"
-"Last-Translator: ppr <pouetpouetratatouille@gmail.com>\n"
+"PO-Revision-Date: 2025-11-23 16:52+0000\n"
+"Last-Translator: Éric Gaspar <junk.eg@free.fr>\n"
 "Language-Team: French <https://translate.yunohost.org/projects/yunohost-doc/"
 "05get_started__20install_on__wsl/fr/>\n"
 "Language: fr\n"

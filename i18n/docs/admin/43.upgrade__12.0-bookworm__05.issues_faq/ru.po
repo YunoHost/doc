@@ -1,0 +1,200 @@
+# Copyright (C) 2025 YunoHost Contributors
+# This file is distributed under the same license as the YunoHost documentation package.
+#
+# Languages add-on <noreply-addon-languages@weblate.org>, 2025.
+msgid ""
+msgstr ""
+"Project-Id-Version: YunoHost documentation VERSION\n"
+"POT-Creation-Date: 2025-11-22 19:19+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+
+#. type: Plain text
+#: docs/admin/43.upgrade/11.0-bullseye.mdx:58
+#: docs/admin/43.upgrade/12.0-bookworm/05.issues_faq.mdx:18
+#, no-wrap
+msgid "Apps which won't be automatically repaired and need a force upgrade:\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/43.upgrade/11.0-bullseye.mdx:98
+#: docs/admin/43.upgrade/12.0-bookworm/05.issues_faq.mdx:42
+#, no-wrap
+msgid ""
+"Note: This issue should be resolved in `yunohost_version`: `4.4.2.13`\n"
+"You have an app that depends on the `build-essential` package.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/43.upgrade/11.0-bullseye.mdx:100
+#: docs/admin/43.upgrade/12.0-bookworm/05.issues_faq.mdx:44
+#, no-wrap
+msgid "See this [solution](https://forum.yunohost.org/t/migration-to-11-wont-start-libc6-dev-breaks-libgcc-8-dev/20617/42) to fix it manually\n"
+msgstr ""
+
+#. type: Title ###
+#: docs/admin/43.upgrade/11.0-bullseye.mdx:101
+#: docs/admin/43.upgrade/12.0-bookworm/05.issues_faq.mdx:45
+#, no-wrap
+msgid "DNSmasq is not running anymore"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/43.upgrade/11.0-bullseye.mdx:104
+#: docs/admin/43.upgrade/12.0-bookworm/05.issues_faq.mdx:48
+#, no-wrap
+msgid "We haven't yet found  solution for this issue.\n"
+msgstr ""
+
+#. type: Title ###
+#: docs/admin/43.upgrade/11.0-bullseye.mdx:105
+#: docs/admin/43.upgrade/12.0-bookworm/05.issues_faq.mdx:49
+#, no-wrap
+msgid "No ethernet connexion after rebooting following a migration on a Raspberry Pi 4"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/43.upgrade/11.0-bullseye.mdx:112
+#: docs/admin/43.upgrade/12.0-bookworm/05.issues_faq.mdx:56
+#, no-wrap
+msgid "We found this in the Raspberry Pi documentation\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/43.upgrade/11.0-bullseye.mdx:114
+#: docs/admin/43.upgrade/12.0-bookworm/05.issues_faq.mdx:58
+#, no-wrap
+msgid "> when the dhcpcd5 package is updated to the latest version (1:8.1.2-1+rpt1 -> 1:8.1.2-1+rpt2), the Raspberry Pi will fail to obtain a DHCP IP address following the next reboot or startup. This problem can be avoided by disabling and re-enabling the \"System Options -> Network at Boot\" option using the latest raspi-config after the dhcpcd5 package has been updated and prior to the system being shutdown or rebooted\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/43.upgrade/11.0-bullseye.mdx:116
+#: docs/admin/43.upgrade/12.0-bookworm/05.issues_faq.mdx:60
+#, no-wrap
+msgid "If you are using a Raspberry Pi 4 (or maybe 3), see this [solution](https://forum.yunohost.org/t/aucun-acces-a-internet-suite-a-migration-4-4-to-11-depuis-raspberry-pi-4-pi-400/20652/17)\n"
+msgstr ""
+
+#. type: Title ###
+#: docs/admin/43.upgrade/11.0-bullseye.mdx:117
+#: docs/admin/43.upgrade/12.0-bookworm/05.issues_faq.mdx:61
+#, no-wrap
+msgid "Restore ynh4 backup onto a fresh ynh11"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/43.upgrade/11.0-bullseye.mdx:120
+#: docs/admin/43.upgrade/12.0-bookworm/05.issues_faq.mdx:64
+#, no-wrap
+msgid "If you can't restore your app but your system has been restored, you probably should use the regen conf to fix the nginx issues:\n"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: title
+#: docs/admin/43.upgrade/12.0-bookworm/05.issues_faq.mdx:1
+#, no-wrap
+msgid "Migration isues FAQ"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/43.upgrade/12.0-bookworm/05.issues_faq.mdx:6
+#, no-wrap
+msgid "This page lists all the known issues encountered after a migration from YunoHost 11 to 12.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/43.upgrade/12.0-bookworm/05.issues_faq.mdx:8
+#, no-wrap
+msgid "If the suggested solutions don't work, please [ask for help](/community/help).\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/43.upgrade/12.0-bookworm/05.issues_faq.mdx:9
+#, no-wrap
+msgid "Python apps"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/43.upgrade/12.0-bookworm/05.issues_faq.mdx:12
+#, no-wrap
+msgid "After upgrading, some python apps should be unavailable because their virtual environment (venv) needs to be rebuilt.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/43.upgrade/12.0-bookworm/05.issues_faq.mdx:14
+#, no-wrap
+msgid "To do that you can run the pending migrations in `Webadmin > Update`.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/43.upgrade/12.0-bookworm/05.issues_faq.mdx:16
+#, no-wrap
+msgid "In addition, the apps below won't be automatically repaired, you need to force-upgrade them manually instead, with `yunohost app upgrade -F APP`.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/43.upgrade/12.0-bookworm/05.issues_faq.mdx:21
+#, no-wrap
+msgid ""
+"- **borgserver** and all its instances (eg. `borgserver__2`, `borgserver__3`, ...)\n"
+"- **borg** ([Borg on the app store](https://apps.yunohost.org/app/borg)) : rebuilt using `yunohost app upgrade -F borg` (otherwise, will sent emails notifying that \"The backup miserably failed to backup\", with error `ModuleNotFoundError: No module named 'borg'`)\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/43.upgrade/12.0-bookworm/05.issues_faq.mdx:23
+#, no-wrap
+msgid "TODO: list those apps\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/43.upgrade/12.0-bookworm/05.issues_faq.mdx:25
+#, no-wrap
+msgid "FIXME:??!!! If needed, you can disable the automatic rebuild for a specific python app, by removing the dedicated file ending with `.requirements_backup_for_bullseye_upgrade.txt` before applying the migration. You can find this file near the venv (Python virtual environment) of your app inside `/var/www`.\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/43.upgrade/12.0-bookworm/05.issues_faq.mdx:26
+#, no-wrap
+msgid "Error 500 everywhere"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/43.upgrade/12.0-bookworm/05.issues_faq.mdx:29
+#, no-wrap
+msgid "The web server, nginx, might need a restart before being fully operational. Please run this command:\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/43.upgrade/12.0-bookworm/05.issues_faq.mdx:34
+#, no-wrap
+msgid "Mailman3 failed in diagnostics"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/43.upgrade/12.0-bookworm/05.issues_faq.mdx:37
+#, no-wrap
+msgid "A manual change in a configuration file is needed for Mailman3 to work, see [the relevant issue](https://github.com/YunoHost-Apps/mailman3_ynh/issues/48#issuecomment-2536194377).\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/43.upgrade/12.0-bookworm/05.issues_faq.mdx:39
+#, no-wrap
+msgid "<!-- ### Can't run the migration due to `libc6-dev : Breaks: libgcc-8-dev issue`\n"
+msgstr ""
+
+#. type: Fenced div block (warning)
+#: docs/admin/43.upgrade/12.0-bookworm/05.issues_faq.mdx:51
+#, no-wrap
+msgid "f you have not yet rebooted your server, don't do it (we are looking for a solution). This will avoid you the use of a keyboard and screen.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/43.upgrade/12.0-bookworm/05.issues_faq.mdx:69
+#, no-wrap
+msgid "After that you should be able to restore your apps. Don't forget to force upgrade them if you have 502 errors. -->\n"
+msgstr ""

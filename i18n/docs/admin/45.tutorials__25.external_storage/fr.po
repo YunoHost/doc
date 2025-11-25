@@ -5,8 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2025-11-22 20:20+0000\n"
-"PO-Revision-Date: 2025-11-22 20:21+0000\n"
+"POT-Creation-Date: 2025-11-25 00:39+0000\n"
+"PO-Revision-Date: 2025-11-25 00:39+0000\n"
 "Last-Translator: Weblate Admin <yunohost@translate.yunohost.org>\n"
 "Language-Team: French <https://translate.yunohost.org/projects/yunohost-"
 "doc/45tutorials__25external_storage/fr/>\n"
@@ -76,10 +76,10 @@ msgstr "<FAIcon icon=\"fa-list-alt\"/> Pré-requis"
 #: docs/admin/45.tutorials/25.external_storage.mdx:29
 #, no-wrap
 msgid ""
-"- Have some time at a moment when your server users can accept a shutdown. The steps to be performed, even if they are relatively simple, can sometimes seem technical and require in any case **to take your time**.\n"
-"- Know how to connect as root on your system, for example via [SSH](/admin/command_line). (Note: while logged in as `admin`, you can root with `sudo su`)\n"
+"- Schedule a moment when it'll be OK to shutdown the server. The steps to be performed, even if they are relatively simple, can sometimes seem technical and require in any case **to take your time**.\n"
+"- You'll need to know how to connect as root on your system, typically via [SSH](/admin/command_line). (Note: while logged in as an admin user, you can become `root` with `sudo su` or `sudo -i`, which is sometimes more convenient than prefixing every command with `sudo`)\n"
 "- Know the basic commands `cd`, `ls`, `mkdir`, `rm`.\n"
-"- Have a backup in case things don't work out as planned\n"
+"- Prepare a backup in case things don't work out as planned\n"
 "- Have extra storage (SSD, hard drive, USB stick) connected to your server via USB or SATA\n"
 msgstr ""
 
@@ -103,21 +103,35 @@ msgstr "Ci-dessous, une explication de certains chemins qui peuvent prendre du p
 
 #. type: Plain text
 #: docs/admin/45.tutorials/25.external_storage.mdx:49
-#, no-wrap
+#, fuzzy, no-wrap
+#| msgid ""
+#| "| Paths | Contents | Tips |\n"
+#| "|--------|---|---|\n"
+#| "| `/home` | User folders accessible via SFTP | Moveable to a hard disk |\n"
+#| "| `/home/yunohost.backup`       | YunoHost's backups  | Depending on your backup strategy, you may want to place this folder on a separate drive from your data or databases. |\n"
+#| "| `/home/yunohost.app`          |Heavy data from YunoHost applications (nextcloud, matrix...)|Moveable to a hard disk |\n"
+#| "| `/home/yunohost.multimedia` | Heavy data shared between several applications | Moveable to a hard disk |\n"
+#| "| `/var/lib/mysql` | Database used by applications | Ideally leave on SSD for performance reasons |\n"
+#| "| `/var/lib/postgresql` | Database used by applications | Ideally leave on SSD for performance reasons |\n"
+#| "| `/var/mail` | User e-mails | Movable to a hard disk |\n"
+#| "| `/var/www` | Program of installed web applications | Ideally leave on SSD for performance reasons |\n"
+#| "| `/var/log` | Event logs (pages consulted, connection attempts, hardware errors...). | This directory should not take up too much space, if it grows quickly, it may be a looping error that should be resolved. |\n"
+#| "| `/opt` | Program and dependency of some YunoHost applications. | Ideally leave it on the SSD for performance reasons. For nodejs applications it is possible to do some cleanup of unused versions. |\n"
+#| "| `/boot` | Kernels and boot files | Do not move unless you know what you are doing. It can happen that too many kernels are kept, it is possible to do some cleanup. |\n"
 msgid ""
-"| Paths | Contents | Tips |\n"
-"|--------|---|---|\n"
-"| `/home` | User folders accessible via SFTP | Moveable to a hard disk |\n"
-"| `/home/yunohost.backup`       | YunoHost's backups  | Depending on your backup strategy, you may want to place this folder on a separate drive from your data or databases. |\n"
-"| `/home/yunohost.app`          |Heavy data from YunoHost applications (nextcloud, matrix...)|Moveable to a hard disk |\n"
-"| `/home/yunohost.multimedia` | Heavy data shared between several applications | Moveable to a hard disk |\n"
-"| `/var/lib/mysql` | Database used by applications | Ideally leave on SSD for performance reasons |\n"
-"| `/var/lib/postgresql` | Database used by applications | Ideally leave on SSD for performance reasons |\n"
-"| `/var/mail` | User e-mails | Movable to a hard disk |\n"
-"| `/var/www` | Program of installed web applications | Ideally leave on SSD for performance reasons |\n"
-"| `/var/log` | Event logs (pages consulted, connection attempts, hardware errors...). | This directory should not take up too much space, if it grows quickly, it may be a looping error that should be resolved. |\n"
-"| `/opt` | Program and dependency of some YunoHost applications. | Ideally leave it on the SSD for performance reasons. For nodejs applications it is possible to do some cleanup of unused versions. |\n"
-"| `/boot` | Kernels and boot files | Do not move unless you know what you are doing. It can happen that too many kernels are kept, it is possible to do some cleanup. |\n"
+"| Paths                       | Contents                                                     | Tips                    |\n"
+"| --------------------------- | ------------------------------------------------------------ | ----------------------- |\n"
+"| `/home`                     | User folders accessible via SFTP                             | Moveable to a hard disk |\n"
+"| `/home/yunohost.backup`     | YunoHost's backups                                           | Depending on your backup strategy, you may want to place this folder on a separate drive from your data or databases. |\n"
+"| `/home/yunohost.app`        | Heavy data from YunoHost applications (nextcloud, matrix...) | Moveable to a hard disk |\n"
+"| `/home/yunohost.multimedia` | Heavy data shared between several applications               | Moveable to a hard disk |\n"
+"| `/var/lib/mysql`            | Database used by applications                                | Ideally leave on SSD for performance reasons |\n"
+"| `/var/lib/postgresql`       | Database used by applications                                | Ideally leave on SSD for performance reasons |\n"
+"| `/var/mail`                 | User e-mails                                                 | Movable to a hard disk |\n"
+"| `/var/www`                  | Program of installed web applications                        | Ideally leave on SSD for performance reasons |\n"
+"| `/var/log`                  | Event logs (pages consulted, connection attempts, hardware errors...). | This directory should not take up too much space, if it grows quickly, it may be a looping error that should be resolved. |\n"
+"| `/opt`                      | Program and dependency of some YunoHost applications.        | Ideally leave it on the SSD for performance reasons. For nodejs applications it is possible to do some cleanup of unused versions. |\n"
+"| `/boot`                     | Kernels and boot files                                       | Do not move unless you know what you are doing. It can happen that too many kernels are kept, it is possible to do some cleanup. |\n"
 msgstr ""
 "| Chemin | Contenu  | Conseils |\n"
 "|--------|---|---|\n"
@@ -213,10 +227,9 @@ msgstr "Avant de pouvoir utiliser votre disque, il doit être formaté.\n"
 
 #. type: Fenced div block (warning)
 #: docs/admin/45.tutorials/25.external_storage.mdx:97
-#, fuzzy, no-wrap
-#| msgid "<FAIcon icon=\"fa-exclamation-triangle\"/> **Formatting a disk means deleting all the data on it! Be careful not to get the name wrong, as this may result in formatting a different disk than the one you want! In the example given earlier, it was `/dev/sda`. If your disk is already \"clean\", you can skip this step.\n"
+#, no-wrap
 msgid "<FAIcon icon=\"fa-exclamation-triangle\"/> **Formatting a disk means deleting all the data on it!** Be careful not to get the name wrong, as this may result in formatting a different disk than the one you want! In the example given earlier, it was `/dev/sda`. If your disk is already \"clean\", you can skip this step.\n"
-msgstr "<FAIcon icon=\"fa-exclamation-triangle\"/> **Formater un disque implique de supprimer toutes les données inscrites dessus !**. Attention à ne pas vous tromper de nom, car cela peut avoir pour conséquence de formater un autre disque que celui voulu ! Dans l'exemple donné précédemment, il s'agissait de `/dev/sda`. Si votre disque est déjà \"propre\", vous pouvez passer cette étape.\n"
+msgstr "<FAIcon icon=\"fa-exclamation-triangle\"/> **Formater un disque signifie supprimer toutes les données inscrites dessus !**. Attention à ne pas vous tromper de nom, car cela peut avoir pour conséquence de formater un autre disque que celui voulu ! Dans l'exemple donné précédemment, il s'agissait de `/dev/sda`. Si votre disque est déjà \"propre\", vous pouvez passer cette étape.\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/25.external_storage.mdx:102

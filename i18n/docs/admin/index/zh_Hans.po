@@ -2,14 +2,15 @@
 # This file is distributed under the same license as the YunoHost documentation package.
 #
 # Weblate Admin <yunohost@translate.yunohost.org>, 2025.
+# Wesley Wang <aidezp2@gmail.com>, 2025.
 msgid ""
-msgstr "Project-Id-Version: YunoHost documentation VERSION\nPOT-Creation-Date: 2025-11-19 03:04+0000\nPO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\nLast-Translator: Automatically generated\nLanguage-Team: none\nLanguage: zh_Hans\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=1; plural=0;\n"
+msgstr "Project-Id-Version: YunoHost documentation VERSION\nPOT-Creation-Date: 2025-11-19 03:04+0000\nPO-Revision-Date: 2025-11-24 10:32+0000\nLast-Translator: Wesley Wang <aidezp2@gmail.com>\nLanguage-Team: Chinese (Simplified Han script) <https://translate.yunohost.org/projects/yunohost-doc/index/zh_Hans/>\nLanguage: zh_Hans\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=1; plural=0;\nX-Generator: Weblate 5.14.2\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/index.mdx:1
 #, no-wrap
 msgid "Welcome!"
-msgstr ""
+msgstr "欢迎！"
 
 #. type: Plain text
 #: docs/admin/index.mdx:9

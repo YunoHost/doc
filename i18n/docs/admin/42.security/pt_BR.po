@@ -1,0 +1,230 @@
+# Copyright (C) 2025 YunoHost Contributors
+# This file is distributed under the same license as the YunoHost documentation package.
+#
+# Languages add-on <noreply-addon-languages@weblate.org>, 2025.
+msgid ""
+msgstr ""
+"Project-Id-Version: YunoHost documentation VERSION\n"
+"POT-Creation-Date: 2025-11-22 19:06+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+
+#. type: Yaml Front Matter Hash Value: title
+#: docs/admin/42.security.mdx:1
+#, no-wrap
+msgid "🔒 Security"
+msgstr ""
+
+#. type: Fenced div block (info)
+#: docs/admin/42.security.mdx:5
+#, no-wrap
+msgid "When thinking and discussing security — whether in the context of YunoHost or any other system —, please keep in mind that security is not a binary state, but an ongoing practice. The term \"security\" is essentially meaningless without specifying what exactly we are securing against. The 'threats' to consider depend on your context, and can range from automated attacks from bots roaming the Internet, to sophisticated state actors like the NSA, or supply chain vulnerabilities (e.g., compromised software dependencies), or basic risks such as your own users employing overly simple passwords, or your worst enemy from elementary school 20 years ago trying to hack into your server...\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/42.security.mdx:19
+#, no-wrap
+msgid ""
+"YunoHost is developped with security in mind, and designing good tradeoff between security and usability. Here's a non-exhaustive list of security aspects that the project is implementing:\n"
+"- a firewall based on `nftables` to restrict incoming traffic to relevant ports ;\n"
+"- `fail2ban`, a software that automatically rejects traffic from malicious IPs trying to brute force SSH and other services ;\n"
+"- using [Mozilla's recommendations for NGINX, Postfix, Dovecot, SSH ciphers etc.](https://wiki.mozilla.org/Security/Server_Side_TLS) ;\n"
+"- checking that user password/passphrase are not too simple when definining them ;\n"
+"- hashing user passwords (salted SHA512 in LDAP for example) ;\n"
+"- being vigilant on UNIX file/dir permissions accross the whole system ;\n"
+"- apps are typically ran using a dedicated user, and with [restricted capabilities](https://man7.org/linux/man-pages/man7/capabilities.7.html) ;\n"
+"- auto-redacting sensitive informations from YunoHost operation logs and when sharing them with Yunopaste ;\n"
+"- ...\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/42.security.mdx:27
+#, no-wrap
+msgid ""
+"In addition, the project has mid-term goals to implement:\n"
+"- [password self-reset for users](https://github.com/YunoHost/issues/issues/878) ;\n"
+"- [automatic warnings about vulnerabilities](https://github.com/YunoHost/yunohost/pull/2077) <small>(via the Diagnosis, not via the forum or social media)</small> ;\n"
+"- supporting [OIDC](https://github.com/YunoHost/yunohost/pull/2149) and [2FA](https://github.com/YunoHost/issues/issues/238) ;\n"
+"- better support for SSH keys, in particular [making them configurable from the webadmin](https://github.com/YunoHost/issues/issues/175) ;\n"
+"- further constrain and limit application capabilities to only what they need (cf. packaging v3) ;\n"
+"- ...\n"
+msgstr ""
+
+#. type: Fenced div block (info)
+#: docs/admin/42.security.mdx:28
+#, no-wrap
+msgid "<FAIcon icon=\"fa-shield\"/> To discuss security flaws in YunoHost, contact the [project's security team](/community/security_team).\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/42.security.mdx:32
+#, no-wrap
+msgid "Basic security advices"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/42.security.mdx:35
+#, no-wrap
+msgid "Security is not a one-time setup, it's an active, ongoing practice. Here are some basic practice that you should implement:\n"
+msgstr ""
+
+#. type: Fenced div block (warning)
+#: docs/admin/42.security.mdx:36
+#, no-wrap
+msgid "Using stupidly simple passwords is arguably the number one reason why servers get \"hacked\". You and your users using reasonably complex passwords/passphrases is the basis of any good security.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/42.security.mdx:45
+#, no-wrap
+msgid ""
+"1. as an admin, forget traditional passwords. *[Use reasonably complex **passphases**](https://imgs.xkcd.com/comics/password_strength_2x.png)*. Learn about password managers.\n"
+"2. keep your server and apps **reasonably up to date**. Consider using the [unattended upgrades](https://apps.yunohost.org/app/unattended_upgrades) app for automatic upgrades ;\n"
+"3. be aware that **each app you install is an additional \"attack surface\"**. Ideally, check the security reputation of every app you install. **Do not** just install random apps and then forget about them. Uninstall apps that you no longer use ;\n"
+"4. only create accounts for people that you have some amount of trust into, in particular that they will use **decent passwords/passphrases** and decent security hygiene in general ;\n"
+"5. **regularly check the forum and social media** (e.g. [YunoHost's Mastodon account](https://toot.aquilenet.fr/@yunohost)) to stay informed when vulnerabilities are discovered or important fixes are released.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/42.security.mdx:49
+#, no-wrap
+msgid "The following sections describe possible ways to further harden the security of your server.\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/42.security.mdx:50
+#, no-wrap
+msgid "SSH authentication via key"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/42.security.mdx:53
+#, no-wrap
+msgid "By default, the SSH authentication uses the administration password. Deactivating this kind of authentication and replacing it by a key mechanism is advised.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/42.security.mdx:55
+#, no-wrap
+msgid "**On your client**:\n"
+msgstr ""
+
+#. type: Fenced div block (tip)
+#: docs/admin/42.security.mdx:61
+#, no-wrap
+msgid ""
+"If you run into permissions issues, set `username` as owner of the dir `~/.ssh` with `chown`. Be careful, for security reasons this directory should be in mode `700`.  \n"
+"If you are on Ubuntu 16.04 you should run `ssh-add` to initialize the SSH agent.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/42.security.mdx:67
+#, no-wrap
+msgid "Type your admnistration password and your key will be copied onto your server.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/42.security.mdx:69
+#, no-wrap
+msgid "**On your server**, editing the SSH configuration file to deactivate password authentication is handled by a system setting:\n"
+msgstr ""
+
+#. type: Fenced div block (danger)
+#: docs/admin/42.security.mdx:74 docs/admin/42.security.mdx:100
+#, no-wrap
+msgid "Never close your current SSH connection before checking that your alterations work. Test your new configuration by opening a new terminal or window. That way, you can undo your alterations if anything goes wrong.\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/42.security.mdx:79
+#, no-wrap
+msgid "Using a custom port for SSH"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/42.security.mdx:82
+#, no-wrap
+msgid ""
+"To prevent SSH connection attempts by robots that scan the internet for any server with SSH enabled, you can change the SSH port.\n"
+"This is handled by a system setting, which takes care of updating the SSH and Fail2Ban configuration.  \n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/42.security.mdx:85
+#, no-wrap
+msgid "Note that changing the port is still useful even if you've disabled password authentication, because that significantly reduces noise from brute force attempts in SSH logs.\n"
+msgstr ""
+
+#. type: Fenced div block (warning)
+#: docs/admin/42.security.mdx:86
+#, no-wrap
+msgid "If you manually modify anything in the SSH server configuration (`/etc/ssh/sshd_config`), YunoHost's regen-conf mechanism will no longer automatically update this file. For this reason, always use the YunoHost admin tools to make changes to the systems configuration files!\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/42.security.mdx:95
+#, no-wrap
+msgid "**For subsequent SSH connections**, you need to add the `-p` option followed by the SSH port number.\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/42.security.mdx:105
+#, no-wrap
+msgid "Hardening cipher used by NGINX, SSH, Dovecot, Postfix"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/42.security.mdx:108
+#, no-wrap
+msgid "The default TLS configuration for services tends to offer good compatibility to support old devices. You can tune this policy for specific services like SSH and NGINX. By default, the NGINX configuration follows the [intermediate compatibility recommendation](https://wiki.mozilla.org/Security/Server_Side_TLS#Intermediate_compatibility_.28default.29) from Mozilla. You can choose to switch to the 'modern' configuration which uses more recent security recommendations, **at the cost of decreasing compatibility**, which may be an issue for your users and visitors using older devices. More details about compatibility can be found on [this page](https://wiki.mozilla.org/Security/Server_Side_TLS#Modern_compatibility).\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/42.security.mdx:110
+#, no-wrap
+msgid "Changing the compatibility level is not definitive and can be reverted if it doesn't fit with your environment.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/42.security.mdx:112
+#, no-wrap
+msgid "**On your server**, change the policy for NGINX\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/42.security.mdx:118
+#, no-wrap
+msgid "**On your server**, change the policy for SSH\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/42.security.mdx:123
+#, no-wrap
+msgid "Disabling the YunoHost API"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/42.security.mdx:126
+#, no-wrap
+msgid "YunoHost administration is accessible through an **HTTP API**, which is the API used by the webadmin. This may be an additional, unecessary attack surface if you are not planning to use it. In this case, you can disable the corresponding service entirely via command line:\n"
+msgstr ""
+
+#. type: Fenced div block (warning)
+#: docs/admin/42.security.mdx:127
+#, no-wrap
+msgid ""
+"This will completely disable both YunoHost's API and the web administration panel that relies on it.\n"
+"Proceed only if you are comfortable with exclusively using the command line from now on.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/42.security.mdx:138
+#, no-wrap
+msgid "As `yunohost-api` is now disabled and not running, Diagnosis will report an error. This error can be ignored using:\n"
+msgstr ""

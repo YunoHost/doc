@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2025-11-11 00:07+0100\n"
+"POT-Creation-Date: 2025-11-23 11:41+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -28,23 +28,23 @@ msgstr ""
 msgid "Since setting up a server at home is an uncommon practice, most Internet connections provided to individuals are unsuitable for this purpose especially if you desire to send mail. A net neutral VPN providing a dedicated fixed public IPv4 address and IPv6 addresses [can help to circumvent some limitations or difficulties](/admin/get_started/providers/vpn/vpn_advantage).\n"
 msgstr ""
 
-#. type: Plain text
-#: docs/admin/05.get_started/10.providers/15.vpn/index.mdx:12
+#. type: Fenced div block (info)
+#: docs/admin/05.get_started/10.providers/15.vpn/index.mdx:9
 #, no-wrap
 msgid ""
-"! Note that except if you have a <a href=\"https://en.wikipedia.org/wiki/Threat_model\">threat model</a> that implies to really be \"hidden\", you do not need to hide your home IP address using a VPN. It is really not a huge deal to expose your IP address, do not trust the big commercial VPN companies who tries to sell you a product by inducing fear.\n"
-"! If you *do* have such a threat model, especially against state threats, most of the providers listed below will **not** be of any help to you, since they will have to comply with police and judicial demands.\n"
-"! However, a VPN can help you to bypass port-forwarding limitations, or to get a stable IP address (if you ISP only provide dynamic IP) and this page will help you for that!\n"
+"Note that except if you have a <a href=\"https://en.wikipedia.org/wiki/Threat_model\">threat model</a> that implies to really be \"hidden\", you do not need to hide your home IP address using a VPN. It is really not a huge deal to expose your IP address, do not trust the big commercial VPN companies who tries to sell you a product by inducing fear.\n"
+"If you *do* have such a threat model, especially against state threats, most of the providers listed below will **not** be of any help to you, since they will have to comply with police and judicial demands.\n"
+"However, a VPN can help you to bypass port-forwarding limitations, or to get a stable IP address (if you ISP only provide dynamic IP) and this page will help you for that!\n"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/05.get_started/10.providers/15.vpn/index.mdx:14
+#: docs/admin/05.get_started/10.providers/15.vpn/index.mdx:16
 #, no-wrap
 msgid "Below, you can find a list of providers compatible for self-hosting and especially those providing .cube format for VPNClient apps and those providing [internetcube](https://internetcu.be).\n"
 msgstr ""
 
 #. type: Fenced div block (info)
-#: docs/admin/05.get_started/10.providers/15.vpn/index.mdx:15
+#: docs/admin/05.get_started/10.providers/15.vpn/index.mdx:17
 #, no-wrap
 msgid ""
 "By **compatible for self-hosting** we means VPN offers with at least:\n"
@@ -54,13 +54,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: docs/admin/05.get_started/10.providers/15.vpn/index.mdx:22
+#: docs/admin/05.get_started/10.providers/15.vpn/index.mdx:24
 #, no-wrap
 msgid "English-speaking sites"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/05.get_started/10.providers/15.vpn/index.mdx:27
+#: docs/admin/05.get_started/10.providers/15.vpn/index.mdx:29
 #, no-wrap
 msgid ""
 "| VPN provider | [VPNClient](https://github.com/labriqueinternet/vpnclient_ynh) compatibility | IPv6 | rDNS IPv4 | rDNS IPv6 | Price | Membership | Net Neutrality |\n"
@@ -69,14 +69,14 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/05.get_started/10.providers/15.vpn/index.mdx:29
-#: docs/admin/05.get_started/10.providers/15.vpn/index.mdx:62
+#: docs/admin/05.get_started/10.providers/15.vpn/index.mdx:31
+#: docs/admin/05.get_started/10.providers/15.vpn/index.mdx:64
 #, no-wrap
 msgid "¹ [Pay what you want](https://en.wikipedia.org/wiki/Pay_what_you_want)\n"
 msgstr ""
 
 #. type: Fenced div block (info)
-#: docs/admin/05.get_started/10.providers/15.vpn/index.mdx:30
+#: docs/admin/05.get_started/10.providers/15.vpn/index.mdx:32
 #, no-wrap
 msgid ""
 "If you try an other VPN provider that include **public dedicated ipv4 and port forwarding**, feel free to contribute to this documentation. We need people to test specific offers of those commercial providers:\n"
@@ -88,13 +88,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: docs/admin/05.get_started/10.providers/15.vpn/index.mdx:39
+#: docs/admin/05.get_started/10.providers/15.vpn/index.mdx:41
 #, no-wrap
 msgid "French-speaking sites"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/05.get_started/10.providers/15.vpn/index.mdx:60
+#: docs/admin/05.get_started/10.providers/15.vpn/index.mdx:62
 #, no-wrap
 msgid ""
 "| VPN provider | [VPNClient](https://github.com/labriqueinternet/vpnclient_ynh) compatibility | IPv6 | rDNS IPv4 | rDNS IPv6 | Price | Membership | Net Neutrality |\n"
@@ -119,16 +119,18 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: docs/admin/05.get_started/10.providers/15.vpn/index.mdx:63
+#: docs/admin/05.get_started/10.providers/15.vpn/index.mdx:65
 #, no-wrap
 msgid "German-speaking sites"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/05.get_started/10.providers/15.vpn/index.mdx:67
+#: docs/admin/05.get_started/10.providers/15.vpn/index.mdx:71
 #, no-wrap
 msgid ""
 "| VPN provider | [VPNClient](https://github.com/labriqueinternet/vpnclient_ynh) compatibility | IPv6 | rDNS IPv4 | rDNS IPv6 | Price | Membership | Net Neutrality |\n"
 "| ------------ | ---------------------------------------------------------------------------- | ---- | --------- | --------- | ----- | ---------- | -------------- |\n"
 "| [In-Berlin](https://in-vpn.de/provider/vpn.html)    | ✔ (manuelle)                          | ✔    | ✔         | ✔         | 9 or 14€ / month | 20€ / an | <HighlightNonProfit/> |\n"
+"| [Portunity](https://www.portunity.de/access/produkte/vpn-loesungen/vpn-tunnel.html) | ✔ (manuelle) | ✔    | ✔         | ✔         | from 6,80€ / month |   |   |\t\n"
+"| [FesteIP-Kit (Portunity)](https://www.festeip-kit.de/)  |  ✘ (managed ready-to-use router utilizing a Raspberry Pi) | ✔    | ✔         | ✔         | from 10,80€ / month |   |   |\n"
 msgstr ""

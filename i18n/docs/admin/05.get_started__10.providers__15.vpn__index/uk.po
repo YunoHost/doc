@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2025-11-11 19:34+0100\n"
+"POT-Creation-Date: 2025-11-23 11:41+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -125,10 +125,12 @@ msgid "German-speaking sites"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/05.get_started/10.providers/15.vpn/index.mdx:69
+#: docs/admin/05.get_started/10.providers/15.vpn/index.mdx:71
 #, no-wrap
 msgid ""
 "| VPN provider | [VPNClient](https://github.com/labriqueinternet/vpnclient_ynh) compatibility | IPv6 | rDNS IPv4 | rDNS IPv6 | Price | Membership | Net Neutrality |\n"
 "| ------------ | ---------------------------------------------------------------------------- | ---- | --------- | --------- | ----- | ---------- | -------------- |\n"
 "| [In-Berlin](https://in-vpn.de/provider/vpn.html)    | ✔ (manuelle)                          | ✔    | ✔         | ✔         | 9 or 14€ / month | 20€ / an | <HighlightNonProfit/> |\n"
+"| [Portunity](https://www.portunity.de/access/produkte/vpn-loesungen/vpn-tunnel.html) | ✔ (manuelle) | ✔    | ✔         | ✔         | from 6,80€ / month |   |   |\t\n"
+"| [FesteIP-Kit (Portunity)](https://www.festeip-kit.de/)  |  ✘ (managed ready-to-use router utilizing a Raspberry Pi) | ✔    | ✔         | ✔         | from 10,80€ / month |   |   |\n"
 msgstr ""

@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2025-11-19 02:54+0000\n"
+"POT-Creation-Date: 2025-11-25 00:39+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -198,12 +198,6 @@ msgstr ""
 #, no-wrap
 msgid "<FAIcon icon=\"fa-exclamation-triangle\"/> Password with `#` char won't works properly due to postfix limitation (it's possible other chars are forbidden, don't hesitate to report it to update this doc).\n"
 msgstr "<FAIcon icon=\"fa-exclamation-triangle\"/> Le password contenenti il carattere `#` non funzioneranno correttamente a causa di una regola di postfix (altri caratteri potrebbero non essere riconosciuti, se li scoprite comunicatelo agli sviluppatori di YunoHost affiché possano aggiornare questa guida).\n"
-
-#. type: Plain text
-#: docs/admin/45.tutorials/35.email_configure_relay.mdx:63
-#, no-wrap
-msgid "![Option-Relais-Smtp](/img/webadmin/relay_smtp_option_webadmin_en.png)\n"
-msgstr ""
 
 #. type: Plain text
 #: docs/admin/45.tutorials/35.email_configure_relay.mdx:68
