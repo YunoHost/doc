@@ -240,7 +240,7 @@ msgstr "SSH et sécurité"
 #: docs/admin/15.command_line.mdx:118
 #, no-wrap
 msgid "A more extensive discussion about security & SSH can be found on the [dedicated page](/admin/security).\n"
-msgstr "Une discussion plus complète sur la sécurité et sur SSH peut être trouvée sur [la page dédiée](/admin/tutorials/security).\n"
+msgstr "Une discussion plus complète sur la sécurité et sur SSH peut être trouvée sur [la page dédiée](/admin/security).\n"
 
 #. type: Title ##
 #: docs/admin/15.command_line.mdx:119
