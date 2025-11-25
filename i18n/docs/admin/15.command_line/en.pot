@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2025-11-22 19:31+0000\n"
+"POT-Creation-Date: 2025-11-25 00:44+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -303,7 +303,7 @@ msgstr ""
 #. type: Plain text
 #: docs/admin/15.command_line.mdx:161
 #, no-wrap
-msgid "This command is only available if you have the `VPN Client` application installed. You can use it to load a new .cube in case you can't get to the VPN Client interface to do so.\n"
+msgid "This command is only available and relevant in the context of the `VPN Client` application installed. You can use it to load a new .cube in case you can't get to the VPN Client interface to do so.\n"
 msgstr ""
 
 #. type: Title ###
