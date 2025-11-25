@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2025-11-19 02:54+0000\n"
+"POT-Creation-Date: 2025-11-25 00:39+0000\n"
 "PO-Revision-Date: 2025-11-10 01:35+0000\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: French <https://translate.yunohost.org/projects/doc-"
@@ -107,8 +107,9 @@ msgstr "Vous pouvez facilement créer des archives depuis la webadmin en allant 
 
 #. type: Plain text
 #: docs/admin/40.backups/index.mdx:26
-#, no-wrap
-msgid "![picture of YunoHost's backup pannel](/img/webadmin/backup.png)\n"
+#, fuzzy, no-wrap
+#| msgid "![picture of YunoHost's backup pannel](/img/webadmin/backup.png)\n"
+msgid "![Screenshot of YunoHost's backup panel](/img/webadmin/backup.png)\n"
 msgstr "![Image de l'écran de sauvegarde de YunoHost dans la webadmin](/img/webadmin/backup.png)\n"
 
 #. type: Plain text
@@ -259,7 +260,7 @@ msgstr "Allez dans `Sauvegardes > Archives locales` et sélectionnez l'archive. 
 #: docs/admin/40.backups/index.mdx:141
 #, fuzzy, no-wrap
 #| msgid "![picture of YunoHost's backup pannel](/img/webadmin/backup.png)\n"
-msgid "![picture of YunoHost's restore pannel](/img/webadmin/restore.png)\n"
+msgid "![Screenshot of YunoHost's restore panel](/img/webadmin/restore.png)\n"
 msgstr "![Image de l'écran de sauvegarde de YunoHost dans la webadmin](/img/webadmin/backup.png)\n"
 
 #. type: Plain text

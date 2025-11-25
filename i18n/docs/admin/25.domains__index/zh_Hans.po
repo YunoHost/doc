@@ -6,11 +6,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2025-11-11 19:34+0100\n"
+"POT-Creation-Date: 2025-11-25 00:39+0000\n"
 "PO-Revision-Date: 2025-11-24 11:50+0000\n"
 "Last-Translator: Wesley Wang <aidezp2@gmail.com>\n"
-"Language-Team: Chinese (Simplified Han script) <https://"
-"translate.yunohost.org/projects/yunohost-doc/25domains__index/zh_Hans/>\n"
+"Language-Team: Chinese (Simplified Han script) <https://translate.yunohost."
+"org/projects/yunohost-doc/25domains__index/zh_Hans/>\n"
 "Language: zh_Hans\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -51,7 +51,7 @@ msgstr ""
 #. type: Plain text
 #: docs/admin/25.domains/index.mdx:17
 #, no-wrap
-msgid "![A screenshot of the webadmin domain interface with an \"Add domain\" button and a list of domains](/img/webadmin/webadmin_domain.png)\n"
+msgid "![Screenshot of the webadmin domain interface with an \"Add domain\" button and a list of domains](/img/webadmin/webadmin_domain.png)\n"
 msgstr ""
 
 #. type: Title ##
@@ -105,7 +105,7 @@ msgstr ""
 #. type: Plain text
 #: docs/admin/25.domains/index.mdx:36
 #, no-wrap
-msgid "![Here a screenshot of the \"Add domain\" page where you can choose \"I don't have a domain name\"](/img/webadmin/webadmin_dyndns.png)\n"
+msgid "![Screenshot of the \"Add domain\" page where you can choose \"I don't have a domain name\"](/img/webadmin/webadmin_dyndns.png)\n"
 msgstr ""
 
 #. type: Fenced div block (info)
@@ -155,7 +155,7 @@ msgstr ""
 #. type: Plain text
 #: docs/admin/25.domains/index.mdx:56
 #, no-wrap
-msgid "![Here a screenshot of the \"Add domain\" page where you can choose \"I already have a domain name\"](/img/webadmin/webadmin_domain_owndomain.png)\n"
+msgid "![Screenshot of the \"Add domain\" page where you can choose \"I already have a domain name\"](/img/webadmin/webadmin_domain_owndomain.png)\n"
 msgstr ""
 
 #. type: Plain text
@@ -182,7 +182,7 @@ msgstr ""
 #. type: Plain text
 #: docs/admin/25.domains/index.mdx:67
 #, no-wrap
-msgid "![Here a screenshot of the \"Add domain\" page where you can choose \"I already have a domain name\" and setup your domain ending by .local](/img/webadmin/webadmin_domain_local.png)\n"
+msgid "![Screenshot of the \"Add domain\" page where you can choose \"I already have a domain name\" and setup your domain ending by .local](/img/webadmin/webadmin_domain_local.png)\n"
 msgstr ""
 
 #. type: Fenced div block (info)

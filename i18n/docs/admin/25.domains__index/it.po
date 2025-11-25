@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2025-11-11 00:07+0100\n"
+"POT-Creation-Date: 2025-11-25 00:39+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -45,8 +45,9 @@ msgstr "I domini possono essere configurati a partire dalla sezione 'Domini' del
 
 #. type: Plain text
 #: docs/admin/25.domains/index.mdx:17
-#, no-wrap
-msgid "![A screenshot of the webadmin domain interface with an \"Add domain\" button and a list of domains](/img/webadmin/webadmin_domain.png)\n"
+#, fuzzy, no-wrap
+#| msgid "![A screenshot of the webadmin domain interface with an \"Add domain\" button and a list of domains](/img/webadmin/webadmin_domain.png)\n"
+msgid "![Screenshot of the webadmin domain interface with an \"Add domain\" button and a list of domains](/img/webadmin/webadmin_domain.png)\n"
 msgstr "![L'interfaccia webadmin di gestione dei domini, con il pulsante \"Aggiungere un dominio\" e l'elenco dei domini](/img/webadmin/webadmin_domain.png)\n"
 
 #. type: Title ##
@@ -99,8 +100,9 @@ msgstr "Per ottenere un dominio tra quelli proposti, sarà sufficiente scegliere
 
 #. type: Plain text
 #: docs/admin/25.domains/index.mdx:36
-#, no-wrap
-msgid "![Here a screenshot of the \"Add domain\" page where you can choose \"I don't have a domain name\"](/img/webadmin/webadmin_dyndns.png)\n"
+#, fuzzy, no-wrap
+#| msgid "![Here a screenshot of the \"Add domain\" page where you can choose \"I don't have a domain name\"](/img/webadmin/webadmin_dyndns.png)\n"
+msgid "![Screenshot of the \"Add domain\" page where you can choose \"I don't have a domain name\"](/img/webadmin/webadmin_dyndns.png)\n"
 msgstr "![Pagina webadmin, sezione domini « Aggiungere un dominio » dove potete scegliere « Non ho ancora un nome di dominio »](/img/webadmin/webadmin_dyndns.png)\n"
 
 #. type: Fenced div block (info)
@@ -151,8 +153,9 @@ msgstr "Se già possedete un nome di dominio, dovete semplicemente scegliere \"H
 
 #. type: Plain text
 #: docs/admin/25.domains/index.mdx:56
-#, no-wrap
-msgid "![Here a screenshot of the \"Add domain\" page where you can choose \"I already have a domain name\"](/img/webadmin/webadmin_domain_owndomain.png)\n"
+#, fuzzy, no-wrap
+#| msgid "![Here a screenshot of the \"Add domain\" page where you can choose \"I already have a domain name\"](/img/webadmin/webadmin_domain_owndomain.png)\n"
+msgid "![Screenshot of the \"Add domain\" page where you can choose \"I already have a domain name\"](/img/webadmin/webadmin_domain_owndomain.png)\n"
 msgstr "![Pagina \"Aggiungere un dominio\" dove potere scegliere \"Ho già un nome di dominio\"](/img/webadmin/webadmin_domain_owndomain.png)\n"
 
 #. type: Plain text
@@ -181,8 +184,9 @@ msgstr ""
 
 #. type: Plain text
 #: docs/admin/25.domains/index.mdx:67
-#, no-wrap
-msgid "![Here a screenshot of the \"Add domain\" page where you can choose \"I already have a domain name\" and setup your domain ending by .local](/img/webadmin/webadmin_domain_local.png)\n"
+#, fuzzy, no-wrap
+#| msgid "![Here a screenshot of the \"Add domain\" page where you can choose \"I already have a domain name\" and setup your domain ending by .local](/img/webadmin/webadmin_domain_local.png)\n"
+msgid "![Screenshot of the \"Add domain\" page where you can choose \"I already have a domain name\" and setup your domain ending by .local](/img/webadmin/webadmin_domain_local.png)\n"
 msgstr "![Pagina \"Aggiungere un dominio\" dove potete scegliere \"Ho già un nome di dominio\" e configurare un dominio che termina con .local](/img/webadmin/webadmin_domain_local.png)\n"
 
 #. type: Fenced div block (info)

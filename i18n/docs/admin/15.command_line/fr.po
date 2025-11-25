@@ -5,11 +5,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2025-11-22 19:31+0000\n"
+"POT-Creation-Date: 2025-11-25 00:44+0000\n"
 "PO-Revision-Date: 2025-11-25 00:43+0000\n"
 "Last-Translator: Weblate Admin <yunohost@translate.yunohost.org>\n"
-"Language-Team: French <https://translate.yunohost.org/projects/yunohost-doc/"
-"15command_line/fr/>\n"
+"Language-Team: French <https://translate.yunohost.org/projects/yunohost-"
+"doc/15command_line/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -101,12 +101,8 @@ msgid ""
 "- If you are **installing at home**, the default credentials are login: `root` and password: `yunohost` (or `1234` if you flashed an armbian image)\n"
 "- If you are **installing a remote server (VPS)**, your provider should have communicated you the login and password (or allowed you to configure an SSH key)\n"
 msgstr ""
-"- Si vous installez **à la maison**, les identifiants par défaut sont `root` "
-"et le mot de passe `yunohost` "
-"(ou `1234` si vous avez flashé une image Armbian) ;\n"
-"- Si vous installez **sur un serveur distant (VPS)**, votre fournisseur "
-"devrait vous avoir communiqué le login et le mot de passe "
-"(ou vous proposer de configurer une clé SSH).\n"
+"- Si vous installez **à la maison**, les identifiants par défaut sont `root` et le mot de passe `yunohost` (ou `1234` si vous avez flashé une image Armbian) ;\n"
+"- Si vous installez **sur un serveur distant (VPS)**, votre fournisseur devrait vous avoir communiqué le login et le mot de passe (ou vous proposer de configurer une clé SSH).\n"
 
 #. type: Title ###
 #: docs/admin/15.command_line.mdx:21
@@ -146,14 +142,9 @@ msgid ""
 "- if `yunohost.local` and the like do not work, your need to [find out the local IP of the server](/admin/get_started/post_install/find_ip).\n"
 "- if you installed a server at home but are attempting to connect from outside your local network, make sure port 22 is correctly forwarded to your server.\n"
 msgstr ""
-"- vous devriez pouvoir vous connecter au serveur en utilisant "
-"`yunohost.local` (ou `yunohost-2.local`, en fonction de si vous avez "
-"d'autres serveur yunohost sur le même réseau local).\n"
-"- si `yunohost.local` ne fonctionne pas, il vous faut "
-"[trouver l'IP locale du serveur](/admin/get_started/post_install/find_ip).\n"
-"- si vous avez installé un serveur à la maison et que vous essayer de vous "
-"connecter depuis l'extérieur du réseau local, assurez-vous que le port 22 "
-"est correctement redirigé vers votre serveur.\n"
+"- vous devriez pouvoir vous connecter au serveur en utilisant `yunohost.local` (ou `yunohost-2.local`, en fonction de si vous avez d'autres serveur yunohost sur le même réseau local).\n"
+"- si `yunohost.local` ne fonctionne pas, il vous faut [trouver l'IP locale du serveur](/admin/get_started/post_install/find_ip).\n"
+"- si vous avez installé un serveur à la maison et que vous essayer de vous connecter depuis l'extérieur du réseau local, assurez-vous que le port 22 est correctement redirigé vers votre serveur.\n"
 
 #. type: Plain text
 #: docs/admin/15.command_line.mdx:39
@@ -249,9 +240,7 @@ msgstr "SSH et sécurité"
 #: docs/admin/15.command_line.mdx:118
 #, no-wrap
 msgid "A more extensive discussion about security & SSH can be found on the [dedicated page](/admin/security).\n"
-msgstr ""
-"Une discussion plus complète sur la sécurité et sur SSH peut être trouvée "
-"sur [la page dédiée](/admin/tutorials/security).\n"
+msgstr "Une discussion plus complète sur la sécurité et sur SSH peut être trouvée sur [la page dédiée](/admin/tutorials/security).\n"
 
 #. type: Title ##
 #: docs/admin/15.command_line.mdx:119
@@ -321,8 +310,9 @@ msgstr "The `ynh-vpnclient-loadcubefile.sh` command"
 
 #. type: Plain text
 #: docs/admin/15.command_line.mdx:161
-#, no-wrap
-msgid "This command is only available if you have the `VPN Client` application installed. You can use it to load a new .cube in case you can't get to the VPN Client interface to do so.\n"
+#, fuzzy, no-wrap
+#| msgid "This command is only available if you have the `VPN Client` application installed. You can use it to load a new .cube in case you can't get to the VPN Client interface to do so.\n"
+msgid "This command is only available and relevant in the context of the `VPN Client` application installed. You can use it to load a new .cube in case you can't get to the VPN Client interface to do so.\n"
 msgstr "This command is only available if you have the `VPN Client` application installed. You can use it to load a new .cube in case you can't get to the VPN Client interface to do so.\n"
 
 #. type: Title ###
