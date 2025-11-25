@@ -13,7 +13,7 @@ Whenever you add a domain, it is assumed that you have purchased (or at least co
 
 Domains can be managed in the 'Domain' section of the webadmin, or through the `yunohost domain` category of the command line.
 
-![A screenshot of the webadmin domain interface with an "Add domain" button and a list of domains](/img/webadmin/webadmin_domain.png)
+![Screenshot of the webadmin domain interface with an "Add domain" button and a list of domains](/img/webadmin/webadmin_domain.png)
 
 ## 3 types of domains
 
@@ -32,7 +32,7 @@ In more, YunoHost uses an integrated dynamic DNS mechanism, so your server can s
 
 To get one of this domain you simply need to choose `I don't have a domaine name…` during the initial configuration (postinstall) or on the `Add domain` page.
 
-![Here a screenshot of the "Add domain" page where you can choose "I don't have a domain name"](/img/webadmin/webadmin_dyndns.png)
+![Screenshot of the "Add domain" page where you can choose "I don't have a domain name"](/img/webadmin/webadmin_dyndns.png)
 
 :::info
 To limit resources costs and abuses, each instance may only have one of these domains setup at any given time, however you can add as many sub-domains of it as you wish. For example, if you choose `example.noho.st` you can later add the domains `video.example.noho.st` or `www.example.ynh.noho.st` or any other sub-domain you may need. In this case you need to select `I already have a domain name`.
@@ -52,7 +52,7 @@ However, you have to pay for it each year (about 15€/year ... depending on the
 
 If you already have your own domain, you can simply click "I already have a domain name…". If you don't, in order to simplify and automate the DNS configuration, we suggest you to buy it from a [registrar whose API is supported by YunoHost](/admin/get_started/providers/registrar/).
 
-![Here a screenshot of the "Add domain" page where you can choose "I already have a domain name"](/img/webadmin/webadmin_domain_owndomain.png)
+![Screenshot of the "Add domain" page where you can choose "I already have a domain name"](/img/webadmin/webadmin_domain_owndomain.png)
 
 [Know more on DNS zone configuration](/admin/get_started/post_install/dns_config)
 
@@ -63,7 +63,7 @@ Starting from YunoHost v4.3, domains ending by `.local` are fully supported, in 
 They do not use the DNS protocol, but the mDNS one (also known as Zeroconf, Bonjour), which allows them to be published with no specific configuration but exclusively on your local network or VPN.
 Their use is this especially suitable when you do not need your apps to be available on the Internet.
 
-![Here a screenshot of the "Add domain" page where you can choose "I already have a domain name" and setup your domain ending by .local](/img/webadmin/webadmin_domain_local.png)
+![Screenshot of the "Add domain" page where you can choose "I already have a domain name" and setup your domain ending by .local](/img/webadmin/webadmin_domain_local.png)
 
 :::info
 mDNS protocol does not allow for subdomains to be created. So `domain.local` will work, while `sub.domain.local` is not possible.
