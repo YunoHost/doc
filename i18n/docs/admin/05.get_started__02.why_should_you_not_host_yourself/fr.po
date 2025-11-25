@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2025-11-19 03:11+0000\n"
-"PO-Revision-Date: 2025-11-25 00:39+0000\n"
+"PO-Revision-Date: 2025-11-25 05:03+0000\n"
 "Last-Translator: Weblate Admin <yunohost@translate.yunohost.org>\n"
 "Language-Team: French <https://translate.yunohost.org/projects/yunohost-doc/"
 "05get_started__02why_should_you_not_host_yourself/fr/>\n"
@@ -24,19 +24,17 @@ msgstr ""
 #: docs/admin/05.get_started/10.providers/20.servers.mdx:1
 #, no-wrap
 msgid " "
-msgstr ""
+msgstr " "
 
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/05.get_started/02.why_should_you_not_host_yourself.mdx:1
-#, fuzzy, no-wrap
-#| msgid "Why should you (not?) host yourself ?"
+#, no-wrap
 msgid "Why should you (not?) host yourself?"
 msgstr "Pourquoi (ne pas ?) s'auto-héberger ?"
 
 #. type: Title ##
 #: docs/admin/05.get_started/02.why_should_you_not_host_yourself.mdx:8
-#, fuzzy, no-wrap
-#| msgid "Why should you host yourself ?"
+#, no-wrap
 msgid "Why should you host yourself?"
 msgstr "Pourquoi s'auto-héberger ?"
 
@@ -66,8 +64,7 @@ msgstr "- **Vous voulez explorer de nouvelles possibilités et personnaliser vot
 
 #. type: Title ##
 #: docs/admin/05.get_started/02.why_should_you_not_host_yourself.mdx:18
-#, fuzzy, no-wrap
-#| msgid "Why should you *not* host yourself ?"
+#, no-wrap
 msgid "Why should you *not* host yourself?"
 msgstr "Pourquoi ne *pas* s'auto-héberger ?"
 
