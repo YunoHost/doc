@@ -1,14 +1,15 @@
 # Copyright (C) 2025 YunoHost Contributors
 # This file is distributed under the same license as the YunoHost documentation.
 #
+# GreNa <grena@grenabox.fr>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2025-11-19 02:54+0000\n"
-"PO-Revision-Date: 2025-11-10 01:35+0000\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: French <https://translate.yunohost.org/projects/doc-"
-"experimental/45tutorials__35email_configure_relay/fr/>\n"
+"PO-Revision-Date: 2025-11-23 11:41+0000\n"
+"Last-Translator: GreNa <grena@grenabox.fr>\n"
+"Language-Team: French <https://translate.yunohost.org/projects/yunohost-doc/"
+"45tutorials__35email_configure_relay/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -89,7 +90,8 @@ msgstr ""
 #: docs/admin/45.tutorials/35.email_configure_relay.mdx:15
 #, no-wrap
 msgid "<FAIcon icon=\"fa-exclamation-triangle\"/> Disadvantages of SMTP relays"
-msgstr "<FAIcon icon=\"fa-exclamation-triangle\"/>  Inconvénients des relais SMTP"
+msgstr ""
+"<FAIcon icon=\"fa-exclamation-triangle\"/> Inconvénients des relais SMTP"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/35.email_configure_relay.mdx:18
@@ -141,18 +143,33 @@ msgid ""
 "Standard procedure is to add a DKIM key and a SPF key to your DNS records.\n"
 "The way to modify these records and the value of the keys you'll have to add depend both on your domain name provider and SMTP relay provider.\n"
 msgstr ""
+"Une fois inscrit, le fournisseur de relais SMTP vous demandera généralement "
+"de modifier votre DNS.\n"
+"La procédure standard consiste à ajouter une clé DKIM et une clé SPF à vos "
+"enregistrements DNS.\n"
+"La manière de modifier ces enregistrements et la valeur des clés que vous "
+"devrez ajouter dépendent à la fois de votre fournisseur de nom de domaine et "
+"de votre fournisseur de relais SMTP.\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/35.email_configure_relay.mdx:36
 #, no-wrap
 msgid "Usually, the SMTP relay provider will provide you with a guide on how to modify these records, together with an automatic check tool that will tell you when your DNS have been setup correctly. That step is mandatory to prove \"the world\" that you, owner of your domain name, did explicitly authorize your SMTP relay provider to send emails on your behalf.\n"
 msgstr ""
+"En général, le fournisseur de relais SMTP vous fournira un guide expliquant "
+"comment modifier ces enregistrements, ainsi qu'un outil de vérification "
+"automatique qui vous indiquera lorsque votre DNS aura été correctement "
+"configuré. Cette étape est obligatoire pour prouver « au monde entier » que "
+"vous, propriétaire de votre nom de domaine, avez explicitement autorisé "
+"votre fournisseur de relais SMTP à envoyer des e-mails en votre nom.\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/35.email_configure_relay.mdx:38
 #, no-wrap
 msgid "Please note that modifying your DNS records could sometimes take over 24h to take effect, so be patient!\n"
 msgstr ""
+"Veuillez noter que la modification de vos enregistrements DNS peut parfois "
+"prendre plus de 24 heures pour prendre effet, alors soyez patient !\n"
 
 #. type: Fenced div block (warning)
 #: docs/admin/45.tutorials/35.email_configure_relay.mdx:39
@@ -191,13 +208,22 @@ msgid ""
 "- **SMTP relay user** : Login or identification mail server.\n"
 "- **SMTP relay password** : Your SMTP relay password.\n"
 msgstr ""
+"- **Adresse du relais SMTP** : URL du serveur SMTP.\n"
+"- **Port relais SMTP** : Port utilisé avec le serveur distant.\n"
+"- **Compte du relais SMTP** : Identifiant ou nom d'utilisateur du serveur de "
+"messagerie.\n"
+"- **Mot de passe relais SMTP** : Votre mot de passe relais SMTP.\n"
 
 #. type: Fenced div block (warning)
 #: docs/admin/45.tutorials/35.email_configure_relay.mdx:58
 #: docs/admin/45.tutorials/35.email_configure_relay.mdx:74
 #, no-wrap
 msgid "<FAIcon icon=\"fa-exclamation-triangle\"/> Password with `#` char won't works properly due to postfix limitation (it's possible other chars are forbidden, don't hesitate to report it to update this doc).\n"
-msgstr "<FAIcon icon=\"fa-exclamation-triangle\"/>  Les mots de passe avec le caractère `#` ne fonctionneront pas proprement à cause d'une limitation de postfix (d'autres caractères sont peut-être interdit, n'hésitez pas à rapporter ce genre de cas pour la mise à jour de cette doc).\n"
+msgstr ""
+"<FAIcon icon=\"fa-exclamation-triangle\"/> Les mots de passe avec le "
+"caractère `#` ne fonctionneront pas proprement à cause d'une limitation de "
+"postfix (d'autres caractères sont peut-être interdit, n'hésitez pas à "
+"rapporter ce genre de cas pour la mise à jour de cette doc).\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/35.email_configure_relay.mdx:63
@@ -220,6 +246,14 @@ msgid ""
 "3. Your SMTP relay username (for this tutorial we will use `username`)\n"
 "4. Your SMTP relay password (for this tutorial we will use `password`)\n"
 msgstr ""
+"1. L'URL de votre relais SMTP "
+"(pour ce tutoriel, nous utiliserons `smtprelay.tld`)\n"
+"2. Le port sur lequel vous accédez au relais "
+"(pour ce tutoriel, nous utiliserons le port 2525 ci-dessous)\n"
+"3. Votre nom d'utilisateur pour le relais SMTP "
+"(pour ce tutoriel, nous utiliserons `username`)\n"
+"4. Votre mot de passe pour le relais SMTP "
+"(pour ce tutoriel, nous utiliserons `password`)\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/35.email_configure_relay.mdx:79
@@ -283,3 +317,11 @@ msgid ""
 "Some of the SMTP relay will give you insights about the emails you send so that can also be a good way to check that everythings works as needed.\n"
 "Of course, you can always have a try with [mail-tester.com](https://www.mail-tester.com/) to check for any problem or discrepancy.\n"
 msgstr ""
+"Vous pouvez vérifier votre configuration en envoyant des e-mails et en "
+"testant si tout fonctionne correctement.\n"
+"Certains relais SMTP vous fournissent des informations sur les e-mails que "
+"vous envoyez, ce qui peut également être un bon moyen de vérifier que tout "
+"fonctionne comme prévu.\n"
+"Bien sûr, vous pouvez toujours essayer [mail-tester.com]"
+"(https://www.mail-tester.com/) pour vérifier s'il y a des problèmes ou des "
+"anomalies.\n"
