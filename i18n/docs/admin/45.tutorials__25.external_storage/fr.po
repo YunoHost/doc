@@ -6,10 +6,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2025-11-22 20:20+0000\n"
-"PO-Revision-Date: 2025-11-22 20:21+0000\n"
+"PO-Revision-Date: 2025-11-25 00:39+0000\n"
 "Last-Translator: Weblate Admin <yunohost@translate.yunohost.org>\n"
-"Language-Team: French <https://translate.yunohost.org/projects/yunohost-"
-"doc/45tutorials__25external_storage/fr/>\n"
+"Language-Team: French <https://translate.yunohost.org/projects/yunohost-doc/"
+"45tutorials__25external_storage/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -213,10 +213,15 @@ msgstr "Avant de pouvoir utiliser votre disque, il doit être formaté.\n"
 
 #. type: Fenced div block (warning)
 #: docs/admin/45.tutorials/25.external_storage.mdx:97
-#, fuzzy, no-wrap
-#| msgid "<FAIcon icon=\"fa-exclamation-triangle\"/> **Formatting a disk means deleting all the data on it! Be careful not to get the name wrong, as this may result in formatting a different disk than the one you want! In the example given earlier, it was `/dev/sda`. If your disk is already \"clean\", you can skip this step.\n"
+#, no-wrap
 msgid "<FAIcon icon=\"fa-exclamation-triangle\"/> **Formatting a disk means deleting all the data on it!** Be careful not to get the name wrong, as this may result in formatting a different disk than the one you want! In the example given earlier, it was `/dev/sda`. If your disk is already \"clean\", you can skip this step.\n"
-msgstr "<FAIcon icon=\"fa-exclamation-triangle\"/> **Formater un disque implique de supprimer toutes les données inscrites dessus !**. Attention à ne pas vous tromper de nom, car cela peut avoir pour conséquence de formater un autre disque que celui voulu ! Dans l'exemple donné précédemment, il s'agissait de `/dev/sda`. Si votre disque est déjà \"propre\", vous pouvez passer cette étape.\n"
+msgstr ""
+"<FAIcon icon=\"fa-exclamation-triangle\"/> **Formater un disque signifie "
+"supprimer toutes les données inscrites dessus !**. Attention à ne pas vous "
+"tromper de nom, car cela peut avoir pour conséquence de formater un autre "
+"disque que celui voulu ! Dans l'exemple donné précédemment, il s'agissait de "
+"`/dev/sda`. Si votre disque est déjà \"propre\", vous pouvez passer cette "
+"étape.\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/25.external_storage.mdx:102

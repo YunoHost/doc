@@ -2,12 +2,13 @@
 # This file is distributed under the same license as the YunoHost documentation.
 #
 # Éric Gaspar <junk.eg@free.fr>, 2025.
+# Weblate Admin <yunohost@translate.yunohost.org>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2025-11-19 03:11+0000\n"
-"PO-Revision-Date: 2025-11-23 16:52+0000\n"
-"Last-Translator: Éric Gaspar <junk.eg@free.fr>\n"
+"PO-Revision-Date: 2025-11-25 00:39+0000\n"
+"Last-Translator: Weblate Admin <yunohost@translate.yunohost.org>\n"
 "Language-Team: French <https://translate.yunohost.org/projects/yunohost-doc/"
 "05get_started__02why_should_you_not_host_yourself/fr/>\n"
 "Language: fr\n"
@@ -23,7 +24,7 @@ msgstr ""
 #: docs/admin/05.get_started/10.providers/20.servers.mdx:1
 #, no-wrap
 msgid " "
-msgstr " . "
+msgstr ""
 
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/05.get_started/02.why_should_you_not_host_yourself.mdx:1
