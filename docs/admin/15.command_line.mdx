@@ -152,12 +152,12 @@ This command allow you to share with an other person the output of a command.
 Example:
 
 ```bash
-yunohost diagnosis show | yunopaste
+tail -n 100 /var/log/mail.info | yunopaste
 ```
 
 ### The `ynh-vpnclient-loadcubefile.sh` command
 
-This command is only available if you have the `VPN Client` application installed. You can use it to load a new .cube in case you can't get to the VPN Client interface to do so.
+This command is only available and relevant in the context of the `VPN Client` application installed. You can use it to load a new .cube in case you can't get to the VPN Client interface to do so.
 
 ```bash
 ynh-vpnclient-loadcubefile.sh -u <username> -p <password> -c <path>.cube
