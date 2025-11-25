@@ -1,17 +1,21 @@
 # Copyright (C) 2025 YunoHost Contributors
 # This file is distributed under the same license as the YunoHost documentation.
 #
+# Weblate Admin <yunohost@translate.yunohost.org>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2025-11-22 19:10+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
-"Language: \n"
+"PO-Revision-Date: 2025-11-25 05:03+0000\n"
+"Last-Translator: Weblate Admin <yunohost@translate.yunohost.org>\n"
+"Language-Team: French <https://translate.yunohost.org/projects/yunohost-doc/"
+"05get_started__40post_install__15port_forwarding/fr/>\n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.14.2\n"
 
 #. type: Yaml Front Matter Hash Value: description
 #: docs/admin/05.get_started/40.post_install/15.port_forwarding.mdx:1
@@ -27,10 +31,14 @@ msgstr "Configurer la redirection des ports"
 
 #. type: Plain text
 #: docs/admin/05.get_started/40.post_install/15.port_forwarding.mdx:7
-#, fuzzy, no-wrap
-#| msgid "If you are self-hosting at home and without a VPN, you need to forward ports on your home router (\"Internet box\"). The sketch below tries to briefly summarize the role and necessity of port forwarding when setting up a server at home.\n"
+#, no-wrap
 msgid "If you are self-hosting at home and without a VPN, you will probably want to forward ports on your home router (\"Internet box\") if you want your server to be reachable from outside your local network. The sketch below tries to briefly summarize the role and necessity of port forwarding when setting up a server at home.\n"
-msgstr "Si vous vous auto-hébergez à la maison et sans VPN, il vous faut rediriger les ports de votre routeur (\"machin-box\"). Le schéma ci-dessous tente d'expliquer brièvement le rôle de la redirection des ports lors de la mise en place d'un serveur à la maison.\n"
+msgstr ""
+"Si vous vous auto-hébergez à la maison et sans VPN, il vous faut rediriger "
+"les ports de votre routeur (\"machin-box\") si vous souhaitez que votre "
+"serveur puisse être contacté depuis l'extérieur de votre réseau local. Le "
+"schéma ci-dessous tente d'expliquer brièvement le rôle de la redirection des "
+"ports lors de la mise en place d'un serveur à la maison.\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/40.post_install/15.port_forwarding.mdx:9
@@ -46,14 +54,11 @@ msgstr "0. Diagnostiquer les ports ouverts"
 
 #. type: Plain text
 #: docs/admin/05.get_started/40.post_install/15.port_forwarding.mdx:13
-#, fuzzy, no-wrap
-#| msgid ""
-#| "The new diagnosis tool introduced in 3.8 can be used to diagnose that ports are\n"
-#| "correctly exposed.\n"
+#, no-wrap
 msgid "The diagnosis tool can be used to verify that all necessary ports are exposed to the Internet.\n"
 msgstr ""
-"Une fois les redirections configurées, l'outil de diagnostic introduit dans\n"
-"YunoHost 3.8 vous permettra de vérifier si les ports sont correctement exposés.\n"
+"L'outil de diagnostic peut être utilisé pour vérifier que tous les ports "
+"nécessaires sont exposés sur Internet.\n"
 
 #. type: Title ###
 #: docs/admin/05.get_started/40.post_install/15.port_forwarding.mdx:14
@@ -102,13 +107,13 @@ msgstr "3. Rediriger les ports"
 
 #. type: Plain text
 #: docs/admin/05.get_started/40.post_install/15.port_forwarding.mdx:29
-#, fuzzy, no-wrap
-#| msgid "In your router admin interface, look for something like 'router configuration' or 'port forwarding'. The naming differs among the various kinds of boxes.\n"
+#, no-wrap
 msgid "In your router admin interface, look for something like \"router configuration\" or \"port forwarding\". The naming differs among the various kinds of router models.\n"
 msgstr ""
-"Dans l'interface d'administration de votre box/routeur, il vous faut trouver\n"
-"une catégorie comme 'Configuration du routeur', ou 'Redirections de ports'. Le\n"
-"nom diffère suivant le type / marque de la box...\n"
+"Dans l'interface d'administration de votre box/routeur, il vous faut trouver "
+"une catégorie comme \"Configuration du routeur\", ou "
+"\"Redirections de ports\". Le nom diffère suivant le type / marque de la box."
+"\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/40.post_install/15.port_forwarding.mdx:31
@@ -124,6 +129,10 @@ msgid ""
 "- [SSH](/admin/command_line): `22`\n"
 "- [Email](/admin/email): `25`, `587` <small>(SMTP)</small>, `993` <small>(IMAP)</small>\n"
 msgstr ""
+"- Web: `80` <small>(HTTP)</small>, `443` <small>(HTTPS)</small>\n"
+"- [SSH](/admin/command_line): `22`\n"
+"- [Email](/admin/email): `25`, `587` <small>(SMTP)</small>, `993` <small>"
+"(IMAP)</small>\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/40.post_install/15.port_forwarding.mdx:37
@@ -141,10 +150,16 @@ msgstr ""
 
 #. type: Fenced div block (warning)
 #: docs/admin/05.get_started/40.post_install/15.port_forwarding.mdx:41
-#, fuzzy, no-wrap
-#| msgid "<FAIcon icon=\"fa-exclamation-triangle\"/> Some internet service providers block port 25 (mail SMTP) by default to fight spam. Some other ISP don't allow to use port 80/443 (web) freely, though it's less likely. Depending on the ISP, it might be possible to open them in the admin interface... Check [this page](/admin/get_started/providers/isp/) for more info.\n"
+#, no-wrap
 msgid "<FAIcon icon=\"fa-exclamation-triangle\"/> Many internet service providers (ISP) block outgoing traffic on port 25 by default, to fight spam. Port 25 is however necessary if you want your server to be able to send email. In other extreme cases, some ISP may not even allow to use port 80/443 (web) freely... Depending on the ISP, it might be possible to open them in the admin interface... Check [this page](/admin/get_started/providers/isp/) for more info.\n"
-msgstr "<FAIcon icon=\"fa-exclamation-triangle\"/> Certains fournisseurs d'accès à Internet bloquent le port 25 (mail SMTP) par défaut pour combattre le spam. D'autres (plus rares) ne permettent pas d'utiliser librement les ports 80/443. En fonction de votre FAI, il peut être possible d'ouvrir ces ports dans l'interface... Voir [cette page](/admin/get_started/providers/isp/) pour plus d'informations.\n"
+msgstr ""
+"<FAIcon icon=\"fa-exclamation-triangle\"/> Certains fournisseurs d'accès à "
+"Internet bloquent le port 25 (mail SMTP) par défaut pour combattre le spam. "
+"Le port 25 est pourtant nécessaire si vous souhaitez que votre serveur "
+"puisse envoyer de emails. Dans certains cas extrême , votre FAI peut même ne "
+"pas vous laisser utiliser librement les port 80/443 (web). En fonction de "
+"votre FAI, il peut être possible d'ouvrir ces ports dans l'interface... Voir "
+"[cette page](/admin/get_started/providers/isp/) pour plus d'informations.\n"
 
 #, no-wrap
 #~ msgid "Automatic port forwarding / UPnP"

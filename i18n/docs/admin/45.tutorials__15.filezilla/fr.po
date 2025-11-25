@@ -1,17 +1,21 @@
 # Copyright (C) 2025 YunoHost Contributors
 # This file is distributed under the same license as the YunoHost documentation.
 #
+# Weblate Admin <yunohost@translate.yunohost.org>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2025-11-11 00:07+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
-"Language: \n"
+"PO-Revision-Date: 2025-11-25 05:03+0000\n"
+"Last-Translator: Weblate Admin <yunohost@translate.yunohost.org>\n"
+"Language-Team: French <https://translate.yunohost.org/projects/yunohost-doc/"
+"45tutorials__15filezilla/fr/>\n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.14.2\n"
 
 #. type: Yaml Front Matter Hash Value: sidebar_label
 #: docs/admin/45.tutorials/15.filezilla.mdx:1
@@ -75,10 +79,17 @@ msgstr "   ![écran principal de Filezilla](/img/softwares/filezilla_1.png)\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/15.filezilla.mdx:23
-#, fuzzy, no-wrap
-#| msgid "Click **New Site** and give a name the server you will be using : *Family* here. Fill the settings as on the screenshot (replace the server address with your own and leave the port field empty unless you changed your SSH port number, in which case use this port number), and click on **Connect**. (N.B. : if you want to interact with the [custom webapp](https://github.com/YunoHost-Apps/my_webapp_ynh) files, you should use a different user than `admin`. Refer to the custom webapp documentation.)\n"
+#, no-wrap
 msgid "2. Click **New Site** and give a name the server you will be using : *Family* here. Fill the settings as on the screenshot (replace the server address with your own and leave the port field empty unless you changed your SSH port number, in which case use this port number), and click on **Connect**. (N.B. : if you want to interact with the [custom webapp](https://github.com/YunoHost-Apps/my_webapp_ynh) files, you should use a different user than `admin`. Refer to the custom webapp documentation.)\n"
-msgstr "Cliquez sur **Nouveau site** et donnez un nom au serveur que vous allez utiliser. Par exemple \"Famille\". Remplissez les paramètres comme sur la capture d'écran (en remplaçant l'adresse du serveur par la vôtre). Une fois terminé, cliquez sur **Connexion**. (N.B. : si vous souhaitez éditer les fichiers de l'application [custom webapp](https://github.com/YunoHost-Apps/my_webapp_ynh), il vous faudra utiliser un autre utilisateur que admin. Se référer à la documentation de custom webapp.)\n"
+msgstr ""
+"2. Cliquez sur **Nouveau site** et donnez un nom au serveur que vous allez "
+"utiliser. Par exemple *Famille*. Remplissez les paramètres comme sur la "
+"capture d'écran (en remplaçant l'adresse du serveur par la vôtre). Une fois "
+"terminé, cliquez sur **Connexion**. (N.B. : si vous souhaitez éditer les "
+"fichiers de l'application [custom webapp]"
+"(https://github.com/YunoHost-Apps/my_webapp_ynh), il vous faudra utiliser un "
+"autre utilisateur que `admin`. Se référer à la documentation de custom "
+"webapp.)\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/15.filezilla.mdx:25
@@ -168,7 +179,9 @@ msgstr "   <FAIcon icon=\"fa-cloud-download\"/> Assurez-vous de télécharger à
 #: docs/admin/45.tutorials/15.filezilla.mdx:55
 #, no-wrap
 msgid "   ![Copy backups from YunoHost to local computer](/img/softwares/filezilla_8.png)\n"
-msgstr "![Copier les sauvegardes de YunoHost sur l'ordinateur local](/img/softwares/filezilla_8.png)\n"
+msgstr ""
+"   ![Copier les sauvegardes de YunoHost sur l'ordinateur local]"
+"(/img/softwares/filezilla_8.png)\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/15.filezilla.mdx:59
@@ -178,12 +191,15 @@ msgstr "Sources\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/15.filezilla.mdx:62
-#, fuzzy, no-wrap
-#| msgid "[General tutorial about using FileZilla](https://www.rc.fas.harvard.edu/resources/documentation/sftp-file-transfer/)\n"
+#, no-wrap
 msgid ""
 "- [Official documentation](https://wiki.filezilla-project.org/FileZilla_Client_Tutorial_(en))\n"
 "- [General tutorial about using FileZilla](https://www.rc.fas.harvard.edu/resources/documentation/sftp-file-transfer/)\n"
-msgstr "[Tutoriel général à Filezilla](https://www.rc.fas.harvard.edu/resources/documentation/sftp-file-transfer/)\n"
+msgstr ""
+"- [Documentation offcielle]"
+"(https://wiki.filezilla-project.org/FileZilla_Client_Tutorial_(en))\n"
+"- [Tutoriel général à propos de l'utilisation de FileZilla](https://"
+"www.rc.fas.harvard.edu/resources/documentation/sftp-file-transfer/)\n"
 
 #. type: Title ##
 #: docs/admin/45.tutorials/15.filezilla.mdx:63
@@ -217,6 +233,12 @@ msgid ""
 "- [Dolphin](https://docs.kde.org/stable5/en/dolphin/dolphin/location-bar.html#location-bar-editable-kioslaves)\n"
 "- [Tutorial for Nautilus and SFTP](https://www.techrepublic.com/article/how-to-use-linux-file-manager-to-connect-to-an-sftp-server/)\n"
 msgstr ""
+"- [Nautilus Connect]"
+"(https://help.gnome.org/users/gnome-help/stable/nautilus-connect.html.en)\n"
+"- [Dolphin](https://docs.kde.org/stable5/en/dolphin/dolphin/location-bar.html"
+"#location-bar-editable-kioslaves)\n"
+"- [Tutoriel pour Nautilus et SFTP](https://www.techrepublic.com/article/"
+"how-to-use-linux-file-manager-to-connect-to-an-sftp-server/)\n"
 
 #. type: Title ###
 #: docs/admin/45.tutorials/15.filezilla.mdx:75

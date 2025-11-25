@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2025-11-22 20:23+0000\n"
-"PO-Revision-Date: 2025-11-25 00:43+0000\n"
+"PO-Revision-Date: 2025-11-25 05:03+0000\n"
 "Last-Translator: Weblate Admin <yunohost@translate.yunohost.org>\n"
 "Language-Team: French <https://translate.yunohost.org/projects/yunohost-doc/"
 "05get_started__40post_install__20dns_config/fr/>\n"
@@ -111,8 +111,8 @@ msgstr "La configuration recommandée ressemble typiquement à :\n"
 #, no-wrap
 msgid "Though it might be easier to understand it if displayed like this:\n"
 msgstr ""
-"Mais il est peut-être plus facile de la comprendre affichée de la façon\n"
-"suivante :\n"
+"Mais il est peut-être plus facile de la comprendre affichée de la façon "
+"suivante :\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/40.post_install/20.dns_config.mdx:62
@@ -203,9 +203,10 @@ msgid ""
 "spam by anti-spam filters.\n"
 msgstr ""
 "Si votre opérateur ou votre hébergeur le permet, nous vous encourageons à\n"
-"configurer une [résolution DNS\n"
-"inverse](https://fr.wikipedia.org/wiki/Domain_Name_System#R%C3%A9solution_inverse)\n"
-"pour vos adresses publiques IPv4 et/ou IPv6. Ceci vous évitera d'être marqué\n"
+"configurer une [résolution DNS inverse]"
+"(https://fr.wikipedia.org/wiki/Domain_Name_System#R%C3%A9solution_inverse)\n"
+"pour vos adresses publiques IPv4 et/ou IPv6. Ceci vous évitera d'être "
+"marqué\n"
 "comme spammeur par les systèmes de filtrage anti-spams.\n"
 
 #. type: Plain text

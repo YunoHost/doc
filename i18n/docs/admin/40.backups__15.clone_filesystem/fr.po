@@ -1,14 +1,15 @@
 # Copyright (C) 2025 YunoHost Contributors
 # This file is distributed under the same license as the YunoHost documentation.
 #
+# Weblate Admin <yunohost@translate.yunohost.org>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2025-11-11 01:24+0100\n"
-"PO-Revision-Date: 2025-11-10 15:50+0000\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: French <https://translate.yunohost.org/projects/doc-"
-"experimental/40backups__15clone_filesystem/fr/>\n"
+"PO-Revision-Date: 2025-11-25 05:03+0000\n"
+"Last-Translator: Weblate Admin <yunohost@translate.yunohost.org>\n"
+"Language-Team: French <https://translate.yunohost.org/projects/yunohost-doc/"
+"40backups__15clone_filesystem/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -91,6 +92,13 @@ msgid ""
 "- [OVH](https://docs.ovh.com/fr/vps/snapshot-vps/)\n"
 "- [Scaleway (EN)](https://www.scaleway.com/en/docs/backup-your-data-with-snapshots/)\n"
 msgstr ""
+"- [DigitalOcean (EN)]"
+"(https://docs.digitalocean.com/products/images/snapshots/)\n"
+"- [Gandi](https://docs.gandi.net/fr/simple_hosting/operations_courantes/"
+"snapshots.html)\n"
+"- [OVH](https://docs.ovh.com/fr/vps/snapshot-vps/)\n"
+"- [Scaleway (EN)]"
+"(https://www.scaleway.com/en/docs/backup-your-data-with-snapshots/)\n"
 
 #. type: Plain text
 #: docs/admin/40.backups/15.clone_filesystem.mdx:38
@@ -136,6 +144,11 @@ msgid ""
 "- Choose `Snapshot` mode\n"
 "- Validate\n"
 msgstr ""
+"- Selectionnez la machine virtuelle\n"
+"- Allez dans l'onglet `Backup`\n"
+"- Clickez sur `Backup now`.\n"
+"- Choisissez le mode `Snapshot`\n"
+"- Validez\n"
 
 #. type: Plain text
 #: docs/admin/40.backups/15.clone_filesystem.mdx:59
@@ -249,13 +262,17 @@ msgstr "Ceci peut être effectué avec [USBimager](https://bztsrc.gitlab.io/usbi
 
 #. type: Plain text
 #: docs/admin/40.backups/15.clone_filesystem.mdx:171
-#, fuzzy, no-wrap
-#| msgid "In USBimager, click on \"Read\" to create an image (\"photograph\") of the SD card. You can use the resulting file to restore the whole system later.\n"
+#, no-wrap
 msgid ""
 "- Turn off your server\n"
 "- Retrieve the SD card and plug it into your computer\n"
 "- In USBimager, click on \"Read\" to create an image (\"photograph\") of the SD card. You can use the resulting file to restore the whole system later.\n"
-msgstr "Dans USBimager, cliquez sur \"Read\" pour créer une image (\"photographie\") de la carte SD. Vous pouvez utiliser le fichier obtenu pour plus tard restaurer le système en entier.\n"
+msgstr ""
+"- Éteignez votre serveur\n"
+"- Récupérez la carte SD et insérez là dans votre ordinateur\n"
+"- Dans USBimager, cliquez sur \"Read\" pour créer une image "
+"(\"photographie\") de la carte SD. Vous pouvez utiliser le fichier obtenu "
+"pour plus tard restaurer le système en entier.\n"
 
 #. type: Plain text
 #: docs/admin/40.backups/15.clone_filesystem.mdx:173
