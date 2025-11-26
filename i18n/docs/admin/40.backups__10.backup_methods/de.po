@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2025-11-11 19:34+0100\n"
+"POT-Creation-Date: 2025-11-26 17:46+0000\n"
 "PO-Revision-Date: 2025-11-11 19:34+0100\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -61,7 +61,7 @@ msgstr ""
 #: docs/admin/40.backups/10.backup_methods.mdx:24
 #, no-wrap
 msgid ""
-"- backup of data to remote storage (support for different types of storage: currently SFTP, S3 is planned)\n"
+"- backup of data to remote storage (support for different types of storage: SFTP, S3, Backblaze B2, Azure, etc. *SFTP is recommended* for simplicity)\n"
 "- deduplication and compression of files, which makes it possible to keep many previous copies without too much storage overhead\n"
 "- data encryption, which allows to store data at a third party\n"
 "- to define the frequency and type of data to be backed up\n"
