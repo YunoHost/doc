@@ -1,17 +1,21 @@
 # Copyright (C) 2025 YunoHost Contributors
 # This file is distributed under the same license as the YunoHost documentation.
 #
+# ppr <pouetpouetratatouille@gmail.com>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2025-11-11 00:07+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
-"Language: \n"
+"PO-Revision-Date: 2025-11-26 22:17+0000\n"
+"Last-Translator: ppr <pouetpouetratatouille@gmail.com>\n"
+"Language-Team: French <https://translate.yunohost.org/projects/yunohost-doc/"
+"05get_started__10providers__05registrar__ovh__autodns/fr/>\n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.14.2\n"
 
 #. type: Fenced div block (caution)
 #: docs/admin/05.get_started/10.providers/05.registrar/gandi.mdx:8
@@ -40,19 +44,23 @@ msgstr "Cette page a pour but de vous guider dans l'obtention d'une clé API aup
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/05.registrar/ovh/autodns.mdx:13
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "1. Go to [the OVH token request page](https://eu.api.ovh.com/createToken/)\n"
-msgstr "1. Allez sur [la page de demande de jeton OVH](https://eu.api.ovh.com/createToken/)\n"
+msgstr ""
+"1. Allez sur [la page de demande de jeton OVH]"
+"(https://eu.api.ovh.com/createToken/)\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/05.registrar/ovh/autodns.mdx:15
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "2. Fill the form with the required informations as shown below:\n"
-msgstr "2. Remplissez le formulaire avec les informations requises comme indiqué ci-dessous :\n"
+msgstr ""
+"2. Remplissez le formulaire avec les informations requises comme indiqué ci-"
+"dessous :\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/05.registrar/ovh/autodns.mdx:26
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "    - Account ID or email address: This is your usual OVH login\n"
 "    - Password: This is your usual OVH password\n"
@@ -65,6 +73,17 @@ msgid ""
 "      - `PUT` : `/domain/zone/*`\n"
 "      - `DELETE` : `/domain/zone/*`\n"
 msgstr ""
+"    - Identifiant ou adresse e-mail : il s'agit de votre identifiant OVH "
+"habituel\n"
+"     - Mot de passe : il s'agit de votre mot de passe OVH habituel\n"
+"     - Nom du script : par exemple `YunoHost Auto DNS`\n"
+"     - Description du script : par exemple `YunoHost Auto DNS`\n"
+"     - Validité : `Illimitée`\n"
+"     - Droits : utilisez le bouton `+` pour ajouter les lignes suivantes\n"
+"      -- `GET` : « /domain/zone/*`\n"
+"      -- `POST` : `/domain/zone/*`\n"
+"      -- `PUT` : `/domain/zone/*`\n"
+"      -- `DELETE` : `/domain/zone/*`\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/05.registrar/ovh/autodns.mdx:29

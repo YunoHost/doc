@@ -4,12 +4,13 @@
 # Automatically generated, 2025.
 #
 # Weblate Admin <yunohost@translate.yunohost.org>, 2025.
+# ppr <pouetpouetratatouille@gmail.com>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2025-11-22 19:19+0000\n"
-"PO-Revision-Date: 2025-11-22 20:21+0000\n"
-"Last-Translator: Weblate Admin <yunohost@translate.yunohost.org>\n"
+"PO-Revision-Date: 2025-11-26 17:46+0000\n"
+"Last-Translator: ppr <pouetpouetratatouille@gmail.com>\n"
 "Language-Team: French <https://translate.yunohost.org/projects/yunohost-doc/"
 "43upgrade__110-bullseye/fr/>\n"
 "Language: fr\n"
@@ -44,6 +45,9 @@ msgstr ""
 #, no-wrap
 msgid "- The YunoHost team did its best to make sure that the migration is as smooth as possible and was tested over the course of several months in several cases.\n"
 msgstr ""
+"- L'équipe YunoHost a fait tout son possible pour que la migration se "
+"déroule dans les meilleures conditions possibles et l'a testée pendant "
+"plusieurs mois dans différents cas de figure.\n"
 
 #. type: Plain text
 #: docs/admin/43.upgrade/11.0-bullseye.mdx:12
@@ -64,6 +68,8 @@ msgstr ""
 #, no-wrap
 msgid "- **You should watch the known issues at the bottom of this page, to be sure your migrations will work properly.**\n"
 msgstr ""
+"- **Vous devriez consulter les problèmes connus au bas de cette page, afin "
+"de vous assurer que vos migrations fonctionneront correctement.**\n"
 
 #. type: Title ##
 #: docs/admin/43.upgrade/11.0-bullseye.mdx:17

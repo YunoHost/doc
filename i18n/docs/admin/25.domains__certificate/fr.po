@@ -1,14 +1,15 @@
 # Copyright (C) 2025 YunoHost Contributors
 # This file is distributed under the same license as the YunoHost documentation.
 #
+# ppr <pouetpouetratatouille@gmail.com>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2025-11-19 02:54+0000\n"
-"PO-Revision-Date: 2025-11-10 01:35+0000\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: French <https://translate.yunohost.org/projects/doc-"
-"experimental/25domains__certificate/fr/>\n"
+"PO-Revision-Date: 2025-11-26 22:17+0000\n"
+"Last-Translator: ppr <pouetpouetratatouille@gmail.com>\n"
+"Language-Team: French <https://translate.yunohost.org/projects/yunohost-doc/"
+"25domains__certificate/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -94,6 +95,11 @@ msgstr ""
 #, no-wrap
 msgid "To avoid this confusion, it's possible to get a certificate signed a known authority named **Let's Encrypt** which provide free certificates directly recognized by browsers. YunoHost allows to directly install this certificate from the web administration interface or from the command line.\n"
 msgstr ""
+"Pour éviter cette confusion, il est possible d'obtenir un certificat signé "
+"par une autorité reconnue, appelée **Let's Encrypt**, qui fournit des "
+"certificats gratuits directement reconnus par les navigateurs. YunoHost "
+"permet d'installer directement ce certificat depuis l'interface "
+"d'administration web ou depuis la ligne de commande.\n"
 
 #. type: Title ##
 #: docs/admin/25.domains/certificate.mdx:21
@@ -206,9 +212,13 @@ msgstr ""
 
 #. type: Plain text
 #: docs/admin/25.domains/certificate.mdx:84
-#, fuzzy, no-wrap
-#| msgid "if the certificate installation still doesn't work, you can disable the checks with `--no-checks` after the `cert install` command.\n"
+#, no-wrap
 msgid ""
 "- add a line `127.0.0.1 your.domain.tld` to the file `/etc/hosts` on your server;\n"
 "- if the certificate installation still doesn't work, you can disable the checks with `--no-checks` after the `cert install` command.\n"
-msgstr "si l'installation ne fonctionne toujours pas, de désactiver les vérifications en ajoutant `--no-checks` à la commande `cert install`.\n"
+msgstr ""
+"- ajoutez la ligne `127.0.0.1 votre.domaine.tld` au fichier `/etc/hosts` sur "
+"votre serveur ;\n"
+"- si l'installation du certificat ne fonctionne toujours pas, vous pouvez "
+"désactiver les vérifications avec l'option `--no-checks` après la commande `"
+"cert install`.\n"

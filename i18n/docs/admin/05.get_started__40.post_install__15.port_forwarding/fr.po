@@ -2,12 +2,13 @@
 # This file is distributed under the same license as the YunoHost documentation.
 #
 # Weblate Admin <yunohost@translate.yunohost.org>, 2025.
+# ppr <pouetpouetratatouille@gmail.com>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2025-11-22 19:10+0000\n"
-"PO-Revision-Date: 2025-11-25 05:03+0000\n"
-"Last-Translator: Weblate Admin <yunohost@translate.yunohost.org>\n"
+"PO-Revision-Date: 2025-11-26 22:17+0000\n"
+"Last-Translator: ppr <pouetpouetratatouille@gmail.com>\n"
 "Language-Team: French <https://translate.yunohost.org/projects/yunohost-doc/"
 "05get_started__40post_install__15port_forwarding/fr/>\n"
 "Language: fr\n"
@@ -98,6 +99,10 @@ msgstr "Une adresse IP locale ressemble généralement à `192.168.xx.yy`, ou `1
 #, no-wrap
 msgid "The local IP address needs to be static, so that the port forwards that you are going to configure in the next step will always reach your server. You should go into your box/router and make sure that the local IP address of your server is static instead of dynamic.\n"
 msgstr ""
+"L'adresse IP locale doit être statique afin que les redirections de port que "
+"vous allez configurer à l'étape suivante puissent toujours atteindre votre "
+"serveur. Vous devez accéder à votre box/routeur et vous assurer que "
+"l'adresse IP locale de votre serveur est statique et non dynamique.\n"
 
 #. type: Title ###
 #: docs/admin/05.get_started/40.post_install/15.port_forwarding.mdx:26
@@ -139,6 +144,8 @@ msgstr ""
 #, no-wrap
 msgid "If you use both a modem and a router, then you need to do the following:\n"
 msgstr ""
+"Si vous utilisez à la fois un modem et un routeur, vous devez procéder comme "
+"suit :\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/40.post_install/15.port_forwarding.mdx:40
@@ -147,6 +154,12 @@ msgid ""
 "1. first on the modem (the box closest to the internet) create rules to forward the above ports to your router;\n"
 "2. then on the router (the box between the modem and your devices) create rules to forward the above ports to the static IP address for your server.\n"
 msgstr ""
+"1. Commencez par créer des règles sur le modem "
+"(le boîtier le plus proche d'Internet) afin de rediriger les ports ci-dessus "
+"vers votre routeur.\n"
+"2. Créez ensuite des règles sur le routeur "
+"(le boîtier situé entre le modem et vos appareils) afin de rediriger les "
+"ports ci-dessus vers l'adresse IP statique de votre serveur.\n"
 
 #. type: Fenced div block (warning)
 #: docs/admin/05.get_started/40.post_install/15.port_forwarding.mdx:41

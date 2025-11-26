@@ -2,12 +2,13 @@
 # This file is distributed under the same license as the YunoHost documentation.
 #
 # Weblate Admin <yunohost@translate.yunohost.org>, 2025.
+# ppr <pouetpouetratatouille@gmail.com>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2025-11-11 01:24+0100\n"
-"PO-Revision-Date: 2025-11-22 20:23+0000\n"
-"Last-Translator: Weblate Admin <yunohost@translate.yunohost.org>\n"
+"PO-Revision-Date: 2025-11-26 22:17+0000\n"
+"Last-Translator: ppr <pouetpouetratatouille@gmail.com>\n"
 "Language-Team: French <https://translate.yunohost.org/projects/yunohost-doc/"
 "55upgrade__index/fr/>\n"
 "Language: fr\n"
@@ -60,4 +61,4 @@ msgstr ""
 #: docs/admin/55.upgrade/index.mdx:14
 #, no-wrap
 msgid "Here are some example of corresponding command lines:\n"
-msgstr "Voici quelques exemples en ligne de commande correspondants :\n"
+msgstr "Voici quelques exemples en ligne de commande correspondants :\n"
