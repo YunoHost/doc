@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkyunohost_docs=self.webpackChunkyunohost_docs||[]).push([["9452"],{2283:function(n,s,u){u.r(s),u.d(s,{default:()=>c});var o=u(4848);u(6540);var t=u(6347);function c(){return(0,o.jsx)(t.rd,{to:"./admin"})}}}]);
