@@ -53,7 +53,8 @@ If you reinstall your server and want to use a domain already used previously, y
 If you wish to use a different automatic domain, you first have to remove your present domain registration. This is done in 3 steps:
 
 1. Remove the domain from your instance (via webadmin or the `yunohost domain remove` in the CLI).
-2. Since YunoHost 11.2, you can now define a password on your nohost.me, noho.st or ynh.fr domain, so that the recovery is automatic and no longer requires to post for registration removal [in the dedicated forum thread](https://forum.yunohost.org/t/nohost-domain-recovery/442).
+2. Since YunoHost 11.2, you can now define a recovery password for your nohost.me, noho.st or ynh.fr domain **during postinstall**, so that the recovery is automatic and no longer requires intervention from the YunoHost team via [the old, deprecated forum thread](https://forum.yunohost.org/t/nohost-domain-recovery/442).
+    - If you didn't set the recovery password during postinstall, you can use `yunohost domain dyndns set-recovery-password` (add `--help` for help) to define one.
 3. Remove automatic domain configuration files on your server, via CLI only: `sudo rm /etc/cron.d/yunohost-dyndns && sudo rm -r /etc/yunohost/dyndns`
 
 You may then add a new domain.
