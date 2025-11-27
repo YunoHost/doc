@@ -1,14 +1,15 @@
 # Copyright (C) 2025 YunoHost Contributors
 # This file is distributed under the same license as the YunoHost documentation.
 #
+# ppr <pouetpouetratatouille@gmail.com>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2025-11-11 01:24+0100\n"
-"PO-Revision-Date: 2025-11-09 23:48+0000\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: French <https://translate.yunohost.org/projects/doc-"
-"experimental/50troubleshooting__15noaccess/fr/>\n"
+"PO-Revision-Date: 2025-11-26 22:17+0000\n"
+"Last-Translator: ppr <pouetpouetratatouille@gmail.com>\n"
+"Language-Team: French <https://translate.yunohost.org/projects/yunohost-doc/"
+"50troubleshooting__15noaccess/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -62,6 +63,18 @@ msgid ""
 "  - tweak your `/etc/hosts` file on each of your client devices\n"
 "  - add YunoHost's local IP as DNS resovler in your router (usually in the DHCP section) and open port `53` (UDP) in YunoHost's firewall, making sure to **not** enable UPnP forwarding. (Do **not** open port 53 on your router)\n"
 msgstr ""
+"- Assurez-vous d'avoir [configuré la redirection]"
+"(/admin/get_started/post_install/port_forwarding)\n"
+"- Certains routeurs ou box de votre FAI ne prennent pas en charge le "
+"*hairpinning*, ce qui vous empêche d'accéder à votre serveur par son nom de "
+"domaine depuis votre réseau local. Si tel est le cas, vous pouvez utiliser "
+"l'une des solutions suivantes :\n"
+"  - utilisez une connexion cellulaire (4/5G)\n"
+"  - modifiez votre fichier `/etc/hosts` sur chacun de vos appareils clients\n"
+"  - ajoutez l'adresse IP locale de YunoHost comme résolveur DNS dans votre "
+"routeur (généralement dans la section DHCP) et ouvrez le port `53` (UDP) "
+"dans le pare-feu de YunoHost, en veillant à **ne pas** activer la "
+"redirection UPnP. (**N'ouvrez pas** le port 53 sur votre routeur)\n"
 
 #. type: Title ###
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:21
@@ -95,13 +108,29 @@ msgstr "Autres causes possibles"
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:36
-#, fuzzy, no-wrap
-#| msgid "You have a dynamic IP address. In that case, you need to set up a script or a client that takes care of regularly update it. Refer to the page on [DNS with a dynamic IP](/admin/tutorials/domains/dns_dynamicip) to see how. You can also use a domain `nohost.me`, `noho.st` or `ynh.fr` that includes this features.\n"
+#, no-wrap
 msgid ""
 "- You domain `noho.st`, `nohost.me`, or `ynh.fr` is unreachable following a failure on YunoHost's infrastructure. Check the [forum](https://forum.yunohost.org/) for announcements or people posting about the same issue.\n"
 "- Your domain name may be expired. Check that on your registrar's client panel, or by using the command `whois yourdomain.tld`.\n"
 "- You have a dynamic IP address. In that case, you need to set up a script or a client that takes care of regularly update it. Refer to the page on [DNS with a dynamic IP](/admin/tutorials/domains/dns_dynamicip) to see how. You can also use a domain `nohost.me`, `noho.st` or `ynh.fr` that includes this features.\n"
-msgstr "Vous avez une IP dynamique. Dans ce cas, il faut mettre en place un script qui se charge de mettre à jour régulièrement votre IP (ou d'utiliser un nom de domaine en `nohost.me`, `noho.st` ou `ynh.fr` qui inclue un tel mécanisme)\n"
+msgstr ""
+"Vous avez une IP dynamique. Dans ce cas, il faut mettre en place un script "
+"qui se charge de mettre à jour régulièrement votre IP (ou d'utiliser un nom "
+"de domaine en `nohost.me`, `noho.st` ou `ynh.fr` qui inclue un tel mécanisme)"
+"\n"
+"- Votre domaine `noho.st`, `nohost.me` ou `ynh.fr` est inaccessible suite à "
+"une panne sur l'infrastructure de YunoHost. Consultez le [forum]"
+"(https://forum.yunohost.org/) pour voir s'il y a des annonces ou des "
+"messages concernant le même problème.\n"
+"- Votre nom de domaine est peut-être expiré. Vérifiez cela en vous "
+"connectant à l'espace client de votre fournisseur de nom de domaine ou en "
+"utilisant la commande `whois votredomaine.tld`.\n"
+"- Vous disposez d'une adresse IP dynamique. Dans ce cas, vous devez "
+"configurer un script ou un client qui se charge de la mettre à jour "
+"régulièrement. Reportez-vous à la page [DNS avec une IP dynamique]"
+"(/admin/tutorials/domains/dns_dynamicip) pour savoir comment procéder. Vous "
+"pouvez également utiliser un domaine `nohost.me`, `noho.st` ou `ynh.fr` qui "
+"inclut cette fonctionnalité.\n"
 
 #. type: Title ##
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:37
@@ -201,13 +230,23 @@ msgstr "Il se peut également que le serveur web (NGINX) ou le serveur ssh aient
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:74
-#, fuzzy, no-wrap
-#| msgid "You can check used storage with `df -h`. If one of your partitions is full, you need to identify what fills it and make room. You can use `ncdu` command (install it with `apt install ncdu`) to browse from the root directory: `ncdu /`\n"
+#, no-wrap
 msgid ""
 "- Try restarting the service with `systemctl restart nginx`.\n"
 "- You can check used storage with `df -h`. If one of your partitions is full, you need to identify what fills it and make room. You can use `ncdu` command (install it with `apt install ncdu`) to browse from the root directory: `ncdu /`\n"
 "- You can check RAM and swap usage with `free -h`. Depending on the result, it may be necessary to optimize your server to use less RAM (removal of heavy or unused apps...), add more RAM or add a swap file.\n"
-msgstr "Vous pouvez contrôler l'espace disque utilisé avec `df -h`. Si une de vos partitions est remplie à 100%, il faut identifier ce qui prend de la place sur votre système et faire de la place. Il est possible d'installer l'utilitaire `ncdu` avec `apt install ncdu` puis de faire `ncdu /` pour analyser la taille des dossiers de toute l'arborescence.\n"
+msgstr ""
+"- Essayez de redémarrer le service avec `systemctl restart nginx`.\n"
+"- Vous pouvez vérifier l'espace de stockage utilisé avec `df -h`. Si l'une "
+"de vos partitions est pleine, vous devez identifier ce qui la remplit et "
+"libérer de l'espace. Vous pouvez utiliser la commande `ncdu` "
+"(installez-la avec `apt install ncdu`) pour parcourir le répertoire racine : "
+"`ncdu /`\n"
+"- Vous pouvez vérifier l'utilisation de la RAM et de l'espace d'échange avec "
+"« free -h ». En fonction du résultat, il peut être nécessaire d'optimiser "
+"votre serveur pour utiliser moins de RAM "
+"(suppression des applications lourdes ou inutilisées ...), d'ajouter plus de "
+"RAM ou bien d'ajouter un fichier d'échange.\n"
 
 #. type: Title ###
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:75
@@ -265,12 +304,16 @@ msgstr "Si vous êtes certain du mot de passe, il est possible que le service SL
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:100
-#, fuzzy, no-wrap
-#| msgid "If your server is at home, you most likely have access to the local network. From this network, you can follow the [SSH instructions](/admin/command_line)`.\n"
+#, no-wrap
 msgid ""
 "- If your server is at home, you most likely have access to the local network. From this network, you can follow the [SSH instructions](/admin/command_line)`.\n"
 "- If your server is a VPS, your provider may offer a web console.\n"
-msgstr "Si votre serveur est chez vous, vous avez sans doute accès au réseau local du serveur. Depuis ce réseau, vous pouvez vous connecter [en SSH](/admin/command_line) avec l'utilisateur `root`.\n"
+msgstr ""
+"- Si votre serveur se trouve chez vous, vous avez très probablement accès au "
+"réseau local. À partir de ce réseau, vous pouvez suivre les "
+"[instructions SSH](/admin/command_line)`.\n"
+"- Si votre serveur est un VPS, votre fournisseur peut vous proposer une "
+"console web.\n"
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:102
@@ -317,12 +360,16 @@ msgstr "Pendant de temps, il est sans doute possible d'accéder à votre serveur
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:119
-#, fuzzy, no-wrap
-#| msgid "reaching it at `yunohost.local`, assuming your client supports the Bonjour protocol (or `yunohost-2.local`, etc. depending on how many YunoHost servers are on your network)\n"
+#, no-wrap
 msgid ""
 "- its local IP, using one of the method listed [on the corresponding page](/admin/get_started/post_install/find_ip)\n"
 "- reaching it at `yunohost.local`, assuming your client supports the Bonjour protocol (or `yunohost-2.local`, etc. depending on how many YunoHost servers are on your network)\n"
-msgstr "via `yunohost.local`, si votre client support le Bonjour protocol (ou `yunohost-2.local`, etc. en fonction de si vous avez plusieurs serveurs YunoHost sur le même réseau)\n"
+msgstr ""
+"- son adresse IP locale, en utilisant l'une des méthodes répertoriées "
+"[sur la page correspondante](/admin/get_started/post_install/find_ip)\n"
+"- en y accédant via `yunohost.local`, en supposant que votre client prend en "
+"charge le protocole Bonjour (ou `yunohost-2.local`, etc. selon le nombre de "
+"serveurs YunoHost présents sur votre réseau)\n"
 
 #. type: Title ##
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:124

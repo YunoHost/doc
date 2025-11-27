@@ -4,12 +4,13 @@
 # Automatically generated, 2025.
 #
 # Weblate Admin <yunohost@translate.yunohost.org>, 2025.
+# ppr <pouetpouetratatouille@gmail.com>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2025-11-22 19:19+0000\n"
-"PO-Revision-Date: 2025-11-22 20:23+0000\n"
-"Last-Translator: Weblate Admin <yunohost@translate.yunohost.org>\n"
+"PO-Revision-Date: 2025-11-26 22:17+0000\n"
+"Last-Translator: ppr <pouetpouetratatouille@gmail.com>\n"
 "Language-Team: French <https://translate.yunohost.org/projects/yunohost-doc/"
 "43upgrade__index/fr/>\n"
 "Language: fr\n"
@@ -60,10 +61,9 @@ msgstr ""
 
 #. type: Plain text
 #: docs/admin/43.upgrade/index.mdx:14
-#, fuzzy, no-wrap
-#| msgid "Here are some example of corresponding command lines:\n"
+#, no-wrap
 msgid "Here are some example of corresponding command lines:\n"
-msgstr "Voici quelques exemples en ligne de commande correspondants :\n"
+msgstr "Voici quelques exemples en ligne de commande correspondants :\n"
 
 #. type: Fenced code block (bash)
 #: docs/admin/43.upgrade/index.mdx:15
@@ -81,3 +81,14 @@ msgid ""
 "# Upgrade a specific application\n"
 "yunohost app upgrade wordpress\n"
 msgstr ""
+"# Récupérer les mises à jour disponibles\n"
+"yunohost tools update\n"
+"\n"
+"# Mettre à niveau tous les paquets système\n"
+"yunohost tools upgrade system\n"
+"\n"
+"# Mettre à niveau toutes les applications\n"
+"yunohost tools upgrade apps\n"
+"\n"
+"# Mettre à niveau une application spécifique\n"
+"yunohost app upgrade wordpress\n"

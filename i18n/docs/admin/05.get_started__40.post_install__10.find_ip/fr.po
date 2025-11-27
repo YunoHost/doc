@@ -2,12 +2,13 @@
 # This file is distributed under the same license as the YunoHost documentation.
 #
 # Weblate Admin <yunohost@translate.yunohost.org>, 2025.
+# ppr <pouetpouetratatouille@gmail.com>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2025-11-22 19:10+0000\n"
-"PO-Revision-Date: 2025-11-25 05:03+0000\n"
-"Last-Translator: Weblate Admin <yunohost@translate.yunohost.org>\n"
+"PO-Revision-Date: 2025-11-26 22:17+0000\n"
+"Last-Translator: ppr <pouetpouetratatouille@gmail.com>\n"
 "Language-Team: French <https://translate.yunohost.org/projects/yunohost-doc/"
 "05get_started__40post_install__10find_ip/fr/>\n"
 "Language: fr\n"
@@ -68,12 +69,18 @@ msgstr "Vous pouvez utiliser le logiciel [AngryIP](https://angryip.org/download/
 
 #. type: Fenced div block (tip)
 #: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:34
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "- you can order by ping like on this screenshot to easily see effectively-used IP.\n"
 "- your server should typically be displayed as listening on port 80 and 443\n"
 "- when in doubt, just type `https://192.168.x.y` in your browser to check if it's a YunoHost or not.\n"
 msgstr ""
+"- Vous pouvez passer par la commande ping comme sur cette capture d'écran "
+"afin de voir facilement les adresses IP utilisées.\n"
+"- Votre serveur devrait normalement s'afficher comme étant à l'écoute sur "
+"les ports 80 et 443.\n"
+"- En cas de doute, tapez simplement `https://192.168.x.y` dans votre "
+"navigateur pour vérifier s'il s'agit bien d'un serveur YunoHost.\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:42
@@ -160,3 +167,10 @@ msgid ""
 "- Plug a screen on your server and try to reboot to check that it's properly booting;\n"
 "- Make sure that your ethernet cable is working and properly plugged in;\n"
 msgstr ""
+"- Assurez-vous que votre serveur est correctement branché ;\n"
+"- Si vous utilisez une carte SD, assurez-vous que le connecteur n'est pas "
+"trop poussiéreux ;\n"
+"- Branchez un écran sur votre serveur et essayez de le redémarrer pour "
+"vérifier qu'il démarre correctement ;\n"
+"- Assurez-vous que votre câble Ethernet fonctionne et qu'il est correctement "
+"branché ;\n"
