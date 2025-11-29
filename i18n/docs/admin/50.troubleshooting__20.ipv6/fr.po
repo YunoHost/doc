@@ -2,12 +2,13 @@
 # This file is distributed under the same license as the YunoHost documentation.
 #
 # ppr <pouetpouetratatouille@gmail.com>, 2025.
+# Weblate Admin <yunohost@translate.yunohost.org>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2025-11-19 02:54+0000\n"
-"PO-Revision-Date: 2025-11-26 17:46+0000\n"
-"Last-Translator: ppr <pouetpouetratatouille@gmail.com>\n"
+"PO-Revision-Date: 2025-11-29 16:25+0000\n"
+"Last-Translator: Weblate Admin <yunohost@translate.yunohost.org>\n"
 "Language-Team: French <https://translate.yunohost.org/projects/yunohost-doc/"
 "50troubleshooting__20ipv6/fr/>\n"
 "Language: fr\n"
@@ -55,7 +56,9 @@ msgstr "Configurer le serveur DNS"
 #: docs/admin/50.troubleshooting/20.ipv6.mdx:16
 #, no-wrap
 msgid "Also check [the documentation for subdomains](/admin/tutorials/domains/dns_subdomains).\n"
-msgstr "Also check [the documentation for subdomains](/admin/tutorials/domains/dns_subdomains).\n"
+msgstr ""
+"Vous pouvez également regarder [la documentation pour les sous-domaines]"
+"(/admin/tutorials/domains/dns_subdomains).\n"
 
 #. type: Title ###
 #: docs/admin/50.troubleshooting/20.ipv6.mdx:17
@@ -97,8 +100,9 @@ msgstr ""
 #, no-wrap
 msgid "In this example, it is assumed that your network interface is `eth0`. If it's different (check with `ip a`) you need to adapt the example below.\n"
 msgstr ""
-"Découvrir et vérifier avec la commande `ip a` l'interface utilisée sur votre VPS ( généralement du type ENS3 chez OVH)\n"
-"Dans cet exemple, nous considérons que votre interface réseau est `eth0`. Vous devez adapter l'exemple pour correspondre à votre situation.\n"
+"Dans cet exemple, il est supposé que votre interface est `eth0`. Si elle est "
+"différente (vérifiez avec `ip a`) il vous faudra adapter l'exemple ci-"
+"dessous.\n"
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/20.ipv6.mdx:43

@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2025-11-22 19:10+0000\n"
-"PO-Revision-Date: 2025-11-26 22:17+0000\n"
-"Last-Translator: ppr <pouetpouetratatouille@gmail.com>\n"
+"PO-Revision-Date: 2025-11-29 16:25+0000\n"
+"Last-Translator: Weblate Admin <yunohost@translate.yunohost.org>\n"
 "Language-Team: French <https://translate.yunohost.org/projects/yunohost-doc/"
 "05get_started__40post_install__15port_forwarding/fr/>\n"
 "Language: fr\n"
@@ -72,9 +72,11 @@ msgstr "1. Accéder à l'interface d'administration de votre box/routeur"
 #, no-wrap
 msgid "Your box/router admin interface is usually reachable via [http://192.168.0.1](http://192.168.0.1) or [http://192.168.1.1](http://192.168.1.1). Then, you will probably need to authenticate yourself the credentials given by your internet server provider.\n"
 msgstr ""
-"L'interface d'administration est généralement accessible via [http://192.168.0.1](http://192.168.0.1) ou [http://192.168.1.1](http://192.168.1.1).\n"
-"Ensuite, il vous faudra peut-être vous authentifier avec les identifiants\n"
-"fournis par votre fournisseur d'accès à Internet (FAI).\n"
+"L'interface d'administration est généralement accessible via "
+"[http://192.168.0.1](http://192.168.0.1) ou [http://192.168.1.1]"
+"(http://192.168.1.1). Ensuite, il vous faudra peut-être vous authentifier "
+"avec les identifiants fournis par votre fournisseur d'accès à Internet (FAI)."
+"\n"
 
 #. type: Title ###
 #: docs/admin/05.get_started/40.post_install/15.port_forwarding.mdx:18
@@ -86,7 +88,10 @@ msgstr "2. Trouver l'IP locale de votre serveur"
 #: docs/admin/05.get_started/40.post_install/15.port_forwarding.mdx:21
 #, no-wrap
 msgid "Identify the *local* IP of your server using one of the method listed [on the corresponding page](/admin/get_started/post_install/find_ip).\n"
-msgstr "Identifiez quelle est l'IP locale de votre serveur en utilisant l'une des méthodes listées sur [la page correspondante](/admin/get_started/post_install/find_ip).\n"
+msgstr ""
+"Identifiez quelle est l'IP *locale* de votre serveur en utilisant l'une des "
+"méthodes listées sur [la page correspondante]"
+"(/admin/get_started/post_install/find_ip).\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/40.post_install/15.port_forwarding.mdx:23

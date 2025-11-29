@@ -2,12 +2,13 @@
 # This file is distributed under the same license as the YunoHost documentation.
 #
 # ppr <pouetpouetratatouille@gmail.com>, 2025.
+# Weblate Admin <yunohost@translate.yunohost.org>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2025-11-11 01:24+0100\n"
-"PO-Revision-Date: 2025-11-26 22:17+0000\n"
-"Last-Translator: ppr <pouetpouetratatouille@gmail.com>\n"
+"PO-Revision-Date: 2025-11-29 16:25+0000\n"
+"Last-Translator: Weblate Admin <yunohost@translate.yunohost.org>\n"
 "Language-Team: French <https://translate.yunohost.org/projects/yunohost-doc/"
 "45tutorials__55moving_app_folder/fr/>\n"
 "Language: fr\n"
@@ -41,7 +42,10 @@ msgstr "Lorsqu'un dossier d'application devient trop volumineux il peut être in
 msgid ""
 "Here's a summary of how to do this the application wordpress. Here, is is assumed that\n"
 "[you already mounted the external hard-drive](/admin/tutorials/external_storage).\n"
-msgstr "Partant du principe que [le stockage externe est déjà monté](/admin/tutorials/external_storage), voici un guide pour déplacer le dossier de l'application wordpress :\n"
+msgstr ""
+"Partant du principe que [le stockage externe est déjà monté]"
+"(/admin/tutorials/external_storage), voici\n"
+"un guide pour déplacer le dossier de l'application wordpress :\n"
 
 #. type: Title ####
 #: docs/admin/45.tutorials/55.moving_app_folder.mdx:12

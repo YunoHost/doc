@@ -2,12 +2,13 @@
 # This file is distributed under the same license as the YunoHost documentation.
 #
 # ppr <pouetpouetratatouille@gmail.com>, 2025.
+# Weblate Admin <yunohost@translate.yunohost.org>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2025-11-25 00:39+0000\n"
-"PO-Revision-Date: 2025-11-26 22:17+0000\n"
-"Last-Translator: ppr <pouetpouetratatouille@gmail.com>\n"
+"PO-Revision-Date: 2025-11-29 16:25+0000\n"
+"Last-Translator: Weblate Admin <yunohost@translate.yunohost.org>\n"
 "Language-Team: French <https://translate.yunohost.org/projects/yunohost-doc/"
 "40backups__index/fr/>\n"
 "Language: fr\n"
@@ -108,11 +109,10 @@ msgstr "Vous pouvez facilement créer des archives depuis la webadmin en allant 
 
 #. type: Plain text
 #: docs/admin/40.backups/index.mdx:26
-#, fuzzy, no-wrap
-#| msgid "![picture of YunoHost's backup pannel](/img/webadmin/backup.png)\n"
+#, no-wrap
 msgid "![Screenshot of YunoHost's backup panel](/img/webadmin/backup.png)\n"
 msgstr ""
-"![Capture d'écran de la page de sauvegarde de YunoHost dans la webadmin]"
+"![Capture d'écran de la page de sauvegarde de YunoHost]"
 "(/img/webadmin/backup.png)\n"
 
 #. type: Plain text
@@ -205,7 +205,12 @@ msgstr ""
 #: docs/admin/40.backups/index.mdx:89
 #, no-wrap
 msgid "It is possible to use `scp` (a program based on [`ssh`](/admin/command_line)) to copy files between two machines via the command line. So, from a GNU/Linux machine, you can use the following command to download an archive:\n"
-msgstr "Il est possible d'utiliser `scp` (un programme basé sur `ssh`) pour copier des fichiers entre deux machines grâce à la ligne de commande. Ainsi, depuis une machine sous GNU/Linux, vous pouvez utiliser la commande suivante pour télécharger une archive :\n"
+msgstr ""
+"Il est possible d'utiliser `scp` "
+"(un programme basé sur[`ssh`](/admin/command_line)) pour copier des fichiers "
+"entre deux machines grâce à la ligne de commande. Ainsi, depuis une machine "
+"sous GNU/Linux, vous pouvez utiliser la commande suivante pour télécharger "
+"une archive :\n"
 
 #. type: Plain text
 #: docs/admin/40.backups/index.mdx:95 docs/admin/40.backups/index.mdx:179
@@ -247,7 +252,9 @@ msgstr "Restaurer"
 #: docs/admin/40.backups/index.mdx:129
 #, no-wrap
 msgid "SPOILER: The larger your data volume and the more applications you have, the more complex your recovery will be.\n"
-msgstr "SPOILER: Plus votre volume de données et le nombre d'applications sont important, plus votre restauration sera complexe.\n"
+msgstr ""
+"SPOILER : Plus votre volume de données et le nombre d'applications sont "
+"important, plus votre restauration sera complexe.\n"
 
 #. type: Title ####
 #: docs/admin/40.backups/index.mdx:133
@@ -263,12 +270,11 @@ msgstr "Allez dans `Sauvegardes > Archives locales` et sélectionnez l'archive. 
 
 #. type: Plain text
 #: docs/admin/40.backups/index.mdx:141
-#, fuzzy, no-wrap
-#| msgid "![picture of YunoHost's backup pannel](/img/webadmin/backup.png)\n"
+#, no-wrap
 msgid "![Screenshot of YunoHost's restore panel](/img/webadmin/restore.png)\n"
 msgstr ""
 "![Capture d'écran du panneau de restauration de YunoHost]"
-"(/img/webadmin/backup.png)\n"
+"(/img/webadmin/restore.png)\n"
 
 #. type: Plain text
 #: docs/admin/40.backups/index.mdx:146
