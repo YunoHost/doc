@@ -3,31 +3,37 @@
 # This file is distributed under the same license as the YunoHost documentation package.
 # Automatically generated, 2025.
 #
+# Julie Boissière-Vasseur <jboisseur@posteo.net>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2025-11-26 17:46+0000\n"
-"PO-Revision-Date: 2025-11-11 19:34+0100\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2025-11-29 09:02+0000\n"
+"Last-Translator: Julie Boissière-Vasseur <jboisseur@posteo.net>\n"
+"Language-Team: French <https://translate.yunohost.org/projects/yunohost-doc/"
+"40backups__10backup_methods/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.14.2\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/40.backups/10.backup_methods.mdx:1
-#, fuzzy, no-wrap
-#| msgid "Custom backup methods"
+#, no-wrap
 msgid "Backup methods"
-msgstr "Méthodes personnalisées de sauvegardes"
+msgstr "Méthodes de sauvegardes"
 
 #. type: Plain text
 #: docs/admin/40.backups/10.backup_methods.mdx:6
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "YunoHost currently has three apps integrating backup solutions offering more features than the simple \".tar\" mechanism shipped in YunoHost, in particular automatic and remote backups.\n"
 msgstr ""
+"YunoHost a actuellement trois applications qui intègrent des solutions de "
+"sauvegarde avec davantage de fonctionnalités que le simple mécanisme \".tar\""
+" inclus dans YunoHost, en particulier des possibilités de sauvegarde "
+"automatique et à distance.\n"
 
 #. type: Title ##
 #: docs/admin/40.backups/10.backup_methods.mdx:7

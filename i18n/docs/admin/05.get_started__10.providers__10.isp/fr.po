@@ -6,12 +6,13 @@
 # ppr <pouetpouetratatouille@gmail.com>, 2025.
 # Éric Gaspar <junk.eg@free.fr>, 2025.
 # Weblate Admin <yunohost@translate.yunohost.org>, 2025.
+# Julie Boissière-Vasseur <jboisseur@posteo.net>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2025-11-19 03:11+0000\n"
-"PO-Revision-Date: 2025-11-25 05:03+0000\n"
-"Last-Translator: Weblate Admin <yunohost@translate.yunohost.org>\n"
+"PO-Revision-Date: 2025-11-29 09:02+0000\n"
+"Last-Translator: Julie Boissière-Vasseur <jboisseur@posteo.net>\n"
 "Language-Team: French <https://translate.yunohost.org/projects/yunohost-doc/"
 "05get_started__10providers__10isp/fr/>\n"
 "Language: fr\n"
@@ -31,10 +32,9 @@ msgstr " "
 
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/05.get_started/10.providers/10.isp.mdx:1
-#, fuzzy, no-wrap
-#| msgid "Server providers"
+#, no-wrap
 msgid "Internet service providers"
-msgstr "Fournisseurs de serveurs"
+msgstr "Fournisseurs d'accès à Internet"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/10.isp.mdx:20
@@ -64,17 +64,15 @@ msgstr ""
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/10.isp.mdx:22
-#, fuzzy, no-wrap
-#| msgid "<TabItem value=\"zfs\" label=\"ZFS\">\n"
+#, no-wrap
 msgid "<TabItem value=\"africa\">\n"
-msgstr "<TabItem value=\"zfs\" label=\"ZFS\">\n"
+msgstr "<TabItem value=\"africa\">\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/10.isp.mdx:25
-#, fuzzy, no-wrap
-#| msgid "<TabItem value=\"sftp\" label=\"With a SFTP client\">\n"
+#, no-wrap
 msgid "<TabItem value=\"ivory\" label=\"Côte d'Ivoire\" default>\n"
-msgstr "<TabItem value=\"sftp\" label=\"Avec un client SFTP\">\n"
+msgstr "<TabItem value=\"ivory\" label=\"Côte d'Ivoire\" default>\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/10.isp.mdx:31
@@ -89,17 +87,15 @@ msgstr ""
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/10.isp.mdx:37
-#, fuzzy, no-wrap
-#| msgid "<TabItem value=\"vps\" label=\"VPS\">\n"
+#, no-wrap
 msgid "<TabItem value=\"asia\">\n"
-msgstr "<TabItem value=\"vps\" label=\"VPS\">\n"
+msgstr "<TabItem value=\"asia\">\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/10.isp.mdx:39
-#, fuzzy, no-wrap
-#| msgid "<TabItem value=\"cli\" label=\"From the command line\">\n"
+#, no-wrap
 msgid "<TabItem value=\"southko\" label=\"South Korea\" default>\n"
-msgstr "<TabItem value=\"cli\" label=\"Depuis la ligne de commande\">\n"
+msgstr "<TabItem value=\"southko\" label=\"Corée du Sud\" default>\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/10.isp.mdx:45
@@ -114,10 +110,9 @@ msgstr ""
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/10.isp.mdx:48
-#, fuzzy, no-wrap
-#| msgid "<TabItem value=\"btrfs\" label=\"BTRFS\">\n"
+#, no-wrap
 msgid "<TabItem value=\"twn\" label=\"Taïwan\">\n"
-msgstr "<TabItem value=\"btrfs\" label=\"BTRFS\">\n"
+msgstr "<TabItem value=\"twn\" label=\"Taïwan\">\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/10.isp.mdx:52
@@ -130,10 +125,9 @@ msgstr ""
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/10.isp.mdx:58
-#, fuzzy, no-wrap
-#| msgid "<TabItem value=\"ceph\" label=\"CEPH\">\n"
+#, no-wrap
 msgid "<TabItem value=\"europe\">\n"
-msgstr "<TabItem value=\"ceph\" label=\"CEPH\">\n"
+msgstr "<TabItem value=\"europe\">\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/10.isp.mdx:60
@@ -185,10 +179,9 @@ msgstr ""
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/10.isp.mdx:86
-#, fuzzy, no-wrap
-#| msgid "<TabItem value=\"zfs\" label=\"ZFS\">\n"
+#, no-wrap
 msgid "<TabItem value=\"fin\" label=\"Finland\">\n"
-msgstr "<TabItem value=\"zfs\" label=\"ZFS\">\n"
+msgstr "<TabItem value=\"fin\" label=\"Finlande\">\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/10.isp.mdx:92
@@ -209,10 +202,9 @@ msgstr ""
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/10.isp.mdx:99
-#, fuzzy, no-wrap
-#| msgid "<TabItem value=\"zfs\" label=\"ZFS\">\n"
+#, no-wrap
 msgid "<TabItem value=\"fra\" label=\"France\" default>\n"
-msgstr "<TabItem value=\"zfs\" label=\"ZFS\">\n"
+msgstr "<TabItem value=\"fra\" label=\"France\" default>\n"
 
 #. type: Fenced div block (tip)
 #: docs/admin/05.get_started/10.providers/10.isp.mdx:100
@@ -248,10 +240,9 @@ msgstr ""
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/10.isp.mdx:121
-#, fuzzy, no-wrap
-#| msgid "<TabItem value=\"ceph\" label=\"CEPH\">\n"
+#, no-wrap
 msgid "<TabItem value=\"hun\" label=\"Hungary\">\n"
-msgstr "<TabItem value=\"ceph\" label=\"CEPH\">\n"
+msgstr "<TabItem value=\"hun\" label=\"Hongrie\">\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/10.isp.mdx:126
@@ -271,10 +262,9 @@ msgstr ""
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/10.isp.mdx:133
-#, fuzzy, no-wrap
-#| msgid "<TabItem value=\"vps\" label=\"VPS\">\n"
+#, no-wrap
 msgid "<TabItem value=\"irl\" label=\"Ireland\">\n"
-msgstr "<TabItem value=\"vps\" label=\"VPS\">\n"
+msgstr "<TabItem value=\"irl\" label=\"Irlande\">\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/10.isp.mdx:137
@@ -287,10 +277,9 @@ msgstr ""
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/10.isp.mdx:140
-#, fuzzy, no-wrap
-#| msgid "<TabItem value=\"vps\" label=\"VPS\">\n"
+#, no-wrap
 msgid "<TabItem value=\"swe\" label=\"Sweden\">\n"
-msgstr "<TabItem value=\"vps\" label=\"VPS\">\n"
+msgstr "<TabItem value=\"swe\" label=\"Suède\">\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/10.isp.mdx:146
@@ -311,10 +300,9 @@ msgstr ""
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/10.isp.mdx:151
-#, fuzzy, no-wrap
-#| msgid "<TabItem value=\"ceph\" label=\"CEPH\">\n"
+#, no-wrap
 msgid "<TabItem value=\"che\" label=\"Switzerland\">\n"
-msgstr "<TabItem value=\"ceph\" label=\"CEPH\">\n"
+msgstr "<TabItem value=\"che\" label=\"Suisse\">\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/10.isp.mdx:153
@@ -335,10 +323,9 @@ msgstr ""
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/10.isp.mdx:162
-#, fuzzy, no-wrap
-#| msgid "<TabItem value=\"btrfs\" label=\"BTRFS\">\n"
+#, no-wrap
 msgid "<TabItem value=\"gbr\" label=\"UK\">\n"
-msgstr "<TabItem value=\"btrfs\" label=\"BTRFS\">\n"
+msgstr "<TabItem value=\"che\" label=\"Royaume-Uni\">\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/10.isp.mdx:169
@@ -361,10 +348,9 @@ msgstr "<TabItem value=\"ceph\" label=\"CEPH\">\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/10.isp.mdx:177
-#, fuzzy, no-wrap
-#| msgid "<TabItem value=\"ceph\" label=\"CEPH\">\n"
+#, no-wrap
 msgid "<TabItem value=\"canada\" label=\"Canada\">\n"
-msgstr "<TabItem value=\"ceph\" label=\"CEPH\">\n"
+msgstr "<TabItem value=\"canada\" label=\"Canada\">\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/10.isp.mdx:182
@@ -405,10 +391,9 @@ msgstr "<TabItem value=\"vps\" label=\"VPS\">\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/10.isp.mdx:201
-#, fuzzy, no-wrap
-#| msgid "<TabItem value=\"btrfs\" label=\"BTRFS\">\n"
+#, no-wrap
 msgid "<TabItem value=\"brazil\" label=\"Brazil\" default>\n"
-msgstr "<TabItem value=\"btrfs\" label=\"BTRFS\">\n"
+msgstr "<TabItem value=\"brazil\" label=\"Brésil\" default>\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/10.isp.mdx:205
