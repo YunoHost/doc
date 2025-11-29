@@ -4,12 +4,13 @@
 # Automatically generated, 2025.
 #
 # ppr <pouetpouetratatouille@gmail.com>, 2025.
+# Julie Boissière-Vasseur <jboisseur@posteo.net>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2025-11-11 19:34+0100\n"
-"PO-Revision-Date: 2025-11-16 23:39+0000\n"
-"Last-Translator: ppr <pouetpouetratatouille@gmail.com>\n"
+"PO-Revision-Date: 2025-11-29 01:17+0000\n"
+"Last-Translator: Julie Boissière-Vasseur <jboisseur@posteo.net>\n"
 "Language-Team: French <https://translate.yunohost.org/projects/yunohost-doc/"
 "55upgrade__120-bookworm__05issues_faq/fr/>\n"
 "Language: fr\n"
@@ -22,7 +23,7 @@ msgstr ""
 #. type: Plain text
 #: docs/admin/55.upgrade/11.0-bullseye.mdx:58
 #: docs/admin/55.upgrade/12.0-bookworm/05.issues_faq.mdx:18
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Apps which won't be automatically repaired and need a force upgrade:\n"
 msgstr ""
 "Ces applications ne seront pas réparées automatiquement et nécessiteront une "

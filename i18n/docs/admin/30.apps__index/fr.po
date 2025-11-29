@@ -1,14 +1,15 @@
 # Copyright (C) 2025 YunoHost Contributors
 # This file is distributed under the same license as the YunoHost documentation.
 #
+# Julie Boissière-Vasseur <jboisseur@posteo.net>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2025-11-19 02:54+0000\n"
-"PO-Revision-Date: 2025-11-10 15:50+0000\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: French <https://translate.yunohost.org/projects/doc-"
-"experimental/30apps__index/fr/>\n"
+"PO-Revision-Date: 2025-11-29 01:17+0000\n"
+"Last-Translator: Julie Boissière-Vasseur <jboisseur@posteo.net>\n"
+"Language-Team: French <https://translate.yunohost.org/projects/yunohost-doc/"
+"30apps__index/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -89,14 +90,12 @@ msgstr ""
 
 #. type: Plain text
 #: docs/admin/30.apps/index.mdx:20
-#, fuzzy, no-wrap
-#| msgid ""
-#| "  <Button url=\"https://apps.yunohost.org/\" color=\"orange\">\n"
-#| "    <FAIcon icon='fa-cubes'/> Applications catalog\n"
+#, no-wrap
 msgid "<Button url=\"https://apps.yunohost.org/\" border=\"none\" color=\"black\" backgroundColor=\"orange\"><FAIcon icon='fa-cubes'/> Browse the application catalog <FAIcon icon='fa-arrow-right'/></Button>\n"
 msgstr ""
-"  <Button url=\"https://apps.yunohost.org\" color=\"orange\">\n"
-"        <FAIcon icon='fa-cubes'/> Catalogue d'applications\n"
+"<Button url=\"https://apps.yunohost.org/\" border=\"none\" color=\"black\" "
+"backgroundColor=\"orange\"><FAIcon icon='fa-cubes'/> Parcourir le catalogue "
+"d'applications<FAIcon icon='fa-arrow-right'/></Button>\n"
 
 #. type: Fenced div block (caution)
 #: docs/admin/30.apps/index.mdx:22

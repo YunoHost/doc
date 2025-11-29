@@ -3,12 +3,13 @@
 # Automatically generated, 2025.
 #
 # ppr <pouetpouetratatouille@gmail.com>, 2025.
+# Julie Boissière-Vasseur <jboisseur@posteo.net>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2025-11-11 01:24+0100\n"
-"PO-Revision-Date: 2025-11-26 17:46+0000\n"
-"Last-Translator: ppr <pouetpouetratatouille@gmail.com>\n"
+"PO-Revision-Date: 2025-11-29 01:17+0000\n"
+"Last-Translator: Julie Boissière-Vasseur <jboisseur@posteo.net>\n"
 "Language-Team: French <https://translate.yunohost.org/projects/yunohost-doc/"
 "55upgrade__110-bullseye/fr/>\n"
 "Language: fr\n"
@@ -20,10 +21,9 @@ msgstr ""
 
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/55.upgrade/11.0-bullseye.mdx:1
-#, fuzzy, no-wrap
-#| msgid "Migrating from 11.x to 12.x"
+#, no-wrap
 msgid "Migrating from 4.x to 11.x"
-msgstr "Migrer de 11.x vers 12.x"
+msgstr "Migrer de 4.x à 11.x"
 
 #. type: Plain text
 #: docs/admin/55.upgrade/11.0-bullseye.mdx:6
@@ -198,7 +198,7 @@ msgstr ""
 #. type: Plain text
 #: docs/admin/55.upgrade/11.0-bullseye.mdx:58
 #: docs/admin/55.upgrade/12.0-bookworm/05.issues_faq.mdx:18
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Apps which won't be automatically repaired and need a force upgrade:\n"
 msgstr ""
 "Ces applications ne seront pas réparées automatiquement et nécessiteront une "

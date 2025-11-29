@@ -4,12 +4,13 @@
 # Automatically generated, 2025.
 #
 # ppr <pouetpouetratatouille@gmail.com>, 2025.
+# Julie Boissière-Vasseur <jboisseur@posteo.net>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2025-11-11 19:34+0100\n"
-"PO-Revision-Date: 2025-11-16 23:39+0000\n"
-"Last-Translator: ppr <pouetpouetratatouille@gmail.com>\n"
+"PO-Revision-Date: 2025-11-29 01:17+0000\n"
+"Last-Translator: Julie Boissière-Vasseur <jboisseur@posteo.net>\n"
 "Language-Team: French <https://translate.yunohost.org/projects/yunohost-doc/"
 "45tutorials__10theming/fr/>\n"
 "Language: fr\n"
