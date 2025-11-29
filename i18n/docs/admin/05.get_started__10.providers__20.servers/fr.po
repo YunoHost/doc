@@ -3,12 +3,13 @@
 #
 # Éric Gaspar <junk.eg@free.fr>, 2025.
 # Weblate Admin <yunohost@translate.yunohost.org>, 2025.
+# Julie Boissière-Vasseur <jboisseur@posteo.net>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2025-11-19 03:11+0000\n"
-"PO-Revision-Date: 2025-11-25 05:03+0000\n"
-"Last-Translator: Weblate Admin <yunohost@translate.yunohost.org>\n"
+"PO-Revision-Date: 2025-11-29 01:17+0000\n"
+"Last-Translator: Julie Boissière-Vasseur <jboisseur@posteo.net>\n"
 "Language-Team: French <https://translate.yunohost.org/projects/yunohost-doc/"
 "05get_started__10providers__20servers/fr/>\n"
 "Language: fr\n"
@@ -61,7 +62,7 @@ msgstr ""
 #: docs/admin/05.get_started/10.providers/20.servers.mdx:17
 #, no-wrap
 msgid "YunoHost IT outsourcing"
-msgstr "Externalisation informatique YunoHost "
+msgstr "Externalisation informatique YunoHost"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/20.servers.mdx:21
