@@ -1,58 +1,55 @@
 # Copyright (C) 2025 YunoHost Contributors
-# This file is distributed under the same license as the YunoHost documentation.
+# This file is distributed under the same license as the YunoHost documentation package.
 #
-# ppr <pouetpouetratatouille@gmail.com>, 2025.
-# Weblate Admin <yunohost@translate.yunohost.org>, 2025.
+# ButterflyOfFire <BoFFire@users.noreply.translate.yunohost.org>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2025-11-11 01:24+0100\n"
-"PO-Revision-Date: 2025-11-29 16:25+0000\n"
-"Last-Translator: Weblate Admin <yunohost@translate.yunohost.org>\n"
-"Language-Team: French <https://translate.yunohost.org/projects/yunohost-doc/"
-"50troubleshooting__15noaccess/fr/>\n"
-"Language: fr\n"
+"POT-Creation-Date: 2025-11-11 19:34+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: kab\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.14.2\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:1
 #, no-wrap
 msgid "Get access back into YunoHost"
-msgstr "Récupérer l'accès à son YunoHost"
+msgstr ""
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:6
 #, no-wrap
 msgid "There are several reasons that could lead to one administrator's access being partially or completely blocked off their YunoHost server. In numerous cases, one of the access methods is blocked, but others are not.\n"
-msgstr "Il existe de nombreuses causes pouvant empêcher totalement ou partiellement d'accéder en administrateur à un serveur YunoHost. Dans de nombreux cas, un des moyens d'accès est inaccessible, mais les autres sont fonctionnels.\n"
+msgstr ""
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:8
 #, no-wrap
 msgid "This page will help you diagnose the issue, get back access, and if needed repair your system. Most common causes are listed first, so follow the tutorial from top to bottom.\n"
-msgstr "Cette page va vous aider à diagnostiquer, obtenir un accès et si besoin réparer votre système. Les pannes les plus courantes sont priorisées de haut en bas. Il vous suffit de tester chaque hypothèse.\n"
+msgstr ""
 
 #. type: Title ##
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:9
 #, no-wrap
 msgid "You have access to the server with its local IP address, but not its domain name"
-msgstr "Vous avez accès au serveur via l'adresse IP, mais pas avec le nom de domaine"
+msgstr ""
 
 #. type: Title ###
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:11
 #, no-wrap
 msgid "If you are self-hosted at home: fix ports forwarding"
-msgstr "Si vous êtes auto-hébergé à la maison : il faut configurer les redirection de ports"
+msgstr ""
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:14
 #, no-wrap
 msgid "Check that you are getting access to the server by using its public IP (you can find at [https://ip.yunohost.org](https://ip.yunohost.org). If this does not work:\n"
-msgstr "Vérifier que vous arrivez à accéder au serveur en utilisant son IP globale (que vous pouvez trouver sur [https://ip.yunohost.org](https://ip.yunohost.org)). Si cela ne fonctionne pas:\n"
+msgstr ""
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:20
@@ -64,51 +61,36 @@ msgid ""
 "  - tweak your `/etc/hosts` file on each of your client devices\n"
 "  - add YunoHost's local IP as DNS resovler in your router (usually in the DHCP section) and open port `53` (UDP) in YunoHost's firewall, making sure to **not** enable UPnP forwarding. (Do **not** open port 53 on your router)\n"
 msgstr ""
-"- Assurez-vous d'avoir [configuré la redirection]"
-"(/admin/get_started/post_install/port_forwarding)\n"
-"- Certains routeurs ou box de votre FAI ne prennent pas en charge le "
-"*hairpinning*, ce qui vous empêche d'accéder à votre serveur par son nom de "
-"domaine depuis votre réseau local. Si tel est le cas, vous pouvez utiliser "
-"l'une des solutions suivantes :\n"
-"  - utilisez une connexion cellulaire (4/5G)\n"
-"  - modifiez votre fichier `/etc/hosts` sur chacun de vos appareils clients\n"
-"  - ajoutez l'adresse IP locale de YunoHost comme résolveur DNS dans votre "
-"routeur (généralement dans la section DHCP) et ouvrez le port `53` (UDP) "
-"dans le pare-feu de YunoHost, en veillant à **ne pas** activer la "
-"redirection UPnP. (**N'ouvrez pas** le port 53 sur votre routeur)\n"
 
 #. type: Title ###
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:21
 #, no-wrap
 msgid "Configure DNS records"
-msgstr "Il faut configurer vos enregistrement DNS"
+msgstr ""
 
 #. type: Fenced div block (tip)
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:23
 #, no-wrap
 msgid "This is not a problem if you are using a domain from `nohost.me`, `noho.st` or `ynh.fr`)\n"
-msgstr "Ce n'est pas nécessaire si vous utilisez un domaine de type `nohost.me`, `noho.st` ou `ynh.fr`)\n"
+msgstr ""
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:28
 #, no-wrap
 msgid "You have to configure your [DNS records](/admin/get_started/post_install/dns_config) (at least `A` records, and `AAAA` if you have an IPv6 connection).\n"
 msgstr ""
-"Il vous faut configurer vos enregistrement DNS comme expliqué sur "
-"[cette page](/admin/get_started/post_install/dns_config) "
-"(à minima l'enregistrement `A`, et `AAAA` si vous avez de l'IPv6).\n"
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:30
 #, no-wrap
 msgid "You can check that the DNS records are correct by comparing the results given by [this service](https://www.whatsmydns.net/) with the [IP given by our service](https://ip.yunohost.org).\n"
-msgstr "Vous pouvez valider que les enregistrements DNS sont corrects en comparant le résultat de[this service](https://www.whatsmydns.net/) avec l'IP globale de votre serveur (si vous êtes hébergé à la maison, vous pouvez obtenir cette IP sur [IP given by our service](https://ip.yunohost.org).\n"
+msgstr ""
 
 #. type: Title ###
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:31
 #, no-wrap
 msgid "Other probable causes"
-msgstr "Autres causes possibles"
+msgstr ""
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:36
@@ -118,115 +100,102 @@ msgid ""
 "- Your domain name may be expired. Check that on your registrar's client panel, or by using the command `whois yourdomain.tld`.\n"
 "- You have a dynamic IP address. In that case, you need to set up a script or a client that takes care of regularly update it. Refer to the page on [DNS with a dynamic IP](/admin/tutorials/domains/dns_dynamicip) to see how. You can also use a domain `nohost.me`, `noho.st` or `ynh.fr` that includes this features.\n"
 msgstr ""
-"- Votre domaine `noho.st`, `nohost.me` ou `ynh.fr` est inaccessible suite à "
-"une panne sur l'infrastructure de YunoHost. Consultez le [forum]"
-"(https://forum.yunohost.org/) pour voir s'il y a des annonces ou des "
-"messages concernant le même problème.\n"
-"- Votre nom de domaine est peut-être expiré. Vérifiez cela en vous "
-"connectant à l'espace client de votre fournisseur de nom de domaine ou en "
-"utilisant la commande `whois votredomaine.tld`.\n"
-"- Vous disposez d'une adresse IP dynamique. Dans ce cas, vous devez "
-"configurer un script ou un client qui se charge de la mettre à jour "
-"régulièrement. Reportez-vous à la page [DNS avec une IP dynamique]"
-"(/admin/tutorials/domains/dns_dynamicip) pour savoir comment procéder. Vous "
-"pouvez également utiliser un domaine `nohost.me`, `noho.st` ou `ynh.fr` qui "
-"inclut cette fonctionnalité.\n"
 
 #. type: Title ##
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:37
 #, no-wrap
 msgid "You are getting a certificate error that prevents you from reaching the webadmin"
-msgstr "Vous êtes face à une erreur de certificat qui vous empêche d’accéder à la webadmin"
+msgstr ""
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:40
 #, no-wrap
 msgid "- A certificate error may be displayed if you have made a typo in the address bar of your browser.\n"
-msgstr "- Une erreur de certificat peut être affichée dans certain cas où vous avez fait une faute de frappe dans la barre d'adresse de votre navigateur.\n"
+msgstr ""
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:42
 #, no-wrap
 msgid "- If you have just installed your server, or just installed a new domain, it uses a self-signed certificate. In that case, it is possible and understandable to add a *temporary* security exception so that you can [install a Let's Encrypt certificate](/admin/domains/certificate), provided you have a secure Internet connection.\n"
-msgstr "- Si vous venez d'installer votre serveur ou d'ajouter un nouveau domaine, il utilise pour le moment un certificat auto-signé. Dans ce cas, il devrait être possible et légitime d'ajouter *exceptionnellement* une exception de sécurité le temps d'[installer un certificat Let's Encrypt](/admin/domains/certificate) à condition d'être sur une connexion internet sûre.\n"
+msgstr ""
 
 #. type: Title ##
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:43
 #, no-wrap
 msgid "You have access via SSH but not via the webadmin, or inversely"
-msgstr "Vous avez accès en SSH mais pas à la Web admin ou inversement"
+msgstr ""
 
 #. type: Title ###
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:45
 #, no-wrap
 msgid "You are trying to log in with SSH as `root` instead of `admin` user"
-msgstr "Vous essayez de vous connecter en SSH avec `root` plutôt qu'avec `admin`"
+msgstr ""
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:48
 #, no-wrap
 msgid "By default, SSH connection has to be made as `admin`. It possible to log into the server as `root` *only from the local network of the server*. If your server is a VPS, the web console or VNC provided by VPS providers may work.\n"
-msgstr "Par défaut, la connexion en SSH doit s'effectuer avec l'utilisateur `admin`. Il est possible de se connecter à la machine avec l'utilisateur `root` *seulement depuis le réseau local* sur lequel se situe le serveur (ou bien via la console web / VNC pour des VPS).\n"
+msgstr ""
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:50
 #, no-wrap
 msgid "If you are running `yunohost` commands in the CLI as `admin`, you have to call them with `sudo` before (for example `sudo yunohost user list`). You can also become `root` by running `sudo su`.\n"
-msgstr "Lorsque vous exécutez des commandes `yunohost` en tant qu'admin, il faut les précéder de la commande `sudo` (par exemple `sudo yunohost user list`). Vous pouvez également devenir `root` en tapant `sudo su`.\n"
+msgstr ""
 
 #. type: Title ###
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:51
 #, no-wrap
 msgid "You have been temporarily banned"
-msgstr "Vous avez été banni temporairement"
+msgstr ""
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:54
 #, no-wrap
 msgid "Your YunoHost server includes a service, Fail2ban, which automatically bans IPs that fail several times in a row to log in. In some cases it can be software (e.g. Nextcloud client) that are confifured with an old password, or a user who has the same IP as you have.\n"
-msgstr "Votre serveur YunoHost inclut un mécanisme (Fail2Ban) qui banni automatiquement les IPs qui échouent plusieurs fois à s'authentifier. Dans certains cas, il peut s'agir d'un programme (par exemple un client Nextcloud) qui est configuré avec un ancien mot de passe ou d'un utilisateur qui utilise la même IP que vous.\n"
+msgstr ""
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:56
 #, no-wrap
 msgid "If you have been banned while trying to access a web page, and only web pages are unreachable, you may have access to your server via SSH. Similarly, if you have been banned from SSH, webadmin access may work.\n"
-msgstr "Si vous avez été banni en tentant d'accéder à une page web, seul les pages web sont inaccessibles, vous devriez donc pouvoir accéder au serveur en SSH. De même, si vous avez été banni en SSH vous devriez pouvoir accéder à la webadmin.\n"
+msgstr ""
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:58
 #, no-wrap
 msgid "If you have been banned from both SSH and webadmin, you can try to reach your server through another IP address. For example through the cellular network of your phone, a VPN, Tor, or another proxy.\n"
-msgstr "Si vous avez été banni à la fois en SSH et à la webadmin, vous pouvez essayer d'accéder à votre serveur avec une autre IP, par exemple en utilisant la 4G d'un smartphone ou en utilisant Tor Browser.\n"
+msgstr ""
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:60
 #, no-wrap
 msgid "See also : [unban an IP on Fail2Ban](/admin/troubleshooting/fail2ban)\n"
-msgstr "Voir aussi : [débannir une IP sur Fail2Ban](/admin/troubleshooting/fail2ban)\n"
+msgstr ""
 
 #. type: Fenced div block (note)
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:61
 #, no-wrap
 msgid "Ban are usually 10 to 12-minute-long, and on IPv4 only.\n"
-msgstr "Le bannissement dure en général 10 à 12 minutes. Le bannissement n'est actif qu'en IPv4.\n"
+msgstr ""
 
 #. type: Title ###
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:65
 #, no-wrap
 msgid "NGINX web server is broken"
-msgstr "Le serveur web NGINX est cassé"
+msgstr ""
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:68
 #, no-wrap
 msgid "Maybe the NGINX web server is out of order. You can check that [trough SSH](/admin/command_line) with the command `yunohost service status nginx`. If it is failing, check that its configuration is correct by running `nginx -t`. If it is indeed broken, it may be due to the installation or removal of a low-quality app... If you need support, [ask for it](/community/help).\n"
-msgstr "Peut-être que le serveur web NGINX est en panne. Vous pouvez vérifier cela [en ssh](/admin/command_line) avec `yunohost service status nginx`. Si il est en panne, vérifiez que la configuration ne comporte pas d'erreur avec `nginx -t`. Si la configuration est cassée, ceci est peut-être du à une l'installation ou désinstallation d'une application de mauvaise qualité... Si vous êtes perdu, [demandez de l'aide](/community/help).\n"
+msgstr ""
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:70
 #, no-wrap
 msgid "The NGINX or SSH servers may have been killed due to a lack of storage space, RAM, or swap.\n"
-msgstr "Il se peut également que le serveur web (NGINX) ou le serveur ssh aient été tués suite à un manque d'espace disque ou de RAM / swap.\n"
+msgstr ""
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:74
@@ -236,75 +205,60 @@ msgid ""
 "- You can check used storage with `df -h`. If one of your partitions is full, you need to identify what fills it and make room. You can use `ncdu` command (install it with `apt install ncdu`) to browse from the root directory: `ncdu /`\n"
 "- You can check RAM and swap usage with `free -h`. Depending on the result, it may be necessary to optimize your server to use less RAM (removal of heavy or unused apps...), add more RAM or add a swap file.\n"
 msgstr ""
-"- Essayez de redémarrer le service avec `systemctl restart nginx`.\n"
-"- Vous pouvez vérifier l'espace de stockage utilisé avec `df -h`. Si l'une "
-"de vos partitions est pleine, vous devez identifier ce qui la remplit et "
-"libérer de l'espace. Vous pouvez utiliser la commande `ncdu` "
-"(installez-la avec `apt install ncdu`) pour parcourir le répertoire racine : "
-"`ncdu /`\n"
-"- Vous pouvez vérifier l'utilisation de la RAM et de l'espace d'échange avec "
-"« free -h ». En fonction du résultat, il peut être nécessaire d'optimiser "
-"votre serveur pour utiliser moins de RAM "
-"(suppression des applications lourdes ou inutilisées ...), d'ajouter plus de "
-"RAM ou bien d'ajouter un fichier d'échange.\n"
 
 #. type: Title ###
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:75
 #, no-wrap
 msgid "Your server is reachable by IPv6, but not IPv4, or inversely"
-msgstr "Votre serveur est accessible en IPv6 mais pas en IPv4 ou inversement"
+msgstr ""
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:78
 #, no-wrap
 msgid "You can check that by `ping`ing it:\n"
-msgstr "Vous pouvez le vérifier en tentant de le `ping`er :\n"
+msgstr ""
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:85
 #, no-wrap
 msgid "If one of the two is working, use it to connect by SSH or the webadmin.\n"
-msgstr "Dans un tel cas, il est possible que vous arriviez à accéder à votre web admin en IPv6 mais pas en SSH potentiellement en IPv4 par défaut...\n"
+msgstr ""
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:87
 #, no-wrap
 msgid "If none are working, you need to resolv your connection issue. In some cases, an update of your router may have enabled IPv6 and DNS configuration may be disrupted.\n"
-msgstr "Dans ce cas il faut résoudre votre problème de connectivité. Dans certains, cas une mise à jour de votre box a activé l'IPv6, entraînant des problèmes de configuration au niveau de votre nom de domaine.\n"
+msgstr ""
 
 #. type: Title ##
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:88
 #, no-wrap
 msgid "Webadmin is working, but some web apps are returning 502 errors"
-msgstr "La webadmin fonctionne, mais certaines applications web me renvoient une erreur 502"
+msgstr ""
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:91
 #, no-wrap
 msgid "It is highly probable that the underlying service for these apps is failing (e.g. PHP apps requiring `php7.0-fpm` or `php7.3-fpm`). You can then try to restart the services, and/or ask for [help](/community/help)\n"
-msgstr "Il est fort probablement que le service correspondant à ces applications soit en panne (typiquement pour les applications PHP, il s'agit de `php7.0-fpm` ou `php7.3-fpm`). Vous pouvez alors tenter de relancer le service, et si cela ne fonctionne pas, regarder les logs du service correspondant et/ou [demander de l'aide](/community/help).\n"
+msgstr ""
 
 #. type: Title ##
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:92
 #, no-wrap
 msgid "You have lost your admin password, or the password is seemingly wrong"
-msgstr "Vous avez perdu votre mot de passe administrateur ? (ou bien le mot de passe est refusé)"
+msgstr ""
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:95
 #, no-wrap
 msgid "If you can reach the webadmin login page (force reload with `CTRL + F5` to be sure), and you cannot log in, your password is probably wrong.\n"
 msgstr ""
-"Si vous arrivez à afficher la page web d'administration "
-"(forcez le rafraîchissement avec `CTRL + F5` pour être sur) et que vous "
-"n'arrivez pas à vous connecter, vous avez probablement un mot de passe "
-"erroné.\n"
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:97
 #, no-wrap
 msgid "If yoy are sure of your passord, it may be due to the `slapd` service failing. If that's the case, log into the server by SSH as `root`.\n"
-msgstr "Si vous êtes certain du mot de passe, il est possible que le service SLAPD qui gère l'authentification soit en panne. Si c'est le cas, il vous faut vous connecter en `root`.\n"
+msgstr ""
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:100
@@ -313,56 +267,49 @@ msgid ""
 "- If your server is at home, you most likely have access to the local network. From this network, you can follow the [SSH instructions](/admin/command_line)`.\n"
 "- If your server is a VPS, your provider may offer a web console.\n"
 msgstr ""
-"- Si votre serveur se trouve chez vous, vous avez très probablement accès au "
-"réseau local. À partir de ce réseau, vous pouvez suivre les "
-"[instructions SSH](/admin/command_line)`.\n"
-"- Si votre serveur est un VPS, votre fournisseur peut vous proposer une "
-"console web.\n"
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:102
 #, no-wrap
 msgid "Once logged in, you have to check the state of the service with `yunohost service status slapd` and/or reset your admin password with `yunohost tools adminpw`.\n"
-msgstr "Une fois connecté, il vous faut regarder l'état du service avec la commande `yunohost service status slapd` et/ou tenter de réinitialiser votre mot de passe avec la commande `yunohost tools adminpw`.\n"
+msgstr ""
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:104
 #, no-wrap
 msgid "If this is still failing, on a VPS you may be able to reboot in rescue mode. Do not hesitate to ask for [help](/community/help)\n"
 msgstr ""
-"Si vous ne pouvez toujours pas, sur un VPS vous pouvez peut-être redémarrer "
-"en mode rescue. N'hésitez pas à [demander de l'aide](/community/help)\n"
 
 #. type: Fenced div block (warning)
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:105
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:120
 #, no-wrap
 msgid "To be completed\n"
-msgstr "À compléter\n"
+msgstr ""
 
 #. type: Title ##
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:109
 #, no-wrap
 msgid "Your VPN expired or does not connect any more"
-msgstr "Votre VPN a expiré ou ne se monte plus"
+msgstr ""
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:112
 #, no-wrap
 msgid "If you have a VPN with fixed IP, maybe it has expired, or the provider's infrastructure is failing.\n"
-msgstr "Si vous utilisez un VPN a IP fixe, peut être que celui-ci est arrivé à expiration ou que l'infrastructure de votre fournisseur est en difficulté.\n"
+msgstr ""
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:114
 #, no-wrap
 msgid "In that case, contact your VPN provider to renew it and update the parameters of the VPN Client app.\n"
-msgstr "Dans ce cas, contactez votre fournisseur VPN pour le renouveller et mettre à jour ses paramètres dans l'app VPNclient.\n"
+msgstr ""
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:116
 #, no-wrap
 msgid "Meanwhile, try reaching your server if it is at home, by:\n"
-msgstr "Pendant de temps, il est sans doute possible d'accéder à votre serveur à la maison via:\n"
+msgstr ""
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:119
@@ -371,62 +318,57 @@ msgid ""
 "- its local IP, using one of the method listed [on the corresponding page](/admin/get_started/post_install/find_ip)\n"
 "- reaching it at `yunohost.local`, assuming your client supports the Bonjour protocol (or `yunohost-2.local`, etc. depending on how many YunoHost servers are on your network)\n"
 msgstr ""
-"- son adresse IP locale, en utilisant l'une des méthodes répertoriées "
-"[sur la page correspondante](/admin/get_started/post_install/find_ip)\n"
-"- en y accédant via `yunohost.local`, en supposant que votre client prend en "
-"charge le protocole Bonjour (ou `yunohost-2.local`, etc. selon le nombre de "
-"serveurs YunoHost présents sur votre réseau)\n"
 
 #. type: Title ##
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:124
 #, no-wrap
 msgid "Your server does not boot"
-msgstr "Votre serveur est coincé au démarrage"
+msgstr ""
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:127
 #, no-wrap
 msgid "In some cases your server may be stuck at boot. It may come from a new, buggy, kernel. Try changing to another kernel on the boot screen (via VNC for VPS).\n"
-msgstr "Dans certains cas, votre serveur peut rester coincé au démarrage. Il peut s'agir d'un problème suite à l'installation d'un nouveau kernel. Essayez de choisir un autre kernel avec VNC ou avec l'écran lors du boot.\n"
+msgstr ""
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:129
 #, no-wrap
 msgid "If you are in \"rescue\" mode with `grub`, it may be due a misconfiguration of `grub`, or a corrupted drive.\n"
-msgstr "Si vous êtes en mode `rescue` avec `grub`, dans ce cas il peut s'agir d'un problème de configuration de `grub` ou d'un disque corrompu.\n"
+msgstr ""
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:131
 #, no-wrap
 msgid "In that case, access the storage drive from another system (your provider's \"rescue\" mode, live USB drive, read the SD or drive on another computer) and try to check partitions integrity with `smartctl`, `fsck`, and `mount`.\n"
-msgstr "Dans ce cas il faut accéder au disque avec un autre système (mode `rescue` du fournisseur, live USB, lire la carte SD ou le disque dur avec un autre ordinateur) et essayer de vérifier l'intégrité des partitions avec `smartctl`, `fsck` et `mount`.\n"
+msgstr ""
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:133
 #, no-wrap
 msgid "If disks are corrupted or hard to mount, you have to save your data and maybe reformat, reinstall, and/or change the drive. If you succeed in mounting the drive, you can use `systemd-nspawn` to access its database.\n"
-msgstr "Si les disques sont corrompus et difficiles à monter, il faut sauvegarder les données et potentiellement refaire un formatage/réinstaller et/ou changer le disque. Si on arrive à monter le disque, il est possible d'utiliser `systemd-nspawn` pour entrer dans la base de données.\n"
+msgstr ""
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:135
 #, no-wrap
 msgid "Otherwise, run `grub-update`, `grub-install` again with `chroot` or with `systemd-nspawn`.\n"
-msgstr "Sinon, relancer `grub-update` et `grub-install` en `chroot` ou avec `systemd-nspawn`.\n"
+msgstr ""
 
 #. type: Title ##
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:136
 #, no-wrap
 msgid "VNC or screen access does not work"
-msgstr "L’accès en VNC ou via écran ne fonctionne pas"
+msgstr ""
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:139
 #, no-wrap
 msgid "It may be due hardware issue on your server, or with the hypervisor if it is on a VPS.\n"
-msgstr "Dans ce cas il peut s'agir d'un problème matériel sur votre serveur physique ou d'un problème d'hyperviseur si c'est un VPS.\n"
+msgstr ""
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:140
 #, no-wrap
 msgid "If you are renting your server, contact the support of your provider. Otherwise, try fixing your machine by replacing failing components.\n"
-msgstr "Si c'est une machine louée contactez le support de votre fournisseur. Sinon, essayez de dépanner votre machine en retirant les composants qui peuvent être en panne.\n"
+msgstr ""

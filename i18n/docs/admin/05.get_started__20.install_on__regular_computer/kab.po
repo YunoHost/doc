@@ -1,23 +1,19 @@
-# French translations for YunoHost documentation package
 # Copyright (C) 2025 YunoHost Contributors
 # This file is distributed under the same license as the YunoHost documentation package.
-# Automatically generated, 2025.
 #
-# Weblate Admin <yunohost@translate.yunohost.org>, 2025.
+# ButterflyOfFire <BoFFire@users.noreply.translate.yunohost.org>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2025-11-22 20:46+0000\n"
-"PO-Revision-Date: 2025-11-29 16:25+0000\n"
-"Last-Translator: Weblate Admin <yunohost@translate.yunohost.org>\n"
-"Language-Team: French <https://translate.yunohost.org/projects/yunohost-doc/"
-"05get_started__20install_on__regular_computer/fr/>\n"
-"Language: fr\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: kab\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.14.2\n"
 
 #. type: Title ##
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:18
@@ -28,7 +24,7 @@ msgstr ""
 #: docs/admin/05.get_started/20.install_on/wsl.mdx:21
 #, no-wrap
 msgid "<FAIcon icon=\"fa-list-alt\"/> Pre-requisites"
-msgstr "<FAIcon icon=\"fa-list-alt\"/> Pré-requis"
+msgstr ""
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:49
@@ -36,21 +32,21 @@ msgstr "<FAIcon icon=\"fa-list-alt\"/> Pré-requis"
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:46
 #, no-wrap
 msgid "<TabItem value=\"etcher\" label=\"With Etcher (recommended)\">\n"
-msgstr "<TabItem value=\"etcher\" label=\"Avec Etcher (recommandé)\">\n"
+msgstr ""
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:51
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:48
 #, no-wrap
 msgid "Download <Link to=\"https://www.balena.io/etcher/\" target=\"_blank\">Etcher</Link> for your operating system and install it.\n"
-msgstr "Téléchargez <Link to=\"https://www.balena.io/etcher/\" target=\"_blank\">Etcher</Link> pour votre système d'exploitation, et installez-le.\n"
+msgstr ""
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:55
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:52
 #, no-wrap
 msgid "![Etcher](/img/softwares/etcher.gif)\n"
-msgstr "![Etcher](/img/softwares/etcher.gif)\n"
+msgstr ""
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:58
@@ -58,7 +54,7 @@ msgstr "![Etcher](/img/softwares/etcher.gif)\n"
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:55
 #, no-wrap
 msgid "<TabItem value=\"usbimager\" label=\"With USBimager\">\n"
-msgstr "<TabItem value=\"usbimager\" label=\"Avec USBimager\">\n"
+msgstr ""
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:60
@@ -66,7 +62,7 @@ msgstr "<TabItem value=\"usbimager\" label=\"Avec USBimager\">\n"
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:57
 #, no-wrap
 msgid "Download [USBimager](https://bztsrc.gitlab.io/usbimager/) for your operating system and install it.\n"
-msgstr "Téléchargez [USBimager](https://bztsrc.gitlab.io/usbimager/) pour votre système d'exploitation et installez-le.\n"
+msgstr ""
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:64
@@ -74,7 +70,7 @@ msgstr "Téléchargez [USBimager](https://bztsrc.gitlab.io/usbimager/) pour votr
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:61
 #, no-wrap
 msgid "![USBimager](/img/softwares/usbimager.png)\n"
-msgstr "![USBimager](/img/softwares/usbimager.png)\n"
+msgstr ""
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:67
@@ -82,7 +78,7 @@ msgstr "![USBimager](/img/softwares/usbimager.png)\n"
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:64
 #, no-wrap
 msgid "<TabItem value=\"dd\" label=\"With dd\">\n"
-msgstr "<TabItem value=\"dd\" label=\"Avec dd\">\n"
+msgstr ""
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:69
@@ -90,7 +86,7 @@ msgstr "<TabItem value=\"dd\" label=\"Avec dd\">\n"
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:66
 #, no-wrap
 msgid "If you are on GNU/Linux / macOS and know your way around command line, you may also flash your USB stick or SD card with `dd`. You can identify which device corresponds to your USB stick or SD card with `fdisk -l` or `lsblk`. A typical SD card name is something like `/dev/mmcblk0`. BE CAREFUL and make sure you got the right name.\n"
-msgstr "Si vous êtes sur GNU/Linux / macOS et que vous êtes à l'aise avec la ligne de commande, vous pouvez flasher votre clef USB ou carte SD avec la commande `dd`. Vous pouvez identifier le périphérique qui corresponds à votre clef USB ou carte SD avec `fdisk -l` ou `lsblk`. Typiquement, une carte SD a un nom comme `/dev/mmcblk0`. FAITES ATTENTION et assurez vous d'avoir le bon nom.\n"
+msgstr ""
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:71
@@ -98,14 +94,14 @@ msgstr "Si vous êtes sur GNU/Linux / macOS et que vous êtes à l'aise avec la 
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:68
 #, no-wrap
 msgid "Then run:\n"
-msgstr "Puis lancez:\n"
+msgstr ""
 
 #. type: Title ##
 #: docs/admin/05.get_started/20.install_on/raspberry_pi.mdx:32
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:26
 #, no-wrap
 msgid "<FAIcon icon=\"fa-download\" /> Download the YunoHost image"
-msgstr "<FAIcon icon=\"fa-download\" /> Téléchargez l'image YunoHost"
+msgstr ""
 
 #. type: Fenced div block (note)
 #: docs/admin/05.get_started/20.install_on/raspberry_pi.mdx:34
@@ -150,10 +146,9 @@ msgstr ""
 
 #. type: Title ##
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:40
-#, fuzzy, no-wrap
-#| msgid "<FAIcon icon=\"fa-key\"/> First user"
+#, no-wrap
 msgid "<FAIcon icon=\"fa-brands fa-usb\"/> Flash the YunoHost image"
-msgstr "<FAIcon icon=\"fa-key\"/> Premier compte utilisateur⋅ice"
+msgstr ""
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:43
@@ -175,10 +170,9 @@ msgstr ""
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:76
-#, fuzzy, no-wrap
-#| msgid "<TabItem value=\"dekko\" label=\"Dekko\">\n"
+#, no-wrap
 msgid "<TabItem value=\"ventoy\" label=\"Using Ventoy\">\n"
-msgstr "<TabItem value=\"dekko\" label=\"Dekko\">\n"
+msgstr ""
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:78
@@ -210,10 +204,9 @@ msgstr ""
 
 #. type: Title ##
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:91
-#, fuzzy, no-wrap
-#| msgid "<FAIcon icon=\"fa-cog\"/> Proceed with the initial configuration"
+#, no-wrap
 msgid "<FAIcon icon=\"fa-plug\"/> Boot the machine on your USB stick"
-msgstr "<FAIcon icon=\"fa-cog\"/> Lancer la configuration initiale"
+msgstr ""
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:98
@@ -235,34 +228,30 @@ msgstr ""
 #. type: Title ##
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:103
 #: docs/admin/05.get_started/20.install_on/virtualbox.mdx:70
-#, fuzzy, no-wrap
-#| msgid "<FAIcon icon=\"fa-stethoscope\"/> Run the initial diagnosis"
+#, no-wrap
 msgid "<FAIcon icon=\"fa-rocket\"/> Launch the graphical install"
-msgstr "<FAIcon icon=\"fa-stethoscope\"/> Lancer le diagnostic"
+msgstr ""
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:106
 #: docs/admin/05.get_started/20.install_on/virtualbox.mdx:73
-#, fuzzy, no-wrap
-#| msgid "You should then land on this page:\n"
+#, no-wrap
 msgid "You should see a screen like this:\n"
-msgstr "Vous devriez arriver sur cette page:\n"
+msgstr ""
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:108
 #: docs/admin/05.get_started/20.install_on/virtualbox.mdx:75
-#, fuzzy, no-wrap
-#| msgid "<Figure caption=\"Preview of the diagnostic panel\" src=\"/img/webadmin/diagnostic.png\"/>\n"
+#, no-wrap
 msgid "<Figure caption=\"Preview of the ISO menu\" src=\"/img/softwares/virtualbox_3.png\"/>\n"
-msgstr "<Figure caption=\"Capture d'écran du panneau de diagnostic\" src=\"/img/webadmin/diagnostic.png\"/>\n"
+msgstr ""
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:111
 #: docs/admin/05.get_started/20.install_on/virtualbox.mdx:78
-#, fuzzy, no-wrap
-#| msgid "<TabItem value=\"cli\" label=\"From the command line\">\n"
+#, no-wrap
 msgid "<TabItem value=\"classic\" label=\"Classic installation on a whole disk\">\n"
-msgstr "<TabItem value=\"cli\" label=\"Depuis la ligne de commande\">\n"
+msgstr ""
 
 #. type: Fenced div block (danger)
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:112
@@ -284,10 +273,9 @@ msgstr ""
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:122
 #: docs/admin/05.get_started/20.install_on/virtualbox.mdx:89
-#, fuzzy, no-wrap
-#| msgid "<TabItem value=\"dd\" label=\"In command line with dd\">\n"
+#, no-wrap
 msgid "<TabItem value=\"expert\" label=\"Installation in expert mode\">\n"
-msgstr "<TabItem value=\"dd\" label=\"En ligne de commande avec dd\">\n"
+msgstr ""
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:124
