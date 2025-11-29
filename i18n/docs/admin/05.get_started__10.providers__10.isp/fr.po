@@ -325,7 +325,7 @@ msgstr ""
 #: docs/admin/05.get_started/10.providers/10.isp.mdx:162
 #, no-wrap
 msgid "<TabItem value=\"gbr\" label=\"UK\">\n"
-msgstr "<TabItem value=\"che\" label=\"Royaume-Uni\">\n"
+msgstr "<TabItem value=\"gbr\" label=\"Royaume-Uni\">\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/10.isp.mdx:169
