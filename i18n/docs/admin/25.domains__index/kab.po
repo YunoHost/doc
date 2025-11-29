@@ -6,20 +6,23 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2025-11-25 00:39+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2025-11-29 18:39+0000\n"
+"Last-Translator: ButterflyOfFire "
+"<BoFFire@users.noreply.translate.yunohost.org>\n"
+"Language-Team: Kabyle <https://translate.yunohost.org/projects/yunohost-doc/"
+"25domains__index/kab/>\n"
 "Language: kab\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.14.2\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/25.domains/index.mdx:1
 #, no-wrap
 msgid "🌐 Domains"
-msgstr ""
+msgstr "🌐 Tiɣula"
 
 #. type: Plain text
 #: docs/admin/25.domains/index.mdx:9
@@ -217,7 +220,7 @@ msgstr ""
 #: docs/admin/25.domains/index.mdx:87
 #, no-wrap
 msgid "DNS configuration"
-msgstr ""
+msgstr "Tawila n DNS"
 
 #. type: Plain text
 #: docs/admin/25.domains/index.mdx:90
@@ -247,7 +250,7 @@ msgstr ""
 #: docs/admin/25.domains/index.mdx:97
 #, no-wrap
 msgid "SSL/HTTPS certificates"
-msgstr ""
+msgstr "Iselkinen n SSL/HTTPS"
 
 #. type: Plain text
 #: docs/admin/25.domains/index.mdx:99

@@ -6,14 +6,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2025-11-22 19:10+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2025-11-29 18:39+0000\n"
+"Last-Translator: ButterflyOfFire "
+"<BoFFire@users.noreply.translate.yunohost.org>\n"
+"Language-Team: Kabyle <https://translate.yunohost.org/projects/yunohost-doc/"
+"05get_started__40post_install__10find_ip/kab/>\n"
 "Language: kab\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.14.2\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:1
@@ -31,7 +34,7 @@ msgstr ""
 #: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:11
 #, no-wrap
 msgid "What is a local IP?"
-msgstr ""
+msgstr "D acu id IP tadigant?"
 
 #. type: Plain text
 #: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:14

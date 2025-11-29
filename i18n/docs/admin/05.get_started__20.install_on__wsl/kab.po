@@ -6,14 +6,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2025-11-11 19:34+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2025-11-29 18:39+0000\n"
+"Last-Translator: ButterflyOfFire "
+"<BoFFire@users.noreply.translate.yunohost.org>\n"
+"Language-Team: Kabyle <https://translate.yunohost.org/projects/yunohost-doc/"
+"05get_started__20install_on__wsl/kab/>\n"
 "Language: kab\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.14.2\n"
 
 #. type: Title ##
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:18
@@ -81,7 +84,7 @@ msgstr ""
 #: docs/admin/05.get_started/20.install_on/wsl.mdx:38
 #, no-wrap
 msgid "Install Debian"
-msgstr ""
+msgstr "Sebded Debian"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/wsl.mdx:41
@@ -137,7 +140,7 @@ msgstr ""
 #: docs/admin/05.get_started/20.install_on/wsl.mdx:95
 #, no-wrap
 msgid "Install Systemd"
-msgstr ""
+msgstr "Sebded Systemd"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/wsl.mdx:99
@@ -163,7 +166,7 @@ msgstr ""
 #: docs/admin/05.get_started/20.install_on/wsl.mdx:123
 #, no-wrap
 msgid "Install YunoHost"
-msgstr ""
+msgstr "Sebded YunoHost"
 
 #. type: Title ###
 #: docs/admin/05.get_started/20.install_on/wsl.mdx:137

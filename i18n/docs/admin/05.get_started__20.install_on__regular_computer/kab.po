@@ -6,14 +6,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2025-11-22 20:46+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2025-11-29 18:39+0000\n"
+"Last-Translator: ButterflyOfFire "
+"<BoFFire@users.noreply.translate.yunohost.org>\n"
+"Language-Team: Kabyle <https://translate.yunohost.org/projects/yunohost-doc/"
+"05get_started__20install_on__regular_computer/kab/>\n"
 "Language: kab\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.14.2\n"
 
 #. type: Title ##
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:18
@@ -46,7 +49,7 @@ msgstr ""
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:52
 #, no-wrap
 msgid "![Etcher](/img/softwares/etcher.gif)\n"
-msgstr ""
+msgstr "![Etcher](/img/softwares/etcher.gif)\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:58
@@ -70,7 +73,7 @@ msgstr ""
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:61
 #, no-wrap
 msgid "![USBimager](/img/softwares/usbimager.png)\n"
-msgstr ""
+msgstr "![USBimager](/img/softwares/usbimager.png)\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:67
@@ -376,7 +379,7 @@ msgstr ""
 #: docs/admin/05.get_started/20.install_on/virtualbox.mdx:124
 #, no-wrap
 msgid "About RAID"
-msgstr ""
+msgstr "Ɣef RAID"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:160
