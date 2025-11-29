@@ -6,14 +6,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2025-11-22 19:10+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2025-11-29 18:39+0000\n"
+"Last-Translator: ButterflyOfFire "
+"<BoFFire@users.noreply.translate.yunohost.org>\n"
+"Language-Team: Kabyle <https://translate.yunohost.org/projects/yunohost-doc/"
+"02what_is_yunohost__20demo/kab/>\n"
 "Language: kab\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.14.2\n"
 
 #. type: Yaml Front Matter Hash Value: description
 #: docs/admin/02.what_is_yunohost/20.demo.mdx:1
@@ -25,7 +28,7 @@ msgstr ""
 #: docs/admin/02.what_is_yunohost/20.demo.mdx:1
 #, no-wrap
 msgid "Try YunoHost"
-msgstr ""
+msgstr "Ɛreḍ YunoHost"
 
 #. type: Title #
 #: docs/admin/02.what_is_yunohost/20.demo.mdx:11
@@ -56,14 +59,14 @@ msgstr ""
 #: docs/admin/02.what_is_yunohost/20.demo.mdx:38
 #, no-wrap
 msgid "username: `demo`\n"
-msgstr ""
+msgstr "Isem n useqdac: `demo`\n"
 
 #. type: Plain text
 #: docs/admin/02.what_is_yunohost/20.demo.mdx:28
 #: docs/admin/02.what_is_yunohost/20.demo.mdx:40
 #, no-wrap
 msgid "password: `demo`\n"
-msgstr ""
+msgstr "Awal n uɛeddi: `demo`\n"
 
 #. type: Plain text
 #: docs/admin/02.what_is_yunohost/20.demo.mdx:33

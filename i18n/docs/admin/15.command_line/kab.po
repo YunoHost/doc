@@ -6,14 +6,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2025-11-25 00:44+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2025-11-29 18:39+0000\n"
+"Last-Translator: ButterflyOfFire "
+"<BoFFire@users.noreply.translate.yunohost.org>\n"
+"Language-Team: Kabyle <https://translate.yunohost.org/projects/yunohost-doc/"
+"15command_line/kab/>\n"
 "Language: kab\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.14.2\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/_configuration.mdx:18
@@ -66,7 +69,7 @@ msgstr ""
 #: docs/admin/15.command_line.mdx:8
 #, no-wrap
 msgid "What's SSH?"
-msgstr ""
+msgstr "D acu-t SSH?"
 
 #. type: Plain text
 #: docs/admin/15.command_line.mdx:11
@@ -84,7 +87,7 @@ msgstr ""
 #: docs/admin/15.command_line.mdx:14
 #, no-wrap
 msgid "How to connect"
-msgstr ""
+msgstr "Amek ara teqqneḍ"
 
 #. type: Title ###
 #: docs/admin/15.command_line.mdx:16
@@ -122,7 +125,7 @@ msgstr ""
 #: docs/admin/15.command_line.mdx:30
 #, no-wrap
 msgid "Address to use"
-msgstr ""
+msgstr "Tansa ara tesqedceḍ"
 
 #. type: Plain text
 #: docs/admin/15.command_line.mdx:33
@@ -227,7 +230,7 @@ msgstr ""
 #: docs/admin/15.command_line.mdx:115
 #, no-wrap
 msgid "Security and SSH"
-msgstr ""
+msgstr "Taɣellist akked SSH"
 
 #. type: Plain text
 #: docs/admin/15.command_line.mdx:118

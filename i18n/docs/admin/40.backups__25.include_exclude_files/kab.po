@@ -6,14 +6,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2025-11-11 19:34+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2025-11-29 18:39+0000\n"
+"Last-Translator: ButterflyOfFire "
+"<BoFFire@users.noreply.translate.yunohost.org>\n"
+"Language-Team: Kabyle <https://translate.yunohost.org/projects/yunohost-doc/"
+"40backups__25include_exclude_files/kab/>\n"
 "Language: kab\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.14.2\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/40.backups/25.include_exclude_files.mdx:1
@@ -49,13 +52,13 @@ msgstr ""
 #: docs/admin/40.backups/25.include_exclude_files.mdx:14
 #, no-wrap
 msgid "`/etc/yunohost/hooks.d/backup/99-conf_custom`\n"
-msgstr ""
+msgstr "`/etc/yunohost/hooks.d/backup/99-conf_custom`\n"
 
 #. type: Plain text
 #: docs/admin/40.backups/25.include_exclude_files.mdx:55
 #, no-wrap
 msgid "`/etc/yunohost/hooks.d/restore/99-conf_custom`\n"
-msgstr ""
+msgstr "`/etc/yunohost/hooks.d/restore/99-conf_custom`\n"
 
 #. type: Title ##
 #: docs/admin/40.backups/25.include_exclude_files.mdx:101

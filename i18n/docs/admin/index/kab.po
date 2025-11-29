@@ -3,19 +3,19 @@
 #
 # ButterflyOfFire <BoFFire@users.noreply.translate.yunohost.org>, 2025.
 msgid ""
-msgstr "Project-Id-Version: YunoHost documentation VERSION\nPOT-Creation-Date: 2025-11-19 03:04+0000\nPO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\nLast-Translator: Automatically generated\nLanguage-Team: none\nLanguage: kab\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=2; plural=n > 1;\n"
+msgstr "Project-Id-Version: YunoHost documentation VERSION\nPOT-Creation-Date: 2025-11-19 03:04+0000\nPO-Revision-Date: 2025-11-29 18:39+0000\nLast-Translator: ButterflyOfFire <BoFFire@users.noreply.translate.yunohost.org>\nLanguage-Team: Kabyle <https://translate.yunohost.org/projects/yunohost-doc/index/kab/>\nLanguage: kab\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=2; plural=n > 1;\nX-Generator: Weblate 5.14.2\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/index.mdx:1
 #, no-wrap
 msgid "Welcome!"
-msgstr ""
+msgstr "Ansuf!"
 
 #. type: Plain text
 #: docs/admin/index.mdx:9
 #, no-wrap
 msgid "#\n"
-msgstr ""
+msgstr "#\n"
 
 #. type: Plain text
 #: docs/admin/index.mdx:19
@@ -94,4 +94,4 @@ msgid ""
 "<Button url=\"/dev/doc\">🌐 Work on translations</Button>\n"
 "<Button url=\"/dev/packaging\">📦 Learn app packaging</Button>\n"
 "<Button url=\"/dev/core\">⚙️  Develop on the core</Button>\n"
-msgstr ""
+msgstr "<Button url=\"https://yunohost.org/donate.html\">💰 Mudd tawsa</Button>\n<Button url=\"/dev/doc\">📝 Asnerni n tsemlit</Button>\n<Button url=\"/dev/doc\">🌐 Amahil ɣef tsuqilin</Button>\n<Button url=\"/dev/packaging\">📦 Lmed askummes</Button>\n<Button url=\"/dev/core\">⚙️  Ttekki deg tneflit</Button>\n"
