@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2025-11-11 19:34+0100\n"
-"PO-Revision-Date: 2025-11-29 01:17+0000\n"
+"PO-Revision-Date: 2025-11-29 09:02+0000\n"
 "Last-Translator: Julie Boissière-Vasseur <jboisseur@posteo.net>\n"
 "Language-Team: French <https://translate.yunohost.org/projects/yunohost-doc/"
 "45tutorials__10theming/fr/>\n"
@@ -22,10 +22,9 @@ msgstr ""
 
 #. type: Yaml Front Matter Hash Value: sidebar_label
 #: docs/admin/45.tutorials/10.theming.mdx:1
-#, fuzzy, no-wrap
-#| msgid "The user portal, or SSO"
+#, no-wrap
 msgid "Theme the portal"
-msgstr "Le portail utilisateur, ou SSO"
+msgstr "Personnaliser le portail"
 
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/45.tutorials/10.theming.mdx:1
