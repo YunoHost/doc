@@ -3,28 +3,17 @@
 #
 # "José M." <correo@xmgz.eu>, 2025.
 msgid ""
-msgstr ""
-"Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2025-11-19 03:04+0000\n"
-"PO-Revision-Date: 2025-11-16 13:17+0000\n"
-"Last-Translator: \"José M.\" <correo@xmgz.eu>\n"
-"Language-Team: Galician <https://translate.yunohost.org/projects/yunohost-doc/index/gl/>\n"
-"Language: gl\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.14.2\n"
+msgstr "Project-Id-Version: YunoHost documentation VERSION\nPOT-Creation-Date: 2025-11-19 03:04+0000\nPO-Revision-Date: 2025-11-30 23:30+0000\nLast-Translator: \"José M.\" <correo@xmgz.eu>\nLanguage-Team: Galician <https://translate.yunohost.org/projects/yunohost-doc/index/gl/>\nLanguage: gl\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=2; plural=n != 1;\nX-Generator: Weblate 5.14.2\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #, no-wrap
 msgid "Welcome!"
-msgstr ""
+msgstr "Benvida!"
 
 #. type: Plain text
 #, no-wrap
 msgid "#\n"
-msgstr ""
+msgstr "#\n"
 
 #. type: Plain text
 #, no-wrap
@@ -35,19 +24,19 @@ msgid ""
 "    alt=\"YunoHost logo\"\n"
 "    style={{ marginTop: \"-2em\", maxWidth: \"7rem\", }}\n"
 "/>\n"
-msgstr ""
+msgstr "<img\n    class=\"text--center\"\n    src=\"/img/icons/logo-ynh-roundcorner.png\"\n    alt=\"logotipo de YunoHost\"\n    style={{ marginTop: \"-2em\", maxWidth: \"7rem\", }}\n/>\n"
 
 #. type: Plain text
 #, no-wrap
 msgid ""
 "This is the documentation for YunoHost,<br/>\n"
 "an **operating system** aiming to **simplify server administration**!\n"
-msgstr ""
+msgstr "Esta é a documentación para YunoHost,<br/>\nun **sistema operativo** co obxectivo de **simplificar a administración dun servidor**!\n"
 
 #. type: Plain text
 #, no-wrap
 msgid "If you are an **impatient power user**, you may want to try YunoHost, or jump right away to install:\n"
-msgstr ""
+msgstr "Se es **unha usuaria con experiencia e pouca paciencia**, podes primeiro probar YunoHost, ou ir directamente á instalación:\n"
 
 #. type: Plain text
 #, no-wrap
@@ -55,22 +44,22 @@ msgid ""
 "<Button url=\"/admin/what_is_yunohost\">🤔 What's YunoHost?!</Button>\n"
 "<Button url=\"/admin/what_is_yunohost/demo\">⚗️ Try YunoHost</Button>\n"
 "<Button url=\"/admin/get_started/install_on\">🚀 Install</Button>\n"
-msgstr ""
+msgstr "<Button url=\"/admin/what_is_yunohost\">🤔 Que é YunoHost?!</Button>\n<Button url=\"/admin/what_is_yunohost/demo\">⚗️ Probar YunoHost</Button>\n<Button url=\"/admin/get_started/install_on\">🚀 Instalar</Button>\n"
 
 #. type: Plain text
 #, no-wrap
 msgid "<Button url=\"https://apps.yunohost.org/\">📦 Browse the app catalog</Button>\n"
-msgstr ""
+msgstr "<Button url=\"https://apps.yunohost.org/\">📦 Olla o catálogo de aplicacións</Button>\n"
 
 #. type: Plain text
 #, no-wrap
 msgid "Are you **new to self-hosting and servers in general**? We recommend to take it slow and go through the pages presenting [self-hosting](/admin/about_self_hosting), the [different modes](/admin/get_started/methods) and [other](/admin/get_started/why_should_you_not_host_yourself) [things](/category/providers) you should know prior to jumping into the action! \n"
-msgstr ""
+msgstr "**Non tes experiencia previa** no tema de auto hospedaxe? Recomendámosche ir con calma e revisar as páxinas relativas ao [auto-hospedaxe](/admin/about_self_hosting), the [different modes](/admin/get_started/methods) así como [outras consideracións](/admin/get_started/why_should_you_not_host_yourself) e [asuntos](/category/providers) que deberías coñecer antes de pasar á acción! \n"
 
 #. type: Plain text
 #, no-wrap
 msgid "Are you **already using YunoHost**? You may want to get in touch with the community or reach for help:\n"
-msgstr ""
+msgstr "Xa **utilizas YunoHost**? Pode interesarche relacionarte coa comunidade ou pedir axuda:\n"
 
 #. type: Plain text
 #, no-wrap
@@ -78,12 +67,12 @@ msgid ""
 "<Button url=\"https://forum.yunohost.org\">📢 Forum</Button>\n"
 "<Button url=\"/community/chat_rooms\">🗫  Chat rooms</Button>\n"
 "<Button url=\"/community/help\">🛟 Help</Button>\n"
-msgstr ""
+msgstr "<Button url=\"https://forum.yunohost.org\">📢 Foro</Button>\n<Button url=\"/community/chat_rooms\">🗫  Salas de conversa</Button>\n<Button url=\"/community/help\">🛟 Axuda</Button>\n"
 
 #. type: Plain text
 #, no-wrap
 msgid "Finally, you can **support the project** or get involve in [different ways](/dev):\n"
-msgstr ""
+msgstr "Para rematar, podes **apoiar o proxecto** ou colaborar de [varios xeitos](/dev):\n"
 
 #. type: Plain text
 #, no-wrap
@@ -93,7 +82,7 @@ msgid ""
 "<Button url=\"/dev/doc\">🌐 Work on translations</Button>\n"
 "<Button url=\"/dev/packaging\">📦 Learn app packaging</Button>\n"
 "<Button url=\"/dev/core\">⚙️  Develop on the core</Button>\n"
-msgstr ""
+msgstr "<Button url=\"https://yunohost.org/donate.html\">💰 Doar</Button>\n<Button url=\"/dev/doc\">📝 Mellorar a documentación</Button>\n<Button url=\"/dev/doc\">🌐 Traballar na tradución</Button>\n<Button url=\"/dev/packaging\">📦 Aprender a empaquetar aplicacións</Button>\n<Button url=\"/dev/core\">⚙️  Desenvolvemento do núcleo</Button>\n"
 
 #, no-wrap
 #~ msgid "Welcome"
