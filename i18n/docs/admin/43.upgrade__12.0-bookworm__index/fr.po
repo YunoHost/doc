@@ -10,8 +10,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2025-11-22 19:19+0000\n"
-"PO-Revision-Date: 2025-11-29 01:17+0000\n"
-"Last-Translator: Julie Boissière-Vasseur <jboisseur@posteo.net>\n"
+"PO-Revision-Date: 2025-11-30 23:30+0000\n"
+"Last-Translator: ppr <pouetpouetratatouille@gmail.com>\n"
 "Language-Team: French <https://translate.yunohost.org/projects/yunohost-doc/"
 "43upgrade__120-bookworm__index/fr/>\n"
 "Language: fr\n"
@@ -157,10 +157,10 @@ msgstr ""
 #, no-wrap
 msgid "- Please [backup your data and server](/admin/backups)! This migration is a complex operation and covering every pitfall is quite hard. And in any case, be patient and attentive during the migration.\n"
 msgstr ""
-"- Veuillez [sauvegarder vos données et votre serveur](/admin/backups) ! "
-"Cette migration est une opération complexe et il est très difficile de "
-"prévoir tous les aléas. Dans tous les cas, soyez patient et attentif pendant "
-"la migration.\n"
+"- [Faites des sauvegardes](/admin/backups) de votre serveur et de vos "
+"données ! Cette migration est une opération complexe et éviter tous les "
+"problèmes possibles est difficile. Dans tous les cas, soyez patients et "
+"attentifs durant la migration.\n"
 
 #. type: Plain text
 #: docs/admin/43.upgrade/12.0-bookworm/index.mdx:20
@@ -254,7 +254,7 @@ msgid ""
 "- Migrate from PostgreSQL 13 to 15\n"
 msgstr ""
 "- Reconstruction des virtualenvs de vos applications Python\n"
-"- Migration de PostgreSQL 13 vers PostgreSQL 15\n"
+"- Migration de PostgreSQL 13 vers 15\n"
 
 #. type: Plain text
 #: docs/admin/43.upgrade/12.0-bookworm/index.mdx:65

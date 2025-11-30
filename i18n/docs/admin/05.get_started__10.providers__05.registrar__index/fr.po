@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2025-11-11 00:07+0100\n"
-"PO-Revision-Date: 2025-11-16 23:39+0000\n"
+"PO-Revision-Date: 2025-11-30 23:30+0000\n"
 "Last-Translator: ppr <pouetpouetratatouille@gmail.com>\n"
 "Language-Team: French <https://translate.yunohost.org/projects/yunohost-doc/"
 "05get_started__10providers__05registrar__index/fr/>\n"
@@ -21,13 +21,13 @@ msgstr ""
 #. type: Title ###
 #: docs/admin/05.get_started/10.providers/05.registrar/index.mdx:1
 #: docs/admin/45.tutorials/05.domains/dns_dynamicip.mdx:15
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Registrars"
 msgstr "Fournisseurs de noms de domaines"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/05.registrar/index.mdx:6
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Since version 4.3, YunoHost includes a mechanism to interface your server with your DNS registrar API, with the purpose of simplifying and automatizing DNS records registration and maintenance.\n"
 msgstr ""
 "Depuis la version 4.3, YunoHost inclut un mécanisme permettant d'interfacer "
@@ -40,22 +40,32 @@ msgstr ""
 #, no-wrap
 msgid "The procedure requires an initial configuration where you need to generate an API key on your registrar's interface.\n"
 msgstr ""
+"La procédure nécessite une configuration initiale dans laquelle vous devez "
+"générer une clé API sur l'interface de votre fournisseur de nom de domaine.\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/05.registrar/index.mdx:10
 #, no-wrap
 msgid "Not all registrars are supported. So far, the community tested and validated the interface with [Gandi](https://gandi.net) and [OVH](https://ovh.com), which are recommended. The interface with other registrars may work, but is still considered experimental until we gather feedback from the community.\n"
 msgstr ""
+"Tous les fournisseurs de noms de domaines ne sont pas pris en charge. "
+"Jusqu'à présent, la communauté a testé et validé l'interface avec [Gandi]"
+"(https://gandi.net) et [OVH](https://ovh.com), qui sont ainsi recommandés. "
+"L'interface avec d'autres bureaux d'enregistrement peut fonctionner, mais "
+"elle est encore considérée comme expérimentale jusqu'à ce que nous "
+"recueillions les commentaires de la communauté.\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/05.registrar/index.mdx:12
 #, no-wrap
 msgid "The list below can help you to choose a registrar if you plan to buy a domain name to use it with YunoHost.\n"
 msgstr ""
+"La liste ci-dessous peut vous aider à choisir un fournisseur de noms de "
+"domaines si vous envisagez d'en acheter pour l'utiliser avec YunoHost.\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/05.registrar/index.mdx:17
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "| Registrar                           | Compatibility               | Easy to obtain an API key | Howto |\n"
 "|-------------------------------------|-----------------------------|---------------------------|-------|\n"
@@ -63,3 +73,18 @@ msgid ""
 "| [OVH](https://ovh.com/domaines)     | ✔ (tested)                  | ✘   | [Obtain an API key](/admin/get_started/providers/registrar/ovh/autodns) <br/> [Configure manually](/admin/get_started/providers/registrar/ovh/manualdns) |\n"
 "| [Namecheap](https://namecheap.com)  | ✘ (in lexicon but untested) | ✘✘✘ API not available without 50$ on the account | [Obtain an API key](/admin/get_started/providers/registrar/namecheap) |\n"
 msgstr ""
+"| Registrar                           | Compatibilité               | "
+"Facilité d'obtention d'une clé API | Mode d'emploi |\n"
+"|------------------------------------ "
+"-|-----------------------------|---------------------------|-------|\n"
+"| [Gandi](https://www.gandi.net)      | ✘ (ne fonctionne pas)"
+"                  | ✘   | [Obtenir une clé API]"
+"(/admin/get_started/providers/registrar/gandi) <br/> [Voir le bug ici]"
+"(https://github.com/YunoHost/issues/issues/2419) |\n"
+"| [OVH](https://ovh.com/domaines)     | ✔ (testé)                  | ✘   | "
+"[Obtenir une clé API](/admin/get_started/providers/registrar/ovh/autodns) <"
+"br/> [Configurer manuellement]"
+"(/admin/get_started/providers/registrar/ovh/manualdns) |\n"
+"| [Namecheap](https://namecheap.com)  | ✘ (dans le catalogue mais non testé) "
+"| ✘✘✘ API non disponible sans 50 $ sur le compte | [Obtenir une clé API]"
+"(/admin/get_started/providers/registrar/namecheap) |\n"

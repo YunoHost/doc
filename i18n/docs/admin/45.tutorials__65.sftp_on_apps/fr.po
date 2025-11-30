@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2025-11-11 01:24+0100\n"
-"PO-Revision-Date: 2025-11-26 22:17+0000\n"
+"PO-Revision-Date: 2025-11-30 23:30+0000\n"
 "Last-Translator: ppr <pouetpouetratatouille@gmail.com>\n"
 "Language-Team: French <https://translate.yunohost.org/projects/yunohost-doc/"
 "45tutorials__65sftp_on_apps/fr/>\n"
@@ -37,7 +37,7 @@ msgstr "Dans YunoHost, depuis la gestion des permissions par l'interface d'admin
 
 #. type: Plain text
 #: docs/admin/45.tutorials/65.sftp_on_apps.mdx:11
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "Go to : \n"
 "- Groups and permissions > Individual user permissions. \n"
@@ -84,8 +84,8 @@ msgid ""
 "- `setfacl` set the file permissions\n"
 msgstr ""
 "Explication rapide des commandes :\n"
-"- `mkdir -p /CHEMIN/DU/REPERTOIRE` crée un dossier REPERTOIRE dans /CHEMIN/"
-"DU/\n"
+"- `mkdir -p /CHEMIN/VERS/LE/REPERTOIRE` crée un dossier REPERTOIRE dans /"
+"CHEMIN/VERS/LE/\n"
 "- `touch` crée un fichier vide\n"
 "- `mount --bind` rend le contenu du fichier ou du répertoire source "
 "disponible à l'emplacement cible sans déplacer ni copier les données.\n"
