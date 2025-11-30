@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2025-11-11 00:07+0100\n"
-"PO-Revision-Date: 2025-11-26 22:17+0000\n"
+"PO-Revision-Date: 2025-11-30 23:30+0000\n"
 "Last-Translator: ppr <pouetpouetratatouille@gmail.com>\n"
 "Language-Team: French <https://translate.yunohost.org/projects/yunohost-doc/"
 "05get_started__10providers__05registrar__ovh__autodns/fr/>\n"
@@ -60,7 +60,7 @@ msgstr ""
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/05.registrar/ovh/autodns.mdx:26
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "    - Account ID or email address: This is your usual OVH login\n"
 "    - Password: This is your usual OVH password\n"
@@ -87,6 +87,9 @@ msgstr ""
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/05.registrar/ovh/autodns.mdx:29
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "3. You will obtain three tokens (an application key, a secret application key, and a consumer key) which should be used in YunoHost's configuration\n"
-msgstr "3. Vous obtiendrez trois jetons (une clé d'application, une clé d'application secrète et une clé de consommateur) qui doivent être utilisés dans la configuration de YunoHost.\n"
+msgstr ""
+"3. Vous obtiendrez trois jetons (une clé d'application, une clé "
+"d'application secrète et une clé de consommateur) qui doivent être utilisés "
+"dans la configuration de YunoHost.\n"
