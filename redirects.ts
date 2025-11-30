@@ -108,6 +108,7 @@ const redirects_from_grav: Array<{ from: string; to: string }> = [
     { from: '/packaging_scripts',                       to: '/dev/packaging/scripts/', },
     { from: '/packaging_apps_helpers',                  to: '/dev/packaging/scripts/helpers_v2.0', },
     { from: '/packaging_apps_helpers_v2.1',             to: '/dev/packaging/scripts/helpers_v2.1', },
+    { from: '/packaging/scripts/helpers_v2.1',          to: '/dev/packaging/scripts/helpers_v2.1', },
     { from: '/packaging_testing',                       to: '/dev/packaging/test', },
 ];
 
