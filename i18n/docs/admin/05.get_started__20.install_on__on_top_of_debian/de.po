@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2025-12-02 17:50+0000\n"
+"POT-Creation-Date: 2025-12-02 17:57+0000\n"
 "PO-Revision-Date: 2025-11-11 19:34+0100\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -110,7 +110,7 @@ msgstr ""
 #: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:45
 #, no-wrap
 msgid ""
-"- We recommend not to separate the `/home`, `/var` or `/tmp` partitions. Use the option to “keep all files in one partition”.\n"
+"- We recommend not to separate the `/home`, `/var` or `/tmp` partitions. Use the option to \"keep all files in one partition\".\n"
 "- If you don't know what you're doing, don't encrypt the disk (Decryption at power-on will be an issue)\n"
 msgstr ""
 
@@ -121,22 +121,27 @@ msgid "The installer will ask about **mirrors**. Select a country and server clo
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:51
+#: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:49
+#, no-wrap
+msgid "The installer will ask which **desktop environment** you want. This is generally useless and might waste resources.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:52
 #, no-wrap
 msgid ""
-"The installer will ask which **desktop environment** you want. This is generally useless and might waste resources.\n"
 "- Unselect all desktop environment\n"
-"- Keep “standard system utilities” checked\n"
+"- Keep \"standard system utilities\" checked\n"
 msgstr ""
 
 #. type: Title ###
-#: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:52
+#: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:53
 #, no-wrap
 msgid "After installing Debian"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:58
+#: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:59
 #, no-wrap
 msgid ""
 "1. Remove the installation media (unplug the USB stick)\n"
