@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2025-11-22 19:19+0000\n"
+"POT-Creation-Date: 2025-12-02 17:50+0000\n"
 "PO-Revision-Date: 2025-11-22 19:19+0000\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -95,13 +95,6 @@ msgstr ""
 msgid "If you can't restore your app but your system has been restored, you probably should use the regen conf to fix the nginx issues:\n"
 msgstr ""
 
-#. type: Fenced code block (bash)
-#: docs/admin/43.upgrade/11.0-bullseye.mdx:121
-#: docs/admin/43.upgrade/12.0-bookworm/05.issues_faq.mdx:65
-#, no-wrap
-msgid "yunohost tools regenconf nginx --force\n"
-msgstr ""
-
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/43.upgrade/12.0-bookworm/05.issues_faq.mdx:1
 #, no-wrap
@@ -174,12 +167,6 @@ msgstr ""
 #: docs/admin/43.upgrade/12.0-bookworm/05.issues_faq.mdx:29
 #, no-wrap
 msgid "The web server, nginx, might need a restart before being fully operational. Please run this command:\n"
-msgstr ""
-
-#. type: Fenced code block (bash)
-#: docs/admin/43.upgrade/12.0-bookworm/05.issues_faq.mdx:30
-#, no-wrap
-msgid "sudo systemctl restart nginx\n"
 msgstr ""
 
 #. type: Title ##

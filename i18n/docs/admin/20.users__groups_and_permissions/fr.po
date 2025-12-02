@@ -5,11 +5,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2025-11-19 02:54+0000\n"
+"POT-Creation-Date: 2025-12-02 17:50+0000\n"
 "PO-Revision-Date: 2025-11-25 05:03+0000\n"
 "Last-Translator: Weblate Admin <yunohost@translate.yunohost.org>\n"
-"Language-Team: French <https://translate.yunohost.org/projects/yunohost-doc/"
-"20users__groups_and_permissions/fr/>\n"
+"Language-Team: French <https://translate.yunohost.org/projects/yunohost-"
+"doc/20users__groups_and_permissions/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -78,9 +78,7 @@ msgstr ""
 #: docs/admin/20.users/groups_and_permissions.mdx:12
 #, no-wrap
 msgid "![screenshot of users permission button](/img/webadmin/button_to_go_to_permission_interface.png)\n"
-msgstr ""
-"![Capture d'écran du bouton des permissions d'utilisateurs]"
-"(/img/webadmin/button_to_go_to_permission_interface.png)\n"
+msgstr "![Capture d'écran du bouton des permissions d'utilisateurs](/img/webadmin/button_to_go_to_permission_interface.png)\n"
 
 #. type: Title ##
 #: docs/admin/20.users/groups_and_permissions.mdx:13
@@ -127,10 +125,8 @@ msgid ""
 "- `admins`, that contains YunoHost administrators, who will have SSH access as well as to the webadmin.\n"
 msgstr ""
 "- `all_users`, contiens tous les comptes enregistrés dans YunoHost,\n"
-"- `visitors`, qui s'applique à toute personne visitant le serveur sans être "
-"connecté.\n"
-"- `admins`, qui contiens tous les comptes administrateurs du YunoHost, qui "
-"ont donc un accès SSH ainsi qu'accès à la webadmin.\n"
+"- `visitors`, qui s'applique à toute personne visitant le serveur sans être connecté.\n"
+"- `admins`, qui contiens tous les comptes administrateurs du YunoHost, qui ont donc un accès SSH ainsi qu'accès à la webadmin.\n"
 
 #. type: Plain text
 #: docs/admin/20.users/groups_and_permissions.mdx:30
@@ -172,9 +168,7 @@ msgstr "Pour créer un nouveau groupe, il suffit de cliquer sur le bouton \"Nouv
 #: docs/admin/20.users/groups_and_permissions.mdx:67
 #, no-wrap
 msgid "![screenshot of new group button](/img/webadmin/groups_button-new-group.png)\n"
-msgstr ""
-"![Capture d'écran du bouton pour faire un nouveau groupe]"
-"(/img/webadmin/groups_button-new-group.png)\n"
+msgstr "![Capture d'écran du bouton pour faire un nouveau groupe](/img/webadmin/groups_button-new-group.png)\n"
 
 #. type: Plain text
 #: docs/admin/20.users/groups_and_permissions.mdx:72
@@ -313,11 +307,7 @@ msgstr "Et maintenant, nous pouvons voir que YoloCrew et Alice ont tous deux acc
 #: docs/admin/20.users/groups_and_permissions.mdx:224
 #, no-wrap
 msgid "Note that, for example, if we want to restrict permission for email so that only Bob is allowed to email, we should also remove `all_users` from the permission, by deleting it from the `all_users` group panel, or in CLI:\n"
-msgstr ""
-"Notez que, par exemple, si vous voulez restreindre la permission email pour "
-"que seul Bob puisse utiliser les mails, il faudra retirer `all_users` de la "
-"permissions, en la supprimant du panneau `Tous les utilisateurs`, ou en CLI :"
-"\n"
+msgstr "Notez que, par exemple, si vous voulez restreindre la permission email pour que seul Bob puisse utiliser les mails, il faudra retirer `all_users` de la permissions, en la supprimant du panneau `Tous les utilisateurs`, ou en CLI :\n"
 
 #. type: Plain text
 #: docs/admin/20.users/groups_and_permissions.mdx:233

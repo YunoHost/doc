@@ -6,11 +6,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2025-11-22 19:10+0000\n"
+"POT-Creation-Date: 2025-12-02 17:50+0000\n"
 "PO-Revision-Date: 2025-11-29 16:25+0000\n"
 "Last-Translator: Weblate Admin <yunohost@translate.yunohost.org>\n"
-"Language-Team: French <https://translate.yunohost.org/projects/yunohost-doc/"
-"05get_started__40post_install__15port_forwarding/fr/>\n"
+"Language-Team: French <https://translate.yunohost.org/projects/yunohost-"
+"doc/05get_started__40post_install__15port_forwarding/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -34,12 +34,7 @@ msgstr "Configurer la redirection des ports"
 #: docs/admin/05.get_started/40.post_install/15.port_forwarding.mdx:7
 #, no-wrap
 msgid "If you are self-hosting at home and without a VPN, you will probably want to forward ports on your home router (\"Internet box\") if you want your server to be reachable from outside your local network. The sketch below tries to briefly summarize the role and necessity of port forwarding when setting up a server at home.\n"
-msgstr ""
-"Si vous vous auto-hébergez à la maison et sans VPN, il vous faut rediriger "
-"les ports de votre routeur (\"machin-box\") si vous souhaitez que votre "
-"serveur puisse être contacté depuis l'extérieur de votre réseau local. Le "
-"schéma ci-dessous tente d'expliquer brièvement le rôle de la redirection des "
-"ports lors de la mise en place d'un serveur à la maison.\n"
+msgstr "Si vous vous auto-hébergez à la maison et sans VPN, il vous faut rediriger les ports de votre routeur (\"machin-box\") si vous souhaitez que votre serveur puisse être contacté depuis l'extérieur de votre réseau local. Le schéma ci-dessous tente d'expliquer brièvement le rôle de la redirection des ports lors de la mise en place d'un serveur à la maison.\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/40.post_install/15.port_forwarding.mdx:9
@@ -57,9 +52,7 @@ msgstr "0. Diagnostiquer les ports ouverts"
 #: docs/admin/05.get_started/40.post_install/15.port_forwarding.mdx:13
 #, no-wrap
 msgid "The diagnosis tool can be used to verify that all necessary ports are exposed to the Internet.\n"
-msgstr ""
-"L'outil de diagnostic peut être utilisé pour vérifier que tous les ports "
-"nécessaires sont exposés sur Internet.\n"
+msgstr "L'outil de diagnostic peut être utilisé pour vérifier que tous les ports nécessaires sont exposés sur Internet.\n"
 
 #. type: Title ###
 #: docs/admin/05.get_started/40.post_install/15.port_forwarding.mdx:14
@@ -71,12 +64,7 @@ msgstr "1. Accéder à l'interface d'administration de votre box/routeur"
 #: docs/admin/05.get_started/40.post_install/15.port_forwarding.mdx:17
 #, no-wrap
 msgid "Your box/router admin interface is usually reachable via [http://192.168.0.1](http://192.168.0.1) or [http://192.168.1.1](http://192.168.1.1). Then, you will probably need to authenticate yourself the credentials given by your internet server provider.\n"
-msgstr ""
-"L'interface d'administration est généralement accessible via "
-"[http://192.168.0.1](http://192.168.0.1) ou [http://192.168.1.1]"
-"(http://192.168.1.1). Ensuite, il vous faudra peut-être vous authentifier "
-"avec les identifiants fournis par votre fournisseur d'accès à Internet (FAI)."
-"\n"
+msgstr "L'interface d'administration est généralement accessible via [http://192.168.0.1](http://192.168.0.1) ou [http://192.168.1.1](http://192.168.1.1). Ensuite, il vous faudra peut-être vous authentifier avec les identifiants fournis par votre fournisseur d'accès à Internet (FAI).\n"
 
 #. type: Title ###
 #: docs/admin/05.get_started/40.post_install/15.port_forwarding.mdx:18
@@ -88,10 +76,7 @@ msgstr "2. Trouver l'IP locale de votre serveur"
 #: docs/admin/05.get_started/40.post_install/15.port_forwarding.mdx:21
 #, no-wrap
 msgid "Identify the *local* IP of your server using one of the method listed [on the corresponding page](/admin/get_started/post_install/find_ip).\n"
-msgstr ""
-"Identifiez quelle est l'IP *locale* de votre serveur en utilisant l'une des "
-"méthodes listées sur [la page correspondante]"
-"(/admin/get_started/post_install/find_ip).\n"
+msgstr "Identifiez quelle est l'IP *locale* de votre serveur en utilisant l'une des méthodes listées sur [la page correspondante](/admin/get_started/post_install/find_ip).\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/40.post_install/15.port_forwarding.mdx:23
@@ -103,11 +88,7 @@ msgstr "Une adresse IP locale ressemble généralement à `192.168.xx.yy`, ou `1
 #: docs/admin/05.get_started/40.post_install/15.port_forwarding.mdx:25
 #, no-wrap
 msgid "The local IP address needs to be static, so that the port forwards that you are going to configure in the next step will always reach your server. You should go into your box/router and make sure that the local IP address of your server is static instead of dynamic.\n"
-msgstr ""
-"L'adresse IP locale doit être statique afin que les redirections de port que "
-"vous allez configurer à l'étape suivante puissent toujours atteindre votre "
-"serveur. Vous devez accéder à votre box/routeur et vous assurer que "
-"l'adresse IP locale de votre serveur est statique et non dynamique.\n"
+msgstr "L'adresse IP locale doit être statique afin que les redirections de port que vous allez configurer à l'étape suivante puissent toujours atteindre votre serveur. Vous devez accéder à votre box/routeur et vous assurer que l'adresse IP locale de votre serveur est statique et non dynamique.\n"
 
 #. type: Title ###
 #: docs/admin/05.get_started/40.post_install/15.port_forwarding.mdx:26
@@ -119,11 +100,7 @@ msgstr "3. Rediriger les ports"
 #: docs/admin/05.get_started/40.post_install/15.port_forwarding.mdx:29
 #, no-wrap
 msgid "In your router admin interface, look for something like \"router configuration\" or \"port forwarding\". The naming differs among the various kinds of router models.\n"
-msgstr ""
-"Dans l'interface d'administration de votre box/routeur, il vous faut trouver "
-"une catégorie comme \"Configuration du routeur\", ou "
-"\"Redirections de ports\". Le nom diffère suivant le type / marque de la box."
-"\n"
+msgstr "Dans l'interface d'administration de votre box/routeur, il vous faut trouver une catégorie comme \"Configuration du routeur\", ou \"Redirections de ports\". Le nom diffère suivant le type / marque de la box.\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/40.post_install/15.port_forwarding.mdx:31
@@ -141,16 +118,13 @@ msgid ""
 msgstr ""
 "- Web: `80` <small>(HTTP)</small>, `443` <small>(HTTPS)</small>\n"
 "- [SSH](/admin/command_line): `22`\n"
-"- [Email](/admin/email): `25`, `587` <small>(SMTP)</small>, `993` <small>"
-"(IMAP)</small>\n"
+"- [Email](/admin/email): `25`, `587` <small>(SMTP)</small>, `993` <small>(IMAP)</small>\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/40.post_install/15.port_forwarding.mdx:37
 #, no-wrap
 msgid "If you use both a modem and a router, then you need to do the following:\n"
-msgstr ""
-"Si vous utilisez à la fois un modem et un routeur, vous devez procéder comme "
-"suit :\n"
+msgstr "Si vous utilisez à la fois un modem et un routeur, vous devez procéder comme suit :\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/40.post_install/15.port_forwarding.mdx:40
@@ -159,25 +133,14 @@ msgid ""
 "1. first on the modem (the box closest to the internet) create rules to forward the above ports to your router;\n"
 "2. then on the router (the box between the modem and your devices) create rules to forward the above ports to the static IP address for your server.\n"
 msgstr ""
-"1. Commencez par créer des règles sur le modem "
-"(le boîtier le plus proche d'Internet) afin de rediriger les ports ci-dessus "
-"vers votre routeur.\n"
-"2. Créez ensuite des règles sur le routeur "
-"(le boîtier situé entre le modem et vos appareils) afin de rediriger les "
-"ports ci-dessus vers l'adresse IP statique de votre serveur.\n"
+"1. Commencez par créer des règles sur le modem (le boîtier le plus proche d'Internet) afin de rediriger les ports ci-dessus vers votre routeur.\n"
+"2. Créez ensuite des règles sur le routeur (le boîtier situé entre le modem et vos appareils) afin de rediriger les ports ci-dessus vers l'adresse IP statique de votre serveur.\n"
 
 #. type: Fenced div block (warning)
 #: docs/admin/05.get_started/40.post_install/15.port_forwarding.mdx:41
 #, no-wrap
 msgid "<FAIcon icon=\"fa-exclamation-triangle\"/> Many internet service providers (ISP) block outgoing traffic on port 25 by default, to fight spam. Port 25 is however necessary if you want your server to be able to send email. In other extreme cases, some ISP may not even allow to use port 80/443 (web) freely... Depending on the ISP, it might be possible to open them in the admin interface... Check [this page](/admin/get_started/providers/isp/) for more info.\n"
-msgstr ""
-"<FAIcon icon=\"fa-exclamation-triangle\"/> Certains fournisseurs d'accès à "
-"Internet bloquent le port 25 (mail SMTP) par défaut pour combattre le spam. "
-"Le port 25 est pourtant nécessaire si vous souhaitez que votre serveur "
-"puisse envoyer de emails. Dans certains cas extrême , votre FAI peut même ne "
-"pas vous laisser utiliser librement les port 80/443 (web). En fonction de "
-"votre FAI, il peut être possible d'ouvrir ces ports dans l'interface... Voir "
-"[cette page](/admin/get_started/providers/isp/) pour plus d'informations.\n"
+msgstr "<FAIcon icon=\"fa-exclamation-triangle\"/> Certains fournisseurs d'accès à Internet bloquent le port 25 (mail SMTP) par défaut pour combattre le spam. Le port 25 est pourtant nécessaire si vous souhaitez que votre serveur puisse envoyer de emails. Dans certains cas extrême , votre FAI peut même ne pas vous laisser utiliser librement les port 80/443 (web). En fonction de votre FAI, il peut être possible d'ouvrir ces ports dans l'interface... Voir [cette page](/admin/get_started/providers/isp/) pour plus d'informations.\n"
 
 #, no-wrap
 #~ msgid "Automatic port forwarding / UPnP"

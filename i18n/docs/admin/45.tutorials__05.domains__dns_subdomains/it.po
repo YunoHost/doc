@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2025-11-11 19:34+0100\n"
+"POT-Creation-Date: 2025-12-02 17:50+0000\n"
 "PO-Revision-Date: 2025-11-11 19:34+0100\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -54,18 +54,6 @@ msgstr ""
 #| msgid "DNS configuration"
 msgid "If your DNS configuration looks like:\n"
 msgstr "Configurazione DNS"
-
-#. type: Fenced code block (text)
-#: docs/admin/45.tutorials/05.domains/dns_subdomains.mdx:15
-#, no-wrap
-msgid ""
-"@         A            XYZ.XYZ.XYZ.XYZ\n"
-"@         AAAA         1234:1234:1234:FFAA:FFAA:FFAA:FFAA:AAFF\n"
-"*         CNAME        mydomain.com.\n"
-"agenda    CNAME        mydomain.com.\n"
-"blog      CNAME        mydomain.com.\n"
-"rss       CNAME        mydomain.com.\n"
-msgstr ""
 
 #. type: Plain text
 #: docs/admin/45.tutorials/05.domains/dns_subdomains.mdx:25

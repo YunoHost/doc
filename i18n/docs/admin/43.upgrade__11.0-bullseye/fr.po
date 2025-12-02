@@ -9,11 +9,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2025-11-22 19:19+0000\n"
+"POT-Creation-Date: 2025-12-02 17:50+0000\n"
 "PO-Revision-Date: 2025-11-29 01:17+0000\n"
 "Last-Translator: Julie Boissière-Vasseur <jboisseur@posteo.net>\n"
-"Language-Team: French <https://translate.yunohost.org/projects/yunohost-doc/"
-"43upgrade__110-bullseye/fr/>\n"
+"Language-Team: French <https://translate.yunohost.org/projects/yunohost-"
+"doc/43upgrade__110-bullseye/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -45,10 +45,7 @@ msgstr "Notes importantes"
 #: docs/admin/43.upgrade/12.0-bookworm/index.mdx:10
 #, no-wrap
 msgid "- The YunoHost team did its best to make sure that the migration is as smooth as possible and was tested over the course of several months in several cases.\n"
-msgstr ""
-"- L'équipe YunoHost a fait tout son possible pour que la migration se "
-"déroule dans les meilleures conditions possibles et l'a testée pendant "
-"plusieurs mois dans différents cas de figure.\n"
+msgstr "- L'équipe YunoHost a fait tout son possible pour que la migration se déroule dans les meilleures conditions possibles et l'a testée pendant plusieurs mois dans différents cas de figure.\n"
 
 #. type: Plain text
 #: docs/admin/43.upgrade/11.0-bullseye.mdx:12
@@ -68,9 +65,7 @@ msgstr ""
 #: docs/admin/43.upgrade/12.0-bookworm/index.mdx:16
 #, no-wrap
 msgid "- **You should watch the known issues at the bottom of this page, to be sure your migrations will work properly.**\n"
-msgstr ""
-"- **Vous devriez consulter les problèmes connus au bas de cette page, afin "
-"de vous assurer que vos migrations fonctionneront correctement.**\n"
+msgstr "- **Vous devriez consulter les problèmes connus au bas de cette page, afin de vous assurer que vos migrations fonctionneront correctement.**\n"
 
 #. type: Title ##
 #: docs/admin/43.upgrade/11.0-bullseye.mdx:17
@@ -105,13 +100,6 @@ msgstr "Depuis la ligne de commande"
 #: docs/admin/43.upgrade/11.0-bullseye.mdx:26
 #, no-wrap
 msgid "After upgrading to 4.4.x, run:\n"
-msgstr ""
-
-#. type: Fenced code block (bash)
-#: docs/admin/43.upgrade/11.0-bullseye.mdx:27
-#: docs/admin/43.upgrade/12.0-bookworm/index.mdx:33
-#, no-wrap
-msgid "sudo yunohost tools migrations run\n"
 msgstr ""
 
 #. type: Plain text
@@ -200,9 +188,7 @@ msgstr ""
 #: docs/admin/43.upgrade/12.0-bookworm/05.issues_faq.mdx:18
 #, no-wrap
 msgid "Apps which won't be automatically repaired and need a force upgrade:\n"
-msgstr ""
-"Ces applications ne seront pas réparées automatiquement et nécessiteront une "
-"mise à niveau forcée :\n"
+msgstr "Ces applications ne seront pas réparées automatiquement et nécessiteront une mise à niveau forcée :\n"
 
 #. type: Plain text
 #: docs/admin/43.upgrade/11.0-bullseye.mdx:71
@@ -265,13 +251,6 @@ msgstr ""
 #: docs/admin/43.upgrade/12.0-bookworm/index.mdx:83
 #, no-wrap
 msgid "If your app is broken and you were already with the latest version, you can rerun the upgrade thanks to the `-F|--force` option:\n"
-msgstr ""
-
-#. type: Fenced code block (bash)
-#: docs/admin/43.upgrade/11.0-bullseye.mdx:88
-#: docs/admin/43.upgrade/12.0-bookworm/index.mdx:84
-#, no-wrap
-msgid "yunohost app upgrade --force APP_NAME\n"
 msgstr ""
 
 #. type: Title ##
@@ -363,13 +342,6 @@ msgstr ""
 #: docs/admin/43.upgrade/12.0-bookworm/05.issues_faq.mdx:64
 #, no-wrap
 msgid "If you can't restore your app but your system has been restored, you probably should use the regen conf to fix the nginx issues:\n"
-msgstr ""
-
-#. type: Fenced code block (bash)
-#: docs/admin/43.upgrade/11.0-bullseye.mdx:121
-#: docs/admin/43.upgrade/12.0-bookworm/05.issues_faq.mdx:65
-#, no-wrap
-msgid "yunohost tools regenconf nginx --force\n"
 msgstr ""
 
 #. type: Plain text

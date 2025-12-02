@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2025-11-11 19:34+0100\n"
+"POT-Creation-Date: 2025-12-02 17:50+0000\n"
 "PO-Revision-Date: 2025-11-11 19:34+0100\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -47,34 +47,16 @@ msgstr ""
 msgid "Il faut installer le paquet `cifs-utils`\n"
 msgstr ""
 
-#. type: Fenced code block (bash)
-#: docs/admin/45.tutorials/90.freebox_storage.mdx:15
-#, no-wrap
-msgid "sudo apt install cifs-utils\n"
-msgstr ""
-
 #. type: Plain text
 #: docs/admin/45.tutorials/90.freebox_storage.mdx:20
 #, no-wrap
 msgid "Il faut créer un point de montage (ici `/mount/freebox`)\n"
 msgstr ""
 
-#. type: Fenced code block (bash)
-#: docs/admin/45.tutorials/90.freebox_storage.mdx:21
-#, no-wrap
-msgid "mkdir -p /mount/freebox\n"
-msgstr ""
-
 #. type: Plain text
 #: docs/admin/45.tutorials/90.freebox_storage.mdx:26
 #, no-wrap
 msgid "On monte le répertoire NAS par défaut avec les droits de lecture / écriture pour tous\n"
-msgstr ""
-
-#. type: Fenced code block (bash)
-#: docs/admin/45.tutorials/90.freebox_storage.mdx:27
-#, no-wrap
-msgid "sudo mount -t cifs //mafreebox.freebox.fr/Disque\\ dur/ /mount/freebox -o guest,iocharset=utf8,file_mode=0777,dir_mode=0777\n"
 msgstr ""
 
 #. type: Title ###
@@ -89,27 +71,12 @@ msgstr ""
 msgid "Une ligne à ajouter à la fin du `/etc/fstab` :\n"
 msgstr ""
 
-#. type: Fenced code block (text)
-#: docs/admin/45.tutorials/90.freebox_storage.mdx:35
-#, no-wrap
-msgid "//mafreebox.freebox.fr/Disque\\040dur/ /mount/freebox cifs _netdev,guest,uid=monlogin,gid=users,iocharset=utf8 0 0\n"
-msgstr ""
-
 #. type: Plain text
 #: docs/admin/45.tutorials/90.freebox_storage.mdx:41
 #, no-wrap
 msgid ""
 "Le `_netdev` signale que c'est un périphérique réseau, afin que le système ne le monte que s'il a accès au réseau.\n"
 "`guest` est le mode d'identification à la Freebox : pour une connexion authentifiée, placez vos identifiants dans un fichier sous la forme\n"
-msgstr ""
-
-#. type: Fenced code block (text)
-#: docs/admin/45.tutorials/90.freebox_storage.mdx:42
-#, no-wrap
-msgid ""
-"username=your_user\n"
-"password=your_pass\n"
-"domain=FREEBOX\n"
 msgstr ""
 
 #. type: Plain text

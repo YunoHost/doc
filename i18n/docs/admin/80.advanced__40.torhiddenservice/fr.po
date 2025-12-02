@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2025-11-22 19:19+0000\n"
+"POT-Creation-Date: 2025-12-02 17:50+0000\n"
 "PO-Revision-Date: 2025-11-22 19:19+0000\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -44,12 +44,6 @@ msgstr ""
 msgid " Installing Tor"
 msgstr "Installer une application"
 
-#. type: Fenced code block (bash)
-#: docs/admin/80.advanced/40.torhiddenservice.mdx:13
-#, no-wrap
-msgid "apt install tor \n"
-msgstr ""
-
 #. type: Title ###
 #: docs/admin/80.advanced/40.torhiddenservice.mdx:17
 #, fuzzy, no-wrap
@@ -63,37 +57,16 @@ msgstr "Configurer le serveur"
 msgid "Edit `/etc/tor/torrc`, and add these lines:\n"
 msgstr ""
 
-#. type: Fenced code block (text)
-#: docs/admin/80.advanced/40.torhiddenservice.mdx:21
-#, no-wrap
-msgid ""
-"HiddenServiceDir  /var/lib/tor/hidden_service/\n"
-"HiddenServicePort 80 127.0.0.1:80\n"
-"HiddenServicePort 443 127.0.0.1:443\n"
-msgstr ""
-
 #. type: Title ###
 #: docs/admin/80.advanced/40.torhiddenservice.mdx:27
 #, no-wrap
 msgid " Restart Tor"
 msgstr ""
 
-#. type: Fenced code block (bash)
-#: docs/admin/80.advanced/40.torhiddenservice.mdx:29
-#, no-wrap
-msgid "service tor restart\n"
-msgstr ""
-
 #. type: Title ###
 #: docs/admin/80.advanced/40.torhiddenservice.mdx:33
 #, no-wrap
 msgid "Get your Tor Hidden Service hostname"
-msgstr ""
-
-#. type: Fenced code block (bash)
-#: docs/admin/80.advanced/40.torhiddenservice.mdx:35
-#, no-wrap
-msgid "cat /var/lib/tor/hidden_service/hostname\n"
 msgstr ""
 
 #. type: Plain text
@@ -109,12 +82,6 @@ msgstr ""
 msgid "Add the .onion domain to YunoHost"
 msgstr "Migrer ses emails d'un ancien serveur mail vers YunoHost"
 
-#. type: Fenced code block (bash)
-#: docs/admin/80.advanced/40.torhiddenservice.mdx:43
-#, no-wrap
-msgid "yunohost domain add random123456789.onion\n"
-msgstr ""
-
 #. type: Title ###
 #: docs/admin/80.advanced/40.torhiddenservice.mdx:47
 #, no-wrap
@@ -127,12 +94,6 @@ msgstr ""
 msgid "If you want to avoid being redirected to the SSO portal at login, you can deactivate SSOwat for this specific tor domain, by editing the file `/etc/nginx/conf.d/random123456789.onion.conf` and commenting the following line (two times):\n"
 msgstr ""
 
-#. type: Fenced code block (text)
-#: docs/admin/80.advanced/40.torhiddenservice.mdx:51
-#, no-wrap
-msgid "#access_by_lua_file /usr/share/ssowat/access.lua;\n"
-msgstr ""
-
 #. type: Title ###
 #: docs/admin/80.advanced/40.torhiddenservice.mdx:55
 #, fuzzy, no-wrap
@@ -140,20 +101,8 @@ msgstr ""
 msgid "Check for errors in NGINX configuration"
 msgstr "Configuration DNS recommandée"
 
-#. type: Fenced code block (bash)
-#: docs/admin/80.advanced/40.torhiddenservice.mdx:57
-#, no-wrap
-msgid "nginx -t\n"
-msgstr ""
-
 #. type: Title ###
 #: docs/admin/80.advanced/40.torhiddenservice.mdx:61
 #, no-wrap
 msgid "Restart NGINX"
-msgstr ""
-
-#. type: Fenced code block (bash)
-#: docs/admin/80.advanced/40.torhiddenservice.mdx:63
-#, no-wrap
-msgid "service nginx restart\n"
 msgstr ""
