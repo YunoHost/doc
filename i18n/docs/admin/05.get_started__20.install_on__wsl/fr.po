@@ -10,8 +10,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2025-11-11 19:34+0100\n"
-"PO-Revision-Date: 2025-12-02 11:52+0000\n"
-"Last-Translator: ppr <pouetpouetratatouille@gmail.com>\n"
+"PO-Revision-Date: 2025-12-02 17:51+0000\n"
+"Last-Translator: Weblate Admin <yunohost@translate.yunohost.org>\n"
 "Language-Team: French <https://translate.yunohost.org/projects/yunohost-doc/"
 "05get_started__20install_on__wsl/fr/>\n"
 "Language: fr\n"
@@ -197,13 +197,13 @@ msgstr "Modifiez le fichier `/etc/wsl.conf` et ajoutez-y le code suivant :\n"
 
 #. type: Fenced code block (text)
 #: docs/admin/05.get_started/20.install_on/wsl.mdx:74
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "[network]\n"
 "generateHosts = false\n"
 "generateResolvConf = false\n"
 msgstr ""
-"[réseau]\n"
+"[network]\n"
 "generateHosts = false\n"
 "generateResolvConf = false\n"
 

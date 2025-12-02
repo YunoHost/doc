@@ -2,12 +2,13 @@
 # This file is distributed under the same license as the YunoHost documentation.
 #
 # ppr <pouetpouetratatouille@gmail.com>, 2025.
+# Weblate Admin <yunohost@translate.yunohost.org>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2025-11-11 00:07+0100\n"
-"PO-Revision-Date: 2025-11-30 23:30+0000\n"
-"Last-Translator: ppr <pouetpouetratatouille@gmail.com>\n"
+"PO-Revision-Date: 2025-12-02 17:51+0000\n"
+"Last-Translator: Weblate Admin <yunohost@translate.yunohost.org>\n"
 "Language-Team: French <https://translate.yunohost.org/projects/yunohost-doc/"
 "05get_started__10providers__05registrar__ovh__autodns/fr/>\n"
 "Language: fr\n"
@@ -80,10 +81,10 @@ msgstr ""
 "     - Description du script : par exemple `YunoHost Auto DNS`\n"
 "     - Validité : `Illimitée`\n"
 "     - Droits : utilisez le bouton `+` pour ajouter les lignes suivantes\n"
-"      -- `GET` : « /domain/zone/*`\n"
-"      -- `POST` : `/domain/zone/*`\n"
-"      -- `PUT` : `/domain/zone/*`\n"
-"      -- `DELETE` : `/domain/zone/*`\n"
+"          - `GET` : `/domain/zone/*`\n"
+"          - `POST` : `/domain/zone/*`\n"
+"          - `PUT` : `/domain/zone/*`\n"
+"          - `DELETE` : `/domain/zone/*`\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/05.registrar/ovh/autodns.mdx:29
