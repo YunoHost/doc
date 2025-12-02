@@ -6,11 +6,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2025-11-19 02:54+0000\n"
+"POT-Creation-Date: 2025-12-02 17:50+0000\n"
 "PO-Revision-Date: 2025-11-29 16:25+0000\n"
 "Last-Translator: Weblate Admin <yunohost@translate.yunohost.org>\n"
-"Language-Team: French <https://translate.yunohost.org/projects/yunohost-doc/"
-"50troubleshooting__20ipv6/fr/>\n"
+"Language-Team: French <https://translate.yunohost.org/projects/yunohost-"
+"doc/50troubleshooting__20ipv6/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -56,9 +56,7 @@ msgstr "Configurer le serveur DNS"
 #: docs/admin/50.troubleshooting/20.ipv6.mdx:16
 #, no-wrap
 msgid "Also check [the documentation for subdomains](/admin/tutorials/domains/dns_subdomains).\n"
-msgstr ""
-"Vous pouvez également regarder [la documentation pour les sous-domaines]"
-"(/admin/tutorials/domains/dns_subdomains).\n"
+msgstr "Vous pouvez également regarder [la documentation pour les sous-domaines](/admin/tutorials/domains/dns_subdomains).\n"
 
 #. type: Title ###
 #: docs/admin/50.troubleshooting/20.ipv6.mdx:17
@@ -82,8 +80,7 @@ msgid ""
 msgstr ""
 "- l'adresse IPv6\n"
 "- l'adresse de la passerelle IPv6\n"
-"- le préfixe IPv6. Sur les VPS SSD d'OVH, les préfixes sont `/128` car vous "
-"ne disposez que d'*une* seule adresse IPv6.\n"
+"- le préfixe IPv6. Sur les VPS SSD d'OVH, les préfixes sont `/128` car vous ne disposez que d'*une* seule adresse IPv6.\n"
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/20.ipv6.mdx:27
@@ -99,10 +96,7 @@ msgstr ""
 #: docs/admin/50.troubleshooting/20.ipv6.mdx:28
 #, no-wrap
 msgid "In this example, it is assumed that your network interface is `eth0`. If it's different (check with `ip a`) you need to adapt the example below.\n"
-msgstr ""
-"Dans cet exemple, il est supposé que votre interface est `eth0`. Si elle est "
-"différente (vérifiez avec `ip a`) il vous faudra adapter l'exemple ci-"
-"dessous.\n"
+msgstr "Dans cet exemple, il est supposé que votre interface est `eth0`. Si elle est différente (vérifiez avec `ip a`) il vous faudra adapter l'exemple ci-dessous.\n"
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/20.ipv6.mdx:43
@@ -127,11 +121,8 @@ msgid ""
 msgstr ""
 "- `ip a` pour afficher les interfaces réseau et les adresses\n"
 "- `hostname -I` pour afficher les adresses IP du système\n"
-"- essayez d'envoyer une requête ping à un serveur IPv6 "
-"(par exemple, vous pouvez utiliser `ping6 ip6.yunohost.org`)\n"
-"- essayez d'envoyer une requête ping à votre serveur depuis votre PC (en "
-"supposant que votre PC dispose d'une connexion IPv6 et qu'elle soit activée)"
-"\n"
+"- essayez d'envoyer une requête ping à un serveur IPv6 (par exemple, vous pouvez utiliser `ping6 ip6.yunohost.org`)\n"
+"- essayez d'envoyer une requête ping à votre serveur depuis votre PC (en supposant que votre PC dispose d'une connexion IPv6 et qu'elle soit activée)\n"
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/20.ipv6.mdx:51

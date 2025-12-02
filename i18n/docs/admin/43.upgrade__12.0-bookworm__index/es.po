@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2025-11-22 19:19+0000\n"
+"POT-Creation-Date: 2025-12-02 17:50+0000\n"
 "PO-Revision-Date: 2025-11-22 19:19+0000\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -67,13 +67,6 @@ msgstr ""
 msgid "From the command line"
 msgstr ""
 
-#. type: Fenced code block (bash)
-#: docs/admin/43.upgrade/11.0-bullseye.mdx:27
-#: docs/admin/43.upgrade/12.0-bookworm/index.mdx:33
-#, no-wrap
-msgid "sudo yunohost tools migrations run\n"
-msgstr ""
-
 #. type: Plain text
 #: docs/admin/43.upgrade/11.0-bullseye.mdx:32
 #: docs/admin/43.upgrade/12.0-bookworm/index.mdx:38
@@ -114,13 +107,6 @@ msgstr ""
 #: docs/admin/43.upgrade/12.0-bookworm/index.mdx:83
 #, no-wrap
 msgid "If your app is broken and you were already with the latest version, you can rerun the upgrade thanks to the `-F|--force` option:\n"
-msgstr ""
-
-#. type: Fenced code block (bash)
-#: docs/admin/43.upgrade/11.0-bullseye.mdx:88
-#: docs/admin/43.upgrade/12.0-bookworm/index.mdx:84
-#, no-wrap
-msgid "yunohost app upgrade --force APP_NAME\n"
 msgstr ""
 
 #. type: Title ##
@@ -256,12 +242,6 @@ msgstr ""
 #: docs/admin/43.upgrade/12.0-bookworm/index.mdx:69
 #, no-wrap
 msgid "YunoHost 12.x now requires that you agree to the new [Terms of Service](https://doc.yunohost.org/terms_of_services/). After reading and accepting them you can run:\n"
-msgstr ""
-
-#. type: Fenced code block
-#: docs/admin/43.upgrade/12.0-bookworm/index.mdx:70
-#, no-wrap
-msgid "yunohost tools migrations run 0031_terms_of_services --accept-disclaimer\n"
 msgstr ""
 
 #. type: Title ###

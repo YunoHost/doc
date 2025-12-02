@@ -6,11 +6,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2025-11-19 02:54+0000\n"
+"POT-Creation-Date: 2025-12-02 17:50+0000\n"
 "PO-Revision-Date: 2025-11-29 16:25+0000\n"
 "Last-Translator: Weblate Admin <yunohost@translate.yunohost.org>\n"
-"Language-Team: French <https://translate.yunohost.org/projects/yunohost-doc/"
-"25domains__certificate/fr/>\n"
+"Language-Team: French <https://translate.yunohost.org/projects/yunohost-"
+"doc/25domains__certificate/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -87,20 +87,13 @@ msgstr "En effet, les utilisateurs devront passer par un écran de ce type :\n"
 #: docs/admin/25.domains/certificate.mdx:18
 #, no-wrap
 msgid "Which basically asks the visitor : **\"Do you trust the server hosting this website?\"**. This can rightfully frighten a lot of people.\n"
-msgstr ""
-"Cet écran revient à demander **« Avez-vous confiance au serveur qui héberge "
-"ce site ? »**. Cela peut effrayer vos utilisateur⋅ice⋅s (à juste titre).\n"
+msgstr "Cet écran revient à demander **« Avez-vous confiance au serveur qui héberge ce site ? »**. Cela peut effrayer vos utilisateur⋅ice⋅s (à juste titre).\n"
 
 #. type: Plain text
 #: docs/admin/25.domains/certificate.mdx:20
 #, no-wrap
 msgid "To avoid this confusion, it's possible to get a certificate signed a known authority named **Let's Encrypt** which provide free certificates directly recognized by browsers. YunoHost allows to directly install this certificate from the web administration interface or from the command line.\n"
-msgstr ""
-"Pour éviter cette confusion, il est possible d'obtenir un certificat signé "
-"par une autorité reconnue, appelée **Let's Encrypt**, qui fournit des "
-"certificats gratuits directement reconnus par les navigateurs. YunoHost "
-"permet d'installer directement ce certificat depuis l'interface "
-"d'administration web ou depuis la ligne de commande.\n"
+msgstr "Pour éviter cette confusion, il est possible d'obtenir un certificat signé par une autorité reconnue, appelée **Let's Encrypt**, qui fournit des certificats gratuits directement reconnus par les navigateurs. YunoHost permet d'installer directement ce certificat depuis l'interface d'administration web ou depuis la ligne de commande.\n"
 
 #. type: Title ##
 #: docs/admin/25.domains/certificate.mdx:21
@@ -112,48 +105,31 @@ msgstr "Installer un certificat Let's Encrypt"
 #: docs/admin/25.domains/certificate.mdx:24
 #, no-wrap
 msgid "Before attempting to install a Let's Encrypt certificate, you should make sure that your DNS is correctly configured (your.domain.tld should point to your server's IP) and that your domain is accessible through HTTP from outside your local network (i.e. at least port 80 should be forwarded to your server).\n"
-msgstr ""
-"Avant de chercher à installer un certificat Let's Encrypt, assurez-vous que "
-"votre DNS est correctement configuré "
-"(votre.domaine.tld doit pointer sur l'IP de votre serveur) et que votre site "
-"est accessible en HTTP depuis l'extérieur (c.-à-d. qu'au moins le port 80 "
-"est correctement redirigé vers votre serveur).\n"
+msgstr "Avant de chercher à installer un certificat Let's Encrypt, assurez-vous que votre DNS est correctement configuré (votre.domaine.tld doit pointer sur l'IP de votre serveur) et que votre site est accessible en HTTP depuis l'extérieur (c.-à-d. qu'au moins le port 80 est correctement redirigé vers votre serveur).\n"
 
 #. type: Plain text
 #: docs/admin/25.domains/certificate.mdx:29
 #, no-wrap
 msgid "Go to the 'Domain' part of the admin interface, then in the section dedicated to your.domain.tld. You should find a 'SSL certificate' button:\n"
-msgstr ""
-"Rendez-vous dans la partie 'Domaines' de l'interface d'administration, puis "
-"dans la section dédiée à votre domaine. Vous trouverez un bouton 'Certificat "
-"SSL'.\n"
+msgstr "Rendez-vous dans la partie 'Domaines' de l'interface d'administration, puis dans la section dédiée à votre domaine. Vous trouverez un bouton 'Certificat SSL'.\n"
 
 #. type: Plain text
 #: docs/admin/25.domains/certificate.mdx:33
 #, no-wrap
 msgid "In the 'SSL certificate' section, you can see the status of the current certificate. If you just added the domain, it should be a self-signed certificate.\n"
-msgstr ""
-"Dans la section 'Certificat SSL', vous pourrez voir l'état actuel du "
-"certificat. Si vous venez d'ajouter le domaine, il dispose d'un certificat "
-"auto-signé.\n"
+msgstr "Dans la section 'Certificat SSL', vous pourrez voir l'état actuel du certificat. Si vous venez d'ajouter le domaine, il dispose d'un certificat auto-signé.\n"
 
 #. type: Plain text
 #: docs/admin/25.domains/certificate.mdx:37
 #, no-wrap
 msgid "If your domain is correctly configured, it is then possible to install the Let's Encrypt certificate via the green button.\n"
-msgstr ""
-"Si votre domaine est correctement configuré, il vous est alors possible de "
-"passer à un certificat Let's Encrypt via le bouton vert.\n"
+msgstr "Si votre domaine est correctement configuré, il vous est alors possible de passer à un certificat Let's Encrypt via le bouton vert.\n"
 
 #. type: Plain text
 #: docs/admin/25.domains/certificate.mdx:41
 #, no-wrap
 msgid "Once the install is made, you can check that the certificate is live via your browser by going to your domain in HTTPS. The certificate will automatically be renewed every three months.\n"
-msgstr ""
-"Une fois l'installation effectuée, vous pouvez vous rendre sur votre domaine "
-"via votre navigateur, en HTTPS, pour vérifier que votre certificat est bien "
-"signé par Let's Encrypt. Le certificat sera renouvelé automatiquement tous "
-"les trois mois environ.\n"
+msgstr "Une fois l'installation effectuée, vous pouvez vous rendre sur votre domaine via votre navigateur, en HTTPS, pour vérifier que votre certificat est bien signé par Let's Encrypt. Le certificat sera renouvelé automatiquement tous les trois mois environ.\n"
 
 #. type: Plain text
 #: docs/admin/25.domains/certificate.mdx:48
@@ -183,11 +159,7 @@ msgstr "Cette commande doit retourner :\n"
 #: docs/admin/25.domains/certificate.mdx:69
 #, no-wrap
 msgid "Once this is done, you can check that the certificate is live via your browser by going to your domain in HTTPS. The certificate will automatically be renewed every three months.\n"
-msgstr ""
-"Une fois l'installation effectuée, vous pouvez vous rendre sur votre domaine "
-"via votre navigateur, en HTTPS, pour vérifier que votre certificat est bien "
-"signé par Let's Encrypt. Le certificat sera renouvelé automatiquement tous "
-"les trois mois environ.\n"
+msgstr "Une fois l'installation effectuée, vous pouvez vous rendre sur votre domaine via votre navigateur, en HTTPS, pour vérifier que votre certificat est bien signé par Let's Encrypt. Le certificat sera renouvelé automatiquement tous les trois mois environ.\n"
 
 #. type: Title ##
 #: docs/admin/25.domains/certificate.mdx:73
@@ -199,21 +171,13 @@ msgstr "En cas de problème"
 #: docs/admin/25.domains/certificate.mdx:76
 #, no-wrap
 msgid "If due to some bad tweaking, your certificate ends up in a bad state (e.g. lost the certificate or unable to read the files), you should be able to clean the situation by regenerating a self-signed certificate:\n"
-msgstr ""
-"Si, suite à une mauvaise manipulation, un certificat se retrouve dans une "
-"situation fâcheuse "
-"(e.g. perte du certificat ou impossible de lire le certificat), il est "
-"possible de repartir sur des bases propres en régénérant un certificat auto-"
-"signé :\n"
+msgstr "Si, suite à une mauvaise manipulation, un certificat se retrouve dans une situation fâcheuse (e.g. perte du certificat ou impossible de lire le certificat), il est possible de repartir sur des bases propres en régénérant un certificat auto-signé :\n"
 
 #. type: Plain text
 #: docs/admin/25.domains/certificate.mdx:82
 #, no-wrap
 msgid "If YunoHost thinks that your domain is badly configured despite the fact that you checked the DNS configuration and you have access in HTTP to your server from outside your local network, then you can:\n"
-msgstr ""
-"Si YunoHost trouve que votre domaine est mal configuré quand bien même vous "
-"avez bien vérifié votre configuration DNS et avez bien accès à votre serveur "
-"en HTTP depuis l'extérieur, vous pouvez tenter :\n"
+msgstr "Si YunoHost trouve que votre domaine est mal configuré quand bien même vous avez bien vérifié votre configuration DNS et avez bien accès à votre serveur en HTTP depuis l'extérieur, vous pouvez tenter :\n"
 
 #. type: Plain text
 #: docs/admin/25.domains/certificate.mdx:84
@@ -222,8 +186,5 @@ msgid ""
 "- add a line `127.0.0.1 your.domain.tld` to the file `/etc/hosts` on your server;\n"
 "- if the certificate installation still doesn't work, you can disable the checks with `--no-checks` after the `cert install` command.\n"
 msgstr ""
-"- ajoutez la ligne `127.0.0.1 votre.domaine.tld` au fichier `/etc/hosts` sur "
-"votre serveur ;\n"
-"- si l'installation du certificat ne fonctionne toujours pas, vous pouvez "
-"désactiver les vérifications avec l'option `--no-checks` après la commande `"
-"cert install`.\n"
+"- ajoutez la ligne `127.0.0.1 votre.domaine.tld` au fichier `/etc/hosts` sur votre serveur ;\n"
+"- si l'installation du certificat ne fonctionne toujours pas, vous pouvez désactiver les vérifications avec l'option `--no-checks` après la commande `cert install`.\n"

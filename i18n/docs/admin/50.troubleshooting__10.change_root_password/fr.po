@@ -7,11 +7,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2025-11-19 02:54+0000\n"
+"POT-Creation-Date: 2025-12-02 17:50+0000\n"
 "PO-Revision-Date: 2025-11-30 23:30+0000\n"
 "Last-Translator: ppr <pouetpouetratatouille@gmail.com>\n"
-"Language-Team: French <https://translate.yunohost.org/projects/yunohost-doc/"
-"50troubleshooting__10change_root_password/fr/>\n"
+"Language-Team: French <https://translate.yunohost.org/projects/yunohost-"
+"doc/50troubleshooting__10change_root_password/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -29,24 +29,13 @@ msgstr "Changement du mot de passe root"
 #: docs/admin/50.troubleshooting/10.change_root_password.mdx:7
 #, no-wrap
 msgid "In the past, YunoHost had a special \"`admin`\" user in addition to `root`. This is not the case anymore, and each user admin password can be changed via the regular process.\n"
-msgstr ""
-"Dans le passé, YunoHost disposait d'un utilisateur spécial \"`admin`\" en "
-"plus de \"`root`\". Ce n'est plus le cas aujourd'hui, et le mot de passe "
-"administrateur de chaque utilisateur peut être modifié via la procédure "
-"habituelle.\n"
+msgstr "Dans le passé, YunoHost disposait d'un utilisateur spécial \"`admin`\" en plus de \"`root`\". Ce n'est plus le cas aujourd'hui, et le mot de passe administrateur de chaque utilisateur peut être modifié via la procédure habituelle.\n"
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/10.change_root_password.mdx:9
 #, no-wrap
 msgid "`root`, a.k.a \"god on the machine\", still exists however, and being able to access the root account can sometimes be useful. For example, because LDAP (the user database powering YunoHost account) is broken. In this case, you may be able to connect to root via SSH *from the local network*, via a direct screen/keyboard access, or via a rescue console provided by your VPS provider - depending on the nature of your server.\n"
-msgstr ""
-"`root`, alias \"Dieu sur la machine\", existe toujours cependant, et pouvoir "
-"accéder au compte root peut parfois s'avérer utile. Par exemple, lorsque "
-"LDAP (la base de données utilisateur qui gère les comptes YunoHost) est "
-"cassé. Dans ce cas, vous pouvez vous connecter à root via SSH *depuis le "
-"réseau local*, via un accès direct à l'écran/clavier, ou via une console de "
-"secours fournie par votre fournisseur VPS, selon la nature de votre serveur."
-"\n"
+msgstr "`root`, alias \"Dieu sur la machine\", existe toujours cependant, et pouvoir accéder au compte root peut parfois s'avérer utile. Par exemple, lorsque LDAP (la base de données utilisateur qui gère les comptes YunoHost) est cassé. Dans ce cas, vous pouvez vous connecter à root via SSH *depuis le réseau local*, via un accès direct à l'écran/clavier, ou via une console de secours fournie par votre fournisseur VPS, selon la nature de votre serveur.\n"
 
 #. type: Title ##
 #: docs/admin/50.troubleshooting/10.change_root_password.mdx:10
@@ -64,9 +53,7 @@ msgstr "Commencez par vous connecter à votre administration Web.\n"
 #: docs/admin/50.troubleshooting/10.change_root_password.mdx:15
 #, no-wrap
 msgid "Then go to Tools > YunoHost settings > Security tab > Change root password\n"
-msgstr ""
-"Ensuite, allez dans Outils > Paramètres de YunoHost > Onglet Sécurité > "
-"Modifier le mot de passe root.\n"
+msgstr "Ensuite, allez dans Outils > Paramètres de YunoHost > Onglet Sécurité > Modifier le mot de passe root.\n"
 
 #. type: Title ##
 #: docs/admin/50.troubleshooting/10.change_root_password.mdx:16

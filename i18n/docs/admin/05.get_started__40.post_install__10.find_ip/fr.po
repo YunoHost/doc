@@ -6,11 +6,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2025-11-22 19:10+0000\n"
+"POT-Creation-Date: 2025-12-02 17:50+0000\n"
 "PO-Revision-Date: 2025-11-29 16:25+0000\n"
 "Last-Translator: Weblate Admin <yunohost@translate.yunohost.org>\n"
-"Language-Team: French <https://translate.yunohost.org/projects/yunohost-doc/"
-"05get_started__40post_install__10find_ip/fr/>\n"
+"Language-Team: French <https://translate.yunohost.org/projects/yunohost-"
+"doc/05get_started__40post_install__10find_ip/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -28,11 +28,7 @@ msgstr "Trouver l’IP locale de son serveur"
 #: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:10
 #, no-wrap
 msgid "On an installation at home, your server should typically be accessible using the `yunohost.local` domain. If for any reason this does not work, you may need to find the *local* IP of your server.\n"
-msgstr ""
-"Dans le cas d'une installation à la maison, votre serveur devrait "
-"typiquement être accessible (depuis son réseau local) avec le domaine "
-"`yunohost.local`. Si pour une raison quelconque cela ne fonctionne pas, il "
-"vous faut peut-être trouver l'IP *locale* de votre serveur.\n"
+msgstr "Dans le cas d'une installation à la maison, votre serveur devrait typiquement être accessible (depuis son réseau local) avec le domaine `yunohost.local`. Si pour une raison quelconque cela ne fonctionne pas, il vous faut peut-être trouver l'IP *locale* de votre serveur.\n"
 
 #. type: Title ##
 #: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:11
@@ -62,8 +58,7 @@ msgstr "L'une de ces astuces devrait permettre de trouver l'IP locale de votre s
 #: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:21
 #, no-wrap
 msgid "<TabItem value=\"angryip\" label=\"With AngryIP (Recommended)\" default>\n"
-msgstr ""
-"<TabItem value=\"angryip\" label=\"Avec AngryIP (recommandé)\" default>\n"
+msgstr "<TabItem value=\"angryip\" label=\"Avec AngryIP (recommandé)\" default>\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:23
@@ -79,12 +74,9 @@ msgid ""
 "- your server should typically be displayed as listening on port 80 and 443\n"
 "- when in doubt, just type `https://192.168.x.y` in your browser to check if it's a YunoHost or not.\n"
 msgstr ""
-"- vous pouvez passer par la commande ping comme sur cette capture d'écran "
-"afin de voir facilement les adresses IP utilisées.\n"
-"- votre serveur devrait normalement s'afficher comme étant à l'écoute sur "
-"les ports 80 et 443.\n"
-"- en cas de doute, tapez simplement `https://192.168.x.y` dans votre "
-"navigateur pour vérifier s'il s'agit bien d'un serveur YunoHost.\n"
+"- vous pouvez passer par la commande ping comme sur cette capture d'écran afin de voir facilement les adresses IP utilisées.\n"
+"- votre serveur devrait normalement s'afficher comme étant à l'écoute sur les ports 80 et 443.\n"
+"- en cas de doute, tapez simplement `https://192.168.x.y` dans votre navigateur pour vérifier s'il s'agit bien d'un serveur YunoHost.\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:42
@@ -172,9 +164,6 @@ msgid ""
 "- Make sure that your ethernet cable is working and properly plugged in;\n"
 msgstr ""
 "- Assurez-vous que votre serveur est correctement branché ;\n"
-"- Si vous utilisez une carte SD, assurez-vous que le connecteur n'est pas "
-"trop poussiéreux ;\n"
-"- Branchez un écran sur votre serveur et essayez de le redémarrer pour "
-"vérifier qu'il démarre correctement ;\n"
-"- Assurez-vous que votre câble Ethernet fonctionne et qu'il est correctement "
-"branché ;\n"
+"- Si vous utilisez une carte SD, assurez-vous que le connecteur n'est pas trop poussiéreux ;\n"
+"- Branchez un écran sur votre serveur et essayez de le redémarrer pour vérifier qu'il démarre correctement ;\n"
+"- Assurez-vous que votre câble Ethernet fonctionne et qu'il est correctement branché ;\n"
