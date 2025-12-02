@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2025-12-02 17:50+0000\n"
+"POT-Creation-Date: 2025-12-02 17:58+0000\n"
 "PO-Revision-Date: 2025-11-29 01:17+0000\n"
 "Last-Translator: Julie Boissière-Vasseur <jboisseur@posteo.net>\n"
 "Language-Team: French <https://translate.yunohost.org/projects/yunohost-"
