@@ -23,7 +23,7 @@ jobs:
 
       - name: Build translated .mdx using the .po from po4a/weblate
         shell: bash
-        run: python3 ./scripts/po4a.py regen_po
+        run: python3 ./scripts/po4a.py regen_pot
 
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
