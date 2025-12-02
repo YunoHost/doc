@@ -125,3 +125,12 @@ html[data-theme="dark"] {
 main article > div.markdown {
     padding: 0 2em 0 2em;
 }
+
+
+.svg-inline--fa {
+    /* Workaround for FontAwesome inline SVG CSS and SSR incompatibilities
+     * See https://github.com/facebook/docusaurus/issues/11528
+     */
+    height: 1em;
+    vertical-align: -0.125em;
+}
