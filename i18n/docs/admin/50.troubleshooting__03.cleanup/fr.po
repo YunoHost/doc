@@ -8,10 +8,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2025-12-02 18:04+0000\n"
-"PO-Revision-Date: 2025-11-16 23:39+0000\n"
+"PO-Revision-Date: 2025-12-06 01:32+0000\n"
 "Last-Translator: ppr <pouetpouetratatouille@gmail.com>\n"
-"Language-Team: French <https://translate.yunohost.org/projects/yunohost-"
-"doc/50troubleshooting__03cleanup/fr/>\n"
+"Language-Team: French <https://translate.yunohost.org/projects/yunohost-doc/"
+"50troubleshooting__03cleanup/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -23,55 +23,64 @@ msgstr ""
 #: docs/admin/50.troubleshooting/03.cleanup.mdx:1
 #, no-wrap
 msgid "Cleaning up space"
-msgstr ""
+msgstr "Libérer de l'espace"
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/03.cleanup.mdx:7
 #, no-wrap
 msgid "If your system runs out of space, you may an emergency option to get back some bit of space, and investigate what's taking up space\n"
 msgstr ""
+"Si votre système manque d'espace, vous pouvez utiliser une option d'urgence "
+"pour récupérer un peu d'espace et rechercher ce qui prend de la place.\n"
 
 #. type: Title ##
 #: docs/admin/50.troubleshooting/03.cleanup.mdx:8
 #, no-wrap
 msgid "Execute the basic-space-cleanup tool"
-msgstr ""
+msgstr "Exécutez l'outil de nettoyage de base"
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/03.cleanup.mdx:11
 #, no-wrap
 msgid "One may use the following command, to perform basic space cleanup (apt, journalctl, logs, ...) :\n"
 msgstr ""
+"On peut utiliser la commande suivante pour effectuer un nettoyage de base de "
+"l'espace (apt, journalctl, logs, ...) :\n"
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/03.cleanup.mdx:17
 #, no-wrap
 msgid "Additionaly, you may want to cleanup YunoHost operation logs if they are taking too much space, cf [this issue](https://github.com/YunoHost/issues/issues/2329).\n"
 msgstr ""
+"De plus, vous pouvez nettoyer les journaux d'opération de YunoHost s'ils "
+"prennent trop de place, cf [ce problème]"
+"(https://github.com/YunoHost/issues/issues/2329).\n"
 
 #. type: Title ##
 #: docs/admin/50.troubleshooting/03.cleanup.mdx:18
 #, no-wrap
 msgid "Explore what's taking up space"
-msgstr ""
+msgstr "Découvrez ce qui prend de la place"
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/03.cleanup.mdx:21
 #, no-wrap
 msgid "Install `ncdu`:\n"
-msgstr ""
+msgstr "Installez `ncdu` :\n"
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/03.cleanup.mdx:27
 #, no-wrap
 msgid "Then use it to scan the filesystem and have a dynamic, browsable report of what's using space:\n"
 msgstr ""
+"Utilisez-le ensuite pour analyser le système de fichiers et obtenir un "
+"rapport dynamique et consultable sur ce qui occupe de l'espace disque :\n"
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/03.cleanup.mdx:32
 #, no-wrap
 msgid "or `ncdu /var/`, for example to scan only `/var/`\n"
-msgstr ""
+msgstr "ou `ncdu /var/`, par exemple pour analyser uniquement `/var/`.\n"
 
 #, no-wrap
 #~ msgid "Cleanup"
