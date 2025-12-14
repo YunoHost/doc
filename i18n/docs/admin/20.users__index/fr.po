@@ -32,7 +32,7 @@ msgstr "Comptes"
 #: docs/admin/20.users/index.mdx:8
 #, no-wrap
 msgid "Users are human being who have access to applications and other services on your server. The administrator can add and manage users through the web administration (in the User category) or through the command line (see `yunohost user --help`). After that, users obtain a personal email address (chosen by the admin), and can log in the user portal to access applications they have permissions over and configure other parameters.\n"
-msgstr "Les comptes permettent aux utilisateurices sont les êtres humains qui ont accès aux applications et autres services sur votre serveur. L'administrateur peut ajouter et gérer des comptes via l'administration web (dans la catégorie Utilisateurs) ou via la catégorie `yunohost user` de la ligne de commande. Après cela, les utilisateurs obtiennent une adresse e-mail personnelle (choisie par l'administrateur), et peuvent se connecter au portail utilisateur (SSO) pour accéder aux applications pour lesquelles ils ont des permissions et configurer d'autres paramètres.\n"
+msgstr "Les comptes correspondent aux êtres humains qui ont accès aux applications et autres services sur votre serveur. L'administrateur peut ajouter et gérer des comptes via l'administration web (dans la catégorie Utilisateurs) ou via la catégorie `yunohost user` de la ligne de commande. Après cela, les utilisateurs obtiennent une adresse e-mail personnelle (choisie par l'administrateur), et peuvent se connecter au portail utilisateur (SSO) pour accéder aux applications pour lesquelles ils ont des permissions et configurer d'autres paramètres.\n"
 
 #. type: Plain text
 #: docs/admin/20.users/index.mdx:10
@@ -90,19 +90,19 @@ msgstr "Uniquement les membres du groupe admin peuvent créer de nouveaux compte
 #: docs/admin/20.users/index.mdx:31
 #, no-wrap
 msgid "Users are created with an associated email address with the format `username@domain.tld`. Additional email aliases and email forwards can later be added by the admin and the user.\n"
-msgstr ""
+msgstr "Une adresse mail de la forme `username@domain.tld` est associés à chaque nouvel utilisateur. Des alias d'adresses mail et des redirections mails pourront être ajoutés plus tard par l'administrateur et l'utilisateur.\n"
 
 #. type: Plain text
 #: docs/admin/20.users/index.mdx:33
 #, no-wrap
 msgid "The password should be at least 8 characters - though it is good practice to use longer password (i.e. a passphrase) and/or to use various kind of characters (uppercase, lowercase, digits and special characters).\n"
-msgstr ""
+msgstr "Le mot de passe doit être d'au moins 8 caractères, mais une bonne pratique est d'utiliser un mot de passe plus long (i.e une phrase de passe) et/ou d'utiliser plusieurs sortes de caractères (majuscules, minuscules, chiffre et caractères spéciaux).\n"
 
 #. type: Plain text
 #: docs/admin/20.users/index.mdx:35
 #, no-wrap
 msgid "Finalize the user creation by clicking on the `Save` button.\n"
-msgstr ""
+msgstr "Terminez la création de l'utilisateur en cliquant sur le bouton `Sauvegarder`.\n"
 
 #. type: Plain text
 #: docs/admin/20.users/index.mdx:39
@@ -112,6 +112,9 @@ msgid ""
 "<Figure caption=\"From the top of the users list, click on `+ New user`\" src=\"/img/webadmin/create_user_2.png\"/>\n"
 "<Figure caption=\"Fill in the form\" src=\"/img/webadmin/create_user_3.png\"/>\n"
 msgstr ""
+"<Figure caption=\"Depuis le menu principal, ouvrez `Utilisateurs`\" src=\"/img/webadmin/create_user_1.png\"/>\n"
+"<Figure caption=\"En haut de la liste des utilisateurs, cliquez sur `+ Nouvel utilisateur`\" src=\"/img/webadmin/create_user_2.png\"/>\n"
+"<Figure caption=\"Remplissez le formulaire\" src=\"/img/webadmin/create_user_3.png\"/>\n"
 
 #. type: Title ##
 #: docs/admin/20.users/index.mdx:40
