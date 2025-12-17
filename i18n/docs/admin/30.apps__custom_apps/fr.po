@@ -7,11 +7,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2025-12-02 18:04+0000\n"
+"POT-Creation-Date: 2025-12-10 10:26+0000\n"
 "PO-Revision-Date: 2025-12-09 18:27+0000\n"
 "Last-Translator: ppr <pouetpouetratatouille@gmail.com>\n"
-"Language-Team: French <https://translate.yunohost.org/projects/yunohost-doc/"
-"30apps__custom_apps/fr/>\n"
+"Language-Team: French <https://translate.yunohost.org/projects/yunohost-"
+"doc/30apps__custom_apps/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -27,13 +27,10 @@ msgstr "Installation d'applications \"custom\""
 
 #. type: Plain text
 #: docs/admin/30.apps/custom_apps.mdx:6
-#, no-wrap
-msgid "While YunoHost has many apps available in the catalog, you may want to install apps that are not available in the official catalog, or setup your very own website that you crafted using HTML / CSS / PHP ..\n"
-msgstr ""
-"Bien que YunoHost propose de nombreuses applications dans son catalogue, "
-"vous souhaiterez peut-être installer des applications qui ne sont pas "
-"disponibles dans le catalogue officiel, ou configurer votre propre site web "
-"que vous avez créé à l'aide de HTML / CSS / PHP ...\n"
+#, fuzzy, no-wrap
+#| msgid "While YunoHost has many apps available in the catalog, you may want to install apps that are not available in the official catalog, or setup your very own website that you crafted using HTML / CSS / PHP ..\n"
+msgid "While YunoHost has many apps available in the catalog, you may want to install apps that are not available in the official catalog, or set up your very own website that you crafted using HTML / CSS / PHP ..\n"
+msgstr "Bien que YunoHost propose de nombreuses applications dans son catalogue, vous souhaiterez peut-être installer des applications qui ne sont pas disponibles dans le catalogue officiel, ou configurer votre propre site web que vous avez créé à l'aide de HTML / CSS / PHP ...\n"
 
 #. type: Title ##
 #: docs/admin/30.apps/custom_apps.mdx:7
@@ -45,93 +42,62 @@ msgstr "Installation de votre propre application web"
 #: docs/admin/30.apps/custom_apps.mdx:10
 #, no-wrap
 msgid "A special application exists called [My webapp](https://apps.yunohost.org/app/my_webapp).\n"
-msgstr ""
-"Il existe une application spéciale appelée [My webapp]"
-"(https://apps.yunohost.org/app/my_webapp).\n"
+msgstr "Il existe une application spéciale appelée [My webapp](https://apps.yunohost.org/app/my_webapp).\n"
 
 #. type: Plain text
 #: docs/admin/30.apps/custom_apps.mdx:12
 #, no-wrap
 msgid "It can be seen as \"an empty shell\" in which you can drop your own HTML, CSS, JS, etc files through SFTP or other means. It also supports PHP, and an SQL database can be initialized.\n"
-msgstr ""
-"Il peut être considéré comme une « coquille vide » dans laquelle vous pouvez "
-"déposer vos propres fichiers HTML, CSS, JS, etc. via SFTP ou d'autres "
-"moyens. Il prend également en charge PHP, et une base de données SQL peut "
-"être initialisée.\n"
+msgstr "Il peut être considéré comme une « coquille vide » dans laquelle vous pouvez déposer vos propres fichiers HTML, CSS, JS, etc. via SFTP ou d'autres moyens. Il prend également en charge PHP, et une base de données SQL peut être initialisée.\n"
 
 #. type: Title ##
 #: docs/admin/30.apps/custom_apps.mdx:13
 #, no-wrap
 msgid "Adding a reverse proxy to an app that you manually installed, for example using Docker"
-msgstr ""
-"Ajouter un proxy inverse à une application que vous avez installée "
-"manuellement, par exemple à l'aide de Docker"
+msgstr "Ajouter un proxy inverse à une application que vous avez installée manuellement, par exemple à l'aide de Docker"
 
 #. type: Plain text
 #: docs/admin/30.apps/custom_apps.mdx:16
-#, no-wrap
-msgid "While YunoHost apps do not use Docker for reasons that are beyond the scope of this page, you can manually install Docker apps on your server (assuming you know what you do and won't tinker too much the base system ...). However, this is not limiter to Docker, you may have deployed \"manually\" an app using Python, Ruby or other language, and such app usually listen to a specific port.\n"
-msgstr ""
-"Bien que les applications YunoHost n'utilisent pas Docker pour des raisons "
-"qui dépassent le cadre de cette page, vous pouvez installer manuellement des "
-"applications Docker sur votre serveur (en supposant que vous savez ce que "
-"vous faites et que vous ne modifiez pas trop le système de base ...). "
-"Cependant, cela ne se limite pas à Docker, vous avez peut-être déployé "
-"\"manuellement\" une application utilisant Python, Ruby ou un autre langage, "
-"et cette application écoute généralement un port spécifique.\n"
+#, fuzzy, no-wrap
+#| msgid "While YunoHost apps do not use Docker for reasons that are beyond the scope of this page, you can manually install Docker apps on your server (assuming you know what you do and won't tinker too much the base system ...). However, this is not limiter to Docker, you may have deployed \"manually\" an app using Python, Ruby or other language, and such app usually listen to a specific port.\n"
+msgid "While YunoHost apps do not use Docker for reasons that are beyond the scope of this page, you can manually install Docker apps on your server (assuming you know what you're doing and won't tinker too much with the base system ...). However, this is not limited to Docker, you may have deployed an app \"manually\" using Python, Ruby or another language, and such an app usually listens on a specific port.\n"
+msgstr "Bien que les applications YunoHost n'utilisent pas Docker pour des raisons qui dépassent le cadre de cette page, vous pouvez installer manuellement des applications Docker sur votre serveur (en supposant que vous savez ce que vous faites et que vous ne modifiez pas trop le système de base ...). Cependant, cela ne se limite pas à Docker, vous avez peut-être déployé \"manuellement\" une application utilisant Python, Ruby ou un autre langage, et cette application écoute généralement un port spécifique.\n"
 
 #. type: Plain text
 #: docs/admin/30.apps/custom_apps.mdx:18
-#, no-wrap
-msgid "Once your app or container is setup, you will probably need to actually *expose* the container on the web on a specific URL. This can be done using another special app called [Redirect](https://apps.yunohost.org/app/redirect).\n"
-msgstr ""
-"Une fois que votre application ou votre conteneur est configuré, vous devrez "
-"probablement *exposer* le conteneur sur le Web à une URL spécifique. Pour ce "
-"faire, vous pouvez utiliser une autre application spéciale appelée [Redirect]"
-"(https://apps.yunohost.org/app/redirect).\n"
+#, fuzzy, no-wrap
+#| msgid "Once your app or container is setup, you will probably need to actually *expose* the container on the web on a specific URL. This can be done using another special app called [Redirect](https://apps.yunohost.org/app/redirect).\n"
+msgid "Once your app or container is set up, you will probably need to actually *expose* the container on the web on a specific URL. This can be done using another special app called [Redirect](https://apps.yunohost.org/app/redirect).\n"
+msgstr "Une fois que votre application ou votre conteneur est configuré, vous devrez probablement *exposer* le conteneur sur le Web à une URL spécifique. Pour ce faire, vous pouvez utiliser une autre application spéciale appelée [Redirect](https://apps.yunohost.org/app/redirect).\n"
 
 #. type: Plain text
 #: docs/admin/30.apps/custom_apps.mdx:20
-#, no-wrap
-msgid "Make sure to chose the reverse proxy mode, and point it to something like `http://127.0.0.1:PORT` where `PORT` is the port of your custom app.\n"
-msgstr ""
-"Veillez à choisir le mode proxy inverse et pointez-le vers quelque chose "
-"comme `http://127.0.0.1:PORT`, où `PORT` correspond au port de votre "
-"application personnalisée.\n"
+#, fuzzy, no-wrap
+#| msgid "Make sure to chose the reverse proxy mode, and point it to something like `http://127.0.0.1:PORT` where `PORT` is the port of your custom app.\n"
+msgid "Make sure to choose the reverse proxy mode, and point it to something like `http://127.0.0.1:PORT` where `PORT` is the port of your custom app.\n"
+msgstr "Veillez à choisir le mode proxy inverse et pointez-le vers quelque chose comme `http://127.0.0.1:PORT`, où `PORT` correspond au port de votre application personnalisée.\n"
 
 #. type: Plain text
 #: docs/admin/30.apps/custom_apps.mdx:22
 #, no-wrap
 msgid "It will add the appropriate configuration bits in Nginx, SSOwat and a tile in the user portal.\n"
-msgstr ""
-"Il ajoutera les éléments de configuration appropriés dans Nginx, SSOwat et "
-"une vignette dans le portail utilisateur.\n"
+msgstr "Il ajoutera les éléments de configuration appropriés dans Nginx, SSOwat et une vignette dans le portail utilisateur.\n"
 
 #. type: Title ##
 #: docs/admin/30.apps/custom_apps.mdx:23
 #, no-wrap
 msgid "Adding a custom tile in the portal pointing to an external app"
-msgstr ""
-"Ajouter une vignette personnalisée dans le portail pointant vers une "
-"application externe"
+msgstr "Ajouter une vignette personnalisée dans le portail pointant vers une application externe"
 
 #. type: Plain text
 #: docs/admin/30.apps/custom_apps.mdx:26
-#, no-wrap
-msgid "The [Redirect app](https://apps.yunohost.org/app/redirect) can also be used add a \"shortcut\" tile in the user portal that points to an app or page located on a completly different server. Make sure to use the \"explicit redirect\" mode and the URL of the external page or app.\n"
-msgstr ""
-"L'application [Redirect](https://apps.yunohost.org/app/redirect) peut "
-"également être utilisée pour ajouter une vignette \"raccourci\" dans le "
-"portail utilisateur qui pointe vers une application ou une page située sur "
-"un serveur complètement différent. Veillez à utiliser le mode "
-"\"redirection explicite\" et l'URL de la page ou de l'application externe.\n"
+#, fuzzy, no-wrap
+#| msgid "The [Redirect app](https://apps.yunohost.org/app/redirect) can also be used add a \"shortcut\" tile in the user portal that points to an app or page located on a completly different server. Make sure to use the \"explicit redirect\" mode and the URL of the external page or app.\n"
+msgid "The [Redirect app](https://apps.yunohost.org/app/redirect) can also be used to add a \"shortcut\" tile in the user portal that points to an app or page located on a completely different server. Make sure to use the \"explicit redirect\" mode and the URL of the external page or app.\n"
+msgstr "L'application [Redirect](https://apps.yunohost.org/app/redirect) peut également être utilisée pour ajouter une vignette \"raccourci\" dans le portail utilisateur qui pointe vers une application ou une page située sur un serveur complètement différent. Veillez à utiliser le mode \"redirection explicite\" et l'URL de la page ou de l'application externe.\n"
 
 #. type: Plain text
 #: docs/admin/30.apps/custom_apps.mdx:27
 #, no-wrap
 msgid "Generally, you should refrain from manually tinkering and installing apps, except if you are sure they will not interfere with your server. YunoHost proposes two generic apps to help you out:\n"
-msgstr ""
-"En règle générale, vous devriez éviter de modifier manuellement et "
-"d'installer des applications, sauf si vous êtes certain qu'elles "
-"n'interféreront pas avec votre serveur. YunoHost propose deux applications "
-"génériques pour vous aider :\n"
+msgstr "En règle générale, vous devriez éviter de modifier manuellement et d'installer des applications, sauf si vous êtes certain qu'elles n'interféreront pas avec votre serveur. YunoHost propose deux applications génériques pour vous aider :\n"

@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2025-12-02 18:04+0000\n"
+"POT-Creation-Date: 2025-12-10 10:26+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -88,7 +88,7 @@ msgstr ""
 #. type: Plain text
 #: docs/admin/35.email/index.mdx:32
 #, no-wrap
-msgid "Mail aliases and forwards can be configured for each users. For instance, the first user created on the server automatically has an alias `root@the.domain.tld` configured - meaning that an email sent to this address will end in the inbox of the first user. Automatic forwards may be configured, for instance if an user doesn't want to configure an additional email account and just wants to receive emails from the server on, say, his/her gmail address.\n"
+msgid "Mail aliases and forwards can be configured for each users. For instance, the first user created on the server automatically has an alias `root@the.domain.tld` configured - meaning that an email sent to this address will end in the inbox of the first user. Automatic forwards may be configured, for instance if an user doesn't want to configure an additional email account and just wants to receive emails from the server on, say, his/her gmail address (a copy of each mail will be kept on the Yunohost server).\n"
 msgstr ""
 
 #. type: Plain text
