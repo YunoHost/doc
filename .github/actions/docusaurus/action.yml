@@ -33,6 +33,10 @@ runs:
     shell: bash
     run: bash scripts/patch_enabled_locales.sh
 
+  - name: Regen UI translations
+    shell: bash
+    run: bash scripts/update_ui_translations.sh
+
   - name: Build translated .mdx using the .po from po4a/weblate
     shell: bash
     run: python3 ./scripts/po4a.py build_translated_mdx

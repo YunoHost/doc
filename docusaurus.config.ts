@@ -14,7 +14,7 @@ function getUrl() : string {
 
 // NB: this list is auto-updated during build using statistics from Weblate,
 // keeping the lang with at least 5% translations
-const enabled_locales = ["en", "fr", "de", "it", "es"];
+const enabled_locales = ["en", "fr", "de", "gl", "it", "es"];
 
 const config: Config = {
   title: 'Yunohost',
