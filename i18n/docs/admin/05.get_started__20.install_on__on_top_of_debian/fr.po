@@ -9,10 +9,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2025-12-02 18:04+0000\n"
-"PO-Revision-Date: 2025-11-22 20:34+0000\n"
-"Last-Translator: Weblate Admin <yunohost@translate.yunohost.org>\n"
-"Language-Team: French <https://translate.yunohost.org/projects/yunohost-"
-"doc/05get_started__20install_on__on_top_of_debian/fr/>\n"
+"PO-Revision-Date: 2025-12-16 09:43+0000\n"
+"Last-Translator: ppr <pouetpouetratatouille@gmail.com>\n"
+"Language-Team: French <https://translate.yunohost.org/projects/yunohost-doc/"
+"05get_started__20install_on__on_top_of_debian/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -37,20 +37,28 @@ msgstr "Par dessus Debian"
 #, no-wrap
 msgid "YunoHost can be installed \"on top\" of Debian. This can be useful if you already have a Debian machine or can't use the recommended methods. Note that there is no actual difference in your resulting YunoHost installation between doing this and using the other methods involving pre-installed images: the pre-installed images are just convenient to skip a bunch of steps and having the system already shipped with everything needed.\n"
 msgstr ""
+"YunoHost peut être installé \"par-dessus\" Debian. Cela peut être utile si "
+"vous disposez déjà d'une machine Debian ou si vous ne pouvez pas utiliser "
+"les méthodes recommandées. Notez qu'il n'y a aucune différence réelle entre "
+"cette méthode et les autres méthodes utilisant des images préinstallées pour "
+"l'installation de YunoHost : les images préinstallées sont simplement "
+"pratiques pour éviter plusieurs étapes et disposer d'un système livré avec "
+"tout le nécessaire.\n"
 
 #. type: Title ##
 #: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:16
-#, fuzzy, no-wrap
-#| msgid "<FAIcon icon=\"fa-globe\"/> Main domain"
+#, no-wrap
 msgid "<FAIcon icon=\"fa-download\" /> Get Debian"
-msgstr "<FAIcon icon=\"fa-globe\"/> Domaine principal"
+msgstr "<FAIcon icon=\"fa-download\" /> Obtenir Debian"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:19
-#, fuzzy, no-wrap
-#| msgid "You should download the version **Bookworm** (Debian 12) and select the architecture for your PC.\n"
+#, no-wrap
 msgid "You should download the version **Bookworm** (Debian 12) and select the architecture for your PC. When in doubt, select `amd64`, or `i386` for a pre-2010 PC.\n"
-msgstr "Il vous faut télécharger la version **Bookworm** (Debian 12) et sélectionner l'architecture de votre machine.\n"
+msgstr ""
+"Vous devez télécharger la version **Bookworm** (Debian 12) et sélectionner "
+"l'architecture de votre PC. En cas de doute, sélectionnez `amd64`, ou `i386` "
+"pour un PC antérieur à 2010.\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:22
@@ -66,10 +74,9 @@ msgstr "Alternativement, vous pouvez naviguer dans les [archives de Debian](http
 
 #. type: Title ###
 #: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:26
-#, fuzzy, no-wrap
-#| msgid " Installing Tor"
+#, no-wrap
 msgid "Installation"
-msgstr "Installer Tor"
+msgstr "Installation"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:29
@@ -82,36 +89,55 @@ msgstr "Vous voudrez peut-être **formater le disque** avant de démarrer l'inst
 #, no-wrap
 msgid "Flash the ISO your USB key, for example using [Etcher](https://www.balena.io/etcher/), [USBimager](https://bztsrc.gitlab.io/usbimager/) or `dd`.\n"
 msgstr ""
+"Gravez l'image ISO sur votre clé USB, par exemple à l'aide de [Etcher]"
+"(https://www.balena.io/etcher/), [USBimager]"
+"(https://bztsrc.gitlab.io/usbimager/) ou `dd`.\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:33
 #, no-wrap
 msgid "Debian installer will ask for a **hostname** and a **domain name**. You can use `yunohost` and `yunohost.local`. It is not that important since the YunoHost Installer will overwrite those anyway.\n"
 msgstr ""
+"Le programme d'installation Debian vous demandera un **nom d'hôte** et un **"
+"nom de domaine**. Vous pouvez utiliser `yunohost` et `yunohost.local`. Ce "
+"n'est pas très important, car le programme d'installation YunoHost les "
+"remplacera de toute façon.\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:35
 #, no-wrap
 msgid "Debian will ask for a **root password**, which should be reaonably complex as it is your primary defense to possible attacks.\n"
 msgstr ""
+"Debian vous demandera un **mot de passe root**, qui doit être suffisamment "
+"complexe car il constitue votre principale défense contre d'éventuelles "
+"attaques.\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:37
 #, no-wrap
 msgid "The installer will also ask for a **user account** and another password.\n"
 msgstr ""
+"Le programme d'installation vous demandera également un **compte "
+"utilisateur** et un autre mot de passe.\n"
 
 #. type: Fenced div block (warning)
 #: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:37
 #, no-wrap
 msgid "**IMPORTANT:** this username should be DIFFERENT from the first YunoHost user which you will choose during YunoHost's posinstall… For example, you can name it `debian`. Be sure to also use a long complex password.\n"
 msgstr ""
+"**IMPORTANT :** ce nom d'utilisateur doit être DIFFÉRENT du premier "
+"utilisateur YunoHost que vous choisirez lors de la post-installation de "
+"YunoHost… Vous pouvez par exemple le nommer `debian`. Veillez également à "
+"utiliser un mot de passe long et complexe.\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:42
 #, no-wrap
 msgid "When the install asks where to install and how to **create disk partitions**, select the option to **use the whole disk**, unless you know what you're doing.\n"
 msgstr ""
+"Lorsque le programme d'installation vous demande où installer et comment **"
+"créer des partitions de disque**, sélectionnez l'option **utiliser tout le "
+"disque**, sauf si vous savez exactement ce que vous faites.\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:45
@@ -120,18 +146,29 @@ msgid ""
 "- We recommend not to separate the `/home`, `/var` or `/tmp` partitions. Use the option to \"keep all files in one partition\".\n"
 "- If you don't know what you're doing, don't encrypt the disk (Decryption at power-on will be an issue)\n"
 msgstr ""
+"- Nous vous recommandons de ne pas séparer les partitions `/home`, `/var` ou "
+"`/tmp`. Utilisez l'option "
+"\"conserver tous les fichiers dans une seule partition\".\n"
+"- Si vous ne savez pas ce que vous faites, ne cryptez pas le disque "
+"(le décryptage au démarrage posera problème).\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:47
 #, no-wrap
 msgid "The installer will ask about **mirrors**. Select a country and server close to your location, or use the default options.\n"
 msgstr ""
+"Le programme d'installation vous demandera des informations sur les "
+"**miroirs**. Sélectionnez un pays et un serveur proches de votre "
+"emplacement, ou utilisez les options par défaut.\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:49
 #, no-wrap
 msgid "The installer will ask which **desktop environment** you want. This is generally useless and might waste resources.\n"
 msgstr ""
+"Le programme d'installation vous demandera quel **environnement de bureau** "
+"vous souhaitez. Cette question est généralement inutile dans le cas d'un "
+"serveur et peut entraîner un gaspillage de ressources.\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:52
@@ -140,13 +177,14 @@ msgid ""
 "- Unselect all desktop environment\n"
 "- Keep \"standard system utilities\" checked\n"
 msgstr ""
+"- Désélectionnez tous les environnements de bureau\n"
+"- Laissez la case \"utilitaires usuels du système\" cochée\n"
 
 #. type: Title ###
 #: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:53
-#, fuzzy, no-wrap
-#| msgid "Installing an app"
+#, no-wrap
 msgid "After installing Debian"
-msgstr "Installer une application"
+msgstr "Après avoir installé Debian"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:59
@@ -157,6 +195,10 @@ msgid ""
 "3. Login as `root`\n"
 "4. Install curl by typing `apt install curl`\n"
 msgstr ""
+"1. Retirez le support d'installation (débranchez la clé USB).\n"
+"2. Redémarrez.\n"
+"3. Connectez-vous en tant qu'utilisateur `root`.\n"
+"4. Installez curl en tapant `apt install curl`.\n"
 
 #, no-wrap
 #~ msgid "YunoHost is easily installable on Debian !\n"

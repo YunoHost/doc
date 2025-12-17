@@ -8,10 +8,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2025-12-02 18:04+0000\n"
-"PO-Revision-Date: 2025-11-16 23:39+0000\n"
+"PO-Revision-Date: 2025-12-09 18:27+0000\n"
 "Last-Translator: ppr <pouetpouetratatouille@gmail.com>\n"
-"Language-Team: French <https://translate.yunohost.org/projects/yunohost-"
-"doc/45tutorials__90freebox_storage/fr/>\n"
+"Language-Team: French <https://translate.yunohost.org/projects/yunohost-doc/"
+"45tutorials__90freebox_storage/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -36,42 +36,47 @@ msgstr "Cette page ne concerne que les utilisateurs du Fournisseur d'Accès Inte
 #, no-wrap
 msgid "Certaines Freebox [sont munies d'un disque dur connecté au réseau (NAS)](https://www.actusfree.fr/nas-freebox/) qui peut être utilisé comme espace de stockage depuis votre serveur.\n"
 msgstr ""
+"Certaines Freebox [sont munies d'un disque dur connecté au réseau (NAS)]"
+"(https://www.actusfree.fr/nas-freebox/) qui peut être utilisé comme espace "
+"de stockage depuis votre serveur.\n"
 
 #. type: Title ##
 #: docs/admin/45.tutorials/90.freebox_storage.mdx:11
 #, no-wrap
 msgid "Utiliser le NAS de la Freebox"
-msgstr ""
+msgstr "Utiliser le NAS de la Freebox"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/90.freebox_storage.mdx:14
 #, no-wrap
 msgid "Il faut installer le paquet `cifs-utils`\n"
-msgstr ""
+msgstr "Il faut installer le paquet `cifs-utils`\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/90.freebox_storage.mdx:20
 #, no-wrap
 msgid "Il faut créer un point de montage (ici `/mount/freebox`)\n"
-msgstr ""
+msgstr "Il faut créer un point de montage (ici `/mount/freebox`)\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/90.freebox_storage.mdx:26
 #, no-wrap
 msgid "On monte le répertoire NAS par défaut avec les droits de lecture / écriture pour tous\n"
 msgstr ""
+"On monte le répertoire NAS par défaut avec les droits de lecture / écriture "
+"pour tous\n"
 
 #. type: Title ###
 #: docs/admin/45.tutorials/90.freebox_storage.mdx:31
 #, no-wrap
 msgid "Automatiser le montage"
-msgstr ""
+msgstr "Automatiser le montage"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/90.freebox_storage.mdx:34
 #, no-wrap
 msgid "Une ligne à ajouter à la fin du `/etc/fstab` :\n"
-msgstr ""
+msgstr "Une ligne à ajouter à la fin du `/etc/fstab` :\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/90.freebox_storage.mdx:41
@@ -80,6 +85,10 @@ msgid ""
 "Le `_netdev` signale que c'est un périphérique réseau, afin que le système ne le monte que s'il a accès au réseau.\n"
 "`guest` est le mode d'identification à la Freebox : pour une connexion authentifiée, placez vos identifiants dans un fichier sous la forme\n"
 msgstr ""
+"Le `_netdev` signale que c'est un périphérique réseau, afin que le système "
+"ne le monte que s'il a accès au réseau.\n"
+"`guest` est le mode d'identification à la Freebox : pour une connexion "
+"authentifiée, placez vos identifiants dans un fichier sous la forme\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/90.freebox_storage.mdx:51
@@ -89,3 +98,11 @@ msgid ""
 "`uid` et `gid` sont pour les id user et group auxquels appartiendra le répertoire une fois monté. Par défault (sur la Freebox V5 en tout cas), ils se retrouvent avec les uid/gid de 4242.\n"
 "Il est aussi possible de mettre des droits particuliers avec les paramètres `file_mode=0777,dir_mode=0777`.\n"
 msgstr ""
+"et remplacez `guest` par `credentials=/path/to/file` (c'est aussi possible "
+"de spécifier directement `username=xx,password=xx` dans le fstab, mais "
+"déconseillé pour des raisons de sécurité)\n"
+"`uid` et `gid` sont pour les id user et group auxquels appartiendra le "
+"répertoire une fois monté. Par défaut (sur la Freebox V5 en tout cas), ils "
+"se retrouvent avec les uid/gid de 4242.\n"
+"Il est aussi possible de mettre des droits particuliers avec les paramètres "
+"`file_mode=0777,dir_mode=0777`.\n"
