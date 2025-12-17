@@ -8,11 +8,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2025-12-02 18:04+0000\n"
+"POT-Creation-Date: 2025-12-17 15:39+0000\n"
 "PO-Revision-Date: 2025-12-09 18:27+0000\n"
 "Last-Translator: ppr <pouetpouetratatouille@gmail.com>\n"
-"Language-Team: French <https://translate.yunohost.org/projects/yunohost-doc/"
-"40backups__10backup_methods/fr/>\n"
+"Language-Team: French <https://translate.yunohost.org/projects/yunohost-"
+"doc/40backups__10backup_methods/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -30,19 +30,13 @@ msgstr "Méthodes de sauvegardes"
 #: docs/admin/40.backups/10.backup_methods.mdx:6
 #, no-wrap
 msgid "YunoHost currently has three apps integrating backup solutions offering more features than the simple \".tar\" mechanism shipped in YunoHost, in particular automatic and remote backups.\n"
-msgstr ""
-"YunoHost propose actuellement trois applications intégrant des solutions de "
-"sauvegarde offrant plus de fonctionnalités que le simple mécanisme \".tar\" "
-"fourni avec YunoHost, notamment des sauvegardes automatiques et à distance.\n"
+msgstr "YunoHost propose actuellement trois applications intégrant des solutions de sauvegarde offrant plus de fonctionnalités que le simple mécanisme \".tar\" fourni avec YunoHost, notamment des sauvegardes automatiques et à distance.\n"
 
 #. type: Title ##
 #: docs/admin/40.backups/10.backup_methods.mdx:7
 #, no-wrap
 msgid "[BorgBackup](https://www.borgbackup.org/) (cf the [Borg \"client\"](https://apps.yunohost.org/app/borg) and [Borg \"server\"](https://apps.yunohost.org/app/borgserver) apps)"
-msgstr ""
-"[BorgBackup](https://www.borgbackup.org/) "
-"(cf. les applications [Borg \"client\"](https://apps.yunohost.org/app/borg) "
-"et [Borg \"serveur\"](https://apps.yunohost.org/app/borgserver))"
+msgstr "[BorgBackup](https://www.borgbackup.org/) (cf. les applications [Borg \"client\"](https://apps.yunohost.org/app/borg) et [Borg \"serveur\"](https://apps.yunohost.org/app/borgserver))"
 
 #. type: Plain text
 #: docs/admin/40.backups/10.backup_methods.mdx:14
@@ -54,12 +48,9 @@ msgid ""
 "- to define the frequency and type of data to be backed up\n"
 "- a mail alert system in case of backup failure.\n"
 msgstr ""
-"- sauvegarde des données sur un disque externe ou sur un stockage/répertoire "
-"Borg distant\n"
-"- déduplication et compression des fichiers, ce qui permet de conserver de "
-"nombreuses copies antérieures sans trop de surcoût de stockage\n"
-"- chiffrement des données, ce qui permet de stocker les données chez un "
-"tiers\n"
+"- sauvegarde des données sur un disque externe ou sur un stockage/répertoire Borg distant\n"
+"- déduplication et compression des fichiers, ce qui permet de conserver de nombreuses copies antérieures sans trop de surcoût de stockage\n"
+"- chiffrement des données, ce qui permet de stocker les données chez un tiers\n"
 "- définition de la fréquence et du type de données à sauvegarder\n"
 "- système d'alerte par e-mail en cas d'échec de la sauvegarde.\n"
 
@@ -67,20 +58,13 @@ msgstr ""
 #: docs/admin/40.backups/10.backup_methods.mdx:16
 #, no-wrap
 msgid "There are [remote borg repository providers](https://www.borgbackup.org/support/commercial.html), it is also possible to create your own repository on another YunoHost with the [borgserver application](https://github.com/YunoHost-Apps/borgserver_ynh).\n"
-msgstr ""
-"Il existe des [fournisseurs de stockage borg distants]"
-"(https://www.borgbackup.org/support/commercial.html), mais il est également "
-"possible de créer votre propre stockage sur un autre YunoHost à l'aide de "
-"l'application [borgserver](https://github.com/YunoHost-Apps/borgserver_ynh)."
-"\n"
+msgstr "Il existe des [fournisseurs de stockage borg distants](https://www.borgbackup.org/support/commercial.html), mais il est également possible de créer votre propre stockage sur un autre YunoHost à l'aide de l'application [borgserver](https://github.com/YunoHost-Apps/borgserver_ynh).\n"
 
 #. type: Title ##
 #: docs/admin/40.backups/10.backup_methods.mdx:17
 #, no-wrap
 msgid "[Restic](https://restic.net/) (cf the [Restic app](https://apps.yunohost.org/app/restic))"
-msgstr ""
-"[Restic](https://restic.net/) "
-"(cf. l'[application Restic](https://apps.yunohost.org/app/restic))"
+msgstr "[Restic](https://restic.net/) (cf. l'[application Restic](https://apps.yunohost.org/app/restic))"
 
 #. type: Plain text
 #: docs/admin/40.backups/10.backup_methods.mdx:24
@@ -92,11 +76,8 @@ msgid ""
 "- to define the frequency and type of data to be backed up\n"
 "- a mail alert system in case of backup failure.\n"
 msgstr ""
-"- sauvegarde des données vers un stockage distant (prise en charge de "
-"différents types de stockage : SFTP, S3, Backblaze B2, Azure, etc. *SFTP est "
-"recommandé* pour plus de simplicité)\n"
-"- déduplication et compression des fichiers, ce qui permet de conserver de "
-"nombreuses copies précédentes sans trop de frais de stockage\n"
+"- sauvegarde des données vers un stockage distant (prise en charge de différents types de stockage : SFTP, S3, Backblaze B2, Azure, etc. *SFTP est recommandé* pour plus de simplicité)\n"
+"- déduplication et compression des fichiers, ce qui permet de conserver de nombreuses copies précédentes sans trop de frais de stockage\n"
 "- cryptage des données, ce qui permet de stocker les données chez un tiers\n"
 "- définition de la fréquence et du type de données à sauvegarder\n"
 "- système d'alerte par e-mail en cas d'échec de la sauvegarde.\n"
@@ -122,23 +103,17 @@ msgid ""
 "- data encryption, which allows to store data at a third party\n"
 msgstr ""
 "- basé sur rsync et GPG\n"
-"- sauvegarde des données sur un stockage distant "
-"(prise en charge de différents types de stockage)\n"
+"- sauvegarde des données sur un stockage distant (prise en charge de différents types de stockage)\n"
 "- cryptage des données, qui permet de stocker les données chez un tiers\n"
 
 #. type: Plain text
 #: docs/admin/40.backups/10.backup_methods.mdx:36
 #, no-wrap
 msgid "The package also allows you to finely define the frequency and type of data to be backed up and integrates an email alert system in case of backup failure.\n"
-msgstr ""
-"Le package vous permet également de définir précisément la fréquence et le "
-"type de données à sauvegarder et intègre un système d'alerte par e-mail en "
-"cas d'échec de la sauvegarde.\n"
+msgstr "Le package vous permet également de définir précisément la fréquence et le type de données à sauvegarder et intègre un système d'alerte par e-mail en cas d'échec de la sauvegarde.\n"
 
 #. type: Plain text
 #: docs/admin/40.backups/10.backup_methods.mdx:37
 #, no-wrap
 msgid "More info [on the forum](https://forum.yunohost.org/t/new-app-archivist/3747).\n"
-msgstr ""
-"Plus d'informations [sur le forum]"
-"(https://forum.yunohost.org/t/new-app-archivist/3747).\n"
+msgstr "Plus d'informations [sur le forum](https://forum.yunohost.org/t/new-app-archivist/3747).\n"

@@ -5,11 +5,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2025-12-02 18:04+0000\n"
+"POT-Creation-Date: 2025-12-17 15:39+0000\n"
 "PO-Revision-Date: 2025-12-16 09:43+0000\n"
 "Last-Translator: ppr <pouetpouetratatouille@gmail.com>\n"
-"Language-Team: French <https://translate.yunohost.org/projects/yunohost-doc/"
-"20users__index/fr/>\n"
+"Language-Team: French <https://translate.yunohost.org/projects/yunohost-"
+"doc/20users__index/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -91,29 +91,19 @@ msgstr "Uniquement les membres du groupe admin peuvent créer de nouveaux compte
 #: docs/admin/20.users/index.mdx:31
 #, no-wrap
 msgid "Users are created with an associated email address with the format `username@domain.tld`. Additional email aliases and email forwards can later be added by the admin and the user.\n"
-msgstr ""
-"Les utilisateurs sont créés avec une adresse e-mail associée au format "
-"`username@domain.tld`. Des alias et des redirections d'e-mails "
-"supplémentaires peuvent être ajoutés ultérieurement par l'administrateur et "
-"l'utilisateur.\n"
+msgstr "Les utilisateurs sont créés avec une adresse e-mail associée au format `username@domain.tld`. Des alias et des redirections d'e-mails supplémentaires peuvent être ajoutés ultérieurement par l'administrateur et l'utilisateur.\n"
 
 #. type: Plain text
 #: docs/admin/20.users/index.mdx:33
 #, no-wrap
 msgid "The password should be at least 8 characters - though it is good practice to use longer password (i.e. a passphrase) and/or to use various kind of characters (uppercase, lowercase, digits and special characters).\n"
-msgstr ""
-"Le mot de passe doit comporter au moins 8 caractères, mais il est recommandé "
-"d'utiliser un mot de passe plus long (c'est-à-dire une phrase de passe) et/"
-"ou différents types de caractères "
-"(majuscules, minuscules, chiffres et caractères spéciaux).\n"
+msgstr "Le mot de passe doit comporter au moins 8 caractères, mais il est recommandé d'utiliser un mot de passe plus long (c'est-à-dire une phrase de passe) et/ou différents types de caractères (majuscules, minuscules, chiffres et caractères spéciaux).\n"
 
 #. type: Plain text
 #: docs/admin/20.users/index.mdx:35
 #, no-wrap
 msgid "Finalize the user creation by clicking on the `Save` button.\n"
-msgstr ""
-"Finalisez la création de l'utilisateur en cliquant sur le bouton "
-"`Enregistrer`.\n"
+msgstr "Finalisez la création de l'utilisateur en cliquant sur le bouton `Enregistrer`.\n"
 
 #. type: Plain text
 #: docs/admin/20.users/index.mdx:39
@@ -123,14 +113,9 @@ msgid ""
 "<Figure caption=\"From the top of the users list, click on `+ New user`\" src=\"/img/webadmin/create_user_2.png\"/>\n"
 "<Figure caption=\"Fill in the form\" src=\"/img/webadmin/create_user_3.png\"/>\n"
 msgstr ""
-"<Figure caption="
-"\"Dans le menu principal de l'administrateur Web, ouvrez `Comptes`\" src="
-"\"/img/webadmin/create_user_1.png\"/>\n"
-"<Figure caption="
-"\"En haut de la liste des utilisateurs, cliquez sur `+ Ajouter un compte`\" "
-"src=\"/img/webadmin/create_user_2.png\"/>\n"
-"<Figure caption=\"Remplissez le formulaire\" src="
-"\"/img/webadmin/create_user_3.png\"/>\n"
+"<Figure caption=\"Dans le menu principal de l'administrateur Web, ouvrez `Comptes`\" src=\"/img/webadmin/create_user_1.png\"/>\n"
+"<Figure caption=\"En haut de la liste des utilisateurs, cliquez sur `+ Ajouter un compte`\" src=\"/img/webadmin/create_user_2.png\"/>\n"
+"<Figure caption=\"Remplissez le formulaire\" src=\"/img/webadmin/create_user_3.png\"/>\n"
 
 #. type: Title ##
 #: docs/admin/20.users/index.mdx:40

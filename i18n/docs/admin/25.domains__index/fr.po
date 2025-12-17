@@ -5,11 +5,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2025-12-02 18:04+0000\n"
+"POT-Creation-Date: 2025-12-17 15:39+0000\n"
 "PO-Revision-Date: 2025-12-06 01:32+0000\n"
 "Last-Translator: ppr <pouetpouetratatouille@gmail.com>\n"
-"Language-Team: French <https://translate.yunohost.org/projects/yunohost-doc/"
-"25domains__index/fr/>\n"
+"Language-Team: French <https://translate.yunohost.org/projects/yunohost-"
+"doc/25domains__index/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -51,10 +51,7 @@ msgstr "Les domaines peuvent être gérés dans la section \"Domaine\" de la web
 #: docs/admin/25.domains/index.mdx:17
 #, no-wrap
 msgid "![Screenshot of the webadmin domain interface with an \"Add domain\" button and a list of domains](/img/webadmin/webadmin_domain.png)\n"
-msgstr ""
-"![Une capture d'écran de l'interface de gestion des domaines dans la "
-"webadmin avec un bouton \"Ajouter un domaine\" et la liste des domaines]"
-"(/img/webadmin/webadmin_domain.png)\n"
+msgstr "![Une capture d'écran de l'interface de gestion des domaines dans la webadmin avec un bouton \"Ajouter un domaine\" et la liste des domaines](/img/webadmin/webadmin_domain.png)\n"
 
 #. type: Title ##
 #: docs/admin/25.domains/index.mdx:18
@@ -66,9 +63,7 @@ msgstr "3 types de domaines"
 #: docs/admin/25.domains/index.mdx:22
 #, no-wrap
 msgid "<TabItem value=\"nohost\" label=\"Yunohost's domains (the free and easy way)\">\n"
-msgstr ""
-"<TabItem value=\"nohost\" label="
-"\"Domaines Yunohost (la solution simple et gratuite)\">\n"
+msgstr "<TabItem value=\"nohost\" label=\"Domaines Yunohost (la solution simple et gratuite)\">\n"
 
 #. type: Plain text
 #: docs/admin/25.domains/index.mdx:24
@@ -113,9 +108,7 @@ msgstr "Pour obtenir un de ces domaines, il vous suffit de choisir `Je n'ai pas 
 #: docs/admin/25.domains/index.mdx:36
 #, no-wrap
 msgid "![Screenshot of the \"Add domain\" page where you can choose \"I don't have a domain name\"](/img/webadmin/webadmin_dyndns.png)\n"
-msgstr ""
-"![Capture d'écran de la page \"Ajouter un domaine\" où vous pouvez choisir "
-"\"Je n'ai pas de nom de domaine\"](/img/webadmin/webadmin_dyndns.png)\n"
+msgstr "![Capture d'écran de la page \"Ajouter un domaine\" où vous pouvez choisir \"Je n'ai pas de nom de domaine\"](/img/webadmin/webadmin_dyndns.png)\n"
 
 #. type: Fenced div block (info)
 #: docs/admin/25.domains/index.mdx:37
@@ -167,10 +160,7 @@ msgstr "Si vous avez déjà votre propre domaine, vous pouvez simplement cliquer
 #: docs/admin/25.domains/index.mdx:56
 #, no-wrap
 msgid "![Screenshot of the \"Add domain\" page where you can choose \"I already have a domain name\"](/img/webadmin/webadmin_domain_owndomain.png)\n"
-msgstr ""
-"![Capture d'écran de la page \"Ajouter un domaine\" où vous pouvez choisir "
-"\"J'ai déjà un nom de domaine\"](/img/webadmin/webadmin_domain_owndomain.png)"
-"\n"
+msgstr "![Capture d'écran de la page \"Ajouter un domaine\" où vous pouvez choisir \"J'ai déjà un nom de domaine\"](/img/webadmin/webadmin_domain_owndomain.png)\n"
 
 #. type: Plain text
 #: docs/admin/25.domains/index.mdx:58
@@ -182,9 +172,7 @@ msgstr "[En savoir plus sur la configuration de la zone DNS](/admin/get_started/
 #: docs/admin/25.domains/index.mdx:61
 #, no-wrap
 msgid "<TabItem value=\"local\" label=\"Local domains (only reachable in your local network)\">\n"
-msgstr ""
-"<TabItem value=\"local\" label="
-"\"Domaines locaux (accessibles uniquement sur votre réseau local)\">\n"
+msgstr "<TabItem value=\"local\" label=\"Domaines locaux (accessibles uniquement sur votre réseau local)\">\n"
 
 #. type: Plain text
 #: docs/admin/25.domains/index.mdx:65
@@ -202,10 +190,7 @@ msgstr ""
 #: docs/admin/25.domains/index.mdx:67
 #, no-wrap
 msgid "![Screenshot of the \"Add domain\" page where you can choose \"I already have a domain name\" and setup your domain ending by .local](/img/webadmin/webadmin_domain_local.png)\n"
-msgstr ""
-"![Capture d'écran de la page \"Ajouter un domaine\" où vous pouvez choisir "
-"\"J'ai déjà un nom de domaine\" et configurer votre domaine se terminant par "
-".local](/img/webadmin/webadmin_domain_local.png)\n"
+msgstr "![Capture d'écran de la page \"Ajouter un domaine\" où vous pouvez choisir \"J'ai déjà un nom de domaine\" et configurer votre domaine se terminant par .local](/img/webadmin/webadmin_domain_local.png)\n"
 
 #. type: Fenced div block (info)
 #: docs/admin/25.domains/index.mdx:68
