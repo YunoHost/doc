@@ -65,7 +65,7 @@ msgstr ""
 "- si vous hébergez vous-même chez vous et n'utilisez pas de VPN, assurez-vous que [votre FAI ne bloque pas le port 25](/admin/get_started/providers/isp/) ;\n"
 "- redirigez les ports conformément à [cette documentation](/admin/get_started/post_install/port_forwarding) ;\n"
 "- configurez soigneusement les enregistrements DNS de messagerie conformément à [cette documentation](/admin/get_started/post_install/dns_config) ;\n"
-"- testez votre configuration à l'aide des fonctionnalités de diagnostic (<HighlightWebAdmin/> → <HighlightDiagnosis/> → <Highlight no_break={true} color=“grey”><FAIcon icon=\"fa-envelope\"/> Email</Highlight> ). Vous pouvez également utiliser [mail-tester.com](https://mail-tester.com), un score d'au moins 8~9/10 est un objectif raisonnable <small>(attention : seuls 3 tests par domaine et par jour sont autorisés)</small>.\n"
+"- testez votre configuration à l'aide des fonctionnalités de diagnostic (<HighlightWebAdmin/> → <HighlightDiagnosis/> → <Highlight no_break={true} color='grey'><FAIcon icon=\"fa-envelope\"/> Email</Highlight> ). Vous pouvez également utiliser [mail-tester.com](https://mail-tester.com), un score d'au moins 8~9/10 est un objectif raisonnable <small>(attention : seuls 3 tests par domaine et par jour sont autorisés)</small>.\n"
 
 #. type: Title ##
 #: docs/admin/35.email/index.mdx:23
