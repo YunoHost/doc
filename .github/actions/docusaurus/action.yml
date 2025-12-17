@@ -20,7 +20,7 @@ runs:
 
   - name: Installation
     shell: bash
-    run: yarn
+    run: npm ci
 
   - name: Install perl dependencies (for po4a)
     shell: bash
@@ -44,4 +44,4 @@ runs:
     shell: bash
     run: |
       echo "Using baseUrl=$BASE_URL"
-      yarn build
+      npm run build
