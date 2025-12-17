@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2025-12-02 18:04+0000\n"
-"PO-Revision-Date: 2025-12-16 09:43+0000\n"
-"Last-Translator: ppr <pouetpouetratatouille@gmail.com>\n"
+"PO-Revision-Date: 2025-12-17 15:33+0000\n"
+"Last-Translator: Weblate Admin <yunohost@translate.yunohost.org>\n"
 "Language-Team: French <https://translate.yunohost.org/projects/yunohost-doc/"
 "05get_started__20install_on__on_top_of_debian/fr/>\n"
 "Language: fr\n"
@@ -89,7 +89,7 @@ msgstr "Vous voudrez peut-être **formater le disque** avant de démarrer l'inst
 #, no-wrap
 msgid "Flash the ISO your USB key, for example using [Etcher](https://www.balena.io/etcher/), [USBimager](https://bztsrc.gitlab.io/usbimager/) or `dd`.\n"
 msgstr ""
-"Gravez l'image ISO sur votre clé USB, par exemple à l'aide de [Etcher]"
+"Flashez l'image ISO sur votre clé USB, par exemple à l'aide de [Etcher]"
 "(https://www.balena.io/etcher/), [USBimager]"
 "(https://bztsrc.gitlab.io/usbimager/) ou `dd`.\n"
 
@@ -149,8 +149,8 @@ msgstr ""
 "- Nous vous recommandons de ne pas séparer les partitions `/home`, `/var` ou "
 "`/tmp`. Utilisez l'option "
 "\"conserver tous les fichiers dans une seule partition\".\n"
-"- Si vous ne savez pas ce que vous faites, ne cryptez pas le disque "
-"(le décryptage au démarrage posera problème).\n"
+"- Si vous ne savez pas ce que vous faites, ne chiffrez pas le disque "
+"(le déchiffrement au démarrage posera problème).\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:47
