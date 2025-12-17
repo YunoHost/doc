@@ -5,11 +5,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2025-12-02 17:58+0000\n"
-"PO-Revision-Date: 2025-11-16 18:04+0000\n"
+"POT-Creation-Date: 2025-12-02 18:04+0000\n"
+"PO-Revision-Date: 2025-12-16 09:43+0000\n"
 "Last-Translator: \"José M.\" <correo@xmgz.eu>\n"
-"Language-Team: Galician <https://translate.yunohost.org/projects/yunohost-"
-"doc/02what_is_yunohost__index/gl/>\n"
+"Language-Team: Galician <https://translate.yunohost.org/projects/"
+"yunohost-doc/02what_is_yunohost__index/gl/>\n"
 "Language: gl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -25,10 +25,16 @@ msgstr "Que é YunoHost?"
 
 #. type: Plain text
 #: docs/admin/02.what_is_yunohost/index.mdx:9
-#, fuzzy, no-wrap
-#| msgid "YunoHost is an **operating system** aiming to simplify **server administration** and therefore democratize [self-hosting](/admin/about_self_hosting) while making sure it stays reliable, secure, ethical and lightweight. It is a copylefted libre software project maintained by volunteers. Technically, it can be seen as a server distribution based on [Debian GNU/Linux](https://debian.org).\n"
+#, no-wrap
 msgid "YunoHost is an **operating system** aiming to **simplify server administration** and therefore democratize [self-hosting](/admin/about_self_hosting) while making sure it stays reliable, secure, ethical and lightweight. It is a copylefted libre software project maintained by volunteers. Technically, it can be seen as a server distribution based on [Debian GNU/Linux](https://debian.org).\n"
-msgstr "YunoHost é un **sistema operativo** que intenta simplificar a **administración do sistema** e porén democratizar a [auto-hospedaxe](/admin/about_self_hosting) mantendo ao mesmo tempo a súa fiabilidade, seguridade, ética e lixeireza. É un proxecto con licenza de software libre mantido por persoas voluntarias. Técnicamente pode ser visto como unha distribución para servidores baseada en [Debian GNU/Linux](https://debian.org).\n"
+msgstr ""
+"YunoHost é un **sistema operativo** que intenta **simplificar a "
+"administración do sistema** e porén democratizar a [auto-hospedaxe]"
+"(/admin/about_self_hosting) mantendo ao mesmo tempo a súa fiabilidade, "
+"seguridade, ética e lixeireza. É un proxecto con licenza de software libre "
+"mantido por persoas voluntarias. Técnicamente pode ser visto como unha "
+"distribución para servidores baseada en [Debian GNU/Linux]"
+"(https://debian.org).\n"
 
 #. type: Plain text
 #: docs/admin/02.what_is_yunohost/index.mdx:11
@@ -50,18 +56,7 @@ msgstr "Características"
 
 #. type: Plain text
 #: docs/admin/02.what_is_yunohost/index.mdx:26
-#, fuzzy, no-wrap
-#| msgid ""
-#| "- <SmallInline url='/img/icons/logo-debian.png' alt=\"Debian logo\"/> Based on Debian, for a trustworthy & familiar base;\n"
-#| "- <SmallInline url='/img/icons/icon-tools.png' /> Administer your server through a **friendly web interface** as well as a handy CLI;\n"
-#| "- <SmallInline url='/img/icons/icon-package.png' /> Deploy **apps in just a few clicks** from [our more than 500 apps catalog](https://apps.yunohost.org)!;\n"
-#| "- <SmallInline url='/img/icons/icon-users.png' /> Manage **users** <small>(based on LDAP)</small>;\n"
-#| "- <SmallInline url='/img/icons/icon-globe.png' /> Manage **domain names**;\n"
-#| "- <SmallInline url='/img/icons/icon-medic.png' /> Create and restore **backups**;\n"
-#| "- <SmallInline url='/img/icons/icon-door.png' /> Connect to all apps simultaneously through the **user portal** <small>(NGINX, SSOwat)</small>;\n"
-#| "- <SmallInline url='/img/icons/icon-mail.png' /> Includes a **full e-mail stack** <small>(Postfix, Dovecot, Rspamd, DKIM)</small>;\n"
-#| "- <SmallInline url='/img/icons/icon-lock.png' /> Manages **SSL certificates** <small>(based on Let's Encrypt)</small>;\n"
-#| "- <SmallInline url='/img/icons/icon-shield.png' />... and **security systems** <small>(`fail2ban`, `yunohost-firewall`)</small>.\n"
+#, no-wrap
 msgid ""
 "- <SmallInline url='/img/icons/logo-debian.png' alt=\"Debian logo\"/> Based on Debian, for a trustworthy & familiar base;\n"
 "- <SmallInline url='/img/icons/icon-tools.png' /> Administer your server through a **friendly web interface** as well as a handy CLI;\n"
@@ -74,16 +69,29 @@ msgid ""
 "- <SmallInline url='/img/icons/icon-lock.png' /> Manages **SSL certificates** <small>(based on Let's Encrypt)</small>;\n"
 "- <SmallInline url='/img/icons/icon-shield.png' />... and **security systems** <small>(`fail2ban`, firewall using `nftables`)</small>.\n"
 msgstr ""
-"- <SmallInline url='/img/icons/logo-debian.png' alt=\"Debian logo\"/> Baseado en Debian, unha base coñecida e de confianza;\n"
-"- <SmallInline url='/img/icons/icon-tools.png' /> Administra o teu servidor cunha **interface web amigable** e tamén coa xeitosa CLI;\n"
-"- <SmallInline url='/img/icons/icon-package.png' /> Desprega **aplicacións cun par de clicks** desde [o noso catálogo con máis de 500 apps](https://apps.yunohost.org)!;\n"
-"- <SmallInline url='/img/icons/icon-users.png' /> Xestión de **usuarias** <small>(usando LDAP)</small>;\n"
-"- <SmallInline url='/img/icons/icon-globe.png' /> Xestión de **nomes de dominio**;\n"
-"- <SmallInline url='/img/icons/icon-medic.png' /> Crea e restablece **copias de apoio**;\n"
-"- <SmallInline url='/img/icons/icon-door.png' /> Acceso simultáneo a todas as aplicacións desde o **portal da usuaria** <small>(NGINX, SSOwat)</small>;\n"
-"- <SmallInline url='/img/icons/icon-mail.png' /> Inclúe todos os compoñentes necesarios para **correo electrónico** <small>(Postfix, Dovecot, Rspamd, DKIM)</small>;\n"
-"- <SmallInline url='/img/icons/icon-lock.png' /> Xestión de **Certificados SSL** <small>(baseado en Let's Encrypt)</small>;\n"
-"- <SmallInline url='/img/icons/icon-shield.png' />... e a **seguridade do sistema** <small>(`fail2ban`, `yunohost-firewall`)</small>.\n"
+"- <SmallInline url='/img/icons/logo-debian.png' alt=\"Debian logo\"/> "
+"Baseado en Debian, unha base coñecida e de confianza;\n"
+"- <SmallInline url='/img/icons/icon-tools.png' /> Administra o teu servidor "
+"cunha **interface web amigable** e tamén coa xeitosa CLI;\n"
+"- <SmallInline url='/img/icons/icon-package.png' /> Desprega **aplicacións "
+"cun par de clicks** desde [o noso catálogo con máis de 500 apps]"
+"(https://apps.yunohost.org)!;\n"
+"- <SmallInline url='/img/icons/icon-users.png' /> Xestión de **usuarias** "
+"<small>(usando LDAP)</small>;\n"
+"- <SmallInline url='/img/icons/icon-globe.png' /> Xestión de **nomes de "
+"dominio**;\n"
+"- <SmallInline url='/img/icons/icon-medic.png' /> Crea e restablece **copias "
+"de apoio**;\n"
+"- <SmallInline url='/img/icons/icon-door.png' /> Acceso simultáneo a todas "
+"as aplicacións desde o **portal da usuaria** <small>(NGINX, SSOwat)</small>;"
+"\n"
+"- <SmallInline url='/img/icons/icon-mail.png' /> Inclúe todos os compoñentes "
+"necesarios para **correo electrónico** <small>"
+"(Postfix, Dovecot, OpenDKIM, PostSRSd)</small>;\n"
+"- <SmallInline url='/img/icons/icon-lock.png' /> Xestión de **Certificados "
+"SSL** <small>(baseado en Let's Encrypt)</small>;\n"
+"- <SmallInline url='/img/icons/icon-shield.png' />... e a **seguridade do "
+"sistema** <small>(`fail2ban`, cortalumes con `nftables`)</small>.\n"
 
 #. type: Title ##
 #: docs/admin/02.what_is_yunohost/index.mdx:27
@@ -139,45 +147,93 @@ msgstr "Que non é YunoHost?"
 
 #. type: Plain text
 #: docs/admin/02.what_is_yunohost/index.mdx:47
-#, fuzzy, no-wrap
-#| msgid "YunoHost is *not* an enterprise or a for-profit entity. It is developed and maintained by volunteers. We do not sell services, we do not host or control your data or services in any way, and we have no intention or interest in monetizing anything. We also do not offer any formal guarantees. Our goal is simply to develop and maintain YunoHost in the hope that it contributes to a more decentralized internet and empowers people to reclaim autonomy over their digital services and technology. That said, we do our best to provide community support, and commercial support may be available through third parties if needed.\n"
+#, no-wrap
 msgid "**YunoHost is *not* an enterprise or a for-profit entity.** It is developed and maintained by volunteers. We do not sell services, we do not host or control your data or services in any way, and we have no intention or interest in monetizing anything. We also do not offer any formal guarantees. Our goal is simply to develop and maintain YunoHost in the hope that it contributes to a more decentralized internet and empowers people to reclaim autonomy over their digital services and technology. That said, we do our best to provide community support, and commercial support may be available through third parties if needed.\n"
-msgstr "YunoHost *non* é unha empresa ou unha organización en busca de lucro. Desenvólvese e mantense grazas ás persoas voluntarias. Non vendemos servizos, nin hospedamos nin controlamos os teus datos ou servizos en ningunha forma, e non temos intención nin interese en facer cartos con nada. Tampouco ofrecemos ningún tipo de garantía formal. O noso obxectivo é simplemente desenvolver e manter YunoHost coa esperanza de que contribúa a unha internet descentralizada que empodere ás persoas a reclamar autonomía sobre os servizos dixitais e tecnoloxías. Dito isto, facemos o que podemos para proporcionar axuda á comunidade, e podes obter axuda comercial desde terceiras partes se o precisases.\n"
+msgstr ""
+"**YunoHost *non* é unha empresa ou unha organización en busca de lucro**. "
+"Desenvólvese e mantense grazas ás persoas voluntarias. Non vendemos "
+"servizos, nin hospedamos nin controlamos os teus datos ou servizos en "
+"ningunha forma, e non temos intención nin interese en facer cartos con nada. "
+"Tampouco ofrecemos ningún tipo de garantía formal. O noso obxectivo é "
+"simplemente desenvolver e manter YunoHost coa esperanza de que contribúa a "
+"unha internet descentralizada que empodere ás persoas a reclamar autonomía "
+"sobre os servizos dixitais e tecnoloxías. Dito isto, facemos o que podemos "
+"para proporcionar axuda á comunidade, e podes obter axuda comercial desde "
+"terceiras partes se o precisases.\n"
 
 #. type: Plain text
 #: docs/admin/02.what_is_yunohost/index.mdx:49
-#, fuzzy, no-wrap
-#| msgid "YunoHost as a project is *not* apolitical. By its very nature, YunoHost promotes a decentralized internet and technologies that empower people. We reject the flawed notion that technology is inherently neutral, or that software projects should remain neutral. Many contributors to the project remain vigilant about the social and political implications of technological developments, and emphasize the importance of solidarity and alignment with broader movements such as feminism, LGBTQIA+ rights and visibility, environmental justice and social justice. We stand firmly against fascism, sexism, racism, xenophobia, [bigotry](https://simple.wikipedia.org/wiki/Bigotry), ableism, imperialism, extractivism, [eugenics](https://en.wikipedia.org/wiki/Eugenics), and right-wing libertarianism. If you are not aligned with these values, you are encouraged to *not* use YunoHost and look for a different system.\n"
+#, no-wrap
 msgid "**YunoHost as a project is *not* apolitical.** By its very nature, YunoHost promotes a decentralized internet and technologies that empower people. We reject the flawed notion that technology is inherently neutral, or that software projects should remain neutral. Many contributors to the project remain vigilant about the social and political implications of technological developments, and emphasize the importance of solidarity and alignment with broader movements such as feminism, LGBTQIA+ rights and visibility, environmental justice and social justice. We stand firmly against fascism, sexism, racism, xenophobia, [bigotry](https://simple.wikipedia.org/wiki/Bigotry), ableism, imperialism, extractivism, [eugenics](https://en.wikipedia.org/wiki/Eugenics), and right-wing libertarianism. If you are not aligned with these values, you are encouraged to *not* use YunoHost and look for a different system.\n"
-msgstr "YunoHost *non* é un proxecto apolítico. Pola súa natureza, YunoHost promove unha internet e tecnoloxías descentralizadas que empoderen ás persoas. Rexeitamos ese concepto ruín que di que a tecnoloxía é neutra por natureza, ou que os proxectos de software deberían permanecer neutrais. Moitas colaboradoras do proxecto permanecen vixiantes sobre as implicacións políticas e sociais dos desenvolvementos tecnolóxicos, e salientan a importancia da solidaridade e moverse xunto a movementos máis amplos como o feminismo, visibilidade e dereitos LGBTQIA+, xustiza ambiental e social. Mostrámonos firmes en contra do fascismo, sexismo, racismo, xenofobia, [intolerancia](https://gl.wikipedia.org/wiki/Intolerancia), capacitismo, imperialismo, extractivismo, [euxenesia](https://es.wiktionary.org/wiki/eugenesia), e os libertarios de dereitas. Se non te representan estes valores, considera *non* utilizar YunoHost e buscar unha alternativa diferente.\n"
+msgstr ""
+"**YunoHost *non* é un proxecto apolítico**. Pola súa natureza, YunoHost "
+"promove unha internet e tecnoloxías descentralizadas que empoderen ás "
+"persoas. Rexeitamos ese concepto ruín que di que a tecnoloxía é neutra por "
+"natureza, ou que os proxectos de software deberían permanecer neutrais. "
+"Moitas colaboradoras do proxecto permanecen vixiantes sobre as implicacións "
+"políticas e sociais dos desenvolvementos tecnolóxicos, e salientan a "
+"importancia da solidaridade e moverse xunto a movementos máis amplos como o "
+"feminismo, visibilidade e dereitos LGBTQIA+, xustiza ambiental e social. "
+"Mostrámonos firmes en contra do fascismo, sexismo, racismo, xenofobia, "
+"[intolerancia](https://gl.wikipedia.org/wiki/Intolerancia), capacitismo, "
+"imperialismo, extractivismo, [euxenesia]"
+"(https://es.wiktionary.org/wiki/eugenesia), e os libertarios de dereitas. Se "
+"non te representan estes valores, considera *non* utilizar YunoHost e buscar "
+"unha alternativa diferente.\n"
 
 #. type: Plain text
 #: docs/admin/02.what_is_yunohost/index.mdx:51
-#, fuzzy, no-wrap
-#| msgid "YunoHost is *not* designed to \"scale\" in the traditional sense. It is intended for a relatively modest number of user accounts and simultaneous users. While there is no strict limit—since performance depends heavily on your specific setup — , we estimate that some technical adjustments may be necessary when reaching 250~500 user accounts, or about 50 simultaneous users on resource-intensive apps. That said, YunoHost can comfortably handle hosting a website or several lightweight services, even with thousands of daily visitors.\n"
+#, no-wrap
 msgid "**YunoHost is *not* designed to \"scale\" in the traditional sense.** It is intended for a relatively modest number of user accounts and simultaneous users. While there is no strict limit—since performance depends heavily on your specific setup — , we estimate that some technical adjustments may be necessary when reaching 250~500 user accounts, or about 50 simultaneous users on resource-intensive apps. That said, YunoHost can comfortably handle hosting a website or several lightweight services, even with thousands of daily visitors.\n"
-msgstr "YunoHost *non* se deseñou para \"escalar\", no sentido tradicional. O seu propósito é ter un número relativamente modesto de contas de persoas usuarias e usuarias simultáneas. Aínda que non hai un límite estrito establecido ―xa que o rendemento depende da túa configuración concreta―, estimamos que farían falla algúns axustes técnicos ao acadar entre 250 e 500 contas de usuarias, ou ter unhas 50 usuarias usando simultáneamente as aplicacións que consumen moitos recursos. Dito isto, YunoHost pode comodamente hospedar un sitio web ou varios servizos lixeiros, incluso con miles de visitas diarias.\n"
+msgstr ""
+"**YunoHost *non* se deseñou para \"escalar\", no sentido tradicional**. O "
+"seu propósito é ter un número relativamente modesto de contas de persoas "
+"usuarias e usuarias simultáneas. Aínda que non hai un límite estrito "
+"establecido ―xa que o rendemento depende da túa configuración concreta―, "
+"estimamos que farían falla algúns axustes técnicos ao acadar entre 250 e 500 "
+"contas de usuarias, ou ter unhas 50 usuarias usando simultáneamente as "
+"aplicacións que consumen moitos recursos. Dito isto, YunoHost pode "
+"comodamente hospedar un sitio web ou varios servizos lixeiros, incluso con "
+"miles de visitas diarias.\n"
 
 #. type: Plain text
 #: docs/admin/02.what_is_yunohost/index.mdx:53
-#, fuzzy, no-wrap
-#| msgid "YunoHost is primarily designed for people who want things to \"just work\". Of course, it’s not perfect — we're constantly working to improve the user experience, robustness, and simplicity. Though YunoHost is \"tinkerable\", the first target public is *not* power users with complex or highly customized use cases in mind. We encourage you to keep your setup as simple as possible. That said, you are than welcome to experiment and share your feedback with us!\n"
+#, no-wrap
 msgid "**YunoHost is primarily designed for people who want things to \"just work\".** Of course, it’s not perfect — we're constantly working to improve the user experience, robustness, and simplicity. Though YunoHost is \"tinkerable\", the first target public is *not* power users with complex or highly customized use cases in mind. We encourage you to keep your setup as simple as possible. That said, you are than welcome to experiment and share your feedback with us!\n"
-msgstr "YunoHost deseñouse principalmente para persoas que queren que as cousas \"simplemente funcionen\". Por suposto, non é perfecta ―traballamos constantemente para mellorar a experiencia das usuarias, a súa resistencia e simplicidade. Aínda que se pode \"chafullar\" en YunoHost, o público obxectivo principal *non* son as usuarias experimentadas que teñen en mente casos complexos e altamente personalizables. Recomendámosche manter a configuración o máis simple posible. Dito isto, animámoste a experimentar e compartir a túa experiencia con nós!\n"
+msgstr ""
+"**YunoHost deseñouse principalmente para persoas que queren que as cousas "
+"\"simplemente funcionen\"**. Por suposto, non é perfecta ―traballamos "
+"constantemente para mellorar a experiencia das usuarias, a súa resistencia e "
+"simplicidade. Aínda que se pode \"chafullar\" en YunoHost, o público "
+"obxectivo principal *non* son as usuarias experimentadas que teñen en mente "
+"casos complexos e altamente personalizables. Recomendámosche manter a "
+"configuración o máis simple posible. Dito isto, animámoste a experimentar e "
+"compartir a túa experiencia con nós!\n"
 
 #. type: Plain text
 #: docs/admin/02.what_is_yunohost/index.mdx:55
-#, fuzzy, no-wrap
-#| msgid "YunoHost is *not* designed to be a *heavy* multi-tenant solution for providing services to completely separate organizations across different domains. While you *can* manage multiple domains and subdomains — such as hosting apps for friends, colleagues, an association — you should keep in mind that there is no strict isolation between apps. Under the hood, all applications share the same system and environment.\n"
+#, no-wrap
 msgid "**YunoHost is *not* designed to be a *heavy* multi-tenant solution** for providing services to completely separate organizations across different domains. While you *can* manage multiple domains and subdomains — such as hosting apps for friends, colleagues, an association — you should keep in mind that there is no strict isolation between apps. Under the hood, all applications share the same system and environment.\n"
-msgstr "YunoHost *non* se deseñou para ser unha solución *pesada* multipropósito para proporcionar servizos para organizacións completamente separadas usando múltiples dominios. Aínda que *podes* xestionar varios domios e subdominios ―como hospedar aplicacións para as amizades, colegas, unha asociación― deberías ter presente que non hai un illamento estrito entre as aplicacións. Por dentro, todas as aplicacións comparten o mesmo sistema e entorno.\n"
+msgstr ""
+"**YunoHost *non* se deseñou para ser unha solución *pesada* multipropósito** "
+"para proporcionar servizos para organizacións completamente separadas usando "
+"múltiples dominios. Aínda que *podes* xestionar varios domios e subdominios ―"
+"como hospedar aplicacións para as amizades, colegas, unha asociación― "
+"deberías ter presente que non hai un illamento estrito entre as aplicacións. "
+"Por dentro, todas as aplicacións comparten o mesmo sistema e entorno.\n"
 
 #. type: Plain text
 #: docs/admin/02.what_is_yunohost/index.mdx:57
-#, fuzzy, no-wrap
-#| msgid "(Note for power users) YunoHost does not use \"hard\" containerization technologies such as Docker for its apps. This is partly for historical reasons, but also to keep the system lightweight — both in terms of resource usage and technical complexity. That said, we do take security seriously: applications run under dedicated user accounts with limited privileges and capabilities, and we're continuously working to enhance the system’s security.\n"
+#, no-wrap
 msgid "(Note for power users) **YunoHost does not use \"hard\" containerization technologies** such as Docker for its apps. This is partly for historical reasons, but also to keep the system lightweight — both in terms of resource usage and technical complexity. That said, we do take security seriously: applications run under dedicated user accounts with limited privileges and capabilities, and we're continuously working to enhance the system’s security.\n"
-msgstr "(Nota para usuarias experimentadas) YunoHost non usa teconoloxías \"hard containerization\" como Docker para as súas apps. En parte débese a razóns históricas, pero tamén para manter a lixeireza do sistema ―en termos de uso de recursos e complexidade técnica. Dito isto, somos serias respecto da seguridade: as aplicacións funcionan baixo contas de usuaria dedicadas con privilexios e capacidades limitadas, e traballamos de xeito contínuo para mellorar a seguridade do sistema.\n"
+msgstr ""
+"(Nota para usuarias experimentadas) **YunoHost non usa teconoloxías "
+"\"hard containerization\"** como Docker para as súas apps. En parte débese a "
+"razóns históricas, pero tamén para manter a lixeireza do sistema ―en termos "
+"de uso de recursos e complexidade técnica. Dito isto, somos serias respecto "
+"da seguridade: as aplicacións funcionan baixo contas de usuaria dedicadas "
+"con privilexios e capacidades limitadas, e traballamos de xeito contínuo "
+"para mellorar a seguridade do sistema.\n"
 
 #. type: Title ##
 #: docs/admin/02.what_is_yunohost/index.mdx:58

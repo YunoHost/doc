@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2025-12-02 17:58+0000\n"
+"POT-Creation-Date: 2025-12-10 10:26+0000\n"
 "PO-Revision-Date: 2025-11-25 00:39+0000\n"
 "Last-Translator: Leander Schlichting <email@leanderschlichting.org>\n"
 "Language-Team: German <https://translate.yunohost.org/projects/yunohost-"
@@ -89,8 +89,9 @@ msgstr "Konfigurieren von E-Mail-Aliasen und automatische Weiterleitungen"
 
 #. type: Plain text
 #: docs/admin/35.email/index.mdx:32
-#, no-wrap
-msgid "Mail aliases and forwards can be configured for each users. For instance, the first user created on the server automatically has an alias `root@the.domain.tld` configured - meaning that an email sent to this address will end in the inbox of the first user. Automatic forwards may be configured, for instance if an user doesn't want to configure an additional email account and just wants to receive emails from the server on, say, his/her gmail address.\n"
+#, fuzzy, no-wrap
+#| msgid "Mail aliases and forwards can be configured for each users. For instance, the first user created on the server automatically has an alias `root@the.domain.tld` configured - meaning that an email sent to this address will end in the inbox of the first user. Automatic forwards may be configured, for instance if an user doesn't want to configure an additional email account and just wants to receive emails from the server on, say, his/her gmail address.\n"
+msgid "Mail aliases and forwards can be configured for each users. For instance, the first user created on the server automatically has an alias `root@the.domain.tld` configured - meaning that an email sent to this address will end in the inbox of the first user. Automatic forwards may be configured, for instance if an user doesn't want to configure an additional email account and just wants to receive emails from the server on, say, his/her gmail address (a copy of each mail will be kept on the Yunohost server).\n"
 msgstr "Mail-Aliase und Weiterleitungen können für jeden Benutzer konfiguriert werden. Beispielsweise wird für den ersten,  auf dem Server angelegten Benutzer automatisch ein Alias `root@the.domain.tld` konfiguriert.  Das bedeutet das eine an diese Adresse gesendete E-Mail im Posteingang des ersten Benutzers endet. Automatische Weiterleitungen können konfiguriert werden, z.B. wenn ein Benutzer kein zusätzliches E-Mail-Konto einrichten möchte und nur E-Mails vom Server, z.B. auf seine E-Mail-Adresse, empfangen möchte.\n"
 
 #. type: Plain text
