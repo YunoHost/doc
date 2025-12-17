@@ -177,12 +177,14 @@ def main() -> None:
             filter(None, git_diff_result.replace("\n", " ").strip().split(" "))
         )
 
+        print(files_to_git_add)
         if files_to_git_add:
             subprocess.check_call(["git", "add", *files_to_git_add], cwd=DOCS_DIR)
             # and restore the other ones
             subprocess.check_call(
                 ["git", "checkout", "--", "i18n/docs/admin/"], cwd=DOCS_DIR
             )
+        os.system("git status")
 
     if action == "build_translated_mdx":
         # List generated files
