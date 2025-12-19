@@ -8,7 +8,7 @@ SRCDIR=$1
 
 DOCDIR=$(dirname "$SCRIPT_DIR")
 
-"$SCRIPT_DIR/helpers_doc_generate.py" 2     -i "$SRCDIR" -o "$DOCDIR/docs/dev/packaging/20.scripts/20.helpers_v2.0.mdx"
-"$SCRIPT_DIR/helpers_doc_generate.py" 2.1   -i "$SRCDIR" -o "$DOCDIR/docs/dev/packaging/20.scripts/20.helpers_v2.1.mdx"
-"$SCRIPT_DIR/resources_doc_generate.py"     -i "$SRCDIR" -o "$DOCDIR/docs/dev/packaging/15.resources.mdx"
-"$SCRIPT_DIR/forms_doc_generate.py"         -i "$SRCDIR" -o "$DOCDIR/docs/dev/15.core/20.ynh_core/forms.mdx"
+"$SCRIPT_DIR/helpers_doc_generate.py" 2     -i "$SRCDIR" -o "$DOCDIR/docs/dev/50.packaging/20.scripts/20.helpers_v2.0.mdx"
+"$SCRIPT_DIR/helpers_doc_generate.py" 2.1   -i "$SRCDIR" -o "$DOCDIR/docs/dev/50.packaging/20.scripts/20.helpers_v2.1.mdx"
+"$SCRIPT_DIR/resources_doc_generate.py"     -i "$SRCDIR" -o "$DOCDIR/docs/dev/50.packaging/15.resources.mdx"
+"$SCRIPT_DIR/forms_doc_generate.py"         -i "$SRCDIR" -o "$DOCDIR/docs/dev/80.core/forms.mdx"
