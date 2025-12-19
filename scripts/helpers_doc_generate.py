@@ -39,7 +39,7 @@ def get_helpers_tree(helpers_version: str) -> dict[str, dict]:
         "tech": {
             "title": "App technologies",
             "notes": "These allow to install specific version of the technology required to run some apps",
-            "subsections": ,
+            "subsections": [],
             "helpers": {},
         },
         "db": {
