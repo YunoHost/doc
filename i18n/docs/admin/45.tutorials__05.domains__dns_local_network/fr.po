@@ -4,14 +4,15 @@
 # Automatically generated, 2025.
 #
 # Julie Boissière-Vasseur <jboisseur@posteo.net>, 2025.
+# ppr <pouetpouetratatouille@gmail.com>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2025-12-17 15:39+0000\n"
-"PO-Revision-Date: 2025-11-29 09:02+0000\n"
-"Last-Translator: Julie Boissière-Vasseur <jboisseur@posteo.net>\n"
-"Language-Team: French <https://translate.yunohost.org/projects/yunohost-"
-"doc/45tutorials__05domains__dns_local_network/fr/>\n"
+"PO-Revision-Date: 2025-12-22 17:27+0000\n"
+"Last-Translator: ppr <pouetpouetratatouille@gmail.com>\n"
+"Language-Team: French <https://translate.yunohost.org/projects/yunohost-doc/"
+"45tutorials__05domains__dns_local_network/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -30,13 +31,17 @@ msgstr "Accéder au serveur par le réseau local"
 #, no-wrap
 msgid "After completing your server installation, it is possible that your domain will not be accessible through the local network. This is an issue known as [hairpinning](http://en.wikipedia.org/wiki/Hairpinning) - a feature that is not well supported by some internet routers.\n"
 msgstr ""
+"Une fois l'installation de votre serveur terminée, il est possible que votre "
+"domaine ne soit pas accessible via le réseau local. Il s'agit d'un problème "
+"connu sous le nom de [hairpinning](http://en.wikipedia.org/wiki/Hairpinning)"
+", une fonctionnalité qui n'est pas bien prise en charge par certains "
+"routeurs Internet.\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/05.domains/dns_local_network.mdx:8
-#, fuzzy, no-wrap
-#| msgid "To do this, use the command :\n"
+#, no-wrap
 msgid "To solve this issue you can:\n"
-msgstr "Pour cela, utilisez la commande :\n"
+msgstr "Pour résoudre ce problème, vous pouvez :\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/05.domains/dns_local_network.mdx:11
@@ -45,20 +50,21 @@ msgid ""
 "- configure your router's DNS\n"
 "- or alternatively -  your `/etc/hosts` files on your clients workstation\n"
 msgstr ""
+"- configurez le DNS de votre routeur\n"
+"- ou bien -  vos fichiers `/etc/hosts` sur le poste de travail de vos "
+"clients\n"
 
 #. type: Title ##
 #: docs/admin/45.tutorials/05.domains/dns_local_network.mdx:12
-#, fuzzy, no-wrap
-#| msgid "2. Find the local IP of your server"
+#, no-wrap
 msgid "Find the local IP address of your server"
-msgstr "2. Trouver l'IP locale de votre serveur"
+msgstr "Trouvez l'adresse IP locale de votre serveur"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/05.domains/dns_local_network.mdx:15
-#, fuzzy, no-wrap
-#| msgid "2. Find the local IP of your server"
+#, no-wrap
 msgid "First you need to find out the local IP of your server\n"
-msgstr "2. Trouver l'IP locale de votre serveur"
+msgstr "Vous devez d'abord trouver l'adresse IP locale de votre serveur.\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/05.domains/dns_local_network.mdx:19
@@ -68,31 +74,47 @@ msgid ""
 "- or if in the webadmin, in the Diagnosis section, under Internet Connectivity, IPv4, click on 'Details' and you should find an entry for 'Local IP'\n"
 "- or using the command line on the server : `hostname -I`\n"
 msgstr ""
+"- soit en utilisant les astuces répertoriées [ici]"
+"(/admin/get_started/post_install/find_ip)\n"
+"- soit, dans l'interface d'administration Web, dans la section Diagnostic, "
+"sous Connectivité Internet, IPv4, cliquez sur 'Détails' et vous devriez "
+"trouver une entrée pour 'IP locale'\n"
+"- soit en utilisant la ligne de commande sur le serveur : `hostname -I`\n"
 
 #. type: Title ##
 #: docs/admin/45.tutorials/05.domains/dns_local_network.mdx:20
-#, fuzzy, no-wrap
-#| msgid "Configure DNS records"
+#, no-wrap
 msgid "Configure DNS on your Internet router"
-msgstr "Il faut configurer vos enregistrement DNS"
+msgstr "Configurez le DNS sur votre routeur Internet"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/05.domains/dns_local_network.mdx:23
 #, no-wrap
 msgid "The goal here is to create a network wide redirection handled by your router. The idea is to create a DNS redirection to your server's IP. You should access your router's configuration and look for DNS configuration, then add a redirection to your server's IP (e.g. redirect `yunohost.local` to `192.168.1.21`).\n"
 msgstr ""
+"L'objectif ici est de créer une redirection à l'échelle du réseau gérée par "
+"votre routeur. L'idée est de créer une redirection DNS vers l'adresse IP de "
+"votre serveur. Vous devez accéder à la configuration de votre routeur et "
+"rechercher la configuration DNS, puis ajouter une redirection vers l'adresse "
+"IP de votre serveur "
+"(par exemple, rediriger `yunohost.local` vers `192.168.1.21`).\n"
 
 #. type: Title ##
 #: docs/admin/45.tutorials/05.domains/dns_local_network.mdx:24
 #, no-wrap
 msgid "Configure [hosts](https://en.wikipedia.org/wiki/Host_%28Unix%29) file on client workstation"
 msgstr ""
+"Configurer le fichier [hosts](https://en.wikipedia.org/wiki/Host_%28Unix%29) "
+"sur le poste de travail client"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/05.domains/dns_local_network.mdx:27
 #, no-wrap
 msgid "Modifying hosts file should be done only if you cannot alter your box's DNS or router, because hosts file will only impact the workstation where the file was modified.\n"
 msgstr ""
+"La modification du fichier hosts ne doit être effectuée que si vous ne "
+"pouvez pas modifier le DNS ou le routeur de votre ordinateur, car le fichier "
+"hosts n'aura d'impact que sur le poste de travail où il a été modifié.\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/05.domains/dns_local_network.mdx:34
@@ -105,12 +127,22 @@ msgid ""
 "    `/etc/hosts`\n"
 "    > You MUST have root privileges to modify the file.\n"
 msgstr ""
+"- Le fichier hosts de Windows se trouve à l'emplacement suivant :\n"
+"    `%SystemRoot%\\system32\\drivers\\etc\\`\n"
+"    > Vous DEVEZ activer l'affichage des fichiers cachés et système pour "
+"voir le fichier hosts.\n"
+"- Le fichier hosts des systèmes UNIX (GNU/Linux, macOS) se trouve à "
+"l'emplacement suivant :\n"
+"    `/etc/hosts`\n"
+"    > Vous DEVEZ disposer des privilèges root pour modifier le fichier.\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/05.domains/dns_local_network.mdx:36
 #, no-wrap
 msgid "Add a line at the end of the file containing your server private IP followed by a space and your domain name\n"
 msgstr ""
+"Ajoutez une ligne à la fin du fichier contenant l'adresse IP privée de votre "
+"serveur, suivie d'un espace et de votre nom de domaine.\n"
 
 #, fuzzy, no-wrap
 #~| msgid "Configure DNS records"
