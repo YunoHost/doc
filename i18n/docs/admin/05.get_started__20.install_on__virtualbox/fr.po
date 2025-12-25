@@ -9,10 +9,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2025-12-17 15:39+0000\n"
-"PO-Revision-Date: 2025-12-16 09:43+0000\n"
+"PO-Revision-Date: 2025-12-25 16:52+0000\n"
 "Last-Translator: ppr <pouetpouetratatouille@gmail.com>\n"
-"Language-Team: French <https://translate.yunohost.org/projects/yunohost-"
-"doc/05get_started__20install_on__virtualbox/fr/>\n"
+"Language-Team: French <https://translate.yunohost.org/projects/yunohost-doc/"
+"05get_started__20install_on__virtualbox/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -48,34 +48,34 @@ msgstr ""
 #. type: Title ##
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:103
 #: docs/admin/05.get_started/20.install_on/virtualbox.mdx:70
-#, fuzzy, no-wrap
-#| msgid "<FAIcon icon=\"fa-stethoscope\"/> Run the initial diagnosis"
+#, no-wrap
 msgid "<FAIcon icon=\"fa-rocket\"/> Launch the graphical install"
-msgstr "<FAIcon icon=\"fa-stethoscope\"/> Lancer le diagnostic"
+msgstr "<FAIcon icon=\"fa-rocket\"/> Lancer l'installation graphique"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:106
 #: docs/admin/05.get_started/20.install_on/virtualbox.mdx:73
-#, fuzzy, no-wrap
-#| msgid "You should then land on this page:\n"
+#, no-wrap
 msgid "You should see a screen like this:\n"
-msgstr "Vous devriez arriver sur cette page:\n"
+msgstr "Vous devriez voir un écran comme celui-ci :\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:108
 #: docs/admin/05.get_started/20.install_on/virtualbox.mdx:75
-#, fuzzy, no-wrap
-#| msgid "<Figure caption=\"Preview of the diagnostic panel\" src=\"/img/webadmin/diagnostic.png\"/>\n"
+#, no-wrap
 msgid "<Figure caption=\"Preview of the ISO menu\" src=\"/img/softwares/virtualbox_3.png\"/>\n"
-msgstr "<Figure caption=\"Capture d'écran du panneau de diagnostic\" src=\"/img/webadmin/diagnostic.png\"/>\n"
+msgstr ""
+"<Figure caption=\"Aperçu du menu ISO\" src="
+"\"/img/softwares/virtualbox_3.png\"/>\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:111
 #: docs/admin/05.get_started/20.install_on/virtualbox.mdx:78
-#, fuzzy, no-wrap
-#| msgid "<TabItem value=\"cli\" label=\"From the command line\">\n"
+#, no-wrap
 msgid "<TabItem value=\"classic\" label=\"Classic installation on a whole disk\">\n"
-msgstr "<TabItem value=\"cli\" label=\"Depuis la ligne de commande\">\n"
+msgstr ""
+"<TabItem value=\"classic\" label="
+"\"Installation classique sur un disque entier\">\n"
 
 #. type: Fenced div block (danger)
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:112
@@ -83,6 +83,9 @@ msgstr "<TabItem value=\"cli\" label=\"Depuis la ligne de commande\">\n"
 #, no-wrap
 msgid "Once you have validated the keyboard layout, the installation will be launched and will completely erase the data on your hard disk!\n"
 msgstr ""
+"Une fois que vous aurez validé la disposition du clavier, l'installation "
+"sera lancée et effacera complètement les données présentes sur votre disque "
+"dur !\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:119
@@ -93,14 +96,18 @@ msgid ""
 "2. Select your language, your location, your keyboard layout, and eventually your timezone.\n"
 "3. The installer will then download and install all required packages.\n"
 msgstr ""
+"1. Sélectionnez `Installation graphique`.\n"
+"2. Sélectionnez votre langue, votre emplacement géographique, la disposition "
+"de votre clavier et, éventuellement, votre fuseau horaire.\n"
+"3. Le programme d'installation téléchargera et installera ensuite tous les "
+"paquets requis.\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:122
 #: docs/admin/05.get_started/20.install_on/virtualbox.mdx:89
-#, fuzzy, no-wrap
-#| msgid "<TabItem value=\"dd\" label=\"In command line with dd\">\n"
+#, no-wrap
 msgid "<TabItem value=\"expert\" label=\"Installation in expert mode\">\n"
-msgstr "<TabItem value=\"dd\" label=\"En ligne de commande avec dd\">\n"
+msgstr "<TabItem value=\"expert\" label=\"Installation en mode expert\">\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:124
@@ -108,6 +115,9 @@ msgstr "<TabItem value=\"dd\" label=\"En ligne de commande avec dd\">\n"
 #, no-wrap
 msgid "The YunoHost project simplified the classic installation as much as possible in order to avoid as many people as possible being lost with questions that are too technical or related to specific cases.\n"
 msgstr ""
+"Le projet YunoHost a simplifié autant que possible l'installation standard "
+"afin d'éviter que le plus grand nombre possible de personnes ne se perdent "
+"dans des questions trop techniques ou liées à des cas spécifiques.\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:126
@@ -115,20 +125,24 @@ msgstr ""
 #, no-wrap
 msgid "With the expert mode installation, you have more possibilities, especially concerning the exact partitioning of your storage media. You can also decide to use the classic mode and [add your disks afterwards](/admin/tutorials/external_storage).\n"
 msgstr ""
+"Avec l'installation en mode expert, vous disposez de plus de possibilités, "
+"notamment en ce qui concerne le partitionnement précis de vos supports de "
+"stockage. Vous pouvez également choisir d'utiliser le mode classique et "
+"[ajouter vos disques ultérieurement](/admin/tutorials/external_storage).\n"
 
 #. type: Title ###
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:127
 #: docs/admin/05.get_started/20.install_on/virtualbox.mdx:94
 #, no-wrap
 msgid "Summary of the steps in expert mode"
-msgstr ""
+msgstr "Résumé des étapes en mode expert"
 
 #. type: Title ###
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:135
 #: docs/admin/05.get_started/20.install_on/virtualbox.mdx:102
 #, no-wrap
 msgid "Regarding partitioning"
-msgstr ""
+msgstr "Concernant le partitionnement"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:138
@@ -136,6 +150,11 @@ msgstr ""
 #, no-wrap
 msgid "In general, we recommend against partitioning `/var`, `/opt`, `/usr`, `/bin`, `/etc`, `/lib`, `/tmp` and `/root` on separate partitions. This will prevent you from having to worry about full partitions that could crash your machine, cause app installations to fail, or even corrupt your databases.\n"
 msgstr ""
+"En général, nous déconseillons de partitionner `/var`, `/opt`, `/usr`, `/bin`"
+", `/etc`, `/lib`, `/tmp` et `/root` sur des partitions distinctes. Cela vous "
+"évitera d'avoir à vous soucier des partitions pleines qui pourraient planter "
+"votre machine, entraîner l'échec de l'installation d'applications ou même "
+"corrompre vos bases de données.\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:140
@@ -143,6 +162,8 @@ msgstr ""
 #, no-wrap
 msgid "For performance reasons, it is recommended to mount your fastest storage (SSD) on the root `/`.\n"
 msgstr ""
+"Pour des raisons de performances, il est recommandé de monter votre stockage "
+"le plus rapide (SSD) à la racine `/`.\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:142
@@ -150,6 +171,9 @@ msgstr ""
 #, no-wrap
 msgid "If you have one or more hard drives to store data, you can choose to mount it on one of these folders depending on your usage.\n"
 msgstr ""
+"Si vous disposez d'un ou plusieurs disques durs pour stocker des données, "
+"vous pouvez choisir de les monter dans l'un de ces dossiers en fonction de "
+"votre utilisation.\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:152
@@ -157,13 +181,18 @@ msgstr ""
 #, no-wrap
 msgid "If you want flexibility and don't want to (re)size partitions, you can also choose to mount on `/mnt/hdd` and follow this [tutorial to mount all these folders with `mount --bind`](/admin/tutorials/external_storage).\n"
 msgstr ""
+"Si vous souhaitez bénéficier d'une certaine flexibilité et ne souhaitez pas "
+"(re)dimensionner les partitions, vous pouvez également choisir de monter sur "
+"`/mnt/hdd` et suivre ce "
+"[tutoriel pour monter tous ces dossiers avec `mount --bind`]"
+"(/admin/tutorials/external_storage).\n"
 
 #. type: Title ###
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:153
 #: docs/admin/05.get_started/20.install_on/virtualbox.mdx:120
 #, no-wrap
 msgid "About encryption"
-msgstr ""
+msgstr "À propos du chiffrement"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:156
@@ -171,20 +200,26 @@ msgstr ""
 #, no-wrap
 msgid "Be aware that if you encrypt all or part of your disks, you will have to type the passphrase every time you restart your server, which can be a problem if you are not on site. There are however solutions (quite difficult to implement) that allow you to type the passphrase via SSH or via a web page (search for \"dropbear encrypted disk\").\n"
 msgstr ""
+"Sachez que si vous chiffrez tout ou partie de vos disques, vous devrez "
+"saisir la phrase secrète à chaque redémarrage de votre serveur, ce qui peut "
+"poser problème si vous n'êtes pas sur place. Il existe toutefois des "
+"solutions (assez difficiles à mettre en œuvre) qui vous permettent de saisir "
+"la phrase secrète via SSH ou via une page web "
+"(recherchez \"dropbear encrypted disk\").\n"
 
 #. type: Title ###
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:157
 #: docs/admin/05.get_started/20.install_on/virtualbox.mdx:124
 #, no-wrap
 msgid "About RAID"
-msgstr ""
+msgstr "À propos du RAID"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:160
 #: docs/admin/05.get_started/20.install_on/virtualbox.mdx:127
 #, no-wrap
 msgid "Keep in mind that:\n"
-msgstr ""
+msgstr "Gardez à l'esprit que :\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:164
@@ -195,74 +230,95 @@ msgid ""
 "- a RAID 1 (even without a spare) is more reliable than a RAID 5 from a probability point of view\n"
 "- hardware raids are dependent on the raid card, if the card fails you will need a replacement to read and rebuild the array\n"
 msgstr ""
+"- les disques de vos RAID doivent être de marques, d'usure ou de lots "
+"différents (en particulier s'il s'agit de SSD)\n"
+"- un RAID 1 (même sans disque de secours) est plus fiable qu'un RAID 5 d'un "
+"point de vue probabiliste\n"
+"- les RAID matériels dépendent de la carte RAID. Si la carte tombe en panne, "
+"vous aurez besoin d'une carte de remplacement pour lire et reconstruire la "
+"grappe\n"
 
 #. type: Yaml Front Matter Hash Value: description
 #: docs/admin/05.get_started/20.install_on/virtualbox.mdx:1
 #, no-wrap
 msgid "For testing and debugging purposes"
-msgstr ""
+msgstr "À des fins de test et de débogage"
 
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/05.get_started/20.install_on/virtualbox.mdx:1
 #, no-wrap
 msgid "In a virtual machine"
-msgstr ""
+msgstr "Dans une machine virtuelle"
 
 #. type: Fenced div block (warning)
 #: docs/admin/05.get_started/20.install_on/virtualbox.mdx:16
 #, no-wrap
 msgid "Installing YunoHost in a VirtualBox is usually intended for testing or development. It is not convenient to run an actual server on the long-term, because the machine it's installed on probably won't be up 24/7, and because Virtualbox adds an additional layer of complexity in exposing the machine to the Internet.\n"
 msgstr ""
+"L'installation de YunoHost dans VirtualBox est généralement destinée à des "
+"fins de test ou de développement. Il n'est pas pratique d'utiliser un "
+"serveur réel à long terme, car la machine sur laquelle il est installé ne "
+"sera probablement pas disponible 24 heures sur 24, 7 jours sur 7, et parce "
+"que Virtualbox ajoute une couche supplémentaire de complexité en exposant la "
+"machine à Internet.\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/virtualbox.mdx:23
 #, no-wrap
 msgid "- An x86 computer with [VirtualBox installed](https://www.virtualbox.org/wiki/Downloads) and enough RAM capacity to be able to run a small virtual machine with 1024MB RAM and 8GB capacity (at least)\n"
 msgstr ""
+"- Un ordinateur x86 avec [VirtualBox installé]"
+"(https://www.virtualbox.org/wiki/Downloads) et une capacité de RAM "
+"suffisante pour pouvoir exécuter une petite machine virtuelle avec 1024 Mo "
+"de RAM et une capacité de 8 Go (au minimum).\n"
 
 #. type: Title ##
 #: docs/admin/05.get_started/20.install_on/virtualbox.mdx:24
-#, fuzzy, no-wrap
-#| msgid "<FAIcon icon=\"fa-stethoscope\"/> Run the initial diagnosis"
+#, no-wrap
 msgid "<FAIcon icon=\"fa-download\"/> Download the YunoHost image"
-msgstr "<FAIcon icon=\"fa-stethoscope\"/> Lancer le diagnostic"
+msgstr "<FAIcon icon=\"fa-download\"/> Télécharger l'image YunoHost"
 
 #. type: Fenced div block (warning)
 #: docs/admin/05.get_started/20.install_on/virtualbox.mdx:26
 #, no-wrap
 msgid "If your host OS is 32 bits, be sure to download the 32-bit image.\n"
 msgstr ""
+"Si votre système d'exploitation hôte est en 32 bits, assurez-vous de "
+"télécharger l'image 32 bits.\n"
 
 #. type: Title ##
 #: docs/admin/05.get_started/20.install_on/virtualbox.mdx:38
 #, no-wrap
 msgid "Create a new virtual machine"
-msgstr ""
+msgstr "Créer une nouvelle machine virtuelle"
 
 #. type: Fenced div block (warning)
 #: docs/admin/05.get_started/20.install_on/virtualbox.mdx:42
 #, no-wrap
 msgid "It's okay if you can only have 32-bit versions, just be sure that you downloaded the 32-bit image previously.\n"
 msgstr ""
+"Si vous ne pouvez disposer que de versions 32 bits, ce n'est pas grave, mais "
+"assurez-vous d'avoir téléchargé au préalable l'image 32 bits.\n"
 
 #. type: Title ##
 #: docs/admin/05.get_started/20.install_on/virtualbox.mdx:46
-#, fuzzy, no-wrap
-#| msgid "Generic settings"
+#, no-wrap
 msgid "Tweak network settings"
-msgstr "Réglages génériques"
+msgstr "Modifier les paramètres réseau"
 
 #. type: Fenced div block (warning)
 #: docs/admin/05.get_started/20.install_on/virtualbox.mdx:48
 #, no-wrap
 msgid "This step is important to properly expose the virtual machine on the network\n"
 msgstr ""
+"Cette étape est importante pour exposer correctement la machine virtuelle "
+"sur le réseau.\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/virtualbox.mdx:53
 #, no-wrap
 msgid "Go to **Settings** > **Network**:\n"
-msgstr ""
+msgstr "Allez dans **Configuration** > **Réseau** :\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/virtualbox.mdx:57
@@ -272,25 +328,31 @@ msgid ""
 "- Select your interface's name:\n"
 "    **wlan0** if you are connected wirelessly, or **eth0** otherwise.\n"
 msgstr ""
+"- Sélectionnez `Accès par pont`\n"
+"- Sélectionnez le nom de votre interface :\n"
+"    **wlpXsX** si vous êtes connecté sans fil, ou **enpXsX** dans le cas "
+"contraire.\n"
 
 #. type: Title ##
 #: docs/admin/05.get_started/20.install_on/virtualbox.mdx:60
-#, fuzzy, no-wrap
-#| msgid "<FAIcon icon=\"fa-cog\"/> Proceed with the initial configuration"
+#, no-wrap
 msgid "<FAIcon icon=\"fa-plug\"/> Boot up the virtual machine"
-msgstr "<FAIcon icon=\"fa-cog\"/> Lancer la configuration initiale"
+msgstr "<FAIcon icon=\"fa-plug\"/> Démarrer la machine virtuelle"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/virtualbox.mdx:63
 #, no-wrap
 msgid "Start the virtual machine after selecting the YunoHost image.\n"
 msgstr ""
+"Démarrez la machine virtuelle après avoir sélectionné l'image YunoHost.\n"
 
 #. type: Fenced div block (warning)
 #: docs/admin/05.get_started/20.install_on/virtualbox.mdx:66
 #, no-wrap
 msgid "If you encounter the error \"VT-x is not available\", you probably need to enable Virtualization in the BIOS of your computer.\n"
 msgstr ""
+"Si vous rencontrez l'erreur \"VT-x n'est pas disponible\", vous devez "
+"probablement activer la virtualisation dans le BIOS de votre ordinateur.\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/virtualbox.mdx:101
@@ -302,6 +364,14 @@ msgid ""
 "  4. Specify a possible HTTP proxy to use for the installation of the packages\n"
 "  5. Specify on which volumes grub should be installed\n"
 msgstr ""
+"  1. Sélectionnez `Installation graphique avancée`.\n"
+"  2. Sélectionnez votre langue, votre emplacement géographique, la "
+"disposition de votre clavier et éventuellement votre fuseau horaire.\n"
+"  3. Partitionnez vos disques. C'est ici que vous pouvez configurer un RAID "
+"ou chiffrer tout ou partie du serveur.\n"
+"  4. Spécifiez un éventuel proxy HTTP à utiliser pour l'installation des "
+"paquets.\n"
+"  5. Spécifiez sur quels volumes grub doit être installé.\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/virtualbox.mdx:117
@@ -315,9 +385,23 @@ msgid ""
 "| `/home/yunohost.multimedia` | Heavy data shared between several applications |\n"
 "| `/var/mail` | User mail |\n"
 msgstr ""
+"| Chemin | Contenu |\n"
+"|--------|---|\n"
+"| `/home` | Dossiers utilisateur accessibles via SFTP |\n"
+"| `/home/yunohost.backup/archives` | Sauvegardes YunoHost à placer "
+"idéalement ailleurs que sur les disques qui gèrent les données |\n"
+"| `/home/yunohost.app` | Données lourdes provenant des applications YunoHost "
+"(nextcloud, matrix, ...) |\n"
+"| `/home/yunohost/multimedia` | Données volumineuses partagées entre "
+"plusieurs applications |\n"
+"| `/var/mail` | Courrier électronique des utilisateurs |\n"
 
 #. type: Fenced div block (tip)
 #: docs/admin/05.get_started/20.install_on/virtualbox.mdx:135
 #, no-wrap
 msgid "If the YunoHost installer fails and you can't solve the issue, know that it's also possible to install Debian and then install YunoHost on top. See [these instructions](/admin/get_started/install_on/on_top_of_debian).\n"
 msgstr ""
+"Si l'installateur YunoHost échoue et que vous ne parvenez pas à résoudre le "
+"problème, sachez qu'il est également possible d'installer Debian, puis "
+"d'installer YunoHost par-dessus. Consultez [ces instructions]"
+"(/admin/get_started/install_on/on_top_of_debian).\n"
