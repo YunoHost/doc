@@ -6,15 +6,15 @@ title: 🔒 Security
 When thinking and discussing security — whether in the context of YunoHost or any other system —, please keep in mind that security is not a binary state, but an ongoing practice. The term "security" is essentially meaningless without specifying what exactly we are securing against. The 'threats' to consider depend on your context, and can range from automated attacks from bots roaming the Internet, to sophisticated state actors like the NSA, or supply chain vulnerabilities (e.g., compromised software dependencies), or basic risks such as your own users employing overly simple passwords, or your worst enemy from elementary school 20 years ago trying to hack into your server...
 :::
 
-YunoHost is developped with security in mind, and designing good tradeoff between security and usability. Here's a non-exhaustive list of security aspects that the project is implementing:
+YunoHost is developed with security in mind, and designs good tradeoffs between security and usability. Here's a non-exhaustive list of security aspects that the project is implementing:
 - a firewall based on `nftables` to restrict incoming traffic to relevant ports ;
 - `fail2ban`, a software that automatically rejects traffic from malicious IPs trying to brute force SSH and other services ;
 - using [Mozilla's recommendations for NGINX, Postfix, Dovecot, SSH ciphers etc.](https://wiki.mozilla.org/Security/Server_Side_TLS) ;
-- checking that user password/passphrase are not too simple when definining them ;
+- checking that user password/passphrase are not too simple when defining them ;
 - hashing user passwords (salted SHA512 in LDAP for example) ;
-- being vigilant on UNIX file/dir permissions accross the whole system ;
-- apps are typically ran using a dedicated user, and with [restricted capabilities](https://man7.org/linux/man-pages/man7/capabilities.7.html) ;
-- auto-redacting sensitive informations from YunoHost operation logs and when sharing them with Yunopaste ;
+- being vigilant on UNIX file/dir permissions across the whole system ;
+- apps are typically run using a dedicated user, and with [restricted capabilities](https://man7.org/linux/man-pages/man7/capabilities.7.html) ;
+- auto-redacting sensitive information from YunoHost operation logs and when sharing them with Yunopaste ;
 - ...
 
 In addition, the project has mid-term goals to implement:
@@ -22,16 +22,16 @@ In addition, the project has mid-term goals to implement:
 - [automatic warnings about vulnerabilities](https://github.com/YunoHost/yunohost/pull/2077) <small>(via the Diagnosis, not via the forum or social media)</small> ;
 - supporting [OIDC](https://github.com/YunoHost/yunohost/pull/2149) and [2FA](https://github.com/YunoHost/issues/issues/238) ;
 - better support for SSH keys, in particular [making them configurable from the webadmin](https://github.com/YunoHost/issues/issues/175) ;
-- further constrain and limit application capabilities to only what they need (cf. packaging v3) ;
+- further constraining and limiting application capabilities to only what they need (cf. packaging v3) ;
 - ...
 
 :::info
 <FAIcon icon="fa-shield"/> To discuss security flaws in YunoHost, contact the [project's security team](/community/security_team).
 :::
 
-## Basic security advices
+## Basic security advice
 
-Security is not a one-time setup, it's an active, ongoing practice. Here are some basic practice that you should implement:
+Security is not a one-time setup, it's an active, ongoing practice. Here are some basic practices that you should implement:
 
 :::warning
 Using stupidly simple passwords is arguably the number one reason why servers get "hacked". You and your users using reasonably complex passwords/passphrases is the basis of any good security.
@@ -102,7 +102,7 @@ Never close your current SSH connection before checking that your alterations wo
 :::
 
 
-## Hardening cipher used by NGINX, SSH, Dovecot, Postfix
+## Hardening ciphers used by NGINX, SSH, Dovecot, Postfix
 
 The default TLS configuration for services tends to offer good compatibility to support old devices. You can tune this policy for specific services like SSH and NGINX. By default, the NGINX configuration follows the [intermediate compatibility recommendation](https://wiki.mozilla.org/Security/Server_Side_TLS#Intermediate_compatibility_.28default.29) from Mozilla. You can choose to switch to the 'modern' configuration which uses more recent security recommendations, **at the cost of decreasing compatibility**, which may be an issue for your users and visitors using older devices. More details about compatibility can be found on [this page](https://wiki.mozilla.org/Security/Server_Side_TLS#Modern_compatibility).
 
@@ -122,7 +122,7 @@ sudo yunohost settings set security.ssh.ssh_compatibility -v modern
 
 ## Disabling the YunoHost API
 
-YunoHost administration is accessible through an **HTTP API**, which is the API used by the webadmin. This may be an additional, unecessary attack surface if you are not planning to use it. In this case, you can disable the corresponding service entirely via command line:
+YunoHost administration is accessible through an **HTTP API**, which is the API used by the webadmin. This may be an additional, unnecessary attack surface if you are not planning to use it. In this case, you can disable the corresponding service entirely via command line:
 
 :::warning
 This will completely disable both YunoHost's API and the web administration panel that relies on it.

@@ -9,18 +9,18 @@ In the context of self-hosting, backups are essential for mitigating the impact 
 
 ## Manual backup
 
-YunoHost comes with a backup system, that allows you to backup (and restore) system configurations and data (e.g. emails) and apps if they support it.
+YunoHost comes with a backup system that allows you to back up (and restore) system configurations and data (e.g. emails) and apps, if they support it.
 
 You can manage backups either from the command line (`yunohost backup --help`) or from the web administration (in the Backups section), though some features are not yet available in the webadmin.
 
-The current default method consists in creating a `.tar` archive containing all relevant files.
+The current default method consists of creating a `.tar` archive containing all relevant files.
 
 #### Creating backups
 
 <Tabs groupId="admin-commands">
 <TabItem value="web" label="From the web interface">
 
-You can easily create backup archives from the webadmin by going to `Backups > Local storage` and clicking on `New backup`. You will then be asked to select which configuration, data and apps you want to backup.
+You can easily create backup archives from the webadmin by going to `Backups > Local storage` and clicking on `New backup`. You will then be asked to select which configuration, data and apps you want to back up.
 
 ![Screenshot of YunoHost's backup panel](/img/webadmin/backup.png)
 
@@ -35,31 +35,31 @@ You can create a new backup archive from the command line. Here are a few simple
 yunohost backup create
 ```
 
-- Backing up only apps
+- Backing up only apps:
 
 ```bash
 yunohost backup create --apps
 ```
 
-- Backing up only two apps (wordpress and shaarli)
+- Backing up only two apps (wordpress and shaarli):
 
 ```bash
 yunohost backup create --apps wordpress shaarli
 ```
 
-- Backing up only emails
+- Backing up only emails:
 
 ```bash
 yunohost backup create --system data_mail
 ```
 
-- Backing up emails and wordpress
+- Backing up emails and wordpress:
 
 ```bash
 yunohost backup create --system data_mail --apps wordpress
 ```
 
-For more information and options about backup creation, consult `yunohost backup create --help`. You can also list the system parts that can be backed up with `yunohost hook list backup`.
+For more information and options regarding backup creation, consult `yunohost backup create --help`. You can also list the system parts that can be backed up with `yunohost hook list backup`.
 
 </TabItem>
 </Tabs>
@@ -102,16 +102,16 @@ scp -P ssh_port admin@your.domain.tld:/home/yunohost.backup/archives/<archive_na
 
 
 :::caution
-Don't forget to store your backup in a different place to your server.
+Don't forget to store your backup in a different location from your server.
 :::
 
 :::info
-If you want, you can connect an external disk to your server so that the archives arrive directly on it. See this guide to [Adding external storage to your server](/admin/tutorials/external_storage)
+If you want, you can connect an external disk to your server so that the archives are saved directly to it. See this guide on [adding external storage to your server](/admin/tutorials/external_storage).
 :::
 
 ### Testing
 
-You should regularly test your backups by at least listing the contents of the archives and checking the size of the associated data. It is best to practice restoring regularly.
+You should regularly test your backups by at least listing the contents of the archives and checking the size of the associated data. It is best to practice restoration regularly.
 
 ```bash
 # List the files
@@ -142,9 +142,9 @@ Go in `Backup > Local storage` and select your archive. You can then select whic
 </TabItem>
 <TabItem value="cli" label="From the command line">
 
-From the command line, you can run `yunohost backup list` to get the available archive names. They are basically their file name without extension.
+From the command line, you can run `yunohost backup list` to get the available archive names. They are basically their filenames without extensions.
 
-You can then run `yunohost backup restore <archivename>` (hence without its `.tar` extension) to restore an archive. As for `yunohost backup create`, this will restore everything in the archive by default. If you want to restore only specific items, you can use something like `yunohost backup restore <archivename> --apps wordpress`, which will restore only the wordpress app.
+You can then run `yunohost backup restore <archivename>` (hence without its `.tar` extension) to restore an archive. As for `yunohost backup create`, this will restore everything in the archive by default. If you want to restore only specific items, you can use something like `yunohost backup restore <archivename> --apps wordpress`, which will restore only the wordPress app.
 
 :::tip
 In the case of a complete restoration, it is possible to restore instead of launching the initial configuration.
@@ -153,7 +153,7 @@ In the case of a complete restoration, it is possible to restore instead of laun
 </TabItem>
 </Tabs>
 
-To restore an app, the domain on which it was installed should already be configured (or you need to restore the corresponding system configuration). You also cannot restore an app which is already installed... which means that to restore an old version of an app, you must first uninstall it.
+To restore an app, the domain on which it was installed should already be configured (or you need to restore the corresponding system configuration). You also cannot restore an app that is already installed... which means that to restore an old version of an app, you must first uninstall it.
 
 #### Uploading an archive
 
@@ -169,7 +169,7 @@ By default, backups are to be placed in `/home/yunohost.backup/archives/`.
 </TabItem>
 <TabItem value="cli" label="From the command line">
 
-You can use the `scp` (a command built on `ssh`) to copy files between two machines from CLI. For example for a Linux terminal:
+You can use `scp` (a command built on `ssh`) to copy files between two machines from the CLI. For example, for a Linux terminal:
 
 ```bash
 scp /path/to/your/<archive_name>.tar admin@your.domain.tld:/home/yunohost.backup/archives/
