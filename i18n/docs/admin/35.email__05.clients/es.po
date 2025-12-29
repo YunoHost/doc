@@ -23,7 +23,7 @@ msgstr "Configurar un cliente de correo electrónico"
 #: docs/admin/35.email/05.clients.mdx:9
 #, no-wrap
 msgid "You can fetch and send emails using your YunoHost instance from desktop email clients such as Thunderbird Desktop or on your smartphone with applications like K-9 Mail.\n"
-msgstr "Es posible de consultar y enviar correos de tu YunoHost con un cliente de correo electrónico como Thunderbird Desktop o K-9 Mail en el teléfono.\n"
+msgstr "Es posible consultar y enviar correos de tu YunoHost con un cliente de correo electrónico como Thunderbird Desktop o K-9 Mail en el teléfono.\n"
 
 #. type: Plain text
 #: docs/admin/35.email/05.clients.mdx:11
@@ -79,7 +79,7 @@ msgstr "<SmallInline url='/img/icons/logo-thunderbird.png'/> Configurar Thunderb
 #: docs/admin/35.email/05.clients.mdx:29
 #, no-wrap
 msgid "To manually configure a new account in Thunderbird Desktop, add the account information, then click on 'Configure manually'.\n"
-msgstr "Para configurar manualmente un nuevo cuenta en Thunderbird Desktop, añadir las informaciones de la cuenta, y después\n"
+msgstr "Para configurar manualmente una nueva cuenta en Thunderbird Desktop, añade la información de la cuenta, y después\n"
 
 #. type: Plain text
 #: docs/admin/35.email/05.clients.mdx:33
