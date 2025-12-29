@@ -41,7 +41,7 @@ yunohost backup create
 yunohost backup create --apps
 ```
 
-- Backing up only two apps (wordpress and shaarli):
+- Backing up only two apps (WordPress and shaarli):
 
 ```bash
 yunohost backup create --apps wordpress shaarli
@@ -53,7 +53,7 @@ yunohost backup create --apps wordpress shaarli
 yunohost backup create --system data_mail
 ```
 
-- Backing up emails and wordpress:
+- Backing up emails and WordPress:
 
 ```bash
 yunohost backup create --system data_mail --apps wordpress
@@ -144,7 +144,7 @@ Go in `Backup > Local storage` and select your archive. You can then select whic
 
 From the command line, you can run `yunohost backup list` to get the available archive names. They are basically their filenames without extensions.
 
-You can then run `yunohost backup restore <archivename>` (hence without its `.tar` extension) to restore an archive. As for `yunohost backup create`, this will restore everything in the archive by default. If you want to restore only specific items, you can use something like `yunohost backup restore <archivename> --apps wordpress`, which will restore only the wordPress app.
+You can then run `yunohost backup restore <archivename>` (hence without its `.tar` extension) to restore an archive. As for `yunohost backup create`, this will restore everything in the archive by default. If you want to restore only specific items, you can use something like `yunohost backup restore <archivename> --apps wordpress`, which will restore only the WordPress app.
 
 :::tip
 In the case of a complete restoration, it is possible to restore instead of launching the initial configuration.
