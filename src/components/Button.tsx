@@ -4,6 +4,7 @@ import Link from "@docusaurus/Link";
 
 export default function Button({
   children,
+  icon,
   url,
   backgroundColor,
   border,
@@ -12,6 +13,7 @@ export default function Button({
   margin,
 }: {
   children: ReactNode;
+  icon: string;
   url: string;
   backgroundColor: string;
   border: string;
@@ -36,7 +38,12 @@ export default function Button({
           fontWeight: "bold",
         }}
       >
-        {children}
+      {% if icon is defined %}
+        <span aria-hidden="true">
+          {icon} 
+        </span>
+      {% endif %}
+      {children}
       </div>
     </Link>
   );
