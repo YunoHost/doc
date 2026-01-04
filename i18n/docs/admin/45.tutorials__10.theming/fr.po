@@ -8,11 +8,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2025-12-17 15:39+0000\n"
+"POT-Creation-Date: 2026-01-04 16:21+0000\n"
 "PO-Revision-Date: 2026-01-04 10:27+0000\n"
 "Last-Translator: ppr <pouetpouetratatouille@gmail.com>\n"
-"Language-Team: French <https://translate.yunohost.org/projects/yunohost-doc/"
-"45tutorials__10theming/fr/>\n"
+"Language-Team: French <https://translate.yunohost.org/projects/yunohost-"
+"doc/45tutorials__10theming/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -58,9 +58,7 @@ msgstr "Afficher la liste des applications publiques aux visiteurs"
 #: docs/admin/45.tutorials/10.theming.mdx:13
 #, no-wrap
 msgid "Visitors will see a 'public apps' page when ending up on the portal instead of just the login form.\n"
-msgstr ""
-"Les visiteurs verront une page 'applications publiques' lorsqu'ils "
-"arriveront sur le portail, au lieu du simple formulaire de connexion.\n"
+msgstr "Les visiteurs verront une page 'applications publiques' lorsqu'ils arriveront sur le portail, au lieu du simple formulaire de connexion.\n"
 
 #. type: Title ###
 #: docs/admin/45.tutorials/10.theming.mdx:14
@@ -72,9 +70,7 @@ msgstr "Afficher les applications d'autres domaines"
 #: docs/admin/45.tutorials/10.theming.mdx:17
 #, no-wrap
 msgid "All apps from all domains will be visible on the portal. Default value is `true`.\n"
-msgstr ""
-"Toutes les applications de tous les domaines seront visibles sur le portail. "
-"La valeur par défaut est `true`.\n"
+msgstr "Toutes les applications de tous les domaines seront visibles sur le portail. La valeur par défaut est `true`.\n"
 
 #. type: Title ###
 #: docs/admin/45.tutorials/10.theming.mdx:18
@@ -98,10 +94,7 @@ msgstr "Logo personnalisé"
 #: docs/admin/45.tutorials/10.theming.mdx:25
 #, no-wrap
 msgid "Choose a image. Accept .svg, .png and .jpeg. Prefer a monochrome .svg with `fill: currentColor` so that the logo adapts to the themes.\n"
-msgstr ""
-"Choisissez une image. Les formats .svg, .png et .jpeg sont acceptés. "
-"Privilégiez un fichier .svg monochrome avec `fill: currentColor` afin que le "
-"logo s'adapte aux thèmes.\n"
+msgstr "Choisissez une image. Les formats .svg, .png et .jpeg sont acceptés. Privilégiez un fichier .svg monochrome avec `fill: currentColor` afin que le logo s'adapte aux thèmes.\n"
 
 #. type: Title ###
 #: docs/admin/45.tutorials/10.theming.mdx:26
@@ -113,9 +106,7 @@ msgstr "Couleur par défaut du thème"
 #: docs/admin/45.tutorials/10.theming.mdx:29
 #, no-wrap
 msgid "Choose a color theme. Users are allowed to choose another one in their settings.\n"
-msgstr ""
-"Choisissez une couleur pour le thème. Les utilisateurs peuvent en choisir "
-"une autre dans leurs paramètres.\n"
+msgstr "Choisissez une couleur pour le thème. Les utilisateurs peuvent en choisir une autre dans leurs paramètres.\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/10.theming.mdx:34
@@ -128,8 +119,7 @@ msgid ""
 msgstr ""
 "* Affichage des vignettes d'applications\n"
 "    * simple = affiche les icônes des applications\n"
-"    * descriptif = affiche les icônes des applications et une description de "
-"l'application\n"
+"    * descriptif = affiche les icônes des applications et une description de l'application\n"
 "    * récurrent = affiche les vignettes avec le nom des applications.\n"
 
 #. type: Title ###
@@ -142,12 +132,7 @@ msgstr "URL du moteur de recherche"
 #: docs/admin/45.tutorials/10.theming.mdx:38
 #, no-wrap
 msgid "This is an optional feature, allowing to display a search bar in the portal (for example if you like to use your YunoHost portal as your browser's home page). This should be an URL with an empty query string such as `https://duckduckgo.com/?q=, with q=` as duckduckgo's empty query parameter\n"
-msgstr ""
-"Il s'agit d'une fonctionnalité optionnelle qui permet d'afficher une barre "
-"de recherche dans le portail (par exemple si vous souhaitez utiliser votre "
-"portail YunoHost comme page d'accueil de votre navigateur). Il doit s'agir "
-"d'une URL avec une chaîne de requête vide, telle que `https://duckduckgo.com/"
-"?q=, avec q=` comme paramètre de requête vide de duckduckgo.\n"
+msgstr "Il s'agit d'une fonctionnalité optionnelle qui permet d'afficher une barre de recherche dans le portail (par exemple si vous souhaitez utiliser votre portail YunoHost comme page d'accueil de votre navigateur). Il doit s'agir d'une URL avec une chaîne de requête vide, telle que `https://duckduckgo.com/?q=, avec q=` comme paramètre de requête vide de duckduckgo.\n"
 
 #. type: Title ###
 #: docs/admin/45.tutorials/10.theming.mdx:39
@@ -160,9 +145,7 @@ msgstr "Personnalisation de l'interface utilisateur"
 #: docs/admin/45.tutorials/10.theming.mdx:46
 #, no-wrap
 msgid "You can use HTML, basic styles will be applied to generic elements.\n"
-msgstr ""
-"Vous pouvez utiliser le langage HTML, les styles de base seront appliqués "
-"aux éléments génériques.\n"
+msgstr "Vous pouvez utiliser le langage HTML, les styles de base seront appliqués aux éléments génériques.\n"
 
 #. type: Title ###
 #: docs/admin/45.tutorials/10.theming.mdx:43
@@ -180,6 +163,4 @@ msgstr "* Feuille de style CSS personnalisée\n"
 #: docs/admin/45.tutorials/10.theming.mdx:50
 #, no-wrap
 msgid "This is for advanced admins willing to customize the appearance of the portal.\n"
-msgstr ""
-"Ceci est destiné aux administrateurs avancés souhaitant personnaliser "
-"l'apparence du portail.\n"
+msgstr "Ceci est destiné aux administrateurs avancés souhaitant personnaliser l'apparence du portail.\n"

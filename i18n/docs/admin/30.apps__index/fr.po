@@ -6,11 +6,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2025-12-17 15:39+0000\n"
+"POT-Creation-Date: 2026-01-04 16:21+0000\n"
 "PO-Revision-Date: 2026-01-04 10:27+0000\n"
 "Last-Translator: ppr <pouetpouetratatouille@gmail.com>\n"
-"Language-Team: French <https://translate.yunohost.org/projects/yunohost-doc/"
-"30apps__index/fr/>\n"
+"Language-Team: French <https://translate.yunohost.org/projects/yunohost-"
+"doc/30apps__index/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -75,10 +75,7 @@ msgstr "L'une des fonctionnalités principales de YunoHost est la possibilité d
 #: docs/admin/30.apps/index.mdx:13
 #, no-wrap
 msgid "Applications can be installed and managed through the webadmin interface in <HighlightApplications/> or through commands of the `yunohost app` category.\n"
-msgstr ""
-"Les applications peuvent être installées et gérées via l'interface webadmin "
-"dans <HighlightApplications/> ou via les commandes de la catégorie `yunohost "
-"app`.\n"
+msgstr "Les applications peuvent être installées et gérées via l'interface webadmin dans <HighlightApplications/> ou via les commandes de la catégorie `yunohost app`.\n"
 
 #. type: Plain text
 #: docs/admin/30.apps/index.mdx:15
@@ -90,11 +87,7 @@ msgstr "<Figure caption=\"Liste d'applications dans l'interface web d'administra
 #: docs/admin/30.apps/index.mdx:17
 #, no-wrap
 msgid "The application catalog and its categories can be browsed directly from the webadmin by clicking on the <HighlightAppInstall/> button in the apps list, or from this documentation.\n"
-msgstr ""
-"Le catalogue d'applications et ses catégories peuvent être consultés "
-"directement depuis l'interface d'administration Web en cliquant sur le "
-"bouton <HighlightAppInstall/> dans la liste des applications, ou depuis "
-"cette documentation.\n"
+msgstr "Le catalogue d'applications et ses catégories peuvent être consultés directement depuis l'interface d'administration Web en cliquant sur le bouton <HighlightAppInstall/> dans la liste des applications, ou depuis cette documentation.\n"
 
 #. type: Plain text
 #: docs/admin/30.apps/index.mdx:20
@@ -118,11 +111,7 @@ msgstr "Installer une application"
 #: docs/admin/30.apps/index.mdx:29
 #, no-wrap
 msgid "Let's say you want to install a *Custom Webapp*. Before actually running the installation steps, YunoHost will usually have you fill in a form to properly set it up for you.\n"
-msgstr ""
-"Supposons que vous souhaitiez installer une *application web personnalisée*. "
-"Avant de passer aux étapes d'installation proprement dites, YunoHost vous "
-"demandera généralement de remplir un formulaire afin de la configurer "
-"correctement pour vous.\n"
+msgstr "Supposons que vous souhaitiez installer une *application web personnalisée*. Avant de passer aux étapes d'installation proprement dites, YunoHost vous demandera généralement de remplir un formulaire afin de la configurer correctement pour vous.\n"
 
 #. type: Plain text
 #: docs/admin/30.apps/index.mdx:34
@@ -146,63 +135,37 @@ msgstr "Sous-chemins ou domaines individuels par application"
 #: docs/admin/30.apps/index.mdx:46
 #, no-wrap
 msgid "Among specific questions, forms usually ask you to choose a domain and a path onto which the app will be accessible.\n"
-msgstr ""
-"Parmi les questions spécifiques, les formulaires vous demandent généralement "
-"de choisir un domaine et un chemin d'accès sur lesquels l'application sera "
-"accessible.\n"
+msgstr "Parmi les questions spécifiques, les formulaires vous demandent généralement de choisir un domaine et un chemin d'accès sur lesquels l'application sera accessible.\n"
 
 #. type: Plain text
 #: docs/admin/30.apps/index.mdx:48
 #, no-wrap
 msgid "In the context of YunoHost, it is quite common to have a single (or a few) domains on which several apps are installed in \"subpaths\", so that you end up with something like this:\n"
-msgstr ""
-"Dans le contexte de YunoHost, il est assez courant d'avoir un seul "
-"(ou quelques) domaines sur lesquels plusieurs applications sont installées "
-"dans des \"sous-chemins\", ce qui donne quelque chose comme ceci :\n"
+msgstr "Dans le contexte de YunoHost, il est assez courant d'avoir un seul (ou quelques) domaines sur lesquels plusieurs applications sont installées dans des \"sous-chemins\", ce qui donne quelque chose comme ceci :\n"
 
 #. type: Plain text
 #: docs/admin/30.apps/index.mdx:58
 #, no-wrap
 msgid "Alternatively, you may choose to install each (or some) apps on a dedicated domain. Beyond the aesthetic, using sub-domains instead of sub-paths allows the possibility to move a service to another server more easily. Also, some applications may need an entire domain dedicated to them, for technical reasons. The disadvantage is that you have to add a new domain each time, and therefore potentially configure additional DNS records, restart the diagnostics and install a new Let's Encrypt certificate.\n"
-msgstr ""
-"Vous pouvez également choisir d'installer chaque application "
-"(ou certaines d'entre elles) sur un domaine dédié. Au-delà de l'aspect "
-"esthétique, l'utilisation de sous-domaines plutôt que de sous-chemins permet "
-"de déplacer plus facilement un service vers un autre serveur. De plus, "
-"certaines applications peuvent nécessiter un domaine entier qui leur est "
-"dédié, pour des raisons techniques. L'inconvénient est que vous devez "
-"ajouter un nouveau domaine à chaque fois, et donc potentiellement configurer "
-"des enregistrements DNS supplémentaires, redémarrer les diagnostics et "
-"installer un nouveau certificat Let's Encrypt.\n"
+msgstr "Vous pouvez également choisir d'installer chaque application (ou certaines d'entre elles) sur un domaine dédié. Au-delà de l'aspect esthétique, l'utilisation de sous-domaines plutôt que de sous-chemins permet de déplacer plus facilement un service vers un autre serveur. De plus, certaines applications peuvent nécessiter un domaine entier qui leur est dédié, pour des raisons techniques. L'inconvénient est que vous devez ajouter un nouveau domaine à chaque fois, et donc potentiellement configurer des enregistrements DNS supplémentaires, redémarrer les diagnostics et installer un nouveau certificat Let's Encrypt.\n"
 
 #. type: Plain text
 #: docs/admin/30.apps/index.mdx:60
 #, no-wrap
 msgid "This might look prettier for end users, but is generally considered more complicated and less efficient in the context of YunoHost, since you need to add a new domain each time. Nevertheless, some apps might need an entire domain dedicated to them, for technical reasons.\n"
-msgstr ""
-"Cela peut sembler plus esthétique pour les utilisateurs finaux, mais est "
-"généralement considéré comme plus compliqué et moins efficace dans le "
-"contexte de YunoHost, car vous devez ajouter un nouveau domaine à chaque "
-"fois. Néanmoins, certaines applications peuvent nécessiter un domaine qui "
-"leur est entièrement dédié, pour des raisons techniques.\n"
+msgstr "Cela peut sembler plus esthétique pour les utilisateurs finaux, mais est généralement considéré comme plus compliqué et moins efficace dans le contexte de YunoHost, car vous devez ajouter un nouveau domaine à chaque fois. Néanmoins, certaines applications peuvent nécessiter un domaine qui leur est entièrement dédié, pour des raisons techniques.\n"
 
 #. type: Plain text
 #: docs/admin/30.apps/index.mdx:62
 #, no-wrap
 msgid "If all apps from the previous example were installed on a separate domain, this would give something like this:\n"
-msgstr ""
-"Si toutes les applications de l'exemple précédent étaient installées sur un "
-"domaine distinct, cela donnerait quelque chose comme ceci :\n"
+msgstr "Si toutes les applications de l'exemple précédent étaient installées sur un domaine distinct, cela donnerait quelque chose comme ceci :\n"
 
 #. type: Fenced div block (info)
 #: docs/admin/30.apps/index.mdx:70
 #, no-wrap
 msgid "Many applications integrate a feature that allows you to change the URL of your application. This choice between subpath and subdomain can be reversed in some cases via a simple manipulation in the administration interface.\n"
-msgstr ""
-"De nombreuses applications intègrent une fonctionnalité qui vous permet de "
-"modifier l'URL de votre application. Ce choix entre sous-chemin et sous-"
-"domaine peut être modifié dans certains cas via une simple manipulation dans "
-"l'interface d'administration.\n"
+msgstr "De nombreuses applications intègrent une fonctionnalité qui vous permet de modifier l'URL de votre application. Ce choix entre sous-chemin et sous-domaine peut être modifié dans certains cas via une simple manipulation dans l'interface d'administration.\n"
 
 #. type: Title ###
 #: docs/admin/30.apps/index.mdx:74
@@ -214,20 +177,13 @@ msgstr "Gestion des accès utilisateurs et applications publiques"
 #: docs/admin/30.apps/index.mdx:77
 #, no-wrap
 msgid "The installation form usually asks whether or not the app should be publically accessible. If you choose to not make it public, only users logged in YunoHost will be able to reach it.\n"
-msgstr ""
-"Le formulaire d'installation demande généralement si l'application doit être "
-"accessible au public. Si vous choisissez de ne pas la rendre publique, seuls "
-"les utilisateurs connectés à YunoHost pourront y accéder.\n"
+msgstr "Le formulaire d'installation demande généralement si l'application doit être accessible au public. Si vous choisissez de ne pas la rendre publique, seuls les utilisateurs connectés à YunoHost pourront y accéder.\n"
 
 #. type: Fenced div block (tip)
 #: docs/admin/30.apps/index.mdx:78
 #, no-wrap
 msgid "After installation, this can be configured via the webadmin in the [Groups and permissions panel](/admin/users/groups_and_permissions), or similarly via the command-line subcategory `yunohost user permission`.\n"
-msgstr ""
-"Après l'installation, cela peut être configuré via l'administrateur web dans "
-"le [panneau Groupes et autorisations](/admin/users/groups_and_permissions), "
-"ou de manière similaire via la sous-catégorie de ligne de commande `yunohost "
-"user permission`.\n"
+msgstr "Après l'installation, cela peut être configuré via l'administrateur web dans le [panneau Groupes et autorisations](/admin/users/groups_and_permissions), ou de manière similaire via la sous-catégorie de ligne de commande `yunohost user permission`.\n"
 
 #. type: Title ###
 #: docs/admin/30.apps/index.mdx:82
@@ -239,11 +195,7 @@ msgstr "Instructions après installation"
 #: docs/admin/30.apps/index.mdx:85
 #, no-wrap
 msgid "Some applications need to give you instructions, URLs or credentials once they are installed. So remember to check the email of the first user account or the admin user selected before installation, if it was prompted.\n"
-msgstr ""
-"Certaines applications vous fournissent des instructions, des URL ou des "
-"identifiants une fois installées. N'oubliez donc pas de vérifier l'e-mail du "
-"premier compte utilisateur ou de l'utilisateur administrateur sélectionné "
-"avant l'installation, si cela vous a été demandé.\n"
+msgstr "Certaines applications vous fournissent des instructions, des URL ou des identifiants une fois installées. N'oubliez donc pas de vérifier l'e-mail du premier compte utilisateur ou de l'utilisateur administrateur sélectionné avant l'installation, si cela vous a été demandé.\n"
 
 #. type: Title ###
 #: docs/admin/30.apps/index.mdx:86
@@ -255,11 +207,7 @@ msgstr "Applications multi-instances"
 #: docs/admin/30.apps/index.mdx:89
 #, no-wrap
 msgid "Some applications support the ability to be installed several times (at different locations) ! To do so, just go another time in <HighlightApplications/> → <HighlightAppInstall/>, and select again the application to install.\n"
-msgstr ""
-"Certaines applications peuvent être installées plusieurs fois "
-"(à différents emplacements) ! Pour ce faire, il suffit de retourner dans <"
-"HighlightApplications/> → <HighlightAppInstall/> et de sélectionner à "
-"nouveau l'application à installer.\n"
+msgstr "Certaines applications peuvent être installées plusieurs fois (à différents emplacements) ! Pour ce faire, il suffit de retourner dans <HighlightApplications/> → <HighlightAppInstall/> et de sélectionner à nouveau l'application à installer.\n"
 
 #. type: Title ##
 #: docs/admin/30.apps/index.mdx:90
@@ -271,22 +219,13 @@ msgstr "Intégration LDAP / SSO"
 #: docs/admin/30.apps/index.mdx:93
 #, no-wrap
 msgid "Applications that allow users to register may support integration with the LDAP / Single Sign On of YunoHost, so that users who connect to the user portal can be automatically logged in all these apps.\n"
-msgstr ""
-"Les applications qui permettent aux utilisateurs de s'inscrire peuvent "
-"prendre en charge l'intégration avec le LDAP / Single Sign On de YunoHost, "
-"cela afin que les utilisateurs qui se connectent au portail utilisateur "
-"puissent être automatiquement connectés à toutes ces applications.\n"
+msgstr "Les applications qui permettent aux utilisateurs de s'inscrire peuvent prendre en charge l'intégration avec le LDAP / Single Sign On de YunoHost, cela afin que les utilisateurs qui se connectent au portail utilisateur puissent être automatiquement connectés à toutes ces applications.\n"
 
 #. type: Plain text
 #: docs/admin/30.apps/index.mdx:95
 #, no-wrap
 msgid "However, some applications do not support this as it can be either not implemented in the upstream, or the package does not work on this part yet. This information is usually available on the README of the application package.\n"
-msgstr ""
-"Cependant, certaines applications ne prennent pas en charge cette "
-"fonctionnalité, soit parce qu'elle n'est pas implémentée en amont, soit "
-"parce que le paquet ne prend pas encore en charge cette fonctionnalité. Ces "
-"informations sont généralement disponibles dans le fichier README du paquet "
-"de l'application.\n"
+msgstr "Cependant, certaines applications ne prennent pas en charge cette fonctionnalité, soit parce qu'elle n'est pas implémentée en amont, soit parce que le paquet ne prend pas encore en charge cette fonctionnalité. Ces informations sont généralement disponibles dans le fichier README du paquet de l'application.\n"
 
 #. type: Title ##
 #: docs/admin/30.apps/index.mdx:96
@@ -298,27 +237,19 @@ msgstr "Configuration de l'application"
 #: docs/admin/30.apps/index.mdx:99
 #, no-wrap
 msgid "After installation, some settings handled by YunoHost can be tweaked, such as user and group permissions, application's tile and label in the SSO page, or its access URL.\n"
-msgstr ""
-"Après l'installation, certains paramètres gérés par YunoHost peuvent être "
-"modifiés, tels que les autorisations des utilisateurs et des groupes, la "
-"vignette et le libellé de l'application dans la page SSO, ou son URL d'accès."
-"\n"
+msgstr "Après l'installation, certains paramètres gérés par YunoHost peuvent être modifiés, tels que les autorisations des utilisateurs et des groupes, la vignette et le libellé de l'application dans la page SSO, ou son URL d'accès.\n"
 
 #. type: Plain text
 #: docs/admin/30.apps/index.mdx:104
 #, no-wrap
 msgid "You can access the app's operations page by clicking its name in the applications list.\n"
-msgstr ""
-"Vous pouvez accéder à la page des opérations de l'application en cliquant "
-"sur son nom dans la liste des applications.\n"
+msgstr "Vous pouvez accéder à la page des opérations de l'application en cliquant sur son nom dans la liste des applications.\n"
 
 #. type: Plain text
 #: docs/admin/30.apps/index.mdx:106
 #, no-wrap
 msgid "<Figure src=\"/img/webadmin/app_config_operations.png\" caption=\"Application operations page in the webadmin\"/>\n"
-msgstr ""
-"<Figure src=\"/img/webadmin/app_config_operations.png\" caption="
-"\"Page des opérations de l'application dans webadmin\"/>\n"
+msgstr "<Figure src=\"/img/webadmin/app_config_operations.png\" caption=\"Page des opérations de l'application dans webadmin\"/>\n"
 
 #. type: Plain text
 #: docs/admin/30.apps/index.mdx:108
@@ -339,28 +270,20 @@ msgid ""
 "- the app's label in the SSO: `yunohost app change-label <app> <new_label>`\n"
 "- the app's url: `yunohost app change-url app [-d <DOMAIN>] [-p <PATH>]`\n"
 msgstr ""
-"- le nom de l'application dans le SSO : `yunohost app change-label <app> "
-"<new_label>`\n"
-"- l'URL de l'application : `yunohost app change-url app [-d <DOMAIN>] "
-"[-p <PATH>]`\n"
+"- le nom de l'application dans le SSO : `yunohost app change-label <app> <new_label>`\n"
+"- l'URL de l'application : `yunohost app change-url app [-d <DOMAIN>] [-p <PATH>]`\n"
 
 #. type: Plain text
 #: docs/admin/30.apps/index.mdx:118
 #, no-wrap
 msgid "You can also delete the app: `yunohost app remove <app>`\n"
-msgstr ""
-"Vous pouvez également supprimer l'application : `yunohost app remove <app>`\n"
+msgstr "Vous pouvez également supprimer l'application : `yunohost app remove <app>`\n"
 
 #. type: Plain text
 #: docs/admin/30.apps/index.mdx:120
 #, no-wrap
 msgid "`<app>` is to be replaced with the app's ID. If this is the first instance of the app, like Nextcloud, the ID is `nextcloud`. If this is the second, then it's `nextcloud__2` and so on. To list all your apps and check their ID, you can run `yunohost app info`.\n"
-msgstr ""
-"`<app>` doit être remplacé par l'ID de l'application. S'il s'agit de la "
-"première instance de l'application, comme Nextcloud, l'ID est `nextcloud`. "
-"S'il s'agit de la deuxième, alors c'est `nextcloud__2`, et ainsi de suite. "
-"Pour lister toutes vos applications et vérifier leur ID, vous pouvez "
-"exécuter `yunohost app info`.\n"
+msgstr "`<app>` doit être remplacé par l'ID de l'application. S'il s'agit de la première instance de l'application, comme Nextcloud, l'ID est `nextcloud`. S'il s'agit de la deuxième, alors c'est `nextcloud__2`, et ainsi de suite. Pour lister toutes vos applications et vérifier leur ID, vous pouvez exécuter `yunohost app info`.\n"
 
 #. type: Title ###
 #: docs/admin/30.apps/index.mdx:124
@@ -372,30 +295,19 @@ msgstr "Panneaux de configuration"
 #: docs/admin/30.apps/index.mdx:127
 #, no-wrap
 msgid "Some apps include a *configuration panel*, which features actions and settings specific for each app that they usually do not handle themselves. They can also spare you the need for altering configuration files by hand.\n"
-msgstr ""
-"Certaines applications intègrent un *panneau de configuration* qui propose "
-"des actions et des paramètres spécifiques à chaque application, qu'elles ne "
-"gèrent généralement pas elles-mêmes. Elles peuvent également vous éviter "
-"d'avoir à modifier manuellement les fichiers de configuration.\n"
+msgstr "Certaines applications intègrent un *panneau de configuration* qui propose des actions et des paramètres spécifiques à chaque application, qu'elles ne gèrent généralement pas elles-mêmes. Elles peuvent également vous éviter d'avoir à modifier manuellement les fichiers de configuration.\n"
 
 #. type: Fenced div block (info)
 #: docs/admin/30.apps/index.mdx:128
 #, no-wrap
 msgid "Configuration panels are *not* meant to tweak every aspects of the apps. You will surely use their own administration panels more often than YunoHost's configuration panels.\n"
-msgstr ""
-"Les panneaux de configuration ne sont *pas* destinés à modifier tous les "
-"aspects des applications. Vous utiliserez certainement leurs propres "
-"panneaux d'administration plus souvent que les panneaux de configuration de "
-"YunoHost.\n"
+msgstr "Les panneaux de configuration ne sont *pas* destinés à modifier tous les aspects des applications. Vous utiliserez certainement leurs propres panneaux d'administration plus souvent que les panneaux de configuration de YunoHost.\n"
 
 #. type: Plain text
 #: docs/admin/30.apps/index.mdx:136
 #, no-wrap
 msgid "The configuration panels are accessible in the webadmin in their operations page, trough the <Highlight no_break={true} color='darkblue'><FAIcon icon=\"fa-cogs\"/> Config panel</Highlight> button.\n"
-msgstr ""
-"Les panneaux de configuration sont accessibles dans la webadmin sur leur "
-"page d'opérations, via le bouton <Highlight no_break={true} color=“darkblue”"
-"><FAIcon icon=\"fa-cogs\"/> Panneau de configuration</Highlight>.\n"
+msgstr "Les panneaux de configuration sont accessibles dans la webadmin sur leur page d'opérations, via le bouton <Highlight no_break={true} color=“darkblue”><FAIcon icon=\"fa-cogs\"/> Panneau de configuration</Highlight>.\n"
 
 #. type: Plain text
 #: docs/admin/30.apps/index.mdx:138
@@ -407,28 +319,19 @@ msgstr "<Figure src=\"/img/webadmin/app_config_panel.png\" caption=\"Panneau de 
 #: docs/admin/30.apps/index.mdx:143
 #, no-wrap
 msgid "From the command line, you can list the configuration panel settings with the following command: `yunohost app config get <app>`\n"
-msgstr ""
-"À partir de la ligne de commande, vous pouvez afficher la liste des "
-"paramètres du panneau de configuration à l'aide de la commande suivante : `"
-"yunohost app config get <app>`\n"
+msgstr "À partir de la ligne de commande, vous pouvez afficher la liste des paramètres du panneau de configuration à l'aide de la commande suivante : `yunohost app config get <app>`\n"
 
 #. type: Plain text
 #: docs/admin/30.apps/index.mdx:158
 #, no-wrap
 msgid "To change a setting, either use `yunohost app config set <app>` to get prompted about all the settings, or use `yunohost app config set <app> <key> -v <new_value>` to alter a specific one.\n"
-msgstr ""
-"Pour modifier un paramètre, utilisez soit `yunohost app config set <app>` "
-"pour obtenir une invite concernant tous les paramètres, soit `yunohost app "
-"config set <app> <key> -v <new_value>` pour modifier un paramètre spécifique."
-"\n"
+msgstr "Pour modifier un paramètre, utilisez soit `yunohost app config set <app>` pour obtenir une invite concernant tous les paramètres, soit `yunohost app config set <app> <key> -v <new_value>` pour modifier un paramètre spécifique.\n"
 
 #. type: Plain text
 #: docs/admin/30.apps/index.mdx:160
 #, no-wrap
 msgid "The `<key>` is the setting name, for example `main.sftp.with_sftp` from above.\n"
-msgstr ""
-"La balise `<key>` correspond au nom du paramètre, par exemple "
-"`main.sftp.with_sftp` précédemment mentionné.\n"
+msgstr "La balise `<key>` correspond au nom du paramètre, par exemple `main.sftp.with_sftp` précédemment mentionné.\n"
 
 #. type: Title ##
 #: docs/admin/30.apps/index.mdx:164
@@ -443,9 +346,7 @@ msgid ""
 "Starting YunoHost v11.1.21.4, if you need to execute commands with the app's binary, or PHP commands, etc., you can execute the command `yunohost app shell <app>`.\n"
 "It will:\n"
 msgstr ""
-"Depuis YunoHost v11.1.21.4, si vous avez besoin d'exécuter des commandes "
-"avec le binaire de l'application, ou des commandes PHP, etc., vous pouvez "
-"exécuter la commande `yunohost app shell <app>`.\n"
+"Depuis YunoHost v11.1.21.4, si vous avez besoin d'exécuter des commandes avec le binaire de l'application, ou des commandes PHP, etc., vous pouvez exécuter la commande `yunohost app shell <app>`.\n"
 "Cela permettra :\n"
 
 #. type: Plain text
@@ -457,14 +358,10 @@ msgid ""
 "- preload the environment with variables taken from the app's service, if it exists\n"
 "- override `php`, so that it points to the PHP version used by the app\n"
 msgstr ""
-"- ouvrir un nouveau shell Bash en tant qu'utilisateur système de l'"
-"application\n"
-"- ouvrir le répertoire de travail de l'application "
-"(par exemple `/var/www/<app>`)\n"
-"- précharger l'environnement avec les variables provenant du service de "
-"l'application, s'il existe\n"
-"- remplacer `php`, afin qu'il pointe vers la version PHP utilisée par l'"
-"application\n"
+"- ouvrir un nouveau shell Bash en tant qu'utilisateur système de l'application\n"
+"- ouvrir le répertoire de travail de l'application (par exemple `/var/www/<app>`)\n"
+"- précharger l'environnement avec les variables provenant du service de l'application, s'il existe\n"
+"- remplacer `php`, afin qu'il pointe vers la version PHP utilisée par l'application\n"
 
 #. type: Title ##
 #: docs/admin/30.apps/index.mdx:174
@@ -476,20 +373,13 @@ msgstr "Packaging d'appplications"
 #: docs/admin/30.apps/index.mdx:177
 #, no-wrap
 msgid "Applications must be packaged manually by application packagers/maintainers. Apps can be integrated with YunoHost to support upgrades, backup/restore and LDAP/SSO integration among other things.\n"
-msgstr ""
-"Les applications doivent être packagées manuellement par les packagers/"
-"mainteneurs d'applications. Les applications peuvent être intégrées à "
-"YunoHost pour prendre en charge les mises à niveau, la sauvegarde/"
-"restauration et l'intégration LDAP/SSO, entre autres.\n"
+msgstr "Les applications doivent être packagées manuellement par les packagers/mainteneurs d'applications. Les applications peuvent être intégrées à YunoHost pour prendre en charge les mises à niveau, la sauvegarde/restauration et l'intégration LDAP/SSO, entre autres.\n"
 
 #. type: Plain text
 #: docs/admin/30.apps/index.mdx:179
 #, no-wrap
 msgid "If you want to learn or contribute to app packaging, please check the [contributor documentation](/dev/).\n"
-msgstr ""
-"Si vous souhaitez en savoir plus sur le packaging d'applications ou y "
-"contribuer, veuillez consulter la [documentation destinée aux contributeurs]"
-"(/dev/).\n"
+msgstr "Si vous souhaitez en savoir plus sur le packaging d'applications ou y contribuer, veuillez consulter la [documentation destinée aux contributeurs](/dev/).\n"
 
 #. type: Title ###
 #: docs/admin/30.apps/index.mdx:180
@@ -501,20 +391,10 @@ msgstr "Niveaux d'intégration et de qualité"
 #: docs/admin/30.apps/index.mdx:183
 #, no-wrap
 msgid "Automated tests are being run regularly to test the integration and quality of all apps who were declared to be `working` by packagers. The result is a level between 0 and 8, whose meaning is detailed on [this page](/dev/packaging/test). Some tests results may also be available [on this dashboard](https://apps.yunohost.org/dash).\n"
-msgstr ""
-"Des tests automatisés sont régulièrement effectués afin de vérifier "
-"l'intégration et la qualité de toutes les applications déclarées "
-"`fonctionnelles` par les responsables des paquets. Le résultat est une note "
-"comprise entre 0 et 8, dont la signification est détaillée sur [cette page]"
-"(/dev/packaging/test). Certains résultats de tests peuvent également être "
-"consultés [sur ce tableau de bord](https://apps.yunohost.org/dash).\n"
+msgstr "Des tests automatisés sont régulièrement effectués afin de vérifier l'intégration et la qualité de toutes les applications déclarées `fonctionnelles` par les responsables des paquets. Le résultat est une note comprise entre 0 et 8, dont la signification est détaillée sur [cette page](/dev/packaging/test). Certains résultats de tests peuvent également être consultés [sur ce tableau de bord](https://apps.yunohost.org/dash).\n"
 
 #. type: Plain text
 #: docs/admin/30.apps/index.mdx:184
 #, no-wrap
 msgid "By default, only applications of sufficient quality are offered. When the quality of an application drops and until the problem is reolved, the app is hidden from the catalog to prevent its installation and its upgrades are put on hold.\n"
-msgstr ""
-"Par défaut, seules les applications de qualité suffisante sont proposées. "
-"Lorsque la qualité d'une application diminue et jusqu'à ce que le problème "
-"soit résolu, l'application est masquée dans le catalogue afin d'empêcher son "
-"installation et ses mises à jour sont suspendues.\n"
+msgstr "Par défaut, seules les applications de qualité suffisante sont proposées. Lorsque la qualité d'une application diminue et jusqu'à ce que le problème soit résolu, l'application est masquée dans le catalogue afin d'empêcher son installation et ses mises à jour sont suspendues.\n"

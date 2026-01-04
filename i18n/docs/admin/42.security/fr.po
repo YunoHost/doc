@@ -8,11 +8,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2025-12-17 15:39+0000\n"
+"POT-Creation-Date: 2026-01-04 16:21+0000\n"
 "PO-Revision-Date: 2025-12-17 23:50+0000\n"
 "Last-Translator: ppr <pouetpouetratatouille@gmail.com>\n"
-"Language-Team: French <https://translate.yunohost.org/projects/yunohost-doc/"
-"42security/fr/>\n"
+"Language-Team: French <https://translate.yunohost.org/projects/yunohost-"
+"doc/42security/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -30,19 +30,7 @@ msgstr "🔒 Sécurité"
 #: docs/admin/42.security.mdx:5
 #, no-wrap
 msgid "When thinking and discussing security — whether in the context of YunoHost or any other system —, please keep in mind that security is not a binary state, but an ongoing practice. The term \"security\" is essentially meaningless without specifying what exactly we are securing against. The 'threats' to consider depend on your context, and can range from automated attacks from bots roaming the Internet, to sophisticated state actors like the NSA, or supply chain vulnerabilities (e.g., compromised software dependencies), or basic risks such as your own users employing overly simple passwords, or your worst enemy from elementary school 20 years ago trying to hack into your server...\n"
-msgstr ""
-"Lorsque vous réfléchissez et discutez de la sécurité, que ce soit dans le "
-"contexte de YunoHost ou de tout autre système, gardez à l'esprit que la "
-"sécurité n'est pas un état binaire, mais une pratique continue. Le terme "
-"\"sécurité\" n'a essentiellement aucun sens sans préciser ce contre quoi "
-"nous nous protégeons exactement. Les 'menaces' à prendre en compte dépendent "
-"de votre contexte et peuvent aller des attaques automatisées de robots "
-"parcourant Internet à des acteurs étatiques sophistiqués comme la NSA, en "
-"passant par les vulnérabilités de la chaîne d'approvisionnement "
-"(par exemple, les dépendances logicielles compromises) ou les risques "
-"élémentaires tels que vos propres utilisateurs utilisant des mots de passe "
-"trop simples, ou votre pire ennemi de l'école primaire il y a 20 ans "
-"essayant de pirater votre serveur ...\n"
+msgstr "Lorsque vous réfléchissez et discutez de la sécurité, que ce soit dans le contexte de YunoHost ou de tout autre système, gardez à l'esprit que la sécurité n'est pas un état binaire, mais une pratique continue. Le terme \"sécurité\" n'a essentiellement aucun sens sans préciser ce contre quoi nous nous protégeons exactement. Les 'menaces' à prendre en compte dépendent de votre contexte et peuvent aller des attaques automatisées de robots parcourant Internet à des acteurs étatiques sophistiqués comme la NSA, en passant par les vulnérabilités de la chaîne d'approvisionnement (par exemple, les dépendances logicielles compromises) ou les risques élémentaires tels que vos propres utilisateurs utilisant des mots de passe trop simples, ou votre pire ennemi de l'école primaire il y a 20 ans essayant de pirater votre serveur ...\n"
 
 #. type: Plain text
 #: docs/admin/42.security.mdx:19
@@ -59,28 +47,15 @@ msgid ""
 "- auto-redacting sensitive informations from YunoHost operation logs and when sharing them with Yunopaste ;\n"
 "- ...\n"
 msgstr ""
-"YunoHost est développé dans un souci de sécurité, en recherchant un bon "
-"compromis entre sécurité et facilité d'utilisation. Voici une liste non "
-"exhaustive des aspects liés à la sécurité que le projet met en œuvre :\n"
-"- un pare-feu basé sur `nftables` pour limiter le trafic entrant aux ports "
-"concernés ;\n"
-"- `fail2ban`, un logiciel qui rejette automatiquement le trafic provenant "
-"d'adresses IP malveillantes qui tentent de forcer SSH et d'autres services ;"
-"\n"
-"- l'utilisation des [recommandations de Mozilla pour NGINX, Postfix, "
-"Dovecot, les chiffrements SSH, etc.]"
-"(https://wiki.mozilla.org/Security/Server_Side_TLS) ;\n"
-"- la vérification que les mots de passe/phrases de passe des utilisateurs ne "
-"sont pas trop simples lors de leur définition ;\n"
-"- le hachage des mots de passe des utilisateurs "
-"(SHA512 salé dans LDAP par exemple) ;\n"
-"- être vigilant sur les permissions des fichiers/répertoires UNIX sur "
-"l'ensemble du système ;\n"
-"- les applications sont généralement exécutées à l'aide d'un utilisateur "
-"dédié et avec des [capacités restreintes]"
-"(https://man7.org/linux/man-pages/man7/capabilities.7.html) ;\n"
-"- supprimer automatiquement les informations sensibles des journaux "
-"d'exploitation de YunoHost et lors de leur partage avec Yunopaste ;\n"
+"YunoHost est développé dans un souci de sécurité, en recherchant un bon compromis entre sécurité et facilité d'utilisation. Voici une liste non exhaustive des aspects liés à la sécurité que le projet met en œuvre :\n"
+"- un pare-feu basé sur `nftables` pour limiter le trafic entrant aux ports concernés ;\n"
+"- `fail2ban`, un logiciel qui rejette automatiquement le trafic provenant d'adresses IP malveillantes qui tentent de forcer SSH et d'autres services ;\n"
+"- l'utilisation des [recommandations de Mozilla pour NGINX, Postfix, Dovecot, les chiffrements SSH, etc.](https://wiki.mozilla.org/Security/Server_Side_TLS) ;\n"
+"- la vérification que les mots de passe/phrases de passe des utilisateurs ne sont pas trop simples lors de leur définition ;\n"
+"- le hachage des mots de passe des utilisateurs (SHA512 salé dans LDAP par exemple) ;\n"
+"- être vigilant sur les permissions des fichiers/répertoires UNIX sur l'ensemble du système ;\n"
+"- les applications sont généralement exécutées à l'aide d'un utilisateur dédié et avec des [capacités restreintes](https://man7.org/linux/man-pages/man7/capabilities.7.html) ;\n"
+"- supprimer automatiquement les informations sensibles des journaux d'exploitation de YunoHost et lors de leur partage avec Yunopaste ;\n"
 "- ...\n"
 
 #. type: Plain text
@@ -96,28 +71,18 @@ msgid ""
 "- ...\n"
 msgstr ""
 "En outre, le projet a des objectifs à moyen terme afin de mettre en œuvre :\n"
-"- [la réinitialisation automatique du mot de passe pour les utilisateurs]"
-"(https://github.com/YunoHost/issues/issues/878) ;\n"
-"- [l'alerte automatique en cas de vulnérabilité]"
-"(https://github.com/YunoHost/yunohost/pull/2077) <small>"
-"(via le Diagnostic, et non via le forum ou les réseaux sociaux)</small> ;\n"
-"- la prise en charge de [OIDC]"
-"(https://github.com/YunoHost/yunohost/pull/2149) et [2FA]"
-"(https://github.com/YunoHost/issues/issues/238) ;\n"
-"- une meilleure prise en charge des clés SSH, en particulier "
-"[en les rendant configurables depuis l'administrateur web]"
-"(https://github.com/YunoHost/issues/issues/175) ;\n"
-"- restreindre et limiter davantage les capacités des applications à ce dont "
-"elles ont besoin (cf. packaging v3) ;\n"
+"- [la réinitialisation automatique du mot de passe pour les utilisateurs](https://github.com/YunoHost/issues/issues/878) ;\n"
+"- [l'alerte automatique en cas de vulnérabilité](https://github.com/YunoHost/yunohost/pull/2077) <small>(via le Diagnostic, et non via le forum ou les réseaux sociaux)</small> ;\n"
+"- la prise en charge de [OIDC](https://github.com/YunoHost/yunohost/pull/2149) et [2FA](https://github.com/YunoHost/issues/issues/238) ;\n"
+"- une meilleure prise en charge des clés SSH, en particulier [en les rendant configurables depuis l'administrateur web](https://github.com/YunoHost/issues/issues/175) ;\n"
+"- restreindre et limiter davantage les capacités des applications à ce dont elles ont besoin (cf. packaging v3) ;\n"
 "- ...\n"
 
 #. type: Fenced div block (info)
 #: docs/admin/42.security.mdx:28
 #, no-wrap
 msgid "<FAIcon icon=\"fa-shield\"/> To discuss security flaws in YunoHost, contact the [project's security team](/community/security_team).\n"
-msgstr ""
-"<FAIcon icon=\"fa-shield\"/> Pour discuter des failles de sécurité dans "
-"YunoHost, contactez l'équipe de sécurité du projet.\n"
+msgstr "<FAIcon icon=\"fa-shield\"/> Pour discuter des failles de sécurité dans YunoHost, contactez l'équipe de sécurité du projet.\n"
 
 #. type: Title ##
 #: docs/admin/42.security.mdx:32
@@ -129,20 +94,13 @@ msgstr "Conseils de sécurité de base"
 #: docs/admin/42.security.mdx:35
 #, no-wrap
 msgid "Security is not a one-time setup, it's an active, ongoing practice. Here are some basic practice that you should implement:\n"
-msgstr ""
-"La sécurité n'est pas une configuration ponctuelle, c'est une pratique "
-"active et continue. Voici quelques pratiques de base que vous devriez mettre "
-"en œuvre :\n"
+msgstr "La sécurité n'est pas une configuration ponctuelle, c'est une pratique active et continue. Voici quelques pratiques de base que vous devriez mettre en œuvre :\n"
 
 #. type: Fenced div block (warning)
 #: docs/admin/42.security.mdx:36
 #, no-wrap
 msgid "Using stupidly simple passwords is arguably the number one reason why servers get \"hacked\". You and your users using reasonably complex passwords/passphrases is the basis of any good security.\n"
-msgstr ""
-"L'utilisation de mots de passe stupidement simples est sans doute la "
-"principale raison pour laquelle les serveurs sont \"piratés\". L'utilisation "
-"de mots de passe/phrases de passe raisonnablement complexes par vous-même et "
-"vos utilisateurs est la base de toute bonne sécurité.\n"
+msgstr "L'utilisation de mots de passe stupidement simples est sans doute la principale raison pour laquelle les serveurs sont \"piratés\". L'utilisation de mots de passe/phrases de passe raisonnablement complexes par vous-même et vos utilisateurs est la base de toute bonne sécurité.\n"
 
 #. type: Plain text
 #: docs/admin/42.security.mdx:45
@@ -154,34 +112,17 @@ msgid ""
 "4. only create accounts for people that you have some amount of trust into, in particular that they will use **decent passwords/passphrases** and decent security hygiene in general ;\n"
 "5. **regularly check the forum and social media** (e.g. [YunoHost's Mastodon account](https://toot.aquilenet.fr/@yunohost)) to stay informed when vulnerabilities are discovered or important fixes are released.\n"
 msgstr ""
-"1. En tant qu'administrateur, oubliez les mots de passe traditionnels. *"
-"[Utilisez des **phrases de passe** raisonnablement complexes]"
-"(https://imgs.xkcd.com/comics/password_strength_2x.png)*. Renseignez-vous "
-"sur les gestionnaires de mots de passe.\n"
-"2. Maintenez votre serveur et vos applications **raisonnablement à jour**. "
-"Envisagez d'utiliser l'application [unattended upgrades]"
-"(https://apps.yunohost.org/app/unattended_upgrades) pour les mises à jour "
-"automatiques ;\n"
-"3. Sachez que **chaque application que vous installez constitue une "
-"\"surface d'attaque\" supplémentaire**. Idéalement, vérifiez la réputation "
-"en matière de sécurité de chaque application que vous installez. **Ne vous "
-"contentez pas** d'installer des applications au hasard pour ensuite les "
-"oublier. Désinstallez les applications que vous n'utilisez plus ;\n"
-"4. ne créez des comptes que pour les personnes en qui vous avez une certaine "
-"confiance, en particulier celles qui utilisent des **mots de passe/phrases "
-"de passe décents** et qui ont une bonne hygiène de sécurité en général ;\n"
-"5. **Consultez régulièrement le forum et les réseaux sociaux** (par exemple, "
-"[le compte Mastodon de YunoHost](https://toot.aquilenet.fr/@yunohost)) pour "
-"rester informé lorsque des vulnérabilités sont découvertes ou que des "
-"correctifs importants sont publiés.\n"
+"1. En tant qu'administrateur, oubliez les mots de passe traditionnels. *[Utilisez des **phrases de passe** raisonnablement complexes](https://imgs.xkcd.com/comics/password_strength_2x.png)*. Renseignez-vous sur les gestionnaires de mots de passe.\n"
+"2. Maintenez votre serveur et vos applications **raisonnablement à jour**. Envisagez d'utiliser l'application [unattended upgrades](https://apps.yunohost.org/app/unattended_upgrades) pour les mises à jour automatiques ;\n"
+"3. Sachez que **chaque application que vous installez constitue une \"surface d'attaque\" supplémentaire**. Idéalement, vérifiez la réputation en matière de sécurité de chaque application que vous installez. **Ne vous contentez pas** d'installer des applications au hasard pour ensuite les oublier. Désinstallez les applications que vous n'utilisez plus ;\n"
+"4. ne créez des comptes que pour les personnes en qui vous avez une certaine confiance, en particulier celles qui utilisent des **mots de passe/phrases de passe décents** et qui ont une bonne hygiène de sécurité en général ;\n"
+"5. **Consultez régulièrement le forum et les réseaux sociaux** (par exemple, [le compte Mastodon de YunoHost](https://toot.aquilenet.fr/@yunohost)) pour rester informé lorsque des vulnérabilités sont découvertes ou que des correctifs importants sont publiés.\n"
 
 #. type: Plain text
 #: docs/admin/42.security.mdx:49
 #, no-wrap
 msgid "The following sections describe possible ways to further harden the security of your server.\n"
-msgstr ""
-"Les sections suivantes décrivent les moyens possibles pour renforcer "
-"davantage la sécurité de votre serveur.\n"
+msgstr "Les sections suivantes décrivent les moyens possibles pour renforcer davantage la sécurité de votre serveur.\n"
 
 #. type: Title ##
 #: docs/admin/42.security.mdx:50
@@ -193,10 +134,7 @@ msgstr "Authentification via une clé SSH"
 #: docs/admin/42.security.mdx:53
 #, no-wrap
 msgid "By default, the SSH authentication uses the administration password. Deactivating this kind of authentication and replacing it by a key mechanism is advised.\n"
-msgstr ""
-"Par défaut, l'authentification SSH utilise le mot de passe d'administration. "
-"Il est conseillé de désactiver ce type d'authentification et de le remplacer "
-"par un mécanisme à clé.\n"
+msgstr "Par défaut, l'authentification SSH utilise le mot de passe d'administration. Il est conseillé de désactiver ce type d'authentification et de le remplacer par un mécanisme à clé.\n"
 
 #. type: Plain text
 #: docs/admin/42.security.mdx:55
@@ -211,38 +149,26 @@ msgid ""
 "If you run into permissions issues, set `username` as owner of the dir `~/.ssh` with `chown`. Be careful, for security reasons this directory should be in mode `700`.  \n"
 "If you are on Ubuntu 16.04 you should run `ssh-add` to initialize the SSH agent.\n"
 msgstr ""
-"Si vous rencontrez des problèmes d'autorisations, définissez `username` "
-"comme propriétaire du répertoire `~/.ssh` avec `chown`. Attention, pour des "
-"raisons de sécurité, ce répertoire doit être en mode `700`.  \n"
-"Si vous utilisez Ubuntu 16.04, vous devez exécuter `ssh-add` pour "
-"initialiser l'agent SSH.\n"
+"Si vous rencontrez des problèmes d'autorisations, définissez `username` comme propriétaire du répertoire `~/.ssh` avec `chown`. Attention, pour des raisons de sécurité, ce répertoire doit être en mode `700`.  \n"
+"Si vous utilisez Ubuntu 16.04, vous devez exécuter `ssh-add` pour initialiser l'agent SSH.\n"
 
 #. type: Plain text
 #: docs/admin/42.security.mdx:67
 #, no-wrap
 msgid "Type your admnistration password and your key will be copied onto your server.\n"
-msgstr ""
-"Saisissez votre mot de passe administrateur et votre clé sera copiée sur "
-"votre serveur.\n"
+msgstr "Saisissez votre mot de passe administrateur et votre clé sera copiée sur votre serveur.\n"
 
 #. type: Plain text
 #: docs/admin/42.security.mdx:69
 #, no-wrap
 msgid "**On your server**, editing the SSH configuration file to deactivate password authentication is handled by a system setting:\n"
-msgstr ""
-"**Sur votre serveur**, la modification du fichier de configuration SSH pour "
-"désactiver l'authentification par mot de passe est gérée par un paramètre "
-"système :\n"
+msgstr "**Sur votre serveur**, la modification du fichier de configuration SSH pour désactiver l'authentification par mot de passe est gérée par un paramètre système :\n"
 
 #. type: Fenced div block (danger)
 #: docs/admin/42.security.mdx:74 docs/admin/42.security.mdx:100
 #, no-wrap
 msgid "Never close your current SSH connection before checking that your alterations work. Test your new configuration by opening a new terminal or window. That way, you can undo your alterations if anything goes wrong.\n"
-msgstr ""
-"Ne fermez jamais votre connexion SSH actuelle avant d'avoir vérifié que vos "
-"modifications fonctionnent. Testez votre nouvelle configuration en ouvrant "
-"un nouveau terminal ou une nouvelle fenêtre. Ainsi, vous pourrez annuler vos "
-"modifications si quelque chose ne fonctionne pas.\n"
+msgstr "Ne fermez jamais votre connexion SSH actuelle avant d'avoir vérifié que vos modifications fonctionnent. Testez votre nouvelle configuration en ouvrant un nouveau terminal ou une nouvelle fenêtre. Ainsi, vous pourrez annuler vos modifications si quelque chose ne fonctionne pas.\n"
 
 #. type: Title ##
 #: docs/admin/42.security.mdx:79
@@ -257,39 +183,26 @@ msgid ""
 "To prevent SSH connection attempts by robots that scan the internet for any server with SSH enabled, you can change the SSH port.\n"
 "This is handled by a system setting, which takes care of updating the SSH and Fail2Ban configuration.  \n"
 msgstr ""
-"Pour empêcher les tentatives de connexion SSH par des robots qui scannent "
-"Internet à la recherche de serveurs sur lesquels SSH est activé, vous pouvez "
-"modifier le port SSH.\n"
-"Cette opération est gérée par un paramètre système qui se charge de mettre à "
-"jour la configuration SSH et Fail2Ban.  \n"
+"Pour empêcher les tentatives de connexion SSH par des robots qui scannent Internet à la recherche de serveurs sur lesquels SSH est activé, vous pouvez modifier le port SSH.\n"
+"Cette opération est gérée par un paramètre système qui se charge de mettre à jour la configuration SSH et Fail2Ban.  \n"
 
 #. type: Plain text
 #: docs/admin/42.security.mdx:85
 #, no-wrap
 msgid "Note that changing the port is still useful even if you've disabled password authentication, because that significantly reduces noise from brute force attempts in SSH logs.\n"
-msgstr ""
-"Notez que changer de port reste utile même si vous avez désactivé "
-"l'authentification par mot de passe, car cela réduit considérablement le "
-"bruit provenant des tentatives de \"brute force\" dans les journaux SSH.\n"
+msgstr "Notez que changer de port reste utile même si vous avez désactivé l'authentification par mot de passe, car cela réduit considérablement le bruit provenant des tentatives de \"brute force\" dans les journaux SSH.\n"
 
 #. type: Fenced div block (warning)
 #: docs/admin/42.security.mdx:86
 #, no-wrap
 msgid "If you manually modify anything in the SSH server configuration (`/etc/ssh/sshd_config`), YunoHost's regen-conf mechanism will no longer automatically update this file. For this reason, always use the YunoHost admin tools to make changes to the systems configuration files!\n"
-msgstr ""
-"Si vous modifiez manuellement quoi que ce soit dans la configuration du "
-"serveur SSH (`/etc/ssh/sshd_config`), le mécanisme regen-conf de YunoHost ne "
-"mettra plus automatiquement à jour ce fichier. Pour cette raison, utilisez "
-"toujours les outils d'administration YunoHost pour apporter des "
-"modifications aux fichiers de configuration du système !\n"
+msgstr "Si vous modifiez manuellement quoi que ce soit dans la configuration du serveur SSH (`/etc/ssh/sshd_config`), le mécanisme regen-conf de YunoHost ne mettra plus automatiquement à jour ce fichier. Pour cette raison, utilisez toujours les outils d'administration YunoHost pour apporter des modifications aux fichiers de configuration du système !\n"
 
 #. type: Plain text
 #: docs/admin/42.security.mdx:95
 #, no-wrap
 msgid "**For subsequent SSH connections**, you need to add the `-p` option followed by the SSH port number.\n"
-msgstr ""
-"**Pour les prochaines connexions SSH**, vous devez ajouter l'option `-p` "
-"suivie du numéro de port SSH.\n"
+msgstr "**Pour les prochaines connexions SSH**, vous devez ajouter l'option `-p` suivie du numéro de port SSH.\n"
 
 #. type: Title ##
 #: docs/admin/42.security.mdx:105
@@ -301,27 +214,13 @@ msgstr "Durcissement du chiffrement utilisé par NGINX, SSH, Dovecot, Postfix"
 #: docs/admin/42.security.mdx:108
 #, no-wrap
 msgid "The default TLS configuration for services tends to offer good compatibility to support old devices. You can tune this policy for specific services like SSH and NGINX. By default, the NGINX configuration follows the [intermediate compatibility recommendation](https://wiki.mozilla.org/Security/Server_Side_TLS#Intermediate_compatibility_.28default.29) from Mozilla. You can choose to switch to the 'modern' configuration which uses more recent security recommendations, **at the cost of decreasing compatibility**, which may be an issue for your users and visitors using older devices. More details about compatibility can be found on [this page](https://wiki.mozilla.org/Security/Server_Side_TLS#Modern_compatibility).\n"
-msgstr ""
-"La configuration TLS par défaut pour les services offre généralement une "
-"bonne compatibilité avec les anciens appareils. Vous pouvez ajuster cette "
-"politique pour des services spécifiques tels que SSH et NGINX. Par défaut, "
-"la configuration NGINX suit les "
-"[recommandations de compatibilité intermédiaire](https://wiki.mozilla.org/"
-"Security/Server_Side_TLS#Intermediate_compatibility_.28default.29) de "
-"Mozilla. Vous pouvez choisir de passer à la configuration 'moderne' qui "
-"utilise des recommandations de sécurité plus récentes, **au détriment d'une "
-"compatibilité réduite**, ce qui peut poser problème pour vos utilisateurs et "
-"visiteurs utilisant des appareils plus anciens. Vous trouverez plus de "
-"détails sur la compatibilité sur [cette page]"
-"(https://wiki.mozilla.org/Security/Server_Side_TLS#Modern_compatibility).\n"
+msgstr "La configuration TLS par défaut pour les services offre généralement une bonne compatibilité avec les anciens appareils. Vous pouvez ajuster cette politique pour des services spécifiques tels que SSH et NGINX. Par défaut, la configuration NGINX suit les [recommandations de compatibilité intermédiaire](https://wiki.mozilla.org/Security/Server_Side_TLS#Intermediate_compatibility_.28default.29) de Mozilla. Vous pouvez choisir de passer à la configuration 'moderne' qui utilise des recommandations de sécurité plus récentes, **au détriment d'une compatibilité réduite**, ce qui peut poser problème pour vos utilisateurs et visiteurs utilisant des appareils plus anciens. Vous trouverez plus de détails sur la compatibilité sur [cette page](https://wiki.mozilla.org/Security/Server_Side_TLS#Modern_compatibility).\n"
 
 #. type: Plain text
 #: docs/admin/42.security.mdx:110
 #, no-wrap
 msgid "Changing the compatibility level is not definitive and can be reverted if it doesn't fit with your environment.\n"
-msgstr ""
-"La modification du niveau de compatibilité n'est pas définitive et peut être "
-"annulée si elle ne convient pas à votre environnement.\n"
+msgstr "La modification du niveau de compatibilité n'est pas définitive et peut être annulée si elle ne convient pas à votre environnement.\n"
 
 #. type: Plain text
 #: docs/admin/42.security.mdx:112
@@ -345,12 +244,7 @@ msgstr "Désactivation de l'API YunoHost"
 #: docs/admin/42.security.mdx:126
 #, no-wrap
 msgid "YunoHost administration is accessible through an **HTTP API**, which is the API used by the webadmin. This may be an additional, unecessary attack surface if you are not planning to use it. In this case, you can disable the corresponding service entirely via command line:\n"
-msgstr ""
-"L'administration de YunoHost est accessible via une **API HTTP**, qui est "
-"l'API utilisée par l'administrateur web. Cela peut constituer une surface "
-"d'attaque supplémentaire et inutile si vous ne prévoyez pas de l'utiliser. "
-"Dans ce cas, vous pouvez désactiver complètement le service correspondant "
-"via la ligne de commande :\n"
+msgstr "L'administration de YunoHost est accessible via une **API HTTP**, qui est l'API utilisée par l'administrateur web. Cela peut constituer une surface d'attaque supplémentaire et inutile si vous ne prévoyez pas de l'utiliser. Dans ce cas, vous pouvez désactiver complètement le service correspondant via la ligne de commande :\n"
 
 #. type: Fenced div block (warning)
 #: docs/admin/42.security.mdx:127
@@ -359,16 +253,11 @@ msgid ""
 "This will completely disable both YunoHost's API and the web administration panel that relies on it.\n"
 "Proceed only if you are comfortable with exclusively using the command line from now on.\n"
 msgstr ""
-"Cela désactivera complètement l'API de YunoHost et le panneau "
-"d'administration web qui en dépend.\n"
-"Ne continuez que si vous êtes à l'aise avec l'utilisation exclusive de la "
-"ligne de commande à partir de maintenant.\n"
+"Cela désactivera complètement l'API de YunoHost et le panneau d'administration web qui en dépend.\n"
+"Ne continuez que si vous êtes à l'aise avec l'utilisation exclusive de la ligne de commande à partir de maintenant.\n"
 
 #. type: Plain text
 #: docs/admin/42.security.mdx:138
 #, no-wrap
 msgid "As `yunohost-api` is now disabled and not running, Diagnosis will report an error. This error can be ignored using:\n"
-msgstr ""
-"Comme `yunohost-api` est désormais désactivé et ne fonctionne plus, le "
-"Diagnostic signalera une erreur. Cette erreur peut être ignorée à l'aide de :"
-"\n"
+msgstr "Comme `yunohost-api` est désormais désactivé et ne fonctionne plus, le Diagnostic signalera une erreur. Cette erreur peut être ignorée à l'aide de :\n"
