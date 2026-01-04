@@ -8,11 +8,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2025-12-17 15:39+0000\n"
+"POT-Creation-Date: 2026-01-04 16:21+0000\n"
 "PO-Revision-Date: 2026-01-04 10:27+0000\n"
 "Last-Translator: ppr <pouetpouetratatouille@gmail.com>\n"
-"Language-Team: French <https://translate.yunohost.org/projects/yunohost-doc/"
-"45tutorials__05domains__dns_subdomains/fr/>\n"
+"Language-Team: French <https://translate.yunohost.org/projects/yunohost-"
+"doc/45tutorials__05domains__dns_subdomains/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -37,11 +37,7 @@ msgstr "DNS et sous-domaines pour les applications"
 #: docs/admin/45.tutorials/05.domains/dns_subdomains.mdx:8
 #, no-wrap
 msgid "YunoHost allows the use of subdomains. If one owns a domain name `mydomain.com`, one first needs to create the subdomains in the DNS configuration (with one's registrar like Gandi).\n"
-msgstr ""
-"YunoHost permet l'utilisation de sous-domaines. Si l'on possède un nom de "
-"domaine `mydomain.com`, il faut d'abord créer les sous-domaines dans la "
-"configuration DNS "
-"(auprès de son fournisseur de nom de domaine/registrar, tel que Gandi).\n"
+msgstr "YunoHost permet l'utilisation de sous-domaines. Si l'on possède un nom de domaine `mydomain.com`, il faut d'abord créer les sous-domaines dans la configuration DNS (auprès de son fournisseur de nom de domaine/registrar, tel que Gandi).\n"
 
 #. type: Title ###
 #: docs/admin/45.tutorials/05.domains/dns_subdomains.mdx:9
@@ -53,10 +49,7 @@ msgstr "Exemple de configuration avec Gandi"
 #: docs/admin/45.tutorials/05.domains/dns_subdomains.mdx:12
 #, no-wrap
 msgid "The DNS configuration needs an A record with an IPv4 address, an AAAA record with an IPv6 address, and various CNAME records, one for each desired subdomain.\n"
-msgstr ""
-"La configuration DNS nécessite un enregistrement A avec une adresse IPv4, un "
-"enregistrement AAAA avec une adresse IPv6 et divers enregistrements CNAME, "
-"un pour chaque sous-domaine souhaité.\n"
+msgstr "La configuration DNS nécessite un enregistrement A avec une adresse IPv4, un enregistrement AAAA avec une adresse IPv6 et divers enregistrements CNAME, un pour chaque sous-domaine souhaité.\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/05.domains/dns_subdomains.mdx:14
@@ -68,9 +61,7 @@ msgstr "Si votre configuration DNS ressemble à ceci :\n"
 #: docs/admin/45.tutorials/05.domains/dns_subdomains.mdx:25
 #, no-wrap
 msgid "then you can access `agenda.mydomain.com`, `blog.mydomain.com` and `rss.mydomain.com` subdomains.\n"
-msgstr ""
-"vous pouvez alors accéder aux sous-domaines `agenda.mydomain.com`, "
-"`blog.mydomain.com` et `rss.mydomain.com`.\n"
+msgstr "vous pouvez alors accéder aux sous-domaines `agenda.mydomain.com`, `blog.mydomain.com` et `rss.mydomain.com`.\n"
 
 #. type: Title ###
 #: docs/admin/45.tutorials/05.domains/dns_subdomains.mdx:26
@@ -82,34 +73,19 @@ msgstr "Installer une application sur un sous-domaine"
 #: docs/admin/45.tutorials/05.domains/dns_subdomains.mdx:29
 #, no-wrap
 msgid "To install an application on a subdomain in YunoHost, for example `blog.mydomain.com`, the configuration is done in the administration panel. One first add the subdomain to the available domains list. The creation of a subdomain in YunoHost will create the corresponding configuration files for NGINX (the web server used in YunoHost).\n"
-msgstr ""
-"Pour installer une application sur un sous-domaine dans YunoHost, par "
-"exemple `blog.mydomain.com`, la configuration s'effectue dans le panneau "
-"d'administration. Il faut d'abord ajouter le sous-domaine à la liste des "
-"domaines disponibles. La création d'un sous-domaine dans YunoHost créera les "
-"fichiers de configuration correspondants pour NGINX "
-"(le serveur web utilisé dans YunoHost).\n"
+msgstr "Pour installer une application sur un sous-domaine dans YunoHost, par exemple `blog.mydomain.com`, la configuration s'effectue dans le panneau d'administration. Il faut d'abord ajouter le sous-domaine à la liste des domaines disponibles. La création d'un sous-domaine dans YunoHost créera les fichiers de configuration correspondants pour NGINX (le serveur web utilisé dans YunoHost).\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/05.domains/dns_subdomains.mdx:31
 #, no-wrap
 msgid "Then, in the applications>install panel, one follows the classic installation process by choosing the desired subdomain as domain (for example `blog.mydomain.com`). One needs to choose the path `/` (in place of `/wordpress` for example). A warning message will appear telling that it won't be possible to install other application to this subdomain. After validation, the installation starts.\n"
-msgstr ""
-"Ensuite, dans le panneau applications>installation, on suit le processus "
-"d'installation classique en choisissant le sous-domaine souhaité comme "
-"domaine (par exemple `blog.mydomain.com`). Il faut choisir le chemin `/` "
-"(à la place de `/wordpress` par exemple). Un message d'avertissement "
-"apparaîtra indiquant qu'il ne sera pas possible d'installer d'autres "
-"applications sur ce sous-domaine. Après validation, l'installation "
-"commencera.\n"
+msgstr "Ensuite, dans le panneau applications>installation, on suit le processus d'installation classique en choisissant le sous-domaine souhaité comme domaine (par exemple `blog.mydomain.com`). Il faut choisir le chemin `/` (à la place de `/wordpress` par exemple). Un message d'avertissement apparaîtra indiquant qu'il ne sera pas possible d'installer d'autres applications sur ce sous-domaine. Après validation, l'installation commencera.\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/05.domains/dns_subdomains.mdx:33
 #, no-wrap
 msgid "The application is then available at `blog.mydomain.com` (and not `mydomain.com/wordpress`).\n"
-msgstr ""
-"L'application est alors disponible à l'adresse `blog.mydomain.com` "
-"(et non `mydomain.com/wordpress`).\n"
+msgstr "L'application est alors disponible à l'adresse `blog.mydomain.com` (et non `mydomain.com/wordpress`).\n"
 
 #. type: Title ###
 #: docs/admin/45.tutorials/05.domains/dns_subdomains.mdx:34
@@ -126,14 +102,10 @@ msgid ""
 "Some applications allow the change of domain. In that case, one can proceed to the change through the administration panel: Applications > the_app_name > change URL.\n"
 "If the application doesn't allow URL change, then there is no easy way to do it. The best solution is to reinstall the application.\n"
 msgstr ""
-"Que se passe-t-il si l'application est déjà installée ? Par exemple, vous "
-"souhaitez déplacer `mydomain.com/wordpress` vers `blog.mydomain.com`.\n"
+"Que se passe-t-il si l'application est déjà installée ? Par exemple, vous souhaitez déplacer `mydomain.com/wordpress` vers `blog.mydomain.com`.\n"
 "Cela dépend de l'application.\n"
-"Certaines applications permettent de changer de domaine. Dans ce cas, vous "
-"pouvez procéder au changement via le panneau d'administration : Applications "
-"> nom_de_l'application > changer l'URL.\n"
-"Si l'application ne permet pas de changer l'URL, il n'y a pas de moyen "
-"simple de le faire. La meilleure solution est de réinstaller l'application.\n"
+"Certaines applications permettent de changer de domaine. Dans ce cas, vous pouvez procéder au changement via le panneau d'administration : Applications > nom_de_l'application > changer l'URL.\n"
+"Si l'application ne permet pas de changer l'URL, il n'y a pas de moyen simple de le faire. La meilleure solution est de réinstaller l'application.\n"
 
 #. type: Title ###
 #: docs/admin/45.tutorials/05.domains/dns_subdomains.mdx:41
@@ -145,8 +117,4 @@ msgstr "Réinstaller une application"
 #: docs/admin/45.tutorials/05.domains/dns_subdomains.mdx:43
 #, no-wrap
 msgid "First, save the application data through the backup process. Then uninstall the application with the administration panel. Then reinstall the application to the desired domain. Finally, restore the backup.\n"
-msgstr ""
-"Commencez par sauvegarder les données de l'application via le processus de "
-"sauvegarde. Désinstallez ensuite l'application à l'aide du panneau "
-"d'administration. Réinstallez ensuite l'application sur le domaine souhaité. "
-"Enfin, restaurez la sauvegarde.\n"
+msgstr "Commencez par sauvegarder les données de l'application via le processus de sauvegarde. Désinstallez ensuite l'application à l'aide du panneau d'administration. Réinstallez ensuite l'application sur le domaine souhaité. Enfin, restaurez la sauvegarde.\n"
