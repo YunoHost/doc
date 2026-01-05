@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2025-11-11 01:24+0100\n"
-"PO-Revision-Date: 2026-01-05 16:36+0000\n"
+"PO-Revision-Date: 2026-01-05 16:38+0000\n"
 "Last-Translator: ppr <pouetpouetratatouille@gmail.com>\n"
 "Language-Team: French <https://translate.yunohost.org/projects/yunohost-doc/"
 "55upgrade__110-bullseye/fr/>\n"
@@ -264,19 +264,28 @@ msgstr ""
 #, no-wrap
 msgid "If needed, you can disable the automatic rebuild for a specific python app, by removing the dedicated file ending with `.requirements_backup_for_bullseye_upgrade.txt` before applying the migration. You can find this file near the venv (Python virtual environment) of your app inside `/opt` or `/var/www`.\n"
 msgstr ""
+"Si nécessaire, vous pouvez désactiver la reconstruction automatique pour une "
+"application Python spécifique, en supprimant le fichier dédié se terminant "
+"par `.requirements_backup_for_bullseye_upgrade.txt` avant d'appliquer la "
+"migration. Vous trouverez ce fichier près du venv "
+"(environnement virtuel Python) de votre application dans `/opt` ou `/var/"
+"www`.\n"
 
 #. type: Title ###
 #: docs/admin/55.upgrade/11.0-bullseye.mdx:76
 #, no-wrap
 msgid "Check that no issue appeared in the diagnosis"
-msgstr ""
+msgstr "Vérifiez qu'aucun problème n'est apparu dans le diagnostic"
 
 #. type: Plain text
 #: docs/admin/55.upgrade/11.0-bullseye.mdx:79
-#, fuzzy, no-wrap
-#| msgid "In the webadmin Diagnosis section, make sure that no specific issue appeared after running the migration (for example a service that crashed for some reason).\n"
+#, no-wrap
 msgid "Also in the webadmin Diagnosis section, make sure that no specific issue appeared after running the migration (for example a service that crashed for some reason).\n"
-msgstr "Dans l'outil de diagnostics de la webadmin, vérifiez qu'il n'y a pas de problème apparu suite à la migration (par exemple un service qui ne tournerais plus...)\n"
+msgstr ""
+"Dans la section Diagnostic de l'interface d'administration Web, assurez-vous "
+"également qu'aucun problème spécifique n'est apparu après l'exécution de la "
+"migration "
+"(par exemple, un service qui s'est arrêté pour une raison quelconque).\n"
 
 #. type: Plain text
 #: docs/admin/55.upgrade/11.0-bullseye.mdx:81
