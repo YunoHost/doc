@@ -3,18 +3,21 @@
 # This file is distributed under the same license as the YunoHost documentation package.
 # Automatically generated, 2025.
 #
+# ppr <pouetpouetratatouille@gmail.com>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: 2025-11-22 19:19+0000\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-01-05 18:09+0000\n"
+"Last-Translator: ppr <pouetpouetratatouille@gmail.com>\n"
+"Language-Team: French <https://translate.yunohost.org/projects/yunohost-doc/"
+"80advanced__45certificate_custom/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.14.2\n"
 
 #. type: Title ####
 #: docs/admin/05.get_started/10.providers/05.registrar/gandi.mdx:1
@@ -25,22 +28,29 @@ msgstr "Gandi"
 
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/80.advanced/45.certificate_custom.mdx:1
-#, fuzzy, no-wrap
-#| msgid "Certificate"
+#, no-wrap
 msgid "Custom certificates"
-msgstr "Certificat"
+msgstr "Certificats personnalisés"
 
 #. type: Fenced div block (warning)
 #: docs/admin/80.advanced/45.certificate_custom.mdx:5
 #, no-wrap
 msgid "Since version 2.5, YunoHost integrates Let's Encrypt certificates automated management. You can easily and freely [install a Let's Encrypt certificate](/admin/domains/certificate). The following document describes the steps for installing a paid certificate from a certification authority (**Gandi**, **RapidSSL**, **StartSSL**, **Cacert**).\n"
 msgstr ""
+"Depuis la version 2.5, YunoHost intègre la gestion automatisée des "
+"certificats Let's Encrypt. Vous pouvez facilement et librement "
+"[installer un certificat Let's Encrypt](/admin/domains/certificate). Le "
+"document suivant décrit les étapes à suivre pour installer un certificat "
+"payant provenant d'une autorité de certification "
+"(**Gandi**, **RapidSSL**, **StartSSL**, **Cacert**).\n"
 
 #. type: Plain text
 #: docs/admin/80.advanced/45.certificate_custom.mdx:10
 #, no-wrap
 msgid "Some changes have taken place which impact the procedures indicated below:\n"
 msgstr ""
+"Certaines modifications ont été apportées, qui ont une incidence sur les "
+"procédures indiquées ci-dessous :\n"
 
 #. type: Plain text
 #: docs/admin/80.advanced/45.certificate_custom.mdx:13
@@ -49,36 +59,48 @@ msgid ""
 "- Metronome group is no longer used directly but ssl-cert.\n"
 "- A `/etc/yunohost/certs/DOMAIN.LTD-history/stamp` directory is used to keep each configuration created and a symlink is created.\n"
 msgstr ""
+"- Le groupe Metronome n'est plus utilisé directement, mais ssl-cert.\n"
+"- Un répertoire `/etc/yunohost/certs/DOMAIN.LTD-history/stamp` est utilisé "
+"pour conserver chaque configuration créée et un lien symbolique est créé.\n"
 
 #. type: Title ###
 #: docs/admin/80.advanced/45.certificate_custom.mdx:14
 #, no-wrap
 msgid "Adding a signed certificate by an authority (other than Let's Encrypt)"
-msgstr ""
+msgstr "Ajout d'un certificat signé par une autorité (autre que Let's Encrypt)"
 
 #. type: Plain text
 #: docs/admin/80.advanced/45.certificate_custom.mdx:17
 #, no-wrap
 msgid "After the certificate creation with your registration authority, you must have a private key, the key file, and a public certificate, the crt file.\n"
 msgstr ""
+"Après avoir créé le certificat auprès de votre autorité d'enregistrement, "
+"vous devez disposer d'une clé privée, du fichier de clé, et d'un certificat "
+"public, du fichier crt.\n"
 
 #. type: Fenced div block (warning)
 #: docs/admin/80.advanced/45.certificate_custom.mdx:18
 #, no-wrap
 msgid "Note that the key file is very sensitive, it is strictly personal and must be very well secured.\n"
 msgstr ""
+"Notez que le fichier clé est très sensible, il est strictement personnel et "
+"doit être très bien sécurisé.\n"
 
 #. type: Plain text
 #: docs/admin/80.advanced/45.certificate_custom.mdx:23
 #, no-wrap
 msgid "These two files should be copied to the server, if they are not already there.\n"
 msgstr ""
+"Ces deux fichiers doivent être copiés sur le serveur, s'ils ne s'y trouvent "
+"pas déjà.\n"
 
 #. type: Plain text
 #: docs/admin/80.advanced/45.certificate_custom.mdx:30
 #, no-wrap
 msgid "From Windows, scp can be used with Putty, by downloading the tool [pscp](http://the.earth.li/~sgtatham/putty/latest/x86/pscp.exe)\n"
 msgstr ""
+"Sous Windows, scp peut être utilisé avec Putty, en téléchargeant l'outil "
+"[pscp](http://the.earth.li/~sgtatham/putty/latest/x86/pscp.exe).\n"
 
 #. type: Plain text
 #: docs/admin/80.advanced/45.certificate_custom.mdx:38
@@ -87,88 +109,105 @@ msgid ""
 "As soon as the files are on the server, the rest of the work will be done on it. In [ssh](/admin/command_line) or locally.\n"
 "First, create a folder to store the obtained certificates.\n"
 msgstr ""
+"Dès que les fichiers sont sur le serveur, le reste du opérations "
+"s'effectuera directement sur le serveur. Dans [ssh](/admin/command_line) ou "
+"localement.\n"
+"Commencez par créer un dossier pour stocker les certificats obtenus.\n"
 
 #. type: Plain text
 #: docs/admin/80.advanced/45.certificate_custom.mdx:45
 #, no-wrap
 msgid "Then, go to the parent folder to continue.\n"
-msgstr ""
+msgstr "Ensuite, allez dans le dossier parent pour continuer.\n"
 
 #. type: Plain text
 #: docs/admin/80.advanced/45.certificate_custom.mdx:51
 #, no-wrap
 msgid "As a caution, back up the certificates of origin from YunoHost.\n"
 msgstr ""
+"Par mesure de précaution, sauvegardez les certificats d'origine de YunoHost."
+"\n"
 
 #. type: Plain text
 #: docs/admin/80.advanced/45.certificate_custom.mdx:58
 #, no-wrap
 msgid "Depending on the registration authority, intermediate and root certificates must be obtained.\n"
 msgstr ""
+"Selon l'autorité d'enregistrement, des certificats intermédiaires et racine "
+"doivent être obtenus.\n"
 
 #. type: Title ####
 #: docs/admin/80.advanced/45.certificate_custom.mdx:59
 #, no-wrap
 msgid "StartSSL"
-msgstr ""
+msgstr "StartSSL"
 
 #. type: Title ####
 #: docs/admin/80.advanced/45.certificate_custom.mdx:72
 #, no-wrap
 msgid "RapidSSL"
-msgstr ""
+msgstr "RapidSSL"
 
 #. type: Title ####
 #: docs/admin/80.advanced/45.certificate_custom.mdx:78
 #, no-wrap
 msgid "Cacert"
-msgstr ""
+msgstr "Cacert"
 
 #. type: Plain text
 #: docs/admin/80.advanced/45.certificate_custom.mdx:86
 #, no-wrap
 msgid "Intermediate and root certificates must be combined with the obtained certificate to create a unified certificate chain.\n"
 msgstr ""
+"Les certificats intermédiaires et racine doivent être combinés avec le "
+"certificat obtenu afin de créer une chaîne de certificats unifiée.\n"
 
 #. type: Plain text
 #: docs/admin/80.advanced/45.certificate_custom.mdx:92
 #, no-wrap
 msgid "The private key must be converted to `.pem` format.\n"
-msgstr ""
+msgstr "La clé privée doit être convertie au format `.pem`.\n"
 
 #. type: Plain text
 #: docs/admin/80.advanced/45.certificate_custom.mdx:98
 #, no-wrap
 msgid "To ensure the certificates syntax, check the files contents.\n"
 msgstr ""
+"Pour vérifier la syntaxe des certificats, vérifiez le contenu des fichiers.\n"
 
 #. type: Plain text
 #: docs/admin/80.advanced/45.certificate_custom.mdx:104
 #, no-wrap
 msgid "The certificates and private key should look like this:\n"
-msgstr ""
+msgstr "Les certificats et la clé privée doivent ressembler à ceci :\n"
 
 #. type: Plain text
 #: docs/admin/80.advanced/45.certificate_custom.mdx:124
-#, fuzzy, no-wrap
-#| msgid "Physically secure your server"
+#, no-wrap
 msgid "Finally, secure your certificate files.\n"
-msgstr "Sécuriser physiquement votre serveur"
+msgstr "Enfin, sécurisez vos fichiers de certificats.\n"
 
 #. type: Plain text
 #: docs/admin/80.advanced/45.certificate_custom.mdx:133
 #, no-wrap
 msgid "Now the certificates (two files with the extension `.pem`) must be copied in `/etc/yunohost/certs/DOMAIN.TLD`.\n"
 msgstr ""
+"Les certificats (deux fichiers avec l'extension `.pem`) doivent maintenant "
+"être copiés dans `/etc/yunohost/certs/DOMAIN.TLD`.\n"
 
 #. type: Plain text
 #: docs/admin/80.advanced/45.certificate_custom.mdx:139
 #, no-wrap
 msgid "Reload NGINX configuration to take into account the new certificate.\n"
 msgstr ""
+"Rechargez la configuration NGINX pour prendre en compte le nouveau "
+"certificat.\n"
 
 #. type: Plain text
 #: docs/admin/80.advanced/45.certificate_custom.mdx:144
 #, no-wrap
 msgid "Your certificate is ready. However, you can ensure that it is in place by testing the certificate using the [geocerts](https://www.geocerts.com/ssl_checker).\n"
 msgstr ""
+"Votre certificat est prêt. Cependant, vous pouvez vous assurer qu'il est en "
+"place en le testant à l'aide de [geocerts]"
+"(https://www.geocerts.com/ssl_checker).\n"
