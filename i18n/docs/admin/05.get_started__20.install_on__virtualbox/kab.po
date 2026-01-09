@@ -2,15 +2,15 @@
 # This file is distributed under the same license as the YunoHost documentation package.
 #
 # ButterflyOfFire <BoFFire@users.noreply.translate.yunohost.org>, 2025.
+# ButterflyOfFire <butterflyoffire@protonmail.com>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: 2025-11-29 18:39+0000\n"
-"Last-Translator: ButterflyOfFire <BoFFire@users.noreply.translate.yunohost."
-"org>\n"
-"Language-Team: Kabyle <https://translate.yunohost.org/projects/yunohost-"
-"doc/05get_started__20install_on__virtualbox/kab/>\n"
+"PO-Revision-Date: 2026-01-09 18:09+0000\n"
+"Last-Translator: ButterflyOfFire <butterflyoffire@protonmail.com>\n"
+"Language-Team: Kabyle <https://translate.yunohost.org/projects/yunohost-doc/"
+"05get_started__20install_on__virtualbox/kab/>\n"
 "Language: kab\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -153,7 +153,7 @@ msgstr ""
 #: docs/admin/05.get_started/20.install_on/virtualbox.mdx:120
 #, no-wrap
 msgid "About encryption"
-msgstr ""
+msgstr "Ɣef uwgelhen"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:156

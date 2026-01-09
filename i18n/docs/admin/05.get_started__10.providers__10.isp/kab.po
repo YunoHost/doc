@@ -2,18 +2,21 @@
 # This file is distributed under the same license as the YunoHost documentation package.
 #
 # ButterflyOfFire <BoFFire@users.noreply.translate.yunohost.org>, 2025.
+# ButterflyOfFire <butterflyoffire@protonmail.com>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-01-09 18:09+0000\n"
+"Last-Translator: ButterflyOfFire <butterflyoffire@protonmail.com>\n"
+"Language-Team: Kabyle <https://translate.yunohost.org/projects/yunohost-doc/"
+"05get_started__10providers__10isp/kab/>\n"
 "Language: kab\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.14.2\n"
 
 #. type: Yaml Front Matter Hash Value: description
 #: docs/admin/05.get_started/02.why_should_you_not_host_yourself.mdx:1
@@ -21,13 +24,13 @@ msgstr ""
 #: docs/admin/05.get_started/10.providers/20.servers.mdx:1
 #, no-wrap
 msgid " "
-msgstr ""
+msgstr " "
 
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/05.get_started/10.providers/10.isp.mdx:1
 #, no-wrap
 msgid "Internet service providers"
-msgstr ""
+msgstr "Isaǧǧawen n umeẓlu n Internet"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/10.isp.mdx:20
@@ -95,7 +98,7 @@ msgstr ""
 #: docs/admin/05.get_started/10.providers/10.isp.mdx:48
 #, no-wrap
 msgid "<TabItem value=\"twn\" label=\"Taïwan\">\n"
-msgstr ""
+msgstr "<TabItem value=\"twn\" label=\"Ṭaywan\">\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/10.isp.mdx:52
@@ -162,7 +165,7 @@ msgstr ""
 #: docs/admin/05.get_started/10.providers/10.isp.mdx:86
 #, no-wrap
 msgid "<TabItem value=\"fin\" label=\"Finland\">\n"
-msgstr ""
+msgstr "<TabItem value=\"fin\" label=\"Finland\">\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/10.isp.mdx:92
@@ -245,7 +248,7 @@ msgstr ""
 #: docs/admin/05.get_started/10.providers/10.isp.mdx:133
 #, no-wrap
 msgid "<TabItem value=\"irl\" label=\"Ireland\">\n"
-msgstr ""
+msgstr "<TabItem value=\"irl\" label=\"Irland\">\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/10.isp.mdx:137
@@ -260,7 +263,7 @@ msgstr ""
 #: docs/admin/05.get_started/10.providers/10.isp.mdx:140
 #, no-wrap
 msgid "<TabItem value=\"swe\" label=\"Sweden\">\n"
-msgstr ""
+msgstr "<TabItem value=\"swe\" label=\"Swid\">\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/10.isp.mdx:146
@@ -283,7 +286,7 @@ msgstr ""
 #: docs/admin/05.get_started/10.providers/10.isp.mdx:151
 #, no-wrap
 msgid "<TabItem value=\"che\" label=\"Switzerland\">\n"
-msgstr ""
+msgstr "<TabItem value=\"che\" label=\"Swis\">\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/10.isp.mdx:153
@@ -306,7 +309,7 @@ msgstr ""
 #: docs/admin/05.get_started/10.providers/10.isp.mdx:162
 #, no-wrap
 msgid "<TabItem value=\"gbr\" label=\"UK\">\n"
-msgstr ""
+msgstr "<TabItem value=\"gbr\" label=\"Tagelda Yedduklen\">\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/10.isp.mdx:169
@@ -324,13 +327,13 @@ msgstr ""
 #: docs/admin/05.get_started/10.providers/10.isp.mdx:175
 #, no-wrap
 msgid "<TabItem value=\"northamerica\">\n"
-msgstr ""
+msgstr "<TabItem value=\"Tamrikt n Ugafa\">\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/10.isp.mdx:177
 #, no-wrap
 msgid "<TabItem value=\"canada\" label=\"Canada\">\n"
-msgstr ""
+msgstr "<TabItem value=\"canada\" label=\"Kanada\">\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/10.isp.mdx:182
@@ -365,7 +368,7 @@ msgstr ""
 #: docs/admin/05.get_started/10.providers/10.isp.mdx:199
 #, no-wrap
 msgid "<TabItem value=\"southamerica\">\n"
-msgstr ""
+msgstr "<TabItem value=\"Tamrikt n Wenẓul\">\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/10.isp.mdx:201
@@ -386,4 +389,4 @@ msgstr ""
 #: docs/admin/05.get_started/10.providers/10.isp.mdx:211
 #, no-wrap
 msgid "<TabItem value=\"oceania\">\n"
-msgstr ""
+msgstr "<TabItem value=\"usyanya\">\n"
