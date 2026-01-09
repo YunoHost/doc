@@ -85,7 +85,7 @@ msgstr "> \"¡Mierda, soy muy vago para reconfigurar mi servidor de correo!… B
 #: docs/admin/02.what_is_yunohost/index.mdx:35
 #, no-wrap
 msgid "All that was needed was an admin interface for Beudbeud's server to make something usable, so Kload decided to develop one. Finally, after automating several configs and packaging in some web apps, YunoHost v1 was finished.\n"
-msgstr "Lo único que necesitaba era un interfaz de administración para el servidor de Beudbeud para tener algo usable, así que Kload decidió desarrollar uno. Finalmente, tras automatizar varias configuraciones y empaquetar algunas aplicaciones web, YunoHost v1 quedó terminado.\n"
+msgstr "Lo único que necesitaba era una interfaz de administración para el servidor de Beudbeud para que fuera algo usable, así que Kload decidió desarrollar una. Finalmente, tras automatizar varias configuraciones y empaquetar algunas aplicaciones web, YunoHost v1 quedó terminado.\n"
 
 #. type: Plain text
 #: docs/admin/02.what_is_yunohost/index.mdx:37
@@ -157,4 +157,4 @@ msgstr "Logo"
 #: docs/admin/02.what_is_yunohost/index.mdx:61
 #, no-wrap
 msgid "Black and white YunoHost by ToZz. Licence: CC-BY-SA 4.0. Logos and other artwork are available in [the Artworks repository](https://github.com/YunoHost/yunohost-artwork).\n"
-msgstr "Logo YunoHost en blanco y negro por ToZz. Licence: CC-BY-SA 4.0. Logos and other artwork are available in [the Artworks repository](https://github.com/YunoHost/yunohost-artwork).\n"
+msgstr "Logo YunoHost en blanco y negro por ToZz. Licencia: CC-BY-SA 4.0. Los logotipos y otros materiales de arte están disponibles en [el repositorio de Artworks](https://github.com/YunoHost/yunohost-artwork).\n"
