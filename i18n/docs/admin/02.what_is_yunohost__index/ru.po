@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2026-01-04 16:21+0000\n"
+"POT-Creation-Date: 2026-01-11 19:20+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -90,8 +90,9 @@ msgstr "Всё что было нужно - админ панель для се�
 
 #. type: Plain text
 #: docs/admin/02.what_is_yunohost/index.mdx:37
-#, no-wrap
-msgid "Noting the growing enthusiasm around YunoHost and around self-hosting in general, the original developers along with new contributors decided to start work on version 2, a more extensible, more powerful, more easy-to-use, and at that, one that makes a nice cup of fair-trade coffee for the elves of Lapland.\n"
+#, fuzzy, no-wrap
+#| msgid "Noting the growing enthusiasm around YunoHost and around self-hosting in general, the original developers along with new contributors decided to start work on version 2, a more extensible, more powerful, more easy-to-use, and at that, one that makes a nice cup of fair-trade coffee for the elves of Lapland.\n"
+msgid "Noting the growing enthusiasm around YunoHost and around self-hosting in general, the original developers, along with new contributors, decided to start work on version 2, a more extensible, more powerful, more easy-to-use, and, at that, one that makes a nice cup of fair-trade coffee for the elves of Lapland.\n"
 msgstr "Заметив большое внимание вокруг YunoHost и своими серверами, первоначальные разработчики вместе с новыми помощниками решили начать работу над версией 2. Более универсальной, более мощной, более простой и всё такое.\n"
 
 #. type: Plain text
@@ -121,31 +122,31 @@ msgstr ""
 #. type: Plain text
 #: docs/admin/02.what_is_yunohost/index.mdx:49
 #, no-wrap
-msgid "**YunoHost as a project is *not* apolitical.** By its very nature, YunoHost promotes a decentralized internet and technologies that empower people. We reject the flawed notion that technology is inherently neutral, or that software projects should remain neutral. Many contributors to the project remain vigilant about the social and political implications of technological developments, and emphasize the importance of solidarity and alignment with broader movements such as feminism, LGBTQIA+ rights and visibility, environmental justice and social justice. We stand firmly against fascism, sexism, racism, xenophobia, [bigotry](https://simple.wikipedia.org/wiki/Bigotry), ableism, imperialism, extractivism, [eugenics](https://en.wikipedia.org/wiki/Eugenics), and right-wing libertarianism. If you are not aligned with these values, you are encouraged to *not* use YunoHost and look for a different system.\n"
+msgid "**YunoHost as a project is *not* apolitical.** By its very nature, YunoHost promotes a decentralized internet and technologies that empower people. We reject the flawed notion that technology is inherently neutral, or that software projects should remain neutral. Many contributors to the project remain vigilant about the social and political implications of technological developments, and emphasize the importance of solidarity and alignment with broader movements such as feminism, LGBTQIA+ rights and visibility, environmental justice, and social justice. We stand firmly against fascism, sexism, racism, xenophobia, [bigotry](https://simple.wikipedia.org/wiki/Bigotry), ableism, imperialism, extractivism, [eugenics](https://en.wikipedia.org/wiki/Eugenics), and right-wing libertarianism. If you are not aligned with these values, you are encouraged to *not* use YunoHost and look for a different system.\n"
 msgstr ""
 
 #. type: Plain text
 #: docs/admin/02.what_is_yunohost/index.mdx:51
 #, no-wrap
-msgid "**YunoHost is *not* designed to \"scale\" in the traditional sense.** It is intended for a relatively modest number of user accounts and simultaneous users. While there is no strict limit—since performance depends heavily on your specific setup — , we estimate that some technical adjustments may be necessary when reaching 250~500 user accounts, or about 50 simultaneous users on resource-intensive apps. That said, YunoHost can comfortably handle hosting a website or several lightweight services, even with thousands of daily visitors.\n"
+msgid "**YunoHost is *not* designed to \"scale\" in the traditional sense.** It is intended for a relatively modest number of user accounts and simultaneous users. While there is no strict limit—since performance depends heavily on your specific setup — we estimate that some technical adjustments may be necessary when reaching 250~500 user accounts, or about 50 simultaneous users on resource-intensive apps. That said, YunoHost can comfortably handle hosting a website or several lightweight services, even with thousands of daily visitors.\n"
 msgstr ""
 
 #. type: Plain text
 #: docs/admin/02.what_is_yunohost/index.mdx:53
 #, no-wrap
-msgid "**YunoHost is primarily designed for people who want things to \"just work\".** Of course, it’s not perfect — we're constantly working to improve the user experience, robustness, and simplicity. Though YunoHost is \"tinkerable\", the first target public is *not* power users with complex or highly customized use cases in mind. We encourage you to keep your setup as simple as possible. That said, you are than welcome to experiment and share your feedback with us!\n"
+msgid "**YunoHost is primarily designed for people who want things to \"just work\".** Of course, it’s not perfect — we're constantly working to improve the user experience, robustness, and simplicity. Though YunoHost is \"tinkerable\", the first target public is *not* power users with complex or highly customized use cases in mind. We encourage you to keep your setup as simple as possible. That said, you are more than welcome to experiment and share your feedback with us!\n"
 msgstr ""
 
 #. type: Plain text
 #: docs/admin/02.what_is_yunohost/index.mdx:55
 #, no-wrap
-msgid "**YunoHost is *not* designed to be a *heavy* multi-tenant solution** for providing services to completely separate organizations across different domains. While you *can* manage multiple domains and subdomains — such as hosting apps for friends, colleagues, an association — you should keep in mind that there is no strict isolation between apps. Under the hood, all applications share the same system and environment.\n"
+msgid "**YunoHost is *not* designed to be a *heavy* multi-tenant solution** for providing services to completely separate organizations across different domains. While you *can* manage multiple domains and subdomains — such as hosting apps for friends, colleagues, and an association — you should keep in mind that there is no strict isolation between apps. Under the hood, all applications share the same system and environment.\n"
 msgstr ""
 
 #. type: Plain text
 #: docs/admin/02.what_is_yunohost/index.mdx:57
 #, no-wrap
-msgid "(Note for power users) **YunoHost does not use \"hard\" containerization technologies** such as Docker for its apps. This is partly for historical reasons, but also to keep the system lightweight — both in terms of resource usage and technical complexity. That said, we do take security seriously: applications run under dedicated user accounts with limited privileges and capabilities, and we're continuously working to enhance the system’s security.\n"
+msgid "(Note for power users) **YunoHost does not use \"hard\" containerization technologies** such as Docker, for its apps. This is partly for historical reasons and partly to keep the system lightweight — both in terms of resource usage and technical complexity. That said, we do take security seriously: applications run under dedicated user accounts with limited privileges and capabilities, and we're continuously working to enhance the system’s security.\n"
 msgstr ""
 
 #. type: Title ##
