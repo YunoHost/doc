@@ -1,19 +1,21 @@
 # Copyright (C) 2025 YunoHost Contributors
 # This file is distributed under the same license as the YunoHost documentation package.
 #
-# "José M." <correo@xmgz.eu>, 2025.
+# "José M." <correo@xmgz.eu>, 2025, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-01-25 07:27+0000\n"
+"Last-Translator: \"José M.\" <correo@xmgz.eu>\n"
+"Language-Team: Galician <https://translate.yunohost.org/projects/"
+"yunohost-doc/20users__groups_and_permissions/gl/>\n"
 "Language: gl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.14.2\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/_configuration.mdx:18
@@ -33,7 +35,7 @@ msgstr ""
 #: docs/admin/45.tutorials/35.email_configure_relay.mdx:49
 #, no-wrap
 msgid "<TabItem value=\"web\" label=\"From the web interface\">\n"
-msgstr ""
+msgstr "<TabItem value=\"web\" label=\"desde a interface web\">\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/_configuration.mdx:36
@@ -54,7 +56,7 @@ msgstr ""
 #: docs/admin/45.tutorials/35.email_configure_relay.mdx:66
 #, no-wrap
 msgid "<TabItem value=\"cli\" label=\"From the command line\">\n"
-msgstr ""
+msgstr "<TabItem value=\"cli\" label=\"desde a liña de ordes\">\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/20.users/groups_and_permissions.mdx:1
