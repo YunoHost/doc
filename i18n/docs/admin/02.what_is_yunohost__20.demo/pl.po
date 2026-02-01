@@ -1,0 +1,85 @@
+# Copyright (C) 2026 YunoHost Contributors
+# This file is distributed under the same license as the YunoHost documentation package.
+#
+# 1Poireau <unpoireau@proton.me>, 2026.
+msgid ""
+msgstr ""
+"Project-Id-Version: YunoHost documentation VERSION\n"
+"POT-Creation-Date: 2026-01-04 16:21+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: pl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && "
+"(n%100<10 || n%100>=20) ? 1 : 2;\n"
+
+#. type: Yaml Front Matter Hash Value: description
+#: docs/admin/02.what_is_yunohost/20.demo.mdx:1
+#, no-wrap
+msgid "A demo server"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: title
+#: docs/admin/02.what_is_yunohost/20.demo.mdx:1
+#, no-wrap
+msgid "Try YunoHost"
+msgstr ""
+
+#. type: Title #
+#: docs/admin/02.what_is_yunohost/20.demo.mdx:11
+#, no-wrap
+msgid "Try YunoHost on a demo server"
+msgstr ""
+
+#. type: Fenced div block (caution)
+#: docs/admin/02.what_is_yunohost/20.demo.mdx:13
+#, no-wrap
+msgid "This demo server is reset *every 30 minutes* and could be down from time to time, but at least you can test and that's really cool :)\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/02.what_is_yunohost/20.demo.mdx:21
+#, no-wrap
+msgid "<span><FAIcon icon='fa-user' /> User interface</span>\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/02.what_is_yunohost/20.demo.mdx:24
+#, no-wrap
+msgid "https://demo.yunohost.org\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/02.what_is_yunohost/20.demo.mdx:26
+#: docs/admin/02.what_is_yunohost/20.demo.mdx:38
+#, no-wrap
+msgid "username: `demo`\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/02.what_is_yunohost/20.demo.mdx:28
+#: docs/admin/02.what_is_yunohost/20.demo.mdx:40
+#, no-wrap
+msgid "password: `demo`\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/02.what_is_yunohost/20.demo.mdx:33
+#, no-wrap
+msgid "<span><FAIcon icon='fa-cog'/> Administration interface</span>\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/02.what_is_yunohost/20.demo.mdx:36
+#, no-wrap
+msgid "https://demo.yunohost.org/yunohost/admin/\n"
+msgstr ""
+
+#. type: Fenced div block (info)
+#: docs/admin/02.what_is_yunohost/20.demo.mdx:44
+#, no-wrap
+msgid "**Demo server gracefully provided by [Gitoyen](https://www.gitoyen.net?target=_blank) <FAIcon icon=\"fa-heart\" style={{color: \"green\"}}/>**\n"
+msgstr ""
