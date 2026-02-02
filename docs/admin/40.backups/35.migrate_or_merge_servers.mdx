@@ -1,3 +1,6 @@
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 ---
 title: Migrate or merge servers
 ---
@@ -6,6 +9,45 @@ title: Migrate or merge servers
 ## Migrate a server
 
 If YunoHost's archive system is not convenient enough to migrate a server, you can also [migrate from server to server with rsync](https://www.man42.net/blog/2017/07/how-to-migrate-a-debian-server/).
+
+**The Yunohost archive system migration consist in :**
+- Preparing a check-list can help
+- Install Yunohost on your new server ([see](https://doc.yunohost.org/en/admin/get_started/install_on/))
+The next steps can be done or via web interface or via CLI commands
+- Proceed to an upgrade of the newly installed server
+- Restore the system .tar(.gz) archive(s)
+- Restore the applications .tar(.gz) archive(s)
+
+<Tabs groupId="admin-commands">
+<TabItem value="web" label="From the web interface">
+If you want to use the Web Interface then, you'll have to proceed to Post Installation. Choose the same main domain and the same first user as in your source server.
+
+Proceed to a [system updgrade](https://doc.yunohost.org/en/admin/upgrade/).
+
+Place your .tar(.gz) archives in the folder : `/home/yunohost.backup/archives/`
+
+Go in the Backup menu, select the archive conresponding to the system backup and restore it. You should find back all your users, groups, domains, certs, ...
+
+Then select the archive(s) corresponding to your applications and restore them (one by one recommended).
+
+You should be good to go.
+</TabItem>
+
+<TabItem value="cli" label="From the command line">
+You don't need to do the postinstall.
+
+Proceed to a system updgrade via `sudo apt update && sudo apt upgrade`
+
+Go in the folder containing the archives.
+
+Restore the system part by `sudo yunohost backup restore Archive_containing_the_system_backup.tar --system`
+
+Restore the applications by `sudo  yunohost backup restore Archive_containing_the_apps_backup.tar --apps` (If you want to restore app by app, just add the app Id after --apps)
+
+You should be good to go.
+</TabItem>
+</Tabs>
+
 
 ## Merge 2 YunoHost servers
 
