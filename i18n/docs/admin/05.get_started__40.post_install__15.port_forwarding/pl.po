@@ -1,0 +1,136 @@
+# Copyright (C) 2026 YunoHost Contributors
+# This file is distributed under the same license as the YunoHost documentation package.
+#
+# 1Poireau <unpoireau@proton.me>, 2026.
+msgid ""
+msgstr ""
+"Project-Id-Version: YunoHost documentation VERSION\n"
+"POT-Creation-Date: 2026-01-04 16:21+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: pl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && "
+"(n%100<10 || n%100>=20) ? 1 : 2;\n"
+
+#. type: Yaml Front Matter Hash Value: description
+#: docs/admin/05.get_started/40.post_install/15.port_forwarding.mdx:1
+#, no-wrap
+msgid "Make your server accessible from outside your home"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: title
+#: docs/admin/05.get_started/40.post_install/15.port_forwarding.mdx:1
+#, no-wrap
+msgid "Configure port-forwarding"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/40.post_install/15.port_forwarding.mdx:7
+#, no-wrap
+msgid "If you are self-hosting at home and without a VPN, you will probably want to forward ports on your home router (\"Internet box\") if you want your server to be reachable from outside your local network. The sketch below tries to briefly summarize the role and necessity of port forwarding when setting up a server at home.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/40.post_install/15.port_forwarding.mdx:9
+#, no-wrap
+msgid "<Figure caption=\"Illustration of the importance of port-forwarding\" src=\"/img/portForwarding_en.png\" />\n"
+msgstr ""
+
+#. type: Title ###
+#: docs/admin/05.get_started/40.post_install/15.port_forwarding.mdx:10
+#, no-wrap
+msgid "0. Diagnose ports opened"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/40.post_install/15.port_forwarding.mdx:13
+#, no-wrap
+msgid "The diagnosis tool can be used to verify that all necessary ports are exposed to the Internet.\n"
+msgstr ""
+
+#. type: Title ###
+#: docs/admin/05.get_started/40.post_install/15.port_forwarding.mdx:14
+#, no-wrap
+msgid "1. Access your box/router administration interface"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/40.post_install/15.port_forwarding.mdx:17
+#, no-wrap
+msgid "Your box/router admin interface is usually reachable via [http://192.168.0.1](http://192.168.0.1) or [http://192.168.1.1](http://192.168.1.1). Then, you will probably need to authenticate yourself the credentials given by your internet server provider.\n"
+msgstr ""
+
+#. type: Title ###
+#: docs/admin/05.get_started/40.post_install/15.port_forwarding.mdx:18
+#, no-wrap
+msgid "2. Find the local IP of your server"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/40.post_install/15.port_forwarding.mdx:21
+#, no-wrap
+msgid "Identify the *local* IP of your server using one of the method listed [on the corresponding page](/admin/get_started/post_install/find_ip).\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/40.post_install/15.port_forwarding.mdx:23
+#, no-wrap
+msgid "A local IP address typically looks like `192.168.xx.yy`, or `10.0.xx.yy`.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/40.post_install/15.port_forwarding.mdx:25
+#, no-wrap
+msgid "The local IP address needs to be static, so that the port forwards that you are going to configure in the next step will always reach your server. You should go into your box/router and make sure that the local IP address of your server is static instead of dynamic.\n"
+msgstr ""
+
+#. type: Title ###
+#: docs/admin/05.get_started/40.post_install/15.port_forwarding.mdx:26
+#, no-wrap
+msgid "3. Forwarding ports"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/40.post_install/15.port_forwarding.mdx:29
+#, no-wrap
+msgid "In your router admin interface, look for something like \"router configuration\" or \"port forwarding\". The naming differs among the various kinds of router models.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/40.post_install/15.port_forwarding.mdx:31
+#, no-wrap
+msgid "Opening the ports listed below is necessary for the various services available in YunoHost to work. For each of them, the 'TCP' forwarding is needed. Some interfaces refer to 'external' and 'internal' ports: these are the same in our case.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/40.post_install/15.port_forwarding.mdx:35
+#, no-wrap
+msgid ""
+"- Web: `80` <small>(HTTP)</small>, `443` <small>(HTTPS)</small>\n"
+"- [SSH](/admin/command_line): `22`\n"
+"- [Email](/admin/email): `25`, `587` <small>(SMTP)</small>, `993` <small>(IMAP)</small>\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/40.post_install/15.port_forwarding.mdx:37
+#, no-wrap
+msgid "If you use both a modem and a router, then you need to do the following:\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/40.post_install/15.port_forwarding.mdx:40
+#, no-wrap
+msgid ""
+"1. first on the modem (the box closest to the internet) create rules to forward the above ports to your router;\n"
+"2. then on the router (the box between the modem and your devices) create rules to forward the above ports to the static IP address for your server.\n"
+msgstr ""
+
+#. type: Fenced div block (warning)
+#: docs/admin/05.get_started/40.post_install/15.port_forwarding.mdx:41
+#, no-wrap
+msgid "<FAIcon icon=\"fa-exclamation-triangle\"/> Many internet service providers (ISP) block outgoing traffic on port 25 by default, to fight spam. Port 25 is however necessary if you want your server to be able to send email. In other extreme cases, some ISP may not even allow to use port 80/443 (web) freely... Depending on the ISP, it might be possible to open them in the admin interface... Check [this page](/admin/get_started/providers/isp/) for more info.\n"
+msgstr ""

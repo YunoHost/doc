@@ -2,18 +2,21 @@
 # This file is distributed under the same license as the YunoHost documentation package.
 #
 # ButterflyOfFire <BoFFire@users.noreply.translate.yunohost.org>, 2025.
+# ButterflyOfFire <butterflyoffire@protonmail.com>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-01-09 18:09+0000\n"
+"Last-Translator: ButterflyOfFire <butterflyoffire@protonmail.com>\n"
+"Language-Team: Kabyle <https://translate.yunohost.org/projects/yunohost-doc/"
+"05get_started__10providers__20servers/kab/>\n"
 "Language: kab\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.14.2\n"
 
 #. type: Yaml Front Matter Hash Value: description
 #: docs/admin/05.get_started/02.why_should_you_not_host_yourself.mdx:1
@@ -21,7 +24,7 @@ msgstr ""
 #: docs/admin/05.get_started/10.providers/20.servers.mdx:1
 #, no-wrap
 msgid " "
-msgstr ""
+msgstr " "
 
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/05.get_started/10.providers/20.servers.mdx:1

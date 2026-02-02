@@ -1,31 +1,33 @@
 # Copyright (C) 2025 YunoHost Contributors
 # This file is distributed under the same license as the YunoHost documentation package.
 #
-# "José M." <correo@xmgz.eu>, 2025.
+# "José M." <correo@xmgz.eu>, 2025, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-01-23 09:27+0000\n"
+"Last-Translator: \"José M.\" <correo@xmgz.eu>\n"
+"Language-Team: Galician <https://translate.yunohost.org/projects/"
+"yunohost-doc/05get_started__20install_on__arm_board/gl/>\n"
 "Language: gl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.14.2\n"
 
 #. type: Yaml Front Matter Hash Value: description
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:1
 #, no-wrap
 msgid "Looks like a Raspberry Pi, isn't quite one"
-msgstr ""
+msgstr "Semella unha Raspberry Pi, pero non é unha"
 
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:1
 #, no-wrap
 msgid "On an ARM board"
-msgstr ""
+msgstr "Nunha placa ARM"
 
 #. type: Title ##
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:18
@@ -36,7 +38,7 @@ msgstr ""
 #: docs/admin/05.get_started/20.install_on/wsl.mdx:21
 #, no-wrap
 msgid "<FAIcon icon=\"fa-list-alt\"/> Pre-requisites"
-msgstr ""
+msgstr "<FAIcon icon=\"fa-list-alt\"/> Requerimentos"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:26
@@ -49,6 +51,17 @@ msgid ""
 "- An ethernet cable (RJ-45) to connect your server to your router.\n"
 "- A computer to read this guide, flash the image and access your server.\n"
 msgstr ""
+"- Unha placa ARM con un mínimo de 512MB de RAM\n"
+"- Alimentación eléctrica (cun adaptador ou cable USB) para a placa;\n"
+"- Tarxeta SD: 16GB de capacidade (mínimo), é moi recomendable que sexa "
+"[class \"A1\"](https://en.wikipedia.org/wiki/SD_card#Class) (como "
+"[esta tarxeta SanDisk A1](https://www.amazon.fr/SanDisk-microSDHC-Adaptateur-"
+"homologu%C3%A9e-Nouvelle/dp/B073JWXGNT/));\n"
+"- Empresa [provedora de internet razoable](/admin/get_started/providers/isp/)"
+", mellor se ten un ancho de banda de subida bo e sen límites\n"
+"- Un cable Ethernet (RJ-45) para conectar o servidor co encamiñador.\n"
+"- Unha computadora para ler esta guía, gravar a imaxe e acceder ao servidor."
+"\n"
 
 #. type: Fenced div block (warning)
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:27
@@ -58,36 +71,46 @@ msgid ""
 "\n"
 "Please follow the Armbian documentation first!\n"
 msgstr ""
+"Cada placa ARM é diferente e podería haber instrucións específicas para a "
+"túa.\n"
+"\n"
+"Primeiro le a documentación de Armbian.\n"
 
 #. type: Title ##
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:33
 #, no-wrap
 msgid "<FAIcon icon=\"fa-download\" /> Download the Armbian image"
-msgstr ""
+msgstr "<FAIcon icon=\"fa-download\" /> Descarga a imaxe Armbian"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:36
 #, no-wrap
 msgid "You should download the Armbian **Bookworm** (Debian 12) image from your vendor's or Armbian's website. \n"
 msgstr ""
+"Deberías descargar a imaxe de Armbian **Bookworm** (Debian 12) desde a web "
+"da marca da túa Armbian. \n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:39
 #, no-wrap
 msgid "  <Button url=\"https://www.armbian.com/download\" color=\"skyblue\"><SmallInline url=\"/img/icons/logo-armbian.png\" alt=\"armbian logo\"/> Armbian Download page</Button>\n"
 msgstr ""
+"  <Button url=\"https://www.armbian.com/download\" color=\"skyblue\""
+"><SmallInline url=\"/img/icons/logo-armbian.png\" alt=\"armbian logo\"/> "
+"páxina de Descargas Armbian</Button>\n"
 
 #. type: Title ##
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:43
 #, no-wrap
 msgid "<FAIcon icon=\"sim-card\"/> Flash the Armbian image"
-msgstr ""
+msgstr "<FAIcon icon=\"sim-card\"/> Grava a imaxe Armbian"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:46
 #, no-wrap
 msgid "Now that you downloaded the image of Armbian, you should flash it on a microSD card\n"
 msgstr ""
+"Unha vez descargada a imaxe Armbian, deberías gravala nunha tarxeta microSD\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:49
@@ -95,7 +118,7 @@ msgstr ""
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:46
 #, no-wrap
 msgid "<TabItem value=\"etcher\" label=\"With Etcher (recommended)\">\n"
-msgstr ""
+msgstr "<TabItem value=\"etcher\" label=\"Con Etcher (recomendado)\">\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:51
@@ -103,19 +126,21 @@ msgstr ""
 #, no-wrap
 msgid "Download <Link to=\"https://www.balena.io/etcher/\" target=\"_blank\">Etcher</Link> for your operating system and install it.\n"
 msgstr ""
+"Descarga <Link to=\"https://www.balena.io/etcher/\" target=\"_blank\""
+">Etcher</Link> para o teu sistema operativo e instálaa.\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:53
 #, no-wrap
 msgid "Plug your SD card, select your image and click \"Flash\"\n"
-msgstr ""
+msgstr "Conecta a tarxeta SD, selecciona a imaxe e preme en \"Gravar\"\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:55
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:52
 #, no-wrap
 msgid "![Etcher](/img/softwares/etcher.gif)\n"
-msgstr ""
+msgstr "![Etcher](/img/softwares/etcher.gif)\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:58
@@ -123,7 +148,7 @@ msgstr ""
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:55
 #, no-wrap
 msgid "<TabItem value=\"usbimager\" label=\"With USBimager\">\n"
-msgstr ""
+msgstr "<TabItem value=\"usbimager\" label=\"con USBimager\">\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:60
@@ -132,13 +157,15 @@ msgstr ""
 #, no-wrap
 msgid "Download [USBimager](https://bztsrc.gitlab.io/usbimager/) for your operating system and install it.\n"
 msgstr ""
+"Descarga [USBimager](https://bztsrc.gitlab.io/usbimager/) para o teu sistema "
+"operativo e instálaa.\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:62
 #: docs/admin/05.get_started/20.install_on/raspberry_pi.mdx:61
 #, no-wrap
 msgid "Plug your SD card, select your image and click \"Write\"\n"
-msgstr ""
+msgstr "Conecta a tarxeta SD, selecciona a imaxe e preme en \"Escribir\"\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:64
@@ -146,7 +173,7 @@ msgstr ""
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:61
 #, no-wrap
 msgid "![USBimager](/img/softwares/usbimager.png)\n"
-msgstr ""
+msgstr "![USBimager](/img/softwares/usbimager.png)\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:67
@@ -154,7 +181,7 @@ msgstr ""
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:64
 #, no-wrap
 msgid "<TabItem value=\"dd\" label=\"With dd\">\n"
-msgstr ""
+msgstr "<TabItem value=\"dd\" label=\"con dd\">\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:69
@@ -163,6 +190,11 @@ msgstr ""
 #, no-wrap
 msgid "If you are on GNU/Linux / macOS and know your way around command line, you may also flash your USB stick or SD card with `dd`. You can identify which device corresponds to your USB stick or SD card with `fdisk -l` or `lsblk`. A typical SD card name is something like `/dev/mmcblk0`. BE CAREFUL and make sure you got the right name.\n"
 msgstr ""
+"Se utilizas GNU/Linux / macOS e estás habituada a usar a liña de ordes, "
+"podes gravar a tarxeta SD ou memoria USB con `dd`. Podes identificar o "
+"dispositivo USB ou tarxeta SD con `f-disk -l` ou `lsblk`. O nome típico para "
+"as tarxetas SD é algo como `/dev/mmcblk0`. PON COIDADO e comproba que "
+"seleccionas o nome correcto.\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:71
@@ -170,14 +202,14 @@ msgstr ""
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:68
 #, no-wrap
 msgid "Then run:\n"
-msgstr ""
+msgstr "Despois executa:\n"
 
 #. type: Title ##
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:80
 #: docs/admin/05.get_started/20.install_on/raspberry_pi.mdx:78
 #, no-wrap
 msgid "<FAIcon icon=\"fa-plug\"/> Power up the board"
-msgstr ""
+msgstr "<FAIcon icon=\"fa-plug\"/> Acende a placa"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:87
@@ -189,15 +221,28 @@ msgid ""
 "- If you want to follow the initial boot, connect a screen and keyboard on your board.\n"
 "- Power up the board\n"
 msgstr ""
+"- Insire a tarxeta SD na placa\n"
+"- Conecta a placa por Ethernet ao encamiñador da casa\n"
+"    - Para usuarias con experiencia que usen a conexión WiFi, sigue a "
+"[documentación oficial]"
+"(https://docs.armbian.com/User-Guide_Autoconfig/#sample-config-file).\n"
+"- Se queres ver o inicio do sistema, conecta unha pantalla e teclado á túa "
+"placa.\n"
+"- Acende a placa\n"
 
 #. type: Title ##
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:88
 #, no-wrap
 msgid "<FAIcon icon=\"fa-terminal\"/> Connect to the board"
-msgstr ""
+msgstr "<FAIcon icon=\"fa-terminal\"/> Conectarse á placa"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:91
 #, no-wrap
 msgid "Next you need to [find the local IP address of your server](/admin/get_started/post_install/find_ip) to connect as root user [via SSH](/admin/command_line) with the temporary password `1234` (see [the Armbian doc](https://docs.armbian.com/User-Guide_Getting-Started/#how-to-login)).\n"
 msgstr ""
+"A continuación tes que [atopar o enderezo IP do teu servidor]"
+"(/admin/get_started/post_install/find_ip) para acceder como usuaria root "
+"[a través de SSH](/admin/command_line) co contrasinal temporal `1234`(le a "
+"[documentación Armbian]"
+"(https://docs.armbian.com/User-Guide_Getting-Started/#how-to-login)).\n"

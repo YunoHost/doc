@@ -1,0 +1,76 @@
+# Copyright (C) 2026 YunoHost Contributors
+# This file is distributed under the same license as the YunoHost documentation package.
+#
+# 1Poireau <unpoireau@proton.me>, 2026.
+msgid ""
+msgstr ""
+"Project-Id-Version: YunoHost documentation VERSION\n"
+"POT-Creation-Date: 2026-01-04 16:21+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: pl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && "
+"(n%100<10 || n%100>=20) ? 1 : 2;\n"
+
+#. type: Yaml Front Matter Hash Value: sidebar_label
+#: docs/admin/45.tutorials/65.sftp_on_apps.mdx:1
+#, no-wrap
+msgid "Access apps via SFTP"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: title
+#: docs/admin/45.tutorials/65.sftp_on_apps.mdx:1
+#, no-wrap
+msgid "Give SFTP permission to edit an app"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/65.sftp_on_apps.mdx:7
+#, no-wrap
+msgid "In YunoHost permission management web admin interface, you can specify which user can access your system through SFTP.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/65.sftp_on_apps.mdx:11
+#, no-wrap
+msgid ""
+"Go to : \n"
+"- Groups and permissions > Individual user permissions. \n"
+"- Click on add a permission and select SFTP\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/65.sftp_on_apps.mdx:13
+#, no-wrap
+msgid "However, those user are chrooted in their home directory for security reasons.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/65.sftp_on_apps.mdx:15
+#, no-wrap
+msgid "If you want to give access to a specific apps through SFTP, here are additional steps to do after giving the SFTP permission in the web interface.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/65.sftp_on_apps.mdx:19
+#, no-wrap
+msgid ""
+"In instructions below, \n"
+"- USER is the user to whom you wish to give permission to edit wordpress files.\n"
+"- `/var/www/wordpress/wp-config.php` must be replaced by the path your app config file. For example, for yeswiki (`/var/www/yeswiki/wakka.config.php`)\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/65.sftp_on_apps.mdx:38
+#, no-wrap
+msgid ""
+"Quick commands explanation :\n"
+"- `mkdir -p /PATH` creates a folder in the specified PATH\n"
+"- `touch` creates an empty file\n"
+"- `mount --bind` makes the contents of the source file or directory available at the target location without actually moving or copying the data.\n"
+"- `setfacl` set the file permissions\n"
+msgstr ""

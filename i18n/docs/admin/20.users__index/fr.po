@@ -1,15 +1,15 @@
 # Copyright (C) 2025 YunoHost Contributors
 # This file is distributed under the same license as the YunoHost documentation.
 #
-# ppr <pouetpouetratatouille@gmail.com>, 2025.
+# ppr <pouetpouetratatouille@gmail.com>, 2025, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: 2025-12-16 09:43+0000\n"
+"PO-Revision-Date: 2026-01-05 18:20+0000\n"
 "Last-Translator: ppr <pouetpouetratatouille@gmail.com>\n"
-"Language-Team: French <https://translate.yunohost.org/projects/yunohost-"
-"doc/20users__index/fr/>\n"
+"Language-Team: French <https://translate.yunohost.org/projects/yunohost-doc/"
+"20users__index/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -60,8 +60,15 @@ msgid ""
 "![User panel screenshot](/img/user_panel.jpg)\n"
 "The user portal, also called the SSO for 'Single Sign On' allows user to browse easily between the different apps they have access to. In particular, the term 'Single Sign On' comes from the fact that user only need to log in the portal to automatically be logged to all apps that require authentication (or at least those who are integrated with the SSO/LDAP, since this is sometimes technically complicated or not possible at all).\n"
 msgstr ""
-"![Capture d'écran du portail utilisateur](/img/user_panel.jpg)\n"
-"Le portail utilisateur, également appelé SSO pour 'Single Sign On', permet aux utilisateur⋅ice⋅s de naviguer facilement entre les différentes applications auxquelles ils ont accès. En particulier, le terme 'Single Sign On' vient du fait qu'il n'est nécessaire de se connecter au portail qu'une seule fois pour être automatiquement connecté à toutes les applications qui nécessitent une authentification (ou du moins celles qui sont intégrées avec le SSO/LDAP, car cela est parfois techniquement compliqué ou pas possible du tout).\n"
+"![Capture d'écran du portail utilisateur](/img/user_panel.jpg) \n"
+"Le portail utilisateur, également appelé SSO pour 'Single Sign On', permet "
+"aux utilisateur⋅ice⋅s de naviguer facilement entre les différentes "
+"applications auxquelles ils ont accès. En particulier, le terme 'Single Sign "
+"On' vient du fait qu'il n'est nécessaire de se connecter au portail qu'une "
+"seule fois pour être automatiquement connecté à toutes les applications qui "
+"nécessitent une authentification (ou du moins celles qui sont intégrées avec "
+"le SSO/LDAP, car cela est parfois techniquement compliqué ou pas possible du "
+"tout).\n"
 
 #. type: Plain text
 #: docs/admin/20.users/index.mdx:21
@@ -85,7 +92,10 @@ msgstr "Créer de nouveau comptes utilisateurs"
 #: docs/admin/20.users/index.mdx:29
 #, no-wrap
 msgid "Only the administrator can create new users. From the webadmin, open the `Users` menu and click on the `+ New user` main button. Fill in all the whole form.\n"
-msgstr "Uniquement les membres du groupe admin peuvent créer de nouveaux comptes. Depuis la webadmin, dans la section \"Comptes\", cliquer sur \"+ Nouveau compte\" puis remplir le formulaire.\n"
+msgstr ""
+"Uniquement les membres du groupe admin peuvent créer de nouveaux comptes. "
+"Depuis la webadmin, dans la section `Comptes`, cliquer sur `+ Ajouter un "
+"compte` puis remplir le formulaire.\n"
 
 #. type: Plain text
 #: docs/admin/20.users/index.mdx:31
@@ -107,15 +117,20 @@ msgstr "Finalisez la création de l'utilisateur en cliquant sur le bouton `Enreg
 
 #. type: Plain text
 #: docs/admin/20.users/index.mdx:39
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<Figure caption=\"From the main menu of the webadmin, open `Users`\" src=\"/img/webadmin/create_user_1.png\"/>\n"
 "<Figure caption=\"From the top of the users list, click on `+ New user`\" src=\"/img/webadmin/create_user_2.png\"/>\n"
 "<Figure caption=\"Fill in the form\" src=\"/img/webadmin/create_user_3.png\"/>\n"
 msgstr ""
-"<Figure caption=\"Dans le menu principal de l'administrateur Web, ouvrez `Comptes`\" src=\"/img/webadmin/create_user_1.png\"/>\n"
-"<Figure caption=\"En haut de la liste des utilisateurs, cliquez sur `+ Ajouter un compte`\" src=\"/img/webadmin/create_user_2.png\"/>\n"
-"<Figure caption=\"Remplissez le formulaire\" src=\"/img/webadmin/create_user_3.png\"/>\n"
+"<Figure caption="
+"\"Dans le menu principal de l'administration web, ouvrez `Comptes`\" src="
+"\"/img/webadmin/create_user_1.png\"/>\n"
+"<Figure caption="
+"\"En haut de la liste des utilisateurs, cliquez sur `+ Ajouter un compte`\" "
+"src=\"/img/webadmin/create_user_2.png\"/>\n"
+"<Figure caption=\"Remplissez le formulaire\" src="
+"\"/img/webadmin/create_user_3.png\"/>\n"
 
 #. type: Title ##
 #: docs/admin/20.users/index.mdx:40

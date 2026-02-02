@@ -1,40 +1,50 @@
 # Copyright (C) 2025 YunoHost Contributors
 # This file is distributed under the same license as the YunoHost documentation package.
 #
-# "José M." <correo@xmgz.eu>, 2025.
+# "José M." <correo@xmgz.eu>, 2025, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-01-25 07:27+0000\n"
+"Last-Translator: \"José M.\" <correo@xmgz.eu>\n"
+"Language-Team: Galician <https://translate.yunohost.org/projects/"
+"yunohost-doc/12webadmin/gl/>\n"
 "Language: gl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.14.2\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/12.webadmin.mdx:1
 #, no-wrap
 msgid "⭐ Webadmin interface"
-msgstr ""
+msgstr "⭐ Páxina web de Administración"
 
 #. type: Plain text
 #: docs/admin/12.webadmin.mdx:7
 #, no-wrap
 msgid "YunoHost has an administrator web interface. The other way to administrate your YunoHost install is through the [command line](/admin/command_line).\n"
 msgstr ""
+"YunoHost ten unha interface web para a administración. O outro xeito de "
+"xestionar a túa instalación YunoHost é usando a [liña de ordes]"
+"(/admin/command_line).\n"
 
 #. type: Plain text
 #: docs/admin/12.webadmin.mdx:9
 #, no-wrap
 msgid "The webadmin can be accessed at `https://yourdomain.tld/yunohost/admin` or using the local IP or global IP of your server (`https://1.2.3.4/yunohost/admin`)\n"
 msgstr ""
+"A administración web está accesible en `https://yourdomain.tld/yunohost/"
+"admin` ou usando o IP local ou IP pública do teu servidor "
+"(`https://1.2.3.4/yunohost/admin`)\n"
 
 #. type: Plain text
 #: docs/admin/12.webadmin.mdx:10
 #, no-wrap
 msgid "<Figure caption=\"Screenshot of YunoHost webadmin\" src=\"/img/webadmin/webadmin.jpg\" />\n"
 msgstr ""
+"<Figure caption=\"captura de pantalla da web de administración YunoHost\" "
+"src=\"/img/webadmin/webadmin.jpg\" />\n"

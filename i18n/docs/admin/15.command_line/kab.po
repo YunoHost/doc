@@ -2,15 +2,15 @@
 # This file is distributed under the same license as the YunoHost documentation package.
 #
 # ButterflyOfFire <BoFFire@users.noreply.translate.yunohost.org>, 2025.
+# ButterflyOfFire <butterflyoffire@protonmail.com>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: 2025-11-29 18:39+0000\n"
-"Last-Translator: ButterflyOfFire <BoFFire@users.noreply.translate.yunohost."
-"org>\n"
-"Language-Team: Kabyle <https://translate.yunohost.org/projects/yunohost-"
-"doc/15command_line/kab/>\n"
+"PO-Revision-Date: 2026-01-09 18:09+0000\n"
+"Last-Translator: ButterflyOfFire <butterflyoffire@protonmail.com>\n"
+"Language-Team: Kabyle <https://translate.yunohost.org/projects/yunohost-doc/"
+"15command_line/kab/>\n"
 "Language: kab\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -296,7 +296,7 @@ msgstr ""
 #: docs/admin/15.command_line.mdx:153
 #, no-wrap
 msgid "Example:\n"
-msgstr ""
+msgstr "Amedya:\n"
 
 #. type: Title ###
 #: docs/admin/15.command_line.mdx:158

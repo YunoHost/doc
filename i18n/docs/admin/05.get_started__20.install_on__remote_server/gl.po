@@ -1,19 +1,21 @@
 # Copyright (C) 2025 YunoHost Contributors
 # This file is distributed under the same license as the YunoHost documentation package.
 #
-# "José M." <correo@xmgz.eu>, 2025.
+# "José M." <correo@xmgz.eu>, 2025, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-01-25 07:27+0000\n"
+"Last-Translator: \"José M.\" <correo@xmgz.eu>\n"
+"Language-Team: Galician <https://translate.yunohost.org/projects/"
+"yunohost-doc/05get_started__20install_on__remote_server/gl/>\n"
 "Language: gl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.14.2\n"
 
 #. type: Title ##
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:18
@@ -24,19 +26,19 @@ msgstr ""
 #: docs/admin/05.get_started/20.install_on/wsl.mdx:21
 #, no-wrap
 msgid "<FAIcon icon=\"fa-list-alt\"/> Pre-requisites"
-msgstr ""
+msgstr "<FAIcon icon=\"fa-list-alt\"/> Requerimentos"
 
 #. type: Yaml Front Matter Hash Value: description
 #: docs/admin/05.get_started/20.install_on/remote_server.mdx:1
 #, no-wrap
 msgid "Cloud machines: VPS or dedicated servers"
-msgstr ""
+msgstr "Máquinas na nube: VPS ou servidores dedicados"
 
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/05.get_started/20.install_on/remote_server.mdx:1
 #, no-wrap
 msgid "On a remote server"
-msgstr ""
+msgstr "Nun servidor remoto"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/remote_server.mdx:18
@@ -45,15 +47,20 @@ msgid ""
 "- A dedicated or virtual private server with Debian 12 (Bookworm) <small>(with **kernel >= 6.1**)</small> preinstalled, 512MB RAM and 16GB capacity (at least)\n"
 "- A computer or a smartphone to read this guide and access your server.\n"
 msgstr ""
+"- Un servidor virtual privado dedicado con Debian 12 (Bookworm) <small>"
+"(con **kernel >= 6.1**)</small> preinstalado, 512MB RAM e capacidade de 16GB "
+"(polo menos)\n"
+"- Unha computadora ou móbil con internet para ler esta guía e acceder ao "
+"servidor.\n"
 
 #. type: Title ##
 #: docs/admin/05.get_started/20.install_on/remote_server.mdx:19
 #, no-wrap
 msgid "<FAIcon icon=\"fa-terminal\"/> Connect to the server"
-msgstr ""
+msgstr "<FAIcon icon=\"fa-terminal\"/> Acceder ao servidor"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/remote_server.mdx:22
 #, no-wrap
 msgid "You will need to connect to your server via `ssh`.\n"
-msgstr ""
+msgstr "Vas precisar acceder ao servidor vía `ssh`.\n"
