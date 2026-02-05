@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2026-01-04 16:21+0000\n"
+"POT-Creation-Date: 2026-02-05 14:55+0000\n"
 "PO-Revision-Date: 2026-01-04 10:27+0000\n"
 "Last-Translator: ppr <pouetpouetratatouille@gmail.com>\n"
 "Language-Team: French <https://translate.yunohost.org/projects/yunohost-"
@@ -130,8 +130,9 @@ msgstr "2. Déplacer les zones DNS"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/05.domains/dns_dynamicip.mdx:44
-#, no-wrap
-msgid "Copy the [DNS zones](/admin/get_started/post_install/dns_config), except for the NS fields, from the [registrar](#registrars) where you bought your domain name from to the dynamic DNS service you registrer at in step 1.\n"
+#, fuzzy, no-wrap
+#| msgid "Copy the [DNS zones](/admin/get_started/post_install/dns_config), except for the NS fields, from the [registrar](#registrars) where you bought your domain name from to the dynamic DNS service you registrer at in step 1.\n"
+msgid "Copy the [DNS zones](/admin/get_started/post_install/dns_config), except for the NS fields, from the registrar where you bought your domain name from to the dynamic DNS service you registrer at in step 1.\n"
 msgstr "Copiez les [zones DNS](/admin/get_started/post_install/dns_config), à l'exception des champs NS, depuis le [registrar](#registrars) auprès duquel vous avez acheté votre nom de domaine vers le service DNS dynamique auquel vous vous êtes inscrit à l'étape 1.\n"
 
 #. type: Title ####
@@ -142,8 +143,9 @@ msgstr "3. Basculer la gestion de votre nom de domaine vers le serveur DNS dynam
 
 #. type: Plain text
 #: docs/admin/45.tutorials/05.domains/dns_dynamicip.mdx:48
-#, no-wrap
-msgid "This step consists in declaring to your [registrar](#registrars) that the DNS service will now be managed by the DynDNS service provider.\n"
+#, fuzzy, no-wrap
+#| msgid "This step consists in declaring to your [registrar](#registrars) that the DNS service will now be managed by the DynDNS service provider.\n"
+msgid "This step consists in declaring to your registrar that the DNS service will now be managed by the DynDNS service provider.\n"
 msgstr "Cette étape consiste à déclarer à votre [registrar](#registrars) que le service DNS sera désormais géré par le fournisseur de services DynDNS.\n"
 
 #. type: Plain text
@@ -154,8 +156,9 @@ msgstr "Pour cela, déclarez d'abord dans le(s) champ(s) NS l'adresse IP fournie
 
 #. type: Plain text
 #: docs/admin/45.tutorials/05.domains/dns_dynamicip.mdx:52
-#, no-wrap
-msgid "Then, remove any other item in the [DNS zones](/admin/get_started/post_install/dns_config) (except the previous NS fields), from the [registrar](#registrars).\n"
+#, fuzzy, no-wrap
+#| msgid "Then, remove any other item in the [DNS zones](/admin/get_started/post_install/dns_config) (except the previous NS fields), from the [registrar](#registrars).\n"
+msgid "Then, remove any other item in the [DNS zones](/admin/get_started/post_install/dns_config) (except the previous NS fields), from the registrar.\n"
 msgstr "Ensuite, supprimez tous les autres éléments dans les [zones DNS](/admin/get_started/post_install/dns_config) (à l'exception des champs NS précédents) du [registrar](#registrars).\n"
 
 #. type: Title ####
