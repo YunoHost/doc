@@ -307,7 +307,7 @@ msgstr "Les panneaux de configuration ne sont *pas* destinés à modifier tous l
 #: docs/admin/30.apps/index.mdx:136
 #, no-wrap
 msgid "The configuration panels are accessible in the webadmin in their operations page, trough the <Highlight no_break={true} color='darkblue'><FAIcon icon=\"fa-cogs\"/> Config panel</Highlight> button.\n"
-msgstr "Les panneaux de configuration sont accessibles dans la webadmin sur leur page d'opérations, via le bouton <Highlight no_break={true} color=“darkblue”><FAIcon icon=\"fa-cogs\"/> Panneau de configuration</Highlight>.\n"
+msgstr "Les panneaux de configuration sont accessibles dans la webadmin sur leur page d'opérations, via le bouton <Highlight no_break={true} color='darkblue'><FAIcon icon=\"fa-cogs\"/> Panneau de configuration</Highlight>.\n"
 
 #. type: Plain text
 #: docs/admin/30.apps/index.mdx:138

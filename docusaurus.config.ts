@@ -77,8 +77,8 @@ const config: Config = {
     [
       require.resolve('docusaurus-lunr-search'),
       {
-        // JS lib 'lunr-language' doesn't support gl
-        languages: enabled_locales.filter(function (l) { return l != "gl" }),
+        // JS lib 'lunr-language' doesn't support gl or kab
+        languages: enabled_locales.filter(function (l) { return (l != "gl" && l != "kab") }),
       }
     ],
   ],
