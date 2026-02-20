@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-11 19:20+0000\n"
 "PO-Revision-Date: 2026-02-20 19:27+0000\n"
-"Last-Translator: Julie Boissière-Vasseur <jboisseur@posteo.net>\n"
+"Last-Translator: 1Poireau <unpoireau@proton.me>\n"
 "Language-Team: French <https://translate.yunohost.org/projects/yunohost-doc/"
 "02what_is_yunohost__index/fr/>\n"
 "Language: fr\n"
@@ -30,7 +30,13 @@ msgstr "Qu’est-ce que YunoHost ?"
 #: docs/admin/02.what_is_yunohost/index.mdx:9
 #, no-wrap
 msgid "YunoHost is an **operating system** aiming to **simplify server administration** and therefore democratize [self-hosting](/admin/about_self_hosting) while making sure it stays reliable, secure, ethical and lightweight. It is a copylefted libre software project maintained by volunteers. Technically, it can be seen as a server distribution based on [Debian GNU/Linux](https://debian.org).\n"
-msgstr "YunoHost est un **système d’exploitation** qui vise à simplifier autant que possible **l'administration d'un serveur** pour ainsi démocratiser [l’auto-hébergement](/admin/about_self_hosting) tout en restant fiable, sécurisé, éthique et léger. C'est un projet de logiciel libre maintenu par des bénévoles. Techniquement, il peut être vu comme une distribution pour serveur, basée sur [Debian GNU/Linux](https://debian.org).\n"
+msgstr ""
+"YunoHost est un **système d’exploitation** qui vise à simplifier**"
+"l'administration d'un serveur** pour ainsi démocratiser [l’auto-hébergement]"
+"(/admin/about_self_hosting) tout en restant fiable, sécurisé, éthique et "
+"léger. C'est un projet de logiciel libre maintenu par des bénévoles. "
+"Techniquement, il peut être vu comme une distribution pour serveur, basée "
+"sur [Debian GNU/Linux](https://debian.org).\n"
 
 #. type: Plain text
 #: docs/admin/02.what_is_yunohost/index.mdx:11
@@ -102,7 +108,11 @@ msgstr ""
 #: docs/admin/02.what_is_yunohost/index.mdx:35
 #, no-wrap
 msgid "All that was needed was an admin interface for Beudbeud's server to make something usable, so Kload decided to develop one. Finally, after automating several configs and packaging in some web apps, YunoHost v1 was finished.\n"
-msgstr "Il ne manquait en fait qu’une interface d’administration au serveur de Beudbeud pour en faire quelque chose d’exploitable, alors Kload a décidé de la développer. Finalement, après l’automatisation de quelques configurations et le packaging de quelques applications web, la première version de YunoHost était sortie.\n"
+msgstr ""
+"Il ne manquait en fait qu’une interface d’administration au serveur de "
+"Beudbeud pour en faire quelque chose d’exploitable, alors Kload a décidé de "
+"la développer. Finalement, après l’automatisation de quelques configurations "
+"et le packaging de quelques applications web, YunoHost v1 était sortie.\n"
 
 #. type: Plain text
 #: docs/admin/02.what_is_yunohost/index.mdx:37
