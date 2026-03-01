@@ -19,6 +19,7 @@ To validate your setup:
 - route ports according to [this documentation](/admin/get_started/post_install/port_forwarding) ;
 - carefully configure mail DNS records according to [this documentation](/admin/get_started/post_install/dns_config) ;
 - test your configuration using the diagnostic features (<HighlightWebAdmin/> → <HighlightDiagnosis/> → <Highlight no_break={true} color='grey'><FAIcon icon="fa-envelope"/> Email</Highlight> ). You can also use [mail-tester.com](https://mail-tester.com), a score of at least 8~9/10 is a reasonnable goal <small>(be careful : only 3 tests per domain per day are allowed)</small>
+- run `yunohost tools regen-conf -n -d` to see any changes made since the original install vs how a current configuration would look. Note any relevant differences. Then run `yunohost tools regen-conf --force`, and manually reapply noted config.
 
 ## Email clients
 
