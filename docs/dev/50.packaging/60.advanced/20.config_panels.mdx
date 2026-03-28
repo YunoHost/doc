@@ -226,7 +226,10 @@ choices = []
 
 ```bash
 get__plugins() {
-    echo "choices: [$(ls $install_dir/plugins/ | tr '\n' ',')]"
+    cat << EOF
+choices: [$(ls $install_dir/plugins/ | tr '\n' ',')]
+value: "${plugins}"
+EOF
 }
 ```
 
