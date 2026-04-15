@@ -431,6 +431,7 @@ The infos are used by [this script](https://github.com/YunoHost/apps_tools/blob/
 
 The script will rely on the code repo specified in `code` in the upstream section of the manifest.
 
+##### Strategy
 The `autoupdate.strategy` is expected to be constructed like this: `latest_<gitforge>_<strategy>`
 
 You need to replace the `<gitforge>` in the strategy name by either `github`, `gitlab`, `gitea` or `forgejo`, as the autoupdater supports:
@@ -447,8 +448,13 @@ And choose one strategy in the following ones:
 - `latest_<gitforge>_tag` : look for the latest tag (by sorting tags and finding the "largest" version). Then using the corresponding tar.gz url. Tags containing `rc`, `beta`, `alpha`, `start` are ignored, and actually any tag which doesn't look like `x.y.z` or `vx.y.z`
 - `latest_<gitforge>_commit` : will use the latest commit on GitHub, and the corresponding tarball. If this is used for the 'main' source, it will also assume that the version is YYYY.MM.DD corresponding to the date of the commit.
 
+##### Specific branch
+You might want the autoupdater to check a specific branch of the upstream repository. In this case, make use of the optional `branch` property, e.g. `autoupdate.branch = "other_branch_than_default"`.
+
+##### Upstream repository
 It is also possible to define `autoupdate.upstream` to use a different Git repository instead of the code repository from the upstream section of the manifest. This can be useful when, for example, the app uses other assets such as plugin from a different repository.
 
+##### Regex to match upstream versioning
 If the upstream project provides non-standard tag or release names, you can fix this, with a regex with a matching group.
 
 For example, if tags look like `release-v4.1`, put:
@@ -459,6 +465,7 @@ autoupdate.version_regex = "^release-v(.*)$"
 
 And the autoupdater will use the matched group (here: `4.1`) as the version.
 
+##### Testing the autoupdate configuration locally
 You can make sure that your autoupdate strategy is working well immediately (without waiting for the next check on the infra) by doing the following:
 
 1. Clone the apps_tools repository: `https://github.com/YunoHost/apps_tools`
