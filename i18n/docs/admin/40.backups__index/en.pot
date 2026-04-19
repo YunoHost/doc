@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2026-01-04 16:21+0000\n"
+"POT-Creation-Date: 2026-04-19 08:39+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -76,7 +76,7 @@ msgstr ""
 #. type: Plain text
 #: docs/admin/40.backups/index.mdx:13
 #, no-wrap
-msgid "YunoHost comes with a backup system, that allows you to backup (and restore) system configurations and data (e.g. emails) and apps if they support it.\n"
+msgid "YunoHost comes with a backup system that allows you to back up (and restore) system configurations and data (e.g. emails) and apps, if they support it.\n"
 msgstr ""
 
 #. type: Plain text
@@ -88,7 +88,7 @@ msgstr ""
 #. type: Plain text
 #: docs/admin/40.backups/index.mdx:17
 #, no-wrap
-msgid "The current default method consists in creating a `.tar` archive containing all relevant files.\n"
+msgid "The current default method consists of creating a `.tar` archive containing all relevant files.\n"
 msgstr ""
 
 #. type: Title ####
@@ -100,7 +100,7 @@ msgstr ""
 #. type: Plain text
 #: docs/admin/40.backups/index.mdx:24
 #, no-wrap
-msgid "You can easily create backup archives from the webadmin by going to `Backups > Local storage` and clicking on `New backup`. You will then be asked to select which configuration, data and apps you want to backup.\n"
+msgid "You can easily create backup archives from the webadmin by going to `Backups > Local storage` and clicking on `New backup`. You will then be asked to select which configuration, data and apps you want to back up.\n"
 msgstr ""
 
 #. type: Plain text
@@ -124,31 +124,31 @@ msgstr ""
 #. type: Plain text
 #: docs/admin/40.backups/index.mdx:39
 #, no-wrap
-msgid "- Backing up only apps\n"
+msgid "- Backing up only apps:\n"
 msgstr ""
 
 #. type: Plain text
 #: docs/admin/40.backups/index.mdx:45
 #, no-wrap
-msgid "- Backing up only two apps (wordpress and shaarli)\n"
+msgid "- Backing up only two apps (WordPress and shaarli):\n"
 msgstr ""
 
 #. type: Plain text
 #: docs/admin/40.backups/index.mdx:51
 #, no-wrap
-msgid "- Backing up only emails\n"
+msgid "- Backing up only emails:\n"
 msgstr ""
 
 #. type: Plain text
 #: docs/admin/40.backups/index.mdx:57
 #, no-wrap
-msgid "- Backing up emails and wordpress\n"
+msgid "- Backing up emails and WordPress:\n"
 msgstr ""
 
 #. type: Plain text
 #: docs/admin/40.backups/index.mdx:63
 #, no-wrap
-msgid "For more information and options about backup creation, consult `yunohost backup create --help`. You can also list the system parts that can be backed up with `yunohost hook list backup`.\n"
+msgid "For more information and options regarding backup creation, consult `yunohost backup create --help`. You can also list the system parts that can be backed up with `yunohost hook list backup`.\n"
 msgstr ""
 
 #. type: Title ###
@@ -208,13 +208,13 @@ msgstr ""
 #. type: Fenced div block (caution)
 #: docs/admin/40.backups/index.mdx:104
 #, no-wrap
-msgid "Don't forget to store your backup in a different place to your server.\n"
+msgid "Don't forget to store your backup in a different location from your server.\n"
 msgstr ""
 
 #. type: Fenced div block (info)
 #: docs/admin/40.backups/index.mdx:108
 #, no-wrap
-msgid "If you want, you can connect an external disk to your server so that the archives arrive directly on it. See this guide to [Adding external storage to your server](/admin/tutorials/external_storage)\n"
+msgid "If you want, you can connect an external disk to your server so that the archives are saved directly to it. See this guide on [adding external storage to your server](/admin/tutorials/external_storage).\n"
 msgstr ""
 
 #. type: Title ###
@@ -226,7 +226,7 @@ msgstr ""
 #. type: Plain text
 #: docs/admin/40.backups/index.mdx:115
 #, no-wrap
-msgid "You should regularly test your backups by at least listing the contents of the archives and checking the size of the associated data. It is best to practice restoring regularly.\n"
+msgid "You should regularly test your backups by at least listing the contents of the archives and checking the size of the associated data. It is best to practice restoration regularly.\n"
 msgstr ""
 
 #. type: Title ###
@@ -262,13 +262,13 @@ msgstr ""
 #. type: Plain text
 #: docs/admin/40.backups/index.mdx:146
 #, no-wrap
-msgid "From the command line, you can run `yunohost backup list` to get the available archive names. They are basically their file name without extension.\n"
+msgid "From the command line, you can run `yunohost backup list` to get the available archive names. They are basically their filenames without extensions.\n"
 msgstr ""
 
 #. type: Plain text
 #: docs/admin/40.backups/index.mdx:148
 #, no-wrap
-msgid "You can then run `yunohost backup restore <archivename>` (hence without its `.tar` extension) to restore an archive. As for `yunohost backup create`, this will restore everything in the archive by default. If you want to restore only specific items, you can use something like `yunohost backup restore <archivename> --apps wordpress`, which will restore only the wordpress app.\n"
+msgid "You can then run `yunohost backup restore <archivename>` (hence without its `.tar` extension) to restore an archive. As for `yunohost backup create`, this will restore everything in the archive by default. If you want to restore only specific items, you can use something like `yunohost backup restore <archivename> --apps wordpress`, which will restore only the WordPress app.\n"
 msgstr ""
 
 #. type: Fenced div block (tip)
@@ -280,7 +280,7 @@ msgstr ""
 #. type: Plain text
 #: docs/admin/40.backups/index.mdx:157
 #, no-wrap
-msgid "To restore an app, the domain on which it was installed should already be configured (or you need to restore the corresponding system configuration). You also cannot restore an app which is already installed... which means that to restore an old version of an app, you must first uninstall it.\n"
+msgid "To restore an app, the domain on which it was installed should already be configured (or you need to restore the corresponding system configuration). You also cannot restore an app that is already installed... which means that to restore an old version of an app, you must first uninstall it.\n"
 msgstr ""
 
 #. type: Title ####
@@ -310,6 +310,6 @@ msgstr ""
 #. type: Plain text
 #: docs/admin/40.backups/index.mdx:173
 #, no-wrap
-msgid "You can use the `scp` (a command built on `ssh`) to copy files between two machines from CLI. For example for a Linux terminal:\n"
+msgid "You can use `scp` (a command built on `ssh`) to copy files between two machines from the CLI. For example, for a Linux terminal:\n"
 msgstr ""
 

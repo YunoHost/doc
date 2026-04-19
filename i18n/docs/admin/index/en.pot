@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2026-01-04 16:21+0000\n"
+"POT-Creation-Date: 2026-04-19 08:39+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -70,7 +70,7 @@ msgstr ""
 #. type: Plain text
 #: docs/admin/index.mdx:35
 #, no-wrap
-msgid "Are you **new to self-hosting and servers in general**? We recommend to take it slow and go through the pages presenting [self-hosting](/admin/about_self_hosting), the [different modes](/admin/get_started/methods) and [other](/admin/get_started/why_should_you_not_host_yourself) [things](/category/providers) you should know prior to jumping into the action! \n"
+msgid "Are you **new to self-hosting and servers in general**? We recommend taking it slow and go through the pages presenting [self-hosting](/admin/about_self_hosting), the [different modes](/admin/get_started/methods) and [other](/admin/get_started/why_should_you_not_host_yourself) [things](/category/providers) you should know prior to jumping into the action!\n"
 msgstr ""
 
 #. type: Plain text
@@ -91,7 +91,7 @@ msgstr ""
 #. type: Plain text
 #: docs/admin/index.mdx:45
 #, no-wrap
-msgid "Finally, you can **support the project** or get involve in [different ways](/dev):\n"
+msgid "Finally, you can **support the project** or get involved in [different ways](/dev):\n"
 msgstr ""
 
 #. type: Plain text

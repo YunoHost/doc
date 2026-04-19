@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2026-01-04 16:21+0000\n"
+"POT-Creation-Date: 2026-04-19 08:39+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -179,7 +179,7 @@ msgstr ""
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/_configuration.mdx:79
 #, no-wrap
-msgid "The first user is now created at this stage. You should pick a username and a reasonably complex password. (We cannot stress enough that the password should be **robust**!) This user will be added to the Admins group, and will therefore be able to access the user portal, the web admin interface, and connect [via **SSH**](/admin/command_line) or [**SFTP**](/admin/tutorials/filezilla). Admins will also receive emails sent to `root@yourdomain.tld` and `admin@yourdomain.tld`: these emails may be used to send technical informations or alerts. You can later add additional users, which you can also add to the Admins group.\n"
+msgid "The first user is now created at this stage. You should pick a username and a reasonably complex password. (We cannot stress enough that the password should be **robust**!) This user will be added to the Admins group, and will therefore be able to access the user portal, the web admin interface, and connect [via **SSH**](/admin/command_line) or [**SFTP**](/admin/tutorials/filezilla). Admins will also receive emails sent to `root@yourdomain.tld` and `admin@yourdomain.tld`: these emails may be used to send technical information or alerts. You can later add additional users, which you can also add to the Admins group.\n"
 msgstr ""
 
 #. type: Plain text
@@ -281,5 +281,5 @@ msgstr ""
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/_configuration.mdx:145
 #, no-wrap
-msgid "You now have a pretty well configured server. If you're new to YunoHost, we recommend to have a look at [the guided tour](/admin/webadmin). You should also be able to [install your favourite applications](https://apps.yunohost.org/). Don't forget to [plan backups](/admin/backups) !\n"
+msgid "You now have a pretty well configured server. If you're new to YunoHost, we recommend having a look at [the guided tour](/admin/webadmin). You should also be able to [install your favourite applications](https://apps.yunohost.org/). Don't forget to [plan backups](/admin/backups) !\n"
 msgstr ""
