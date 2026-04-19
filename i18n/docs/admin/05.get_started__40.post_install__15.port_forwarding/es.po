@@ -133,7 +133,7 @@ msgstr ""
 #, fuzzy, no-wrap
 #| msgid "<FAIcon icon=\"fa-exclamation-triangle\"/> Some internet service providers block port 25 (mail SMTP) by default to fight spam. Some other ISP don't allow to use port 80/443 (web) freely, though it's less likely. Depending on the ISP, it might be possible to open them in the admin interface... Check [this page](/admin/get_started/providers/isp/) for more info.\n"
 msgid "<FAIcon icon=\"fa-exclamation-triangle\"/> Many internet service providers (ISP) block outgoing traffic on port 25 by default, to fight spam. Port 25 is however necessary if you want your server to be able to send email. In other extreme cases, some ISP may not even allow to use port 80/443 (web) freely... Depending on the ISP, it might be possible to open them in the admin interface... Check [this page](/admin/get_started/providers/isp/) for more info.\n"
-msgstr "<FAIcon icon=\"fa-exclamation-triangle\"/> Algunos proveedores de acceso a Internet bloquean el puerto 25 (mail SMTP) por defecto para luchar con el spam. Otros (más escasos) no permiten utilizar libremente los puertos 80/443. Dependiendo de tu proveedor, puede ser posible de abrir estos puertos en la interfaz... Ver [esta página](/admin/get_started/providers/isp/) por más informaciones.\n"
+msgstr "<FAIcon icon=\"fa-exclamation-triangle\"/> Algunos proveedores de acceso a Internet bloquean el puerto 25 (mail SMTP) por defecto para luchar con el spam. Otros (más escasos) no permiten utilizar libremente los puertos 80/443. Dependiendo de tu proveedor, puede ser posible abrir estos puertos en la interfaz... Ver [esta página](/admin/get_started/providers/isp/) para más información.\n"
 
 #, no-wrap
 #~ msgid "Automatic port forwarding / UPnP"

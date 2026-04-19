@@ -44,7 +44,7 @@ To run its tests, package check uses a LXC container to manipulate the package i
 
 ### Package check's `tests.toml`
 
-Package check interfaces with your app's `tests.toml` which allows to control a few things about which tests are run - though it is usually pretty empty as many things can be deduced from the app's manifest.
+Package check interfaces with your app's `tests.toml` which allows you to control a few things about which tests are run - though it is usually pretty empty as many things can be deduced from the app's manifest.
 
 More info about the syntax here are also available [in the README](https://github.com/YunoHost/package_check#teststoml-syntax)
 
@@ -83,4 +83,4 @@ Constrain 1 : Gitlab-CI or other similar solutions are mostly based around Docke
 
 Constrain 2 : Our test workflow is somewhat complex and we have 400+ apps to maintain. It's not acceptable to have to duplicate/maintain the CI logic in app each repository, so we need some sort of repo that handles the CI logic, while still being to supersed some behavior from the app repo itself. Gitlab-CI has some syntax which can allow this, but this remains quite laborious.
 
-Constrain 3 : Having a common job queue/dashboard UI accross all app. In the Gitlab-CI paradigm, each repository has its own job queue/dashboard UI, but this is not really convenient.
+Constrain 3 : Having a common job queue/dashboard UI across all apps. In the Gitlab-CI paradigm, each repository has its own job queue/dashboard UI, but this is not really convenient.
