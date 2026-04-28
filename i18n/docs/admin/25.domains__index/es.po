@@ -2,24 +2,27 @@
 # This file is distributed under the same license as the YunoHost documentation.
 #
 # Languages add-on <noreply-addon-languages@weblate.org>, 2025.
+# cri <cri@disroot.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-03-13 10:07+0000\n"
+"Last-Translator: cri <cri@disroot.org>\n"
+"Language-Team: Spanish <https://translate.yunohost.org/projects/yunohost-doc/"
+"25domains__index/es/>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.14.2\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/25.domains/index.mdx:1
 #, no-wrap
 msgid "🌐 Domains"
-msgstr ""
+msgstr "🌐 Dominios"
 
 #. type: Plain text
 #: docs/admin/25.domains/index.mdx:9
@@ -69,6 +72,11 @@ msgstr ""
 #, no-wrap
 msgid "In order to make self-hosting as accessible as possible, the YunoHost Project provides a *free* and *automatically configured* domain name service. By using this service, you won't have to [configure DNS records](/admin/get_started/post_install/dns_config) yourself, which can be tedious and technical.\n"
 msgstr ""
+"De manera de hacer del auto-alojamiento lo más accesible posible, YunoHost "
+"brinda *gratuita* y *automáticamente* un servicio de dominio personalizado. "
+"Utilizando este servicio, no tendrás que [configurar registros DNS]"
+"(/admin/get_started/post_install/dns_config) por tu cuenta, lo que puede ser "
+"algo tedioso y técnico.\n"
 
 #. type: Plain text
 #: docs/admin/25.domains/index.mdx:26
