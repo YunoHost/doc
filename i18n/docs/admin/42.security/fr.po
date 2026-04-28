@@ -5,14 +5,15 @@
 #
 # Julie Boissière-Vasseur <jboisseur@posteo.net>, 2025.
 # ppr <pouetpouetratatouille@gmail.com>, 2025, 2026.
+# tituspijean <tituspijean@yunohost.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-04-19 08:39+0000\n"
-"PO-Revision-Date: 2026-01-05 18:09+0000\n"
-"Last-Translator: ppr <pouetpouetratatouille@gmail.com>\n"
-"Language-Team: French <https://translate.yunohost.org/projects/yunohost-"
-"doc/42security/fr/>\n"
+"PO-Revision-Date: 2026-04-19 09:16+0000\n"
+"Last-Translator: tituspijean <tituspijean@yunohost.org>\n"
+"Language-Team: French <https://translate.yunohost.org/projects/yunohost-doc/"
+"42security/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -34,18 +35,7 @@ msgstr "Lorsque vous réfléchissez et discutez de la sécurité, que ce soit da
 
 #. type: Plain text
 #: docs/admin/42.security.mdx:19
-#, fuzzy, no-wrap
-#| msgid ""
-#| "YunoHost is developped with security in mind, and designing good tradeoff between security and usability. Here's a non-exhaustive list of security aspects that the project is implementing:\n"
-#| "- a firewall based on `nftables` to restrict incoming traffic to relevant ports ;\n"
-#| "- `fail2ban`, a software that automatically rejects traffic from malicious IPs trying to brute force SSH and other services ;\n"
-#| "- using [Mozilla's recommendations for NGINX, Postfix, Dovecot, SSH ciphers etc.](https://wiki.mozilla.org/Security/Server_Side_TLS) ;\n"
-#| "- checking that user password/passphrase are not too simple when definining them ;\n"
-#| "- hashing user passwords (salted SHA512 in LDAP for example) ;\n"
-#| "- being vigilant on UNIX file/dir permissions accross the whole system ;\n"
-#| "- apps are typically ran using a dedicated user, and with [restricted capabilities](https://man7.org/linux/man-pages/man7/capabilities.7.html) ;\n"
-#| "- auto-redacting sensitive informations from YunoHost operation logs and when sharing them with Yunopaste ;\n"
-#| "- ...\n"
+#, no-wrap
 msgid ""
 "YunoHost is developed with security in mind, and designs good tradeoffs between security and usability. Here's a non-exhaustive list of security aspects that the project is implementing:\n"
 "- a firewall based on `nftables` to restrict incoming traffic to relevant ports ;\n"
@@ -58,28 +48,33 @@ msgid ""
 "- auto-redacting sensitive information from YunoHost operation logs and when sharing them with Yunopaste ;\n"
 "- ...\n"
 msgstr ""
-"YunoHost est développé dans un souci de sécurité, en recherchant un bon compromis entre sécurité et facilité d'utilisation. Voici une liste non exhaustive des aspects liés à la sécurité que le projet met en œuvre :\n"
-"- un pare-feu basé sur `nftables` pour limiter le trafic entrant aux ports concernés ;\n"
-"- `fail2ban`, un logiciel qui rejette automatiquement le trafic provenant d'adresses IP malveillantes qui tentent de forcer SSH et d'autres services ;\n"
-"- l'utilisation des [recommandations de Mozilla pour NGINX, Postfix, Dovecot, les chiffrements SSH, etc.](https://wiki.mozilla.org/Security/Server_Side_TLS) ;\n"
-"- la vérification que les mots de passe/phrases de passe des utilisateurs ne sont pas trop simples lors de leur définition ;\n"
-"- le hachage des mots de passe des utilisateurs (SHA512 salé dans LDAP par exemple) ;\n"
-"- être vigilant sur les permissions des fichiers/répertoires UNIX sur l'ensemble du système ;\n"
-"- les applications sont généralement exécutées à l'aide d'un utilisateur dédié et avec des [capacités restreintes](https://man7.org/linux/man-pages/man7/capabilities.7.html) ;\n"
-"- supprimer automatiquement les informations sensibles des journaux d'exploitation de YunoHost et lors de leur partage avec Yunopaste ;\n"
+"YunoHost est développé dans un souci de sécurité, en recherchant un bon "
+"compromis entre sécurité et facilité d'utilisation. Voici une liste non "
+"exhaustive des aspects liés à la sécurité que le projet met en œuvre :\n"
+"- un pare-feu basé sur `nftables` pour limiter le trafic entrant aux ports "
+"concernés ;\n"
+"- `fail2ban`, un logiciel qui rejette automatiquement le trafic provenant "
+"d'adresses IP malveillantes qui tentent de forcer SSH et d'autres services ;"
+"\n"
+"- l'utilisation des [recommandations de Mozilla pour NGINX, Postfix, "
+"Dovecot, les chiffrements SSH, etc.]"
+"(https://wiki.mozilla.org/Security/Server_Side_TLS) ;\n"
+"- la vérification que les mots de passe/phrases de passe des utilisateurs ne "
+"sont pas trop simples lors de leur définition ;\n"
+"- le hachage des mots de passe des utilisateurs "
+"(SHA512 salé dans LDAP par exemple) ;\n"
+"- être vigilant sur les permissions des fichiers/répertoires UNIX sur "
+"l'ensemble du système ;\n"
+"- les applications sont généralement exécutées à l'aide d'un utilisateur "
+"dédié et avec des [capacités restreintes]"
+"(https://man7.org/linux/man-pages/man7/capabilities.7.html) ;\n"
+"- supprimer automatiquement les informations sensibles des journaux "
+"d'exploitation de YunoHost et lors de leur partage avec Yunopaste ;\n"
 "- ...\n"
 
 #. type: Plain text
 #: docs/admin/42.security.mdx:27
-#, fuzzy, no-wrap
-#| msgid ""
-#| "In addition, the project has mid-term goals to implement:\n"
-#| "- [password self-reset for users](https://github.com/YunoHost/issues/issues/878) ;\n"
-#| "- [automatic warnings about vulnerabilities](https://github.com/YunoHost/yunohost/pull/2077) <small>(via the Diagnosis, not via the forum or social media)</small> ;\n"
-#| "- supporting [OIDC](https://github.com/YunoHost/yunohost/pull/2149) and [2FA](https://github.com/YunoHost/issues/issues/238) ;\n"
-#| "- better support for SSH keys, in particular [making them configurable from the webadmin](https://github.com/YunoHost/issues/issues/175) ;\n"
-#| "- further constrain and limit application capabilities to only what they need (cf. packaging v3) ;\n"
-#| "- ...\n"
+#, no-wrap
 msgid ""
 "In addition, the project has mid-term goals to implement:\n"
 "- [password self-reset for users](https://github.com/YunoHost/issues/issues/878) ;\n"
@@ -90,11 +85,19 @@ msgid ""
 "- ...\n"
 msgstr ""
 "En outre, le projet a des objectifs à moyen terme afin de mettre en œuvre :\n"
-"- [la réinitialisation automatique du mot de passe pour les utilisateurs](https://github.com/YunoHost/issues/issues/878) ;\n"
-"- [l'alerte automatique en cas de vulnérabilité](https://github.com/YunoHost/yunohost/pull/2077) <small>(via le Diagnostic, et non via le forum ou les réseaux sociaux)</small> ;\n"
-"- la prise en charge de [OIDC](https://github.com/YunoHost/yunohost/pull/2149) et [2FA](https://github.com/YunoHost/issues/issues/238) ;\n"
-"- une meilleure prise en charge des clés SSH, en particulier [en les rendant configurables depuis l'administrateur web](https://github.com/YunoHost/issues/issues/175) ;\n"
-"- restreindre et limiter davantage les capacités des applications à ce dont elles ont besoin (cf. packaging v3) ;\n"
+"- [la réinitialisation automatique du mot de passe pour les utilisateurs]"
+"(https://github.com/YunoHost/issues/issues/878) ;\n"
+"- [l'alerte automatique en cas de vulnérabilité]"
+"(https://github.com/YunoHost/yunohost/pull/2077) <small>"
+"(via le Diagnostic, et non via le forum ou les réseaux sociaux)</small> ;\n"
+"- la prise en charge de [OIDC]"
+"(https://github.com/YunoHost/yunohost/pull/2149) et [2FA]"
+"(https://github.com/YunoHost/issues/issues/238) ;\n"
+"- une meilleure prise en charge des clés SSH, en particulier "
+"[en les rendant configurables depuis l'administrateur web]"
+"(https://github.com/YunoHost/issues/issues/175) ;\n"
+"- restreindre et limiter davantage les capacités des applications à ce dont "
+"elles ont besoin (cf. packaging v3) ;\n"
 "- ...\n"
 
 #. type: Fenced div block (info)
@@ -105,17 +108,18 @@ msgstr "<FAIcon icon=\"fa-shield\"/> Pour discuter des failles de sécurité dan
 
 #. type: Title ##
 #: docs/admin/42.security.mdx:32
-#, fuzzy, no-wrap
-#| msgid "Basic security advices"
+#, no-wrap
 msgid "Basic security advice"
 msgstr "Conseils de sécurité de base"
 
 #. type: Plain text
 #: docs/admin/42.security.mdx:35
-#, fuzzy, no-wrap
-#| msgid "Security is not a one-time setup, it's an active, ongoing practice. Here are some basic practice that you should implement:\n"
+#, no-wrap
 msgid "Security is not a one-time setup, it's an active, ongoing practice. Here are some basic practices that you should implement:\n"
-msgstr "La sécurité n'est pas une configuration ponctuelle, c'est une pratique active et continue. Voici quelques pratiques de base que vous devriez mettre en œuvre :\n"
+msgstr ""
+"La sécurité n'est pas une configuration ponctuelle, c'est une pratique "
+"active et continue. Voici quelques pratiques de base que vous devriez mettre "
+"en œuvre :\n"
 
 #. type: Fenced div block (warning)
 #: docs/admin/42.security.mdx:36
@@ -227,8 +231,7 @@ msgstr "**Pour les prochaines connexions SSH**, vous devez ajouter l'option `-p`
 
 #. type: Title ##
 #: docs/admin/42.security.mdx:105
-#, fuzzy, no-wrap
-#| msgid "Hardening cipher used by NGINX, SSH, Dovecot, Postfix"
+#, no-wrap
 msgid "Hardening ciphers used by NGINX, SSH, Dovecot, Postfix"
 msgstr "Durcissement du chiffrement utilisé par NGINX, SSH, Dovecot, Postfix"
 
@@ -264,10 +267,14 @@ msgstr "Désactivation de l'API YunoHost"
 
 #. type: Plain text
 #: docs/admin/42.security.mdx:126
-#, fuzzy, no-wrap
-#| msgid "YunoHost administration is accessible through an **HTTP API**, which is the API used by the webadmin. This may be an additional, unecessary attack surface if you are not planning to use it. In this case, you can disable the corresponding service entirely via command line:\n"
+#, no-wrap
 msgid "YunoHost administration is accessible through an **HTTP API**, which is the API used by the webadmin. This may be an additional, unnecessary attack surface if you are not planning to use it. In this case, you can disable the corresponding service entirely via command line:\n"
-msgstr "L'administration de YunoHost est accessible via une **API HTTP**, qui est l'API utilisée par l'administrateur web. Cela peut constituer une surface d'attaque supplémentaire et inutile si vous ne prévoyez pas de l'utiliser. Dans ce cas, vous pouvez désactiver complètement le service correspondant via la ligne de commande :\n"
+msgstr ""
+"L'administration de YunoHost est accessible via une **API HTTP**, qui est "
+"l'API utilisée par l'administrateur web. Cela peut constituer une surface "
+"d'attaque supplémentaire et inutile si vous ne prévoyez pas de l'utiliser. "
+"Dans ce cas, vous pouvez désactiver complètement le service correspondant "
+"via la ligne de commande :\n"
 
 #. type: Fenced div block (warning)
 #: docs/admin/42.security.mdx:127

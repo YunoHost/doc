@@ -4,19 +4,9 @@
 # Languages add-on <noreply-addon-languages@weblate.org>, 2025.
 # ppr <pouetpouetratatouille@gmail.com>, 2025.
 # Weblate Admin <yunohost@translate.yunohost.org>, 2025.
+# tituspijean <tituspijean@yunohost.org>, 2026.
 msgid ""
-msgstr ""
-"Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2026-04-19 08:39+0000\n"
-"PO-Revision-Date: 2025-11-22 20:21+0000\n"
-"Last-Translator: Weblate Admin <yunohost@translate.yunohost.org>\n"
-"Language-Team: French <https://translate.yunohost.org/projects/yunohost-doc/index/fr/>\n"
-"Language: fr\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.14.2\n"
+msgstr "Project-Id-Version: YunoHost documentation VERSION\nPOT-Creation-Date: 2026-04-19 08:39+0000\nPO-Revision-Date: 2026-04-19 09:16+0000\nLast-Translator: tituspijean <tituspijean@yunohost.org>\nLanguage-Team: French <https://translate.yunohost.org/projects/yunohost-doc/index/fr/>\nLanguage: fr\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=2; plural=n > 1;\nX-Generator: Weblate 5.14.2\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #, no-wrap
@@ -78,7 +68,7 @@ msgstr "<Button url=\"https://apps.yunohost.org/\">📦 Parcourir le catalogue d
 #. type: Plain text
 #, no-wrap
 msgid "Are you **new to self-hosting and servers in general**? We recommend taking it slow and go through the pages presenting [self-hosting](/admin/about_self_hosting), the [different modes](/admin/get_started/methods) and [other](/admin/get_started/why_should_you_not_host_yourself) [things](/category/providers) you should know prior to jumping into the action!\n"
-msgstr ""
+msgstr "Êtes-vous **débutant dans l'auto-hébergement et les serveurs en général**? Nous recommandons de commencer doucement et de parcourir les pages présentant [l'auto-hébergement](/admin/about_self_hosting), les [différents modes](/admin/get_started/methods) et [autres](/admin/get_started/why_should_you_not_host_yourself) [choses](/category/providers) que vous devriez savoir avant de vous lancer.\n"
 
 #. type: Plain text
 #, no-wrap
@@ -99,7 +89,7 @@ msgstr ""
 #. type: Plain text
 #, no-wrap
 msgid "Finally, you can **support the project** or get involved in [different ways](/dev):\n"
-msgstr ""
+msgstr "Enfin, vous pouvez **soutenir le projet** ou vous impliquer [de différentes manières](/dev)\n"
 
 #. type: Plain text
 #, no-wrap

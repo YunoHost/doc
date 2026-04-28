@@ -5,14 +5,15 @@
 #
 # Julie Boissière-Vasseur <jboisseur@posteo.net>, 2025.
 # ppr <pouetpouetratatouille@gmail.com>, 2025.
+# tituspijean <tituspijean@yunohost.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-04-19 08:39+0000\n"
-"PO-Revision-Date: 2025-12-09 18:27+0000\n"
-"Last-Translator: ppr <pouetpouetratatouille@gmail.com>\n"
-"Language-Team: French <https://translate.yunohost.org/projects/yunohost-"
-"doc/40backups__10backup_methods/fr/>\n"
+"PO-Revision-Date: 2026-04-19 09:16+0000\n"
+"Last-Translator: tituspijean <tituspijean@yunohost.org>\n"
+"Language-Team: French <https://translate.yunohost.org/projects/yunohost-doc/"
+"40backups__10backup_methods/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -68,13 +69,7 @@ msgstr "[Restic](https://restic.net/) (cf. l'[application Restic](https://apps.y
 
 #. type: Plain text
 #: docs/admin/40.backups/10.backup_methods.mdx:24
-#, fuzzy, no-wrap
-#| msgid ""
-#| "- backup of data to remote storage (support for different types of storage: SFTP, S3, Backblaze B2, Azure, etc. *SFTP is recommended* for simplicity)\n"
-#| "- deduplication and compression of files, which makes it possible to keep many previous copies without too much storage overhead\n"
-#| "- data encryption, which allows to store data at a third party\n"
-#| "- to define the frequency and type of data to be backed up\n"
-#| "- a mail alert system in case of backup failure.\n"
+#, no-wrap
 msgid ""
 "- backup of data to remote storage (support for different types of storage: SFTP, S3, Backblaze B2, Azure, etc. *SFTP is recommended* for simplicity)\n"
 "- deduplication and compression of files, which makes it possible to keep many previous copies without too much storage overhead\n"
@@ -82,8 +77,11 @@ msgid ""
 "- to define the frequency and type of data to be backed up\n"
 "- a mail alert system in case of backup failure.\n"
 msgstr ""
-"- sauvegarde des données vers un stockage distant (prise en charge de différents types de stockage : SFTP, S3, Backblaze B2, Azure, etc. *SFTP est recommandé* pour plus de simplicité)\n"
-"- déduplication et compression des fichiers, ce qui permet de conserver de nombreuses copies précédentes sans trop de frais de stockage\n"
+"- sauvegarde des données vers un stockage distant (prise en charge de "
+"différents types de stockage : SFTP, S3, Backblaze B2, Azure, etc. *SFTP est "
+"recommandé* pour plus de simplicité)\n"
+"- déduplication et compression des fichiers, ce qui permet de conserver de "
+"nombreuses copies précédentes sans trop de frais de stockage\n"
 "- cryptage des données, ce qui permet de stocker les données chez un tiers\n"
 "- définition de la fréquence et du type de données à sauvegarder\n"
 "- système d'alerte par e-mail en cas d'échec de la sauvegarde.\n"
@@ -102,19 +100,16 @@ msgstr "Cette application est actuellement cassée !\n"
 
 #. type: Plain text
 #: docs/admin/40.backups/10.backup_methods.mdx:34
-#, fuzzy, no-wrap
-#| msgid ""
-#| "- based on rsync and GPG\n"
-#| "- backup of data on a remote storage (support for different types of storage)\n"
-#| "- data encryption, which allows to store data at a third party\n"
+#, no-wrap
 msgid ""
 "- based on rsync and GPG\n"
 "- backup of data on a remote storage (support for different types of storage)\n"
 "- data encryption, which allows you to store data at a third party\n"
 msgstr ""
 "- basé sur rsync et GPG\n"
-"- sauvegarde des données sur un stockage distant (prise en charge de différents types de stockage)\n"
-"- cryptage des données, qui permet de stocker les données chez un tiers\n"
+"- sauvegarde des données sur un stockage distant "
+"(prise en charge de différents types de stockage)\n"
+"- chiffrement des données, qui permet de stocker les données chez un tiers\n"
 
 #. type: Plain text
 #: docs/admin/40.backups/10.backup_methods.mdx:36

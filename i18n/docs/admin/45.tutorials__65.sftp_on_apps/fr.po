@@ -2,14 +2,15 @@
 # This file is distributed under the same license as the YunoHost documentation.
 #
 # ppr <pouetpouetratatouille@gmail.com>, 2025.
+# tituspijean <tituspijean@yunohost.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-04-19 08:39+0000\n"
-"PO-Revision-Date: 2025-12-06 01:32+0000\n"
-"Last-Translator: ppr <pouetpouetratatouille@gmail.com>\n"
-"Language-Team: French <https://translate.yunohost.org/projects/yunohost-"
-"doc/45tutorials__65sftp_on_apps/fr/>\n"
+"PO-Revision-Date: 2026-04-19 09:16+0000\n"
+"Last-Translator: tituspijean <tituspijean@yunohost.org>\n"
+"Language-Team: French <https://translate.yunohost.org/projects/yunohost-doc/"
+"45tutorials__65sftp_on_apps/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -61,19 +62,18 @@ msgstr "Si vous désirez donner accès à une application spécifique à travers
 
 #. type: Plain text
 #: docs/admin/45.tutorials/65.sftp_on_apps.mdx:19
-#, fuzzy, no-wrap
-#| msgid ""
-#| "In instructions below, \n"
-#| "- USER is the user to whom you wish to give permission to edit wordpress files.\n"
-#| "- `/var/www/wordpress/wp-config.php` must be replaced by the path your app config file. For example, for yeswiki (`/var/www/yeswiki/wakka.config.php`)\n"
+#, no-wrap
 msgid ""
 "In instructions below, \n"
 "- USER is the user to whom you wish to give permission to edit WordPress files.\n"
 "- `/var/www/wordpress/wp-config.php` must be replaced by the path your app config file. For example, for yeswiki (`/var/www/yeswiki/wakka.config.php`)\n"
 msgstr ""
 "Dans les instructions suivantes:\n"
-"- USER est l'utilisateur à qui sont données les permissions d'éditer des fichiers wordpress.\n"
-"- `/var/www/wordpress/wp-config.php` est à remplacer par le chemin du fichier de config de l'app. Par exemple, pour YesWiki (`/var/www/yeswiki/wakka.config.php`)\n"
+"- USER est l'utilisateur à qui sont données les permissions d'éditer des "
+"fichiers de WordPress.\n"
+"- `/var/www/wordpress/wp-config.php` est à remplacer par le chemin du "
+"fichier de config de l'app. Par exemple, pour YesWiki "
+"(`/var/www/yeswiki/wakka.config.php`)\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/65.sftp_on_apps.mdx:38
