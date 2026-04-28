@@ -5,11 +5,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2026-01-04 16:21+0000\n"
+"POT-Creation-Date: 2026-04-19 08:39+0000\n"
 "PO-Revision-Date: 2026-03-13 10:07+0000\n"
 "Last-Translator: cri <cri@disroot.org>\n"
-"Language-Team: Spanish <https://translate.yunohost.org/projects/yunohost-doc/"
-"05get_started__05methods/es/>\n"
+"Language-Team: Spanish <https://translate.yunohost.org/projects/yunohost-"
+"doc/05get_started__05methods/es/>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -25,8 +25,9 @@ msgstr "Elige cómo auto-alojarte"
 
 #. type: Plain text
 #: docs/admin/05.get_started/05.methods.mdx:7
-#, no-wrap
-msgid "You can host yourself at home (on a small computer), or on a remote server. Each solution has their pros and cons:\n"
+#, fuzzy, no-wrap
+#| msgid "You can host yourself at home (on a small computer), or on a remote server. Each solution has their pros and cons:\n"
+msgid "You can host yourself at home (on a small computer), or on a remote server. Each solution has its pros and cons:\n"
 msgstr "Puedes autohospedarte desde tu casa (desde un pequeño ordenador), o desde un servidor remoto. Cada solución tiene sus ventajas e inconvenientes:\n"
 
 #. type: Title ##

@@ -5,11 +5,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2026-01-04 16:21+0000\n"
+"POT-Creation-Date: 2026-04-19 08:39+0000\n"
 "PO-Revision-Date: 2026-03-13 10:07+0000\n"
 "Last-Translator: cri <cri@disroot.org>\n"
-"Language-Team: Spanish <https://translate.yunohost.org/projects/yunohost-doc/"
-"05get_started__40post_install__15port_forwarding/es/>\n"
+"Language-Team: Spanish <https://translate.yunohost.org/projects/yunohost-"
+"doc/05get_started__40post_install__15port_forwarding/es/>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -136,7 +136,7 @@ msgstr ""
 #: docs/admin/05.get_started/40.post_install/15.port_forwarding.mdx:41
 #, fuzzy, no-wrap
 #| msgid "<FAIcon icon=\"fa-exclamation-triangle\"/> Some internet service providers block port 25 (mail SMTP) by default to fight spam. Some other ISP don't allow to use port 80/443 (web) freely, though it's less likely. Depending on the ISP, it might be possible to open them in the admin interface... Check [this page](/admin/get_started/providers/isp/) for more info.\n"
-msgid "<FAIcon icon=\"fa-exclamation-triangle\"/> Many internet service providers (ISP) block outgoing traffic on port 25 by default, to fight spam. Port 25 is however necessary if you want your server to be able to send email. In other extreme cases, some ISP may not even allow to use port 80/443 (web) freely... Depending on the ISP, it might be possible to open them in the admin interface... Check [this page](/admin/get_started/providers/isp/) for more info.\n"
+msgid "<FAIcon icon=\"fa-exclamation-triangle\"/> Many internet service providers (ISPs) block outgoing traffic on port 25 by default, to fight spam. Port 25 is however necessary if you want your server to be able to send email. In other extreme cases, some ISPs may not even allow you to use port 80/443 (web) freely... Depending on the ISP, it might be possible to open them in the admin interface... Check [this page](/admin/get_started/providers/isp/) for more info.\n"
 msgstr "<FAIcon icon=\"fa-exclamation-triangle\"/> Algunos proveedores de acceso a Internet bloquean el puerto 25 (mail SMTP) por defecto para luchar con el spam. Otros (más escasos) no permiten utilizar libremente los puertos 80/443. Dependiendo de tu proveedor, puede ser posible abrir estos puertos en la interfaz... Ver [esta página](/admin/get_started/providers/isp/) para más información.\n"
 
 #, no-wrap

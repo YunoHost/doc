@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2026-01-04 16:21+0000\n"
+"POT-Creation-Date: 2026-04-19 08:39+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -27,8 +27,9 @@ msgstr "YunoHost include un completo server mail, avrete quindi il controllo del
 
 #. type: Plain text
 #: docs/admin/35.email/index.mdx:11
-#, no-wrap
-msgid "The mail stack includes a SMTP server (postfix), an IMAP server (Dovecot), an antispam (rspamd) and DKIM configuration.\n"
+#, fuzzy, no-wrap
+#| msgid "The mail stack includes a SMTP server (postfix), an IMAP server (Dovecot), an antispam (rspamd) and DKIM configuration.\n"
+msgid "The mail stack includes an SMTP server (Postfix), an IMAP server (Dovecot), antispam (Rspamd) and DKIM configuration.\n"
 msgstr "Questo ecosistema comprende un server SMTP (postfix), un server IMAP (Dovecot), un antispam (rspamd) e una configurazione DKIM.\n"
 
 #. type: Title ##
@@ -53,10 +54,10 @@ msgstr "Per assicurarsi una configurazione corretta:\n"
 #: docs/admin/35.email/index.mdx:22
 #, no-wrap
 msgid ""
-"- if you are self-hosting at home and not using a VPN, ensure [your ISP won't block port 25](/admin/get_started/providers/isp/) ;\n"
+"- if you are self-hosting at home and not using a VPN, ensure [your ISP doesn't block port 25](/admin/get_started/providers/isp/) ;\n"
 "- route ports according to [this documentation](/admin/get_started/post_install/port_forwarding) ;\n"
 "- carefully configure mail DNS records according to [this documentation](/admin/get_started/post_install/dns_config) ;\n"
-"- test your configuration using the diagnostic features (<HighlightWebAdmin/> → <HighlightDiagnosis/> → <Highlight no_break={true} color='grey'><FAIcon icon=\"fa-envelope\"/> Email</Highlight> ). You can also use [mail-tester.com](https://mail-tester.com), a score of at least 8~9/10 is a reasonnable goal <small>(be careful : only 3 tests per domain per day are allowed)</small>\n"
+"- test your configuration using the diagnostic features (<HighlightWebAdmin/> → <HighlightDiagnosis/> → <Highlight no_break={true} color='grey'><FAIcon icon=\"fa-envelope\"/> Email</Highlight> ). You can also use [mail-tester.com](https://mail-tester.com); a score of at least 8~9/10 is a reasonable goal <small>(be careful: only 3 tests per domain per day are allowed)</small>\n"
 msgstr ""
 
 #. type: Title ##
@@ -67,8 +68,9 @@ msgstr "Programmi (client) per la posta elettronica"
 
 #. type: Plain text
 #: docs/admin/35.email/index.mdx:26
-#, no-wrap
-msgid "To interact with the email sever (read and send emails), you can either install a webclient such as Roundcube or Rainloop on your server - or configure a desktop/mobile client as described in [this page](/admin/email/clients).\n"
+#, fuzzy, no-wrap
+#| msgid "To interact with the email sever (read and send emails), you can either install a webclient such as Roundcube or Rainloop on your server - or configure a desktop/mobile client as described in [this page](/admin/email/clients).\n"
+msgid "To interact with the email server (read and send emails), you can either install a webmail client such as Roundcube or Rainloop on your server or configure a desktop/mobile client as described in [this page](/admin/email/clients).\n"
 msgstr "Per interagire con il vostro server mail, ricevere e inviare le mail, potete installare un client web come Roundcube o Rainloop sul vostro server, oppure configurare un client su pc o smartphone, come descritto [in questa pagina](/admin/email/clients).\n"
 
 #. type: Plain text
@@ -87,19 +89,20 @@ msgstr "Configurazione degli alias e degli inoltri automatici"
 #: docs/admin/35.email/index.mdx:32
 #, fuzzy, no-wrap
 #| msgid "Mail aliases and forwards can be configured for each users. For instance, the first user created on the server automatically has an alias `root@the.domain.tld` configured - meaning that an email sent to this address will end in the inbox of the first user. Automatic forwards may be configured, for instance if an user doesn't want to configure an additional email account and just wants to receive emails from the server on, say, his/her gmail address.\n"
-msgid "Mail aliases and forwards can be configured for each users. For instance, the first user created on the server automatically has an alias `root@the.domain.tld` configured - meaning that an email sent to this address will end in the inbox of the first user. Automatic forwards may be configured, for instance if an user doesn't want to configure an additional email account and just wants to receive emails from the server on, say, his/her gmail address (a copy of each mail will be kept on the Yunohost server).\n"
+msgid "Mail aliases and forwards can be configured for each user. For instance, the first user created on the server automatically has an alias `root@the.domain.tld` configured—meaning that an email sent to this address will end up in the inbox of the first user. Automatic forwards may be configured, for instance if a user doesn't want to configure an additional email account and just wants to receive emails from the server on, say, his/her Gmail address (a copy of each email will be kept on the YunoHost server).\n"
 msgstr "Per ogni utente possono essere configurati gli alias e l'inoltro dei messaggi. Ad esempio, il primo utente registrato sul server dispone automaticamente dell'alias `root@mio.dominio.tld` - quindi ogni mail inviata a questo indirizzo, si troverà anche nella casella del primo utente registrato. Gli inoltri automatici possono essere configurati per inviare le mail ad un indirizzo diverso (ad esempio gmail) senza dover configurare un account del proprio server sul dispositivo (telefono o pc aziendale).\n"
 
 #. type: Plain text
 #: docs/admin/35.email/index.mdx:34
-#, no-wrap
-msgid "Another feature which few people know about is the use of suffixes beginning with \"+\". For example, emails sent to `johndoe+booking@the.domain.tld` will automatically land in the `booking` dir (lowercase) of John Doe's mailbox or in John Doe's inbox if `booking` directory doesn't exist . It is a practical technique for example to provide an e-mail address to a website, then easily sort (via automatic filters) the mail coming from this website.\n"
+#, fuzzy, no-wrap
+#| msgid "Another feature which few people know about is the use of suffixes beginning with \"+\". For example, emails sent to `johndoe+booking@the.domain.tld` will automatically land in the `booking` dir (lowercase) of John Doe's mailbox or in John Doe's inbox if `booking` directory doesn't exist . It is a practical technique for example to provide an e-mail address to a website, then easily sort (via automatic filters) the mail coming from this website.\n"
+msgid "Another feature which few people know about is the use of suffixes beginning with \"+\". For example, emails sent to `johndoe+booking@the.domain.tld` will automatically land in the `booking` directory (lowercase) of John Doe's mailbox or in John Doe's inbox if the `booking` directory doesn't exist. It is a practical technique, for example, to provide an email address to a website, then easily sort (via automatic filters) the mail coming from this website.\n"
 msgstr "Una funzione non molto conosciuta riguarda l'utilizzo dei suffissi contrassegnati con il simbolo \"+\".Ad esempio le mail inviate all'indirizzo `johndoe+sncf@mio.dominio.tld` finiranno nella cartella 'sncf' dell'account di John Doe (oppure semplicemente in Posta in Arrivo se la cartella 'sncf' non esiste). Questa funzione permette di ricevere le mail direttamente nella cartella di destinazione.\n"
 
 #. type: Plain text
 #: docs/admin/35.email/index.mdx:36
 #, no-wrap
-msgid "Groups also can use alias features, by default the group `admins` has aliases such as `root@<domain.tld>` and `webmaster@<domain.tld>`. [More info on the groups and permission page](/admin/users/groups_and_permissions).\n"
+msgid "Groups also can use alias features; by default, the group `admins` has aliases such as `root@<domain.tld>` and `webmaster@<domain.tld>`. [More info on the groups and permissions page](/admin/users/groups_and_permissions).\n"
 msgstr ""
 
 #. type: Title ##

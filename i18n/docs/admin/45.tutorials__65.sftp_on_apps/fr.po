@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2026-01-04 16:21+0000\n"
+"POT-Creation-Date: 2026-04-19 08:39+0000\n"
 "PO-Revision-Date: 2025-12-06 01:32+0000\n"
 "Last-Translator: ppr <pouetpouetratatouille@gmail.com>\n"
 "Language-Team: French <https://translate.yunohost.org/projects/yunohost-"
@@ -61,10 +61,14 @@ msgstr "Si vous désirez donner accès à une application spécifique à travers
 
 #. type: Plain text
 #: docs/admin/45.tutorials/65.sftp_on_apps.mdx:19
-#, no-wrap
+#, fuzzy, no-wrap
+#| msgid ""
+#| "In instructions below, \n"
+#| "- USER is the user to whom you wish to give permission to edit wordpress files.\n"
+#| "- `/var/www/wordpress/wp-config.php` must be replaced by the path your app config file. For example, for yeswiki (`/var/www/yeswiki/wakka.config.php`)\n"
 msgid ""
 "In instructions below, \n"
-"- USER is the user to whom you wish to give permission to edit wordpress files.\n"
+"- USER is the user to whom you wish to give permission to edit WordPress files.\n"
 "- `/var/www/wordpress/wp-config.php` must be replaced by the path your app config file. For example, for yeswiki (`/var/www/yeswiki/wakka.config.php`)\n"
 msgstr ""
 "Dans les instructions suivantes:\n"

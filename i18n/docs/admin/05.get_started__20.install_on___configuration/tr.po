@@ -5,11 +5,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2026-01-04 16:21+0000\n"
+"POT-Creation-Date: 2026-04-19 08:39+0000\n"
 "PO-Revision-Date: 2026-04-10 12:45+0000\n"
 "Last-Translator: Mehmet Can Gökçe <rainessandrai2023@gmail.com>\n"
-"Language-Team: Turkish <https://translate.yunohost.org/projects/yunohost-doc/"
-"05get_started__20install_on___configuration/tr/>\n"
+"Language-Team: Turkish <https://translate.yunohost.org/projects/yunohost-"
+"doc/05get_started__20install_on___configuration/tr/>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -27,11 +27,7 @@ msgstr "<FAIcon icon=\"fa-cog\"/> Temel konfigürasyon ile ilerle"
 #: docs/admin/05.get_started/20.install_on/_configuration.mdx:6
 #, no-wrap
 msgid "If you are in the process of restoring a server using a YunoHost backup, you should skip this step and instead [restore the backup instead of the postinstall step](/admin/backups).\n"
-msgstr ""
-"Eğer YunoHost'ın sağladığı yedekleme üzerinden geri yükleme yapacaksan, bu "
-"aşamayı atla. Onun yerine "
-"[yükleme sonrası yedeklemenin geri yüklenmesi adımını](/admin/backups) "
-"kullan.\n"
+msgstr "Eğer YunoHost'ın sağladığı yedekleme üzerinden geri yükleme yapacaksan, bu aşamayı atla. Onun yerine [yükleme sonrası yedeklemenin geri yüklenmesi adımını](/admin/backups) kullan.\n"
 
 #. type: Fenced div block (info)
 #: docs/admin/05.get_started/20.install_on/_configuration.mdx:10
@@ -41,11 +37,9 @@ msgid ""
 "\n"
 "For a VPS, please use the public IP address instead of the local domain or address.\n"
 msgstr ""
-"Bu dökümantasyon, YunoHost'u yüklediğiniz cihaz ile aynı lokal ağda "
-"olduğunuzu var sayar.\n"
+"Bu dökümantasyon, YunoHost'u yüklediğiniz cihaz ile aynı lokal ağda olduğunuzu var sayar.\n"
 "\n"
-"VPS'lerde lütfen lokal alan adı veya lokal adres yerine açık IP adresini "
-"kullanınız.\n"
+"VPS'lerde lütfen lokal alan adı veya lokal adres yerine açık IP adresini kullanınız.\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/_configuration.mdx:18
@@ -191,7 +185,7 @@ msgstr ""
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/_configuration.mdx:79
 #, no-wrap
-msgid "The first user is now created at this stage. You should pick a username and a reasonably complex password. (We cannot stress enough that the password should be **robust**!) This user will be added to the Admins group, and will therefore be able to access the user portal, the web admin interface, and connect [via **SSH**](/admin/command_line) or [**SFTP**](/admin/tutorials/filezilla). Admins will also receive emails sent to `root@yourdomain.tld` and `admin@yourdomain.tld`: these emails may be used to send technical informations or alerts. You can later add additional users, which you can also add to the Admins group.\n"
+msgid "The first user is now created at this stage. You should pick a username and a reasonably complex password. (We cannot stress enough that the password should be **robust**!) This user will be added to the Admins group, and will therefore be able to access the user portal, the web admin interface, and connect [via **SSH**](/admin/command_line) or [**SFTP**](/admin/tutorials/filezilla). Admins will also receive emails sent to `root@yourdomain.tld` and `admin@yourdomain.tld`: these emails may be used to send technical information or alerts. You can later add additional users, which you can also add to the Admins group.\n"
 msgstr ""
 
 #. type: Plain text
@@ -293,5 +287,5 @@ msgstr ""
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/_configuration.mdx:145
 #, no-wrap
-msgid "You now have a pretty well configured server. If you're new to YunoHost, we recommend to have a look at [the guided tour](/admin/webadmin). You should also be able to [install your favourite applications](https://apps.yunohost.org/). Don't forget to [plan backups](/admin/backups) !\n"
+msgid "You now have a pretty well configured server. If you're new to YunoHost, we recommend having a look at [the guided tour](/admin/webadmin). You should also be able to [install your favourite applications](https://apps.yunohost.org/). Don't forget to [plan backups](/admin/backups) !\n"
 msgstr ""

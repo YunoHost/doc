@@ -5,11 +5,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2026-01-04 16:21+0000\n"
+"POT-Creation-Date: 2026-04-19 08:39+0000\n"
 "PO-Revision-Date: 2026-03-09 07:48+0000\n"
 "Last-Translator: \"José M.\" <correo@xmgz.eu>\n"
-"Language-Team: Galician <https://translate.yunohost.org/projects/"
-"yunohost-doc/15command_line/gl/>\n"
+"Language-Team: Galician <https://translate.yunohost.org/projects/yunohost-"
+"doc/15command_line/gl/>\n"
 "Language: gl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -72,26 +72,16 @@ msgstr "Que é SSH?"
 
 #. type: Plain text
 #: docs/admin/15.command_line.mdx:11
-#, no-wrap
-msgid "**SSH** stands for Secure Shell, and refers to a protocol that allows to remotely control and administer a machine using the command line interface (CLI). It is available by default in any terminal on GNU/Linux and macOS. On Windows, you may want to use [MobaXterm](https://mobaxterm.mobatek.net/download-home-edition.html) (after launching it, click on Session then SSH).\n"
-msgstr ""
-"**SSH** é o acrónimo de Secure Shell, e refírese ao protocolo que permite "
-"controlar e administrar unha máquina de xeito remoto usando a interface da "
-"liña de ordes (CLI). Está dispoñible de xeito predeterminado en calquera "
-"terminal de GNU/Linux e macOS. En Windows podes usar [MobaXterm]"
-"(https://mobaxterm.mobatek.net/download-home-edition.html) "
-"(ao iniciar, preme en Session e despois en SSH).\n"
+#, fuzzy, no-wrap
+#| msgid "**SSH** stands for Secure Shell, and refers to a protocol that allows to remotely control and administer a machine using the command line interface (CLI). It is available by default in any terminal on GNU/Linux and macOS. On Windows, you may want to use [MobaXterm](https://mobaxterm.mobatek.net/download-home-edition.html) (after launching it, click on Session then SSH).\n"
+msgid "**SSH** stands for Secure Shell, and refers to a protocol that allows you to remotely control and administer a machine using the command line interface (CLI). It is available by default in any terminal on GNU/Linux and macOS. On Windows, you may want to use [MobaXterm](https://mobaxterm.mobatek.net/download-home-edition.html) (after launching it, click on Session then SSH).\n"
+msgstr "**SSH** é o acrónimo de Secure Shell, e refírese ao protocolo que permite controlar e administrar unha máquina de xeito remoto usando a interface da liña de ordes (CLI). Está dispoñible de xeito predeterminado en calquera terminal de GNU/Linux e macOS. En Windows podes usar [MobaXterm](https://mobaxterm.mobatek.net/download-home-edition.html) (ao iniciar, preme en Session e despois en SSH).\n"
 
 #. type: Plain text
 #: docs/admin/15.command_line.mdx:13
 #, no-wrap
 msgid "The command line interface (CLI) is, in the computer world, the original (and more technical) way of interacting with a computer compared to graphical interface. Command line interfaces are generally said to be more complete, powerful or efficient than a graphical interface, though also more difficult to learn.\n"
-msgstr ""
-"A interface da liña de ordes (CLI) é, en termos de computadoras, o xeito "
-"orixinal (e máis técnico) de interaccionar cunha computadora e non a "
-"interface gráfica. As interfaces da liña de ordes enténdese que son máis "
-"completas, potentes ou eficientes que as interfaces gráficas, pero tamén "
-"requiren máis esforzo para aprender a usalas.\n"
+msgstr "A interface da liña de ordes (CLI) é, en termos de computadoras, o xeito orixinal (e máis técnico) de interaccionar cunha computadora e non a interface gráfica. As interfaces da liña de ordes enténdese que son máis completas, potentes ou eficientes que as interfaces gráficas, pero tamén requiren máis esforzo para aprender a usalas.\n"
 
 #. type: Title ##
 #: docs/admin/15.command_line.mdx:14
@@ -107,17 +97,16 @@ msgstr "Credenciais *antes* de executar a postinstallación"
 
 #. type: Plain text
 #: docs/admin/15.command_line.mdx:20
-#, no-wrap
+#, fuzzy, no-wrap
+#| msgid ""
+#| "- If you are **installing at home**, the default credentials are login: `root` and password: `yunohost` (or `1234` if you flashed an armbian image)\n"
+#| "- If you are **installing a remote server (VPS)**, your provider should have communicated you the login and password (or allowed you to configure an SSH key)\n"
 msgid ""
 "- If you are **installing at home**, the default credentials are login: `root` and password: `yunohost` (or `1234` if you flashed an armbian image)\n"
-"- If you are **installing a remote server (VPS)**, your provider should have communicated you the login and password (or allowed you to configure an SSH key)\n"
+"- If you are **installing a remote server (VPS)**, your provider should have communicated the login and password to you (or allowed you to configure an SSH key)\n"
 msgstr ""
-"- Se estás a **instalar na casa**, as credenciais de acceso son, como "
-"identificador: `root`, como contrasinal: `yunohost` "
-"(ou `1234` se gravaches unha imaxe armbian)\n"
-"- Se estás a **instalar nun servidor remoto (VPS)**, o provedor tivo que "
-"mandarche as credenciais de acceso (identificador/contrasinal) ou "
-"permitirche configurar unha clave SSH.\n"
+"- Se estás a **instalar na casa**, as credenciais de acceso son, como identificador: `root`, como contrasinal: `yunohost` (ou `1234` se gravaches unha imaxe armbian)\n"
+"- Se estás a **instalar nun servidor remoto (VPS)**, o provedor tivo que mandarche as credenciais de acceso (identificador/contrasinal) ou permitirche configurar unha clave SSH.\n"
 
 #. type: Title ###
 #: docs/admin/15.command_line.mdx:21
@@ -127,18 +116,10 @@ msgstr "Credenciais *despois* de realizar a postinstalación"
 
 #. type: Plain text
 #: docs/admin/15.command_line.mdx:25
-#, no-wrap
-msgid "During the postinstall, you've been asked to choose an user and an administration password. This user account allows you to connect to the server through SSH. The password becomes also the new password for the `root` user. Additionally, **the `root` SSH login becomes disabled after the postinstall and you should log in using the user account created during postinstall !**. The only exception is that you may still be able to login using `root` *from the local network - or from a direct console on the server* (this is to cover the event where the LDAP server is broken and the users members of the `admins` group are unusables).\n"
-msgstr ""
-"Durante a postinstalación, pidéuseche escoller un identificador e "
-"contrasinal de administración. Esta conta permíteche conectarte ao servidor "
-"usando SSH. O contrasinal convértese tamén no novo contrasinal para a "
-"usuaria `root`. Ademáis, **o acceso `root` usando SSH queda desactivado "
-"despois da postinstalación e debes acceder usando a conta creada durante a "
-"postinstalación !**. A única excepción é que poderás continuar accedendo "
-"usando `root` *desde a rede local - ou desde unha consola directa no "
-"servidor* (isto é para evitar problemas se o servidor LDAP se estraga e as "
-"usuarias do grupo `admins` non están accesibles).\n"
+#, fuzzy, no-wrap
+#| msgid "During the postinstall, you've been asked to choose an user and an administration password. This user account allows you to connect to the server through SSH. The password becomes also the new password for the `root` user. Additionally, **the `root` SSH login becomes disabled after the postinstall and you should log in using the user account created during postinstall !**. The only exception is that you may still be able to login using `root` *from the local network - or from a direct console on the server* (this is to cover the event where the LDAP server is broken and the users members of the `admins` group are unusables).\n"
+msgid "During the postinstall, you've been asked to choose a user and an administration password. This user account allows you to connect to the server through SSH. The password also becomes the new password for the `root` user. Additionally, **the `root` SSH login becomes disabled after the postinstall and you should log in using the user account created during postinstall !**. The only exception is that you may still be able to login using `root` *from the local network - or from a direct console on the server* (this is to cover the event where the LDAP server is broken and the users who are members of the `admins` group are unusable).\n"
+msgstr "Durante a postinstalación, pidéuseche escoller un identificador e contrasinal de administración. Esta conta permíteche conectarte ao servidor usando SSH. O contrasinal convértese tamén no novo contrasinal para a usuaria `root`. Ademáis, **o acceso `root` usando SSH queda desactivado despois da postinstalación e debes acceder usando a conta creada durante a postinstalación !**. A única excepción é que poderás continuar accedendo usando `root` *desde a rede local - ou desde unha consola directa no servidor* (isto é para evitar problemas se o servidor LDAP se estraga e as usuarias do grupo `admins` non están accesibles).\n"
 
 #. type: Fenced div block (tip)
 #: docs/admin/15.command_line.mdx:26
@@ -170,7 +151,7 @@ msgstr ""
 #. type: Plain text
 #: docs/admin/15.command_line.mdx:39
 #, no-wrap
-msgid "If your server is a remote server (VPS), your provider should have communicated you the IP address of the machine\n"
+msgid "If your server is a remote server (VPS), your provider should have provided you with the IP address of the machine\n"
 msgstr ""
 
 #. type: Plain text
@@ -284,7 +265,7 @@ msgstr ""
 #. type: Plain text
 #: docs/admin/15.command_line.mdx:128
 #, no-wrap
-msgid "The `yunohost` command can be used to administer your server and perform the various actions similarly to what you do on the webadmin. The command must be launched either from the `root` user or from a user member of the `admins` group by preceeding them with `sudo`. (ProTip™ : you can become `root` with the command `sudo su` as an user member of `admins` group).\n"
+msgid "The `yunohost` command can be used to administer your server and perform the various actions similarly to what you do on the webadmin. The command must be launched either from the `root` user or from a user who is a member of the `admins` group by preceding the command with `sudo`. (ProTip™: you can become `root` with the command `sudo su` as a user who is a member of the `admins` group).\n"
 msgstr ""
 
 #. type: Plain text

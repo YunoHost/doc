@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2026-01-04 16:21+0000\n"
+"POT-Creation-Date: 2026-04-19 08:39+0000\n"
 "PO-Revision-Date: 2025-11-29 16:25+0000\n"
 "Last-Translator: Weblate Admin <yunohost@translate.yunohost.org>\n"
 "Language-Team: French <https://translate.yunohost.org/projects/yunohost-"
@@ -138,8 +138,9 @@ msgstr ""
 
 #. type: Fenced div block (warning)
 #: docs/admin/05.get_started/40.post_install/15.port_forwarding.mdx:41
-#, no-wrap
-msgid "<FAIcon icon=\"fa-exclamation-triangle\"/> Many internet service providers (ISP) block outgoing traffic on port 25 by default, to fight spam. Port 25 is however necessary if you want your server to be able to send email. In other extreme cases, some ISP may not even allow to use port 80/443 (web) freely... Depending on the ISP, it might be possible to open them in the admin interface... Check [this page](/admin/get_started/providers/isp/) for more info.\n"
+#, fuzzy, no-wrap
+#| msgid "<FAIcon icon=\"fa-exclamation-triangle\"/> Many internet service providers (ISP) block outgoing traffic on port 25 by default, to fight spam. Port 25 is however necessary if you want your server to be able to send email. In other extreme cases, some ISP may not even allow to use port 80/443 (web) freely... Depending on the ISP, it might be possible to open them in the admin interface... Check [this page](/admin/get_started/providers/isp/) for more info.\n"
+msgid "<FAIcon icon=\"fa-exclamation-triangle\"/> Many internet service providers (ISPs) block outgoing traffic on port 25 by default, to fight spam. Port 25 is however necessary if you want your server to be able to send email. In other extreme cases, some ISPs may not even allow you to use port 80/443 (web) freely... Depending on the ISP, it might be possible to open them in the admin interface... Check [this page](/admin/get_started/providers/isp/) for more info.\n"
 msgstr "<FAIcon icon=\"fa-exclamation-triangle\"/> Certains fournisseurs d'accès à Internet bloquent le port 25 (mail SMTP) par défaut pour combattre le spam. Le port 25 est pourtant nécessaire si vous souhaitez que votre serveur puisse envoyer de emails. Dans certains cas extrême , votre FAI peut même ne pas vous laisser utiliser librement les port 80/443 (web). En fonction de votre FAI, il peut être possible d'ouvrir ces ports dans l'interface... Voir [cette page](/admin/get_started/providers/isp/) pour plus d'informations.\n"
 
 #, no-wrap

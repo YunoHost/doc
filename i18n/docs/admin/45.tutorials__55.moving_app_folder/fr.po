@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2026-01-04 16:21+0000\n"
+"POT-Creation-Date: 2026-04-19 08:39+0000\n"
 "PO-Revision-Date: 2025-11-29 16:25+0000\n"
 "Last-Translator: Weblate Admin <yunohost@translate.yunohost.org>\n"
 "Language-Team: French <https://translate.yunohost.org/projects/yunohost-"
@@ -38,9 +38,12 @@ msgstr "Lorsqu'un dossier d'application devient trop volumineux il peut être in
 
 #. type: Plain text
 #: docs/admin/45.tutorials/55.moving_app_folder.mdx:11
-#, no-wrap
+#, fuzzy, no-wrap
+#| msgid ""
+#| "Here's a summary of how to do this the application wordpress. Here, is is assumed that\n"
+#| "[you already mounted the external hard-drive](/admin/tutorials/external_storage).\n"
 msgid ""
-"Here's a summary of how to do this the application wordpress. Here, is is assumed that\n"
+"Here's a summary of how to do this the application WordPress. Here, is is assumed that\n"
 "[you already mounted the external hard-drive](/admin/tutorials/external_storage).\n"
 msgstr ""
 "Partant du principe que [le stockage externe est déjà monté](/admin/tutorials/external_storage), voici\n"
@@ -48,8 +51,9 @@ msgstr ""
 
 #. type: Title ####
 #: docs/admin/45.tutorials/55.moving_app_folder.mdx:12
-#, no-wrap
-msgid "1. Move the entire wordpress folder to an external hard drive"
+#, fuzzy, no-wrap
+#| msgid "1. Move the entire wordpress folder to an external hard drive"
+msgid "1. Move the entire WordPress folder to an external hard drive"
 msgstr "1. Déplacer le dossier wordpress et tout son contenu vers le stockage externe"
 
 #. type: Title ####

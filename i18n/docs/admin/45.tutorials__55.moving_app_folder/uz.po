@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2026-01-04 16:21+0000\n"
+"POT-Creation-Date: 2026-04-19 08:39+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -37,14 +37,14 @@ msgstr ""
 #: docs/admin/45.tutorials/55.moving_app_folder.mdx:11
 #, no-wrap
 msgid ""
-"Here's a summary of how to do this the application wordpress. Here, is is assumed that\n"
+"Here's a summary of how to do this the application WordPress. Here, is is assumed that\n"
 "[you already mounted the external hard-drive](/admin/tutorials/external_storage).\n"
 msgstr ""
 
 #. type: Title ####
 #: docs/admin/45.tutorials/55.moving_app_folder.mdx:12
 #, no-wrap
-msgid "1. Move the entire wordpress folder to an external hard drive"
+msgid "1. Move the entire WordPress folder to an external hard drive"
 msgstr ""
 
 #. type: Title ####

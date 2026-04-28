@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2026-01-04 16:21+0000\n"
+"POT-Creation-Date: 2026-04-19 08:39+0000\n"
 "PO-Revision-Date: 2025-11-30 23:30+0000\n"
 "Last-Translator: \"José M.\" <correo@xmgz.eu>\n"
 "Language-Team: Galician <https://translate.yunohost.org/projects/yunohost-doc/index/gl/>\n"
@@ -75,8 +75,8 @@ msgstr "<Button url=\"https://apps.yunohost.org/\">📦 Olla o catálogo de apli
 
 #. type: Plain text
 #, no-wrap
-msgid "Are you **new to self-hosting and servers in general**? We recommend to take it slow and go through the pages presenting [self-hosting](/admin/about_self_hosting), the [different modes](/admin/get_started/methods) and [other](/admin/get_started/why_should_you_not_host_yourself) [things](/category/providers) you should know prior to jumping into the action! \n"
-msgstr "**Non tes experiencia previa** no tema de auto hospedaxe? Recomendámosche ir con calma e revisar as páxinas relativas ao [auto-hospedaxe](/admin/about_self_hosting), the [different modes](/admin/get_started/methods) así como [outras consideracións](/admin/get_started/why_should_you_not_host_yourself) e [asuntos](/category/providers) que deberías coñecer antes de pasar á acción! \n"
+msgid "Are you **new to self-hosting and servers in general**? We recommend taking it slow and go through the pages presenting [self-hosting](/admin/about_self_hosting), the [different modes](/admin/get_started/methods) and [other](/admin/get_started/why_should_you_not_host_yourself) [things](/category/providers) you should know prior to jumping into the action!\n"
+msgstr ""
 
 #. type: Plain text
 #, no-wrap
@@ -96,8 +96,8 @@ msgstr ""
 
 #. type: Plain text
 #, no-wrap
-msgid "Finally, you can **support the project** or get involve in [different ways](/dev):\n"
-msgstr "Para rematar, podes **apoiar o proxecto** ou colaborar de [varios xeitos](/dev):\n"
+msgid "Finally, you can **support the project** or get involved in [different ways](/dev):\n"
+msgstr ""
 
 #. type: Plain text
 #, no-wrap
@@ -113,6 +113,14 @@ msgstr ""
 "<Button url=\"/dev/doc\">🌐 Traballar na tradución</Button>\n"
 "<Button url=\"/dev/packaging\">📦 Aprender a empaquetar aplicacións</Button>\n"
 "<Button url=\"/dev/core\">⚙️  Desenvolvemento do núcleo</Button>\n"
+
+#, no-wrap
+#~ msgid "Are you **new to self-hosting and servers in general**? We recommend to take it slow and go through the pages presenting [self-hosting](/admin/about_self_hosting), the [different modes](/admin/get_started/methods) and [other](/admin/get_started/why_should_you_not_host_yourself) [things](/category/providers) you should know prior to jumping into the action! \n"
+#~ msgstr "**Non tes experiencia previa** no tema de auto hospedaxe? Recomendámosche ir con calma e revisar as páxinas relativas ao [auto-hospedaxe](/admin/about_self_hosting), the [different modes](/admin/get_started/methods) así como [outras consideracións](/admin/get_started/why_should_you_not_host_yourself) e [asuntos](/category/providers) que deberías coñecer antes de pasar á acción! \n"
+
+#, no-wrap
+#~ msgid "Finally, you can **support the project** or get involve in [different ways](/dev):\n"
+#~ msgstr "Para rematar, podes **apoiar o proxecto** ou colaborar de [varios xeitos](/dev):\n"
 
 #, no-wrap
 #~ msgid "Welcome"

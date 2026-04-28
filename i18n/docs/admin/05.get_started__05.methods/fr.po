@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2026-01-04 16:21+0000\n"
+"POT-Creation-Date: 2026-04-19 08:39+0000\n"
 "PO-Revision-Date: 2025-11-30 23:30+0000\n"
 "Last-Translator: ppr <pouetpouetratatouille@gmail.com>\n"
 "Language-Team: French <https://translate.yunohost.org/projects/yunohost-"
@@ -26,8 +26,9 @@ msgstr "Choisir son mode d'auto-hébergement"
 
 #. type: Plain text
 #: docs/admin/05.get_started/05.methods.mdx:7
-#, no-wrap
-msgid "You can host yourself at home (on a small computer), or on a remote server. Each solution has their pros and cons:\n"
+#, fuzzy, no-wrap
+#| msgid "You can host yourself at home (on a small computer), or on a remote server. Each solution has their pros and cons:\n"
+msgid "You can host yourself at home (on a small computer), or on a remote server. Each solution has its pros and cons:\n"
 msgstr "Vous pouvez vous auto-héberger à la maison (sur un petit ordinateur), ou sur un serveur distant. Chaque solution a ses avantages et inconvénients :\n"
 
 #. type: Title ##
