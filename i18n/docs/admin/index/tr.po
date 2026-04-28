@@ -3,18 +3,7 @@
 #
 # Mehmet Can Gökçe <rainessandrai2023@gmail.com>, 2026.
 msgid ""
-msgstr ""
-"Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2026-04-19 08:39+0000\n"
-"PO-Revision-Date: 2026-04-10 15:56+0000\n"
-"Last-Translator: Mehmet Can Gökçe <rainessandrai2023@gmail.com>\n"
-"Language-Team: Turkish <https://translate.yunohost.org/projects/yunohost-doc/index/tr/>\n"
-"Language: tr\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.14.2\n"
+msgstr "Project-Id-Version: YunoHost documentation VERSION\nPOT-Creation-Date: 2026-04-19 08:39+0000\nPO-Revision-Date: 2026-04-20 06:58+0000\nLast-Translator: Mehmet Can Gökçe <rainessandrai2023@gmail.com>\nLanguage-Team: Turkish <https://translate.yunohost.org/projects/yunohost-doc/index/tr/>\nLanguage: tr\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=2; plural=n != 1;\nX-Generator: Weblate 5.14.2\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #, no-wrap
@@ -55,7 +44,7 @@ msgstr ""
 #. type: Plain text
 #, no-wrap
 msgid "If you are an **impatient power user**, you may want to try YunoHost, or jump right away to install:\n"
-msgstr ""
+msgstr "Eğer **sabırsız bir kullanıcıysan**, YunoHost'u denemek veya direk yüklemek isteyebilirsin:\n"
 
 #. type: Plain text
 #, no-wrap
@@ -63,22 +52,22 @@ msgid ""
 "<Button url=\"/admin/what_is_yunohost\">🤔 What's YunoHost?!</Button>\n"
 "<Button url=\"/admin/what_is_yunohost/demo\">⚗️ Try YunoHost</Button>\n"
 "<Button url=\"/admin/get_started/install_on\">🚀 Install</Button>\n"
-msgstr ""
+msgstr "<Button url=\"/admin/what_is_yunohost\">🤔 YunoHost nedir?!</Button>\n<Button url=\"/admin/what_is_yunohost/demo\">⚗️ YunoHost'u dene</Button>\n<Button url=\"/admin/get_started/install_on\">🚀 Yükle</Button>\n"
 
 #. type: Plain text
 #, no-wrap
 msgid "<Button url=\"https://apps.yunohost.org/\">📦 Browse the app catalog</Button>\n"
-msgstr ""
+msgstr "<Button url=\"https://apps.yunohost.org/\">📦 Uygulama kataloğunu incele</Button>\n"
 
 #. type: Plain text
 #, no-wrap
 msgid "Are you **new to self-hosting and servers in general**? We recommend taking it slow and go through the pages presenting [self-hosting](/admin/about_self_hosting), the [different modes](/admin/get_started/methods) and [other](/admin/get_started/why_should_you_not_host_yourself) [things](/category/providers) you should know prior to jumping into the action!\n"
-msgstr ""
+msgstr "**Kendi sunucunu kendin çalıştırma konusunda yeni misin**? Yavaşça ilerlemenizi ve işe atılmadan önce bu sayfaları incelemenizi tavsiye ederiz. [Kendi sunucunuzu çalıştırmak](/admin/about_self_hosting), [farklı modlar](/admin/get_started/methods) ve [diğer](/admin/get_started/why_should_you_not_host_yourself) [things](/category/providers)\n"
 
 #. type: Plain text
 #, no-wrap
 msgid "Are you **already using YunoHost**? You may want to get in touch with the community or reach for help:\n"
-msgstr ""
+msgstr "Halihazırda **YunoHost'u kullanıyor musunuz**? Toplulukla iletişim kurmayı veya yardım istemeyi isteyebilirsiniz:\n"
 
 #. type: Plain text
 #, no-wrap
@@ -86,12 +75,12 @@ msgid ""
 "<Button url=\"https://forum.yunohost.org\">📢 Forum</Button>\n"
 "<Button url=\"/community/chat_rooms\">🗫  Chat rooms</Button>\n"
 "<Button url=\"/community/help\">🛟 Help</Button>\n"
-msgstr ""
+msgstr "<Button url=\"https://forum.yunohost.org\">📢 Forum</Button>\n<Button url=\"/community/chat_rooms\">🗫  Sohbet odaları</Button>\n<Button url=\"/community/help\">🛟 Yardım</Button>\n"
 
 #. type: Plain text
 #, no-wrap
 msgid "Finally, you can **support the project** or get involved in [different ways](/dev):\n"
-msgstr ""
+msgstr "Son olarak, **Projeyi destekleyebilir** veya [farklı yollarla](/dev) yardım edebilirsiniz:\n"
 
 #. type: Plain text
 #, no-wrap
@@ -101,4 +90,4 @@ msgid ""
 "<Button url=\"/dev/doc\">🌐 Work on translations</Button>\n"
 "<Button url=\"/dev/packaging\">📦 Learn app packaging</Button>\n"
 "<Button url=\"/dev/core\">⚙️  Develop on the core</Button>\n"
-msgstr ""
+msgstr "<Button url=\"https://yunohost.org/donate.html\">💰 Bağış yap</Button>\n<Button url=\"/dev/doc\">📝 Dökümantasyonu iyileştir</Button>\n<Button url=\"/dev/doc\">🌐 Çevirilerde çalış</Button>\n<Button url=\"/dev/packaging\">📦 Uygulama paketlemesini öğren</Button>\n<Button url=\"/dev/core\">⚙️  Çekirdeği geliştir</Button>\n"
