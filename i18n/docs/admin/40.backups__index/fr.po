@@ -3,14 +3,15 @@
 #
 # ppr <pouetpouetratatouille@gmail.com>, 2025.
 # Weblate Admin <yunohost@translate.yunohost.org>, 2025.
+# tituspijean <tituspijean@yunohost.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: 2025-11-29 16:25+0000\n"
-"Last-Translator: Weblate Admin <yunohost@translate.yunohost.org>\n"
-"Language-Team: French <https://translate.yunohost.org/projects/yunohost-"
-"doc/40backups__index/fr/>\n"
+"POT-Creation-Date: 2026-04-19 08:39+0000\n"
+"PO-Revision-Date: 2026-04-19 09:16+0000\n"
+"Last-Translator: tituspijean <tituspijean@yunohost.org>\n"
+"Language-Team: French <https://translate.yunohost.org/projects/yunohost-doc/"
+"40backups__index/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -80,8 +81,11 @@ msgstr "Sauvegarde manuelle"
 #. type: Plain text
 #: docs/admin/40.backups/index.mdx:13
 #, no-wrap
-msgid "YunoHost comes with a backup system, that allows you to backup (and restore) system configurations and data (e.g. emails) and apps if they support it.\n"
-msgstr "YunoHost est fourni avec un système de sauvegarde, qui permet de sauvegarder (et restaurer) les configurations du système, les données « système » (comme les mails) et les applications si elles le supportent.\n"
+msgid "YunoHost comes with a backup system that allows you to back up (and restore) system configurations and data (e.g. emails) and apps, if they support it.\n"
+msgstr ""
+"YunoHost est fourni avec un système de sauvegarde, qui permet de sauvegarder "
+"(et restaurer) les configurations du système, les données « système » "
+"(comme les mails) et les applications si elles le supportent.\n"
 
 #. type: Plain text
 #: docs/admin/40.backups/index.mdx:15
@@ -92,8 +96,10 @@ msgstr "Vous pouvez gérer vos sauvegardes via la ligne de commande (`yunohost b
 #. type: Plain text
 #: docs/admin/40.backups/index.mdx:17
 #, no-wrap
-msgid "The current default method consists in creating a `.tar` archive containing all relevant files.\n"
-msgstr "La méthode de sauvegarde actuelle consiste à créer des archives `.tar` qui contiennent les fichiers pertinents.\n"
+msgid "The current default method consists of creating a `.tar` archive containing all relevant files.\n"
+msgstr ""
+"La méthode de sauvegarde actuelle consiste à créer des archives `.tar` qui "
+"contiennent les fichiers pertinents.\n"
 
 #. type: Title ####
 #: docs/admin/40.backups/index.mdx:18
@@ -104,8 +110,12 @@ msgstr "Créer une sauvegarde"
 #. type: Plain text
 #: docs/admin/40.backups/index.mdx:24
 #, no-wrap
-msgid "You can easily create backup archives from the webadmin by going to `Backups > Local storage` and clicking on `New backup`. You will then be asked to select which configuration, data and apps you want to backup.\n"
-msgstr "Vous pouvez facilement créer des archives depuis la webadmin en allant dans `Sauvegardes > Archives locales` et en cliquant sur `Nouvelle sauvegarde`. Vous pourrez ensuite sélectionner les éléments à sauvegarder (configuration, données \"système\", applications).\n"
+msgid "You can easily create backup archives from the webadmin by going to `Backups > Local storage` and clicking on `New backup`. You will then be asked to select which configuration, data and apps you want to back up.\n"
+msgstr ""
+"Vous pouvez facilement créer des archives depuis la webadmin en allant dans `"
+"Sauvegardes > Archives locales` et en cliquant sur `Nouvelle sauvegarde`. "
+"Vous pourrez ensuite sélectionner les éléments à sauvegarder "
+"(configuration, données \"système\", applications).\n"
 
 #. type: Plain text
 #: docs/admin/40.backups/index.mdx:26
@@ -128,32 +138,35 @@ msgstr "- Tout sauvegarder (système et apps) :\n"
 #. type: Plain text
 #: docs/admin/40.backups/index.mdx:39
 #, no-wrap
-msgid "- Backing up only apps\n"
-msgstr "- Sauvegarder seulement les apps :\n"
+msgid "- Backing up only apps:\n"
+msgstr "- Sauvegarder seulement les apps :\n"
 
 #. type: Plain text
 #: docs/admin/40.backups/index.mdx:45
 #, no-wrap
-msgid "- Backing up only two apps (wordpress and shaarli)\n"
-msgstr "- Sauvegarder seulement deux apps (WordPress et Shaarli) :\n"
+msgid "- Backing up only two apps (WordPress and shaarli):\n"
+msgstr "- Sauvegarder seulement deux apps (WordPress et Shaarli) :\n"
 
 #. type: Plain text
 #: docs/admin/40.backups/index.mdx:51
 #, no-wrap
-msgid "- Backing up only emails\n"
-msgstr "- Sauvegarder seulement les mails :\n"
+msgid "- Backing up only emails:\n"
+msgstr "- Sauvegarder seulement les mails :\n"
 
 #. type: Plain text
 #: docs/admin/40.backups/index.mdx:57
 #, no-wrap
-msgid "- Backing up emails and wordpress\n"
-msgstr "- Sauvegarder les mails et WordPress :\n"
+msgid "- Backing up emails and WordPress:\n"
+msgstr "- Sauvegarder les mails et WordPress :\n"
 
 #. type: Plain text
 #: docs/admin/40.backups/index.mdx:63
 #, no-wrap
-msgid "For more information and options about backup creation, consult `yunohost backup create --help`. You can also list the system parts that can be backed up with `yunohost hook list backup`.\n"
-msgstr "Pour plus d'informations et d'options sur la création d'archives, consultez `yunohost backup create --help`. Vous pouvez également lister les parties du système qui sont sauvegardables avec `yunohost hook list backup`.\n"
+msgid "For more information and options regarding backup creation, consult `yunohost backup create --help`. You can also list the system parts that can be backed up with `yunohost hook list backup`.\n"
+msgstr ""
+"Pour plus d'informations et d'options sur la création d'archives, consultez `"
+"yunohost backup create --help`. Vous pouvez également lister les parties du "
+"système qui sont sauvegardables avec `yunohost hook list backup`.\n"
 
 #. type: Title ###
 #: docs/admin/40.backups/index.mdx:67
@@ -212,14 +225,20 @@ msgstr "En cas de port SSH autre que 22 :\n"
 #. type: Fenced div block (caution)
 #: docs/admin/40.backups/index.mdx:104
 #, no-wrap
-msgid "Don't forget to store your backup in a different place to your server.\n"
-msgstr "N'oubliez pas de stocker votre sauvegarde dans un lieu différents de celui ou se trouve votre serveur.\n"
+msgid "Don't forget to store your backup in a different location from your server.\n"
+msgstr ""
+"N'oubliez pas de stocker votre sauvegarde dans un lieu différents de celui "
+"ou se trouve votre serveur.\n"
 
 #. type: Fenced div block (info)
 #: docs/admin/40.backups/index.mdx:108
 #, no-wrap
-msgid "If you want, you can connect an external disk to your server so that the archives arrive directly on it. See this guide to [Adding external storage to your server](/admin/tutorials/external_storage)\n"
-msgstr "Si vous le souhaitez, vous pouvez connecter un disque externe à votre serveur pour que les archives arrivent directement dessus. Voir ce guide pour [Ajouter un stockage externe à son serveur](/admin/tutorials/external_storage)\n"
+msgid "If you want, you can connect an external disk to your server so that the archives are saved directly to it. See this guide on [adding external storage to your server](/admin/tutorials/external_storage).\n"
+msgstr ""
+"Si vous le souhaitez, vous pouvez connecter un disque externe à votre "
+"serveur pour que les archives arrivent directement dessus. Voir ce guide "
+"pour [Ajouter un stockage externe à son serveur]"
+"(/admin/tutorials/external_storage)\n"
 
 #. type: Title ###
 #: docs/admin/40.backups/index.mdx:112
@@ -230,8 +249,11 @@ msgstr "Tester"
 #. type: Plain text
 #: docs/admin/40.backups/index.mdx:115
 #, no-wrap
-msgid "You should regularly test your backups by at least listing the contents of the archives and checking the size of the associated data. It is best to practice restoring regularly.\n"
-msgstr "Vous devriez tester régulièrement vos sauvegardes à minima en listant le contenu des archives et en vérifiant le poids des données associées. Le mieux est de s'entrainer règulièrement à restaurer.\n"
+msgid "You should regularly test your backups by at least listing the contents of the archives and checking the size of the associated data. It is best to practice restoration regularly.\n"
+msgstr ""
+"Vous devriez tester régulièrement vos sauvegardes à minima en listant le "
+"contenu des archives et en vérifiant le poids des données associées. Le "
+"mieux est de s’entraîner régulièrement à restaurer.\n"
 
 #. type: Title ###
 #: docs/admin/40.backups/index.mdx:127
@@ -266,14 +288,23 @@ msgstr "![Capture d'écran du panneau de restauration de YunoHost](/img/webadmin
 #. type: Plain text
 #: docs/admin/40.backups/index.mdx:146
 #, no-wrap
-msgid "From the command line, you can run `yunohost backup list` to get the available archive names. They are basically their file name without extension.\n"
-msgstr "À partir de la ligne de commande, vous pouvez exécuter `yunohost backup list` pour obtenir les noms des archives disponibles. Il s'agit essentiellement de leur nom de fichier sans extension.\n"
+msgid "From the command line, you can run `yunohost backup list` to get the available archive names. They are basically their filenames without extensions.\n"
+msgstr ""
+"À partir de la ligne de commande, vous pouvez exécuter `yunohost backup list`"
+" pour obtenir les noms des archives disponibles. Il s'agit essentiellement "
+"de leur nom de fichier sans extension.\n"
 
 #. type: Plain text
 #: docs/admin/40.backups/index.mdx:148
 #, no-wrap
-msgid "You can then run `yunohost backup restore <archivename>` (hence without its `.tar` extension) to restore an archive. As for `yunohost backup create`, this will restore everything in the archive by default. If you want to restore only specific items, you can use something like `yunohost backup restore <archivename> --apps wordpress`, which will restore only the wordpress app.\n"
-msgstr "Vous pouvez ensuite exécuter `yunohost backup restore <archivename>` (sans l'extension `.tar`) pour restaurer une archive. Comme pour `yunohost backup create`, cela restaurera tout le contenu de l'archive par défaut. Si vous souhaitez restaurer uniquement certains éléments, vous pouvez utiliser une commande telle que `yunohost backup restore <archivename> --apps wordpress`, qui restaurera uniquement l'application WordPress.\n"
+msgid "You can then run `yunohost backup restore <archivename>` (hence without its `.tar` extension) to restore an archive. As for `yunohost backup create`, this will restore everything in the archive by default. If you want to restore only specific items, you can use something like `yunohost backup restore <archivename> --apps wordpress`, which will restore only the WordPress app.\n"
+msgstr ""
+"Vous pouvez ensuite exécuter `yunohost backup restore <archivename>` "
+"(sans l'extension `.tar`) pour restaurer une archive. Comme pour `yunohost "
+"backup create`, cela restaurera tout le contenu de l'archive par défaut. Si "
+"vous souhaitez restaurer uniquement certains éléments, vous pouvez utiliser "
+"une commande telle que `yunohost backup restore <archivename> --apps "
+"wordpress`, qui restaurera uniquement l'application WordPress.\n"
 
 #. type: Fenced div block (tip)
 #: docs/admin/40.backups/index.mdx:149
@@ -284,8 +315,14 @@ msgstr "Dans le cas d'une restauration complète, il est possible de restaurer �
 #. type: Plain text
 #: docs/admin/40.backups/index.mdx:157
 #, no-wrap
-msgid "To restore an app, the domain on which it was installed should already be configured (or you need to restore the corresponding system configuration). You also cannot restore an app which is already installed... which means that to restore an old version of an app, you must first uninstall it.\n"
-msgstr "Pour restaurer une application, le domaine sur laquelle elle est installée doit déjà être configuré (ou il vous faut restaurer en même temps la configuration correspondante). Aussi, il n'est pas possible de restaurer une application déjà installée... ce qui veut dire que pour restaurer une sauvegarde d'une app, il vous faut déjà la désinstaller.\n"
+msgid "To restore an app, the domain on which it was installed should already be configured (or you need to restore the corresponding system configuration). You also cannot restore an app that is already installed... which means that to restore an old version of an app, you must first uninstall it.\n"
+msgstr ""
+"Pour restaurer une application, le domaine sur laquelle elle est installée "
+"doit déjà être configuré "
+"(ou il vous faut restaurer en même temps la configuration correspondante). "
+"Aussi, il n'est pas possible de restaurer une application déjà installée... "
+"ce qui veut dire que pour restaurer une sauvegarde d'une app, il vous faut "
+"déjà la désinstaller.\n"
 
 #. type: Title ####
 #: docs/admin/40.backups/index.mdx:158
@@ -314,5 +351,8 @@ msgstr "Par défaut, les sauvegardes sont à placer dans `/home/yunohost.backup/
 #. type: Plain text
 #: docs/admin/40.backups/index.mdx:173
 #, no-wrap
-msgid "You can use the `scp` (a command built on `ssh`) to copy files between two machines from CLI. For example for a Linux terminal:\n"
-msgstr "Vous pouvez utiliser la commande `scp` (une commande basée sur `ssh`) pour copier des fichiers entre deux machines à partir de l'interface de commande en ligne CLI. Par exemple, pour un terminal Linux :\n"
+msgid "You can use `scp` (a command built on `ssh`) to copy files between two machines from the CLI. For example, for a Linux terminal:\n"
+msgstr ""
+"Vous pouvez utiliser la commande `scp` (une commande basée sur `ssh`) pour "
+"copier des fichiers entre deux machines à partir de l'interface de commande "
+"en ligne CLI. Par exemple, pour un terminal Linux :\n"

@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2026-01-04 16:21+0000\n"
+"POT-Creation-Date: 2026-04-19 08:39+0000\n"
 "PO-Revision-Date: 2025-11-29 18:39+0000\n"
 "Last-Translator: ButterflyOfFire <BoFFire@users.noreply.translate.yunohost."
 "org>\n"
@@ -34,15 +34,15 @@ msgstr ""
 #: docs/admin/42.security.mdx:19
 #, no-wrap
 msgid ""
-"YunoHost is developped with security in mind, and designing good tradeoff between security and usability. Here's a non-exhaustive list of security aspects that the project is implementing:\n"
+"YunoHost is developed with security in mind, and designs good tradeoffs between security and usability. Here's a non-exhaustive list of security aspects that the project is implementing:\n"
 "- a firewall based on `nftables` to restrict incoming traffic to relevant ports ;\n"
 "- `fail2ban`, a software that automatically rejects traffic from malicious IPs trying to brute force SSH and other services ;\n"
 "- using [Mozilla's recommendations for NGINX, Postfix, Dovecot, SSH ciphers etc.](https://wiki.mozilla.org/Security/Server_Side_TLS) ;\n"
-"- checking that user password/passphrase are not too simple when definining them ;\n"
+"- checking that user password/passphrase are not too simple when defining them ;\n"
 "- hashing user passwords (salted SHA512 in LDAP for example) ;\n"
-"- being vigilant on UNIX file/dir permissions accross the whole system ;\n"
-"- apps are typically ran using a dedicated user, and with [restricted capabilities](https://man7.org/linux/man-pages/man7/capabilities.7.html) ;\n"
-"- auto-redacting sensitive informations from YunoHost operation logs and when sharing them with Yunopaste ;\n"
+"- being vigilant on UNIX file/dir permissions across the whole system ;\n"
+"- apps are typically run using a dedicated user, and with [restricted capabilities](https://man7.org/linux/man-pages/man7/capabilities.7.html) ;\n"
+"- auto-redacting sensitive information from YunoHost operation logs and when sharing them with Yunopaste ;\n"
 "- ...\n"
 msgstr ""
 
@@ -55,7 +55,7 @@ msgid ""
 "- [automatic warnings about vulnerabilities](https://github.com/YunoHost/yunohost/pull/2077) <small>(via the Diagnosis, not via the forum or social media)</small> ;\n"
 "- supporting [OIDC](https://github.com/YunoHost/yunohost/pull/2149) and [2FA](https://github.com/YunoHost/issues/issues/238) ;\n"
 "- better support for SSH keys, in particular [making them configurable from the webadmin](https://github.com/YunoHost/issues/issues/175) ;\n"
-"- further constrain and limit application capabilities to only what they need (cf. packaging v3) ;\n"
+"- further constraining and limiting application capabilities to only what they need (cf. packaging v3) ;\n"
 "- ...\n"
 msgstr ""
 
@@ -68,13 +68,13 @@ msgstr ""
 #. type: Title ##
 #: docs/admin/42.security.mdx:32
 #, no-wrap
-msgid "Basic security advices"
+msgid "Basic security advice"
 msgstr ""
 
 #. type: Plain text
 #: docs/admin/42.security.mdx:35
 #, no-wrap
-msgid "Security is not a one-time setup, it's an active, ongoing practice. Here are some basic practice that you should implement:\n"
+msgid "Security is not a one-time setup, it's an active, ongoing practice. Here are some basic practices that you should implement:\n"
 msgstr ""
 
 #. type: Fenced div block (warning)
@@ -179,7 +179,7 @@ msgstr ""
 #. type: Title ##
 #: docs/admin/42.security.mdx:105
 #, no-wrap
-msgid "Hardening cipher used by NGINX, SSH, Dovecot, Postfix"
+msgid "Hardening ciphers used by NGINX, SSH, Dovecot, Postfix"
 msgstr ""
 
 #. type: Plain text
@@ -215,7 +215,7 @@ msgstr ""
 #. type: Plain text
 #: docs/admin/42.security.mdx:126
 #, no-wrap
-msgid "YunoHost administration is accessible through an **HTTP API**, which is the API used by the webadmin. This may be an additional, unecessary attack surface if you are not planning to use it. In this case, you can disable the corresponding service entirely via command line:\n"
+msgid "YunoHost administration is accessible through an **HTTP API**, which is the API used by the webadmin. This may be an additional, unnecessary attack surface if you are not planning to use it. In this case, you can disable the corresponding service entirely via command line:\n"
 msgstr ""
 
 #. type: Fenced div block (warning)
