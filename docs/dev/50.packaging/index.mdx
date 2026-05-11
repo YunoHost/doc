@@ -26,7 +26,12 @@ Before diving in, this documentation assumes that:
 3. You are somewhat familiar with (or are willing to learn) Git;
 4. You are comfortable with tinkering and debugging computer stuff in general.
 
-You are also encouraged to join the [app packaging chatroom](/community/chat_rooms) to ask any question you may have!
+:::warning[NOTE ABOUT GENERATIVE AI]
+It might be tempting to use generative AI, LLMs, to generate app packages. Such "contributions" have systematically brought too verbose code and comments, helpers hallucinations, non-standard directory architectures and files. Reviewing such packages is tiresome for the contributors. It has been decided to reject generated packages that do not follow the `example_ynh` template app.  
+If you still decide to use AI, we highly recommend you to be transparent and responsible about it, and "own" it: you must be able to understand and explain every piece of your code as if you wrote it yourself, you must be able to explain what it does and why you chose to implement it this way. You can't just throw something you don't even understand yourself at other people, and expect them to maintain it for you.
+:::
+
+Whether or not it is your first contribution, you are encouraged to join the [app packaging chatroom](/community/chat_rooms) to introduce yourself and the app you want to package. Do not hesitate to ask any questions you may have!
 
 At some point, you will also want to have a dev/test environment, either using [VirtualBox](/dev/packaging/misc/packaging_apps_virtualbox) or [LXC/ynh-dev](https://github.com/yunohost/ynh-dev) which is meant for the core but can totally be used for developping apps. You can also setup a dev/test VPS on your favourite hosting provider, or even develop on your prod if you like to live dangerously;).
 
