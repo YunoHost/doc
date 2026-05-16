@@ -48,7 +48,9 @@ admindoc = ...
 userdoc = ...
 ```
 
-- `license` (`str`) : the license code of the *upstream* project. (Note that only apps based on free software will be accepted in the official YunoHost app catalog.). The license code should be [a valid SPDX identified](https://spdx.org/licenses/). In case there is no corresponding license in SPDX's list, then you can use the most appropriate short name/acronym you can think of for the given license and link to the license file using the `license_url` property documented below.
+- `license` (`str`) : the license identifier of the *upstream* project. (Note that only apps based on free software will be accepted in the official YunoHost app catalog). The license code should be:
+    - [a valid SPDX identifier](https://spdx.org/licenses/).
+    - if there is no corresponding license in SPDX's list, then you can start the identifier with `LicenseRef-` followed by the most appropriate short name/acronym you can think of for the given license, as described in the [SPDX documentation](https://spdx.github.io/spdx-spec/v3.0.1/annexes/spdx-license-expressions/). You must then link to the license file using the `license_url` property documented below.
 - (optional) `license_url` (`url`) : the URL of the full text of upstream project's license, if that license is not included in SPDX's list.
 - (optional) `website` (`url`) : the URL of the upstream project's website, if there is indeed a website (please don't just copypasta the git repo url)
 - (optional) `demo` (`url`) : a URL where people can try out the app before installing it (ideally maintained by the upstream project)
