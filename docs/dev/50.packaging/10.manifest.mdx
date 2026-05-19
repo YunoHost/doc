@@ -40,6 +40,7 @@ Apart from the license, all fields are *optional* and should only be provided if
 ```toml
 [upstream]
 license = "WTFPL"
+license_url = ...
 website = "https://www.hello-world.com/"
 code = "https://github.com/octocat/Hello-World"
 demo = ...
@@ -47,12 +48,15 @@ admindoc = ...
 userdoc = ...
 ```
 
-- `license` (`str`) : the license code of the *upstream* project. (Note that only apps based on free software will be accepted in the official YunoHost app catalog.). The license code should be [a valid SPDX identified](https://spdx.org/licenses/).
-- (optional) `website` (`url`) : the url of the upstream project's website, if there is indeed a website (please don't just copypasta the git repo url)
-- (optional) `demo` (`url`) : an url where people can try out the app before installing it (ideally maintained by the upstream project)
-- (optional) `code` (`url`) : the url of the upstream project's code repository, which is very much expected to exist for free software ... but may not exist for special "no upstream" apps ;)
-- (optional) `admindoc` (`url`) : the url of the *upstream* project's admin documentation, which may help YunoHost admins with adminstrating the app <small>(YunoHost-specific documentation can be provided in `doc/ADMIN.md`)</small>.
-- (optional) `userdoc` (`url`) : the url of the *upstream* project's user documentation, which may help YunoHost end-users with effectively using the app.
+- `license` (`str`) : the license identifier of the *upstream* project. (Note that only apps based on free software will be accepted in the official YunoHost app catalog). The license code should be:
+    - [a valid SPDX identifier](https://spdx.org/licenses/).
+    - if there is no corresponding license in SPDX's list, then you can start the identifier with `LicenseRef-` followed by the most appropriate short name/acronym you can think of for the given license, as described in the [SPDX documentation](https://spdx.github.io/spdx-spec/v3.0.1/annexes/spdx-license-expressions/). You must then link to the license file using the `license_url` property documented below.
+- (optional) `license_url` (`url`) : the URL of the full text of upstream project's license, if that license is not included in SPDX's list.
+- (optional) `website` (`url`) : the URL of the upstream project's website, if there is indeed a website (please don't just copypasta the git repo url)
+- (optional) `demo` (`url`) : a URL where people can try out the app before installing it (ideally maintained by the upstream project)
+- (optional) `code` (`url`) : the URL of the upstream project's code repository, which is very much expected to exist for free software ... but may not exist for special "no upstream" apps ;)
+- (optional) `admindoc` (`url`) : the URL of the *upstream* project's admin documentation, which may help YunoHost admins with adminstrating the app <small>(YunoHost-specific documentation can be provided in `doc/ADMIN.md`)</small>.
+- (optional) `userdoc` (`url`) : the URL of the *upstream* project's user documentation, which may help YunoHost end-users with effectively using the app.
 - (optional) `cpe` (`str`) corresponds to the [Common Platform Enumerations code in NIST db](https://nvd.nist.gov/products/cpe). For example for Wekan this is `cpe:2.3:a:wekan_project:wekan`. Not really used at the moment, but may be used in the future to check for known vulnerabilities (CVE) in the app catalog.
 
 ## Integration section
