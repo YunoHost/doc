@@ -6,10 +6,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-04-19 08:39+0000\n"
-"PO-Revision-Date: 2026-01-25 07:27+0000\n"
+"PO-Revision-Date: 2026-05-21 11:39+0000\n"
 "Last-Translator: \"José M.\" <correo@xmgz.eu>\n"
-"Language-Team: Galician <https://translate.yunohost.org/projects/yunohost-"
-"doc/05get_started__20install_on___configuration/gl/>\n"
+"Language-Team: Galician <https://translate.yunohost.org/projects/"
+"yunohost-doc/05get_started__20install_on___configuration/gl/>\n"
 "Language: gl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -194,10 +194,20 @@ msgstr "<FAIcon icon=\"fa-key\"/> Primeira usuaria"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/_configuration.mdx:79
-#, fuzzy, no-wrap
-#| msgid "The first user is now created at this stage. You should pick a username and a reasonably complex password. (We cannot stress enough that the password should be **robust**!) This user will be added to the Admins group, and will therefore be able to access the user portal, the web admin interface, and connect [via **SSH**](/admin/command_line) or [**SFTP**](/admin/tutorials/filezilla). Admins will also receive emails sent to `root@yourdomain.tld` and `admin@yourdomain.tld`: these emails may be used to send technical informations or alerts. You can later add additional users, which you can also add to the Admins group.\n"
+#, no-wrap
 msgid "The first user is now created at this stage. You should pick a username and a reasonably complex password. (We cannot stress enough that the password should be **robust**!) This user will be added to the Admins group, and will therefore be able to access the user portal, the web admin interface, and connect [via **SSH**](/admin/command_line) or [**SFTP**](/admin/tutorials/filezilla). Admins will also receive emails sent to `root@yourdomain.tld` and `admin@yourdomain.tld`: these emails may be used to send technical information or alerts. You can later add additional users, which you can also add to the Admins group.\n"
-msgstr "A primeira usuaria créase neste paso. Debes escoller un nome de usuaria (identificador) e un contrasinal razoablemente complexo. (Permítenos subliñar a importancia de que o contrasinal sexa **forte**!) Esta usuaria será engadida ao grupo de Administración, e terá acceso ao portal de usuaria, á interface web de administración, e poderá conectarse [vía **SSH**](/admin/command_line) ou [**SFTP**](/admin/tutorials/filezilla). As contas Administradoras recibirán os correos enviados a `root@yourdomain.tld` e `admin@yourdomain.tld`: estes correo poden utilizarse para enviar información técnica ou alertas. Podes engadir máis tarde outras usuarias, que tamén poderás engadir ao grupo de Administración.\n"
+msgstr ""
+"A primeira usuaria créase neste paso. Debes escoller un nome de usuaria "
+"(identificador) e un contrasinal razoablemente complexo. "
+"(Permítenos subliñar a importancia de que o contrasinal sexa **forte**!) "
+"Esta usuaria será engadida ao grupo de Administración, e terá acceso ao "
+"portal de usuaria, á interface web de administración, e poderá conectarse "
+"[vía **SSH**](/admin/command_line) ou [**SFTP**](/admin/tutorials/filezilla)"
+". As contas Administradoras recibirán os correos enviados a "
+"`root@yourdomain.tld` e `admin@yourdomain.tld`: estes correo poden "
+"utilizarse para enviar información técnica ou alertas. Podes engadir máis "
+"tarde outras usuarias, que tamén poderás engadir ao grupo de Administración."
+"\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/_configuration.mdx:81
@@ -297,7 +307,11 @@ msgstr "🎉 Parabéns!"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/_configuration.mdx:145
-#, fuzzy, no-wrap
-#| msgid "You now have a pretty well configured server. If you're new to YunoHost, we recommend to have a look at [the guided tour](/admin/webadmin). You should also be able to [install your favourite applications](https://apps.yunohost.org/). Don't forget to [plan backups](/admin/backups) !\n"
+#, no-wrap
 msgid "You now have a pretty well configured server. If you're new to YunoHost, we recommend having a look at [the guided tour](/admin/webadmin). You should also be able to [install your favourite applications](https://apps.yunohost.org/). Don't forget to [plan backups](/admin/backups) !\n"
-msgstr "Agora xa tes bastante ben configurado o servidor. Se nunca usaches YunoHost, recomendámosche botar un ollo a [guía da interface web](/admin/webadmin), desde onde poderás [instalar as túas aplicacións preferidas](https://apps.yunohost.org/). Non esquezas [planificar as copias de apoio](/admin/backups)!\n"
+msgstr ""
+"Agora xa tes bastante ben configurado o servidor. Se nunca usaches YunoHost, "
+"recomendámosche botar un ollo a [guía da interface web](/admin/webadmin), "
+"desde onde poderás [instalar as túas aplicacións preferidas]"
+"(https://apps.yunohost.org/). Non esquezas [planificar as copias de apoio]"
+"(/admin/backups)!\n"
