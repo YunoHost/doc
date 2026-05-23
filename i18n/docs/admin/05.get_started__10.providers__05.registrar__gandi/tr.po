@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: 2026-04-10 11:46+0000\n"
+"PO-Revision-Date: 2026-05-05 14:02+0000\n"
 "Last-Translator: Mehmet Can Gökçe <rainessandrai2023@gmail.com>\n"
 "Language-Team: Turkish <https://translate.yunohost.org/projects/yunohost-doc/"
 "05get_started__10providers__05registrar__gandi/tr/>\n"
@@ -55,9 +55,13 @@ msgid ""
 "1. Go to [https://account.gandi.net/](https://account.gandi.net/)\n"
 "2. You should land on this page. Then click on 'Security'\n"
 msgstr ""
+"1. [https://account.gandi.net/](https://account.gandi.net/) adresine gidin\n"
+"2. Bu sayfanın açılması lazım. 'Güvenlik (Security)' butonuna tıklayın.\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/05.registrar/gandi.mdx:16
 #, no-wrap
 msgid "3. In the next page, click on '(re)Generate the API key'.\n"
 msgstr ""
+"3. Sonraki sayfada '(re)Generate the API key' veya 'API anahtarlarını "
+"(yeniden) oluşturun' seçeneğine tıklayınız.\n"

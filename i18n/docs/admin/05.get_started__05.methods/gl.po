@@ -1,15 +1,15 @@
 # Copyright (C) 2025 YunoHost Contributors
 # This file is distributed under the same license as the YunoHost documentation package.
 #
-# "José M." <correo@xmgz.eu>, 2025.
+# "José M." <correo@xmgz.eu>, 2025, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-04-19 08:39+0000\n"
-"PO-Revision-Date: 2025-11-17 11:12+0000\n"
+"PO-Revision-Date: 2026-05-21 11:39+0000\n"
 "Last-Translator: \"José M.\" <correo@xmgz.eu>\n"
-"Language-Team: Galician <https://translate.yunohost.org/projects/yunohost-"
-"doc/05get_started__05methods/gl/>\n"
+"Language-Team: Galician <https://translate.yunohost.org/projects/"
+"yunohost-doc/05get_started__05methods/gl/>\n"
 "Language: gl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -25,10 +25,11 @@ msgstr "Elixe o modo de auto-hospedarte"
 
 #. type: Plain text
 #: docs/admin/05.get_started/05.methods.mdx:7
-#, fuzzy, no-wrap
-#| msgid "You can host yourself at home (on a small computer), or on a remote server. Each solution has their pros and cons:\n"
+#, no-wrap
 msgid "You can host yourself at home (on a small computer), or on a remote server. Each solution has its pros and cons:\n"
-msgstr "Podes facelo na túa casa (nunha pequena computadora), ou nun servidor remoto. Cada opción ten vantaxes e inconvintes:\n"
+msgstr ""
+"Podes facelo na túa casa (nunha pequena computadora), ou nun servidor "
+"remoto. Cada opción ten vantaxes e inconvintes:\n"
 
 #. type: Title ##
 #: docs/admin/05.get_started/05.methods.mdx:8
