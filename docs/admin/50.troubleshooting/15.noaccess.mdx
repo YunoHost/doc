@@ -42,9 +42,9 @@ You can check that the DNS records are correct by comparing the results given by
 
 ## You have access via SSH but not via the webadmin, or inversely
 
-### You are trying to log in with SSH as `root` instead of a user from the `admin` group
+### You are trying to log in with SSH as `root` instead of a user from the `admins` group
 
-By default, SSH connection has to be made as a user in the `admin` group. It possible to log into the server as `root` *only from the local network of the server*. If your server is a VPS, the web console or VNC provided by VPS providers may work.
+By default, SSH connection has to be made as a user in the `admins` group. It possible to log into the server as `root` *only from the local network of the server*. If your server is a VPS, the web console or VNC provided by VPS providers may work.
 
 If you are running `yunohost` commands in the CLI as an administrator of your server, you have to call them with `sudo` before (for example `sudo yunohost user list`). You can also become `root` by running `sudo su`.
 
