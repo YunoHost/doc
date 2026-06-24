@@ -14,17 +14,17 @@ Create a virtual package in apt, depending on the list of specified packages tha
 
 ```toml
 [resources.apt]
-packages = ["nyancat", "lolcat", "sl"]
+packages = "nyancat, lolcat, sl"
 
 # (this part is optional and corresponds to the legacy ynh_install_extra_app_dependencies helper)
 extras.yarn.repo = "deb https://dl.yarnpkg.com/debian/ stable main"
 extras.yarn.key = "https://dl.yarnpkg.com/debian/pubkey.gpg"
-extras.yarn.packages = ["yarn"]
+extras.yarn.packages = "yarn"
 ```
 
 ### Properties
 
-- `packages`: List of packages to be installed via `apt`
+- `packages`: List of packages to be installed via `apt` (comma-separated string)
 - `packages_from_raw_bash`: A multi-line bash snippet (using triple quotes as open/close) which should echo additional packages to be installed. Meant to be used for packages to be conditionally installed depending on architecture, debian version, install questions, or other logic.
 - `extras`: A dict of (repo, key, packages) corresponding to "extra" repositories to fetch dependencies from
 
