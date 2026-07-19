@@ -1,0 +1,62 @@
+---
+title: VPN configuration
+---
+
+If you are using a VPN, there are few steps you need to do to tell your server how to connect.
+
+## Install VPN client
+
+Yunohost does not ship with the VPN client installed, but can be easily installed in the admin panel via the following steps:
+
+1. Log into your [admin panel](/admin/webadmin).
+1. Click on Applications.
+1. Click the green "Install an Application" button.
+1. Search for "VPN Client" and select the app (this should take you to the corresponding page for https://apps.yunohost.org/app/vpnclient).
+1. Click Install.
+
+## Acquire credentials
+
+You will need a `.cube` file containing your credentials for your VPN. Your VPN provider should provide you with this, or provide the details needed to make one. The VPN client also offers a `.ovpn` option, however this contains less information, and may not allow the client to automatically update certificates.
+
+:::note
+If you are using Neutrinet as your VPN provider, note that you will not be provided a `.cube` file but you can create one very easily via the following steps:
+
+1. Log into your [user portal on Neutrinet](https://user.neutrinet.be).
+1. Click on "Clients".
+1. If you don't have a client, click "Add new client".
+1. Once created, click on the client and select "Download config package". This will download a zip file with all the credentials you need.
+1. Unzip the downloaded zip file into an empty folder of your choosing.
+1. Open a terminal in the folder.
+1. Create a new file called `auth` and put your Neutrinet username (set to your email) and password on the first and second line of the file respectively.
+1. Add the CSR.csr and client.key that you used during Neutrinet sign-up to the folder.
+1. Download a script to help compile the information with `wget https://git.domainepublic.net/Neutrinet/scripts/-/raw/master/cubefile/faire_un_point_cube.sh`.
+1. Inspect the script to ensure that you are happy that the script is safe to run.
+1. Run the script with `bash faire_un_point_cube.sh`.
+
+After running these steps, you should see a `neutrinet.cube` file in the folder you created.
+:::
+
+## Configure VPN client
+
+Now you have everything you need to use your VPN. All you need to do now is configure your VPN client through the admin panel.
+
+1. Log into your [admin panel](/admin/webadmin).
+1. Click on Applications.
+1. Click on "VPN Client".
+1. Next to "Configuration file", select "Choose file" and pick your `.cube` file.
+1. Click "Save"
+
+If all goes well, you should now be able to run diagnostics and most warnings related to internet and port checking should be gone.
+
+## Reverse DNS
+
+If you want to send emails, you need to set up rDNS to avoid them going to spam or even being blocked at an SMTP level. When you are using a VPN, since your public IP has changed, you now need your VPN provider to change their rDNS details to your domain.
+
+:::warning
+If you are using Neutrinet as your VPN provider, there is currently no way to change rDNS records through the portal. Therefore, you **must** [email them](mailto:support@neutrinet.be). Remember to specify:
+
+* Your IP address provided by your client (you can see this in your portal, or run `ping yourdomain.net` in a terminal).
+* Your domain (should not typically be a subdomain).
+
+Please remember to be polite when communicating with their volunteers.
+:::
