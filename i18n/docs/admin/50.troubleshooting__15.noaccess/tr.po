@@ -5,11 +5,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2026-01-04 16:21+0000\n"
+"POT-Creation-Date: 2026-06-04 14:05+0000\n"
 "PO-Revision-Date: 2026-04-10 15:56+0000\n"
 "Last-Translator: Mehmet Can Gökçe <rainessandrai2023@gmail.com>\n"
-"Language-Team: Turkish <https://translate.yunohost.org/projects/yunohost-doc/"
-"50troubleshooting__15noaccess/tr/>\n"
+"Language-Team: Turkish <https://translate.yunohost.org/projects/yunohost-"
+"doc/50troubleshooting__15noaccess/tr/>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -27,20 +27,13 @@ msgstr "YunoHost için yeniden erişim almak"
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:6
 #, no-wrap
 msgid "There are several reasons that could lead to one administrator's access being partially or completely blocked off their YunoHost server. In numerous cases, one of the access methods is blocked, but others are not.\n"
-msgstr ""
-"YunoHost'ta admin kullanıcısının yetkisinin kısmen veya tamamen "
-"engellenmesinin bir kaç sebebi olabilir. Bir çok durumda erişim "
-"yöntemlerinden birisi engellendiğinde diğerleri engellenmemiş olur.\n"
+msgstr "YunoHost'ta admin kullanıcısının yetkisinin kısmen veya tamamen engellenmesinin bir kaç sebebi olabilir. Bir çok durumda erişim yöntemlerinden birisi engellendiğinde diğerleri engellenmemiş olur.\n"
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:8
 #, no-wrap
 msgid "This page will help you diagnose the issue, get back access, and if needed repair your system. Most common causes are listed first, so follow the tutorial from top to bottom.\n"
-msgstr ""
-"Bu sayfa hatayı bulmanız, erişimi geri elde etmeniz ve gerekirse sisteminizi "
-"onarmanız konusunda yardımc olur. Sebepler yaygınlık sırasına göre aşağıda "
-"listelenmiştir, bu yüzden eğitimi takip ederken yukarıdan aşağıya doğru "
-"ilerleyin.\n"
+msgstr "Bu sayfa hatayı bulmanız, erişimi geri elde etmeniz ve gerekirse sisteminizi onarmanız konusunda yardımc olur. Sebepler yaygınlık sırasına göre aşağıda listelenmiştir, bu yüzden eğitimi takip ederken yukarıdan aşağıya doğru ilerleyin.\n"
 
 #. type: Title ##
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:9
@@ -137,19 +130,19 @@ msgstr ""
 #. type: Title ###
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:45
 #, no-wrap
-msgid "You are trying to log in with SSH as `root` instead of `admin` user"
+msgid "You are trying to log in with SSH as `root` instead of a user from the `admins` group"
 msgstr ""
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:48
 #, no-wrap
-msgid "By default, SSH connection has to be made as `admin`. It possible to log into the server as `root` *only from the local network of the server*. If your server is a VPS, the web console or VNC provided by VPS providers may work.\n"
+msgid "By default, SSH connection has to be made as a user in the `admins` group. It possible to log into the server as `root` *only from the local network of the server*. If your server is a VPS, the web console or VNC provided by VPS providers may work.\n"
 msgstr ""
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:50
 #, no-wrap
-msgid "If you are running `yunohost` commands in the CLI as `admin`, you have to call them with `sudo` before (for example `sudo yunohost user list`). You can also become `root` by running `sudo su`.\n"
+msgid "If you are running `yunohost` commands in the CLI as an administrator of your server, you have to call them with `sudo` before (for example `sudo yunohost user list`). You can also become `root` by running `sudo su`.\n"
 msgstr ""
 
 #. type: Title ###
