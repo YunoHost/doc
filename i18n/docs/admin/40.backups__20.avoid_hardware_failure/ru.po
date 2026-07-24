@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: 2026-05-29 17:22+0000\n"
+"PO-Revision-Date: 2026-07-18 20:56+0000\n"
 "Last-Translator: Alekseï <support@digiology.org>\n"
 "Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
 "40backups__20avoid_hardware_failure/ru/>\n"
@@ -36,42 +36,52 @@ msgstr "Обеспечение физической защиты вашего с
 #, no-wrap
 msgid "Very often people who self-host don't have proper storage for their system. Leaving the server in several parts, in a high traffic area, accessible to children or pets, or in a poorly ventilated area can quickly turn into a disaster.\n"
 msgstr ""
+"Очень часто у тех, кто размещает сервер самостоятельно, нет надлежащего "
+"хранилища для своей системы. Размещение сервера в разных местах, в местах с "
+"высокой проходимостью, доступных детям или домашним животным, или в плохо "
+"проветриваемом помещении может быстро привести к катастрофе.\n"
 
 #. type: Title ##
 #: docs/admin/40.backups/20.avoid_hardware_failure.mdx:9
 #, no-wrap
 msgid "Secure your hard drives"
-msgstr ""
+msgstr "Защитите свои жесткие диски"
 
 #. type: Plain text
 #: docs/admin/40.backups/20.avoid_hardware_failure.mdx:12
 #, no-wrap
 msgid "Ideally, your hard disks should be fixed to prevent vibrations which can accelerate the wear of the equipment or even reduce its performance, especially if there is another disk next to it.\n"
 msgstr ""
+"В идеале жёсткие диски следует крепить, чтобы предотвратить вибрации, "
+"которые могут ускорить износ оборудования или даже снизить его "
+"производительность, особенно если рядом находится другой диск.\n"
 
 #. type: Title ##
 #: docs/admin/40.backups/20.avoid_hardware_failure.mdx:13
 #, no-wrap
 msgid "Reduce swapiness for SD cards and SSDs"
-msgstr ""
+msgstr "Уменьшите количество операций подкачки для SD-карт и SSD-накопителей"
 
 #. type: Plain text
 #: docs/admin/40.backups/20.avoid_hardware_failure.mdx:16
 #, no-wrap
 msgid "If you use a swap file with an SSD or SD card with too much swapiness, your storage media could give up the ghost prematurely due to too many writes.\n"
 msgstr ""
+"Если вы используете файл подкачки на SSD или SD-карте с чрезмерной загрузкой "
+"файла подкачки, ваш носитель информации может преждевременно выйти из строя "
+"из-за слишком большого количества операций записи.\n"
 
 #. type: Plain text
 #: docs/admin/40.backups/20.avoid_hardware_failure.mdx:18
 #, no-wrap
 msgid "To prevent this:\n"
-msgstr ""
+msgstr "Чтобы этого избежать:\n"
 
 #. type: Plain text
 #: docs/admin/40.backups/20.avoid_hardware_failure.mdx:24
 #, no-wrap
 msgid "If it is above 10:\n"
-msgstr ""
+msgstr "Если значение выше 10:\n"
 
 #. type: Plain text
 #: docs/admin/40.backups/20.avoid_hardware_failure.mdx:31

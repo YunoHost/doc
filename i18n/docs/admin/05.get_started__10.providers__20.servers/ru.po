@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: 2026-05-29 17:22+0000\n"
+"PO-Revision-Date: 2026-07-09 02:12+0000\n"
 "Last-Translator: Alekseï <support@digiology.org>\n"
 "Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
 "05get_started__10providers__20servers/ru/>\n"
@@ -37,7 +37,7 @@ msgstr "Поставщики серверов"
 #: docs/admin/05.get_started/10.providers/20.servers.mdx:9
 #, no-wrap
 msgid "Pre-installed YunoHost Offers"
-msgstr ""
+msgstr "Предустановленные предложения YunoHost"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/20.servers.mdx:16
@@ -49,12 +49,20 @@ msgid ""
 "* [Scaleway Dedibox](https://www.scaleway.com/en/dedibox/operating-systems/) (dedicated server)\n"
 "* [Numericoop](https://numericoop.fr/solution-sur-mesure/) (VPS) <HighlightCHATONS/>\n"
 msgstr ""
+"* [Эльзасская нейтральная сеть](https://arn-fai.net) (VPS) <HighlightFFDN/> <"
+"HighlightCHATONS/>\n"
+"* [ECOWAN](https://ecowan.fr) (VPS)\n"
+"* [Hosterfy](https://www.hosterfy.com/en/kvm-vps-hosting) (VPS)\n"
+"* [Scaleway Dedibox](https://www.scaleway.com/en/dedibox/operating-systems/) "
+"(выделенный сервер)\n"
+"* [Numericoop](https://numericoop.fr/solution-sur-mesure/) (VPS) <"
+"HighlightCHATONS/>\n"
 
 #. type: Title ##
 #: docs/admin/05.get_started/10.providers/20.servers.mdx:17
 #, no-wrap
 msgid "YunoHost IT outsourcing"
-msgstr ""
+msgstr "ИТ-аутсорсинг YunoHost"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/20.servers.mdx:21
@@ -64,3 +72,8 @@ msgid ""
 "* [Numericoop](https://numericoop.fr/solution-sur-mesure/) (France only) <HighlightCHATONS/>\n"
 "* [Librezo](https://librezo.fr/) (France only)\n"
 msgstr ""
+"* [ReflexLibre](https://reflexlibre.net) (Только Франция) <HighlightCHATONS/>"
+"\n"
+"* [Numericoop](https://numericoop.fr/solution-sur-mesure/) (Только Франция) <"
+"HighlightCHATONS/>\n"
+"* [Librezo](https://librezo.fr/) (Только Франция)\n"

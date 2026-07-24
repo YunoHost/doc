@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: 2026-06-02 20:31+0000\n"
+"PO-Revision-Date: 2026-07-18 20:56+0000\n"
 "Last-Translator: Alekseï <support@digiology.org>\n"
 "Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
 "05get_started__10providers__05registrar__ovh__manualdns/ru/>\n"
@@ -44,36 +44,47 @@ msgstr ""
 #, no-wrap
 msgid "Once you bought your domain name, got to the Web Control Panel, and click on you domain name on the left side:\n"
 msgstr ""
+"После покупки доменного имени перейдите в панель управления и щёлкните по "
+"своему доменному имени в левой части экрана:\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/05.registrar/ovh/manualdns.mdx:11
 #, no-wrap
 msgid "![OVH website screenshot](/img/providers/ovh_control_panel.png?resize=800)\n"
 msgstr ""
+"![Снимок экрана веб-сайта OVH]"
+"(/img/providers/ovh_control_panel.png?resize=800)\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/05.registrar/ovh/manualdns.mdx:13
 #, no-wrap
 msgid "Click on the **DNS Zone** tab, then on **Add an entry**:\n"
 msgstr ""
+"Перейдите на вкладку **DNS Zone**, затем нажмите **Add an entry "
+"(Добавить запись)**:\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/05.registrar/ovh/manualdns.mdx:15
 #, no-wrap
 msgid "![OVH website screenshot](/img/providers/ovh_dns_zone.png?resize=800)\n"
 msgstr ""
+"![Снимок экрана веб-сайта OVH](/img/providers/ovh_dns_zone.png?resize=800)\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/05.registrar/ovh/manualdns.mdx:17
 #, no-wrap
 msgid "Now you need to add the DNS redirections as specified by the [standard DNS zone configuration](/admin/get_started/post_install/dns_config)\n"
 msgstr ""
+"Теперь необходимо добавить перенаправления DNS в соответствии со "
+"[стандартной конфигурацией зоны DNS]"
+"(/admin/get_started/post_install/dns_config)\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/05.registrar/ovh/manualdns.mdx:19
 #, no-wrap
 msgid "Click on \"Change in text format\", keep the first four lines:\n"
 msgstr ""
+"Нажмите на кнопку «Изменить формат текста», оставив первые четыре строки:\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/05.registrar/ovh/manualdns.mdx:28

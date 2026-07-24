@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-04-19 08:39+0000\n"
-"PO-Revision-Date: 2026-06-02 20:31+0000\n"
+"PO-Revision-Date: 2026-07-24 11:19+0000\n"
 "Last-Translator: Alekseï <support@digiology.org>\n"
 "Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
 "45tutorials__55moving_app_folder/ru/>\n"
@@ -47,36 +47,46 @@ msgid ""
 "Here's a summary of how to do this the application WordPress. Here, is is assumed that\n"
 "[you already mounted the external hard-drive](/admin/tutorials/external_storage).\n"
 msgstr ""
+"Вот краткое описание того, как это сделать в приложении WordPress. Здесь "
+"предполагается, что\n"
+"[вы уже подключили внешний жёсткий диск](/admin/tutorials/external_storage)."
+"\n"
 
 #. type: Title ####
 #: docs/admin/45.tutorials/55.moving_app_folder.mdx:12
 #, no-wrap
 msgid "1. Move the entire WordPress folder to an external hard drive"
-msgstr ""
+msgstr "1. Переместите всю папку WordPress на внешний жёсткий диск"
 
 #. type: Title ####
 #: docs/admin/45.tutorials/55.moving_app_folder.mdx:18
 #, no-wrap
 msgid "2. Create a symbolic link"
-msgstr ""
+msgstr "2. Создайте символическую ссылку"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/55.moving_app_folder.mdx:21
 #, no-wrap
 msgid "So that programs looking for files in /var/www/wordpress will actually take them from the harddrive\n"
 msgstr ""
+"Чтобы программы, ищущие файлы в /var/www/wordpress, действительно загружали "
+"их с жесткого диска\n"
 
 #. type: Title ####
 #: docs/admin/45.tutorials/55.moving_app_folder.mdx:26
 #, no-wrap
 msgid "3. Tweak permissions (maybe?)"
-msgstr ""
+msgstr "3. Изменение прав доступа (а нужно ли?)"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/55.moving_app_folder.mdx:29
 #, no-wrap
 msgid "After this, note that you may need to tweak the permissions of `/media/externalharddrive` so that `www-data` (or the user corresponding to the app) is able to read through the folder... Something like :\n"
 msgstr ""
+"После этого обратите внимание, что вам может потребоваться изменить права "
+"доступа к `/media/externalharddrive`, чтобы `www-data` "
+"(или пользователь, соответствующий приложению) мог читать содержимое "
+"папки... Например:\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/55.moving_app_folder.mdx:36

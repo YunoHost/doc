@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: 2026-05-29 17:22+0000\n"
+"PO-Revision-Date: 2026-07-24 11:19+0000\n"
 "Last-Translator: Alekseï <support@digiology.org>\n"
 "Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
 "45tutorials__05domains__dns_subdomains/ru/>\n"
@@ -38,18 +38,24 @@ msgstr "DNS и поддомены для приложений"
 #, no-wrap
 msgid "YunoHost allows the use of subdomains. If one owns a domain name `mydomain.com`, one first needs to create the subdomains in the DNS configuration (with one's registrar like Gandi).\n"
 msgstr ""
+"YunoHost позволяет использовать поддомены. Если у вас есть доменное имя "
+"`mydomain.com`, сначала необходимо создать поддомены в конфигурации DNS "
+"(у своего регистратора, например, Gandi).\n"
 
 #. type: Title ###
 #: docs/admin/45.tutorials/05.domains/dns_subdomains.mdx:9
 #, no-wrap
 msgid "Configuration example with Gandi"
-msgstr ""
+msgstr "Пример конфигурации с использованием Gandi"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/05.domains/dns_subdomains.mdx:12
 #, no-wrap
 msgid "The DNS configuration needs an A record with an IPv4 address, an AAAA record with an IPv6 address, and various CNAME records, one for each desired subdomain.\n"
 msgstr ""
+"Для настройки DNS требуется запись A с IPv4-адресом, запись AAAA с IPv6-"
+"адресом и несколько записей CNAME, по одной для каждого желаемого поддомена."
+"\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/05.domains/dns_subdomains.mdx:14
@@ -62,18 +68,25 @@ msgstr "Если ваша конфигурация DNS выглядит так:\
 #, no-wrap
 msgid "then you can access `agenda.mydomain.com`, `blog.mydomain.com` and `rss.mydomain.com` subdomains.\n"
 msgstr ""
+"затем вы сможете получить доступ к поддоменам `agenda.mydomain.com`, "
+"`blog.mydomain.com` и `rss.mydomain.com`.\n"
 
 #. type: Title ###
 #: docs/admin/45.tutorials/05.domains/dns_subdomains.mdx:26
 #, no-wrap
 msgid "Install an application on a subdomain"
-msgstr ""
+msgstr "Установка приложения на поддомене"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/05.domains/dns_subdomains.mdx:29
 #, no-wrap
 msgid "To install an application on a subdomain in YunoHost, for example `blog.mydomain.com`, the configuration is done in the administration panel. One first add the subdomain to the available domains list. The creation of a subdomain in YunoHost will create the corresponding configuration files for NGINX (the web server used in YunoHost).\n"
 msgstr ""
+"Для установки приложения на поддомене в YunoHost, например, "
+"`blog.mydomain.com`, настройка выполняется в веб-панели администратора. "
+"Сначала необходимо добавить поддомен в список доступных доменов. Создание "
+"поддомена в YunoHost приведёт к созданию соответствующих конфигурационных "
+"файлов для NGINX (веб-сервера, используемого в YunoHost).\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/05.domains/dns_subdomains.mdx:31

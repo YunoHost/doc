@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: 2026-06-02 20:31+0000\n"
+"PO-Revision-Date: 2026-07-18 20:56+0000\n"
 "Last-Translator: Alekseï <support@digiology.org>\n"
 "Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
 "35email__10migration/ru/>\n"
@@ -46,37 +46,43 @@ msgstr ""
 #, no-wrap
 msgid "This tool must be installed on your desktop computer. The transfer method looks at this schema:\n"
 msgstr ""
+"Этот инструмент необходимо установить на ваш настольный компьютер. Метод "
+"передачи использует следующую схему:\n"
 
 #. type: Plain text
 #: docs/admin/35.email/10.migration.mdx:12
 #, no-wrap
 msgid "**`Old email server −> desktop computer with ImapSync or Larch −> new email server`**\n"
 msgstr ""
+"**`Старый почтовый сервер −> настольный компьютер с ImapSync или Larch −> "
+"новый почтовый сервер`**\n"
 
 #. type: Title ###
 #: docs/admin/35.email/10.migration.mdx:13
 #, no-wrap
 msgid "ImapSync"
-msgstr ""
+msgstr "ImapSync"
 
 #. type: Plain text
 #: docs/admin/35.email/10.migration.mdx:16
 #, no-wrap
 msgid "[ImapSync site](http://imapsync.lamiral.info/)\n"
-msgstr ""
+msgstr "[Сайт ImapSync](http://imapsync.lamiral.info/)\n"
 
 #. type: Plain text
 #: docs/admin/35.email/10.migration.mdx:18
 #, no-wrap
 msgid "Install ImapSync on your client computer by following this [guide](http://imapsync.lamiral.info/INSTALL):\n"
 msgstr ""
+"Установите ImapSync на свой компьютер, следуя этому [руководству]"
+"(http://imapsync.lamiral.info/INSTALL):\n"
 
 #. type: Plain text
 #: docs/admin/35.email/10.migration.mdx:24
 #: docs/admin/35.email/10.migration.mdx:43
 #, no-wrap
 msgid "Transfer emails from one server to another:\n"
-msgstr ""
+msgstr "Передача электронных писем с одного сервера на другой:\n"
 
 #. type: Plain text
 #: docs/admin/35.email/10.migration.mdx:31

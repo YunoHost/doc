@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: 2026-06-02 20:31+0000\n"
+"PO-Revision-Date: 2026-07-18 20:56+0000\n"
 "Last-Translator: Alekseï <support@digiology.org>\n"
 "Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
 "05get_started__10providers__05registrar__namecheap/ru/>\n"
@@ -36,33 +36,43 @@ msgstr "Получение ключа API от Namecheap"
 #, no-wrap
 msgid "See the [API Documentation](https://www.namecheap.com/support/api/intro/) for reference.\n"
 msgstr ""
+"См. [документацию по API](https://www.namecheap.com/support/api/intro/).\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/05.registrar/namecheap.mdx:9
 #, no-wrap
 msgid "1. Login to your Namecheap account.\n"
-msgstr ""
+msgstr "1. Войдите в свою учётную запись Namecheap.\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/05.registrar/namecheap.mdx:11
 #, no-wrap
 msgid "2. Go to the Profile > Tools menu.\n"
-msgstr ""
+msgstr "2. Перейдите в меню «Профиль» > «Инструменты» (Profile > Tools menu).\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/05.registrar/namecheap.mdx:13
 #, no-wrap
 msgid "3. Scroll down to the Business & Dev Tools section. Click on MANAGE next to Namecheap API Access.\n"
 msgstr ""
+"3. Прокрутите страницу вниз до раздела «Инструменты для бизнеса и "
+"разработчиков». Нажмите «УПРАВЛЕНИЕ» (MANAGE) рядом с пунктом «Доступ к API "
+"Namecheap» (Namecheap API Access).\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/05.registrar/namecheap.mdx:15
 #, no-wrap
 msgid "4. Toggle ON/OFF, read our Terms of Service, enter your account password.\n"
 msgstr ""
+"4. Включите/выключите, ознакомьтесь с нашими Условиями предоставления услуг, "
+"введите пароль от вашей учётной записи.\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/05.registrar/namecheap.mdx:16
 #, no-wrap
 msgid "5. After enabling API access, you will be allotted an APIKey. Your Namecheap account username will act as API username. Your access to the API is authenticated using these elements.\n"
 msgstr ""
+"5. После включения доступа к API вам будет присвоен APIKey. В качестве имени "
+"пользователя API будет использоваться ваше имя пользователя учётной записи "
+"Namecheap. Ваш доступ к API будет аутентифицирован с помощью этих элементов."
+"\n"

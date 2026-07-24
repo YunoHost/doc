@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-04-19 08:39+0000\n"
-"PO-Revision-Date: 2026-05-29 17:22+0000\n"
+"PO-Revision-Date: 2026-07-20 09:41+0000\n"
 "Last-Translator: Alekseï <support@digiology.org>\n"
 "Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
 "35email__index/ru/>\n"
@@ -39,24 +39,28 @@ msgstr ""
 #, no-wrap
 msgid "The mail stack includes an SMTP server (Postfix), an IMAP server (Dovecot), antispam (Rspamd) and DKIM configuration.\n"
 msgstr ""
+"Почтовый стек включает в себя SMTP-сервер (Postfix), IMAP-сервер (Dovecot), "
+"антиспам-сервер (Rspamd) и конфигурацию DKIM.\n"
 
 #. type: Title ##
 #: docs/admin/35.email/index.mdx:12
 #, no-wrap
 msgid "Making sure your setup is right"
-msgstr ""
+msgstr "Убедитесь, что ваша настройка выполнена правильно"
 
 #. type: Plain text
 #: docs/admin/35.email/index.mdx:15
 #, no-wrap
 msgid "Email is a complicated ecosystem and quite a few details can prevent it from working properly.\n"
 msgstr ""
+"Электронная почта — это сложная экосистема, и множество деталей могут "
+"помешать её нормальной работе.\n"
 
 #. type: Plain text
 #: docs/admin/35.email/index.mdx:17
 #, no-wrap
 msgid "To validate your setup:\n"
-msgstr ""
+msgstr "Для проверки вашей конфигурации:\n"
 
 #. type: Plain text
 #: docs/admin/35.email/index.mdx:22
@@ -67,18 +71,36 @@ msgid ""
 "- carefully configure mail DNS records according to [this documentation](/admin/get_started/post_install/dns_config) ;\n"
 "- test your configuration using the diagnostic features (<HighlightWebAdmin/> → <HighlightDiagnosis/> → <Highlight no_break={true} color='grey'><FAIcon icon=\"fa-envelope\"/> Email</Highlight> ). You can also use [mail-tester.com](https://mail-tester.com); a score of at least 8~9/10 is a reasonable goal <small>(be careful: only 3 tests per domain per day are allowed)</small>\n"
 msgstr ""
+"- если вы разворачиваете проект самостоятельно дома и не используете VPN, "
+"убедитесь, что [ваш интернет-провайдер не блокирует порт 25]"
+"(/admin/get_started/providers/isp/);\n"
+"- настройте маршрутизацию портов в соответствии с [данной документацией]"
+"(/admin/get_started/post_install/port_forwarding);\n"
+"- тщательно настройте DNS-записи для почты в соответствии с "
+"[данной документацией](/admin/get_started/post_install/dns_config);\n"
+"- проверьте свою конфигурацию с помощью диагностических функций (<"
+"HighlightWebAdmin/> → <HighlightDiagnosis/> → <Highlight no_break={true} "
+"color='grey'><FAIcon icon=\"fa-envelope\"/> Email</Highlight> ). Вы также "
+"можете использовать [mail-tester.com](https://mail-tester.com); достичь "
+"результата не ниже 8-9/10 вполне достаточно <small>"
+"(будьте внимательны: разрешено только 3 теста для одного домена в день)"
+"</small>\n"
 
 #. type: Title ##
 #: docs/admin/35.email/index.mdx:23
 #, no-wrap
 msgid "Email clients"
-msgstr ""
+msgstr "Почтовые клиенты"
 
 #. type: Plain text
 #: docs/admin/35.email/index.mdx:26
 #, no-wrap
 msgid "To interact with the email server (read and send emails), you can either install a webmail client such as Roundcube or Rainloop on your server or configure a desktop/mobile client as described in [this page](/admin/email/clients).\n"
 msgstr ""
+"Для взаимодействия с почтовым сервером (чтения и отправки писем) вы можете "
+"либо установить на свой сервер веб-клиент почты, например Roundcube или "
+"Rainloop, либо настроить настольный/мобильный клиент, как описано на "
+"[этой странице](/admin/email/clients).\n"
 
 #. type: Plain text
 #: docs/admin/35.email/index.mdx:28

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: 2026-05-29 23:49+0000\n"
+"PO-Revision-Date: 2026-07-24 11:19+0000\n"
 "Last-Translator: Alekseï <support@digiology.org>\n"
 "Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
 "05get_started__40post_install__10find_ip/ru/>\n"
@@ -53,12 +53,16 @@ msgstr "Как его найти?"
 #, no-wrap
 msgid "Any of these tricks should allow you to find the local IP of your server:\n"
 msgstr ""
+"Любой из этих способов должен позволить вам найти локальный IP-адрес вашего "
+"сервера:\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:21
 #, no-wrap
 msgid "<TabItem value=\"angryip\" label=\"With AngryIP (Recommended)\" default>\n"
 msgstr ""
+"<TabItem value=\"angryip\" label=\"С помощью AngryIP (рекомендуется)\" "
+"default>\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:23
@@ -78,6 +82,11 @@ msgid ""
 "- your server should typically be displayed as listening on port 80 and 443\n"
 "- when in doubt, just type `https://192.168.x.y` in your browser to check if it's a YunoHost or not.\n"
 msgstr ""
+"- Вы можете отсортировать результаты по пингу, как показано на этом "
+"скриншоте, чтобы легко увидеть эффективно используемые IP-адреса.\n"
+"- Ваш сервер обычно должен отображаться как прослушивающий порты 80 и 443.\n"
+"- Если сомневаетесь, просто введите `https://192.168.x.y` в браузере, чтобы "
+"проверить, является ли это YunoHost или нет.\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:42

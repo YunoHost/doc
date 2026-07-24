@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: 2026-06-02 20:31+0000\n"
+"PO-Revision-Date: 2026-07-09 02:12+0000\n"
 "Last-Translator: Alekseï <support@digiology.org>\n"
 "Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
 "05get_started__20install_on___install_script/ru/>\n"
@@ -44,7 +44,7 @@ msgstr ""
 #: docs/admin/05.get_started/20.install_on/_install_script.mdx:12
 #, no-wrap
 msgid "Always make sure there's an `s` at the end of `https`.\n"
-msgstr ""
+msgstr "Всегда следите за тем, чтобы в конце `https` стояла буква `s`.\n"
 
 #. type: Fenced div block (warning)
 #: docs/admin/05.get_started/20.install_on/_install_script.mdx:16
@@ -55,9 +55,20 @@ msgid ""
 "apt install curl ca-certificates\n"
 "```\n"
 msgstr ""
+"Возможно, вам сначала потребуется установить `curl` и `ca-certificates`, "
+"выполнив команду:\n"
+"```bash\n"
+"apt install curl ca-certificates\n"
+"```\n"
 
 #. type: Fenced div block (note)
 #: docs/admin/05.get_started/20.install_on/_install_script.mdx:23
 #, no-wrap
 msgid "**For advanced users concerned with the `curl | bash` approach:** consider reading [\"Is curl|bash insecure?\"](https://sandstorm.io/news/2015-09-24-is-curl-bash-insecure-pgp-verified-install) on Sandstom's blog, and possibly [this discussion on Hacker News](https://news.ycombinator.com/item?id=12766350&noprocess).\n"
 msgstr ""
+"**Опытным пользователям, обеспокоенным подходом `curl | bash`,,** "
+"рекомендуется прочитать статью [\"Является ли curl|bash небезопасным?\"]"
+"(https://sandstorm.io/news/2015-09-24-is-curl-bash-insecure-pgp-verified-"
+"install) в блоге Sandstorm, а также, возможно, "
+"[это обсуждение на Hacker News]"
+"(https://news.ycombinator.com/item?id=12766350&noprocess).\n"

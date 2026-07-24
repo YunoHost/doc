@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: 2026-05-29 17:22+0000\n"
+"PO-Revision-Date: 2026-07-18 20:56+0000\n"
 "Last-Translator: Alekseï <support@digiology.org>\n"
 "Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
 "40backups__25include_exclude_files/ru/>\n"
@@ -36,42 +36,54 @@ msgstr "Включаемые файлы"
 #, no-wrap
 msgid "YunoHost usually already knows what needs to be backed up. However, if you have made manual changes, such as installing an app outside of the YunoHost application system, you may want to extend YunoHost's mechanism to specify other files to be backed up.\n"
 msgstr ""
+"YunoHost обычно уже знает, какие файлы нужно резервировать. Однако, если вы "
+"внесли изменения вручную, например, установили приложение вне системы "
+"приложений YunoHost, вам может потребоваться расширить механизм YunoHost, "
+"чтобы указать другие файлы для резервного копирования.\n"
 
 #. type: Plain text
 #: docs/admin/40.backups/25.include_exclude_files.mdx:10
 #, no-wrap
 msgid "By default, if configurations tracked by YunoHost are changed, they will be backed up. On the other hand, a database or an app added by hand, changes on some configurations not tracked, will not be backed up.\n"
 msgstr ""
+"По умолчанию, если изменяются конфигурации, отслеживаемые YunoHost, они "
+"будут резервно скопированы. С другой стороны, если база данных или "
+"приложение добавлены вручную, изменения в конфигурациях, которые не "
+"отслеживаются, не будут резервно скопированы.\n"
 
 #. type: Plain text
 #: docs/admin/40.backups/25.include_exclude_files.mdx:12
 #, no-wrap
 msgid "You can create a backup hook and a restore hook to add data to backup. Here is an example:\n"
 msgstr ""
+"Вы можете создать обработчик резервного копирования и обработчик "
+"восстановления для добавления данных в резервную копию. Вот пример:\n"
 
 #. type: Plain text
 #: docs/admin/40.backups/25.include_exclude_files.mdx:14
 #, no-wrap
 msgid "`/etc/yunohost/hooks.d/backup/99-conf_custom`\n"
-msgstr ""
+msgstr "`/etc/yunohost/hooks.d/backup/99-conf_custom`\n"
 
 #. type: Plain text
 #: docs/admin/40.backups/25.include_exclude_files.mdx:55
 #, no-wrap
 msgid "`/etc/yunohost/hooks.d/restore/99-conf_custom`\n"
-msgstr ""
+msgstr "`/etc/yunohost/hooks.d/restore/99-conf_custom`\n"
 
 #. type: Title ##
 #: docs/admin/40.backups/25.include_exclude_files.mdx:101
 #, no-wrap
 msgid "Exclude files"
-msgstr ""
+msgstr "Исключить файлы"
 
 #. type: Plain text
 #: docs/admin/40.backups/25.include_exclude_files.mdx:104
 #, no-wrap
 msgid "There is no mechanism to exclude specific files from a YunoHost backup, other than the 2 options presented below:\n"
 msgstr ""
+"Помимо двух вариантов, представленных ниже, механизм исключения определенных "
+"файлов из резервной копии YunoHost отсутствует:\n"
 
 #. type: Title ###
 #: docs/admin/40.backups/25.include_exclude_files.mdx:105

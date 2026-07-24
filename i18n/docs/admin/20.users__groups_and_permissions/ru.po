@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: 2026-06-02 20:31+0000\n"
+"PO-Revision-Date: 2026-07-20 09:41+0000\n"
 "Last-Translator: Alekseï <support@digiology.org>\n"
 "Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
 "20users__groups_and_permissions/ru/>\n"
@@ -73,36 +73,54 @@ msgid ""
 "You can access the *groups and permissions* management interface from the webadmin\n"
 "by going into the 'Users' section and clicking the corresponding button:\n"
 msgstr ""
+"Доступ к интерфейсу управления *группами и правами доступа* можно получить "
+"через веб-панель администратора,\n"
+"перейдя в раздел «Пользователи» и нажав соответствующую кнопку:\n"
 
 #. type: Plain text
 #: docs/admin/20.users/groups_and_permissions.mdx:12
 #, no-wrap
 msgid "![screenshot of users permission button](/img/webadmin/button_to_go_to_permission_interface.png)\n"
 msgstr ""
+"![снимок экрана кнопки для перехода к разделу разрешений для пользователей]"
+"(/img/webadmin/button_to_go_to_permission_interface.png)\n"
 
 #. type: Title ##
 #: docs/admin/20.users/groups_and_permissions.mdx:13
 #, no-wrap
 msgid "Managing groups"
-msgstr ""
+msgstr "Управление группами"
 
 #. type: Plain text
 #: docs/admin/20.users/groups_and_permissions.mdx:16
 #, no-wrap
 msgid "The group mechanism can be used to define groups of users which then can be used to restrict permissions for applications and other services (such as mail or XMPP). Note that it is *not* mandatory to create a group to do so: you can also restrict access to an app or service on a user-per-user basis.\n"
 msgstr ""
+"Механизм групп позволяет определять группы пользователей, которые затем "
+"могут ограничивать права доступа к приложениям и другим службам "
+"(например, почте или XMPP). Обратите внимание, что создание группы *не* "
+"обязательно: вы также можете ограничить доступ к приложению или службе для "
+"каждого пользователя отдельно.\n"
 
 #. type: Plain text
 #: docs/admin/20.users/groups_and_permissions.mdx:18
 #, no-wrap
 msgid "Using groups is however useful for semantics, for example if you host multiple groups of friends, associations or businesses on your server, you might want to create groups like `association1` and `association2` and add members of each association to the relevant group.\n"
 msgstr ""
+"Однако использование групп полезно с точки зрения семантики. Например, если "
+"на вашем сервере размещено несколько групп друзей, ассоциаций или "
+"предприятий, вы можете создать группы, такие как `association1` и "
+"`association2` и добавить участников каждой ассоциации в соответствующую "
+"группу.\n"
 
 #. type: Plain text
 #: docs/admin/20.users/groups_and_permissions.mdx:20
 #, no-wrap
 msgid "It's also possible to define mail aliases for a group, such that mails sent to `groupe@domain.tld` will be dispatched to all members of the group.\n"
 msgstr ""
+"Также можно определить почтовые псевдонимы для группы, так что письма, "
+"отправленные на адрес `groupe@domain.tld`, будут рассылаться всем участникам "
+"группы.\n"
 
 #. type: Title ###
 #: docs/admin/20.users/groups_and_permissions.mdx:21

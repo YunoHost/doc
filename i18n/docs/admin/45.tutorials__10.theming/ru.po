@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: 2026-05-29 17:22+0000\n"
+"PO-Revision-Date: 2026-07-18 20:56+0000\n"
 "Last-Translator: Alekseï <support@digiology.org>\n"
 "Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
 "45tutorials__10theming/ru/>\n"
@@ -39,42 +39,48 @@ msgid ""
 "The portal is customizable from the webadmin:\n"
 " `Domains` > Choose a top level domain > `Features`\n"
 msgstr ""
+"Портал можно настраивать через веб-панель администратора:\n"
+" `Domains` > Выберите домен верхнего уровня > `Features`\n"
 
 #. type: Title ##
 #: docs/admin/45.tutorials/10.theming.mdx:9
 #, no-wrap
 msgid "Options for the Portal customization"
-msgstr ""
+msgstr "Параметры настройки Портала"
 
 #. type: Title ###
 #: docs/admin/45.tutorials/10.theming.mdx:11
 #, no-wrap
 msgid "Show the list of public apps to visitors"
-msgstr ""
+msgstr "Показывать посетителям список общедоступных приложений"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/10.theming.mdx:13
 #, no-wrap
 msgid "Visitors will see a 'public apps' page when ending up on the portal instead of just the login form.\n"
 msgstr ""
+"Вместо формы входа на портал посетители увидят страницу «общедоступные "
+"приложения».\n"
 
 #. type: Title ###
 #: docs/admin/45.tutorials/10.theming.mdx:14
 #, no-wrap
 msgid "Show other domain's apps"
-msgstr ""
+msgstr "Показ приложений других доменов"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/10.theming.mdx:17
 #, no-wrap
 msgid "All apps from all domains will be visible on the portal. Default value is `true`.\n"
 msgstr ""
+"На портале будут отображаться все приложения из всех доменов. Значение по "
+"умолчанию — `true`.\n"
 
 #. type: Title ###
 #: docs/admin/45.tutorials/10.theming.mdx:18
 #, no-wrap
 msgid "Custom title"
-msgstr ""
+msgstr "Пользовательский заголовок"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/10.theming.mdx:21

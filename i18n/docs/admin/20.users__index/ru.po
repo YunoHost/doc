@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: 2026-06-07 19:42+0000\n"
+"PO-Revision-Date: 2026-07-24 11:19+0000\n"
 "Last-Translator: Alekseï <support@digiology.org>\n"
 "Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
 "20users__index/ru/>\n"
@@ -59,12 +59,15 @@ msgstr ""
 #, no-wrap
 msgid "You should be careful about who you give your server access to. In terms of security, this largely increase the attack surface for someone who wants to mess with the server one way or another.\n"
 msgstr ""
+"Следует тщательно выбирать, кому вы предоставляете доступ к своему серверу. "
+"С точки зрения безопасности, это значительно увеличивает поверхность атаки "
+"для тех, кто захочет каким-либо образом вмешаться в работу сервера.\n"
 
 #. type: Title ##
 #: docs/admin/20.users/index.mdx:15
 #, no-wrap
 msgid "The user portal, or SSO"
-msgstr ""
+msgstr "Пользовательский портал, или SSO"
 
 #. type: Plain text
 #: docs/admin/20.users/index.mdx:19
@@ -73,18 +76,38 @@ msgid ""
 "![User panel screenshot](/img/user_panel.jpg)\n"
 "The user portal, also called the SSO for 'Single Sign On' allows user to browse easily between the different apps they have access to. In particular, the term 'Single Sign On' comes from the fact that user only need to log in the portal to automatically be logged to all apps that require authentication (or at least those who are integrated with the SSO/LDAP, since this is sometimes technically complicated or not possible at all).\n"
 msgstr ""
+"![Снимок экрана пользовательской панели](/img/user_panel.jpg)\n"
+"Пользовательский портал, также называемый SSO (Single Sign On — единый вход)"
+", позволяет пользователю легко переключаться между различными приложениями, "
+"к которым у него есть доступ. В частности, термин «единый вход» происходит "
+"от того, что пользователю достаточно войти в портал, чтобы автоматически "
+"войти во все приложения, требующие аутентификации (или, по крайней мере, в "
+"те, которые интегрированы с SSO/LDAP, поскольку это иногда технически сложно "
+"или вообще невозможно).\n"
 
 #. type: Plain text
 #: docs/admin/20.users/index.mdx:21
 #, no-wrap
 msgid "In the portal, users can also click on the avatar in the top-left to configure some other settings such as their identify, mail aliases, automatic mail forwards, or change their password.\n"
 msgstr ""
+"На портале пользователи также могут щелкнуть по аватару в верхнем левом "
+"углу, чтобы настроить некоторые другие параметры, такие как их "
+"идентификационные данные, почтовые псевдонимы, автоматическую пересылку "
+"почты или изменить свой пароль.\n"
 
 #. type: Fenced div block (info)
 #: docs/admin/20.users/index.mdx:22
 #, no-wrap
 msgid "You should be aware that the SSO can only be reached through the actual domain name (i.e. `https://the.domain.tld/yunohost/sso`), and NOT by just using the IP of the server (i.e. `https://11.22.33.44/yunohost/sso`), contrarily to the webadmin ! This is a bit confusing but is necessary for technical reason. If you are in a situation where you need to access the SSO without having your DNS properly configured for some reason, you might consider tweaking your `/etc/hosts` as described in [this page](/admin/tutorials/domains/dns_local_network).\n"
 msgstr ""
+"Следует помнить, что доступ к SSO возможен только через фактическое доменное "
+"имя (например, `https://the.domain.tld/yunohost/sso`), а НЕ просто через IP-"
+"адрес сервера (например, `https://11.22.33.44/yunohost/sso`), в отличие от "
+"веб-администратора! Это несколько запутывает ситуацию, но необходимо по "
+"техническим причинам. Если по какой-либо причине вам необходимо получить "
+"доступ к SSO без правильной настройки DNS, вы можете рассмотреть возможность "
+"изменения файла `/etc/hosts`, как описано на [этой странице]"
+"(/admin/tutorials/domains/dns_local_network).\n"
 
 #. type: Title ##
 #: docs/admin/20.users/index.mdx:26

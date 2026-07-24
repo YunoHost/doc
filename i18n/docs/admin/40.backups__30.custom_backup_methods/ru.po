@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: 2026-05-29 17:22+0000\n"
+"PO-Revision-Date: 2026-07-07 00:42+0000\n"
 "Last-Translator: Alekseï <support@digiology.org>\n"
 "Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
 "40backups__30custom_backup_methods/ru/>\n"
@@ -41,15 +41,19 @@ msgstr ""
 #, no-wrap
 msgid "This operation is done with a hook and will allow you to launch a backup this way:\n"
 msgstr ""
+"Эта операция выполняется с помощью обработчика событий и позволит вам "
+"запустить резервное копирование следующим образом:\n"
 
 #. type: Plain text
 #: docs/admin/40.backups/30.custom_backup_methods.mdx:14
 #, no-wrap
 msgid "Below is a simplistic example that can be used to set up a rotational backup with different disks that are changed every week:\n"
 msgstr ""
+"Ниже приведён упрощённый пример, который можно использовать для настройки "
+"ротационного резервного копирования с еженедельной заменой дисков:\n"
 
 #. type: Plain text
 #: docs/admin/40.backups/30.custom_backup_methods.mdx:16
 #, no-wrap
 msgid "`/etc/yunohost/hooks.d/backup_method/05-custom`\n"
-msgstr ""
+msgstr "`/etc/yunohost/hooks.d/backup_method/05-custom`\n"

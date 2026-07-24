@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: 2026-06-02 20:31+0000\n"
+"PO-Revision-Date: 2026-07-18 20:56+0000\n"
 "Last-Translator: Alekseï <support@digiology.org>\n"
 "Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
 "80advanced__40torhiddenservice/ru/>\n"
@@ -38,42 +38,47 @@ msgid ""
 "This tuto is not finished ! Some data could leak with this setup like the main domain of your YunoHost, so it's not a \"Hidden Service\".\n"
 "See [The official Tor hidden service documentation](https://www.torproject.org/docs/tor-hidden-service.html.en).\n"
 msgstr ""
+"Этот урок не закончен! При такой настройке может произойти утечка некоторых "
+"данных, например, основного домена вашего YunoHost, поэтому это не "
+"\"скрытый сервис\".\n"
+"См. [Официальную документацию по скрытым сервисам Tor]"
+"(https://www.torproject.org/docs/tor-hidden-service.html.en).\n"
 
 #. type: Title ###
 #: docs/admin/80.advanced/40.torhiddenservice.mdx:11
 #, no-wrap
 msgid " Installing Tor"
-msgstr ""
+msgstr " Установка Tor"
 
 #. type: Title ###
 #: docs/admin/80.advanced/40.torhiddenservice.mdx:17
 #, no-wrap
 msgid " Configuring our hidden service"
-msgstr ""
+msgstr " Настройка нашего скрытого сервиса"
 
 #. type: Plain text
 #: docs/admin/80.advanced/40.torhiddenservice.mdx:20
 #, no-wrap
 msgid "Edit `/etc/tor/torrc`, and add these lines:\n"
-msgstr ""
+msgstr "Отредактируйте файл `/etc/tor/torrc` и добавьте следующие строки:\n"
 
 #. type: Title ###
 #: docs/admin/80.advanced/40.torhiddenservice.mdx:27
 #, no-wrap
 msgid " Restart Tor"
-msgstr ""
+msgstr " Перезапуск Tor"
 
 #. type: Title ###
 #: docs/admin/80.advanced/40.torhiddenservice.mdx:33
 #, no-wrap
 msgid "Get your Tor Hidden Service hostname"
-msgstr ""
+msgstr "Получите имя хоста вашего скрытого сервиса Tor"
 
 #. type: Plain text
 #: docs/admin/80.advanced/40.torhiddenservice.mdx:40
 #, no-wrap
 msgid "Your domain looks like *random123456789.onion*\n"
-msgstr ""
+msgstr "Ваш домен выглядит как *random123456789.onion*\n"
 
 #. type: Title ###
 #: docs/admin/80.advanced/40.torhiddenservice.mdx:41

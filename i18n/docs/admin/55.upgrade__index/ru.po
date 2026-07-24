@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2025-11-11 01:24+0100\n"
-"PO-Revision-Date: 2026-05-29 17:22+0000\n"
+"PO-Revision-Date: 2026-07-07 00:42+0000\n"
 "Last-Translator: Alekseï <support@digiology.org>\n"
 "Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
 "55upgrade__index/ru/>\n"
@@ -39,22 +39,26 @@ msgstr "Из командной строки"
 #: docs/admin/55.upgrade/index.mdx:1
 #, no-wrap
 msgid "✨ Upgrades"
-msgstr ""
+msgstr "✨ Обновления"
 
 #. type: Plain text
 #: docs/admin/55.upgrade/index.mdx:8
 #, no-wrap
 msgid "On the administraton panel, click on Upgrade the system. YunoHost will refresh the system package catalog as well as the application catalog, and display available upgrades.\n"
 msgstr ""
+"В панели администрирования нажмите «Обновить систему». YunoHost обновит "
+"каталог системных пакетов, а также каталог приложений и отобразит доступные "
+"обновления.\n"
 
 #. type: Plain text
 #: docs/admin/55.upgrade/index.mdx:10
 #, no-wrap
 msgid "Click on green upgrade buttons to upgrade the system and applications.\n"
 msgstr ""
+"Нажмите на зелёные кнопки обновления, чтобы обновить систему и приложения.\n"
 
 #. type: Plain text
 #: docs/admin/55.upgrade/index.mdx:14
 #, no-wrap
 msgid "Here are some example of corresponding command lines:\n"
-msgstr ""
+msgstr "Вот несколько примеров соответствующих командных строк:\n"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: 2026-06-07 19:42+0000\n"
+"PO-Revision-Date: 2026-07-09 02:12+0000\n"
 "Last-Translator: Alekseï <support@digiology.org>\n"
 "Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
 "40backups__35migrate_or_merge_servers/ru/>\n"
@@ -51,9 +51,15 @@ msgstr "Объединение 2 серверов YunoHost"
 #, no-wrap
 msgid "If you merge 2 servers together, you will need to recreate the users, domains and permissions of the first server on the destination server. Then you can restore app by app.\n"
 msgstr ""
+"При объединении двух серверов потребуется заново создать пользователей, "
+"домены и права доступа первого сервера на целевом сервере. Затем можно будет "
+"восстанавливать приложения по одному.\n"
 
 #. type: Fenced div block (danger)
 #: docs/admin/40.backups/35.migrate_or_merge_servers.mdx:14
 #, no-wrap
 msgid "There is a limitation concerning apps that have the same ID. It will not be possible to restore them easily. Also be careful not to delete the eponymous app from the destination server :/\n"
 msgstr ""
+"Существует ограничение в отношении приложений с одинаковым идентификатором. "
+"Восстановить их будет непросто. Также будьте осторожны, чтобы не удалить "
+"одноименное приложение с целевого сервера :/\n"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: 2026-06-02 20:31+0000\n"
+"PO-Revision-Date: 2026-07-18 20:56+0000\n"
 "Last-Translator: Alekseï <support@digiology.org>\n"
 "Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
 "35email__05clients/ru/>\n"
@@ -49,13 +49,17 @@ msgstr ""
 #: docs/admin/35.email/05.clients.mdx:12
 #, no-wrap
 msgid "Generic settings"
-msgstr ""
+msgstr "Общие настройки"
 
 #. type: Plain text
 #: docs/admin/35.email/05.clients.mdx:15
 #, no-wrap
 msgid "Here are the element you should enter to manually configure your mail client (`domain.tld` refers to what's after the @ in your email address, and `username` what's before @).\n"
 msgstr ""
+"Вот элементы, которые вам следует ввести для ручной настройки вашего "
+"почтового клиента (`domain.tld` обозначает то, что находится после символа @ "
+"в вашем адресе электронной почты, а `username` — то, что находится перед "
+"символом @).\n"
 
 #. type: Plain text
 #: docs/admin/35.email/05.clients.mdx:20
@@ -66,24 +70,34 @@ msgid ""
 "| IMAP     | 993  | SSL/TLS    | Normal password | `username` (without the `@domain.tld`) |\n"
 "| SMTP     | 587  | STARTTLS   | Normal password | `username` (without the `@domain.tld`) |\n"
 msgstr ""
+"| Протокол | Порт | Шифрование | Аутентификация  | Имя "
+"пользователя                       |\n"
+"| :--:     | :-:  | :--:       | :--:            | :--:"
+"                                   |\n"
+"| IMAP     | 993  | SSL/TLS    | Норм. пароль | `username` "
+"(без `@domain.tld`) |\n"
+"| SMTP     | 587  | STARTTLS   | Норм. пароль | `username` "
+"(без `@domain.tld`) |\n"
 
 #. type: Title ###
 #: docs/admin/35.email/05.clients.mdx:21
 #, no-wrap
 msgid "Client by client"
-msgstr ""
+msgstr "Клиент за клиентом"
 
 #. type: Plain text
 #: docs/admin/35.email/05.clients.mdx:25
 #, no-wrap
 msgid "<TabItem value=\"thunderbird\" label=\"Mozilla Thunderbird\">\n"
-msgstr ""
+msgstr "<TabItem value=\"thunderbird\" label=\"Mozilla Thunderbird\">\n"
 
 #. type: Title #####
 #: docs/admin/35.email/05.clients.mdx:26
 #, no-wrap
 msgid "<SmallInline url='/img/icons/logo-thunderbird.png'/> Configure Thunderbird Desktop (on a desktop computer)"
 msgstr ""
+"<SmallInline url='/img/icons/logo-thunderbird.png'/> Настройка Thunderbird "
+"(на настольном компьютере)"
 
 #. type: Plain text
 #: docs/admin/35.email/05.clients.mdx:29

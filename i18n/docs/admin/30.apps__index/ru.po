@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: 2026-05-29 17:22+0000\n"
+"PO-Revision-Date: 2026-07-18 20:56+0000\n"
 "Last-Translator: Alekseï <support@digiology.org>\n"
 "Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
 "30apps__index/ru/>\n"
@@ -64,43 +64,63 @@ msgstr "<TabItem value=\"cli\" label=\"Из командной строки\">\n
 #: docs/admin/30.apps/index.mdx:1
 #, no-wrap
 msgid "📦 Applications"
-msgstr ""
+msgstr "📦 Приложения"
 
 #. type: Plain text
 #: docs/admin/30.apps/index.mdx:11
 #, no-wrap
 msgid "One of the key feature of YunoHost is the ability to easily install applications which are then immediately usable. Example of applications include a blog system, a \"cloud\" (to host and sync files), a website, an RSS reader...\n"
 msgstr ""
+"Одна из ключевых особенностей YunoHost — возможность легко устанавливать "
+"приложения, которые затем сразу же готовы к использованию. Примерами таких "
+"приложений могут служить система для ведения блога, «облако» "
+"(для размещения и синхронизации файлов), веб-сайт, RSS-читалка и т.д.\n"
 
 #. type: Plain text
 #: docs/admin/30.apps/index.mdx:13
 #, no-wrap
 msgid "Applications can be installed and managed through the webadmin interface in <HighlightApplications/> or through commands of the `yunohost app` category.\n"
 msgstr ""
+"Приложения можно устанавливать и управлять ими через веб-интерфейс "
+"администратора в <HighlightApplications/> или с помощью команд категории `"
+"yunohost app`.\n"
 
 #. type: Plain text
 #: docs/admin/30.apps/index.mdx:15
 #, no-wrap
 msgid "<Figure caption=\"Apps list in the webadmin, with its Install button.\" src=\"/img/webadmin/apps_list.png\"/>\n"
 msgstr ""
+"<Figure caption=\"Список приложений в веб-панели администраторе, а также "
+"кнопка «Установить».\" src=\"/img/webadmin/apps_list.png\"/>\n"
 
 #. type: Plain text
 #: docs/admin/30.apps/index.mdx:17
 #, no-wrap
 msgid "The application catalog and its categories can be browsed directly from the webadmin by clicking on the <HighlightAppInstall/> button in the apps list, or from this documentation.\n"
 msgstr ""
+"Каталог приложений и его категории можно просматривать непосредственно в веб-"
+"панели администратора, нажав кнопку <HighlightAppInstall/> в списке "
+"приложений, или из этой документации.\n"
 
 #. type: Plain text
 #: docs/admin/30.apps/index.mdx:20
 #, no-wrap
 msgid "<Button url=\"https://apps.yunohost.org/\" border=\"none\" color=\"black\" backgroundColor=\"orange\"><FAIcon icon='fa-cubes'/> Browse the application catalog <FAIcon icon='fa-arrow-right'/></Button>\n"
 msgstr ""
+"<Button url=\"https://apps.yunohost.org/\" border=\"none\" color=\"black\" "
+"backgroundColor=\"orange\"><FAIcon icon='fa-cubes'/> Просмотреть каталог "
+"приложений <FAIcon icon='fa-arrow-right'/></Button>\n"
 
 #. type: Fenced div block (caution)
 #: docs/admin/30.apps/index.mdx:22
 #, no-wrap
 msgid "Be careful and stay reasonable on the number of installed applications. Each additional installation increases the attack surface and the risk of failure. Ideally, if you want to test, do it with another instance for example in [a virtual machine](/admin/get_started/install_on/virtualbox).\n"
 msgstr ""
+"Будьте осторожны и соблюдайте разумные ограничения по количеству "
+"устанавливаемых приложений. Каждая дополнительная установка увеличивает "
+"поверхность атаки и риск сбоя. В идеале, если вы хотите провести "
+"тестирование, делайте это с другим экземпляром, например, в "
+"[виртуальной машине](/admin/get_started/install_on/virtualbox).\n"
 
 #. type: Title ##
 #: docs/admin/30.apps/index.mdx:26

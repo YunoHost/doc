@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: 2026-06-02 20:31+0000\n"
+"PO-Revision-Date: 2026-07-18 20:56+0000\n"
 "Last-Translator: Alekseï <support@digiology.org>\n"
 "Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
 "05get_started__20install_on__on_top_of_debian/ru/>\n"
@@ -39,42 +39,61 @@ msgstr "Поверх Debian"
 #, no-wrap
 msgid "YunoHost can be installed \"on top\" of Debian. This can be useful if you already have a Debian machine or can't use the recommended methods. Note that there is no actual difference in your resulting YunoHost installation between doing this and using the other methods involving pre-installed images: the pre-installed images are just convenient to skip a bunch of steps and having the system already shipped with everything needed.\n"
 msgstr ""
+"YunoHost можно установить «поверх» Debian. Это может быть полезно, если у "
+"вас уже есть машина с Debian или вы не можете использовать рекомендуемые "
+"методы. Обратите внимание, что фактической разницы в итоговой установке "
+"YunoHost между этим методом и другими методами, использующими "
+"предустановленные образы, нет: предустановленные образы просто удобны для "
+"пропуска ряда шагов, поскольку система уже поставляется со всем необходимым."
+"\n"
 
 #. type: Title ##
 #: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:16
 #, no-wrap
 msgid "<FAIcon icon=\"fa-download\" /> Get Debian"
-msgstr ""
+msgstr "<FAIcon icon=\"fa-download\" /> Загрузить Debian"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:19
 #, no-wrap
 msgid "You should download the version **Bookworm** (Debian 12) and select the architecture for your PC. When in doubt, select `amd64`, or `i386` for a pre-2010 PC.\n"
 msgstr ""
+"Вам следует загрузить версию **Bookworm** (Debian 12) и выбрать архитектуру "
+"для вашего ПК. В случае сомнений выберите `amd64` или `i386` для ПК, "
+"выпущенных до 2010 года.\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:22
 #, no-wrap
 msgid "  <Button url=\"https://www.debian.org/distrib/netinst\" color=\"skyblue\"><SmallInline url=\"/img/icons/logo-debian.png\" alt=\"Debian logo\"/> Debian Download page</Button>\n"
 msgstr ""
+"  <Button url=\"https://www.debian.org/distrib/netinst\" color=\"skyblue\""
+"><SmallInline url=\"/img/icons/logo-debian.png\" alt=\"Debian logo\"/> "
+"Страница загрузки Debian</Button>\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:25
 #, no-wrap
 msgid "Alternatively, you can browse the [Debian archive](https://cdimage.debian.org/mirror/cdimage/archive) for the latest 12.x version, select your architecture, the select `iso-cd` and download the `netinst` iso.\n"
 msgstr ""
+"В качестве альтернативы вы можете просмотреть [архив Debian]"
+"(https://cdimage.debian.org/mirror/cdimage/archive), чтобы найти последнюю "
+"версию 12.x, выбрать свою архитектуру, затем выбрать `iso-cd` и загрузить "
+"ISO-образ `netinst`.\n"
 
 #. type: Title ###
 #: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:26
 #, no-wrap
 msgid "Installation"
-msgstr ""
+msgstr "Установка"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:29
 #, no-wrap
 msgid "You might want to **wipe the hard drive** before starting the Debian installer.\n"
 msgstr ""
+"Возможно, вам стоит **очистить жёсткий диск** перед запуском установщика "
+"Debian.\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:31

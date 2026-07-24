@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: 2026-06-02 20:31+0000\n"
+"PO-Revision-Date: 2026-07-24 11:19+0000\n"
 "Last-Translator: Alekseï <support@digiology.org>\n"
 "Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
 "05get_started__20install_on__raspberry_pi/ru/>\n"
@@ -54,13 +54,15 @@ msgstr "<TabItem value=\"usbimager\" label=\"С помощью USBimager\">\n"
 #, no-wrap
 msgid "Download [USBimager](https://bztsrc.gitlab.io/usbimager/) for your operating system and install it.\n"
 msgstr ""
+"Загрузите и установите [USBimager](https://bztsrc.gitlab.io/usbimager/) для "
+"вашей операционной системы.\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:62
 #: docs/admin/05.get_started/20.install_on/raspberry_pi.mdx:61
 #, no-wrap
 msgid "Plug your SD card, select your image and click \"Write\"\n"
-msgstr ""
+msgstr "Вставьте SD-карту, выберите образ и нажмите «Записать» (Write).\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:64
@@ -68,7 +70,7 @@ msgstr ""
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:61
 #, no-wrap
 msgid "![USBimager](/img/softwares/usbimager.png)\n"
-msgstr ""
+msgstr "![USBimager](/img/softwares/usbimager.png)\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:67
@@ -85,6 +87,12 @@ msgstr "<TabItem value=\"dd\" label=\"С помощью dd\">\n"
 #, no-wrap
 msgid "If you are on GNU/Linux / macOS and know your way around command line, you may also flash your USB stick or SD card with `dd`. You can identify which device corresponds to your USB stick or SD card with `fdisk -l` or `lsblk`. A typical SD card name is something like `/dev/mmcblk0`. BE CAREFUL and make sure you got the right name.\n"
 msgstr ""
+"Если вы используете GNU/Linux/macOS и умеете работать с командной строкой, "
+"вы также можете записать образ на USB-накопитель или SD-карту с помощью "
+"команды `dd`. Определить, какое устройство соответствует вашему USB-"
+"накопителю или SD-карте, можно с помощью команд `fdisk -l` или `lsblk`. "
+"Типичное имя SD-карты выглядит примерно так: `/dev/mmcblk0`. БУДЬТЕ "
+"ОСТОРОЖНЫ и убедитесь, что вы указали правильное имя.\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:71
@@ -92,7 +100,7 @@ msgstr ""
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:68
 #, no-wrap
 msgid "Then run:\n"
-msgstr ""
+msgstr "Затем выполнить:\n"
 
 #. type: Title ##
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:80

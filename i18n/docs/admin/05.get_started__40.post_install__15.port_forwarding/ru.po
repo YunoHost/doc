@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-04-19 08:39+0000\n"
-"PO-Revision-Date: 2026-06-07 19:42+0000\n"
+"PO-Revision-Date: 2026-07-18 20:56+0000\n"
 "Last-Translator: Alekseï <support@digiology.org>\n"
 "Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
 "05get_started__40post_install__15port_forwarding/ru/>\n"
@@ -86,6 +86,9 @@ msgstr "2. Найдите локальный IP-адрес вашего серв
 #, no-wrap
 msgid "Identify the *local* IP of your server using one of the method listed [on the corresponding page](/admin/get_started/post_install/find_ip).\n"
 msgstr ""
+"Определите *локальный* IP-адрес вашего сервера, используя один из методов, "
+"перечисленных [на соответствующей странице]"
+"(/admin/get_started/post_install/find_ip).\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/40.post_install/15.port_forwarding.mdx:23

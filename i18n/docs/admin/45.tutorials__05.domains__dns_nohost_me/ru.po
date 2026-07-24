@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: 2026-05-29 17:22+0000\n"
+"PO-Revision-Date: 2026-07-24 11:19+0000\n"
 "Last-Translator: Alekseï <support@digiology.org>\n"
 "Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
 "45tutorials__05domains__dns_nohost_me/ru/>\n"
@@ -47,24 +47,32 @@ msgid ""
 "- `whateveryouwant.noho.st`;\n"
 "- `whateveryouwant.ynh.fr`.\n"
 msgstr ""
+"- `точтовыхотитенолатиницей.nohost.me`;\n"
+"- `точтовыхотитенолатиницей.noho.st`;\n"
+"- `точтовыхотитенолатиницей.ynh.fr`.\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/45.tutorials/05.domains/dns_nohost_me.mdx:1
 #, no-wrap
 msgid "Nohost.me domains"
-msgstr ""
+msgstr "Домены Nohost.me"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/05.domains/dns_nohost_me.mdx:14
 #, no-wrap
 msgid "To use this service, you simply have to choose such a domain during the post-installation set up. It will then be automatically configured by YunoHost!\n"
 msgstr ""
+"Для использования этой услуги вам достаточно выбрать такой домен во время "
+"настройки после установки. После этого он будет автоматически настроен "
+"YunoHost!\n"
 
 #. type: Fenced div block (tip)
 #: docs/admin/45.tutorials/05.domains/dns_nohost_me.mdx:15
 #, no-wrap
 msgid "As a fairness measure, each instance may only have **one such domain** setup at any given time.\n"
 msgstr ""
+"В целях обеспечения справедливости, каждый экземпляр может одновременно "
+"иметь только **один такой домен**.\n"
 
 #. type: Title ###
 #: docs/admin/45.tutorials/05.domains/dns_nohost_me.mdx:19
@@ -78,12 +86,21 @@ msgstr "Поддомены"
 #, no-wrap
 msgid "The `nohost.me`, `noho.st` and `ynh.fr` domain service allows the creation of subdomains.\n"
 msgstr ""
+"Сервис доменов `nohost.me`, `noho.st` и `ynh.fr` позволяет создавать "
+"поддомены.\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/05.domains/dns_nohost_me.mdx:24
 #, no-wrap
 msgid "YunoHost allows the installation of applications on subdomains (for example, having the Nextcloud application accessible from the `cloud.mydomain.org` address), this feature is also allowed with the `nohost.me`, `noho.st` and `ynh.fr` domains and so it is possible to have a subdomain such as `my.application.mydomain.nohost.me`. To create a subdomain on `nohost.me`, `noho.st` and `ynh.fr`, you just have to add the subdomain to YunoHost like any other domains.\n"
 msgstr ""
+"YunoHost позволяет устанавливать приложения на поддомены "
+"(например, приложение Nextcloud доступно по адресу `cloud.mydomain.org`). "
+"Эта особенность также доступна для доменов `nohost.me`, `noho.st` и `ynh.fr` "
+", поэтому можно создать поддомен, "
+"например,`my.application.mydomain.nohost.me`. Чтобы создать поддомен на "
+"`nohost.me`, `noho.st` и `ynh.fr`, достаточно добавить его в YunoHost, как и "
+"любой другой домен.\n"
 
 #. type: Title ###
 #: docs/admin/45.tutorials/05.domains/dns_nohost_me.mdx:25

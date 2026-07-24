@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: 2026-05-29 17:22+0000\n"
+"PO-Revision-Date: 2026-07-18 20:56+0000\n"
 "Last-Translator: Alekseï <support@digiology.org>\n"
 "Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
 "25domains__index/ru/>\n"
@@ -41,36 +41,56 @@ msgstr ""
 #, no-wrap
 msgid "Domains can be managed in the 'Domains' section of the webadmin, or via the `yunohost domain` category of the command line.\n"
 msgstr ""
+"Управление доменами осуществляется в разделе «Домены» веб-панели "
+"администратора или через категорию `yunohost domain` в командной строке.\n"
 
 #. type: Plain text
 #: docs/admin/25.domains/index.mdx:13
 #, no-wrap
 msgid "Whenever you add a domain, it is assumed that you have purchased (or at least control) the domain, so that you can manage its [DNS configuration](/admin/get_started/post_install/dns_config). An exception is [domains in `.nohost.me`, `.noho.st` and `ynh.fr`](/admin/tutorials/domains/dns_nohost_me) which are offered by the YunoHost Project, and can be directly integrated with YunoHost through automatic DynDNS configuration. To limit abuse and costs, an instance can only have one domain offered at a time, but you can add as many sub-domains to it as you like. For example, if you choose `example.ynh.co.uk` you can then add the domains `video.example.ynh.co.uk` or `www.exemple.ynh.fr` or any other sub-domain you may require.\n"
 msgstr ""
+"При добавлении домена предполагается, что вы приобрели "
+"(или, по крайней мере, контролируете) этот домен, чтобы иметь возможность "
+"управлять его [конфигурацией DNS](/admin/get_started/post_install/dns_config)"
+". Исключением являются [домены в `.nohost.me`, `.noho.st` и `ynh.fr`]"
+"(/admin/tutorials/domains/dns_nohost_me), которые предлагаются проектом "
+"YunoHost и могут быть напрямую интегрированы с YunoHost посредством "
+"автоматической настройки DynDNS. Чтобы ограничить злоупотребления и затраты, "
+"в одном экземпляре может быть предложен только один домен одновременно, но "
+"вы можете добавить к нему столько поддоменов, сколько пожелаете. Например, "
+"если вы выберете `example.ynh.co.uk`, вы сможете добавить домены "
+"`video.example.ynh.co.uk` или `www.exemple.ynh.fr` или любой другой "
+"необходимый вам поддомен.\n"
 
 #. type: Plain text
 #: docs/admin/25.domains/index.mdx:15
 #, no-wrap
 msgid "Domains can be managed in the 'Domain' section of the webadmin, or through the `yunohost domain` category of the command line.\n"
 msgstr ""
+"Управление доменами осуществляется в разделе «Домен» веб-панели "
+"администратора или через категорию `yunohost domain` в командной строке.\n"
 
 #. type: Plain text
 #: docs/admin/25.domains/index.mdx:17
 #, no-wrap
 msgid "![Screenshot of the webadmin domain interface with an \"Add domain\" button and a list of domains](/img/webadmin/webadmin_domain.png)\n"
 msgstr ""
+"![Снимок экрана веб-интерфейса администрирования домена с кнопкой «Добавить "
+"домен» и списком доменов](/img/webadmin/webadmin_domain.png)\n"
 
 #. type: Title ##
 #: docs/admin/25.domains/index.mdx:18
 #, no-wrap
 msgid "3 types of domains"
-msgstr ""
+msgstr "3 типа доменов"
 
 #. type: Plain text
 #: docs/admin/25.domains/index.mdx:22
 #, no-wrap
 msgid "<TabItem value=\"nohost\" label=\"Yunohost's domains (the free and easy way)\">\n"
 msgstr ""
+"<TabItem value=\"nohost\" label="
+"\"Домены Yunohost (бесплатный и простой способ)\">\n"
 
 #. type: Plain text
 #: docs/admin/25.domains/index.mdx:24
@@ -100,6 +120,9 @@ msgid ""
 "- `whateveryouwant.noho.st`;\n"
 "- `whateveryouwant.ynh.fr`.\n"
 msgstr ""
+"- `точтовыхотитенолатиницей.nohost.me`;\n"
+"- `точтовыхотитенолатиницей.noho.st`;\n"
+"- `точтовыхотитенолатиницей.ynh.fr`.\n"
 
 #. type: Plain text
 #: docs/admin/25.domains/index.mdx:32

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: 2026-05-29 17:22+0000\n"
+"PO-Revision-Date: 2026-07-18 20:56+0000\n"
 "Last-Translator: Alekseï <support@digiology.org>\n"
 "Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
 "45tutorials__90freebox_storage/ru/>\n"
@@ -39,42 +39,47 @@ msgstr ""
 #, no-wrap
 msgid "Certaines Freebox [sont munies d'un disque dur connecté au réseau (NAS)](https://www.actusfree.fr/nas-freebox/) qui peut être utilisé comme espace de stockage depuis votre serveur.\n"
 msgstr ""
+"Некоторые устройства Freebox [оснащены сетевым хранилищем (NAS)]"
+"(https://www.actusfree.fr/nas-freebox/), которое можно использовать в "
+"качестве хранилища данных с вашего сервера.\n"
 
 #. type: Title ##
 #: docs/admin/45.tutorials/90.freebox_storage.mdx:11
 #, no-wrap
 msgid "Utiliser le NAS de la Freebox"
-msgstr ""
+msgstr "Использование Freebox NAS"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/90.freebox_storage.mdx:14
 #, no-wrap
 msgid "Il faut installer le paquet `cifs-utils`\n"
-msgstr ""
+msgstr "Необходимо установить пакет `cifs-utils`\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/90.freebox_storage.mdx:20
 #, no-wrap
 msgid "Il faut créer un point de montage (ici `/mount/freebox`)\n"
-msgstr ""
+msgstr "Необходимо создать точку монтирования (здесь `/mount/freebox`)\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/90.freebox_storage.mdx:26
 #, no-wrap
 msgid "On monte le répertoire NAS par défaut avec les droits de lecture / écriture pour tous\n"
 msgstr ""
+"Монтируем стандартный каталог NAS с правами на чтение и запись для всех "
+"пользователей.\n"
 
 #. type: Title ###
 #: docs/admin/45.tutorials/90.freebox_storage.mdx:31
 #, no-wrap
 msgid "Automatiser le montage"
-msgstr ""
+msgstr "Автоматизация сборки"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/90.freebox_storage.mdx:34
 #, no-wrap
 msgid "Une ligne à ajouter à la fin du `/etc/fstab` :\n"
-msgstr ""
+msgstr "Добавьте одну строку в конец файла `/etc/fstab`:\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/90.freebox_storage.mdx:41

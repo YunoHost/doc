@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-04-19 08:39+0000\n"
-"PO-Revision-Date: 2026-06-07 19:42+0000\n"
+"PO-Revision-Date: 2026-07-18 20:56+0000\n"
 "Last-Translator: Alekseï <support@digiology.org>\n"
 "Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
 "40backups__index/ru/>\n"
@@ -85,31 +85,41 @@ msgstr ""
 #: docs/admin/40.backups/index.mdx:10
 #, no-wrap
 msgid "Manual backup"
-msgstr ""
+msgstr "Ручное резервное копирование"
 
 #. type: Plain text
 #: docs/admin/40.backups/index.mdx:13
 #, no-wrap
 msgid "YunoHost comes with a backup system that allows you to back up (and restore) system configurations and data (e.g. emails) and apps, if they support it.\n"
 msgstr ""
+"YunoHost поставляется с системой резервного копирования, которая позволяет "
+"создавать резервные копии (и восстанавливать) системные конфигурации, данные "
+"(например, электронную почту) и приложения, если они поддерживают эту "
+"функцию.\n"
 
 #. type: Plain text
 #: docs/admin/40.backups/index.mdx:15
 #, no-wrap
 msgid "You can manage backups either from the command line (`yunohost backup --help`) or from the web administration (in the Backups section), though some features are not yet available in the webadmin.\n"
 msgstr ""
+"Вы можете управлять резервными копиями как из командной строки "
+"(`yunohost backup --help`)), так и из веб-интерфейса администрирования "
+"(в разделе «Резервное копирование»), хотя некоторые функции пока недоступны "
+"в веб-интерфейсе.\n"
 
 #. type: Plain text
 #: docs/admin/40.backups/index.mdx:17
 #, no-wrap
 msgid "The current default method consists of creating a `.tar` archive containing all relevant files.\n"
 msgstr ""
+"В настоящее время по умолчанию используется метод создания архива `.tar`, "
+"содержащего все необходимые файлы.\n"
 
 #. type: Title ####
 #: docs/admin/40.backups/index.mdx:18
 #, no-wrap
 msgid "Creating backups"
-msgstr ""
+msgstr "Создание резервных копий"
 
 #. type: Plain text
 #: docs/admin/40.backups/index.mdx:24

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: 2026-06-02 20:31+0000\n"
+"PO-Revision-Date: 2026-07-18 20:56+0000\n"
 "Last-Translator: Alekseï <support@digiology.org>\n"
 "Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
 "50troubleshooting__20ipv6/ru/>\n"
@@ -48,30 +48,36 @@ msgid ""
 "OVH gives one IPv4 address and one IPv6 address for VPS but by default, only IPv4 is OK.\n"
 "Please check [The OVH documentation](https://docs.ovh.com/gb/en/vps/configuring-ipv6/).\n"
 msgstr ""
+"OVH предоставляет VPS по одному IPv4- и IPv6-адресу, но по умолчанию "
+"работает только IPv4.\n"
+"Пожалуйста, ознакомьтесь с [документацией OVH]"
+"(https://docs.ovh.com/gb/en/vps/configuring-ipv6/).\n"
 
 #. type: Title ###
 #: docs/admin/50.troubleshooting/20.ipv6.mdx:13
 #, no-wrap
 msgid "Configure the DNS server"
-msgstr ""
+msgstr "Настройка DNS-сервера"
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/20.ipv6.mdx:16
 #, no-wrap
 msgid "Also check [the documentation for subdomains](/admin/tutorials/domains/dns_subdomains).\n"
 msgstr ""
+"Также ознакомьтесь с [документацией по поддоменам]"
+"(/admin/tutorials/domains/dns_subdomains).\n"
 
 #. type: Title ###
 #: docs/admin/50.troubleshooting/20.ipv6.mdx:17
 #, no-wrap
 msgid "Configure the server"
-msgstr ""
+msgstr "Настройка сервера"
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/20.ipv6.mdx:20
 #, no-wrap
 msgid "On the OVH panel, you will copy 3 elements:\n"
-msgstr ""
+msgstr "На панели OVH вам нужно скопировать 3 элемента:\n"
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/20.ipv6.mdx:24
@@ -81,6 +87,10 @@ msgid ""
 "- the IPv6 gateway address\n"
 "- the IPv6 prefix. On OVH's VPS SSD, prefixes are `/128` because you have only *one* IPv6 address.\n"
 msgstr ""
+"- IPv6-адрес\n"
+"- IPv6-адрес шлюза\n"
+"- IPv6-префикс. На SSD-накопителе VPS от OVH префиксы — `/128` , потому что "
+"у вас только *один* IPv6-адрес.\n"
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/20.ipv6.mdx:27

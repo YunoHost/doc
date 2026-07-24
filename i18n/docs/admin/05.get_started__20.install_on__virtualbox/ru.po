@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: 2026-06-02 20:31+0000\n"
+"PO-Revision-Date: 2026-07-18 20:56+0000\n"
 "Last-Translator: Alekseï <support@digiology.org>\n"
 "Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
 "05get_started__20install_on__virtualbox/ru/>\n"
@@ -52,14 +52,14 @@ msgstr ""
 #: docs/admin/05.get_started/20.install_on/virtualbox.mdx:70
 #, no-wrap
 msgid "<FAIcon icon=\"fa-rocket\"/> Launch the graphical install"
-msgstr ""
+msgstr "<FAIcon icon=\"fa-rocket\"/> Запуск графической установки"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:106
 #: docs/admin/05.get_started/20.install_on/virtualbox.mdx:73
 #, no-wrap
 msgid "You should see a screen like this:\n"
-msgstr ""
+msgstr "Вы должны увидеть примерно такой экран:\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:108
@@ -67,6 +67,8 @@ msgstr ""
 #, no-wrap
 msgid "<Figure caption=\"Preview of the ISO menu\" src=\"/img/softwares/virtualbox_3.png\"/>\n"
 msgstr ""
+"<Figure caption=\"Предварительный просмотр меню ISO\" src="
+"\"/img/softwares/virtualbox_3.png\"/>\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:111
@@ -82,6 +84,8 @@ msgstr ""
 #, no-wrap
 msgid "Once you have validated the keyboard layout, the installation will be launched and will completely erase the data on your hard disk!\n"
 msgstr ""
+"После проверки правильности раскладки клавиатуры запустится установка, "
+"которая полностью удалит данные с вашего жёсткого диска!\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:119
@@ -92,6 +96,10 @@ msgid ""
 "2. Select your language, your location, your keyboard layout, and eventually your timezone.\n"
 "3. The installer will then download and install all required packages.\n"
 msgstr ""
+"1. Выберите `Graphical install`\n"
+"2. Выберите язык, местоположение, раскладку клавиатуры и, при необходимости, "
+"часовой пояс.\n"
+"3. После этого установщик загрузит и установит все необходимые пакеты.\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:122

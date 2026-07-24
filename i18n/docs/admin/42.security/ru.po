@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-04-19 08:39+0000\n"
-"PO-Revision-Date: 2026-06-02 20:31+0000\n"
+"PO-Revision-Date: 2026-07-18 20:56+0000\n"
 "Last-Translator: Alekseï <support@digiology.org>\n"
 "Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
 "42security/ru/>\n"
@@ -57,6 +57,27 @@ msgid ""
 "- auto-redacting sensitive information from YunoHost operation logs and when sharing them with Yunopaste ;\n"
 "- ...\n"
 msgstr ""
+"YunoHost разработан с учётом требований безопасности и обеспечивает "
+"оптимальный баланс между безопасностью и удобством использования. Вот "
+"неполный список аспектов безопасности, реализованных в проекте:\n"
+"- межсетевой экран (брандмауэр) на основе `nftables` для ограничения "
+"входящего трафика соответствующими портами;\n"
+"- `fail2ban`, программное обеспечение, автоматически отклоняющее трафик с "
+"вредоносных IP-адресов, пытающихся взломать SSH и другие сервисы методом "
+"перебора;\n"
+"- использование "
+"[рекомендаций Mozilla для NGINX, Postfix, Dovecot, шифров SSH и т. д.]"
+"(https://wiki.mozilla.org/Security/Server_Side_TLS);\n"
+"- проверка того, что пароль/кодовая фраза пользователя не слишком простые "
+"при их определении;\n"
+"- хеширование паролей пользователей (например, соленый SHA512 в LDAP);\n"
+"- контроль за правами доступа к файлам/каталогам UNIX во всей системе;\n"
+"- Приложения обычно запускаются от имени выделенного пользователя и с "
+"[ограниченными возможностями]"
+"(https://man7.org/linux/man-pages/man7/capabilities.7.html);\n"
+"- автоматическое удаление конфиденциальной информации из журналов операций "
+"YunoHost и при их передаче в Yunopaste;\n"
+"- ...\n"
 
 #. type: Plain text
 #: docs/admin/42.security.mdx:27
@@ -70,30 +91,53 @@ msgid ""
 "- further constraining and limiting application capabilities to only what they need (cf. packaging v3) ;\n"
 "- ...\n"
 msgstr ""
+"Кроме того, в среднесрочной перспективе проект планирует реализовать "
+"следующие функции:\n"
+"- [самостоятельный сброс паролей для пользователей]"
+"(https://github.com/YunoHost/issues/issues/878);\n"
+"- [автоматические предупреждения об уязвимостях]"
+"(https://github.com/YunoHost/yunohost/pull/2077) <small>"
+"(через раздел «Диагностика», а не через форум или социальные сети)</small>;\n"
+"- поддержка [OIDC](https://github.com/YunoHost/yunohost/pull/2149) и [2FA]"
+"(https://github.com/YunoHost/issues/issues/238);\n"
+"- улучшенная поддержка SSH-ключей, в частности "
+"[предоставление возможности их настройки через веб-панель администратора]"
+"(https://github.com/YunoHost/issues/issues/175);\n"
+"- дальнейшее ограничение возможностей приложения только тем, что ему "
+"необходимо (см. пакетирование v3);\n"
+"- ...\n"
 
 #. type: Fenced div block (info)
 #: docs/admin/42.security.mdx:28
 #, no-wrap
 msgid "<FAIcon icon=\"fa-shield\"/> To discuss security flaws in YunoHost, contact the [project's security team](/community/security_team).\n"
 msgstr ""
+"<FAIcon icon=\"fa-shield\"/> Для обсуждения уязвимостей безопасности в "
+"YunoHost, свяжитесь с [командой безопасности проекта]"
+"(/community/security_team).\n"
 
 #. type: Title ##
 #: docs/admin/42.security.mdx:32
 #, no-wrap
 msgid "Basic security advice"
-msgstr ""
+msgstr "Основные советы по безопасности"
 
 #. type: Plain text
 #: docs/admin/42.security.mdx:35
 #, no-wrap
 msgid "Security is not a one-time setup, it's an active, ongoing practice. Here are some basic practices that you should implement:\n"
 msgstr ""
+"Безопасность — это не разовая процедура, а активный, непрерывный процесс. "
+"Вот несколько основных правил, которые следует внедрить:\n"
 
 #. type: Fenced div block (warning)
 #: docs/admin/42.security.mdx:36
 #, no-wrap
 msgid "Using stupidly simple passwords is arguably the number one reason why servers get \"hacked\". You and your users using reasonably complex passwords/passphrases is the basis of any good security.\n"
 msgstr ""
+"Использование предельно простых паролей, пожалуй, является главной причиной "
+"взлома серверов. Использование вами и вашими пользователями достаточно "
+"сложных паролей/кодовых фраз — основа приемлемого уровня безопасности.\n"
 
 #. type: Plain text
 #: docs/admin/42.security.mdx:45

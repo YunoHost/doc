@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: 2026-06-07 19:42+0000\n"
+"PO-Revision-Date: 2026-07-18 20:56+0000\n"
 "Last-Translator: Alekseï <support@digiology.org>\n"
 "Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
 "50troubleshooting__05fail2ban/ru/>\n"
@@ -56,30 +56,37 @@ msgstr "Разблокировка IP-адреса"
 #, no-wrap
 msgid "To unblock an IP address, you must first access your server by some means (for example from another IP address or from another internet connection than the banned one).\n"
 msgstr ""
+"Для разблокировки IP-адреса необходимо сначала получить доступ к серверу "
+"каким-либо другим способом (например, с другого IP-адреса или через другое "
+"интернет-соединение, отличное от заблокированного).\n"
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/05.fail2ban.mdx:15
 #, no-wrap
 msgid "Then, look at the **Fail2Ban’s log** to identify in which `jail` the IP address has been banned:\n"
 msgstr ""
+"Затем просмотрите журнал **Fail2Ban**, чтобы определить, в какой `тюрьме` "
+"был заблокирован IP-адрес:\n"
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/05.fail2ban.mdx:28
 #, no-wrap
 msgid "Here, the `11.22.33.44` IP address has been banned in the `sshd` and `recidive` jails.\n"
 msgstr ""
+"В данном случае IP-адрес `11.22.33.44` был заблокирован в средах `sshd` и "
+"`recidive`.\n"
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/05.fail2ban.mdx:30
 #, no-wrap
 msgid "Then deban the IP address with the following commands:\n"
-msgstr ""
+msgstr "Затем снимите блокировку с IP-адреса с помощью следующих команд:\n"
 
 #. type: Title ##
 #: docs/admin/50.troubleshooting/05.fail2ban.mdx:36
 #, no-wrap
 msgid "Whitelist an IP address"
-msgstr ""
+msgstr "Добавление IP-адреса в белый список"
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/05.fail2ban.mdx:39

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: 2026-05-29 17:22+0000\n"
+"PO-Revision-Date: 2026-07-18 20:56+0000\n"
 "Last-Translator: Alekseï <support@digiology.org>\n"
 "Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
 "43upgrade__120-bookworm__index/ru/>\n"
@@ -42,6 +42,11 @@ msgstr ""
 #, no-wrap
 msgid "- Please don't rush into thinking that you should need to reinstall your system from scratch thinking it would be \"simpler\" (sigh). (A common attitude is to be willing to reinstall a server at the slightest complication...). Instead, if you happen to run into issues, we encourage you to try to investigate and understand what's going on and [reach for help on the chat and the forum](/community/help).\n"
 msgstr ""
+"— Пожалуйста, не спешите думать, что вам нужно переустанавливать систему с "
+"нуля, считая это «проще» (вздох). (Распространённое мнение — готовность "
+"переустановить сервер при малейших сложностях...). Вместо этого, если у вас "
+"возникнут проблемы, мы рекомендуем вам попытаться разобраться в ситуации и "
+"[обратиться за помощью в чат и на форум](/community/help).\n"
 
 #. type: Plain text
 #: docs/admin/43.upgrade/11.0-bullseye.mdx:16
@@ -49,13 +54,15 @@ msgstr ""
 #, no-wrap
 msgid "- **You should watch the known issues at the bottom of this page, to be sure your migrations will work properly.**\n"
 msgstr ""
+"- **Чтобы убедиться в корректной работе миграции, следите за известными "
+"проблемами внизу этой страницы.**\n"
 
 #. type: Title ##
 #: docs/admin/43.upgrade/11.0-bullseye.mdx:17
 #: docs/admin/43.upgrade/12.0-bookworm/index.mdx:17
 #, no-wrap
 msgid "Migration procedure"
-msgstr ""
+msgstr "Процедура миграции"
 
 #. type: Title ##
 #: docs/admin/43.upgrade/11.0-bullseye.mdx:19
@@ -79,13 +86,15 @@ msgstr "Из командной строки"
 #, no-wrap
 msgid "then read carefully and accept the disclaimer.\n"
 msgstr ""
+"затем внимательно прочтите и примите данное заявление об отказе от "
+"ответственности.\n"
 
 #. type: Title ##
 #: docs/admin/43.upgrade/11.0-bullseye.mdx:33
 #: docs/admin/43.upgrade/12.0-bookworm/index.mdx:39
 #, no-wrap
 msgid "During the migration"
-msgstr ""
+msgstr "Во время миграции"
 
 #. type: Plain text
 #: docs/admin/43.upgrade/11.0-bullseye.mdx:40

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: 2026-06-02 20:31+0000\n"
+"PO-Revision-Date: 2026-07-18 20:56+0000\n"
 "Last-Translator: Alekseï <support@digiology.org>\n"
 "Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
 "45tutorials__05domains__dns_local_network/ru/>\n"
@@ -40,7 +40,7 @@ msgstr ""
 #: docs/admin/45.tutorials/05.domains/dns_local_network.mdx:8
 #, no-wrap
 msgid "To solve this issue you can:\n"
-msgstr ""
+msgstr "Для решения этой проблемы вы можете:\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/05.domains/dns_local_network.mdx:11
@@ -49,6 +49,9 @@ msgid ""
 "- configure your router's DNS\n"
 "- or alternatively -  your `/etc/hosts` files on your clients workstation\n"
 msgstr ""
+"- настройте DNS вашего маршрутизатора\n"
+"- или, в качестве альтернативы, файлы `/etc/hosts` на рабочей станции "
+"клиента\n"
 
 #. type: Title ##
 #: docs/admin/45.tutorials/05.domains/dns_local_network.mdx:12
@@ -70,18 +73,30 @@ msgid ""
 "- or if in the webadmin, in the Diagnosis section, under Internet Connectivity, IPv4, click on 'Details' and you should find an entry for 'Local IP'\n"
 "- or using the command line on the server : `hostname -I`\n"
 msgstr ""
+"- либо используя перечисленные [здесь]"
+"(/admin/get_started/post_install/find_ip) приёмы\n"
+"- либо, если вы находитесь в веб-панели администратора, в разделе "
+"«Диагностика», в подразделе «Подключение к Интернету», «IPv4», нажмите "
+"«Подробности», и вы должны найти запись «Локальный IP»\n"
+"- либо используя командную строку на сервере: `hostname -I`\n"
 
 #. type: Title ##
 #: docs/admin/45.tutorials/05.domains/dns_local_network.mdx:20
 #, no-wrap
 msgid "Configure DNS on your Internet router"
-msgstr ""
+msgstr "Настройка DNS на вашем интернет-маршрутизаторе"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/05.domains/dns_local_network.mdx:23
 #, no-wrap
 msgid "The goal here is to create a network wide redirection handled by your router. The idea is to create a DNS redirection to your server's IP. You should access your router's configuration and look for DNS configuration, then add a redirection to your server's IP (e.g. redirect `yunohost.local` to `192.168.1.21`).\n"
 msgstr ""
+"Цель состоит в создании перенаправления в масштабах всей сети, "
+"обрабатываемого вашим маршрутизатором. Идея заключается в создании DNS-"
+"перенаправления на IP-адрес вашего сервера. Вам следует получить доступ к "
+"конфигурации вашего маршрутизатора и найти раздел конфигурации DNS, а затем "
+"добавить перенаправление на IP-адрес вашего сервера "
+"(например, перенаправить `yunohost.local` на `192.168.1.21`).\n"
 
 #. type: Title ##
 #: docs/admin/45.tutorials/05.domains/dns_local_network.mdx:24

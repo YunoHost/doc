@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-05-23 07:43+0000\n"
-"PO-Revision-Date: 2026-06-02 20:31+0000\n"
+"PO-Revision-Date: 2026-07-18 20:56+0000\n"
 "Last-Translator: Alekseï <support@digiology.org>\n"
 "Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
 "05get_started__10providers__10isp/ru/>\n"
@@ -49,12 +49,22 @@ msgid ""
 "{label: 'Oceania', value: 'oceania'},\n"
 "]}>\n"
 msgstr ""
+"<Tabs\n"
+"defaultValue=\"europe\"\n"
+"values={[\n"
+"{label: 'Африка', value: 'africa'},\n"
+"{label: 'Азия', value: 'asia'},\n"
+"{label: 'Европа', value: 'europe'},\n"
+"{label: 'Северная Америка', value: 'northamerica'},\n"
+"{label: 'Южная Америка', value: 'southamerica'},\n"
+"{label: 'Океания', value: 'oceania'},\n"
+"]}>\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/10.isp.mdx:22
 #, no-wrap
 msgid "<TabItem value=\"africa\">\n"
-msgstr ""
+msgstr "<TabItem value=\"africa\">\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/10.isp.mdx:25
@@ -72,12 +82,21 @@ msgid ""
 "| **Moov**   |          |       |         |         |         |\n"
 "| **MTN**    |          |       |         |         |         |\n"
 msgstr ""
+"| Интернет-провайдер | Коробка/модем/маршрутизатор | [Порт 25 открываем]"
+"(/admin/email)| [Hairpinning](http://fr.wikipedia.org/wiki/Hairpinning) | "
+"[Обратное DNS](https://ru.wikipedia.org/wiki/"
+"%D0%9E%D0%B1%D1%80%D0%B0%D1%82%D0%BD%D1%8B%D0%B9_%D0%BF%D1%80%D0%BE%D1%81%D0%BC%D0%BE%D1%82%D1%80_DNS)"
+" | Фикс. IP |\n"
+"| :--------: | :------: | :---: | :-----: | :-----: | :-----: |\n"
+"| **Orange** | Livebox2 | нет   | **нет** | **нет** | **нет** |\n"
+"| **Moov**   |          |       |         |         |         |\n"
+"| **MTN**    |          |       |         |         |         |\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/10.isp.mdx:37
 #, no-wrap
 msgid "<TabItem value=\"asia\">\n"
-msgstr ""
+msgstr "<TabItem value=\"asia\">\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/10.isp.mdx:39
@@ -95,6 +114,17 @@ msgid ""
 "| **KT (SkyLife, Qook&Show)** | Yes                      | No  | -   | Partial |\n"
 "| **SKT (SK Broadband)**      | Yes                      | No  | -   | Partial |\n"
 msgstr ""
+"| Поставщик услуги            | Откр. порт 25 | [Hairpinning]"
+"(http://en.wikipedia.org/wiki/Hairpinning) | Настраиваемый обратный DNS | "
+"Фиксированный IP-адрес |\n"
+"| --------------------------- | ------------------------ | --- | --- | "
+"------- |\n"
+"| **LG U+ (HelloVision)**     | Да (без роутера от интернет-провайдера) | "
+"Нет  | -   | Частично |\n"
+"| **KT (SkyLife, Qook&Show)** | Да                      | Нет  | -   | "
+"Частично |\n"
+"| **SKT (SK Broadband)**      | Да                      | Нет  | -   | "
+"Частично |\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/10.isp.mdx:48

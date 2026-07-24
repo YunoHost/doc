@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: 2026-06-07 19:42+0000\n"
+"PO-Revision-Date: 2026-07-24 11:19+0000\n"
 "Last-Translator: Alekseï <support@digiology.org>\n"
 "Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
 "05get_started__10providers__15vpn__vpn_advantage/ru/>\n"
@@ -56,31 +56,48 @@ msgstr ""
 #: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:14
 #, no-wrap
 msgid "Plug & Play"
-msgstr ""
+msgstr "Plug and Play"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:17
 #, no-wrap
 msgid "By setting up a VPN on your server, you'll be able to make it accessible to the rest of the Internet without having to change the configuration of the router you connect it to. This can be really handy if you are going on vacation, moving or have an Internet disconnection, as you will be able to easily connect it to someone you trust without having to configure the router of the person who is helping you.\n"
 msgstr ""
+"Настроив VPN на своём сервере, вы сможете сделать его доступным для "
+"остальной части Интернета, не меняя конфигурацию маршрутизатора, к которому "
+"он подключён. Это может быть очень удобно, если вы уезжаете в отпуск, "
+"переезжаете или у вас отключился Интернет, так как вы сможете легко "
+"подключить его к кому-то, кому доверяете, без необходимости настраивать "
+"маршрутизатор того, кто вам помогает.\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:19
 #, no-wrap
 msgid "In the same way, you save yourself the trouble of opening your router's ports and bypassing hairpinning.\n"
 msgstr ""
+"Таким же образом вы избавляете себя от необходимости открывать порты "
+"маршрутизатора и обходить технологию hairpinning.\n"
 
 #. type: Title ###
 #: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:20
 #, no-wrap
 msgid "No micro DNS outages"
-msgstr ""
+msgstr "Отсутствие сбоев в работе микро-DNS"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:23
 #, no-wrap
 msgid "If your Internet connection does not have a fixed public IP, you will be forced to set up a dynamic domain name (Dynamic DNS). This solution may be acceptable, but the DNS will only be updated at regular intervals (every two minutes if it is a `noho.st` or `nohost.me` domain name). So there is a chance that this will cause some display errors in the browser from time to time, or even that another site will be displayed (the risks are however reduced because the practice of self-hosting is not widespread).\n"
 msgstr ""
+"Если ваше интернет-соединение не имеет фиксированного публичного IP-адреса, "
+"вам придётся настроить динамическое доменное имя (динамический DNS). Это "
+"решение может быть приемлемым, но DNS будет обновляться только с регулярными "
+"интервалами "
+"(каждые две минуты, если это доменное имя `noho.st` или `nohost.me`). "
+"Поэтому существует вероятность того, что это время от времени будет вызывать "
+"ошибки отображения в браузере или даже приведёт к отображению другого сайта ("
+"однако риски невелики, поскольку практика самостоятельного размещения сайтов "
+"не получила широкого распространения).\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:25

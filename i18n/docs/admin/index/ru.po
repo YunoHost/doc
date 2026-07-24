@@ -4,7 +4,7 @@
 # Languages add-on <noreply-addon-languages@weblate.org>, 2025.
 # Alekseï <support@digiology.org>, 2026.
 msgid ""
-msgstr "Project-Id-Version: YunoHost documentation VERSION\nPOT-Creation-Date: 2026-04-19 08:39+0000\nPO-Revision-Date: 2026-06-07 19:42+0000\nLast-Translator: Alekseï <support@digiology.org>\nLanguage-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/index/ru/>\nLanguage: ru\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\nX-Generator: Weblate 5.14.2\n"
+msgstr "Project-Id-Version: YunoHost documentation VERSION\nPOT-Creation-Date: 2026-04-19 08:39+0000\nPO-Revision-Date: 2026-07-07 00:42+0000\nLast-Translator: Alekseï <support@digiology.org>\nLanguage-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/index/ru/>\nLanguage: ru\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\nX-Generator: Weblate 5.14.2\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #, no-wrap
@@ -32,12 +32,12 @@ msgstr "<img\n    class=\"text--center\"\n    src=\"/img/icons/logo-ynh-roundcor
 msgid ""
 "This is the documentation for YunoHost,<br/>\n"
 "an **operating system** aiming to **simplify server administration**!\n"
-msgstr ""
+msgstr "Это документация для YunoHost,<br/>\n**операционной системы**, цель которой — **упростить администрирование серверов**!\n"
 
 #. type: Plain text
 #, no-wrap
 msgid "If you are an **impatient power user**, you may want to try YunoHost, or jump right away to install:\n"
-msgstr ""
+msgstr "Если вы **нетерпеливый опытный пользователь**, возможно, вам стоит попробовать YunoHost или сразу же приступить к установке:\n"
 
 #. type: Plain text
 #, no-wrap
@@ -45,22 +45,22 @@ msgid ""
 "<Button url=\"/admin/what_is_yunohost\">🤔 What's YunoHost?!</Button>\n"
 "<Button url=\"/admin/what_is_yunohost/demo\">⚗️ Try YunoHost</Button>\n"
 "<Button url=\"/admin/get_started/install_on\">🚀 Install</Button>\n"
-msgstr ""
+msgstr "<Button url=\"/admin/what_is_yunohost\">🤔 Что такое YunoHost?!</Button>\n<Button url=\"/admin/what_is_yunohost/demo\">⚗️ Попробовать YunoHost</Button>\n<Button url=\"/admin/get_started/install_on\">🚀 Установка</Button>\n"
 
 #. type: Plain text
 #, no-wrap
 msgid "<Button url=\"https://apps.yunohost.org/\">📦 Browse the app catalog</Button>\n"
-msgstr ""
+msgstr "<Button url=\"https://apps.yunohost.org/\">📦 Ознакомиться с каталогом приложений</Button>\n"
 
 #. type: Plain text
 #, no-wrap
 msgid "Are you **new to self-hosting and servers in general**? We recommend taking it slow and go through the pages presenting [self-hosting](/admin/about_self_hosting), the [different modes](/admin/get_started/methods) and [other](/admin/get_started/why_should_you_not_host_yourself) [things](/category/providers) you should know prior to jumping into the action!\n"
-msgstr ""
+msgstr "Вы **новичок в самостоятельном размещении сайтов и серверах в целом**? Мы рекомендуем не торопиться и внимательно изучить страницы, посвященные [самостоятельному размещению сайтов](/admin/about_self_hosting), [различным режимам](/admin/get_started/methods) и [другим](/admin/get_started/why_should_you_not_host_yourself) [вещям](/category/providers), которые вам следует знать, прежде чем приступать к делу!\n"
 
 #. type: Plain text
 #, no-wrap
 msgid "Are you **already using YunoHost**? You may want to get in touch with the community or reach for help:\n"
-msgstr ""
+msgstr "Вы **уже используете YunoHost**? Возможно, вам стоит обратиться к сообществу или за помощью:\n"
 
 #. type: Plain text
 #, no-wrap
@@ -68,12 +68,12 @@ msgid ""
 "<Button url=\"https://forum.yunohost.org\">📢 Forum</Button>\n"
 "<Button url=\"/community/chat_rooms\">🗫  Chat rooms</Button>\n"
 "<Button url=\"/community/help\">🛟 Help</Button>\n"
-msgstr ""
+msgstr "<Button url=\"https://forum.yunohost.org\">📢 Форум</Button>\n<Button url=\"/community/chat_rooms\">🗫  Комнаты обсуждений (чаты)</Button>\n<Button url=\"/community/help\">🛟 Справка</Button>\n"
 
 #. type: Plain text
 #, no-wrap
 msgid "Finally, you can **support the project** or get involved in [different ways](/dev):\n"
-msgstr ""
+msgstr "Наконец, вы можете **поддержать проект** или принять участие [различными способами](/dev):\n"
 
 #. type: Plain text
 #, no-wrap
@@ -83,4 +83,4 @@ msgid ""
 "<Button url=\"/dev/doc\">🌐 Work on translations</Button>\n"
 "<Button url=\"/dev/packaging\">📦 Learn app packaging</Button>\n"
 "<Button url=\"/dev/core\">⚙️  Develop on the core</Button>\n"
-msgstr ""
+msgstr "<Button url=\"https://yunohost.org/donate.html\">💰 Пожертвовать</Button>\n<Button url=\"/dev/doc\">📝 Улучшить документацию</Button>\n<Button url=\"/dev/doc\">🌐 Поработать над переводом</Button>\n<Button url=\"/dev/packaging\">📦 Изучите процесс создания пакетов приложений.</Button>\n<Button url=\"/dev/core\">⚙️  Помочь в развитии ядра</Button>\n"

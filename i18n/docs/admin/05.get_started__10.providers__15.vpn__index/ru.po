@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: 2026-05-29 17:22+0000\n"
+"PO-Revision-Date: 2026-07-18 20:56+0000\n"
 "Last-Translator: Alekseï <support@digiology.org>\n"
 "Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
 "05get_started__10providers__15vpn__index/ru/>\n"
@@ -45,12 +45,30 @@ msgid ""
 "If you *do* have such a threat model, especially against state threats, most of the providers listed below will **not** be of any help to you, since they will have to comply with police and judicial demands.\n"
 "However, a VPN can help you to bypass port-forwarding limitations, or to get a stable IP address (if you ISP only provide dynamic IP) and this page will help you for that!\n"
 msgstr ""
+"Обратите внимание, что, за исключением случаев, когда ваша <a href="
+"\"https://en.wikipedia.org/wiki/Threat_model\">модель угроз (англ)</a> "
+"подразумевает, что вы действительно «скрыты», вам не нужно скрывать свой "
+"домашний IP-адрес с помощью VPN. Раскрытие вашего IP-адреса — это не такая "
+"уж большая проблема, не доверяйте крупным коммерческим VPN-компаниям, "
+"которые пытаются продать вам продукт, внушая страх.\n"
+"Если у вас *действительно* есть такая модель угроз, особенно направленная "
+"против чего-то связанного с государством, большинство из перечисленных ниже "
+"провайдеров вам **не** помогут, поскольку им придётся подчиняться "
+"требованиям полиции и судебных органов.\n"
+"Однако VPN может помочь вам обойти ограничения переадресации портов или "
+"получить стабильный IP-адрес "
+"(если ваш интернет-провайдер предоставляет только динамический IP), и эта "
+"страница поможет вам в этом!\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/15.vpn/index.mdx:16
 #, no-wrap
 msgid "Below, you can find a list of providers compatible for self-hosting and especially those providing .cube format for VPNClient apps and those providing [internetcube](https://internetcu.be).\n"
 msgstr ""
+"Ниже вы найдете список провайдеров, совместимых с самостоятельным "
+"размещением, и особенно тех, которые предоставляют формат .cube для "
+"приложений VPNClient, а также тех, кто предоставляет [internetcube]"
+"(https://internetcu.be).\n"
 
 #. type: Fenced div block (info)
 #: docs/admin/05.get_started/10.providers/15.vpn/index.mdx:17
@@ -61,12 +79,19 @@ msgid ""
 "- port forwarding or opened features\n"
 "- net neutrality: no traffic analysis, no user data resale, no alteration of traffic (without legal obligations)...\n"
 msgstr ""
+"Под **совместимостью с самостоятельным размещением** мы подразумеваем VPN-"
+"сервисы, обладающие как минимум следующими характеристиками:\n"
+"- фиксированный выделенный публичный IPv4-адрес\n"
+"- переадресация портов или открытые функции\n"
+"- сетевая нейтральность: отсутствие анализа трафика, перепродажи "
+"пользовательских данных, изменения трафика (без юридических обязательств)..."
+"\n"
 
 #. type: Title ##
 #: docs/admin/05.get_started/10.providers/15.vpn/index.mdx:24
 #, no-wrap
 msgid "English-speaking sites"
-msgstr ""
+msgstr "Англоязычные сайты"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/15.vpn/index.mdx:29
@@ -76,6 +101,16 @@ msgid ""
 "| ------------ | ---------------------------------------------------------------------------- | ---- | --------- | --------- | ----- | ---------- | -------------- |\n"
 "| [Neutrinet](https://neutrinet.be/en/vpn) | ✔ (.cube + [internetcube](https://internetcu.be)) | ✔   | ✔         | ✔         | ~10€¹/month or 30€/year | included | <HighlightFFDN/> <HighlightNonProfit/> |\n"
 msgstr ""
+"| Совместимый поставщик VPN | [VPNClient]"
+"(https://github.com/labriqueinternet/vpnclient_ynh) | IPv6 | rDNS IPv4 | "
+"rDNS IPv6 | Цена | Членство | Сетевой нейтралитет |\n"
+"| ------------ | "
+"---------------------------------------------------------------------------- "
+"| ---- | --------- | --------- | ----- | ---------- | -------------- |\n"
+"| [Neutrinet](https://neutrinet.be/en/vpn) | ✔ "
+"(.cube + [internetcube](https://internetcu.be)) | ✔   | ✔         | ✔"
+"         | ~10€¹/месяц или 30€/год | включено | <HighlightFFDN/> <"
+"HighlightNonProfit/> |\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/15.vpn/index.mdx:31
@@ -83,6 +118,7 @@ msgstr ""
 #, no-wrap
 msgid "¹ [Pay what you want](https://en.wikipedia.org/wiki/Pay_what_you_want)\n"
 msgstr ""
+"¹ [Платите сколько хотите](https://en.wikipedia.org/wiki/Pay_what_you_want)\n"
 
 #. type: Fenced div block (info)
 #: docs/admin/05.get_started/10.providers/15.vpn/index.mdx:32
@@ -95,6 +131,17 @@ msgid ""
 "- [PureVPN](https://www.purevpn.fr/ip-vpn-dedie)\n"
 "- [RapidVPN](https://www.rapidvpn.com/vpn)\n"
 msgstr ""
+"Если вы попробуете другого VPN-провайдера, который включает **публичный "
+"выделенный IPv4 и переадресацию портов**, пожалуйста, внесите свой вклад в "
+"эту документацию. Нам нужны люди для тестирования конкретных предложений "
+"этих коммерческих провайдеров:\n"
+"\n"
+"- ✘ [VPN area](https://vpnarea.com/front/home/dedicated-ip) не разрешает "
+"переадресацию порта 80. Запуск веб-сервера противоречит их условиям "
+"использования.\n"
+"- [Trust zone](https://trust.zone/fr/order?p=25)\n"
+"- [PureVPN](https://www.purevpn.fr/ip-vpn-dedie)\n"
+"- [RapidVPN](https://www.rapidvpn.com/vpn)\n"
 
 #. type: Title ##
 #: docs/admin/05.get_started/10.providers/15.vpn/index.mdx:41

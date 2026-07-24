@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: 2026-06-07 19:42+0000\n"
+"PO-Revision-Date: 2026-07-07 00:42+0000\n"
 "Last-Translator: Alekseï <support@digiology.org>\n"
 "Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
 "02what_is_yunohost__20demo/ru/>\n"
@@ -49,13 +49,13 @@ msgstr ""
 #: docs/admin/02.what_is_yunohost/20.demo.mdx:21
 #, no-wrap
 msgid "<span><FAIcon icon='fa-user' /> User interface</span>\n"
-msgstr ""
+msgstr "<span><FAIcon icon='fa-user' /> Пользовательский интерфейс</span>\n"
 
 #. type: Plain text
 #: docs/admin/02.what_is_yunohost/20.demo.mdx:24
 #, no-wrap
 msgid "https://demo.yunohost.org\n"
-msgstr ""
+msgstr "https://demo.yunohost.org\n"
 
 #. type: Plain text
 #: docs/admin/02.what_is_yunohost/20.demo.mdx:26
@@ -75,13 +75,13 @@ msgstr "пароль: `demo`\n"
 #: docs/admin/02.what_is_yunohost/20.demo.mdx:33
 #, no-wrap
 msgid "<span><FAIcon icon='fa-cog'/> Administration interface</span>\n"
-msgstr ""
+msgstr "<span><FAIcon icon='fa-cog'/> Административный интерфейс</span>\n"
 
 #. type: Plain text
 #: docs/admin/02.what_is_yunohost/20.demo.mdx:36
 #, no-wrap
 msgid "https://demo.yunohost.org/yunohost/admin/\n"
-msgstr ""
+msgstr "https://demo.yunohost.org/yunohost/admin/\n"
 
 #. type: Fenced div block (info)
 #: docs/admin/02.what_is_yunohost/20.demo.mdx:44
