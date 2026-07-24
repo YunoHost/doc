@@ -3,25 +3,28 @@
 # This file is distributed under the same license as the YunoHost documentation package.
 # Automatically generated, 2025.
 #
+# Alekseï <support@digiology.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: 2025-11-11 19:34+0100\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-06-02 20:31+0000\n"
+"Last-Translator: Alekseï <support@digiology.org>\n"
+"Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
+"05get_started__20install_on___install_script/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 5.14.2\n"
 
 #. type: Title ##
 #: docs/admin/05.get_started/20.install_on/_install_script.mdx:2
 #, no-wrap
 msgid "<FAIcon icon=\"fa-rocket\"/> Run the install script"
-msgstr ""
+msgstr "<FAIcon icon=\"fa-rocket\"/> Запуск сценария установки"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/_install_script.mdx:7
@@ -31,6 +34,11 @@ msgid ""
 "- Make sure you are root (or type `sudo -i` to become root)\n"
 "- Run the following command:\n"
 msgstr ""
+"- Откройте командную строку на вашем сервере (напрямую или через SSH) "
+"(/admin/command_line)\n"
+"- Убедитесь, что у вас есть права root "
+"(или введите `sudo -i`, чтобы стать root)\n"
+"- Выполните следующую команду:\n"
 
 #. type: Fenced div block (danger)
 #: docs/admin/05.get_started/20.install_on/_install_script.mdx:12

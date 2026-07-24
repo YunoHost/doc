@@ -3,19 +3,22 @@
 # This file is distributed under the same license as the YunoHost documentation package.
 # Automatically generated, 2025.
 #
+# Alekseï <support@digiology.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: 2025-11-11 19:34+0100\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-06-02 20:31+0000\n"
+"Last-Translator: Alekseï <support@digiology.org>\n"
+"Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
+"05get_started__20install_on__regular_computer/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 5.14.2\n"
 
 #. type: Title ##
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:18
@@ -26,20 +29,15 @@ msgstr ""
 #: docs/admin/05.get_started/20.install_on/wsl.mdx:21
 #, no-wrap
 msgid "<FAIcon icon=\"fa-list-alt\"/> Pre-requisites"
-msgstr ""
+msgstr "<FAIcon icon=\"fa-list-alt\"/> Предварительные требования"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:49
 #: docs/admin/05.get_started/20.install_on/raspberry_pi.mdx:48
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:46
-#, fuzzy, no-wrap
-#| msgid ""
-#| "<TabItem value=\"router\" label=\"With your internet router / box\">\n"
-#| "Connect to your internet box / router interface to list the machines connected.\n"
+#, no-wrap
 msgid "<TabItem value=\"etcher\" label=\"With Etcher (recommended)\">\n"
-msgstr ""
-"<TabItem value=\"router\" label=\"С вашим интернет-маршрутизатором\">\n"
-"Подключитесь к интерфейсу вашего маршрутизатора, чтобы просмотреть список подключенных компьютеров.\n"
+msgstr "<TabItem value=\"etcher\" label=\"С помощью Etcher (рекомендуется)\">\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:51
@@ -59,14 +57,9 @@ msgstr ""
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:58
 #: docs/admin/05.get_started/20.install_on/raspberry_pi.mdx:57
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:55
-#, fuzzy, no-wrap
-#| msgid ""
-#| "<TabItem value=\"router\" label=\"With your internet router / box\">\n"
-#| "Connect to your internet box / router interface to list the machines connected.\n"
+#, no-wrap
 msgid "<TabItem value=\"usbimager\" label=\"With USBimager\">\n"
-msgstr ""
-"<TabItem value=\"router\" label=\"С вашим интернет-маршрутизатором\">\n"
-"Подключитесь к интерфейсу вашего маршрутизатора, чтобы просмотреть список подключенных компьютеров.\n"
+msgstr "<TabItem value=\"usbimager\" label=\"С помощью USBimager\">\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:60
@@ -88,14 +81,9 @@ msgstr ""
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:67
 #: docs/admin/05.get_started/20.install_on/raspberry_pi.mdx:66
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:64
-#, fuzzy, no-wrap
-#| msgid ""
-#| "<TabItem value=\"direct\" label=\"With a direct access on the server\">\n"
-#| "Plug a screen on your server, log in and type `hostname --all-ip-address`.\n"
+#, no-wrap
 msgid "<TabItem value=\"dd\" label=\"With dd\">\n"
-msgstr ""
-"<TabItem value=\"direct\" label=\"С прямым доступом к серверу\">\n"
-"Подключите экран к своему серверу, войдите в систему и введите `hostname --all-ip-address`.\n"
+msgstr "<TabItem value=\"dd\" label=\"С помощью dd\">\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:69
@@ -130,6 +118,11 @@ msgid ""
 "\n"
 "Optionally, you can [download the project's public key](https://forge.yunohost.org/keys/yunohost_bookworm.asc) to check the authenticity of the images.\n"
 msgstr ""
+"(FIXME: этот фрагмент кода в данный момент не работает...)\n"
+"\n"
+"При желании вы можете [загрузить открытый ключ проекта]"
+"(https://forge.yunohost.org/keys/yunohost_bookworm.asc), чтобы проверить "
+"подлинность изображений.\n"
 
 #. type: Yaml Front Matter Hash Value: description
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:1
@@ -187,14 +180,9 @@ msgstr ""
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:76
-#, fuzzy, no-wrap
-#| msgid ""
-#| "<TabItem value=\"router\" label=\"With your internet router / box\">\n"
-#| "Connect to your internet box / router interface to list the machines connected.\n"
+#, no-wrap
 msgid "<TabItem value=\"ventoy\" label=\"Using Ventoy\">\n"
-msgstr ""
-"<TabItem value=\"router\" label=\"С вашим интернет-маршрутизатором\">\n"
-"Подключитесь к интерфейсу вашего маршрутизатора, чтобы просмотреть список подключенных компьютеров.\n"
+msgstr "<TabItem value=\"ventoy\" label=\"С помощью Ventoy\">\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:78
@@ -271,14 +259,10 @@ msgstr ""
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:111
 #: docs/admin/05.get_started/20.install_on/virtualbox.mdx:78
-#, fuzzy, no-wrap
-#| msgid ""
-#| "<TabItem value=\"direct\" label=\"With a direct access on the server\">\n"
-#| "Plug a screen on your server, log in and type `hostname --all-ip-address`.\n"
+#, no-wrap
 msgid "<TabItem value=\"classic\" label=\"Classic installation on a whole disk\">\n"
 msgstr ""
-"<TabItem value=\"direct\" label=\"С прямым доступом к серверу\">\n"
-"Подключите экран к своему серверу, войдите в систему и введите `hostname --all-ip-address`.\n"
+"<TabItem value=\"classic\" label=\"Классическая установка на весь диск\">\n"
 
 #. type: Fenced div block (danger)
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:112
@@ -300,14 +284,9 @@ msgstr ""
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:122
 #: docs/admin/05.get_started/20.install_on/virtualbox.mdx:89
-#, fuzzy, no-wrap
-#| msgid ""
-#| "<TabItem value=\"router\" label=\"With your internet router / box\">\n"
-#| "Connect to your internet box / router interface to list the machines connected.\n"
+#, no-wrap
 msgid "<TabItem value=\"expert\" label=\"Installation in expert mode\">\n"
-msgstr ""
-"<TabItem value=\"router\" label=\"С вашим интернет-маршрутизатором\">\n"
-"Подключитесь к интерфейсу вашего маршрутизатора, чтобы просмотреть список подключенных компьютеров.\n"
+msgstr "<TabItem value=\"expert\" label=\"Установка в режиме эксперта\">\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:124

@@ -2,37 +2,45 @@
 # This file is distributed under the same license as the YunoHost documentation.
 #
 # Languages add-on <noreply-addon-languages@weblate.org>, 2025.
+# Alekseï <support@digiology.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-06-02 20:31+0000\n"
+"Last-Translator: Alekseï <support@digiology.org>\n"
+"Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
+"50troubleshooting__25blacklist_forms/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 5.14.2\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/50.troubleshooting/25.blacklist_forms.mdx:1
 #, no-wrap
 msgid "Removing your server’s IP/domain from antispam listings"
-msgstr ""
+msgstr "Удаление IP-адреса/домена вашего сервера из списков антиспама"
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/25.blacklist_forms.mdx:6
 #, no-wrap
 msgid "For various reasons, your IP or domain may end up in blocklists and get rejected by specific email providers, or anti-spam services. If you receive an alert from the diagnosis tool, clicking Details should point you to the appropriate form to contest the listing and get your server removed from it.\n"
 msgstr ""
+"По разным причинам ваш IP-адрес или домен может попасть в черные списки и "
+"быть отклонен определенными почтовыми провайдерами или антиспам-сервисами. "
+"Если вы получили предупреждение от инструмента диагностики, нажатие кнопки "
+"«Подробности» должно привести вас к соответствующей форме для оспаривания "
+"записи и удаления вашего сервера из списка.\n"
 
 #. type: Title ##
 #: docs/admin/50.troubleshooting/25.blacklist_forms.mdx:7
 #, no-wrap
 msgid "Test your server"
-msgstr ""
+msgstr "Проверка вашего сервера"
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/25.blacklist_forms.mdx:10

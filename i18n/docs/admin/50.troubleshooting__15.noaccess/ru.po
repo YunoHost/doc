@@ -2,37 +2,47 @@
 # This file is distributed under the same license as the YunoHost documentation.
 #
 # Languages add-on <noreply-addon-languages@weblate.org>, 2025.
+# Alekseï <support@digiology.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-06-02 20:31+0000\n"
+"Last-Translator: Alekseï <support@digiology.org>\n"
+"Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
+"50troubleshooting__15noaccess/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 5.14.2\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:1
 #, no-wrap
 msgid "Get access back into YunoHost"
-msgstr ""
+msgstr "Восстановление доступа к YunoHost"
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:6
 #, no-wrap
 msgid "There are several reasons that could lead to one administrator's access being partially or completely blocked off their YunoHost server. In numerous cases, one of the access methods is blocked, but others are not.\n"
 msgstr ""
+"Существует несколько причин, по которым доступ одного администратора к его "
+"серверу YunoHost может быть частично или полностью заблокирован. Во многих "
+"случаях блокируется один из способов доступа, но другие остаются доступными."
+"\n"
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:8
 #, no-wrap
 msgid "This page will help you diagnose the issue, get back access, and if needed repair your system. Most common causes are listed first, so follow the tutorial from top to bottom.\n"
 msgstr ""
+"Эта страница поможет вам определить проблему, восстановить доступ и, при "
+"необходимости, починить систему. Наиболее распространенные причины "
+"перечислены в начале, поэтому следуйте инструкциям сверху вниз.\n"
 
 #. type: Title ##
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:9
