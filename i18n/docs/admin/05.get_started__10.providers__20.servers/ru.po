@@ -2,19 +2,22 @@
 # This file is distributed under the same license as the YunoHost documentation.
 #
 # Languages add-on <noreply-addon-languages@weblate.org>, 2025.
+# Alekseï <support@digiology.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-07-09 02:12+0000\n"
+"Last-Translator: Alekseï <support@digiology.org>\n"
+"Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
+"05get_started__10providers__20servers/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 5.14.2\n"
 
 #. type: Yaml Front Matter Hash Value: description
 #: docs/admin/05.get_started/02.why_should_you_not_host_yourself.mdx:1
@@ -22,19 +25,19 @@ msgstr ""
 #: docs/admin/05.get_started/10.providers/20.servers.mdx:1
 #, no-wrap
 msgid " "
-msgstr ""
+msgstr " "
 
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/05.get_started/10.providers/20.servers.mdx:1
 #, no-wrap
 msgid "Server providers"
-msgstr ""
+msgstr "Поставщики серверов"
 
 #. type: Title ##
 #: docs/admin/05.get_started/10.providers/20.servers.mdx:9
 #, no-wrap
 msgid "Pre-installed YunoHost Offers"
-msgstr ""
+msgstr "Предустановленные предложения YunoHost"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/20.servers.mdx:16
@@ -46,12 +49,20 @@ msgid ""
 "* [Scaleway Dedibox](https://www.scaleway.com/en/dedibox/operating-systems/) (dedicated server)\n"
 "* [Numericoop](https://numericoop.fr/solution-sur-mesure/) (VPS) <HighlightCHATONS/>\n"
 msgstr ""
+"* [Эльзасская нейтральная сеть](https://arn-fai.net) (VPS) <HighlightFFDN/> <"
+"HighlightCHATONS/>\n"
+"* [ECOWAN](https://ecowan.fr) (VPS)\n"
+"* [Hosterfy](https://www.hosterfy.com/en/kvm-vps-hosting) (VPS)\n"
+"* [Scaleway Dedibox](https://www.scaleway.com/en/dedibox/operating-systems/) "
+"(выделенный сервер)\n"
+"* [Numericoop](https://numericoop.fr/solution-sur-mesure/) (VPS) <"
+"HighlightCHATONS/>\n"
 
 #. type: Title ##
 #: docs/admin/05.get_started/10.providers/20.servers.mdx:17
 #, no-wrap
 msgid "YunoHost IT outsourcing"
-msgstr ""
+msgstr "ИТ-аутсорсинг YunoHost"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/20.servers.mdx:21
@@ -61,3 +72,8 @@ msgid ""
 "* [Numericoop](https://numericoop.fr/solution-sur-mesure/) (France only) <HighlightCHATONS/>\n"
 "* [Librezo](https://librezo.fr/) (France only)\n"
 msgstr ""
+"* [ReflexLibre](https://reflexlibre.net) (Только Франция) <HighlightCHATONS/>"
+"\n"
+"* [Numericoop](https://numericoop.fr/solution-sur-mesure/) (Только Франция) <"
+"HighlightCHATONS/>\n"
+"* [Librezo](https://librezo.fr/) (Только Франция)\n"

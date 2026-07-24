@@ -2,74 +2,98 @@
 # This file is distributed under the same license as the YunoHost documentation.
 #
 # Languages add-on <noreply-addon-languages@weblate.org>, 2025.
+# Alekseï <support@digiology.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-07-18 20:56+0000\n"
+"Last-Translator: Alekseï <support@digiology.org>\n"
+"Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
+"45tutorials__25external_storage/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 5.14.2\n"
 
 #. type: Title ##
 #: docs/admin/05.get_started/20.install_on/wsl.mdx:28
 #: docs/admin/45.tutorials/25.external_storage.mdx:6
 #, no-wrap
 msgid "Introduction"
-msgstr ""
+msgstr "Введение"
 
 #. type: Yaml Front Matter Hash Value: sidebar_label
 #: docs/admin/45.tutorials/25.external_storage.mdx:1
 #, no-wrap
 msgid "Add external storage"
-msgstr ""
+msgstr "Добавление внешнего хранилища"
 
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/45.tutorials/25.external_storage.mdx:1
 #, no-wrap
 msgid "Adding an external storage to your server"
-msgstr ""
+msgstr "Добавление внешнего хранилища к вашему серверу"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/25.external_storage.mdx:9
 #, no-wrap
 msgid "Apart from the monitoring system that ensures that your system's partitions are not too small, YunoHost does not currently deal with the organisation of your partitions and disks.\n"
 msgstr ""
+"Помимо системы мониторинга, которая следит за тем, чтобы разделы вашей "
+"системы не были слишком маленькими, YunoHost в настоящее время не занимается "
+"организацией ваших разделов и дисков.\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/25.external_storage.mdx:11
 #, no-wrap
 msgid "If you are hosting on an ARM card with an SD card or on a server with a small SSD drive, you may, for reasons of reliability or lack of space, want to add a drive or drives to your server.\n"
 msgstr ""
+"Если вы используете ARM-процессор с SD-картой или сервер с небольшим SSD-"
+"накопителем, то по соображениям надёжности или из-за нехватки места вам "
+"может потребоваться добавить один или несколько накопителей к вашему серверу."
+"\n"
 
 #. type: Fenced div block (warning)
 #: docs/admin/45.tutorials/25.external_storage.mdx:12
 #, no-wrap
 msgid "If you have no space left on your server at all, you can now type `apt clean` to try and save some space while you clean up or follow the steps below.\n"
 msgstr ""
+"Если на вашем сервере совсем не осталось места, вы можете ввести команду `"
+"apt clean`, чтобы попытаться освободить место таким образом, или выполнить "
+"следующие действия.\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/25.external_storage.mdx:17
 #, no-wrap
 msgid "Below you will find explanations on how to move your data to a hard disk in a correct way with a minimum of impact on the functioning of YunoHost. This operation can be done during installation or, afterwards, when your storage needs have increased or when you no longer trust your SD card.\n"
 msgstr ""
+"Ниже вы найдёте инструкции по правильному перемещению данных на жёсткий диск "
+"с минимальным влиянием на работу YunoHost. Эту операцию можно выполнить во "
+"время установки или позже, когда ваши потребности в хранилище возрастут или "
+"когда вы перестанете доверять своей SD-карте.\n"
 
 #. type: Fenced div block (tip)
 #: docs/admin/45.tutorials/25.external_storage.mdx:18
 #, no-wrap
 msgid "The method presented here will first mount the single partition of the hard disk, then use one or more sub-folders of this disk to create different mount points on your system tree. This method is preferable to the use of symbolic links, as the latter may interfere with some applications including the YunoHost backup system. You could also choose to mount partitions rather than subfolders, but it is sometimes difficult to estimate the weight of a folder in advance.\n"
 msgstr ""
+"Представленный здесь метод сначала смонтирует единственный раздел жесткого "
+"диска, а затем с помощью одной или нескольких подпапок этого диска создаст "
+"различные точки монтирования в дереве вашей системы. Этот метод "
+"предпочтительнее использования символических ссылок, поскольку последние "
+"могут конфликтовать с некоторыми приложениями, включая систему резервного "
+"копирования YunoHost. Вы также можете монтировать разделы, а не подпапки, но "
+"иногда сложно заранее оценить размер папки.\n"
 
 #. type: Title ##
 #: docs/admin/45.tutorials/25.external_storage.mdx:22
 #, no-wrap
 msgid "<FAIcon icon=\"fa-list-alt\"/> Prerequisites"
-msgstr ""
+msgstr "<FAIcon icon=\"fa-list-alt\"/> Предварительные требования"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/25.external_storage.mdx:29

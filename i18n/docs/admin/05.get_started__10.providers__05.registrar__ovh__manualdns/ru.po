@@ -2,73 +2,89 @@
 # This file is distributed under the same license as the YunoHost documentation.
 #
 # Languages add-on <noreply-addon-languages@weblate.org>, 2025.
+# Alekseï <support@digiology.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-07-18 20:56+0000\n"
+"Last-Translator: Alekseï <support@digiology.org>\n"
+"Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
+"05get_started__10providers__05registrar__ovh__manualdns/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 5.14.2\n"
 
 #. type: Yaml Front Matter Hash Value: sidebar_label
 #: docs/admin/05.get_started/10.providers/05.registrar/ovh/manualdns.mdx:1
 #, no-wrap
 msgid "OVH manual DNS config"
-msgstr ""
+msgstr "Ручная настройка DNS OVH"
 
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/05.get_started/10.providers/05.registrar/ovh/manualdns.mdx:1
 #, no-wrap
 msgid "DNS Configuration with OVH"
-msgstr ""
+msgstr "Настройка DNS с помощью OVH"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/05.registrar/ovh/manualdns.mdx:7
 #, no-wrap
 msgid "Let's see how to properly set the DNS redirections with [OVH](http://www.ovh.com).\n"
 msgstr ""
+"Давайте посмотрим, как правильно настроить перенаправления DNS с помощью "
+"[OVH](http://www.ovh.com).\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/05.registrar/ovh/manualdns.mdx:9
 #, no-wrap
 msgid "Once you bought your domain name, got to the Web Control Panel, and click on you domain name on the left side:\n"
 msgstr ""
+"После покупки доменного имени перейдите в панель управления и щёлкните по "
+"своему доменному имени в левой части экрана:\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/05.registrar/ovh/manualdns.mdx:11
 #, no-wrap
 msgid "![OVH website screenshot](/img/providers/ovh_control_panel.png?resize=800)\n"
 msgstr ""
+"![Снимок экрана веб-сайта OVH]"
+"(/img/providers/ovh_control_panel.png?resize=800)\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/05.registrar/ovh/manualdns.mdx:13
 #, no-wrap
 msgid "Click on the **DNS Zone** tab, then on **Add an entry**:\n"
 msgstr ""
+"Перейдите на вкладку **DNS Zone**, затем нажмите **Add an entry "
+"(Добавить запись)**:\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/05.registrar/ovh/manualdns.mdx:15
 #, no-wrap
 msgid "![OVH website screenshot](/img/providers/ovh_dns_zone.png?resize=800)\n"
 msgstr ""
+"![Снимок экрана веб-сайта OVH](/img/providers/ovh_dns_zone.png?resize=800)\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/05.registrar/ovh/manualdns.mdx:17
 #, no-wrap
 msgid "Now you need to add the DNS redirections as specified by the [standard DNS zone configuration](/admin/get_started/post_install/dns_config)\n"
 msgstr ""
+"Теперь необходимо добавить перенаправления DNS в соответствии со "
+"[стандартной конфигурацией зоны DNS]"
+"(/admin/get_started/post_install/dns_config)\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/05.registrar/ovh/manualdns.mdx:19
 #, no-wrap
 msgid "Click on \"Change in text format\", keep the first four lines:\n"
 msgstr ""
+"Нажмите на кнопку «Изменить формат текста», оставив первые четыре строки:\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/05.registrar/ovh/manualdns.mdx:28

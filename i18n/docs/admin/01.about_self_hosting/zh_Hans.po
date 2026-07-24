@@ -3,14 +3,15 @@
 #
 # Weblate Admin <yunohost@translate.yunohost.org>, 2025.
 # Wesley Wang <aidezp2@gmail.com>, 2025.
+# Poesty Li <poesty7450@gmail.com>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: 2025-11-24 10:32+0000\n"
-"Last-Translator: Wesley Wang <aidezp2@gmail.com>\n"
-"Language-Team: Chinese (Simplified Han script) <https://translate.yunohost."
-"org/projects/yunohost-doc/01about_self_hosting/zh_Hans/>\n"
+"PO-Revision-Date: 2026-05-23 15:14+0000\n"
+"Last-Translator: Poesty Li <poesty7450@gmail.com>\n"
+"Language-Team: Chinese (Simplified Han script) <https://"
+"translate.yunohost.org/projects/yunohost-doc/01about_self_hosting/zh_Hans/>\n"
 "Language: zh_Hans\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -29,21 +30,30 @@ msgstr "关于“自托管”"
 #, no-wrap
 msgid "Self-hosting means owning and administrating your own server, typically at home, to host your **personal data and services** yourself instead of relying exclusively on third parties. For instance, you can self-host your blog, such that it 'lives' on a machine that you have control of, instead of having it on somebody else's computer (a.k.a. FAANG or The Cloud) in exchange for money, advertisements, or private data.\n"
 msgstr ""
+"自托管意味着拥有并管理自己的服务器（通常在家中），用自己的服务器托管**个人数"
+"据和服务**，而不是完全依赖第三方。例如，你可以自托管博客，让它“运行”在你拥有"
+"控制权的机器上，而不是放在别人的计算机（即 FAANG 或“云”）上，并以金钱、广告或"
+"私人数据作为代价。\n"
 
 #. type: Plain text
 #: docs/admin/01.about_self_hosting.mdx:9
 #, no-wrap
 msgid "Self-hosting implies owning a server. **A server is a computer that is typically accessible on the network 24/7**, and usually does not have a screen or keyboard (it is instead controlled remotely). Contrary to a popular belief, a server is not necessarily a huge and extra-powerful machine: nowadays, a small, ~$30 ARM board is adequate for self-hosting.\n"
 msgstr ""
+"自托管意味着拥有自己的服务器。**服务器是一台通常可以 24/7 通过网络访问的计算"
+"机**，而且通常没有屏幕或键盘（而是通过远程方式控制）。与普遍看法相反，服务器"
+"并不一定是一台庞大且超强性能的机器：如今，一块约 30 美元的 ARM 开发板就足以承"
+"载自托管应用。\n"
 
 #. type: Plain text
 #: docs/admin/01.about_self_hosting.mdx:11
 #, no-wrap
 msgid "![Internet topologies diagram](/img/internet_topologies.png)\n"
-msgstr ""
+msgstr "![互联网拓扑图](/img/internet_topologies.png)\n"
 
 #. type: Plain text
 #: docs/admin/01.about_self_hosting.mdx:12
 #, no-wrap
 msgid "Self-hosting is not about making \"your Internet\" more secure and does not provide anonymity by itself. Instead, it is about being autonomous and in control of your services and data — which also means being responsible for them.\n"
-msgstr ""
+msgstr "自托管的目的是让“你的互联网”更安全，它本身并不提供匿名性。相反，它的意义在于"
+"实现自主，让你掌控自己的服务和数据——这也意味着要为其负责。\n"

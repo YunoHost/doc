@@ -2,67 +2,95 @@
 # This file is distributed under the same license as the YunoHost documentation.
 #
 # Languages add-on <noreply-addon-languages@weblate.org>, 2025.
+# Alekseï <support@digiology.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-07-18 20:56+0000\n"
+"Last-Translator: Alekseï <support@digiology.org>\n"
+"Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
+"25domains__index/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 5.14.2\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/25.domains/index.mdx:1
 #, no-wrap
 msgid "🌐 Domains"
-msgstr ""
+msgstr "🌐 Домены"
 
 #. type: Plain text
 #: docs/admin/25.domains/index.mdx:9
 #, no-wrap
 msgid "YunoHost lets you manage and serve multiple domains on a single server. So you can host, for example, a blog and Nextcloud on a first domain `yolo.com`, and a webmail client on a second domain `swag.nohost.me`. Each domain is automatically configured to handle web services and e-mail.\n"
 msgstr ""
+"YunoHost позволяет управлять несколькими доменами и обслуживать их на одном "
+"сервере. Таким образом, вы можете, например, разместить блог и Nextcloud на "
+"первом домене `yolo.com`, а почтовый клиент — на втором домене "
+"`swag.nohost.me`. Каждый домен автоматически настраивается для работы с веб-"
+"сервисами и электронной почтой.\n"
 
 #. type: Plain text
 #: docs/admin/25.domains/index.mdx:11
 #, no-wrap
 msgid "Domains can be managed in the 'Domains' section of the webadmin, or via the `yunohost domain` category of the command line.\n"
 msgstr ""
+"Управление доменами осуществляется в разделе «Домены» веб-панели "
+"администратора или через категорию `yunohost domain` в командной строке.\n"
 
 #. type: Plain text
 #: docs/admin/25.domains/index.mdx:13
 #, no-wrap
 msgid "Whenever you add a domain, it is assumed that you have purchased (or at least control) the domain, so that you can manage its [DNS configuration](/admin/get_started/post_install/dns_config). An exception is [domains in `.nohost.me`, `.noho.st` and `ynh.fr`](/admin/tutorials/domains/dns_nohost_me) which are offered by the YunoHost Project, and can be directly integrated with YunoHost through automatic DynDNS configuration. To limit abuse and costs, an instance can only have one domain offered at a time, but you can add as many sub-domains to it as you like. For example, if you choose `example.ynh.co.uk` you can then add the domains `video.example.ynh.co.uk` or `www.exemple.ynh.fr` or any other sub-domain you may require.\n"
 msgstr ""
+"При добавлении домена предполагается, что вы приобрели "
+"(или, по крайней мере, контролируете) этот домен, чтобы иметь возможность "
+"управлять его [конфигурацией DNS](/admin/get_started/post_install/dns_config)"
+". Исключением являются [домены в `.nohost.me`, `.noho.st` и `ynh.fr`]"
+"(/admin/tutorials/domains/dns_nohost_me), которые предлагаются проектом "
+"YunoHost и могут быть напрямую интегрированы с YunoHost посредством "
+"автоматической настройки DynDNS. Чтобы ограничить злоупотребления и затраты, "
+"в одном экземпляре может быть предложен только один домен одновременно, но "
+"вы можете добавить к нему столько поддоменов, сколько пожелаете. Например, "
+"если вы выберете `example.ynh.co.uk`, вы сможете добавить домены "
+"`video.example.ynh.co.uk` или `www.exemple.ynh.fr` или любой другой "
+"необходимый вам поддомен.\n"
 
 #. type: Plain text
 #: docs/admin/25.domains/index.mdx:15
 #, no-wrap
 msgid "Domains can be managed in the 'Domain' section of the webadmin, or through the `yunohost domain` category of the command line.\n"
 msgstr ""
+"Управление доменами осуществляется в разделе «Домен» веб-панели "
+"администратора или через категорию `yunohost domain` в командной строке.\n"
 
 #. type: Plain text
 #: docs/admin/25.domains/index.mdx:17
 #, no-wrap
 msgid "![Screenshot of the webadmin domain interface with an \"Add domain\" button and a list of domains](/img/webadmin/webadmin_domain.png)\n"
 msgstr ""
+"![Снимок экрана веб-интерфейса администрирования домена с кнопкой «Добавить "
+"домен» и списком доменов](/img/webadmin/webadmin_domain.png)\n"
 
 #. type: Title ##
 #: docs/admin/25.domains/index.mdx:18
 #, no-wrap
 msgid "3 types of domains"
-msgstr ""
+msgstr "3 типа доменов"
 
 #. type: Plain text
 #: docs/admin/25.domains/index.mdx:22
 #, no-wrap
 msgid "<TabItem value=\"nohost\" label=\"Yunohost's domains (the free and easy way)\">\n"
 msgstr ""
+"<TabItem value=\"nohost\" label="
+"\"Домены Yunohost (бесплатный и простой способ)\">\n"
 
 #. type: Plain text
 #: docs/admin/25.domains/index.mdx:24
@@ -70,13 +98,18 @@ msgstr ""
 #, no-wrap
 msgid "In order to make self-hosting as accessible as possible, the YunoHost Project provides a *free* and *automatically configured* domain name service. By using this service, you won't have to [configure DNS records](/admin/get_started/post_install/dns_config) yourself, which can be tedious and technical.\n"
 msgstr ""
+"Чтобы сделать самостоятельный хостинг максимально доступным, проект YunoHost "
+"предоставляет *бесплатный* и *автоматически настраиваемый* сервис доменных "
+"имен. Используя этот сервис, вам не придётся самостоятельно "
+"[настраивать DNS-записи](/admin/get_started/post_install/dns_config), что "
+"может быть утомительным и сложным с технической точки зрения процессом.\n"
 
 #. type: Plain text
 #: docs/admin/25.domains/index.mdx:26
 #: docs/admin/45.tutorials/05.domains/dns_nohost_me.mdx:8
 #, no-wrap
 msgid "The following (sub)domains are offered:\n"
-msgstr ""
+msgstr "Предлагаются следующие (под)домены:\n"
 
 #. type: Plain text
 #: docs/admin/25.domains/index.mdx:30
@@ -87,6 +120,9 @@ msgid ""
 "- `whateveryouwant.noho.st`;\n"
 "- `whateveryouwant.ynh.fr`.\n"
 msgstr ""
+"- `точтовыхотитенолатиницей.nohost.me`;\n"
+"- `точтовыхотитенолатиницей.noho.st`;\n"
+"- `точтовыхотитенолатиницей.ynh.fr`.\n"
 
 #. type: Plain text
 #: docs/admin/25.domains/index.mdx:32

@@ -2,61 +2,87 @@
 # This file is distributed under the same license as the YunoHost documentation.
 #
 # Languages add-on <noreply-addon-languages@weblate.org>, 2025.
+# Alekseï <support@digiology.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-07-20 09:41+0000\n"
+"Last-Translator: Alekseï <support@digiology.org>\n"
+"Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
+"40backups__05evaluate/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 5.14.2\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/40.backups/05.evaluate.mdx:1
 #, no-wrap
 msgid "Backup strategies"
-msgstr ""
+msgstr "Стратегии резервного копирования"
 
 #. type: Plain text
 #: docs/admin/40.backups/05.evaluate.mdx:6
 #, no-wrap
 msgid "In the context of self-hosting, backups are an important element to compensate for unexpected events (fire, database corruption, loss of access to the server, compromised server...). The backup policy to implement depends on the importance of the services and data you manage. For example, backing up a test server will be of little interest, while you will want to be very careful if you are managing critical data for an association or a company - and in such cases, you will want to store the backups *in a different location or locations*.\n"
 msgstr ""
+"В контексте самостоятельного размещения серверов резервное копирование "
+"является важным элементом для компенсации непредвиденных событий (пожар, "
+"повреждение базы данных, потеря доступа к серверу, взлом сервера и т. д.). "
+"Политика резервного копирования зависит от важности управляемых вами "
+"сервисов и данных. Например, резервное копирование тестового сервера будет "
+"малоинтересно, в то время как при управлении критически важными данными для "
+"ассоциации или компании следует проявлять особую осторожность — в таких "
+"случаях резервные копии следует хранить *в другом месте или местах*.\n"
 
 #. type: Title ##
 #: docs/admin/40.backups/05.evaluate.mdx:7
 #, no-wrap
 msgid "What is a good backup?"
-msgstr ""
+msgstr "Что представляет собой хорошая резервная копия?"
 
 #. type: Plain text
 #: docs/admin/40.backups/05.evaluate.mdx:10
 #, no-wrap
 msgid "A good backup consists of at least **3 copies of the data** (including the original data), on at least **2 separate storages**, in at least **2 separate locations** (far enough apart) and ideally with 2 separate methods. If your backups are encrypted **these rules also apply to the decryption phrase/key**.\n"
 msgstr ""
+"Хорошая резервная копия состоит как минимум из **3 копий данных** "
+"(включая исходные данные), расположенных как минимум на **2 отдельных "
+"носителях**, как минимум в **2 разных местах** "
+"(достаточно удаленных друг от друга) и, в идеале, с использованием 2 разных "
+"методов. Если ваши резервные копии зашифрованы, **эти правила также "
+"применяются к фразе/ключу расшифровки**.\n"
 
 #. type: Plain text
 #: docs/admin/40.backups/05.evaluate.mdx:12
 #, no-wrap
 msgid "A good backup is also in many cases, a recent backup, so it takes either a lot of rigor or to **automate** the process.\n"
 msgstr ""
+"Хорошая резервная копия во многих случаях должна быть свежей, поэтому для её "
+"создания требуется либо большая тщательность, либо **автоматизация** "
+"процесса.\n"
 
 #. type: Plain text
 #: docs/admin/40.backups/05.evaluate.mdx:14
 #, no-wrap
 msgid "A good backup is checked regularly to ensure the effectiveness and integrity of the data.\n"
 msgstr ""
+"Залог эффективности и целостности данных - регулярно создаваемая резервная "
+"копия этих данных.\n"
 
 #. type: Plain text
 #: docs/admin/40.backups/05.evaluate.mdx:16
 #, no-wrap
 msgid "Finally, a good backup is one that is **restorable within an acceptable timeframe** for you. Remember to document your restoration method and to estimate the transfer time of a copy, especially if the Internet connections involved are not symmetrical.\n"
 msgstr ""
+"Наконец, хорошая резервная копия — это та, которую можно **восстановить в "
+"приемлемые для вас сроки**. Не забудьте задокументировать метод "
+"восстановления и оценить время передачи копии, особенно если используются "
+"несимметричные интернет-соединения.\n"
 
 #. type: Fenced div block (info)
 #: docs/admin/40.backups/05.evaluate.mdx:17
@@ -70,12 +96,21 @@ msgid ""
 "- a monitored RAID 1 array (or a commercial VPS that will also be on an array)\n"
 "- a decryption passphrase stored on 3 media in 2 locations\n"
 msgstr ""
+"Пример **надёжной и удобной комбинации**:\n"
+"\n"
+"- удалённое и автоматическое резервное копирование с помощью borg\n"
+"- резервное копирование на внешний диск и автоматическое резервное "
+"копирование с помощью borg\n"
+"- регулярное создание снимков/образов системы (до обновлений)\n"
+"- контролируемый RAID 1-массив "
+"(или коммерческий VPS, который также будет находиться в массиве)\n"
+"- пароль для расшифровки, хранящийся на 3 носителях в 2 местах\n"
 
 #. type: Title ##
 #: docs/admin/40.backups/05.evaluate.mdx:27
 #, no-wrap
 msgid "Some possible methods"
-msgstr ""
+msgstr "Некоторые возможные способы"
 
 #. type: Plain text
 #: docs/admin/40.backups/05.evaluate.mdx:34

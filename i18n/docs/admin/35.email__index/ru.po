@@ -2,55 +2,65 @@
 # This file is distributed under the same license as the YunoHost documentation.
 #
 # Languages add-on <noreply-addon-languages@weblate.org>, 2025.
+# Alekseï <support@digiology.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-04-19 08:39+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-07-20 09:41+0000\n"
+"Last-Translator: Alekseï <support@digiology.org>\n"
+"Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
+"35email__index/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 5.14.2\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/35.email/index.mdx:1
 #, no-wrap
 msgid "📬 Emails"
-msgstr ""
+msgstr "📬 Электронные письма"
 
 #. type: Plain text
 #: docs/admin/35.email/index.mdx:9
 #, no-wrap
 msgid "YunoHost comes with a complete mail stack allowing you to host your own email server, and therefore to have your own email addresses in `something@your.domain.tld`.\n"
 msgstr ""
+"YunoHost предоставляет полный набор инструментов для работы с почтой, "
+"позволяя вам разместить собственный почтовый сервер и, следовательно, иметь "
+"собственные адреса электронной почты `something@your.domain.tld`.\n"
 
 #. type: Plain text
 #: docs/admin/35.email/index.mdx:11
 #, no-wrap
 msgid "The mail stack includes an SMTP server (Postfix), an IMAP server (Dovecot), antispam (Rspamd) and DKIM configuration.\n"
 msgstr ""
+"Почтовый стек включает в себя SMTP-сервер (Postfix), IMAP-сервер (Dovecot), "
+"антиспам-сервер (Rspamd) и конфигурацию DKIM.\n"
 
 #. type: Title ##
 #: docs/admin/35.email/index.mdx:12
 #, no-wrap
 msgid "Making sure your setup is right"
-msgstr ""
+msgstr "Убедитесь, что ваша настройка выполнена правильно"
 
 #. type: Plain text
 #: docs/admin/35.email/index.mdx:15
 #, no-wrap
 msgid "Email is a complicated ecosystem and quite a few details can prevent it from working properly.\n"
 msgstr ""
+"Электронная почта — это сложная экосистема, и множество деталей могут "
+"помешать её нормальной работе.\n"
 
 #. type: Plain text
 #: docs/admin/35.email/index.mdx:17
 #, no-wrap
 msgid "To validate your setup:\n"
-msgstr ""
+msgstr "Для проверки вашей конфигурации:\n"
 
 #. type: Plain text
 #: docs/admin/35.email/index.mdx:22
@@ -61,18 +71,36 @@ msgid ""
 "- carefully configure mail DNS records according to [this documentation](/admin/get_started/post_install/dns_config) ;\n"
 "- test your configuration using the diagnostic features (<HighlightWebAdmin/> → <HighlightDiagnosis/> → <Highlight no_break={true} color='grey'><FAIcon icon=\"fa-envelope\"/> Email</Highlight> ). You can also use [mail-tester.com](https://mail-tester.com); a score of at least 8~9/10 is a reasonable goal <small>(be careful: only 3 tests per domain per day are allowed)</small>\n"
 msgstr ""
+"- если вы разворачиваете проект самостоятельно дома и не используете VPN, "
+"убедитесь, что [ваш интернет-провайдер не блокирует порт 25]"
+"(/admin/get_started/providers/isp/);\n"
+"- настройте маршрутизацию портов в соответствии с [данной документацией]"
+"(/admin/get_started/post_install/port_forwarding);\n"
+"- тщательно настройте DNS-записи для почты в соответствии с "
+"[данной документацией](/admin/get_started/post_install/dns_config);\n"
+"- проверьте свою конфигурацию с помощью диагностических функций (<"
+"HighlightWebAdmin/> → <HighlightDiagnosis/> → <Highlight no_break={true} "
+"color='grey'><FAIcon icon=\"fa-envelope\"/> Email</Highlight> ). Вы также "
+"можете использовать [mail-tester.com](https://mail-tester.com); достичь "
+"результата не ниже 8-9/10 вполне достаточно <small>"
+"(будьте внимательны: разрешено только 3 теста для одного домена в день)"
+"</small>\n"
 
 #. type: Title ##
 #: docs/admin/35.email/index.mdx:23
 #, no-wrap
 msgid "Email clients"
-msgstr ""
+msgstr "Почтовые клиенты"
 
 #. type: Plain text
 #: docs/admin/35.email/index.mdx:26
 #, no-wrap
 msgid "To interact with the email server (read and send emails), you can either install a webmail client such as Roundcube or Rainloop on your server or configure a desktop/mobile client as described in [this page](/admin/email/clients).\n"
 msgstr ""
+"Для взаимодействия с почтовым сервером (чтения и отправки писем) вы можете "
+"либо установить на свой сервер веб-клиент почты, например Roundcube или "
+"Rainloop, либо настроить настольный/мобильный клиент, как описано на "
+"[этой странице](/admin/email/clients).\n"
 
 #. type: Plain text
 #: docs/admin/35.email/index.mdx:28

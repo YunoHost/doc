@@ -3,63 +3,81 @@
 # This file is distributed under the same license as the YunoHost documentation package.
 # Automatically generated, 2025.
 #
+# Alekseï <support@digiology.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-02-05 14:55+0000\n"
-"PO-Revision-Date: 2025-11-11 19:34+0100\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-07-18 20:56+0000\n"
+"Last-Translator: Alekseï <support@digiology.org>\n"
+"Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
+"45tutorials__05domains__dns_dynamicip/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 5.14.2\n"
 
 #. type: Title ###
 #: docs/admin/05.get_started/10.providers/05.registrar/index.mdx:1
 #: docs/admin/45.tutorials/05.domains/dns_dynamicip.mdx:15
 #, no-wrap
 msgid "Registrars"
-msgstr ""
+msgstr "Регистраторы"
 
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/45.tutorials/05.domains/dns_dynamicip.mdx:1
-#, fuzzy, no-wrap
-#| msgid "Dynamic IP"
+#, no-wrap
 msgid "DNS with a dynamic IP"
-msgstr "Динамический IP-адрес"
+msgstr "DNS с динамическим IP-адресом"
 
 #. type: Fenced div block (warning)
 #: docs/admin/45.tutorials/05.domains/dns_dynamicip.mdx:5
 #, no-wrap
 msgid "Before going further, make sure your global IP address is dynamic with: [`ip.yunohost.org`](http://ip.yunohost.org/). The global IP address of your box changes almost every day.\n"
 msgstr ""
+"Прежде чем продолжить, убедитесь, что ваш глобальный IP-адрес является "
+"динамическим, используя: [`ip.yunohost.org`](http://ip.yunohost.org/). "
+"Глобальный IP-адрес вашего устройства меняется почти каждый день.\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/05.domains/dns_dynamicip.mdx:10
 #, no-wrap
 msgid "This tutorial aim to get around dynamic IP issue which is: when the IP public address of your (Internet Service Provider-) box changes, the DNS zone is not updated to point towards the new IP address, and consequently your server is no more reachable via its domain name\n"
 msgstr ""
+"Цель этого руководства — обойти проблему с динамическими IP-адресами, "
+"которая заключается в следующем: когда публичный IP-адрес вашего устройства "
+"(интернет-провайдера) изменяется, DNS-зона не обновляется, чтобы указывать "
+"на новый IP-адрес, и, следовательно, ваш сервер становится недоступным по "
+"своему доменному имени.\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/05.domains/dns_dynamicip.mdx:12
 #, no-wrap
 msgid "After setting up the solution proposed in this tutorial, the redirection from your domain name to the actual IP address of your server will not be lost anymore.\n"
 msgstr ""
+"После настройки решения, предложенного в этом руководстве, перенаправление с "
+"вашего доменного имени на фактический IP-адрес вашего сервера больше не "
+"будет теряться.\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/05.domains/dns_dynamicip.mdx:14
 #, no-wrap
 msgid "The method proposed here consists of automatizing the fact the box announces its global IP address change to the dynamic DNS, so that the DNS zone will automatically be updated.\n"
 msgstr ""
+"Предлагаемый здесь метод заключается в автоматизации процесса оповещения "
+"устройством об изменении своего глобального IP-адреса в динамическую DNS-"
+"систему, благодаря чему DNS-зона будет автоматически обновляться.\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/05.domains/dns_dynamicip.mdx:18
 #, no-wrap
 msgid "Here are some examples of registrars, companies where you can buy domain names:\n"
 msgstr ""
+"Вот несколько примеров регистраторов, компаний, где можно приобрести "
+"доменные имена:\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/05.domains/dns_dynamicip.mdx:24
@@ -71,12 +89,21 @@ msgid ""
 "- [Namecheap](https://www.namecheap.com/)\n"
 "- [BookMyName](https://www.bookmyname.com/)\n"
 msgstr ""
+"- [OVH](http://ovh.com/)\n"
+"- [GoDaddy](https://godaddy.com/)\n"
+"- [Gandi](https://www.gandi.net/)\n"
+"- [Namecheap](https://www.namecheap.com/)\n"
+"- [BookMyName](https://www.bookmyname.com/)\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/05.domains/dns_dynamicip.mdx:26
 #, no-wrap
 msgid "If you own a domain name at **OVH**, you may go to step 4 and follow this [tutorial](/admin/get_started/providers/registrar/ovh/manualdns), given that OVH proposes a DynDNS service.\n"
 msgstr ""
+"Если вы являетесь владельцем доменного имени в **OVH**, вы можете перейти к "
+"шагу 4 и следовать этому [руководству]"
+"(/admin/get_started/providers/registrar/ovh/manualdns), поскольку OVH "
+"предлагает услугу DynDNS.\n"
 
 #. type: Title ####
 #: docs/admin/45.tutorials/05.domains/dns_dynamicip.mdx:27

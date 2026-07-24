@@ -2,19 +2,22 @@
 # This file is distributed under the same license as the YunoHost documentation.
 #
 # Languages add-on <noreply-addon-languages@weblate.org>, 2025.
+# Alekseï <support@digiology.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-04-19 08:39+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-07-18 20:56+0000\n"
+"Last-Translator: Alekseï <support@digiology.org>\n"
+"Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
+"25domains__certificate/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 5.14.2\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/_configuration.mdx:18
@@ -34,7 +37,7 @@ msgstr ""
 #: docs/admin/45.tutorials/35.email_configure_relay.mdx:49
 #, no-wrap
 msgid "<TabItem value=\"web\" label=\"From the web interface\">\n"
-msgstr ""
+msgstr "<TabItem value=\"web\" label=\"Из веб-интерфейса\">\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/_configuration.mdx:36
@@ -55,49 +58,65 @@ msgstr ""
 #: docs/admin/45.tutorials/35.email_configure_relay.mdx:66
 #, no-wrap
 msgid "<TabItem value=\"cli\" label=\"From the command line\">\n"
-msgstr ""
+msgstr "<TabItem value=\"cli\" label=\"Из командной строки\">\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/25.domains/certificate.mdx:1
 #, no-wrap
 msgid "Certificate"
-msgstr ""
+msgstr "Сертификат"
 
 #. type: Plain text
 #: docs/admin/25.domains/certificate.mdx:10
 #, no-wrap
 msgid "Certificates are used to guarantee the confidentiality and authenticity of the communication between a web browser and your server. In particular, they protect against attackers trying to impersonate your server.\n"
 msgstr ""
+"Сертификаты используются для гарантии конфиденциальности и подлинности "
+"обмена данными между веб-браузером и вашим сервером. В частности, они "
+"защищают от злоумышленников, пытающихся выдать себя за ваш сервер.\n"
 
 #. type: Plain text
 #: docs/admin/25.domains/certificate.mdx:12
 #, no-wrap
 msgid "YunoHost provides a **self-signed** certificate, it means that your server guaranties the certificate validity. It's enough **for personal usage**, because you trust your own server. But this could be a problem if you want to open access to anonymous like web user for a website.\n"
 msgstr ""
+"YunoHost предоставляет **самоподписанный** сертификат, это означает, что ваш "
+"сервер гарантирует действительность сертификата. Этого достаточно **для "
+"личного использования**, поскольку вы доверяете своему собственному серверу. "
+"Но это может стать проблемой, если вы хотите предоставить анонимный доступ, "
+"например, веб-пользователям, к веб-сайту.\n"
 
 #. type: Plain text
 #: docs/admin/25.domains/certificate.mdx:14
 #, no-wrap
 msgid "In practice, visitors will see a screen list this:\n"
-msgstr ""
+msgstr "На практике посетители увидят на экране следующий список:\n"
 
 #. type: Plain text
 #: docs/admin/25.domains/certificate.mdx:18
 #, no-wrap
 msgid "Which basically asks the visitor : **\"Do you trust the server hosting this website?\"**. This can rightfully frighten a lot of people.\n"
 msgstr ""
+"По сути, это вопрос к посетителю: **"
+"\"Доверяете ли вы серверу, на котором размещён этот веб-сайт?\"**. Это "
+"вполне может напугать многих людей.\n"
 
 #. type: Plain text
 #: docs/admin/25.domains/certificate.mdx:20
 #, no-wrap
 msgid "To avoid this confusion, it's possible to get a certificate signed by a known authority named **Let's Encrypt** which provides free certificates directly recognized by browsers. YunoHost allows you to directly install this certificate from the web administration interface or from the command line.\n"
 msgstr ""
+"Чтобы избежать подобной путаницы, можно получить сертификат, подписанный "
+"известным центром сертификации, например, **Let's Encrypt**, который "
+"предоставляет бесплатные сертификаты, напрямую распознаваемые браузерами. "
+"YunoHost позволяет установить этот сертификат непосредственно через веб-"
+"интерфейс администрирования или из командной строки.\n"
 
 #. type: Title ##
 #: docs/admin/25.domains/certificate.mdx:21
 #, no-wrap
 msgid "Install a Let's Encrypt certificate"
-msgstr ""
+msgstr "Установка сертификата Let's Encrypt"
 
 #. type: Plain text
 #: docs/admin/25.domains/certificate.mdx:24

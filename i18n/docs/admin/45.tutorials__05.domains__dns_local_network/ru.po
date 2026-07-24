@@ -3,37 +3,44 @@
 # This file is distributed under the same license as the YunoHost documentation package.
 # Automatically generated, 2025.
 #
+# Alekseï <support@digiology.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: 2025-11-11 19:34+0100\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-07-18 20:56+0000\n"
+"Last-Translator: Alekseï <support@digiology.org>\n"
+"Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
+"45tutorials__05domains__dns_local_network/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 5.14.2\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/45.tutorials/05.domains/dns_local_network.mdx:1
 #, no-wrap
 msgid "Local network access to your server"
-msgstr ""
+msgstr "Локальный сетевой доступ к вашему серверу"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/05.domains/dns_local_network.mdx:6
 #, no-wrap
 msgid "After completing your server installation, it is possible that your domain will not be accessible through the local network. This is an issue known as [hairpinning](http://en.wikipedia.org/wiki/Hairpinning) - a feature that is not well supported by some internet routers.\n"
 msgstr ""
+"После завершения установки сервера ваш домен может оказаться недоступным "
+"через локальную сеть. Эта проблема известна как [hairpinning]"
+"(https://ru.wikipedia.org/wiki/NAT) — функция, которая плохо поддерживается "
+"некоторыми интернет-маршрутизаторами.\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/05.domains/dns_local_network.mdx:8
 #, no-wrap
 msgid "To solve this issue you can:\n"
-msgstr ""
+msgstr "Для решения этой проблемы вы можете:\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/05.domains/dns_local_network.mdx:11
@@ -42,20 +49,21 @@ msgid ""
 "- configure your router's DNS\n"
 "- or alternatively -  your `/etc/hosts` files on your clients workstation\n"
 msgstr ""
+"- настройте DNS вашего маршрутизатора\n"
+"- или, в качестве альтернативы, файлы `/etc/hosts` на рабочей станции "
+"клиента\n"
 
 #. type: Title ##
 #: docs/admin/45.tutorials/05.domains/dns_local_network.mdx:12
-#, fuzzy, no-wrap
-#| msgid "2. Find the local IP of your server"
+#, no-wrap
 msgid "Find the local IP address of your server"
-msgstr "2. Найдите локальный IP-адрес вашего сервера"
+msgstr "Найдите локальный IP-адрес вашего сервера"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/05.domains/dns_local_network.mdx:15
-#, fuzzy, no-wrap
-#| msgid "2. Find the local IP of your server"
+#, no-wrap
 msgid "First you need to find out the local IP of your server\n"
-msgstr "2. Найдите локальный IP-адрес вашего сервера"
+msgstr "Сначала вам нужно узнать локальный IP-адрес вашего сервера.\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/05.domains/dns_local_network.mdx:19
@@ -65,18 +73,30 @@ msgid ""
 "- or if in the webadmin, in the Diagnosis section, under Internet Connectivity, IPv4, click on 'Details' and you should find an entry for 'Local IP'\n"
 "- or using the command line on the server : `hostname -I`\n"
 msgstr ""
+"- либо используя перечисленные [здесь]"
+"(/admin/get_started/post_install/find_ip) приёмы\n"
+"- либо, если вы находитесь в веб-панели администратора, в разделе "
+"«Диагностика», в подразделе «Подключение к Интернету», «IPv4», нажмите "
+"«Подробности», и вы должны найти запись «Локальный IP»\n"
+"- либо используя командную строку на сервере: `hostname -I`\n"
 
 #. type: Title ##
 #: docs/admin/45.tutorials/05.domains/dns_local_network.mdx:20
 #, no-wrap
 msgid "Configure DNS on your Internet router"
-msgstr ""
+msgstr "Настройка DNS на вашем интернет-маршрутизаторе"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/05.domains/dns_local_network.mdx:23
 #, no-wrap
 msgid "The goal here is to create a network wide redirection handled by your router. The idea is to create a DNS redirection to your server's IP. You should access your router's configuration and look for DNS configuration, then add a redirection to your server's IP (e.g. redirect `yunohost.local` to `192.168.1.21`).\n"
 msgstr ""
+"Цель состоит в создании перенаправления в масштабах всей сети, "
+"обрабатываемого вашим маршрутизатором. Идея заключается в создании DNS-"
+"перенаправления на IP-адрес вашего сервера. Вам следует получить доступ к "
+"конфигурации вашего маршрутизатора и найти раздел конфигурации DNS, а затем "
+"добавить перенаправление на IP-адрес вашего сервера "
+"(например, перенаправить `yunohost.local` на `192.168.1.21`).\n"
 
 #. type: Title ##
 #: docs/admin/45.tutorials/05.domains/dns_local_network.mdx:24

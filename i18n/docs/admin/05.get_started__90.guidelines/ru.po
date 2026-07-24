@@ -2,49 +2,58 @@
 # This file is distributed under the same license as the YunoHost documentation.
 #
 # Languages add-on <noreply-addon-languages@weblate.org>, 2025.
+# Alekseï <support@digiology.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-07-18 20:56+0000\n"
+"Last-Translator: Alekseï <support@digiology.org>\n"
+"Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
+"05get_started__90guidelines/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 5.14.2\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/05.get_started/90.guidelines.mdx:1
 #, no-wrap
 msgid "Advices and guidelines"
-msgstr ""
+msgstr "Советы и рекомендации"
 
 #. type: Plain text
 #: docs/admin/05.get_started/90.guidelines.mdx:6
 #, no-wrap
 msgid "This page lists some advice and guidelines which every YunoHost administrator should be aware to take care of a YunoHost server :)\n"
 msgstr ""
+"На этой странице приведены некоторые советы и рекомендации, которые должен "
+"знать каждый администратор YunoHost, чтобы правильно управлять своим "
+"сервером :)\n"
 
 #. type: Title ##
 #: docs/admin/05.get_started/90.guidelines.mdx:7
 #, no-wrap
 msgid "Do not break YunoHost"
-msgstr ""
+msgstr "Не нарушайте работу YunoHost"
 
 #. type: Plain text
 #: docs/admin/05.get_started/90.guidelines.mdx:10
 #, no-wrap
 msgid "To put it another way: your server is either a production server (meant to work) or a test server on which you allow yourself to experiment.\n"
 msgstr ""
+"Иными словами: ваш сервер — это либо производственный сервер "
+"(предназначенный для работы), либо тестовый сервер, на котором вы можете "
+"экспериментировать.\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/90.guidelines.mdx:12
 #, no-wrap
 msgid "If your goal is to run a production server:\n"
-msgstr ""
+msgstr "Если ваша цель — запустить производственный сервер:\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/90.guidelines.mdx:18
@@ -56,18 +65,33 @@ msgid ""
 "- use non-official apps with caution, and do not use apps that are still 'in progress', 'not working' or level 0;\n"
 "- if something gets broken, think twice about fixing it by yourself if you don't know what you are doing. <small>(For instance, do not attempt to recreate yourself the admin user just because it mysteriously disappeared...)</small>\n"
 msgstr ""
+"- помните, что серверы — это хрупкая система. Будьте осторожны, методичны и "
+"терпеливы;\n"
+"- ограничьте эксперименты и настройки (например, конфигурационных файлов);\n"
+"- не устанавливайте десятки приложений просто для того, чтобы посмотреть, "
+"как они выглядят;\n"
+"- используйте неофициальные приложения с осторожностью и не используйте "
+"приложения, которые находятся «в стадии разработки», не работают или имеют "
+"нулевой уровень;\n"
+"- если что-то сломалось, дважды подумайте, прежде чем пытаться починить это "
+"самостоятельно, если вы не знаете, что делаете. <small>(Например, не "
+"пытайтесь заново создать учётную запись администратора только потому, что "
+"она таинственным образом исчезла...)</small>\n"
 
 #. type: Title ##
 #: docs/admin/05.get_started/90.guidelines.mdx:19
 #, no-wrap
 msgid "Keep it simple!"
-msgstr ""
+msgstr "Не усложняйте!"
 
 #. type: Plain text
 #: docs/admin/05.get_started/90.guidelines.mdx:22
 #, no-wrap
 msgid "YunoHost is designed to work with general and simple use cases in mind. Deviating from those conditions will make things harder and you will need technical knowledge to make it work. For instance:\n"
 msgstr ""
+"YunoHost разработан для работы с общими и простыми сценариями использования. "
+"Отклонение от этих условий усложнит задачу, и для корректной работы "
+"потребуются технические знания. Например:\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/90.guidelines.mdx:28
@@ -79,6 +103,15 @@ msgid ""
 "- do not try to use custom SSL certificates if you don't really need them;\n"
 "- ...\n"
 msgstr ""
+"- не пытайтесь запускать YunoHost в условиях, когда у вас нет контроля над "
+"портами 80 и 443 (или вообще нет подключения к Интернету);\n"
+"- не пытайтесь разместить пять серверов за одним и тем же интернет-"
+"соединением, если вы не являетесь опытным пользователем;\n"
+"- не поддавайтесь таким «гиковским» прихотям, как желание заменить NGINX на "
+"Apache (или запускать оба одновременно);\n"
+"- не пытайтесь использовать собственные SSL-сертификаты, если они вам "
+"действительно не нужны;\n"
+"- ...\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/90.guidelines.mdx:30

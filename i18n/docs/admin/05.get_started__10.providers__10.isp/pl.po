@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2026-01-04 16:21+0000\n"
+"POT-Creation-Date: 2026-05-23 07:43+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -13,8 +13,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && "
-"(n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2;\n"
 
 #. type: Yaml Front Matter Hash Value: description
 #: docs/admin/05.get_started/02.why_should_you_not_host_yourself.mdx:1
@@ -230,10 +230,10 @@ msgstr ""
 #: docs/admin/05.get_started/10.providers/10.isp.mdx:126
 #, no-wrap
 msgid ""
-"| Service provider                      | Port 25 openable   | [Hairpinning](http://en.wikipedia.org/wiki/Hairpinning) | Customizable reverse DNS | Fixed IP   |\n"
-"| ------------------------------------- | ------------------ | ------------------------------------------------------- | ------------------------ | ---------- |\n"
-"| DIGI Távközlési és Szolgáltató Kft.   | No. Business only. | No                                                      | No. Business only | No. Business only |\n"
-"| Telekom Magyarország                  | No                 | No                                                      | No                | No                |\n"
+"| Service provider                      | Port 25 openable   | [Hairpinning](http://en.wikipedia.org/wiki/Hairpinning) | Customizable reverse DNS | Fixed IP       |\n"
+"| ------------------------------------- | ------------------ | ------------------------------------------------------- | ------------------------ | -------------- |\n"
+"| DIGI Távközlési és Szolgáltató Kft.   | No. Business only. | No                                                      | No. Business only | No. Business only     |\n"
+"| Telekom Magyarország                  | No                 | No                                                      | No                | Yes, with bridge mode |\n"
 msgstr ""
 
 #. type: Fenced div block (tip)

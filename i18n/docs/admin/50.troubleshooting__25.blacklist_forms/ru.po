@@ -2,43 +2,60 @@
 # This file is distributed under the same license as the YunoHost documentation.
 #
 # Languages add-on <noreply-addon-languages@weblate.org>, 2025.
+# Alekseï <support@digiology.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-07-18 20:56+0000\n"
+"Last-Translator: Alekseï <support@digiology.org>\n"
+"Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
+"50troubleshooting__25blacklist_forms/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 5.14.2\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/50.troubleshooting/25.blacklist_forms.mdx:1
 #, no-wrap
 msgid "Removing your server’s IP/domain from antispam listings"
-msgstr ""
+msgstr "Удаление IP-адреса/домена вашего сервера из списков антиспама"
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/25.blacklist_forms.mdx:6
 #, no-wrap
 msgid "For various reasons, your IP or domain may end up in blocklists and get rejected by specific email providers, or anti-spam services. If you receive an alert from the diagnosis tool, clicking Details should point you to the appropriate form to contest the listing and get your server removed from it.\n"
 msgstr ""
+"По разным причинам ваш IP-адрес или домен может попасть в черные списки и "
+"быть отклонен определенными почтовыми провайдерами или антиспам-сервисами. "
+"Если вы получили предупреждение от инструмента диагностики, нажатие кнопки "
+"«Подробности» должно привести вас к соответствующей форме для оспаривания "
+"записи и удаления вашего сервера из списка.\n"
 
 #. type: Title ##
 #: docs/admin/50.troubleshooting/25.blacklist_forms.mdx:7
 #, no-wrap
 msgid "Test your server"
-msgstr ""
+msgstr "Проверка вашего сервера"
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/25.blacklist_forms.mdx:10
 #, no-wrap
 msgid "To check your Email deliverability, YunoHost provide automatic tests in the Diagnosis section of the webadmin, checking the presence of your server on blocklists / RBL (Realtime Blackhole List), as well as compliance with other standard practice demonstrating that your server is legitimately sending email (as opposed to infected machines used by hackers/spammers/botnet), such as DNS records and reverse DNS configuration. The diagnosis will also indicate if there is a suspiciously high number of emails pending in the send queue.\n"
 msgstr ""
+"Для проверки доставляемости вашей электронной почты YunoHost предоставляет "
+"автоматические тесты в разделе «Диагностика» веб-панели администратора, "
+"проверяющие наличие вашего сервера в черных списках / RBL "
+"(Realtime Blackhole List), а также соответствие другим стандартным "
+"процедурам, демонстрирующим, что ваш сервер законно отправляет электронную "
+"почту "
+"(в отличие от зараженных машин, используемых хакерами/спамерами/ботнетами), "
+"таким как записи DNS и обратная конфигурация DNS. Диагностика также покажет, "
+"если в очереди отправки находится подозрительно большое количество писем.\n"
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/25.blacklist_forms.mdx:14
@@ -48,30 +65,42 @@ msgid ""
 "- by sending an email to the random test address indicated on [Mail tester](https://www.mail-tester.com) ... though most of the checks are covered by YunoHost's diagnosis.\n"
 "- by checking your server's public IP on : [MultiRBL Valli](https://multirbl.valli.org/) or [Whatismyip](https://whatismyipaddress.com/blacklist-check)\n"
 msgstr ""
+"В дополнение к этим проверкам вас могут заинтересовать следующие услуги:\n"
+"- отправка электронного письма на случайный тестовый адрес, указанный на "
+"[Mail tester](https://www.mail-tester.com) ... хотя большинство проверок уже "
+"охвачено диагностикой YunoHost.\n"
+"- проверка публичного IP-адреса вашего сервера на: [MultiRBL Valli]"
+"(https://multirbl.valli.org/) или [Whatismyip]"
+"(https://whatismyipaddress.com/blacklist-check)\n"
 
 #. type: Title ##
 #: docs/admin/50.troubleshooting/25.blacklist_forms.mdx:15
 #, no-wrap
 msgid "Checking email-related logs"
-msgstr ""
+msgstr "Проверка журналов, связанных с электронной почтой"
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/25.blacklist_forms.mdx:18
 #, no-wrap
 msgid "This command can help you to summarize which emails sent by your server got refused by other SMTP servers, and why:\n"
 msgstr ""
+"Эта команда поможет вам составить сводку о том, какие электронные письма, "
+"отправленные вашим сервером, были отклонены другими SMTP-серверами и почему:"
+"\n"
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/25.blacklist_forms.mdx:24
 #, no-wrap
 msgid "You might want to compare this to [the list of SMTP return codes](https://en.wikipedia.org/wiki/List_of_SMTP_server_return_codes).\n"
 msgstr ""
+"Возможно, вам стоит сравнить это со [списком кодов возврата SMTP]"
+"(https://en.wikipedia.org/wiki/List_of_SMTP_server_return_codes).\n"
 
 #. type: Title ##
 #: docs/admin/50.troubleshooting/25.blacklist_forms.mdx:25
 #, no-wrap
 msgid "Specific email providers"
-msgstr ""
+msgstr "Конкретные почтовые провайдеры"
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/25.blacklist_forms.mdx:28

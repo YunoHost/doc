@@ -2,19 +2,22 @@
 # This file is distributed under the same license as the YunoHost documentation.
 #
 # Languages add-on <noreply-addon-languages@weblate.org>, 2025.
+# Alekseï <support@digiology.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-04-19 08:39+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-07-18 20:56+0000\n"
+"Last-Translator: Alekseï <support@digiology.org>\n"
+"Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
+"15command_line/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 5.14.2\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/_configuration.mdx:18
@@ -34,7 +37,7 @@ msgstr ""
 #: docs/admin/45.tutorials/35.email_configure_relay.mdx:49
 #, no-wrap
 msgid "<TabItem value=\"web\" label=\"From the web interface\">\n"
-msgstr ""
+msgstr "<TabItem value=\"web\" label=\"Из веб-интерфейса\">\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/_configuration.mdx:36
@@ -55,43 +58,54 @@ msgstr ""
 #: docs/admin/45.tutorials/35.email_configure_relay.mdx:66
 #, no-wrap
 msgid "<TabItem value=\"cli\" label=\"From the command line\">\n"
-msgstr ""
+msgstr "<TabItem value=\"cli\" label=\"Из командной строки\">\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/15.command_line.mdx:1
 #, no-wrap
 msgid "🛠️ SSH and command line"
-msgstr ""
+msgstr "🛠️ SSH и командная строка"
 
 #. type: Title ##
 #: docs/admin/15.command_line.mdx:8
 #, no-wrap
 msgid "What's SSH?"
-msgstr ""
+msgstr "Что такое SSH?"
 
 #. type: Plain text
 #: docs/admin/15.command_line.mdx:11
 #, no-wrap
 msgid "**SSH** stands for Secure Shell, and refers to a protocol that allows you to remotely control and administer a machine using the command line interface (CLI). It is available by default in any terminal on GNU/Linux and macOS. On Windows, you may want to use [MobaXterm](https://mobaxterm.mobatek.net/download-home-edition.html) (after launching it, click on Session then SSH).\n"
 msgstr ""
+"**SSH** расшифровывается как Secure Shell (защищённая оболочка) и обозначает "
+"протокол, позволяющий удалённо управлять машиной и администрировать её с "
+"помощью интерфейса командной строки (CLI). Он доступен по умолчанию в любом "
+"терминале GNU/Linux и macOS. В Windows вы можете использовать [MobaXterm]"
+"(https://mobaxterm.mobatek.net/download-home-edition.html) "
+"(после запуска нажмите «Сессия», затем «SSH»).\n"
 
 #. type: Plain text
 #: docs/admin/15.command_line.mdx:13
 #, no-wrap
 msgid "The command line interface (CLI) is, in the computer world, the original (and more technical) way of interacting with a computer compared to graphical interface. Command line interfaces are generally said to be more complete, powerful or efficient than a graphical interface, though also more difficult to learn.\n"
 msgstr ""
+"В компьютерном мире интерфейс командной строки (CLI) — это оригинальный "
+"(и более технически сложный) способ взаимодействия с компьютером по "
+"сравнению с графическим интерфейсом. Как правило, считается, что интерфейс "
+"командной строки более полный, мощный и эффективный, чем графический "
+"интерфейс, хотя и сложнее в освоении.\n"
 
 #. type: Title ##
 #: docs/admin/15.command_line.mdx:14
 #, no-wrap
 msgid "How to connect"
-msgstr ""
+msgstr "Как подключиться"
 
 #. type: Title ###
 #: docs/admin/15.command_line.mdx:16
 #, no-wrap
 msgid "Credentials *before* running the postinstall"
-msgstr ""
+msgstr "Укажите учётные данные *перед* запуском postinstall"
 
 #. type: Plain text
 #: docs/admin/15.command_line.mdx:20

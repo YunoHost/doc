@@ -2,19 +2,22 @@
 # This file is distributed under the same license as the YunoHost documentation.
 #
 # Languages add-on <noreply-addon-languages@weblate.org>, 2025.
+# Alekseï <support@digiology.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-04-19 08:39+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-07-18 20:56+0000\n"
+"Last-Translator: Alekseï <support@digiology.org>\n"
+"Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
+"40backups__index/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 5.14.2\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/_configuration.mdx:18
@@ -34,7 +37,7 @@ msgstr ""
 #: docs/admin/45.tutorials/35.email_configure_relay.mdx:49
 #, no-wrap
 msgid "<TabItem value=\"web\" label=\"From the web interface\">\n"
-msgstr ""
+msgstr "<TabItem value=\"web\" label=\"Из веб-интерфейса\">\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/_configuration.mdx:36
@@ -55,49 +58,68 @@ msgstr ""
 #: docs/admin/45.tutorials/35.email_configure_relay.mdx:66
 #, no-wrap
 msgid "<TabItem value=\"cli\" label=\"From the command line\">\n"
-msgstr ""
+msgstr "<TabItem value=\"cli\" label=\"Из командной строки\">\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/40.backups/index.mdx:1
 #, no-wrap
 msgid "🚑 Backups"
-msgstr ""
+msgstr "🚑 Резервные копии"
 
 #. type: Plain text
 #: docs/admin/40.backups/index.mdx:9
 #, no-wrap
 msgid "In the context of self-hosting, backups are essential for mitigating the impact of unexpected events—such as fires, database corruption, server access issues, or security breaches. The backup strategy you implement should be tailored to the importance of the services and data you are managing. For instance, backing up a test server will be of little interest, whereas when handling critical data for an NGO or business, backups become much more vital. In these cases, it’s crucial to store backups in one, or ideally **several** locations.\n"
 msgstr ""
+"В контексте самостоятельного размещения серверов резервное копирование имеет "
+"решающее значение для смягчения последствий непредвиденных событий, таких "
+"как пожары, повреждение баз данных, проблемы с доступом к серверу или "
+"нарушения безопасности. Стратегия резервного копирования должна быть "
+"адаптирована к важности управляемых вами сервисов и данных. Например, "
+"резервное копирование тестового сервера будет малоинтересно, тогда как при "
+"работе с критически важными данными для НПО или бизнеса резервное "
+"копирование становится гораздо более важным. В этих случаях крайне важно "
+"хранить резервные копии в одном или, в идеале, в **нескольких** местах.\n"
 
 #. type: Title ##
 #: docs/admin/40.backups/index.mdx:10
 #, no-wrap
 msgid "Manual backup"
-msgstr ""
+msgstr "Ручное резервное копирование"
 
 #. type: Plain text
 #: docs/admin/40.backups/index.mdx:13
 #, no-wrap
 msgid "YunoHost comes with a backup system that allows you to back up (and restore) system configurations and data (e.g. emails) and apps, if they support it.\n"
 msgstr ""
+"YunoHost поставляется с системой резервного копирования, которая позволяет "
+"создавать резервные копии (и восстанавливать) системные конфигурации, данные "
+"(например, электронную почту) и приложения, если они поддерживают эту "
+"функцию.\n"
 
 #. type: Plain text
 #: docs/admin/40.backups/index.mdx:15
 #, no-wrap
 msgid "You can manage backups either from the command line (`yunohost backup --help`) or from the web administration (in the Backups section), though some features are not yet available in the webadmin.\n"
 msgstr ""
+"Вы можете управлять резервными копиями как из командной строки "
+"(`yunohost backup --help`)), так и из веб-интерфейса администрирования "
+"(в разделе «Резервное копирование»), хотя некоторые функции пока недоступны "
+"в веб-интерфейсе.\n"
 
 #. type: Plain text
 #: docs/admin/40.backups/index.mdx:17
 #, no-wrap
 msgid "The current default method consists of creating a `.tar` archive containing all relevant files.\n"
 msgstr ""
+"В настоящее время по умолчанию используется метод создания архива `.tar`, "
+"содержащего все необходимые файлы.\n"
 
 #. type: Title ####
 #: docs/admin/40.backups/index.mdx:18
 #, no-wrap
 msgid "Creating backups"
-msgstr ""
+msgstr "Создание резервных копий"
 
 #. type: Plain text
 #: docs/admin/40.backups/index.mdx:24

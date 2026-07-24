@@ -2,19 +2,22 @@
 # This file is distributed under the same license as the YunoHost documentation.
 #
 # Languages add-on <noreply-addon-languages@weblate.org>, 2025.
+# Alekseï <support@digiology.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-07-20 09:41+0000\n"
+"Last-Translator: Alekseï <support@digiology.org>\n"
+"Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
+"45tutorials__35email_configure_relay/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 5.14.2\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/_configuration.mdx:18
@@ -34,7 +37,7 @@ msgstr ""
 #: docs/admin/45.tutorials/35.email_configure_relay.mdx:49
 #, no-wrap
 msgid "<TabItem value=\"web\" label=\"From the web interface\">\n"
-msgstr ""
+msgstr "<TabItem value=\"web\" label=\"Из веб-интерфейса\">\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/_configuration.mdx:36
@@ -55,25 +58,29 @@ msgstr ""
 #: docs/admin/45.tutorials/35.email_configure_relay.mdx:66
 #, no-wrap
 msgid "<TabItem value=\"cli\" label=\"From the command line\">\n"
-msgstr ""
+msgstr "<TabItem value=\"cli\" label=\"Из командной строки\">\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/45.tutorials/35.email_configure_relay.mdx:1
 #, no-wrap
 msgid "Configure SMTP relay"
-msgstr ""
+msgstr "Настройка SMTP-ретранслятора"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/35.email_configure_relay.mdx:9
 #, no-wrap
 msgid "If your ISP blocks port 25, if you can't set a reverseDNS on your server, or if you have any other troubles using the built-in SMTP server on YunoHost, you may want to setup your YunoHost server to use an SMTP relay.\n"
 msgstr ""
+"Если ваш интернет-провайдер блокирует порт 25, если вы не можете настроить "
+"обратное DNS-соединение на своём сервере или если у вас возникли другие "
+"проблемы с использованием встроенного SMTP-сервера в YunoHost, возможно, вам "
+"стоит настроить сервер YunoHost для использования SMTP-ретранслятора.\n"
 
 #. type: Title ##
 #: docs/admin/45.tutorials/35.email_configure_relay.mdx:10
 #, no-wrap
 msgid "What is an SMTP relay?"
-msgstr ""
+msgstr "Что такое SMTP-ретранслятор?"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/35.email_configure_relay.mdx:14
@@ -82,24 +89,55 @@ msgid ""
 "An SMTP relay is basically a third party hosted SMTP server that will send emails on behalf of your own SMTP server (Postfix service on YunoHost).\n"
 "Once setup correctly on YunoHost, its operation is transparent, both for you and for your correspondents: they will see emails as coming from your YunoHost main URL, but all the sending will be delegated to the SMTP relay you have chosen and configured.\n"
 msgstr ""
+"SMTP-ретранслятор — это, по сути, сторонний SMTP-сервер, который будет "
+"отправлять электронные письма от имени вашего собственного SMTP-сервера "
+"(сервис Postfix на YunoHost).\n"
+"После правильной настройки на YunoHost его работа прозрачна как для вас, так "
+"и для ваших корреспондентов: они будут видеть электронные письма как "
+"отправленные с вашего основного URL-адреса YunoHost, но вся отправка будет "
+"делегирована выбранному и настроенному вами SMTP-ретранслятору.\n"
 
 #. type: Title ##
 #: docs/admin/45.tutorials/35.email_configure_relay.mdx:15
 #, no-wrap
 msgid "<FAIcon icon=\"fa-exclamation-triangle\"/> Disadvantages of SMTP relays"
 msgstr ""
+"<FAIcon icon=\"fa-exclamation-triangle\"/> Недостатки SMTP-ретрансляторов"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/35.email_configure_relay.mdx:18
 #, no-wrap
 msgid "It's important to note that using an SMTP relay has to be seen as a (big) compromise in the world of self-hosting. Indeed, when using an SMTP relay, not only a third party sends emails on your behalf, but it has full access to the content of all the emails you'll send and can also possibly modify them (For example, by default, MailJet rewrites the html hyperlinks contained in your emails, in order to track the activity of your correspondents). Be also aware that an SMTP relay is setup for your whole YunoHost server: you can't choose which emails or which users go through it because all future emails will.\n"
 msgstr ""
+"Важно отметить, что использование SMTP-ретранслятора следует рассматривать "
+"как (значительный) компромисс в мире самостоятельного хостинга. "
+"Действительно, при использовании SMTP-ретранслятора третья сторона не только "
+"отправляет электронные письма от вашего имени, но и имеет полный доступ к "
+"содержимому всех отправляемых вами писем и может даже изменять их (например, "
+"по умолчанию MailJet переписывает HTML-гиперссылки в ваших письмах, чтобы "
+"отслеживать активность ваших корреспондентов). Также имейте в виду, что SMTP-"
+"ретранслятор настраивается для всего вашего сервера YunoHost: вы не можете "
+"выбирать, какие письма или какие пользователи будут через него проходить, "
+"потому что через него будут проходить все будущие письма.\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/35.email_configure_relay.mdx:20
 #, no-wrap
 msgid "Beyond the privacy considerations above, an SMTP relay can impose technical limitations that one would not have if port 25 was open. For example, with most relays, if a user of your YunoHost server declares **an external \"forwarding address\"** in order to automatically forward messages received on your YunoHost server to another mailbox, **such forwarding will not work** for emails originating from outside your server, without any warning. Indeed, relays generally require that the messages they forward have a sender address from your domain (to fight spam and preserve the reputation of their services), which is not the case for an \"automatic forward\" where the original sender of the mail is kept; the message is then blocked by the relay (which, normally, warns your YunoHost admin, but only afterwards)\n"
 msgstr ""
+"Помимо вышеупомянутых соображений конфиденциальности, SMTP-ретранслятор "
+"может накладывать технические ограничения, которых не было бы при открытом "
+"порте 25. Например, в большинстве случаев, если пользователь вашего сервера "
+"YunoHost указывает **внешний «адрес переадресации»** для автоматической "
+"пересылки сообщений, полученных на вашем сервере YunoHost, в другой почтовый "
+"ящик, **такая переадресация не будет работать** для писем, поступающих извне "
+"вашего сервера, без какого-либо предупреждения. Действительно, ретрансляторы "
+"обычно требуют, чтобы пересылаемые ими сообщения имели адрес отправителя из "
+"вашего домена (для борьбы со спамом и сохранения репутации своих сервисов), "
+"чего нет в случае «автоматической пересылки», где сохраняется первоначальный "
+"отправитель письма; затем сообщение блокируется ретранслятором (который, как "
+"правило, предупреждает вашего администратора YunoHost, но только задним "
+"числом)\n"
 
 #. type: Title ##
 #: docs/admin/45.tutorials/35.email_configure_relay.mdx:21

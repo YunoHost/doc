@@ -3,14 +3,16 @@
 #
 # Weblate Admin <yunohost@translate.yunohost.org>, 2025.
 # Wesley Wang <aidezp2@gmail.com>, 2025.
+# Poesty Li <poesty7450@gmail.com>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-11 19:20+0000\n"
-"PO-Revision-Date: 2025-11-24 11:50+0000\n"
-"Last-Translator: Wesley Wang <aidezp2@gmail.com>\n"
-"Language-Team: Chinese (Simplified Han script) <https://translate.yunohost."
-"org/projects/yunohost-doc/02what_is_yunohost__index/zh_Hans/>\n"
+"PO-Revision-Date: 2026-05-23 15:14+0000\n"
+"Last-Translator: Poesty Li <poesty7450@gmail.com>\n"
+"Language-Team: Chinese (Simplified Han script) <https://"
+"translate.yunohost.org/projects/yunohost-doc/02what_is_yunohost__index/"
+"zh_Hans/>\n"
 "Language: zh_Hans\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -29,24 +31,32 @@ msgstr "YunoHost是什么？"
 #, no-wrap
 msgid "YunoHost is an **operating system** aiming to **simplify server administration** and therefore democratize [self-hosting](/admin/about_self_hosting) while making sure it stays reliable, secure, ethical and lightweight. It is a copylefted libre software project maintained by volunteers. Technically, it can be seen as a server distribution based on [Debian GNU/Linux](https://debian.org).\n"
 msgstr ""
+"YunoHost 是一个**操作系统**，旨在**简化服务器管理**，从而让人人都能[自托管]"
+"(/admin/about_self_hosting)，同时确保其可靠、安全、合乎道德且轻量。它是由志愿"
+"者维护的自由软件项目，采用 Copyleft 许可。从技术角度看，它可以被视为基于 "
+"[Debian GNU/Linux](https://debian.org) 的服务器发行版。\n"
 
 #. type: Plain text
 #: docs/admin/02.what_is_yunohost/index.mdx:11
 #, no-wrap
 msgid "YunoHost can be installed on [many kinds of hardware](/admin/get_started/install_on), either at home or on a remote server (VPS).\n"
 msgstr ""
+"YunoHost 可以安装在[多种硬件](/admin/get_started/install_on)上，无论是在家里"
+"还是在远程服务器（VPS）上都可以。\n"
 
 #. type: Plain text
 #: docs/admin/02.what_is_yunohost/index.mdx:13
 #, no-wrap
 msgid "![General representation of a YunoHost server installation](/img/internet_topologies_with_ynh.png?resize=600)\n"
 msgstr ""
+"![YunoHost 服务器安装的总体示意图]"
+"(/img/internet_topologies_with_ynh.png?resize=600)\n"
 
 #. type: Title ##
 #: docs/admin/02.what_is_yunohost/index.mdx:14
 #, no-wrap
 msgid "Features"
-msgstr ""
+msgstr "功能特性"
 
 #. type: Plain text
 #: docs/admin/02.what_is_yunohost/index.mdx:26
@@ -63,18 +73,36 @@ msgid ""
 "- <SmallInline url='/img/icons/icon-lock.png' /> Manages **SSL certificates** <small>(based on Let's Encrypt)</small>;\n"
 "- <SmallInline url='/img/icons/icon-shield.png' />... and **security systems** <small>(`fail2ban`, firewall using `nftables`)</small>.\n"
 msgstr ""
+"- <SmallInline url='/img/icons/logo-debian.png' alt='Debian 徽标'/> 基于 "
+"Debian，提供值得信赖且熟悉的基础；\n"
+"- <SmallInline url='/img/icons/icon-tools.png' /> 通过**友好的网页界面**以及"
+"便捷的 CLI 管理您的服务器；\n"
+"- <SmallInline url='/img/icons/icon-package.png' /> 从[我们的 500 多个应用目"
+"录](https://apps.yunohost.org)中**一键部署应用**！；\n"
+"- <SmallInline url='/img/icons/icon-users.png' /> 管理**用户** <small>（基于 "
+"LDAP）</small>；\n"
+"- <SmallInline url='/img/icons/icon-globe.png' /> 管理**域名**；\n"
+"- <SmallInline url='/img/icons/icon-medic.png' /> 创建和还原**备份**；\n"
+"- <SmallInline url='/img/icons/icon-door.png' /> 通过**用户门户**同时连接所有"
+"应用 <small>（NGINX、SSOwat）</small>；\n"
+"- <SmallInline url='/img/icons/icon-mail.png' /> 包含**完整的电子邮件服务栈**"
+" <small>（Postfix、Dovecot、OpenDKIM、PostSRSd）</small>；\n"
+"- <SmallInline url='/img/icons/icon-lock.png' /> 管理 **SSL 证书** <small>（"
+"基于 Let's Encrypt）</small>；\n"
+"- <SmallInline url='/img/icons/icon-shield.png' /> … 以及**安全系统** <small>"
+"（`fail2ban`、使用 `nftables` 的防火墙）</small>。\n"
 
 #. type: Title ##
 #: docs/admin/02.what_is_yunohost/index.mdx:27
 #, no-wrap
 msgid "Origin"
-msgstr ""
+msgstr "起源"
 
 #. type: Plain text
 #: docs/admin/02.what_is_yunohost/index.mdx:30
 #, no-wrap
 msgid "YunoHost was created in February 2012 after something like this:\n"
-msgstr ""
+msgstr "YunoHost 创建于 2012 年 2 月，起因大概是这样的：\n"
 
 #. type: Plain text
 #: docs/admin/02.what_is_yunohost/index.mdx:33
@@ -83,81 +111,124 @@ msgid ""
 "> \"Shit, I'm too lazy to reconfigure my mail server... Beudbeud, how were you able to get your little server running with LDAP?\"\n"
 "> <small>*Kload, February 2012*</small>\n"
 msgstr ""
+"> “靠，我太懒了不想重新配置我的邮件服务器…… Beudbeud，你是怎么让你的小服务器"
+"跑起 LDAP 的？”\n"
+"> <small>*Kload，2012 年 2 月*</small>\n"
 
 #. type: Plain text
 #: docs/admin/02.what_is_yunohost/index.mdx:35
 #, no-wrap
 msgid "All that was needed was an admin interface for Beudbeud's server to make something usable, so Kload decided to develop one. Finally, after automating several configs and packaging in some web apps, YunoHost v1 was finished.\n"
 msgstr ""
+"当时只需要一个管理界面来让 Beudbeud 的服务器变得可用，于是 Kload 决定开发一个"
+"。最终，在自动化若干配置并打包了一些 Web 应用之后，YunoHost v1 完成了。\n"
 
 #. type: Plain text
 #: docs/admin/02.what_is_yunohost/index.mdx:37
 #, no-wrap
 msgid "Noting the growing enthusiasm around YunoHost and around self-hosting in general, the original developers, along with new contributors, decided to start work on version 2, a more extensible, more powerful, more easy-to-use, and, at that, one that makes a nice cup of fair-trade coffee for the elves of Lapland.\n"
 msgstr ""
+"注意到人们对 YunoHost 乃至整个自托管的热情日益高涨，最初的开发者与新贡献者决"
+"定着手开发版本 2：一个更可扩展、更强大、更易用，而且还能为拉普兰精灵泡上一杯"
+"公平贸易咖啡的版本。\n"
 
 #. type: Plain text
 #: docs/admin/02.what_is_yunohost/index.mdx:39
 #, no-wrap
 msgid "The name **YunoHost** comes from the jargon \"[Y U NO](https://knowyourmeme.com/memes/y-u-no-guy) Host\". The [Internet meme](https://en.wikipedia.org/wiki/Internet_meme) should illustrate it:\n"
 msgstr ""
+"**YunoHost** 这个名字来源于“[Y U NO]"
+"(https://knowyourmeme.com/memes/y-u-no-guy) Host”这个梗。下面的[网络迷因]"
+"(https://en.wikipedia.org/wiki/Internet_meme)可以说明这一点：\n"
 
 #. type: Plain text
 #: docs/admin/02.what_is_yunohost/index.mdx:42
 #, no-wrap
 msgid "![The meme in question, showing a guy with a face bent in frustration and questioning \"Y U NO Host\"](/img/dude_yunohost.jpg)\n"
-msgstr ""
+msgstr "![提到的梗图，显示一个苦恼地扭曲着脸并质问“Y U NO Host”的人]"
+"(/img/dude_yunohost.jpg)\n"
 
 #. type: Title ##
 #: docs/admin/02.what_is_yunohost/index.mdx:44
 #, no-wrap
 msgid "What YunoHost is not?"
-msgstr ""
+msgstr "YunoHost 不是什么？"
 
 #. type: Plain text
 #: docs/admin/02.what_is_yunohost/index.mdx:47
 #, no-wrap
 msgid "**YunoHost is *not* an enterprise or a for-profit entity.** It is developed and maintained by volunteers. We do not sell services, we do not host or control your data or services in any way, and we have no intention or interest in monetizing anything. We also do not offer any formal guarantees. Our goal is simply to develop and maintain YunoHost in the hope that it contributes to a more decentralized internet and empowers people to reclaim autonomy over their digital services and technology. That said, we do our best to provide community support, and commercial support may be available through third parties if needed.\n"
 msgstr ""
+"**YunoHost *不是*企业或营利实体。**它由志愿者开发和维护。我们不销售服务，不以"
+"任何方式托管或控制您的数据或服务，也没有任何意向或兴趣将任何东西货币化。我们"
+"也不提供任何形式的正式保证。我们的目标仅仅是开发和维护 YunoHost，希望它能促进"
+"互联网的去中心化，并帮助人们重新掌控自己的数字服务和技术。话虽如此，我们会尽"
+"力提供社区支持，如有需要，也可能通过第三方获得商业支持。\n"
 
 #. type: Plain text
 #: docs/admin/02.what_is_yunohost/index.mdx:49
 #, no-wrap
 msgid "**YunoHost as a project is *not* apolitical.** By its very nature, YunoHost promotes a decentralized internet and technologies that empower people. We reject the flawed notion that technology is inherently neutral, or that software projects should remain neutral. Many contributors to the project remain vigilant about the social and political implications of technological developments, and emphasize the importance of solidarity and alignment with broader movements such as feminism, LGBTQIA+ rights and visibility, environmental justice, and social justice. We stand firmly against fascism, sexism, racism, xenophobia, [bigotry](https://simple.wikipedia.org/wiki/Bigotry), ableism, imperialism, extractivism, [eugenics](https://en.wikipedia.org/wiki/Eugenics), and right-wing libertarianism. If you are not aligned with these values, you are encouraged to *not* use YunoHost and look for a different system.\n"
 msgstr ""
+"**YunoHost 作为一个项目并非*与政治无关*。**就其本质而言，YunoHost 倡导去中心"
+"化的互联网和赋能于人的技术。我们拒绝技术本质上是中立的，或软件项目应保持中立"
+"这种有缺陷的观点。项目的许多贡献者始终对技术发展的社会和政治影响保持警觉，并"
+"强调团结一致以及与更广泛运动（如女权主义、LGBTQIA+ 权利与可见性、环境正义和社"
+"会正义）保持一致的重要性。我们坚决反对法西斯主义、性别歧视、种族歧视、仇外心"
+"理、[偏执](https://simple.wikipedia.org/wiki/Bigotry)、残障歧视、帝国主义、榨"
+"取主义、[优生学](https://en.wikipedia.org/wiki/Eugenics)和右翼自由主义。如果"
+"您不认同这些价值观，建议您*不要*使用 YunoHost，另寻其他系统。\n"
 
 #. type: Plain text
 #: docs/admin/02.what_is_yunohost/index.mdx:51
 #, no-wrap
 msgid "**YunoHost is *not* designed to \"scale\" in the traditional sense.** It is intended for a relatively modest number of user accounts and simultaneous users. While there is no strict limit—since performance depends heavily on your specific setup — we estimate that some technical adjustments may be necessary when reaching 250~500 user accounts, or about 50 simultaneous users on resource-intensive apps. That said, YunoHost can comfortably handle hosting a website or several lightweight services, even with thousands of daily visitors.\n"
 msgstr ""
+"**YunoHost *并非*为传统意义上的“扩展”而设计。**它面向数量相对有限的用户账号和"
+"并发用户。虽然没有严格限制——因为性能在很大程度上取决于您的具体配置——我们估计"
+"，当达到 250~500 个用户账号或资源密集型应用上有约 50 个并发用户时，可能需要进"
+"行一些技术调整。话虽如此，YunoHost 可以轻松托管一个网站或几个轻量级服务，即使"
+"每天有数千访问者也没问题。\n"
 
 #. type: Plain text
 #: docs/admin/02.what_is_yunohost/index.mdx:53
 #, no-wrap
 msgid "**YunoHost is primarily designed for people who want things to \"just work\".** Of course, it’s not perfect — we're constantly working to improve the user experience, robustness, and simplicity. Though YunoHost is \"tinkerable\", the first target public is *not* power users with complex or highly customized use cases in mind. We encourage you to keep your setup as simple as possible. That said, you are more than welcome to experiment and share your feedback with us!\n"
 msgstr ""
+"**YunoHost 主要面向希望一切“开箱即用”的用户。**当然，它并不完美——我们一直在努"
+"力改善用户体验、稳健性和简洁性。虽然 YunoHost 可以“折腾”，但首要目标用户*不是"
+"*那些有复杂或高度定制化需求的高级用户。我们建议您尽可能保持配置简单。话虽如此"
+"，我们非常欢迎您进行尝试并与我们分享反馈！\n"
 
 #. type: Plain text
 #: docs/admin/02.what_is_yunohost/index.mdx:55
 #, no-wrap
 msgid "**YunoHost is *not* designed to be a *heavy* multi-tenant solution** for providing services to completely separate organizations across different domains. While you *can* manage multiple domains and subdomains — such as hosting apps for friends, colleagues, and an association — you should keep in mind that there is no strict isolation between apps. Under the hood, all applications share the same system and environment.\n"
 msgstr ""
+"**YunoHost *并非*旨在成为为跨不同域名的完全独立组织提供服务的*重型*多租户解决"
+"方案。**虽然您*可以*管理多个域名和子域名——例如为朋友、同事和某个协会托管应用—"
+"—但您应记住，应用之间没有严格的隔离。在底层，所有应用共享相同的系统和环境。\n"
 
 #. type: Plain text
 #: docs/admin/02.what_is_yunohost/index.mdx:57
 #, no-wrap
 msgid "(Note for power users) **YunoHost does not use \"hard\" containerization technologies** such as Docker, for its apps. This is partly for historical reasons and partly to keep the system lightweight — both in terms of resource usage and technical complexity. That said, we do take security seriously: applications run under dedicated user accounts with limited privileges and capabilities, and we're continuously working to enhance the system’s security.\n"
 msgstr ""
+"（高级用户须知）**YunoHost 并未对其应用使用“硬性”容器化技术**（如 Docker）。"
+"这有一部分是历史原因，也有一部分是为了保持系统轻量化——无论是在资源占用还是技"
+"术复杂度方面。话虽如此，我们确实认真对待安全性：应用程序在专用用户账号下以有"
+"限权限和能力运行，并且我们持续致力于增强系统的安全性。\n"
 
 #. type: Title ##
 #: docs/admin/02.what_is_yunohost/index.mdx:58
 #, no-wrap
 msgid "Artworks"
-msgstr ""
+msgstr "美术作品"
 
 #. type: Plain text
 #: docs/admin/02.what_is_yunohost/index.mdx:61
 #, no-wrap
 msgid "Black and white YunoHost by ToZz. Licence: CC-BY-SA 4.0. Logos and other artwork are available in [the Artworks repository](https://github.com/YunoHost/yunohost-artwork).\n"
 msgstr ""
+"由 ToZz 制作的黑白版 YunoHost。许可证：CC-BY-SA 4.0。徽标及其他美术作品可从["
+"美术作品仓库](https://github.com/YunoHost/yunohost-artwork)获取。\n"

@@ -2,55 +2,72 @@
 # This file is distributed under the same license as the YunoHost documentation.
 #
 # Languages add-on <noreply-addon-languages@weblate.org>, 2025.
+# Alekseï <support@digiology.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-07-24 11:19+0000\n"
+"Last-Translator: Alekseï <support@digiology.org>\n"
+"Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
+"20users__index/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 5.14.2\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/20.users/index.mdx:1
 #, no-wrap
 msgid "👥 Accounts and portal"
-msgstr ""
+msgstr "👥 Учётные записи и портал"
 
 #. type: Title ##
 #: docs/admin/20.users/index.mdx:5
 #, no-wrap
 msgid "Users"
-msgstr ""
+msgstr "Пользователи"
 
 #. type: Plain text
 #: docs/admin/20.users/index.mdx:8
 #, no-wrap
 msgid "Users are human being who have access to applications and other services on your server. The administrator can add and manage users through the web administration (in the User category) or through the command line (see `yunohost user --help`). After that, users obtain a personal email address (chosen by the admin), and can log in the user portal to access applications they have permissions over and configure other parameters.\n"
 msgstr ""
+"Пользователи — это люди, имеющие доступ к приложениям и другим сервисам на "
+"вашем сервере. Администратор может добавлять и управлять пользователями "
+"через веб-интерфейс администрирования (в категории «Пользователи») или через "
+"командную строку (см. `yunohost user --help`). После этого пользователи "
+"получают личный адрес электронной почты (выбранный администратором) и могут "
+"войти в пользовательский портал для доступа к приложениям, к которым у них "
+"есть права доступа, а также настроить другие параметры.\n"
 
 #. type: Plain text
 #: docs/admin/20.users/index.mdx:10
 #, no-wrap
 msgid "The first user created also automatically gets email aliases `root@main.domain.tld` and `admin@main.domain.tld`, such that mail sent to these addresses will end up in the first user's mailbox.\n"
 msgstr ""
+"Первому созданному пользователю также автоматически присваиваются псевдонимы "
+"электронной почты `root@main.domain.tld` и `admin@main.domain.tld`, так что "
+"письма, отправленные на эти адреса, будут попадать в почтовый ящик первого "
+"пользователя.\n"
 
 #. type: Fenced div block (caution)
 #: docs/admin/20.users/index.mdx:11
 #, no-wrap
 msgid "You should be careful about who you give your server access to. In terms of security, this largely increase the attack surface for someone who wants to mess with the server one way or another.\n"
 msgstr ""
+"Следует тщательно выбирать, кому вы предоставляете доступ к своему серверу. "
+"С точки зрения безопасности, это значительно увеличивает поверхность атаки "
+"для тех, кто захочет каким-либо образом вмешаться в работу сервера.\n"
 
 #. type: Title ##
 #: docs/admin/20.users/index.mdx:15
 #, no-wrap
 msgid "The user portal, or SSO"
-msgstr ""
+msgstr "Пользовательский портал, или SSO"
 
 #. type: Plain text
 #: docs/admin/20.users/index.mdx:19
@@ -59,18 +76,38 @@ msgid ""
 "![User panel screenshot](/img/user_panel.jpg)\n"
 "The user portal, also called the SSO for 'Single Sign On' allows user to browse easily between the different apps they have access to. In particular, the term 'Single Sign On' comes from the fact that user only need to log in the portal to automatically be logged to all apps that require authentication (or at least those who are integrated with the SSO/LDAP, since this is sometimes technically complicated or not possible at all).\n"
 msgstr ""
+"![Снимок экрана пользовательской панели](/img/user_panel.jpg)\n"
+"Пользовательский портал, также называемый SSO (Single Sign On — единый вход)"
+", позволяет пользователю легко переключаться между различными приложениями, "
+"к которым у него есть доступ. В частности, термин «единый вход» происходит "
+"от того, что пользователю достаточно войти в портал, чтобы автоматически "
+"войти во все приложения, требующие аутентификации (или, по крайней мере, в "
+"те, которые интегрированы с SSO/LDAP, поскольку это иногда технически сложно "
+"или вообще невозможно).\n"
 
 #. type: Plain text
 #: docs/admin/20.users/index.mdx:21
 #, no-wrap
 msgid "In the portal, users can also click on the avatar in the top-left to configure some other settings such as their identify, mail aliases, automatic mail forwards, or change their password.\n"
 msgstr ""
+"На портале пользователи также могут щелкнуть по аватару в верхнем левом "
+"углу, чтобы настроить некоторые другие параметры, такие как их "
+"идентификационные данные, почтовые псевдонимы, автоматическую пересылку "
+"почты или изменить свой пароль.\n"
 
 #. type: Fenced div block (info)
 #: docs/admin/20.users/index.mdx:22
 #, no-wrap
 msgid "You should be aware that the SSO can only be reached through the actual domain name (i.e. `https://the.domain.tld/yunohost/sso`), and NOT by just using the IP of the server (i.e. `https://11.22.33.44/yunohost/sso`), contrarily to the webadmin ! This is a bit confusing but is necessary for technical reason. If you are in a situation where you need to access the SSO without having your DNS properly configured for some reason, you might consider tweaking your `/etc/hosts` as described in [this page](/admin/tutorials/domains/dns_local_network).\n"
 msgstr ""
+"Следует помнить, что доступ к SSO возможен только через фактическое доменное "
+"имя (например, `https://the.domain.tld/yunohost/sso`), а НЕ просто через IP-"
+"адрес сервера (например, `https://11.22.33.44/yunohost/sso`), в отличие от "
+"веб-администратора! Это несколько запутывает ситуацию, но необходимо по "
+"техническим причинам. Если по какой-либо причине вам необходимо получить "
+"доступ к SSO без правильной настройки DNS, вы можете рассмотреть возможность "
+"изменения файла `/etc/hosts`, как описано на [этой странице]"
+"(/admin/tutorials/domains/dns_local_network).\n"
 
 #. type: Title ##
 #: docs/admin/20.users/index.mdx:26

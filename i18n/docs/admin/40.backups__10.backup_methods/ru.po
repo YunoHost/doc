@@ -3,37 +3,47 @@
 # This file is distributed under the same license as the YunoHost documentation package.
 # Automatically generated, 2025.
 #
+# Alekseï <support@digiology.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-04-19 08:39+0000\n"
-"PO-Revision-Date: 2025-11-11 19:34+0100\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-07-20 09:41+0000\n"
+"Last-Translator: Alekseï <support@digiology.org>\n"
+"Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
+"40backups__10backup_methods/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 5.14.2\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/40.backups/10.backup_methods.mdx:1
 #, no-wrap
 msgid "Backup methods"
-msgstr ""
+msgstr "Методы резервного копирования"
 
 #. type: Plain text
 #: docs/admin/40.backups/10.backup_methods.mdx:6
 #, no-wrap
 msgid "YunoHost currently has three apps integrating backup solutions offering more features than the simple \".tar\" mechanism shipped in YunoHost, in particular automatic and remote backups.\n"
 msgstr ""
+"В настоящее время YunoHost предлагает три приложения, интегрирующие решения "
+"для резервного копирования, которые предоставляют больше возможностей, чем "
+"простой механизм \".tar\", поставляемый с YunoHost, в частности, "
+"автоматическое и удаленное резервное копирование.\n"
 
 #. type: Title ##
 #: docs/admin/40.backups/10.backup_methods.mdx:7
 #, no-wrap
 msgid "[BorgBackup](https://www.borgbackup.org/) (cf the [Borg \"client\"](https://apps.yunohost.org/app/borg) and [Borg \"server\"](https://apps.yunohost.org/app/borgserver) apps)"
 msgstr ""
+"[BorgBackup](https://www.borgbackup.org/) "
+"(см. приложения [Borg \"client\"](https://apps.yunohost.org/app/borg) и "
+"[Borg \"server\"](https://apps.yunohost.org/app/borgserver))"
 
 #. type: Plain text
 #: docs/admin/40.backups/10.backup_methods.mdx:14
@@ -45,18 +55,32 @@ msgid ""
 "- to define the frequency and type of data to be backed up\n"
 "- a mail alert system in case of backup failure.\n"
 msgstr ""
+"- Резервное копирование данных на внешний диск или в удалённое хранилище "
+"Borg\n"
+"- Дедупликация и сжатие файлов, позволяющие хранить множество предыдущих "
+"копий без чрезмерного увеличения объема хранилища\n"
+"- Шифрование данных, позволяющее хранить данные у третьей стороны\n"
+"- Определение частоты и типа резервируемых данных\n"
+"- Система оповещения по электронной почте в случае сбоя резервного "
+"копирования.\n"
 
 #. type: Plain text
 #: docs/admin/40.backups/10.backup_methods.mdx:16
 #, no-wrap
 msgid "There are [remote borg repository providers](https://www.borgbackup.org/support/commercial.html), it is also possible to create your own repository on another YunoHost with the [borgserver application](https://github.com/YunoHost-Apps/borgserver_ynh).\n"
 msgstr ""
+"Существуют [удаленные поставщики репозиториев Borg]"
+"(https://www.borgbackup.org/support/commercial.html), также можно создать "
+"собственный репозиторий на другом YunoHost с помощью [приложения Borgserver]"
+"(https://github.com/YunoHost-Apps/borgserver_ynh).\n"
 
 #. type: Title ##
 #: docs/admin/40.backups/10.backup_methods.mdx:17
 #, no-wrap
 msgid "[Restic](https://restic.net/) (cf the [Restic app](https://apps.yunohost.org/app/restic))"
 msgstr ""
+"[Restic](https://restic.net/) "
+"(см. [приложение Restic](https://apps.yunohost.org/app/restic))"
 
 #. type: Plain text
 #: docs/admin/40.backups/10.backup_methods.mdx:24
@@ -68,18 +92,27 @@ msgid ""
 "- to define the frequency and type of data to be backed up\n"
 "- a mail alert system in case of backup failure.\n"
 msgstr ""
+"- Резервное копирование данных на удаленное хранилище (поддержка различных "
+"типов хранилищ: SFTP, S3, Backblaze B2, Azure и т. д. Для простоты *"
+"рекомендуется использовать SFTP*)\n"
+"- Дедупликация и сжатие файлов, позволяющие хранить множество предыдущих "
+"копий без чрезмерного увеличения объёма хранилища\n"
+"- Шифрование данных, позволяющее хранить данные у третьих лиц\n"
+"- Определение частоты и типа данных для резервного копирования\n"
+"- Система оповещений по электронной почте в случае сбоя резервного "
+"копирования.\n"
 
 #. type: Title ##
 #: docs/admin/40.backups/10.backup_methods.mdx:25
 #, no-wrap
 msgid "[Archivist](https://apps.yunohost.org/app/archivist)"
-msgstr ""
+msgstr "[Архивариус](https://apps.yunohost.org/app/archivist)"
 
 #. type: Fenced div block (warning)
 #: docs/admin/40.backups/10.backup_methods.mdx:27
 #, no-wrap
 msgid "This application is currently broken!\n"
-msgstr ""
+msgstr "В данный момент это приложение не работает!\n"
 
 #. type: Plain text
 #: docs/admin/40.backups/10.backup_methods.mdx:34

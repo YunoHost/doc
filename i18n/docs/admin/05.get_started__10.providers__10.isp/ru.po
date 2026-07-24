@@ -3,19 +3,22 @@
 # This file is distributed under the same license as the YunoHost documentation package.
 # Automatically generated, 2025.
 #
+# Alekseï <support@digiology.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: 2025-11-11 19:34+0100\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"POT-Creation-Date: 2026-05-23 07:43+0000\n"
+"PO-Revision-Date: 2026-07-18 20:56+0000\n"
+"Last-Translator: Alekseï <support@digiology.org>\n"
+"Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
+"05get_started__10providers__10isp/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 5.14.2\n"
 
 #. type: Yaml Front Matter Hash Value: description
 #: docs/admin/05.get_started/02.why_should_you_not_host_yourself.mdx:1
@@ -23,13 +26,13 @@ msgstr ""
 #: docs/admin/05.get_started/10.providers/20.servers.mdx:1
 #, no-wrap
 msgid " "
-msgstr ""
+msgstr " "
 
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/05.get_started/10.providers/10.isp.mdx:1
 #, no-wrap
 msgid "Internet service providers"
-msgstr ""
+msgstr "Интернет-провайдеры"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/10.isp.mdx:20
@@ -46,23 +49,28 @@ msgid ""
 "{label: 'Oceania', value: 'oceania'},\n"
 "]}>\n"
 msgstr ""
+"<Tabs\n"
+"defaultValue=\"europe\"\n"
+"values={[\n"
+"{label: 'Африка', value: 'africa'},\n"
+"{label: 'Азия', value: 'asia'},\n"
+"{label: 'Европа', value: 'europe'},\n"
+"{label: 'Северная Америка', value: 'northamerica'},\n"
+"{label: 'Южная Америка', value: 'southamerica'},\n"
+"{label: 'Океания', value: 'oceania'},\n"
+"]}>\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/10.isp.mdx:22
 #, no-wrap
 msgid "<TabItem value=\"africa\">\n"
-msgstr ""
+msgstr "<TabItem value=\"africa\">\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/10.isp.mdx:25
-#, fuzzy, no-wrap
-#| msgid ""
-#| "<TabItem value=\"router\" label=\"With your internet router / box\">\n"
-#| "Connect to your internet box / router interface to list the machines connected.\n"
+#, no-wrap
 msgid "<TabItem value=\"ivory\" label=\"Côte d'Ivoire\" default>\n"
-msgstr ""
-"<TabItem value=\"router\" label=\"С вашим интернет-маршрутизатором\">\n"
-"Подключитесь к интерфейсу вашего маршрутизатора, чтобы просмотреть список подключенных компьютеров.\n"
+msgstr "<TabItem value=\"ivory\" label=\"Кот-д'Ивуар\" default>\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/10.isp.mdx:31
@@ -74,23 +82,27 @@ msgid ""
 "| **Moov**   |          |       |         |         |         |\n"
 "| **MTN**    |          |       |         |         |         |\n"
 msgstr ""
+"| Интернет-провайдер | Коробка/модем/маршрутизатор | [Порт 25 открываем]"
+"(/admin/email)| [Hairpinning](http://fr.wikipedia.org/wiki/Hairpinning) | "
+"[Обратное DNS](https://ru.wikipedia.org/wiki/"
+"%D0%9E%D0%B1%D1%80%D0%B0%D1%82%D0%BD%D1%8B%D0%B9_%D0%BF%D1%80%D0%BE%D1%81%D0%BC%D0%BE%D1%82%D1%80_DNS)"
+" | Фикс. IP |\n"
+"| :--------: | :------: | :---: | :-----: | :-----: | :-----: |\n"
+"| **Orange** | Livebox2 | нет   | **нет** | **нет** | **нет** |\n"
+"| **Moov**   |          |       |         |         |         |\n"
+"| **MTN**    |          |       |         |         |         |\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/10.isp.mdx:37
 #, no-wrap
 msgid "<TabItem value=\"asia\">\n"
-msgstr ""
+msgstr "<TabItem value=\"asia\">\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/10.isp.mdx:39
-#, fuzzy, no-wrap
-#| msgid ""
-#| "<TabItem value=\"router\" label=\"With your internet router / box\">\n"
-#| "Connect to your internet box / router interface to list the machines connected.\n"
+#, no-wrap
 msgid "<TabItem value=\"southko\" label=\"South Korea\" default>\n"
-msgstr ""
-"<TabItem value=\"router\" label=\"С вашим интернет-маршрутизатором\">\n"
-"Подключитесь к интерфейсу вашего маршрутизатора, чтобы просмотреть список подключенных компьютеров.\n"
+msgstr "<TabItem value=\"southko\" label=\"Южная Корея\" default>\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/10.isp.mdx:45
@@ -102,17 +114,23 @@ msgid ""
 "| **KT (SkyLife, Qook&Show)** | Yes                      | No  | -   | Partial |\n"
 "| **SKT (SK Broadband)**      | Yes                      | No  | -   | Partial |\n"
 msgstr ""
+"| Поставщик услуги            | Откр. порт 25 | [Hairpinning]"
+"(http://en.wikipedia.org/wiki/Hairpinning) | Настраиваемый обратный DNS | "
+"Фиксированный IP-адрес |\n"
+"| --------------------------- | ------------------------ | --- | --- | "
+"------- |\n"
+"| **LG U+ (HelloVision)**     | Да (без роутера от интернет-провайдера) | "
+"Нет  | -   | Частично |\n"
+"| **KT (SkyLife, Qook&Show)** | Да                      | Нет  | -   | "
+"Частично |\n"
+"| **SKT (SK Broadband)**      | Да                      | Нет  | -   | "
+"Частично |\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/10.isp.mdx:48
-#, fuzzy, no-wrap
-#| msgid ""
-#| "<TabItem value=\"direct\" label=\"With a direct access on the server\">\n"
-#| "Plug a screen on your server, log in and type `hostname --all-ip-address`.\n"
+#, no-wrap
 msgid "<TabItem value=\"twn\" label=\"Taïwan\">\n"
-msgstr ""
-"<TabItem value=\"direct\" label=\"С прямым доступом к серверу\">\n"
-"Подключите экран к своему серверу, войдите в систему и введите `hostname --all-ip-address`.\n"
+msgstr "<TabItem value=\"twn\" label=\"Тайвань\">\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/10.isp.mdx:52
@@ -131,14 +149,9 @@ msgstr ""
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/10.isp.mdx:60
-#, fuzzy, no-wrap
-#| msgid ""
-#| "<TabItem value=\"router\" label=\"With your internet router / box\">\n"
-#| "Connect to your internet box / router interface to list the machines connected.\n"
+#, no-wrap
 msgid "<TabItem value=\"belnl\" label=\"Belgium (nl)\">\n"
-msgstr ""
-"<TabItem value=\"router\" label=\"С вашим интернет-маршрутизатором\">\n"
-"Подключитесь к интерфейсу вашего маршрутизатора, чтобы просмотреть список подключенных компьютеров.\n"
+msgstr "<TabItem value=\"belnl\" label=\"Бельгия (nl)\">\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/10.isp.mdx:66
@@ -159,14 +172,9 @@ msgstr ""
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/10.isp.mdx:73
-#, fuzzy, no-wrap
-#| msgid ""
-#| "<TabItem value=\"router\" label=\"With your internet router / box\">\n"
-#| "Connect to your internet box / router interface to list the machines connected.\n"
+#, no-wrap
 msgid "<TabItem value=\"belfr\" label=\"Belgium (fr)\">\n"
-msgstr ""
-"<TabItem value=\"router\" label=\"С вашим интернет-маршрутизатором\">\n"
-"Подключитесь к интерфейсу вашего маршрутизатора, чтобы просмотреть список подключенных компьютеров.\n"
+msgstr "<TabItem value=\"belfr\" label=\"Бельгия (fr)\">\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/10.isp.mdx:79
@@ -187,14 +195,9 @@ msgstr ""
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/10.isp.mdx:86
-#, fuzzy, no-wrap
-#| msgid ""
-#| "<TabItem value=\"direct\" label=\"With a direct access on the server\">\n"
-#| "Plug a screen on your server, log in and type `hostname --all-ip-address`.\n"
+#, no-wrap
 msgid "<TabItem value=\"fin\" label=\"Finland\">\n"
-msgstr ""
-"<TabItem value=\"direct\" label=\"С прямым доступом к серверу\">\n"
-"Подключите экран к своему серверу, войдите в систему и введите `hostname --all-ip-address`.\n"
+msgstr "<TabItem value=\"fin\" label=\"Финляндия\">\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/10.isp.mdx:92
@@ -215,14 +218,9 @@ msgstr ""
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/10.isp.mdx:99
-#, fuzzy, no-wrap
-#| msgid ""
-#| "<TabItem value=\"router\" label=\"With your internet router / box\">\n"
-#| "Connect to your internet box / router interface to list the machines connected.\n"
+#, no-wrap
 msgid "<TabItem value=\"fra\" label=\"France\" default>\n"
-msgstr ""
-"<TabItem value=\"router\" label=\"С вашим интернет-маршрутизатором\">\n"
-"Подключитесь к интерфейсу вашего маршрутизатора, чтобы просмотреть список подключенных компьютеров.\n"
+msgstr "<TabItem value=\"fra\" label=\"Франция\" default>\n"
 
 #. type: Fenced div block (tip)
 #: docs/admin/05.get_started/10.providers/10.isp.mdx:100
@@ -258,23 +256,18 @@ msgstr ""
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/10.isp.mdx:121
-#, fuzzy, no-wrap
-#| msgid ""
-#| "<TabItem value=\"router\" label=\"With your internet router / box\">\n"
-#| "Connect to your internet box / router interface to list the machines connected.\n"
+#, no-wrap
 msgid "<TabItem value=\"hun\" label=\"Hungary\">\n"
-msgstr ""
-"<TabItem value=\"router\" label=\"С вашим интернет-маршрутизатором\">\n"
-"Подключитесь к интерфейсу вашего маршрутизатора, чтобы просмотреть список подключенных компьютеров.\n"
+msgstr "<TabItem value=\"hun\" label=\"Венгрия\">\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/10.isp.mdx:126
 #, no-wrap
 msgid ""
-"| Service provider                      | Port 25 openable   | [Hairpinning](http://en.wikipedia.org/wiki/Hairpinning) | Customizable reverse DNS | Fixed IP   |\n"
-"| ------------------------------------- | ------------------ | ------------------------------------------------------- | ------------------------ | ---------- |\n"
-"| DIGI Távközlési és Szolgáltató Kft.   | No. Business only. | No                                                      | No. Business only | No. Business only |\n"
-"| Telekom Magyarország                  | No                 | No                                                      | No                | No                |\n"
+"| Service provider                      | Port 25 openable   | [Hairpinning](http://en.wikipedia.org/wiki/Hairpinning) | Customizable reverse DNS | Fixed IP       |\n"
+"| ------------------------------------- | ------------------ | ------------------------------------------------------- | ------------------------ | -------------- |\n"
+"| DIGI Távközlési és Szolgáltató Kft.   | No. Business only. | No                                                      | No. Business only | No. Business only     |\n"
+"| Telekom Magyarország                  | No                 | No                                                      | No                | Yes, with bridge mode |\n"
 msgstr ""
 
 #. type: Fenced div block (tip)
@@ -285,14 +278,9 @@ msgstr ""
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/10.isp.mdx:133
-#, fuzzy, no-wrap
-#| msgid ""
-#| "<TabItem value=\"direct\" label=\"With a direct access on the server\">\n"
-#| "Plug a screen on your server, log in and type `hostname --all-ip-address`.\n"
+#, no-wrap
 msgid "<TabItem value=\"irl\" label=\"Ireland\">\n"
-msgstr ""
-"<TabItem value=\"direct\" label=\"С прямым доступом к серверу\">\n"
-"Подключите экран к своему серверу, войдите в систему и введите `hostname --all-ip-address`.\n"
+msgstr "<TabItem value=\"irl\" label=\"Ирландия\">\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/10.isp.mdx:137
@@ -305,14 +293,9 @@ msgstr ""
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/10.isp.mdx:140
-#, fuzzy, no-wrap
-#| msgid ""
-#| "<TabItem value=\"direct\" label=\"With a direct access on the server\">\n"
-#| "Plug a screen on your server, log in and type `hostname --all-ip-address`.\n"
+#, no-wrap
 msgid "<TabItem value=\"swe\" label=\"Sweden\">\n"
-msgstr ""
-"<TabItem value=\"direct\" label=\"С прямым доступом к серверу\">\n"
-"Подключите экран к своему серверу, войдите в систему и введите `hostname --all-ip-address`.\n"
+msgstr "<TabItem value=\"swe\" label=\"Швеция\">\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/10.isp.mdx:146
@@ -333,14 +316,9 @@ msgstr ""
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/10.isp.mdx:151
-#, fuzzy, no-wrap
-#| msgid ""
-#| "<TabItem value=\"router\" label=\"With your internet router / box\">\n"
-#| "Connect to your internet box / router interface to list the machines connected.\n"
+#, no-wrap
 msgid "<TabItem value=\"che\" label=\"Switzerland\">\n"
-msgstr ""
-"<TabItem value=\"router\" label=\"С вашим интернет-маршрутизатором\">\n"
-"Подключитесь к интерфейсу вашего маршрутизатора, чтобы просмотреть список подключенных компьютеров.\n"
+msgstr "<TabItem value=\"che\" label=\"Швейцария\">\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/10.isp.mdx:153

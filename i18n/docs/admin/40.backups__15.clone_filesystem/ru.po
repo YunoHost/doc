@@ -2,73 +2,103 @@
 # This file is distributed under the same license as the YunoHost documentation.
 #
 # Languages add-on <noreply-addon-languages@weblate.org>, 2025.
+# Alekseï <support@digiology.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-07-18 20:56+0000\n"
+"Last-Translator: Alekseï <support@digiology.org>\n"
+"Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
+"40backups__15clone_filesystem/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 5.14.2\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/40.backups/15.clone_filesystem.mdx:1
 #, no-wrap
 msgid "Snapshotting the entire filesystem"
-msgstr ""
+msgstr "Создание снимка всей файловой системы"
 
 #. type: Plain text
 #: docs/admin/40.backups/15.clone_filesystem.mdx:9
 #, no-wrap
 msgid "YunoHost's backup tool only backs up useful files and relies on restore scripts to reinstall the dependencies of your applications. In other words, YunoHost's mechanism amounts to reinstalling and then reincorporating the data.\n"
 msgstr ""
+"Инструмент резервного копирования YunoHost создает резервные копии только "
+"полезных файлов и использует скрипты восстановления для переустановки "
+"зависимостей ваших приложений. Другими словами, механизм YunoHost сводится к "
+"переустановке и последующему повторному включению данных.\n"
 
 #. type: Plain text
 #: docs/admin/40.backups/15.clone_filesystem.mdx:11
 #, no-wrap
 msgid "Making full system images can be a complementary or alternative way to backup your machine. The advantage is that your system can be restored to the exact state it was in at the time of the backup.\n"
 msgstr ""
+"Создание полных образов системы может быть дополнительным или альтернативным "
+"способом резервного копирования вашего компьютера. Преимущество заключается "
+"в том, что вашу систему можно восстановить до того состояния, в котором она "
+"находилась на момент резервного копирования.\n"
 
 #. type: Plain text
 #: docs/admin/40.backups/15.clone_filesystem.mdx:13
 #, no-wrap
 msgid "Depending on your type of installation, you can either create a snapshot or clone the storage medium by removing it from your server (turned off).\n"
 msgstr ""
+"В зависимости от типа вашей установки, вы можете либо создать моментальный "
+"снимок, либо клонировать носитель информации, удалив его с сервера "
+"(выключив его).\n"
 
 #. type: Title ##
 #: docs/admin/40.backups/15.clone_filesystem.mdx:14
 #, no-wrap
 msgid "Creating a snapshot"
-msgstr ""
+msgstr "Создание снимка (образа)"
 
 #. type: Plain text
 #: docs/admin/40.backups/15.clone_filesystem.mdx:17
 #, no-wrap
 msgid "A snapshot allows you to freeze an image of the file system. Snapshots are very useful when doing an update or testing, because they allow you to easily go back in case of a glitch. On the other hand, apart from some very high availability clusters, snapshots do not really protect you against hardware failures or disasters (cf. OVH fire in Strasbourg in 2021).\n"
 msgstr ""
+"Снимок (snapshot) позволяет зафиксировать образ файловой системы. Снимки "
+"очень полезны при обновлении или тестировании, поскольку позволяют легко "
+"вернуться к исходному состоянию в случае сбоя. С другой стороны, за "
+"исключением некоторых кластеров с очень высокой доступностью, снимки на "
+"самом деле не защищают от аппаратных сбоев или катастроф "
+"(см. пожар в OVH в Страсбурге в 2021 году).\n"
 
 #. type: Plain text
 #: docs/admin/40.backups/15.clone_filesystem.mdx:19
 #, no-wrap
 msgid "In general, snapshots are quite disk space saving, the principle is that your file system will store the differences that occurred since your snapshot. Thus, only the modifications consume space.\n"
 msgstr ""
+"В целом, снимки системы (snapshots) довольно экономят дисковое пространство, "
+"поскольку принцип заключается в том, что ваша файловая система будет хранить "
+"изменения, произошедшие с момента создания такого снимка. Таким образом, "
+"основное место занимают только внесенные изменения.\n"
 
 #. type: Fenced div block (info)
 #: docs/admin/40.backups/15.clone_filesystem.mdx:20
 #, no-wrap
 msgid "Remember to delete the old snapshots to avoid wasting your storage space by storing all the differences since that date!\n"
 msgstr ""
+"Не забудьте удалить старые снимки, чтобы не тратить место на диске, сохраняя "
+"все изменения, произошедшие с этой даты!\n"
 
 #. type: Plain text
 #: docs/admin/40.backups/15.clone_filesystem.mdx:25
 #, no-wrap
 msgid "You can use this method with most VPS (often paying), virtual machine managers or if you have installed YunoHost with an advanced filesystem like btrfs, ceph or ZFS, you can also create snapshots via the command line\n"
 msgstr ""
+"Этот метод можно использовать с большинством VPS (часто платных), "
+"менеджерами виртуальных машин, а также, если у вас установлен YunoHost с "
+"расширенной файловой системой, такой как btrfs, ceph или ZFS, вы можете "
+"создавать снимки через командную строку\n"
 
 #. type: Plain text
 #: docs/admin/40.backups/15.clone_filesystem.mdx:28

@@ -3,19 +3,22 @@
 # This file is distributed under the same license as the YunoHost documentation package.
 # Automatically generated, 2025.
 #
+# Alekseï <support@digiology.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: 2025-11-11 19:34+0100\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-07-20 09:41+0000\n"
+"Last-Translator: Alekseï <support@digiology.org>\n"
+"Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
+"05get_started__20install_on__wsl/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 5.14.2\n"
 
 #. type: Title ##
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:18
@@ -26,25 +29,29 @@ msgstr ""
 #: docs/admin/05.get_started/20.install_on/wsl.mdx:21
 #, no-wrap
 msgid "<FAIcon icon=\"fa-list-alt\"/> Pre-requisites"
-msgstr ""
+msgstr "<FAIcon icon=\"fa-list-alt\"/> Предварительные требования"
 
 #. type: Yaml Front Matter Hash Value: description
 #: docs/admin/05.get_started/20.install_on/wsl.mdx:1
 #, no-wrap
 msgid "Experimental, for people who like cyberfrankensteins"
-msgstr ""
+msgstr "Экспериментальный проект для любителей кибер-Франкенштейнов"
 
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/05.get_started/20.install_on/wsl.mdx:1
 #, no-wrap
 msgid "On WSL"
-msgstr ""
+msgstr "В WSL"
 
 #. type: Fenced div block (danger)
 #: docs/admin/05.get_started/20.install_on/wsl.mdx:17
 #, no-wrap
 msgid "This setup is mainly meant for local testing by advanced users. Due to limitations on WSL's side (changing IP address, notably), selfhosting from it can be tricky and will not be described here.\n"
 msgstr ""
+"Данная конфигурация в основном предназначена для локального тестирования "
+"опытными пользователями. Из-за ограничений со стороны WSL "
+"(в частности, изменения IP-адреса) самостоятельный хостинг с её помощью "
+"может быть сложным и здесь не будет описан.\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/wsl.mdx:27
@@ -55,13 +62,20 @@ msgid ""
 "- Windows Subsystem for Linux, installed from the Optional Features menu of Windows\n"
 "- *Recommended:* Windows Terminal (Preview) app, installed from the Microsoft Store. Much better than the standard Terminal, as it offers shortcuts to the WSL distros.\n"
 msgstr ""
+"- Windows 10 и выше\n"
+"- Права администратора\n"
+"- Подсистема Windows для Linux, установленная из меню «Дополнительные "
+"компоненты» Windows\n"
+"- *Рекомендуется:* Приложение Windows Terminal (Preview), установленное из "
+"Microsoft Store. Значительно лучше стандартного Терминала, так как "
+"предлагает ярлыки для дистрибутивов WSL.\n"
 
 #. type: Title ##
 #: docs/admin/05.get_started/20.install_on/wsl.mdx:28
 #: docs/admin/45.tutorials/25.external_storage.mdx:6
 #, no-wrap
 msgid "Introduction"
-msgstr ""
+msgstr "Введение"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/wsl.mdx:32
@@ -70,6 +84,12 @@ msgid ""
 "WSL is a nice feature of Windows 10, making Linux pseudo-distributions available through command line. Let's say pseudo, because even though they are not really like virtual machines, they rely on virtualization capacities that make their integration with Windows almost seamless.\n"
 "Docker for Windows can now rely on WSL instead of Hyper-V, for example.\n"
 msgstr ""
+"WSL — это полезная функция Windows 10, позволяющая использовать псевдо-"
+"дистрибутивы Linux через командную строку. Назовём их псевдо-дистрибутивами, "
+"потому что, хотя они и не совсем похожи на виртуальные машины, они "
+"используют возможности виртуализации, что делает их интеграцию с Windows "
+"практически бесшовной.\n"
+"Например, Docker для Windows теперь может использовать WSL вместо Hyper-V.\n"
 
 #. type: Fenced div block (warning)
 #: docs/admin/05.get_started/20.install_on/wsl.mdx:33
@@ -78,12 +98,16 @@ msgid ""
 "Bear in mind, this setup itself is *not* a container of any kind. If something breaks, there is no rollback capability.  \n"
 "You may need to delete the Debian distro altogether and restore it whole.\n"
 msgstr ""
+"Имейте в виду, что сама эта конфигурация *не* является каким-либо "
+"контейнером. Если что-то сломается, возможности отката нет.  \n"
+"Возможно, вам потребуется полностью удалить дистрибутив Debian и "
+"восстановить его целиком.\n"
 
 #. type: Title ##
 #: docs/admin/05.get_started/20.install_on/wsl.mdx:38
 #, no-wrap
 msgid "Install Debian"
-msgstr ""
+msgstr "Установка Debian"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/wsl.mdx:41
@@ -163,10 +187,9 @@ msgstr ""
 
 #. type: Title ##
 #: docs/admin/05.get_started/20.install_on/wsl.mdx:123
-#, fuzzy, no-wrap
-#| msgid "Try YunoHost"
+#, no-wrap
 msgid "Install YunoHost"
-msgstr "Попробовать YunoHost"
+msgstr "Установка YunoHost"
 
 #. type: Title ###
 #: docs/admin/05.get_started/20.install_on/wsl.mdx:137

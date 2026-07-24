@@ -2,38 +2,45 @@
 # This file is distributed under the same license as the YunoHost documentation package.
 #
 # Languages add-on <noreply-addon-languages@weblate.org>, 2025.
+# Alekseï <support@digiology.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-07-20 09:41+0000\n"
+"Last-Translator: Alekseï <support@digiology.org>\n"
+"Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
+"43upgrade__110-bullseye/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 5.14.2\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/43.upgrade/11.0-bullseye.mdx:1
 #, no-wrap
 msgid "Migrating from 4.x to 11.x"
-msgstr ""
+msgstr "Переход с версии 4.x на 11.x"
 
 #. type: Plain text
 #: docs/admin/43.upgrade/11.0-bullseye.mdx:6
 #, no-wrap
 msgid "This page is dedicated to help you migrating an instance from YunoHost 4.4.x (running on Debian Buster/10.x) to YunoHost 11.x (running on Debian Bullseye/11.x). Note: we decided to skip the version numbers from 5 to 10 to follow the Debian version numbers.\n"
 msgstr ""
+"Эта страница посвящена помощи в миграции экземпляра с YunoHost 4.4.x "
+"(работающего на Debian Buster/10.x) на YunoHost 11.x "
+"(работающего на Debian Bullseye/11.x). Примечание: мы решили пропустить "
+"номера версий от 5 до 10, чтобы следовать номерам версий Debian.\n"
 
 #. type: Title ##
 #: docs/admin/43.upgrade/11.0-bullseye.mdx:7
 #: docs/admin/43.upgrade/12.0-bookworm/index.mdx:7
 #, no-wrap
 msgid "Important notes"
-msgstr ""
+msgstr "Важные примечания"
 
 #. type: Plain text
 #: docs/admin/43.upgrade/11.0-bullseye.mdx:10
@@ -41,12 +48,20 @@ msgstr ""
 #, no-wrap
 msgid "- The YunoHost team did its best to make sure that the migration is as smooth as possible and was tested over the course of several months in several cases.\n"
 msgstr ""
+"- Команда YunoHost приложила все усилия, чтобы миграция прошла максимально "
+"гладко, и в течение нескольких месяцев проводила тестирование в различных "
+"конфигурациях.\n"
 
 #. type: Plain text
 #: docs/admin/43.upgrade/11.0-bullseye.mdx:12
 #, no-wrap
 msgid "- With that said, please be aware that this is a delicate operation. System administration is a complicated topic and covering every particular case is quite hard. Therefore, if you host critical data and services, please [make backups](/admin/backups). And in any case, be patient and attentive during the migration.\n"
 msgstr ""
+"— При этом, пожалуйста, имейте в виду, что это деликатный процесс. Системное "
+"администрирование — сложная тема, и охватить каждый конкретный случай "
+"довольно трудно. Поэтому, если вы размещаете критически важные данные и "
+"сервисы, пожалуйста, [создавайте резервные копии](/admin/backups). И в любом "
+"случае, будьте терпеливы и внимательны во время миграции.\n"
 
 #. type: Plain text
 #: docs/admin/43.upgrade/11.0-bullseye.mdx:14
@@ -54,6 +69,11 @@ msgstr ""
 #, no-wrap
 msgid "- Please don't rush into thinking that you should need to reinstall your system from scratch thinking it would be \"simpler\" (sigh). (A common attitude is to be willing to reinstall a server at the slightest complication...). Instead, if you happen to run into issues, we encourage you to try to investigate and understand what's going on and [reach for help on the chat and the forum](/community/help).\n"
 msgstr ""
+"— Пожалуйста, не спешите думать, что вам нужно переустанавливать систему с "
+"нуля, считая это «проще» (вздох). (Распространённое мнение — готовность "
+"переустановить сервер при малейших сложностях...). Вместо этого, если у вас "
+"возникнут проблемы, мы рекомендуем вам попытаться разобраться в ситуации и "
+"[обратиться за помощью в чат и на форум](/community/help).\n"
 
 #. type: Plain text
 #: docs/admin/43.upgrade/11.0-bullseye.mdx:16
@@ -61,13 +81,15 @@ msgstr ""
 #, no-wrap
 msgid "- **You should watch the known issues at the bottom of this page, to be sure your migrations will work properly.**\n"
 msgstr ""
+"- **Чтобы убедиться в корректной работе миграции, следите за известными "
+"проблемами внизу этой страницы.**\n"
 
 #. type: Title ##
 #: docs/admin/43.upgrade/11.0-bullseye.mdx:17
 #: docs/admin/43.upgrade/12.0-bookworm/index.mdx:17
 #, no-wrap
 msgid "Migration procedure"
-msgstr ""
+msgstr "Процедура миграции"
 
 #. type: Title ##
 #: docs/admin/43.upgrade/11.0-bullseye.mdx:19
@@ -75,7 +97,7 @@ msgstr ""
 #: docs/admin/43.upgrade/index.mdx:5
 #, no-wrap
 msgid "From the webadmin"
-msgstr ""
+msgstr "Из веб-админки"
 
 #. type: Plain text
 #: docs/admin/43.upgrade/11.0-bullseye.mdx:22
@@ -89,7 +111,7 @@ msgstr ""
 #: docs/admin/43.upgrade/index.mdx:11
 #, no-wrap
 msgid "From the command line"
-msgstr ""
+msgstr "Из командной строки"
 
 #. type: Plain text
 #: docs/admin/43.upgrade/11.0-bullseye.mdx:26
@@ -103,13 +125,15 @@ msgstr ""
 #, no-wrap
 msgid "then read carefully and accept the disclaimer.\n"
 msgstr ""
+"затем внимательно прочтите и примите данное заявление об отказе от "
+"ответственности.\n"
 
 #. type: Title ##
 #: docs/admin/43.upgrade/11.0-bullseye.mdx:33
 #: docs/admin/43.upgrade/12.0-bookworm/index.mdx:39
 #, no-wrap
 msgid "During the migration"
-msgstr ""
+msgstr "Во время миграции"
 
 #. type: Plain text
 #: docs/admin/43.upgrade/11.0-bullseye.mdx:36
@@ -184,6 +208,8 @@ msgstr ""
 #, no-wrap
 msgid "Apps which won't be automatically repaired and need a force upgrade:\n"
 msgstr ""
+"Приложения, которые не будут автоматически восстановлены и требуют "
+"принудительного обновления:\n"
 
 #. type: Plain text
 #: docs/admin/43.upgrade/11.0-bullseye.mdx:71
@@ -269,6 +295,9 @@ msgid ""
 "Note: This issue should be resolved in `yunohost_version`: `4.4.2.13`\n"
 "You have an app that depends on the `build-essential` package.\n"
 msgstr ""
+"Примечание: Эта проблема должна быть решена в версии `yunohost_version`: "
+"`4.4.2.13`\n"
+"У вас есть приложение, которое зависит от пакета `build-essential`.\n"
 
 #. type: Plain text
 #: docs/admin/43.upgrade/11.0-bullseye.mdx:100
@@ -276,20 +305,23 @@ msgstr ""
 #, no-wrap
 msgid "See this [solution](https://forum.yunohost.org/t/migration-to-11-wont-start-libc6-dev-breaks-libgcc-8-dev/20617/42) to fix it manually\n"
 msgstr ""
+"См. это [решение](https://forum.yunohost.org/t/"
+"migration-to-11-wont-start-libc6-dev-breaks-libgcc-8-dev/20617/42), чтобы "
+"исправить это вручную.\n"
 
 #. type: Title ###
 #: docs/admin/43.upgrade/11.0-bullseye.mdx:101
 #: docs/admin/43.upgrade/12.0-bookworm/05.issues_faq.mdx:45
 #, no-wrap
 msgid "DNSmasq is not running anymore"
-msgstr ""
+msgstr "DNSmasq больше не работает"
 
 #. type: Plain text
 #: docs/admin/43.upgrade/11.0-bullseye.mdx:104
 #: docs/admin/43.upgrade/12.0-bookworm/05.issues_faq.mdx:48
 #, no-wrap
 msgid "We haven't yet found  solution for this issue.\n"
-msgstr ""
+msgstr "Мы пока не нашли решения этой проблемы.\n"
 
 #. type: Title ###
 #: docs/admin/43.upgrade/11.0-bullseye.mdx:105
@@ -297,6 +329,8 @@ msgstr ""
 #, no-wrap
 msgid "No ethernet connexion after rebooting following a migration on a Raspberry Pi 4"
 msgstr ""
+"После выполнения миграции данных и перезагрузки Raspberry Pi 4 отсутствует "
+"подключение к сети Ethernet"
 
 #. type: Fenced div block (warning)
 #: docs/admin/43.upgrade/11.0-bullseye.mdx:107
@@ -309,7 +343,7 @@ msgstr ""
 #: docs/admin/43.upgrade/12.0-bookworm/05.issues_faq.mdx:56
 #, no-wrap
 msgid "We found this in the Raspberry Pi documentation\n"
-msgstr ""
+msgstr "Мы нашли это в документации Raspberry Pi\n"
 
 #. type: Plain text
 #: docs/admin/43.upgrade/11.0-bullseye.mdx:114
@@ -317,6 +351,13 @@ msgstr ""
 #, no-wrap
 msgid "> when the dhcpcd5 package is updated to the latest version (1:8.1.2-1+rpt1 -> 1:8.1.2-1+rpt2), the Raspberry Pi will fail to obtain a DHCP IP address following the next reboot or startup. This problem can be avoided by disabling and re-enabling the \"System Options -> Network at Boot\" option using the latest raspi-config after the dhcpcd5 package has been updated and prior to the system being shutdown or rebooted\n"
 msgstr ""
+"> После обновления пакета dhcpcd5 до последней версии "
+"(1:8.1.2-1+rpt1 -> 1:8.1.2-1+rpt2) Raspberry Pi не сможет получить IP-адрес "
+"по DHCP после следующей перезагрузки или запуска. Этой проблемы можно "
+"избежать, отключив и повторно включив параметр «Параметры системы -> Сеть "
+"при загрузке» (System Options -> Network at Boot) с помощью последней версии "
+"raspi-config после обновления пакета dhcpcd5 и до выключения или "
+"перезагрузки системы.\n"
 
 #. type: Plain text
 #: docs/admin/43.upgrade/11.0-bullseye.mdx:116
@@ -324,6 +365,10 @@ msgstr ""
 #, no-wrap
 msgid "If you are using a Raspberry Pi 4 (or maybe 3), see this [solution](https://forum.yunohost.org/t/aucun-acces-a-internet-suite-a-migration-4-4-to-11-depuis-raspberry-pi-4-pi-400/20652/17)\n"
 msgstr ""
+"Если вы используете Raspberry Pi 4 (или, возможно, 3), ознакомьтесь с этим "
+"[решением](https://forum.yunohost.org/t/"
+"aucun-acces-a-internet-suite-a-migration-4-4-to-11-depuis-raspberry-pi-4-pi-400/"
+"20652/17)\n"
 
 #. type: Title ###
 #: docs/admin/43.upgrade/11.0-bullseye.mdx:117
