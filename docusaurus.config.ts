@@ -14,7 +14,11 @@ function getUrl() : string {
 
 // NB: this list is auto-updated during build using statistics from Weblate,
 // keeping the lang with at least 5% translations
-const enabled_locales = [  "zh_Hans",  "en",  "fr",  "gl",  "de",  "it",  "ru",  "es",  "tr"];
+const enabled_locales = [  "zh-Hans",  "en",  "fr",  "gl",  "de",  "it",  "ru",  "es",  "tr"];
+
+const lunr_locales = enabled_locales.filter(
+  function (l) { return (l != "gl" && l != "kab" && l != "zh-Hans") }
+);
 
 const config: Config = {
   title: 'Yunohost',
@@ -78,7 +82,7 @@ const config: Config = {
       require.resolve('docusaurus-lunr-search'),
       {
         // JS lib 'lunr-language' doesn't support gl or kab
-        languages: enabled_locales.filter(function (l) { return (l != "gl" && l != "kab") }),
+        languages: lunr_locales,
       }
     ],
   ],

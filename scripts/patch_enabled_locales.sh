@@ -4,7 +4,8 @@ set -Eeuo pipefail
 enabled_locales="$(
     curl -s https://translate.yunohost.org/api/projects/yunohost-doc/languages/ \
     | jq -r '[ .[] | select(.translated_percent >= 5.5 ) | .code ]' \
-    | tr -d '\n'
+    | tr -d '\n' \
+    | tr '_' '-'
 )"
 
 
