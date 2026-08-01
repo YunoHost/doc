@@ -1,0 +1,31 @@
+name: Set up translations tools
+
+runs:
+  using: "composite"
+  steps:
+  - name: Set up Python
+    uses: actions/setup-python@v5
+
+  - name: Install perl dependencies (for po4a)
+    shell: bash
+    run: |
+      sudo apt install -y \
+        gettext \
+        liblocale-gettext-perl \
+        libpod-parser-perl \
+        libsgmls-perl \
+        libsyntax-keyword-try-perl \
+        libterm-readkey-perl \
+        libtext-wrapi18n-perl \
+        libunicode-linebreak-perl \
+        libyaml-tiny-perl \
+        opensp \
+        perl
+
+  - name: Check image paths consistency
+    shell: bash
+    run: scripts/check_missing_or_bad_image_path.sh
+
+  - name: Tweak enabled locales according to Weblate statistics (keep langs with >= 5% translated)
+    shell: bash
+    run: scripts/patch_enabled_locales.sh

@@ -9,9 +9,6 @@ inputs:
 runs:
   using: "composite"
   steps:
-  - name: Set up Python
-    uses: actions/setup-python@v5
-
   - name: Set up Node
     uses: actions/setup-node@v4
     with:
@@ -20,26 +17,6 @@ runs:
   - name: Installation
     shell: bash
     run: npm ci
-
-  - name: Install perl dependencies (for po4a)
-    shell: bash
-    run: sudo apt install gettext libyaml-tiny-perl libsyntax-keyword-try-perl libpod-parser-perl libsgmls-perl opensp perl liblocale-gettext-perl libterm-readkey-perl libtext-wrapi18n-perl libunicode-linebreak-perl -y
-
-  - name: Check image paths consistency
-    shell: bash
-    run: bash scripts/check_missing_or_bad_image_path.sh
-
-  - name: Tweak enabled locales according to Weblate statistics (keep langs with >= 5% translated)
-    shell: bash
-    run: bash scripts/patch_enabled_locales.sh
-
-  - name: Regen UI translations
-    shell: bash
-    run: bash scripts/update_ui_translations.sh
-
-  - name: Build translated .mdx using the .po from po4a/weblate
-    shell: bash
-    run: python3 ./scripts/po4a.py build_translated_mdx
 
   - name: Build docs
     env:
