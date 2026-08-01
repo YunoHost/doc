@@ -72,7 +72,7 @@ def translated_langs() -> list[str]:
         docusaurus_config.read_text(),
     )
     assert langs_match
-    langs = langs_match[1].replace('"', "").replace(" ", "").split(",")
+    langs = langs_match[1].replace('"', "").replace(" ", "").replace("-", "_").split(",")
     langs.remove("en")
     return langs
 

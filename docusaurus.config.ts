@@ -19,7 +19,7 @@ const enabled_locales = [  "zh-Hans",  "en",  "fr",  "gl",  "de",  "it",  "ru", 
 const lunr_locales = enabled_locales.filter(
   function (l) { return (l != "gl" && l != "kab") }
 ).map(
-  function (l) { return l == "zh-Hans" ? "zh" : l }
+  function (l) { return l.split('-')[0] }
 );
 
 const config: Config = {
