@@ -24,4 +24,5 @@ runs:
     shell: bash
     run: |
       echo "Using baseUrl=$BASE_URL"
+      npm run update-ui-translations
       npm run build
