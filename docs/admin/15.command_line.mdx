@@ -31,8 +31,8 @@ If you connected with the administration account and would like to become `root`
 
 If you are **installing at home** (e.g. on a Raspberry Pi or OLinuXino or old computer):
 
-- you should be able to connect to your server using `yunohost.local` (or `yunohost-2.local`, depending on how many servers are on your network).
-- if `yunohost.local` and the like do not work, your need to [find out the local IP of the server](/admin/get_started/post_install/find_ip).
+- you should be able to connect to your server using `rpi.local` (or `yunohost-2.local`, depending on how many servers are on your network).
+- if `rpi.local` and the like do not work, your need to [find out the local IP of the server](/admin/get_started/post_install/find_ip).
 - if you installed a server at home but are attempting to connect from outside your local network, make sure port 22 is correctly forwarded to your server.
 
 If your server is a remote server (VPS), your provider should have provided you with the IP address of the machine
@@ -54,7 +54,7 @@ ssh username@11.22.33.44
 ssh username@your.domain.tld
 
 # using the local domain name instead of the IP (for local access)
-ssh username@yunohost.local
+ssh username@rpi.local
 
 # if you changed the SSH port
 ssh -p 2244 username@your.domain.tld
