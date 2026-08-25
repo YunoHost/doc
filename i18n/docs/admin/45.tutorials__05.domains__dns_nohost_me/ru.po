@@ -2,19 +2,22 @@
 # This file is distributed under the same license as the YunoHost documentation.
 #
 # Languages add-on <noreply-addon-languages@weblate.org>, 2025.
+# Alekseï <support@digiology.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-08-17 18:14+0000\n"
+"Last-Translator: Alekseï <support@digiology.org>\n"
+"Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
+"45tutorials__05domains__dns_nohost_me/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 5.14.2\n"
 
 #. type: Plain text
 #: docs/admin/25.domains/index.mdx:24
@@ -22,13 +25,18 @@ msgstr ""
 #, no-wrap
 msgid "In order to make self-hosting as accessible as possible, the YunoHost Project provides a *free* and *automatically configured* domain name service. By using this service, you won't have to [configure DNS records](/admin/get_started/post_install/dns_config) yourself, which can be tedious and technical.\n"
 msgstr ""
+"Чтобы сделать самостоятельный хостинг максимально доступным, проект YunoHost "
+"предоставляет *бесплатный* и *автоматически настраиваемый* сервис доменных "
+"имен. Используя этот сервис, вам не придётся самостоятельно "
+"[настраивать DNS-записи](/admin/get_started/post_install/dns_config), что "
+"может быть утомительным и сложным с технической точки зрения процессом.\n"
 
 #. type: Plain text
 #: docs/admin/25.domains/index.mdx:26
 #: docs/admin/45.tutorials/05.domains/dns_nohost_me.mdx:8
 #, no-wrap
 msgid "The following (sub)domains are offered:\n"
-msgstr ""
+msgstr "Предлагаются следующие (под)домены:\n"
 
 #. type: Plain text
 #: docs/admin/25.domains/index.mdx:30
@@ -39,85 +47,113 @@ msgid ""
 "- `whateveryouwant.noho.st`;\n"
 "- `whateveryouwant.ynh.fr`.\n"
 msgstr ""
+"- `точтовыхотитенолатиницей.nohost.me`;\n"
+"- `точтовыхотитенолатиницей.noho.st`;\n"
+"- `точтовыхотитенолатиницей.ynh.fr`.\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/45.tutorials/05.domains/dns_nohost_me.mdx:1
 #, no-wrap
 msgid "Nohost.me domains"
-msgstr ""
+msgstr "Домены Nohost.me"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/05.domains/dns_nohost_me.mdx:14
 #, no-wrap
 msgid "To use this service, you simply have to choose such a domain during the post-installation set up. It will then be automatically configured by YunoHost!\n"
 msgstr ""
+"Для использования этой услуги вам достаточно выбрать такой домен во время "
+"настройки после установки. После этого он будет автоматически настроен "
+"YunoHost!\n"
 
 #. type: Fenced div block (tip)
 #: docs/admin/45.tutorials/05.domains/dns_nohost_me.mdx:15
 #, no-wrap
 msgid "As a fairness measure, each instance may only have **one such domain** setup at any given time.\n"
 msgstr ""
+"В целях обеспечения справедливости, каждый экземпляр может одновременно "
+"иметь только **один такой домен**.\n"
 
 #. type: Title ###
 #: docs/admin/45.tutorials/05.domains/dns_nohost_me.mdx:19
 #: docs/admin/45.tutorials/05.domains/dns_subdomains.mdx:5
 #, no-wrap
 msgid "Subdomains"
-msgstr ""
+msgstr "Поддомены"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/05.domains/dns_nohost_me.mdx:22
 #, no-wrap
 msgid "The `nohost.me`, `noho.st` and `ynh.fr` domain service allows the creation of subdomains.\n"
 msgstr ""
+"Сервис доменов `nohost.me`, `noho.st` и `ynh.fr` позволяет создавать "
+"поддомены.\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/05.domains/dns_nohost_me.mdx:24
 #, no-wrap
 msgid "YunoHost allows the installation of applications on subdomains (for example, having the Nextcloud application accessible from the `cloud.mydomain.org` address), this feature is also allowed with the `nohost.me`, `noho.st` and `ynh.fr` domains and so it is possible to have a subdomain such as `my.application.mydomain.nohost.me`. To create a subdomain on `nohost.me`, `noho.st` and `ynh.fr`, you just have to add the subdomain to YunoHost like any other domains.\n"
 msgstr ""
+"YunoHost позволяет устанавливать приложения на поддомены "
+"(например, приложение Nextcloud доступно по адресу `cloud.mydomain.org`). "
+"Эта особенность также доступна для доменов `nohost.me`, `noho.st` и `ynh.fr` "
+", поэтому можно создать поддомен, "
+"например,`my.application.mydomain.nohost.me`. Чтобы создать поддомен на "
+"`nohost.me`, `noho.st` и `ynh.fr`, достаточно добавить его в YunoHost, как и "
+"любой другой домен.\n"
 
 #. type: Title ###
 #: docs/admin/45.tutorials/05.domains/dns_nohost_me.mdx:25
 #, no-wrap
 msgid "Adding a `nohost.me`, `noho.st` or `ynh.fr` domain after the post-installation"
 msgstr ""
+"Добавление домена `nohost.me`, `noho.st` или `ynh.fr` после завершения "
+"установки"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/05.domains/dns_nohost_me.mdx:28
 #, no-wrap
 msgid "If you already did the postinstall and want to add an automatic domain, you may do so from the \"Domains\" web interface, selecting the option \"I don't have a domain name...\"\n"
 msgstr ""
+"Если вы уже выполнили пост-установку и хотите добавить домен автоматически, "
+"вы можете сделать это через веб-интерфейс «Домены», выбрав опцию «У меня нет "
+"доменного имени...».\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/05.domains/dns_nohost_me.mdx:30
 #, no-wrap
 msgid "Alternatively, the following commands can be used.\n"
-msgstr ""
+msgstr "В качестве альтернативы можно использовать следующие команды.\n"
 
 #. type: Title ###
 #: docs/admin/45.tutorials/05.domains/dns_nohost_me.mdx:47
 #, no-wrap
 msgid "Retrieve a `nohost.me`, `noho.st` or `ynh.fr` domain"
-msgstr ""
+msgstr "Получите домен `nohost.me`, `noho.st` или `ynh.fr`"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/05.domains/dns_nohost_me.mdx:50
 #, no-wrap
 msgid "If you reinstall your server and want to use a domain already used previously, you must request a domain reset on the forum [in the dedicated thread](https://forum.yunohost.org/t/nohost-domain-recovery/442).\n"
 msgstr ""
+"Если вы переустановите сервер и захотите использовать домен, который уже "
+"использовался ранее, вам необходимо запросить сброс домена на форуме "
+"[в специальной теме](https://forum.yunohost.org/t/nohost-domain-recovery/442)"
+".\n"
 
 #. type: Title ###
 #: docs/admin/45.tutorials/05.domains/dns_nohost_me.mdx:51
 #, no-wrap
 msgid "Change a `nohost.me`, `noho.st` or `ynh.fr` domain"
-msgstr ""
+msgstr "Измените домен `nohost.me`, `noho.st` или `ynh.fr`"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/05.domains/dns_nohost_me.mdx:54
 #, no-wrap
 msgid "If you wish to use a different automatic domain, you first have to remove your present domain registration. This is done in 3 steps:\n"
 msgstr ""
+"Если вы хотите использовать другой автоматический домен, сначала необходимо "
+"удалить текущую регистрацию домена. Это делается в 3 этапа:\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/05.domains/dns_nohost_me.mdx:59
@@ -128,9 +164,22 @@ msgid ""
 "    - If you didn't set the recovery password during postinstall, you can use `yunohost domain dyndns set-recovery-password` (add `--help` for help) to define one.\n"
 "3. Remove automatic domain configuration files on your server, via CLI only: `sudo rm /etc/cron.d/yunohost-dyndns && sudo rm -r /etc/yunohost/dyndns`\n"
 msgstr ""
+"1. Удалите домен из вашего экземпляра (через веб-панель администратора или "
+"команду `yunohost domain remove` в командной строке).\n"
+"2. Начиная с YunoHost 11.2, вы можете задать пароль восстановления для "
+"вашего домена nohost.me, noho.st или ynh.fr **во время пост-установки**, "
+"чтобы восстановление происходило автоматически и больше не требовало "
+"вмешательства команды YunoHost через [старую, устаревшую тему на форуме]"
+"(https://forum.yunohost.org/t/nohost-domain-recovery/442).\n"
+"    - Если вы не задали пароль восстановления во время пост-установки, вы "
+"можете использовать команду `yunohost domain dyndns set-recovery-password` "
+"(добавьте `--help` для получения справки), чтобы задать его.\n"
+"3. Удалите файлы автоматической конфигурации домена на вашем сервере, "
+"используя только командную строку: `sudo rm /etc/cron.d/yunohost-dyndns && "
+"sudo rm -r /etc/yunohost/dyndns`\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/05.domains/dns_nohost_me.mdx:60
 #, no-wrap
 msgid "You may then add a new domain.\n"
-msgstr ""
+msgstr "Затем вы можете добавить новый домен.\n"

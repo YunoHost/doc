@@ -2,50 +2,65 @@
 # This file is distributed under the same license as the YunoHost documentation.
 #
 # Languages add-on <noreply-addon-languages@weblate.org>, 2025.
+# Alekseï <support@digiology.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-07-07 00:42+0000\n"
+"Last-Translator: Alekseï <support@digiology.org>\n"
+"Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
+"05get_started__10providers__05registrar__index/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 5.14.2\n"
 
 #. type: Title ###
 #: docs/admin/05.get_started/10.providers/05.registrar/index.mdx:1
 #: docs/admin/45.tutorials/05.domains/dns_dynamicip.mdx:15
 #, no-wrap
 msgid "Registrars"
-msgstr ""
+msgstr "Регистраторы"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/05.registrar/index.mdx:6
 #, no-wrap
 msgid "Since version 4.3, YunoHost includes a mechanism to interface your server with your DNS registrar API, with the purpose of simplifying and automatizing DNS records registration and maintenance.\n"
 msgstr ""
+"Начиная с версии 4.3, YunoHost включает механизм для взаимодействия вашего "
+"сервера с API вашего DNS-регистратора с целью упрощения и автоматизации "
+"регистрации и обслуживания DNS-записей.\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/05.registrar/index.mdx:8
 #, no-wrap
 msgid "The procedure requires an initial configuration where you need to generate an API key on your registrar's interface.\n"
 msgstr ""
+"Данная процедура требует первоначальной настройки, в ходе которой необходимо "
+"сгенерировать ключ API в интерфейсе вашего регистратора.\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/05.registrar/index.mdx:10
 #, no-wrap
 msgid "Not all registrars are supported. So far, the community tested and validated the interface with [Gandi](https://gandi.net) and [OVH](https://ovh.com), which are recommended. The interface with other registrars may work, but is still considered experimental until we gather feedback from the community.\n"
 msgstr ""
+"Поддерживаются не все регистраторы. На данный момент сообщество "
+"протестировало и подтвердило работоспособность интерфейса с [Gandi]"
+"(https://gandi.net) и [OVH](https://ovh.com), это рекомендуемые варианты. "
+"Взаимодействие с другими регистраторами может работать, но пока считается "
+"экспериментальным, пока мы не получим отзывы от сообщества.\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/05.registrar/index.mdx:12
 #, no-wrap
 msgid "The list below can help you to choose a registrar if you plan to buy a domain name to use it with YunoHost.\n"
 msgstr ""
+"Приведенный ниже список поможет вам выбрать регистратора, если вы планируете "
+"приобрести доменное имя для использования с YunoHost.\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/05.registrar/index.mdx:17
@@ -57,3 +72,17 @@ msgid ""
 "| [OVH](https://ovh.com/domaines)     | ✔ (tested)                  | ✘   | [Obtain an API key](/admin/get_started/providers/registrar/ovh/autodns) <br/> [Configure manually](/admin/get_started/providers/registrar/ovh/manualdns) |\n"
 "| [Namecheap](https://namecheap.com)  | ✘ (in lexicon but untested) | ✘✘✘ API not available without 50$ on the account | [Obtain an API key](/admin/get_started/providers/registrar/namecheap) |\n"
 msgstr ""
+"| Регистратор                        | Совместимость           | Легко "
+"получить ключ API | Инструкция |\n"
+"|-------------------------------------|-----------------------------|---------------------------|-------|"
+"\n"
+"| [Gandi](https://www.gandi.net)      | ✘ (сломано)                  | ✘   | "
+"[Получить ключ API](/admin/get_started/providers/registrar/gandi) <br/> "
+"[См. ошибку здесь](https://github.com/YunoHost/issues/issues/2419) |\n"
+"| [OVH](https://ovh.com/domaines)     | ✔ (протестировано)                  |"
+" ✘   | [Получить ключ API]"
+"(/admin/get_started/providers/registrar/ovh/autodns) <br/> "
+"[Настройка вручную](/admin/get_started/providers/registrar/ovh/manualdns) |\n"
+"| [Namecheap](https://namecheap.com)  | ✘ (в лексиконе, но не проверено.) | "
+"✘✘✘ API недоступен без 50$ на счету | [Получить ключ API]"
+"(/admin/get_started/providers/registrar/namecheap) |\n"

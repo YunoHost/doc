@@ -2,31 +2,45 @@
 # This file is distributed under the same license as the YunoHost documentation package.
 #
 # Languages add-on <noreply-addon-languages@weblate.org>, 2025.
+# Alekseï <support@digiology.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-04-19 08:39+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-08-25 06:33+0000\n"
+"Last-Translator: Alekseï <support@digiology.org>\n"
+"Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
+"42security/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 5.14.2\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/42.security.mdx:1
 #, no-wrap
 msgid "🔒 Security"
-msgstr ""
+msgstr "🔒 Безопасность"
 
 #. type: Fenced div block (info)
 #: docs/admin/42.security.mdx:5
 #, no-wrap
 msgid "When thinking and discussing security — whether in the context of YunoHost or any other system —, please keep in mind that security is not a binary state, but an ongoing practice. The term \"security\" is essentially meaningless without specifying what exactly we are securing against. The 'threats' to consider depend on your context, and can range from automated attacks from bots roaming the Internet, to sophisticated state actors like the NSA, or supply chain vulnerabilities (e.g., compromised software dependencies), or basic risks such as your own users employing overly simple passwords, or your worst enemy from elementary school 20 years ago trying to hack into your server...\n"
 msgstr ""
+"При обсуждении вопросов безопасности — будь то в контексте YunoHost или "
+"любой другой системы — помните, что безопасность не является бинарным "
+"состоянием, а представляет собой непрерывный процесс. Термин «безопасность» "
+"по сути бессмысленен без уточнения, от чего именно мы защищаемся. «Угрозы», "
+"которые следует учитывать, зависят от контекста и могут варьироваться от "
+"автоматизированных атак ботов, бродящих по Интернету, до сложных "
+"государственных структур, таких как АНБ, или уязвимостей в цепочке поставок "
+"(например, скомпрометированных зависимостей программного обеспечения), или "
+"базовых рисков, таких как использование пользователями слишком простых "
+"паролей, или попытка взлома вашего сервера вашим злейшим врагом из начальной "
+"школы 20 лет назад...\n"
 
 #. type: Plain text
 #: docs/admin/42.security.mdx:19
@@ -43,6 +57,27 @@ msgid ""
 "- auto-redacting sensitive information from YunoHost operation logs and when sharing them with Yunopaste ;\n"
 "- ...\n"
 msgstr ""
+"YunoHost разработан с учётом требований безопасности и обеспечивает "
+"оптимальный баланс между безопасностью и удобством использования. Вот "
+"неполный список аспектов безопасности, реализованных в проекте:\n"
+"- межсетевой экран (брандмауэр) на основе `nftables` для ограничения "
+"входящего трафика соответствующими портами;\n"
+"- `fail2ban`, программное обеспечение, автоматически отклоняющее трафик с "
+"вредоносных IP-адресов, пытающихся взломать SSH и другие сервисы методом "
+"перебора;\n"
+"- использование "
+"[рекомендаций Mozilla для NGINX, Postfix, Dovecot, шифров SSH и т. д.]"
+"(https://wiki.mozilla.org/Security/Server_Side_TLS);\n"
+"- проверка того, что пароль/кодовая фраза пользователя не слишком простые "
+"при их определении;\n"
+"- хеширование паролей пользователей (например, соленый SHA512 в LDAP);\n"
+"- контроль за правами доступа к файлам/каталогам UNIX во всей системе;\n"
+"- Приложения обычно запускаются от имени выделенного пользователя и с "
+"[ограниченными возможностями]"
+"(https://man7.org/linux/man-pages/man7/capabilities.7.html);\n"
+"- автоматическое удаление конфиденциальной информации из журналов операций "
+"YunoHost и при их передаче в Yunopaste;\n"
+"- ...\n"
 
 #. type: Plain text
 #: docs/admin/42.security.mdx:27
@@ -56,30 +91,53 @@ msgid ""
 "- further constraining and limiting application capabilities to only what they need (cf. packaging v3) ;\n"
 "- ...\n"
 msgstr ""
+"Кроме того, в среднесрочной перспективе проект планирует реализовать "
+"следующие функции:\n"
+"- [самостоятельный сброс паролей для пользователей]"
+"(https://github.com/YunoHost/issues/issues/878);\n"
+"- [автоматические предупреждения об уязвимостях]"
+"(https://github.com/YunoHost/yunohost/pull/2077) <small>"
+"(через раздел «Диагностика», а не через форум или социальные сети)</small>;\n"
+"- поддержка [OIDC](https://github.com/YunoHost/yunohost/pull/2149) и [2FA]"
+"(https://github.com/YunoHost/issues/issues/238);\n"
+"- улучшенная поддержка SSH-ключей, в частности "
+"[предоставление возможности их настройки через веб-панель администратора]"
+"(https://github.com/YunoHost/issues/issues/175);\n"
+"- дальнейшее ограничение возможностей приложения только тем, что ему "
+"необходимо (см. пакетирование v3);\n"
+"- ...\n"
 
 #. type: Fenced div block (info)
 #: docs/admin/42.security.mdx:28
 #, no-wrap
 msgid "<FAIcon icon=\"fa-shield\"/> To discuss security flaws in YunoHost, contact the [project's security team](/community/security_team).\n"
 msgstr ""
+"<FAIcon icon=\"fa-shield\"/> Для обсуждения уязвимостей безопасности в "
+"YunoHost, свяжитесь с [командой безопасности проекта]"
+"(/community/security_team).\n"
 
 #. type: Title ##
 #: docs/admin/42.security.mdx:32
 #, no-wrap
 msgid "Basic security advice"
-msgstr ""
+msgstr "Основные советы по безопасности"
 
 #. type: Plain text
 #: docs/admin/42.security.mdx:35
 #, no-wrap
 msgid "Security is not a one-time setup, it's an active, ongoing practice. Here are some basic practices that you should implement:\n"
 msgstr ""
+"Безопасность — это не разовая процедура, а активный, непрерывный процесс. "
+"Вот несколько основных правил, которые следует внедрить:\n"
 
 #. type: Fenced div block (warning)
 #: docs/admin/42.security.mdx:36
 #, no-wrap
 msgid "Using stupidly simple passwords is arguably the number one reason why servers get \"hacked\". You and your users using reasonably complex passwords/passphrases is the basis of any good security.\n"
 msgstr ""
+"Использование предельно простых паролей, пожалуй, является главной причиной "
+"взлома серверов. Использование вами и вашими пользователями достаточно "
+"сложных паролей/кодовых фраз — основа приемлемого уровня безопасности.\n"
 
 #. type: Plain text
 #: docs/admin/42.security.mdx:45
@@ -91,30 +149,53 @@ msgid ""
 "4. only create accounts for people that you have some amount of trust into, in particular that they will use **decent passwords/passphrases** and decent security hygiene in general ;\n"
 "5. **regularly check the forum and social media** (e.g. [YunoHost's Mastodon account](https://toot.aquilenet.fr/@yunohost)) to stay informed when vulnerabilities are discovered or important fixes are released.\n"
 msgstr ""
+"1. Как администратор, забудьте о традиционных паролях. *"
+"[Используйте достаточно сложные **парольные фразы**]"
+"(https://imgs.xkcd.com/comics/password_strength_2x.png)*. Изучите менеджеры "
+"паролей.\n"
+"2. Поддерживайте свой сервер и приложения в **разумном состоянии**. "
+"Рассмотрите возможность использования для приложений "
+"[автоматических обновлений]"
+"(https://apps.yunohost.org/app/unattended_upgrades).\n"
+"3. Помните, что **каждое установленное вами приложение — это дополнительная «"
+"поверхность атаки»**. В идеале проверяйте репутацию безопасности каждого "
+"устанавливаемого приложения. **Не** устанавливайте случайные приложения и не "
+"забывайте о них. Удаляйте приложения, которые вы больше не используете.\n"
+"4. Создавайте учётные записи только для тех людей, которым вы доверяете, в "
+"частности, для тех, кто будет использовать **надёжные пароли/парольные "
+"фразы** и соблюдать правила безопасности в целом.\n"
+"5. **Регулярно проверяйте форум и социальные сети** (например, "
+"[учётную запись YunoHost в Mastodon](https://toot.aquilenet.fr/@yunohost)), "
+"чтобы быть в курсе обнаружения уязвимостей или выпуска важных исправлений.\n"
 
 #. type: Plain text
 #: docs/admin/42.security.mdx:49
 #, no-wrap
 msgid "The following sections describe possible ways to further harden the security of your server.\n"
 msgstr ""
+"В следующих разделах описаны возможные способы дальнейшего повышения уровня "
+"безопасности вашего сервера.\n"
 
 #. type: Title ##
 #: docs/admin/42.security.mdx:50
 #, no-wrap
 msgid "SSH authentication via key"
-msgstr ""
+msgstr "SSH-аутентификация по ключу"
 
 #. type: Plain text
 #: docs/admin/42.security.mdx:53
 #, no-wrap
 msgid "By default, the SSH authentication uses the administration password. Deactivating this kind of authentication and replacing it by a key mechanism is advised.\n"
 msgstr ""
+"По умолчанию для аутентификации по SSH используется пароль администратора. "
+"Рекомендуется отключить этот тип аутентификации и заменить его механизмом "
+"ключей.\n"
 
 #. type: Plain text
 #: docs/admin/42.security.mdx:55
 #, no-wrap
 msgid "**On your client**:\n"
-msgstr ""
+msgstr "**О вашем клиенте**:\n"
 
 #. type: Fenced div block (tip)
 #: docs/admin/42.security.mdx:61
@@ -123,30 +204,43 @@ msgid ""
 "If you run into permissions issues, set `username` as owner of the dir `~/.ssh` with `chown`. Be careful, for security reasons this directory should be in mode `700`.  \n"
 "If you are on Ubuntu 16.04 you should run `ssh-add` to initialize the SSH agent.\n"
 msgstr ""
+"Если возникнут проблемы с правами доступа, установите `username` в качестве "
+"владельца каталога `~/.ssh` с помощью команды `chown`. Будьте осторожны, в "
+"целях безопасности этот каталог должен иметь права доступа `700`.  \n"
+"Если вы используете Ubuntu 16.04, вам следует запустить `ssh-add` для "
+"инициализации SSH-агента.\n"
 
 #. type: Plain text
 #: docs/admin/42.security.mdx:67
 #, no-wrap
 msgid "Type your admnistration password and your key will be copied onto your server.\n"
 msgstr ""
+"Введите свой пароль администратора, и ваш ключ будет скопирован на ваш "
+"сервер.\n"
 
 #. type: Plain text
 #: docs/admin/42.security.mdx:69
 #, no-wrap
 msgid "**On your server**, editing the SSH configuration file to deactivate password authentication is handled by a system setting:\n"
 msgstr ""
+"**На вашем сервере** редактирование файла конфигурации SSH для отключения "
+"аутентификации по паролю осуществляется с помощью системной настройки:\n"
 
 #. type: Fenced div block (danger)
 #: docs/admin/42.security.mdx:74 docs/admin/42.security.mdx:100
 #, no-wrap
 msgid "Never close your current SSH connection before checking that your alterations work. Test your new configuration by opening a new terminal or window. That way, you can undo your alterations if anything goes wrong.\n"
 msgstr ""
+"Никогда не закрывайте текущее SSH-соединение, не убедившись, что ваши "
+"изменения вступили в силу. Проверьте новую конфигурацию, открыв новое окно "
+"терминала. Таким образом, вы сможете отменить изменения, если что-то пойдёт "
+"не так.\n"
 
 #. type: Title ##
 #: docs/admin/42.security.mdx:79
 #, no-wrap
 msgid "Using a custom port for SSH"
-msgstr ""
+msgstr "Использование пользовательского порта для SSH"
 
 #. type: Plain text
 #: docs/admin/42.security.mdx:82
@@ -155,42 +249,71 @@ msgid ""
 "To prevent SSH connection attempts by robots that scan the internet for any server with SSH enabled, you can change the SSH port.\n"
 "This is handled by a system setting, which takes care of updating the SSH and Fail2Ban configuration.  \n"
 msgstr ""
+"Чтобы предотвратить попытки подключения по SSH со стороны роботов, "
+"сканирующих интернет в поисках серверов с включенным SSH, можно изменить "
+"порт SSH.\n"
+"Это делается с помощью системной настройки, которая отвечает за обновление "
+"конфигурации SSH и Fail2Ban.  \n"
 
 #. type: Plain text
 #: docs/admin/42.security.mdx:85
 #, no-wrap
 msgid "Note that changing the port is still useful even if you've disabled password authentication, because that significantly reduces noise from brute force attempts in SSH logs.\n"
 msgstr ""
+"Обратите внимание, что изменение порта по-прежнему полезно, даже если вы "
+"отключили аутентификацию по паролю, поскольку это значительно снижает "
+"количество ложных срабатываний от попыток перебора паролей в логах SSH.\n"
 
 #. type: Fenced div block (warning)
 #: docs/admin/42.security.mdx:86
 #, no-wrap
 msgid "If you manually modify anything in the SSH server configuration (`/etc/ssh/sshd_config`), YunoHost's regen-conf mechanism will no longer automatically update this file. For this reason, always use the YunoHost admin tools to make changes to the systems configuration files!\n"
 msgstr ""
+"Если вы вручную внесёте какие-либо изменения в конфигурацию SSH-сервера "
+"(`/etc/ssh/sshd_config`), механизм regen-conf YunoHost больше не будет "
+"автоматически обновлять этот файл. По этой причине всегда используйте "
+"инструменты администрирования YunoHost для внесения изменений в файлы "
+"конфигурации системы!\n"
 
 #. type: Plain text
 #: docs/admin/42.security.mdx:95
 #, no-wrap
 msgid "**For subsequent SSH connections**, you need to add the `-p` option followed by the SSH port number.\n"
 msgstr ""
+"**Для последующих SSH-подключений** необходимо добавить опцию `-p`, за "
+"которой следует номер SSH-порта.\n"
 
 #. type: Title ##
 #: docs/admin/42.security.mdx:105
 #, no-wrap
 msgid "Hardening ciphers used by NGINX, SSH, Dovecot, Postfix"
-msgstr ""
+msgstr "Усиление защиты от угроз, используемой NGINX, SSH, Dovecot и Postfix"
 
 #. type: Plain text
 #: docs/admin/42.security.mdx:108
 #, no-wrap
 msgid "The default TLS configuration for services tends to offer good compatibility to support old devices. You can tune this policy for specific services like SSH and NGINX. By default, the NGINX configuration follows the [intermediate compatibility recommendation](https://wiki.mozilla.org/Security/Server_Side_TLS#Intermediate_compatibility_.28default.29) from Mozilla. You can choose to switch to the 'modern' configuration which uses more recent security recommendations, **at the cost of decreasing compatibility**, which may be an issue for your users and visitors using older devices. More details about compatibility can be found on [this page](https://wiki.mozilla.org/Security/Server_Side_TLS#Modern_compatibility).\n"
 msgstr ""
+"Конфигурация TLS по умолчанию для служб, как правило, обеспечивает хорошую "
+"совместимость со старыми устройствами. Вы можете настроить эту политику для "
+"конкретных служб, таких как SSH и NGINX. По умолчанию конфигурация NGINX "
+"соответствует [рекомендациям по промежуточной совместимости](https://"
+"wiki.mozilla.org/Security/"
+"Server_Side_TLS#Intermediate_compatibility_.28default.29) от Mozilla. Вы "
+"можете переключиться на «современную» конфигурацию, которая использует более "
+"новые рекомендации по безопасности, **ценой снижения совместимости**, что "
+"может стать проблемой для ваших пользователей и посетителей, использующих "
+"старые устройства. Более подробную информацию о совместимости можно найти на "
+"[этой странице]"
+"(https://wiki.mozilla.org/Security/Server_Side_TLS#Modern_compatibility).\n"
 
 #. type: Plain text
 #: docs/admin/42.security.mdx:110
 #, no-wrap
 msgid "Changing the compatibility level is not definitive and can be reverted if it doesn't fit with your environment.\n"
 msgstr ""
+"Изменение уровня совместимости не является окончательным и может быть "
+"отменено, если оно не соответствует вашей среде.\n"
 
 #. type: Plain text
 #: docs/admin/42.security.mdx:112

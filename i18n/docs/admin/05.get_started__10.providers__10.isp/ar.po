@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2026-01-04 16:21+0000\n"
+"POT-Creation-Date: 2026-05-23 07:43+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -230,10 +230,10 @@ msgstr ""
 #: docs/admin/05.get_started/10.providers/10.isp.mdx:126
 #, no-wrap
 msgid ""
-"| Service provider                      | Port 25 openable   | [Hairpinning](http://en.wikipedia.org/wiki/Hairpinning) | Customizable reverse DNS | Fixed IP   |\n"
-"| ------------------------------------- | ------------------ | ------------------------------------------------------- | ------------------------ | ---------- |\n"
-"| DIGI Távközlési és Szolgáltató Kft.   | No. Business only. | No                                                      | No. Business only | No. Business only |\n"
-"| Telekom Magyarország                  | No                 | No                                                      | No                | No                |\n"
+"| Service provider                      | Port 25 openable   | [Hairpinning](http://en.wikipedia.org/wiki/Hairpinning) | Customizable reverse DNS | Fixed IP       |\n"
+"| ------------------------------------- | ------------------ | ------------------------------------------------------- | ------------------------ | -------------- |\n"
+"| DIGI Távközlési és Szolgáltató Kft.   | No. Business only. | No                                                      | No. Business only | No. Business only     |\n"
+"| Telekom Magyarország                  | No                 | No                                                      | No                | Yes, with bridge mode |\n"
 msgstr ""
 
 #. type: Fenced div block (tip)

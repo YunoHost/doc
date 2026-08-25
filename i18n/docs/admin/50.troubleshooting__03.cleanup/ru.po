@@ -3,70 +3,83 @@
 # This file is distributed under the same license as the YunoHost documentation package.
 # Automatically generated, 2025.
 #
+# Alekseï <support@digiology.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: 2025-11-11 19:34+0100\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-07-18 20:56+0000\n"
+"Last-Translator: Alekseï <support@digiology.org>\n"
+"Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
+"50troubleshooting__03cleanup/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 5.14.2\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/50.troubleshooting/03.cleanup.mdx:1
 #, no-wrap
 msgid "Cleaning up space"
-msgstr ""
+msgstr "Уборка пространства"
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/03.cleanup.mdx:7
 #, no-wrap
 msgid "If your system runs out of space, you may an emergency option to get back some bit of space, and investigate what's taking up space\n"
 msgstr ""
+"Если в вашей системе закончилось место, вам может понадобиться экстренный "
+"вариант, чтобы освободить немного места и выяснить, что именно его занимает."
+"\n"
 
 #. type: Title ##
 #: docs/admin/50.troubleshooting/03.cleanup.mdx:8
 #, no-wrap
 msgid "Execute the basic-space-cleanup tool"
-msgstr ""
+msgstr "Запуск инструмента базовой очистки пространства"
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/03.cleanup.mdx:11
 #, no-wrap
 msgid "One may use the following command, to perform basic space cleanup (apt, journalctl, logs, ...) :\n"
 msgstr ""
+"Для выполнения базовой очистки пространства (apt, journalctl, logs и т. д.) "
+"можно использовать следующую команду:\n"
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/03.cleanup.mdx:17
 #, no-wrap
 msgid "Additionaly, you may want to cleanup YunoHost operation logs if they are taking too much space, cf [this issue](https://github.com/YunoHost/issues/issues/2329).\n"
 msgstr ""
+"Кроме того, если журналы операций YunoHost занимают слишком много места, "
+"возможно, вам потребуется очистить их; см. [эту проблему]"
+"(https://github.com/YunoHost/issues/issues/2329).\n"
 
 #. type: Title ##
 #: docs/admin/50.troubleshooting/03.cleanup.mdx:18
 #, no-wrap
 msgid "Explore what's taking up space"
-msgstr ""
+msgstr "Изучите, что занимает место"
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/03.cleanup.mdx:21
 #, no-wrap
 msgid "Install `ncdu`:\n"
-msgstr ""
+msgstr "Установка `ncdu`:\n"
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/03.cleanup.mdx:27
 #, no-wrap
 msgid "Then use it to scan the filesystem and have a dynamic, browsable report of what's using space:\n"
 msgstr ""
+"Затем используйте его для сканирования файловой системы и получите "
+"динамический, удобный для просмотра отчёт о том, что занимает место:\n"
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/03.cleanup.mdx:32
 #, no-wrap
 msgid "or `ncdu /var/`, for example to scan only `/var/`\n"
-msgstr ""
+msgstr "или `ncdu /var/`, например, для сканирования только `/var/`\n"

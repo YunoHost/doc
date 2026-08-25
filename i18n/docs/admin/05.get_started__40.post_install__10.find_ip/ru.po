@@ -1,23 +1,28 @@
 # Copyright (C) 2025 YunoHost Contributors
 # This file is distributed under the same license as the YunoHost documentation.
 #
+# Alekseï <support@digiology.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
-"Language: \n"
+"PO-Revision-Date: 2026-08-24 15:43+0000\n"
+"Last-Translator: Alekseï <support@digiology.org>\n"
+"Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
+"05get_started__40post_install__10find_ip/ru/>\n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 5.14.2\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:1
 #, no-wrap
 msgid "Find your server's local IP"
-msgstr ""
+msgstr "Найдите локальный IP-адрес вашего сервера"
 
 #. type: Plain text
 #: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:10
@@ -27,10 +32,9 @@ msgstr "При установке дома ваш сервер, как прав�
 
 #. type: Title ##
 #: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:11
-#, fuzzy, no-wrap
-#| msgid "What is a local IP ?"
+#, no-wrap
 msgid "What is a local IP?"
-msgstr "Что такое локальный IP-адрес ?"
+msgstr "Что такое локальный IP-адрес?"
 
 #. type: Plain text
 #: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:14
@@ -40,33 +44,35 @@ msgstr "Локальный IP-адрес - это адрес, используе
 
 #. type: Title ##
 #: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:15
-#, fuzzy, no-wrap
-#| msgid "How to find it ?"
+#, no-wrap
 msgid "How to find it?"
-msgstr "Как его найти ?"
+msgstr "Как его найти?"
 
 #. type: Plain text
 #: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:18
 #, no-wrap
 msgid "Any of these tricks should allow you to find the local IP of your server:\n"
 msgstr ""
+"Любой из этих способов должен позволить вам найти локальный IP-адрес вашего "
+"сервера:\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:21
 #, no-wrap
 msgid "<TabItem value=\"angryip\" label=\"With AngryIP (Recommended)\" default>\n"
 msgstr ""
+"<TabItem value=\"angryip\" label=\"С помощью AngryIP (рекомендуется)\" "
+"default>\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:23
-#, fuzzy, no-wrap
-#| msgid ""
-#| "<TabItem value=\"angryip\" label=\"With AngryIP (Recommended)\" default>\n"
-#| "You can use the [AngryIP](https://angryip.org/download/) software to achieve that. You just need to scan these local ip ranges in this order until you find the active IP corresponding to your server:\n"
+#, no-wrap
 msgid "You can use the [AngryIP](https://angryip.org/download/) software to achieve that. You can scan these local IP ranges in this order until you find the active IP corresponding to your server:\n"
 msgstr ""
-"<TabItem value=\"angryip\" label=\"With AngryIP (Recommended)\" default>\n"
-"Вы можете использовать [AngryIP](https://angryip.org/download/) для достижения этой цели. Вам просто нужно сканировать эти локальные диапазоны ip-адресов в таком порядке, пока вы не найдете активный IP-адрес, соответствующий вашему серверу:\n"
+"Для этого можно использовать программу [AngryIP]"
+"(https://angryip.org/download/). Просканируйте эти локальные диапазоны IP-"
+"адресов в указанном порядке, пока не найдете активный IP-адрес, "
+"соответствующий вашему серверу:\n"
 
 #. type: Fenced div block (tip)
 #: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:34
@@ -76,45 +82,42 @@ msgid ""
 "- your server should typically be displayed as listening on port 80 and 443\n"
 "- when in doubt, just type `https://192.168.x.y` in your browser to check if it's a YunoHost or not.\n"
 msgstr ""
+"- Вы можете отсортировать результаты по пингу, как показано на этом "
+"скриншоте, чтобы легко увидеть эффективно используемые IP-адреса.\n"
+"- Ваш сервер обычно должен отображаться как прослушивающий порты 80 и 443.\n"
+"- Если сомневаетесь, просто введите `https://192.168.x.y` в браузере, чтобы "
+"проверить, является ли это YunoHost или нет.\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:42
-#, fuzzy, no-wrap
-#| msgid ""
-#| "<TabItem value=\"router\" label=\"With your internet router / box\">\n"
-#| "Connect to your internet box / router interface to list the machines connected.\n"
+#, no-wrap
 msgid "<TabItem value=\"router\" label=\"With your internet router / box\">\n"
 msgstr ""
-"<TabItem value=\"router\" label=\"С вашим интернет-маршрутизатором\">\n"
-"Подключитесь к интерфейсу вашего маршрутизатора, чтобы просмотреть список подключенных компьютеров.\n"
+"<TabItem value=\"router\" label="
+"\"С вашим маршрутизатором / Интернет-коробкой\">\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:44
-#, fuzzy, no-wrap
-#| msgid ""
-#| "<TabItem value=\"router\" label=\"With your internet router / box\">\n"
-#| "Connect to your internet box / router interface to list the machines connected.\n"
+#, no-wrap
 msgid "Connect to your internet box / router interface to list the machines connected.\n"
 msgstr ""
-"<TabItem value=\"router\" label=\"С вашим интернет-маршрутизатором\">\n"
-"Подключитесь к интерфейсу вашего маршрутизатора, чтобы просмотреть список подключенных компьютеров.\n"
+"Подключитесь к интерфейсу вашего Интернет-маршрутизатора, чтобы отобразить "
+"список подключённых устройств.\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:47
 #, no-wrap
 msgid "<TabItem value=\"arp-scan\" label=\"With arp-scan\">\n"
-msgstr ""
+msgstr "<TabItem value=\"arp-scan\" label=\"With arp-scan\">\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:49
-#, fuzzy, no-wrap
-#| msgid ""
-#| "<TabItem value=\"arp-scan\" label=\"With arp-scan\">\n"
-#| "If you're using Linux, you can open a terminal and use `sudo arp-scan --local` to list the IP on your local network (this may also work in Windows);\n"
+#, no-wrap
 msgid "If you're using Linux, you can open a terminal and use `sudo arp-scan --local` to list the IP on your local network (this may also work in Windows);\n"
 msgstr ""
-"<TabItem value=\"arp-scan\" label=\"With arp-scan\">\n"
-"Если вы используете Linux, вы можете открыть терминал и использовать `sudo arp-scan --local`, чтобы вывести список IP-адресов в вашей локальной сети (это также может работать в Windows).;\n"
+"Если вы используете Linux, вы можете открыть терминал и использовать команду "
+"`sudo arp-scan --local`, чтобы вывести список IP-адресов в вашей локальной "
+"сети (это также может работать в Windows);\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:51
@@ -124,25 +127,17 @@ msgstr "Если команда `arp-scan` отображает непонятн
 
 #. type: Plain text
 #: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:54
-#, fuzzy, no-wrap
-#| msgid ""
-#| "<TabItem value=\"direct\" label=\"With a direct access on the server\">\n"
-#| "Plug a screen on your server, log in and type `hostname --all-ip-address`.\n"
+#, no-wrap
 msgid "<TabItem value=\"direct\" label=\"With a direct access on the server\">\n"
-msgstr ""
-"<TabItem value=\"direct\" label=\"С прямым доступом к серверу\">\n"
-"Подключите экран к своему серверу, войдите в систему и введите `hostname --all-ip-address`.\n"
+msgstr "<TabItem value=\"direct\" label=\"При прямом доступе к серверу\">\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:56
-#, fuzzy, no-wrap
-#| msgid ""
-#| "<TabItem value=\"direct\" label=\"With a direct access on the server\">\n"
-#| "Plug a screen on your server, log in and type `hostname --all-ip-address`.\n"
+#, no-wrap
 msgid "Plug a screen on your server, log in and type `hostname --all-ip-address`.\n"
 msgstr ""
-"<TabItem value=\"direct\" label=\"С прямым доступом к серверу\">\n"
-"Подключите экран к своему серверу, войдите в систему и введите `hostname --all-ip-address`.\n"
+"Подключите монитор к серверу, войдите в систему и введите `hostname --all-ip-"
+"address`.\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:58
@@ -152,12 +147,13 @@ msgstr "Учетные данные по умолчанию (перед пост
 
 #. type: Plain text
 #: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:61
-#, fuzzy, no-wrap
-#| msgid "password: `yunohost`\n"
+#, no-wrap
 msgid ""
 "- login: `root`\n"
 "- password: `yunohost`\n"
-msgstr "пароль: `yunohost`\n"
+msgstr ""
+"- login: `root`\n"
+"- пароль: `yunohost`\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:63
@@ -186,3 +182,8 @@ msgid ""
 "- Plug a screen on your server and try to reboot to check that it's properly booting;\n"
 "- Make sure that your ethernet cable is working and properly plugged in;\n"
 msgstr ""
+"- Убедитесь, что ваш сервер правильно подключён.\n"
+"- Если вы используете SD-карту, убедитесь, что разъём не слишком запылён.\n"
+"- Подключите монитор к серверу и попробуйте перезагрузить его, чтобы "
+"проверить правильность загрузки.\n"
+"- Убедитесь, что ваш кабель Ethernet исправен и правильно подключён.\n"

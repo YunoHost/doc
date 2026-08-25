@@ -2,37 +2,43 @@
 # This file is distributed under the same license as the YunoHost documentation.
 #
 # Languages add-on <noreply-addon-languages@weblate.org>, 2025.
+# Alekseï <support@digiology.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-04-19 08:39+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-07-07 00:42+0000\n"
+"Last-Translator: Alekseï <support@digiology.org>\n"
+"Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
+"45tutorials__65sftp_on_apps/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 5.14.2\n"
 
 #. type: Yaml Front Matter Hash Value: sidebar_label
 #: docs/admin/45.tutorials/65.sftp_on_apps.mdx:1
 #, no-wrap
 msgid "Access apps via SFTP"
-msgstr ""
+msgstr "Доступ к приложениям через SFTP"
 
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/45.tutorials/65.sftp_on_apps.mdx:1
 #, no-wrap
 msgid "Give SFTP permission to edit an app"
-msgstr ""
+msgstr "Предоставление доступа по SFTP для редактирования приложения"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/65.sftp_on_apps.mdx:7
 #, no-wrap
 msgid "In YunoHost permission management web admin interface, you can specify which user can access your system through SFTP.\n"
 msgstr ""
+"В веб-интерфейсе администратора YunoHost для управления правами доступа вы "
+"можете указать, каким пользователям разрешен доступ к вашей системе через "
+"SFTP.\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/65.sftp_on_apps.mdx:11
@@ -42,18 +48,27 @@ msgid ""
 "- Groups and permissions > Individual user permissions. \n"
 "- Click on add a permission and select SFTP\n"
 msgstr ""
+"Перейдите:\n"
+"- Группы и разрешения (Groups and permissions) > Индивидуальные разрешения "
+"пользователей(Individual user permissions). \n"
+"- Нажмите «Добавить разрешение» и выберите SFTP\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/65.sftp_on_apps.mdx:13
 #, no-wrap
 msgid "However, those user are chrooted in their home directory for security reasons.\n"
 msgstr ""
+"Однако в целях безопасности эти пользователи изолированы (chroot) в своей "
+"домашней директории.\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/65.sftp_on_apps.mdx:15
 #, no-wrap
 msgid "If you want to give access to a specific apps through SFTP, here are additional steps to do after giving the SFTP permission in the web interface.\n"
 msgstr ""
+"Если вы хотите предоставить доступ к определенным приложениям через SFTP, "
+"после предоставления разрешения на использование SFTP в веб-интерфейсе "
+"необходимо выполнить следующие дополнительные действия.\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/65.sftp_on_apps.mdx:19
@@ -63,6 +78,12 @@ msgid ""
 "- USER is the user to whom you wish to give permission to edit WordPress files.\n"
 "- `/var/www/wordpress/wp-config.php` must be replaced by the path your app config file. For example, for yeswiki (`/var/www/yeswiki/wakka.config.php`)\n"
 msgstr ""
+"В приведенных ниже инструкциях:\n"
+"- USER — это пользователь, которому вы хотите предоставить разрешение на "
+"редактирование файлов WordPress.\n"
+"- `/var/www/wordpress/wp-config.php` необходимо заменить путем к файлу "
+"конфигурации вашего приложения. Например, для Yeswiki "
+"(`/var/www/yeswiki/wakka.config.php`)\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/65.sftp_on_apps.mdx:38
@@ -74,3 +95,9 @@ msgid ""
 "- `mount --bind` makes the contents of the source file or directory available at the target location without actually moving or copying the data.\n"
 "- `setfacl` set the file permissions\n"
 msgstr ""
+"Краткое описание команд:\n"
+"- `mkdir -p /PATH` создаёт папку в указанной переменной PATH.\n"
+"- `touch` создает пустой файл.\n"
+"- `mount --bind` делает содержимое исходного файла или каталога доступным в "
+"целевом местоположении без фактического перемещения или копирования данных.\n"
+"- `setfacl` устанавливает права доступа к файлу.\n"

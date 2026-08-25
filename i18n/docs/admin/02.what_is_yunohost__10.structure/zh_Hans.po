@@ -3,14 +3,16 @@
 #
 # Weblate Admin <yunohost@translate.yunohost.org>, 2025.
 # Wesley Wang <aidezp2@gmail.com>, 2025.
+# Poesty Li <poesty7450@gmail.com>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: 2025-11-24 10:32+0000\n"
-"Last-Translator: Wesley Wang <aidezp2@gmail.com>\n"
-"Language-Team: Chinese (Simplified Han script) <https://translate.yunohost."
-"org/projects/yunohost-doc/02what_is_yunohost__10structure/zh_Hans/>\n"
+"PO-Revision-Date: 2026-05-23 15:14+0000\n"
+"Last-Translator: Poesty Li <poesty7450@gmail.com>\n"
+"Language-Team: Chinese (Simplified Han script) <https://"
+"translate.yunohost.org/projects/yunohost-doc/02what_is_yunohost__10structure/"
+"zh_Hans/>\n"
 "Language: zh_Hans\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -22,34 +24,45 @@ msgstr ""
 #: docs/admin/02.what_is_yunohost/10.structure.mdx:1
 #, no-wrap
 msgid "Structure of a YunoHost server"
-msgstr "一台YunoHost服务器的结构组成"
+msgstr "一台 YunoHost 服务器的结构组成"
 
 #. type: Plain text
 #: docs/admin/02.what_is_yunohost/10.structure.mdx:7
 #, no-wrap
 msgid "This page provide an overview of the ecosystem of a YunoHost server. While this overview contains several approximations, the purpose here is to introduce the global picture before digging into the different aspects.\n"
-msgstr ""
+msgstr "本页面提供了 YunoHost 服务器生态系统的概览。虽然此概览包含若干近似描述，但其"
+"目的是在深入探讨不同方面之前，先介绍整体情况。\n"
 
 #. type: Plain text
 #: docs/admin/02.what_is_yunohost/10.structure.mdx:9
 #, no-wrap
 msgid "![Yunohost ecosystem graph](/img/ecosystem.png)\n"
-msgstr ""
+msgstr "![Yunohost 生态系统图](/img/ecosystem.png)\n"
 
 #. type: Plain text
 #: docs/admin/02.what_is_yunohost/10.structure.mdx:11
 #, no-wrap
 msgid "Everything starts with the special user **admin**. This is the administrator of the machine who can install, configure and manage things on the server through the web administration interface, or via SSH and the command line interface. *(If you are already familiar with GNU/Linux, it is quite similar to root. YunoHost has this additional 'admin' user for several technical reasons.)*\n"
 msgstr ""
+"一切都从特殊用户 **admin** 开始。admin 是机器的管理员，可以通过 Web 管理界面"
+"或通过 SSH 和命令行界面来安装、配置和管理服务器上的内容。*（如果您已经熟悉 "
+"GNU/Linux，它类似于 root。出于若干技术原因，YunoHost 额外设置了 'admin' 用户"
+"。）*\n"
 
 #. type: Plain text
 #: docs/admin/02.what_is_yunohost/10.structure.mdx:13
 #, no-wrap
 msgid "The administrator can create users and install applications, among other admin actions. Users automatically have their own email address when they get created. Users will also be able to connect to the user portal (SSO) to access applications. Some applications can typically be installed either as publicly-accessible, or as private, i.e. only some users will have access to it depending on which groups they are member of.\n"
 msgstr ""
+"管理员可以创建用户和安装应用程序等管理操作。用户创建时会自动拥有自己的电子邮"
+"件地址。用户还可以连接到用户门户（SSO）来访问应用程序。某些应用程序通常可以安"
+"装为公开可访问或私有模式，即只有某些用户（取决于其所属的群组）才能访问。\n"
 
 #. type: Plain text
 #: docs/admin/02.what_is_yunohost/10.structure.mdx:14
 #, no-wrap
 msgid "Applications and their features of the server rely on different services to work properly. Services (sometimes also called daemons) are programs that are constantly running on the server to ensure various tasks are done, such as answering to web requests from web browsers, or relaying emails.\n"
 msgstr ""
+"应用程序及其功能依赖不同的服务才能正常运行。服务（有时也称为守护进程）是持续"
+"在服务器上运行的程序，用于确保完成各种任务，例如响应来自浏览器的网络请求，或"
+"转发电子邮件。\n"

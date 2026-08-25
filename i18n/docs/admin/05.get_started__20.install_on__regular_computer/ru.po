@@ -3,19 +3,22 @@
 # This file is distributed under the same license as the YunoHost documentation package.
 # Automatically generated, 2025.
 #
+# Alekseï <support@digiology.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: 2025-11-11 19:34+0100\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-08-25 06:33+0000\n"
+"Last-Translator: Alekseï <support@digiology.org>\n"
+"Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
+"05get_started__20install_on__regular_computer/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 5.14.2\n"
 
 #. type: Title ##
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:18
@@ -26,20 +29,15 @@ msgstr ""
 #: docs/admin/05.get_started/20.install_on/wsl.mdx:21
 #, no-wrap
 msgid "<FAIcon icon=\"fa-list-alt\"/> Pre-requisites"
-msgstr ""
+msgstr "<FAIcon icon=\"fa-list-alt\"/> Предварительные требования"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:49
 #: docs/admin/05.get_started/20.install_on/raspberry_pi.mdx:48
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:46
-#, fuzzy, no-wrap
-#| msgid ""
-#| "<TabItem value=\"router\" label=\"With your internet router / box\">\n"
-#| "Connect to your internet box / router interface to list the machines connected.\n"
+#, no-wrap
 msgid "<TabItem value=\"etcher\" label=\"With Etcher (recommended)\">\n"
-msgstr ""
-"<TabItem value=\"router\" label=\"С вашим интернет-маршрутизатором\">\n"
-"Подключитесь к интерфейсу вашего маршрутизатора, чтобы просмотреть список подключенных компьютеров.\n"
+msgstr "<TabItem value=\"etcher\" label=\"С помощью Etcher (рекомендуется)\">\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:51
@@ -47,26 +45,23 @@ msgstr ""
 #, no-wrap
 msgid "Download <Link to=\"https://www.balena.io/etcher/\" target=\"_blank\">Etcher</Link> for your operating system and install it.\n"
 msgstr ""
+"Загрузите и установите <Link to=\"https://www.balena.io/etcher/\" target="
+"\"_blank\">Etcher</Link> для вашей операционной системы.\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:55
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:52
 #, no-wrap
 msgid "![Etcher](/img/softwares/etcher.gif)\n"
-msgstr ""
+msgstr "![Etcher](/img/softwares/etcher.gif)\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:58
 #: docs/admin/05.get_started/20.install_on/raspberry_pi.mdx:57
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:55
-#, fuzzy, no-wrap
-#| msgid ""
-#| "<TabItem value=\"router\" label=\"With your internet router / box\">\n"
-#| "Connect to your internet box / router interface to list the machines connected.\n"
+#, no-wrap
 msgid "<TabItem value=\"usbimager\" label=\"With USBimager\">\n"
-msgstr ""
-"<TabItem value=\"router\" label=\"С вашим интернет-маршрутизатором\">\n"
-"Подключитесь к интерфейсу вашего маршрутизатора, чтобы просмотреть список подключенных компьютеров.\n"
+msgstr "<TabItem value=\"usbimager\" label=\"С помощью USBimager\">\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:60
@@ -75,6 +70,8 @@ msgstr ""
 #, no-wrap
 msgid "Download [USBimager](https://bztsrc.gitlab.io/usbimager/) for your operating system and install it.\n"
 msgstr ""
+"Загрузите и установите [USBimager](https://bztsrc.gitlab.io/usbimager/) для "
+"вашей операционной системы.\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:64
@@ -82,20 +79,15 @@ msgstr ""
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:61
 #, no-wrap
 msgid "![USBimager](/img/softwares/usbimager.png)\n"
-msgstr ""
+msgstr "![USBimager](/img/softwares/usbimager.png)\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:67
 #: docs/admin/05.get_started/20.install_on/raspberry_pi.mdx:66
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:64
-#, fuzzy, no-wrap
-#| msgid ""
-#| "<TabItem value=\"direct\" label=\"With a direct access on the server\">\n"
-#| "Plug a screen on your server, log in and type `hostname --all-ip-address`.\n"
+#, no-wrap
 msgid "<TabItem value=\"dd\" label=\"With dd\">\n"
-msgstr ""
-"<TabItem value=\"direct\" label=\"С прямым доступом к серверу\">\n"
-"Подключите экран к своему серверу, войдите в систему и введите `hostname --all-ip-address`.\n"
+msgstr "<TabItem value=\"dd\" label=\"С помощью dd\">\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:69
@@ -104,6 +96,12 @@ msgstr ""
 #, no-wrap
 msgid "If you are on GNU/Linux / macOS and know your way around command line, you may also flash your USB stick or SD card with `dd`. You can identify which device corresponds to your USB stick or SD card with `fdisk -l` or `lsblk`. A typical SD card name is something like `/dev/mmcblk0`. BE CAREFUL and make sure you got the right name.\n"
 msgstr ""
+"Если вы используете GNU/Linux/macOS и умеете работать с командной строкой, "
+"вы также можете записать образ на USB-накопитель или SD-карту с помощью "
+"команды `dd`. Определить, какое устройство соответствует вашему USB-"
+"накопителю или SD-карте, можно с помощью команд `fdisk -l` или `lsblk`. "
+"Типичное имя SD-карты выглядит примерно так: `/dev/mmcblk0`. БУДЬТЕ "
+"ОСТОРОЖНЫ и убедитесь, что вы указали правильное имя.\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:71
@@ -111,14 +109,14 @@ msgstr ""
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:68
 #, no-wrap
 msgid "Then run:\n"
-msgstr ""
+msgstr "Затем выполнить:\n"
 
 #. type: Title ##
 #: docs/admin/05.get_started/20.install_on/raspberry_pi.mdx:32
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:26
 #, no-wrap
 msgid "<FAIcon icon=\"fa-download\" /> Download the YunoHost image"
-msgstr ""
+msgstr "<FAIcon icon=\"fa-download\" /> Загрузка образа YunoHost"
 
 #. type: Fenced div block (note)
 #: docs/admin/05.get_started/20.install_on/raspberry_pi.mdx:34
@@ -130,18 +128,25 @@ msgid ""
 "\n"
 "Optionally, you can [download the project's public key](https://forge.yunohost.org/keys/yunohost_bookworm.asc) to check the authenticity of the images.\n"
 msgstr ""
+"(FIXME: этот фрагмент кода в данный момент не работает...)\n"
+"\n"
+"При желании вы можете [загрузить открытый ключ проекта]"
+"(https://forge.yunohost.org/keys/yunohost_bookworm.asc), чтобы проверить "
+"подлинность изображений.\n"
 
 #. type: Yaml Front Matter Hash Value: description
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:1
 #, no-wrap
 msgid "An old desktop computer or laptop, or any x86 machine"
 msgstr ""
+"Старый настольный компьютер или ноутбук, или любая машина на базе "
+"архитектуры x86"
 
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:1
 #, no-wrap
 msgid "On a regular computer"
-msgstr ""
+msgstr "На обычном компьютере"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:25
@@ -154,59 +159,73 @@ msgid ""
 "- An ethernet cable (RJ-45) to connect your server to your router.\n"
 "- A computer to read this guide, flash the image and access your server.\n"
 msgstr ""
+"- Аппаратное обеспечение, совместимое с архитектурой x86 и предназначенное "
+"для YunoHost, с объёмом оперативной памяти не менее 512 МБ и дисковым "
+"пространством не менее 16 ГБ\n"
+"  - Это может быть старый ноутбук, настольный компьютер или полноценный "
+"сервер\n"
+"- USB-накопитель объёмом более 1 ГБ\n"
+"- [Достойный интернет-провайдер](/admin/get_started/providers/isp/), "
+"желательно с хорошей и неограниченной пропускной способностью исходящего "
+"трафика\n"
+"- Кабель Ethernet (RJ-45) для подключения сервера к маршрутизатору.\n"
+"- Компьютер для чтения этого руководства, прошивки образа и доступа к "
+"серверу.\n"
 
 #. type: Fenced div block (warning)
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:28
 #, no-wrap
 msgid "If your machine is 32 bits, be sure to download the 32-bit image.\n"
 msgstr ""
+"Если ваш компьютер 32-разрядный, обязательно загрузите 32-разрядный образ.\n"
 
 #. type: Title ##
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:40
 #, no-wrap
 msgid "<FAIcon icon=\"fa-brands fa-usb\"/> Flash the YunoHost image"
-msgstr ""
+msgstr "<FAIcon icon=\"fa-brands fa-usb\"/> Прошивка образа YunoHost"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:43
 #, no-wrap
 msgid "Flash the image on the USB key or CD/DVD.\n"
-msgstr ""
+msgstr "Запишите образ на USB-накопитель или CD/DVD-диск.\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:50
 #, no-wrap
 msgid "Plug your USB key, select your image and click \"Flash\"\n"
-msgstr ""
+msgstr "Вставьте USB-накопитель, выберите образ и нажмите «Записать» (Flash).\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:59
 #, no-wrap
 msgid "Plug your USB key, select your image and click \"Write\"\n"
-msgstr ""
+msgstr "Вставьте USB-накопитель, выберите образ и нажмите «Записать» (Write)\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:76
-#, fuzzy, no-wrap
-#| msgid ""
-#| "<TabItem value=\"router\" label=\"With your internet router / box\">\n"
-#| "Connect to your internet box / router interface to list the machines connected.\n"
+#, no-wrap
 msgid "<TabItem value=\"ventoy\" label=\"Using Ventoy\">\n"
-msgstr ""
-"<TabItem value=\"router\" label=\"С вашим интернет-маршрутизатором\">\n"
-"Подключитесь к интерфейсу вашего маршрутизатора, чтобы просмотреть список подключенных компьютеров.\n"
+msgstr "<TabItem value=\"ventoy\" label=\"С помощью Ventoy\">\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:78
 #, no-wrap
 msgid "Ventoy will be useful if you can't sucessfully boot the YunoHost image using the other methods.\n"
 msgstr ""
+"Ventoy пригодится, если вам не удастся успешно загрузить образ YunoHost "
+"другими способами.\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:80
 #, no-wrap
 msgid "[Ventoy](https://www.ventoy.net/) is a nice tool that makes it really easy to put multiple linux images on a USB stick. When the computer refuses to boot from an image on a USB stick, Ventoy will usually be able to boot it anyway!\n"
 msgstr ""
+"[Ventoy](https://www.ventoy.net/) — это удобный инструмент, который "
+"значительно упрощает запись нескольких образов Linux на USB-накопитель. Если "
+"компьютер отказывается загружаться с образа на USB-накопителе, Ventoy, как "
+"правило, всё равно сможет его загрузить!\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:85
@@ -217,12 +236,22 @@ msgid ""
 "2. Using your favorite file explorer app, copy the YunoHost image file on the big `Ventoy` partition (not \"VTOYEFI\")\n"
 "    - Don't use *Balena Etcher*, USBImager or `dd` for this!\n"
 msgstr ""
+"1. Установите [Ventoy](https://www.ventoy.net/) на USB-накопитель. См. "
+"[инструкции по установке](https://www.ventoy.net/en/doc_start.html).\n"
+"    - Это создаст 2 раздела на накопителе.\n"
+"2. Используя ваше любимое приложение для работы с файлами, скопируйте файл "
+"образа YunoHost на большой раздел `Ventoy` (не \"VTOYEFI\")\n"
+"    - Не используйте для этого *Balena Etcher*, USBImager или `dd`!\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:87
 #, no-wrap
 msgid "Later, when you'll boot the computer using this USB stick, Ventoy will appear and will list the images on the USB stick. Select the YunoHost image, then select GRUB2 launch option (or use whichever works for your computer 😉)\n"
 msgstr ""
+"Позже, когда вы загрузите компьютер с помощью этой USB-флешки, появится "
+"Ventoy и отобразит список образов на флешке. Выберите образ YunoHost, затем "
+"выберите параметр запуска GRUB2 (или используйте любой другой, подходящий для"
+" вашего компьютера 😉)\n"
 
 #. type: Title ##
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:91
@@ -252,14 +281,14 @@ msgstr ""
 #: docs/admin/05.get_started/20.install_on/virtualbox.mdx:70
 #, no-wrap
 msgid "<FAIcon icon=\"fa-rocket\"/> Launch the graphical install"
-msgstr ""
+msgstr "<FAIcon icon=\"fa-rocket\"/> Запуск графической установки"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:106
 #: docs/admin/05.get_started/20.install_on/virtualbox.mdx:73
 #, no-wrap
 msgid "You should see a screen like this:\n"
-msgstr ""
+msgstr "Вы должны увидеть примерно такой экран:\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:108
@@ -267,18 +296,16 @@ msgstr ""
 #, no-wrap
 msgid "<Figure caption=\"Preview of the ISO menu\" src=\"/img/softwares/virtualbox_3.png\"/>\n"
 msgstr ""
+"<Figure caption=\"Предварительный просмотр меню ISO\" src="
+"\"/img/softwares/virtualbox_3.png\"/>\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:111
 #: docs/admin/05.get_started/20.install_on/virtualbox.mdx:78
-#, fuzzy, no-wrap
-#| msgid ""
-#| "<TabItem value=\"direct\" label=\"With a direct access on the server\">\n"
-#| "Plug a screen on your server, log in and type `hostname --all-ip-address`.\n"
+#, no-wrap
 msgid "<TabItem value=\"classic\" label=\"Classic installation on a whole disk\">\n"
 msgstr ""
-"<TabItem value=\"direct\" label=\"С прямым доступом к серверу\">\n"
-"Подключите экран к своему серверу, войдите в систему и введите `hostname --all-ip-address`.\n"
+"<TabItem value=\"classic\" label=\"Классическая установка на весь диск\">\n"
 
 #. type: Fenced div block (danger)
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:112
@@ -286,6 +313,8 @@ msgstr ""
 #, no-wrap
 msgid "Once you have validated the keyboard layout, the installation will be launched and will completely erase the data on your hard disk!\n"
 msgstr ""
+"После проверки правильности раскладки клавиатуры запустится установка, "
+"которая полностью удалит данные с вашего жёсткого диска!\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:119
@@ -296,18 +325,17 @@ msgid ""
 "2. Select your language, your location, your keyboard layout, and eventually your timezone.\n"
 "3. The installer will then download and install all required packages.\n"
 msgstr ""
+"1. Выберите `Graphical install`\n"
+"2. Выберите язык, местоположение, раскладку клавиатуры и, при необходимости, "
+"часовой пояс.\n"
+"3. После этого установщик загрузит и установит все необходимые пакеты.\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:122
 #: docs/admin/05.get_started/20.install_on/virtualbox.mdx:89
-#, fuzzy, no-wrap
-#| msgid ""
-#| "<TabItem value=\"router\" label=\"With your internet router / box\">\n"
-#| "Connect to your internet box / router interface to list the machines connected.\n"
+#, no-wrap
 msgid "<TabItem value=\"expert\" label=\"Installation in expert mode\">\n"
-msgstr ""
-"<TabItem value=\"router\" label=\"С вашим интернет-маршрутизатором\">\n"
-"Подключитесь к интерфейсу вашего маршрутизатора, чтобы просмотреть список подключенных компьютеров.\n"
+msgstr "<TabItem value=\"expert\" label=\"Установка в режиме эксперта\">\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:124
@@ -315,6 +343,9 @@ msgstr ""
 #, no-wrap
 msgid "The YunoHost project simplified the classic installation as much as possible in order to avoid as many people as possible being lost with questions that are too technical or related to specific cases.\n"
 msgstr ""
+"Проект YunoHost максимально упростил классическую установку, чтобы как можно "
+"меньше людей сталкивались с вопросами, которые слишком технически сложны или "
+"касаются конкретных случаев.\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:126
@@ -322,13 +353,17 @@ msgstr ""
 #, no-wrap
 msgid "With the expert mode installation, you have more possibilities, especially concerning the exact partitioning of your storage media. You can also decide to use the classic mode and [add your disks afterwards](/admin/tutorials/external_storage).\n"
 msgstr ""
+"При установке в экспертном режиме у вас больше возможностей, особенно в "
+"отношении точного разбиения носителя информации на разделы. Вы также можете "
+"выбрать классический режим и [добавить свои диски позже]"
+"(/admin/tutorials/external_storage).\n"
 
 #. type: Title ###
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:127
 #: docs/admin/05.get_started/20.install_on/virtualbox.mdx:94
 #, no-wrap
 msgid "Summary of the steps in expert mode"
-msgstr ""
+msgstr "Краткое описание шагов в экспертном режиме"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:134
@@ -346,7 +381,7 @@ msgstr ""
 #: docs/admin/05.get_started/20.install_on/virtualbox.mdx:102
 #, no-wrap
 msgid "Regarding partitioning"
-msgstr ""
+msgstr "Насчёт разделения на разделы"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:138
@@ -354,6 +389,11 @@ msgstr ""
 #, no-wrap
 msgid "In general, we recommend against partitioning `/var`, `/opt`, `/usr`, `/bin`, `/etc`, `/lib`, `/tmp` and `/root` on separate partitions. This will prevent you from having to worry about full partitions that could crash your machine, cause app installations to fail, or even corrupt your databases.\n"
 msgstr ""
+"В целом, мы не рекомендуем разделять `/var`, `/opt`, `/usr`, `/bin`, `/etc`, "
+"`/lib`, `/tmp` и `/root` на отдельные разделы. Это избавит вас от "
+"необходимости беспокоиться о переполненных разделах, которые могут привести "
+"к сбоям в работе компьютера, ошибкам при установке приложений или даже "
+"повреждению баз данных.\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:140
@@ -361,6 +401,8 @@ msgstr ""
 #, no-wrap
 msgid "For performance reasons, it is recommended to mount your fastest storage (SSD) on the root `/`.\n"
 msgstr ""
+"В целях повышения производительности рекомендуется монтировать самый быстрый "
+"накопитель (SSD) в корневой каталог `/`.\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:142
@@ -368,6 +410,9 @@ msgstr ""
 #, no-wrap
 msgid "If you have one or more hard drives to store data, you can choose to mount it on one of these folders depending on your usage.\n"
 msgstr ""
+"Если у вас есть один или несколько жёстких дисков для хранения данных, вы "
+"можете выбрать одну из этих папок для монтирования в зависимости от ваших "
+"потребностей.\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:150
@@ -388,13 +433,17 @@ msgstr ""
 #, no-wrap
 msgid "If you want flexibility and don't want to (re)size partitions, you can also choose to mount on `/mnt/hdd` and follow this [tutorial to mount all these folders with `mount --bind`](/admin/tutorials/external_storage).\n"
 msgstr ""
+"Если вам нужна гибкость и вы не хотите (изменять) размер разделов, вы также "
+"можете выбрать монтирование в `/mnt/hdd` и следовать этому "
+"[руководству по монтированию всех этих папок с помощью `mount --bind`]"
+"(/admin/tutorials/external_storage).\n"
 
 #. type: Title ###
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:153
 #: docs/admin/05.get_started/20.install_on/virtualbox.mdx:120
 #, no-wrap
 msgid "About encryption"
-msgstr ""
+msgstr "О шифровании"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:156
@@ -402,20 +451,26 @@ msgstr ""
 #, no-wrap
 msgid "Be aware that if you encrypt all or part of your disks, you will have to type the passphrase every time you restart your server, which can be a problem if you are not on site. There are however solutions (quite difficult to implement) that allow you to type the passphrase via SSH or via a web page (search for \"dropbear encrypted disk\").\n"
 msgstr ""
+"Имейте в виду, что если вы зашифруете все или часть своих дисков, вам "
+"придется вводить парольную фразу каждый раз при перезапуске сервера, что "
+"может стать проблемой, если вы находитесь вне офиса. Однако существуют "
+"решения (довольно сложные в реализации), позволяющие вводить парольную фразу "
+"через SSH или через веб-страницу "
+"(найдите в интернете \"dropbear encrypted disk\").\n"
 
 #. type: Title ###
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:157
 #: docs/admin/05.get_started/20.install_on/virtualbox.mdx:124
 #, no-wrap
 msgid "About RAID"
-msgstr ""
+msgstr "Что такое RAID"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:160
 #: docs/admin/05.get_started/20.install_on/virtualbox.mdx:127
 #, no-wrap
 msgid "Keep in mind that:\n"
-msgstr ""
+msgstr "Имейте в виду, что:\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:164
@@ -426,6 +481,12 @@ msgid ""
 "- a RAID 1 (even without a spare) is more reliable than a RAID 5 from a probability point of view\n"
 "- hardware raids are dependent on the raid card, if the card fails you will need a replacement to read and rebuild the array\n"
 msgstr ""
+"- Диски в ваших RAID-массивах должны быть разных марок, с разным износом или "
+"из разных партий (особенно если это SSD-накопители).\n"
+"- RAID 1 (даже без запасного накопителя) более надёжен, чем RAID 5, с точки "
+"зрения вероятности.\n"
+"- Аппаратные RAID-массивы зависят от RAID-контроллера; если контроллер "
+"сломается, вам потребуется его замена для чтения и восстановления массива.\n"
 
 #. type: Fenced div block (info)
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:168
