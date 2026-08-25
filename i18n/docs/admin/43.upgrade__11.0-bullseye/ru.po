@@ -2,38 +2,45 @@
 # This file is distributed under the same license as the YunoHost documentation package.
 #
 # Languages add-on <noreply-addon-languages@weblate.org>, 2025.
+# Alekseï <support@digiology.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-05-29 17:22+0000\n"
+"Last-Translator: Alekseï <support@digiology.org>\n"
+"Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
+"43upgrade__110-bullseye/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 5.14.2\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/43.upgrade/11.0-bullseye.mdx:1
 #, no-wrap
 msgid "Migrating from 4.x to 11.x"
-msgstr ""
+msgstr "Переход с версии 4.x на 11.x"
 
 #. type: Plain text
 #: docs/admin/43.upgrade/11.0-bullseye.mdx:6
 #, no-wrap
 msgid "This page is dedicated to help you migrating an instance from YunoHost 4.4.x (running on Debian Buster/10.x) to YunoHost 11.x (running on Debian Bullseye/11.x). Note: we decided to skip the version numbers from 5 to 10 to follow the Debian version numbers.\n"
 msgstr ""
+"Эта страница посвящена помощи в миграции экземпляра с YunoHost 4.4.x "
+"(работающего на Debian Buster/10.x) на YunoHost 11.x "
+"(работающего на Debian Bullseye/11.x). Примечание: мы решили пропустить "
+"номера версий от 5 до 10, чтобы следовать номерам версий Debian.\n"
 
 #. type: Title ##
 #: docs/admin/43.upgrade/11.0-bullseye.mdx:7
 #: docs/admin/43.upgrade/12.0-bookworm/index.mdx:7
 #, no-wrap
 msgid "Important notes"
-msgstr ""
+msgstr "Важные примечания"
 
 #. type: Plain text
 #: docs/admin/43.upgrade/11.0-bullseye.mdx:10
@@ -41,6 +48,9 @@ msgstr ""
 #, no-wrap
 msgid "- The YunoHost team did its best to make sure that the migration is as smooth as possible and was tested over the course of several months in several cases.\n"
 msgstr ""
+"- Команда YunoHost приложила все усилия, чтобы миграция прошла максимально "
+"гладко, и в течение нескольких месяцев проводила тестирование в различных "
+"конфигурациях.\n"
 
 #. type: Plain text
 #: docs/admin/43.upgrade/11.0-bullseye.mdx:12
@@ -75,7 +85,7 @@ msgstr ""
 #: docs/admin/43.upgrade/index.mdx:5
 #, no-wrap
 msgid "From the webadmin"
-msgstr ""
+msgstr "Из веб-админки"
 
 #. type: Plain text
 #: docs/admin/43.upgrade/11.0-bullseye.mdx:22
@@ -89,7 +99,7 @@ msgstr ""
 #: docs/admin/43.upgrade/index.mdx:11
 #, no-wrap
 msgid "From the command line"
-msgstr ""
+msgstr "Из командной строки"
 
 #. type: Plain text
 #: docs/admin/43.upgrade/11.0-bullseye.mdx:26
@@ -184,6 +194,8 @@ msgstr ""
 #, no-wrap
 msgid "Apps which won't be automatically repaired and need a force upgrade:\n"
 msgstr ""
+"Приложения, которые не будут автоматически восстановлены и требуют "
+"принудительного обновления:\n"
 
 #. type: Plain text
 #: docs/admin/43.upgrade/11.0-bullseye.mdx:71
@@ -269,6 +281,9 @@ msgid ""
 "Note: This issue should be resolved in `yunohost_version`: `4.4.2.13`\n"
 "You have an app that depends on the `build-essential` package.\n"
 msgstr ""
+"Примечание: Эта проблема должна быть решена в версии `yunohost_version`: "
+"`4.4.2.13`\n"
+"У вас есть приложение, которое зависит от пакета `build-essential`.\n"
 
 #. type: Plain text
 #: docs/admin/43.upgrade/11.0-bullseye.mdx:100

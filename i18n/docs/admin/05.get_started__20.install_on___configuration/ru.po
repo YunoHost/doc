@@ -2,31 +2,38 @@
 # This file is distributed under the same license as the YunoHost documentation.
 #
 # Languages add-on <noreply-addon-languages@weblate.org>, 2025.
+# Alekseï <support@digiology.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-04-19 08:39+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-06-02 20:31+0000\n"
+"Last-Translator: Alekseï <support@digiology.org>\n"
+"Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
+"05get_started__20install_on___configuration/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 5.14.2\n"
 
 #. type: Title ##
 #: docs/admin/05.get_started/20.install_on/_configuration.mdx:4
 #, no-wrap
 msgid "<FAIcon icon=\"fa-cog\"/> Proceed with the initial configuration"
-msgstr ""
+msgstr "<FAIcon icon=\"fa-cog\"/> Перейти к начальной настройке"
 
 #. type: Fenced div block (info)
 #: docs/admin/05.get_started/20.install_on/_configuration.mdx:6
 #, no-wrap
 msgid "If you are in the process of restoring a server using a YunoHost backup, you should skip this step and instead [restore the backup instead of the postinstall step](/admin/backups).\n"
 msgstr ""
+"Если вы восстанавливаете сервер с помощью резервной копии YunoHost, "
+"пропустите этот шаг и вместо этого "
+"[восстановите резервную копию, а не выполняйте шаг после установки]"
+"(/admin/backups).\n"
 
 #. type: Fenced div block (info)
 #: docs/admin/05.get_started/20.install_on/_configuration.mdx:10
@@ -36,6 +43,10 @@ msgid ""
 "\n"
 "For a VPS, please use the public IP address instead of the local domain or address.\n"
 msgstr ""
+"В данной документации предполагается, что вы находитесь в той же локальной "
+"сети, что и ваша установка YunoHost.\n"
+"\n"
+"Для VPS используйте публичный IP-адрес вместо локального домена или адреса.\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/_configuration.mdx:18
@@ -55,7 +66,7 @@ msgstr ""
 #: docs/admin/45.tutorials/35.email_configure_relay.mdx:49
 #, no-wrap
 msgid "<TabItem value=\"web\" label=\"From the web interface\">\n"
-msgstr ""
+msgstr "<TabItem value=\"web\" label=\"Из веб-интерфейса\">\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/_configuration.mdx:25
@@ -106,7 +117,7 @@ msgstr ""
 #: docs/admin/45.tutorials/35.email_configure_relay.mdx:66
 #, no-wrap
 msgid "<TabItem value=\"cli\" label=\"From the command line\">\n"
-msgstr ""
+msgstr "<TabItem value=\"cli\" label=\"Из командной строки\">\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/_configuration.mdx:38

@@ -1,31 +1,36 @@
 # Copyright (C) 2025 YunoHost Contributors
 # This file is distributed under the same license as the YunoHost documentation.
 #
+# Alekseï <support@digiology.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-04-19 08:39+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
-"Language: \n"
+"PO-Revision-Date: 2026-05-29 23:49+0000\n"
+"Last-Translator: Alekseï <support@digiology.org>\n"
+"Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
+"05get_started__05methods/ru/>\n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 5.14.2\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/05.get_started/05.methods.mdx:1
-#, fuzzy, no-wrap
-#| msgid "About self-hosting"
+#, no-wrap
 msgid "Choose your self-hosting mode"
-msgstr "Самостоятельная развёртка"
+msgstr "Выберите режим самостоятельного размещения"
 
 #. type: Plain text
 #: docs/admin/05.get_started/05.methods.mdx:7
-#, fuzzy, no-wrap
-#| msgid "You can host yourself at home (on a small computer), or on a remote server. Each solution has their pros and cons:\n"
+#, no-wrap
 msgid "You can host yourself at home (on a small computer), or on a remote server. Each solution has its pros and cons:\n"
-msgstr "Вы можете разместить его у себя дома (на небольшом компьютере) или на удаленном сервере. У каждого решения есть свои плюсы и минусы:\n"
+msgstr ""
+"Вы можете разместить приложение у себя дома (на небольшом компьютере) или на "
+"удалённом сервере. У каждого решения есть свои плюсы и минусы:\n"
 
 #. type: Title ##
 #: docs/admin/05.get_started/05.methods.mdx:8
@@ -41,12 +46,17 @@ msgstr "Вы можете запустить YunoHost у себя дома с п
 
 #. type: Plain text
 #: docs/admin/05.get_started/05.methods.mdx:14
-#, fuzzy, no-wrap
-#| msgid "**Cons**: you will have to [manually configure your internet box](/admin/get_started/post_install/port_forwarding) and [might be limited by your ISP](/admin/get_started/providers/isp/).\n"
+#, no-wrap
 msgid ""
 "- **Pros**: you will have physical control of the machine and only need to buy the hardware;\n"
 "- **Cons**: you will have to [manually configure your internet box](/admin/get_started/post_install/port_forwarding) and [might be limited by your ISP](/admin/get_started/providers/isp/).\n"
-msgstr "**Минусы** : вам придется [вручную настроить свой роутер](/admin/get_started/post_install/port_forwarding) и [возможные ограничения вашим провайдером](/admin/get_started/providers/isp/).\n"
+msgstr ""
+"- **Плюсы**: вы будете физически управлять машиной и вам нужно будет купить "
+"только оборудование;\n"
+"- **Минусы**: вам придётся [вручную настраивать ваш Интернет-маршрутизатор]"
+"(/admin/get_started/post_install/port_forwarding) и "
+"[вероятно, ваши возможности будут ограничены Интернет-провайдером]"
+"(/admin/get_started/providers/isp/).\n"
 
 #. type: Title ##
 #: docs/admin/05.get_started/05.methods.mdx:15
@@ -62,12 +72,15 @@ msgstr "VPN - это зашифрованный туннель между дву
 
 #. type: Plain text
 #: docs/admin/05.get_started/05.methods.mdx:21
-#, fuzzy, no-wrap
-#| msgid "**Pros**: you will have physical control of the machine, and the VPN hides your traffic from your ISP and allows you to bypass its limitations;\n"
+#, no-wrap
 msgid ""
 "- **Pros**: you will have physical control of the machine, and the VPN hides your traffic from your ISP and allows you to bypass its limitations;\n"
 "- **Cons**: you will have to pay a monthly subscription for the VPN.\n"
-msgstr "**Плюсы** : у вас будет физический контроль над машиной, а VPN скрывает ваш трафик от вашего интернет-провайдера и позволяет вам обойти его ограничения;\n"
+msgstr ""
+"- **Плюсы**: вы будете физически контролировать устройство, а VPN скрывает "
+"ваш трафик от вашего Интернет-провайдера и позволяет обходить его "
+"ограничения;\n"
+"- **Минусы**: вам придется платить ежемесячную абонентскую плату за VPN.\n"
 
 #. type: Title ##
 #: docs/admin/05.get_started/05.methods.mdx:22
@@ -83,12 +96,14 @@ msgstr "Вы можете арендовать виртуальный частн
 
 #. type: Plain text
 #: docs/admin/05.get_started/05.methods.mdx:28
-#, fuzzy, no-wrap
-#| msgid "**Cons**: you will have to pay a monthly subscription and won't have physical control of your server.\n"
+#, no-wrap
 msgid ""
 "- **Pros**: your server and its internet connectivity will be fast;\n"
 "- **Cons**: you will have to pay a monthly subscription and won't have physical control of your server.\n"
-msgstr "**Минусы** : вам придется платить ежемесячно за сервер и у вас не будет физического контроля над вашим сервером.\n"
+msgstr ""
+"- **Плюсы**: ваш сервер и его Интернет-соединение будут быстрыми;\n"
+"- **Минусы**: вам придётся платить ежемесячную абонентскую плату, и вы не "
+"будете иметь физического контроля над своим сервером.\n"
 
 #. type: Title ##
 #: docs/admin/05.get_started/05.methods.mdx:29

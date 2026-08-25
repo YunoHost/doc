@@ -2,37 +2,48 @@
 # This file is distributed under the same license as the YunoHost documentation.
 #
 # Languages add-on <noreply-addon-languages@weblate.org>, 2025.
+# Alekseï <support@digiology.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-06-02 20:31+0000\n"
+"Last-Translator: Alekseï <support@digiology.org>\n"
+"Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
+"35email__05clients/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 5.14.2\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/35.email/05.clients.mdx:1
 #, no-wrap
 msgid "Configure email clients"
-msgstr ""
+msgstr "Настройка почтовых клиентов"
 
 #. type: Plain text
 #: docs/admin/35.email/05.clients.mdx:9
 #, no-wrap
 msgid "You can fetch and send emails using your YunoHost instance from desktop email clients such as Thunderbird Desktop or on your smartphone with applications like K-9 Mail.\n"
 msgstr ""
+"Вы можете получать и отправлять электронные письма, используя свой экземпляр "
+"YunoHost, с помощью настольных почтовых клиентов, таких как Thunderbird "
+"Desktop, или на своем смартфоне с помощью таких приложений, как K-9 Mail.\n"
 
 #. type: Plain text
 #: docs/admin/35.email/05.clients.mdx:11
 #, no-wrap
 msgid "Modern mail clients should be able to configure themselves automatically. If autoconfiguration fails, you can do it manually following the instructions below. (If the autoconfiguration fails though, it should be understood as a bug in YunoHost, and we would be glad to read your feedback to try to reproduce the issue on our side!)\n"
 msgstr ""
+"Современные почтовые клиенты должны уметь настраиваться автоматически. Если "
+"автоматическая настройка не удалась, вы можете выполнить её вручную, следуя "
+"инструкциям ниже. (Если же автоматическая настройка не удалась, это следует "
+"рассматривать как ошибку в YunoHost, и мы будем рады получить ваш отзыв, "
+"чтобы попытаться воспроизвести проблему на нашей стороне!)\n"
 
 #. type: Title ###
 #: docs/admin/35.email/05.clients.mdx:12

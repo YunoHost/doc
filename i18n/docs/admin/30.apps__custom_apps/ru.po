@@ -3,31 +3,37 @@
 # This file is distributed under the same license as the YunoHost documentation package.
 # Automatically generated, 2025.
 #
+# Alekseï <support@digiology.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: 2025-11-11 19:34+0100\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-06-02 20:31+0000\n"
+"Last-Translator: Alekseï <support@digiology.org>\n"
+"Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
+"30apps__custom_apps/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 5.14.2\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/30.apps/custom_apps.mdx:1
 #, no-wrap
 msgid "Installing \"custom\" apps"
-msgstr ""
+msgstr "Установка «пользовательских» приложений"
 
 #. type: Plain text
 #: docs/admin/30.apps/custom_apps.mdx:6
 #, no-wrap
 msgid "While YunoHost has many apps available in the catalog, you may want to install apps that are not available in the official catalog, or set up your very own website that you crafted using HTML / CSS / PHP ..\n"
 msgstr ""
+"Хотя в каталоге YunoHost доступно множество приложений, вы можете захотеть "
+"установить приложения, которых нет в официальном каталоге, или создать "
+"собственный веб-сайт, разработанный с использованием HTML/CSS/PHP.\n"
 
 #. type: Title ##
 #: docs/admin/30.apps/custom_apps.mdx:7

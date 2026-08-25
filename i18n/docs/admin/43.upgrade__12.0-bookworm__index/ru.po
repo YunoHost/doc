@@ -2,26 +2,29 @@
 # This file is distributed under the same license as the YunoHost documentation package.
 #
 # Languages add-on <noreply-addon-languages@weblate.org>, 2025.
+# Alekseï <support@digiology.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-05-29 17:22+0000\n"
+"Last-Translator: Alekseï <support@digiology.org>\n"
+"Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
+"43upgrade__120-bookworm__index/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 5.14.2\n"
 
 #. type: Title ##
 #: docs/admin/43.upgrade/11.0-bullseye.mdx:7
 #: docs/admin/43.upgrade/12.0-bookworm/index.mdx:7
 #, no-wrap
 msgid "Important notes"
-msgstr ""
+msgstr "Важные примечания"
 
 #. type: Plain text
 #: docs/admin/43.upgrade/11.0-bullseye.mdx:10
@@ -29,6 +32,9 @@ msgstr ""
 #, no-wrap
 msgid "- The YunoHost team did its best to make sure that the migration is as smooth as possible and was tested over the course of several months in several cases.\n"
 msgstr ""
+"- Команда YunoHost приложила все усилия, чтобы миграция прошла максимально "
+"гладко, и в течение нескольких месяцев проводила тестирование в различных "
+"конфигурациях.\n"
 
 #. type: Plain text
 #: docs/admin/43.upgrade/11.0-bullseye.mdx:14
@@ -57,7 +63,7 @@ msgstr ""
 #: docs/admin/43.upgrade/index.mdx:5
 #, no-wrap
 msgid "From the webadmin"
-msgstr ""
+msgstr "Из веб-админки"
 
 #. type: Title ##
 #: docs/admin/43.upgrade/11.0-bullseye.mdx:23
@@ -65,7 +71,7 @@ msgstr ""
 #: docs/admin/43.upgrade/index.mdx:11
 #, no-wrap
 msgid "From the command line"
-msgstr ""
+msgstr "Из командной строки"
 
 #. type: Plain text
 #: docs/admin/43.upgrade/11.0-bullseye.mdx:32
