@@ -34,5 +34,13 @@
   "item.label.Development and packaging": {
     "message": "Development and packaging",
     "description": "Navbar item with label Development and packaging"
+  },
+  "item.label.Contribute": {
+    "message": "Contribute",
+    "description": "Navbar item with label Contribute"
+  },
+  "item.label.Apps catalog": {
+    "message": "Apps catalog",
+    "description": "Navbar item with label Apps catalog"
   }
 }

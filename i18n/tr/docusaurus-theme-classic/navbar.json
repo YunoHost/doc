@@ -4,24 +4,20 @@
     "description": "The title in the navbar"
   },
   "logo.alt": {
-    "message": "Logo Yunohost",
+    "message": "Yunohost Logo",
     "description": "The alt text of navbar logo"
   },
   "item.label.Administration": {
     "message": "Administration",
     "description": "Navbar item with label Administration"
   },
-  "item.label.Community": {
-    "message": "Communauté",
-    "description": "Navbar item with label Community"
-  },
-  "item.label.Development and packaging": {
-    "message": "Développement et packaging",
-    "description": "Navbar item with label Development and packaging"
-  },
   "item.label.Contribute": {
     "message": "Contribute",
     "description": "Navbar item with label Contribute"
+  },
+  "item.label.Community": {
+    "message": "Community",
+    "description": "Navbar item with label Community"
   },
   "item.label.Apps catalog": {
     "message": "Apps catalog",

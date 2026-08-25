@@ -31,10 +31,6 @@
     "message": "OVH",
     "description": "The label for category 'OVH' in sidebar 'admin'"
   },
-  "sidebar.admin.category.Internet service providers": {
-    "message": "Internet service providers",
-    "description": "The label for category Internet service providers in sidebar admin"
-  },
   "sidebar.admin.category.VPN providers": {
     "message": "VPN providers",
     "description": "The label for category 'VPN providers' in sidebar 'admin'"
@@ -51,9 +47,9 @@
     "message": "Configure your network to access your server",
     "description": "The generated-index page description for category 'After installation' in sidebar 'admin'"
   },
-  "sidebar.admin.category.👥 Accounts and app portal": {
-    "message": "👥 Accounts and app portal",
-    "description": "The label for category 👥 Accounts and app portal in sidebar admin"
+  "sidebar.admin.category.👥 Accounts and portal": {
+    "message": "👥 Accounts and portal",
+    "description": "The label for category '👥 Accounts and portal' in sidebar 'admin'"
   },
   "sidebar.admin.category.🌐 Domains": {
     "message": "🌐 Domains",
@@ -70,6 +66,14 @@
   "sidebar.admin.category.🚑 Backups": {
     "message": "🚑 Backups",
     "description": "The label for category '🚑 Backups' in sidebar 'admin'"
+  },
+  "sidebar.admin.category.✨ Upgrades": {
+    "message": "✨ Upgrades",
+    "description": "The label for category '✨ Upgrades' in sidebar 'admin'"
+  },
+  "sidebar.admin.category.Migrating from 11.x to 12.x": {
+    "message": "Migrating from 11.x to 12.x",
+    "description": "The label for category 'Migrating from 11.x to 12.x' in sidebar 'admin'"
   },
   "sidebar.admin.category.📜 Tutorials": {
     "message": "📜 Tutorials",
@@ -91,33 +95,21 @@
     "message": "🐞 Troubleshooting",
     "description": "The label for category '🐞 Troubleshooting' in sidebar 'admin'"
   },
-  "sidebar.admin.category.✨ Upgrades": {
-    "message": "✨ Upgrades",
-    "description": "The label for category '✨ Upgrades' in sidebar 'admin'"
+  "sidebar.admin.category.👾 Advanced": {
+    "message": "👾 Advanced",
+    "description": "The label for category '👾 Advanced' in sidebar 'admin'"
   },
-  "sidebar.admin.category.Migrating from 11.x to 12.x": {
-    "message": "Migrating from 11.x to 12.x",
-    "description": "The label for category 'Migrating from 11.x to 12.x' in sidebar 'admin'"
+  "sidebar.admin.category.👾 Advanced.link.generated-index.title": {
+    "message": "👾 Advanced",
+    "description": "The generated-index page title for category '👾 Advanced' in sidebar 'admin'"
   },
-  "sidebar.devpackaging.category.Write documentation": {
-    "message": "Write documentation",
-    "description": "The label for category Write documentation in sidebar devpackaging"
+  "sidebar.devpackaging.category.📦 Application packaging": {
+    "message": "📦 Application packaging",
+    "description": "The label for category '📦 Application packaging' in sidebar 'devpackaging'"
   },
-  "sidebar.devpackaging.category.Contribute to the core": {
-    "message": "Contribute to the core",
-    "description": "The label for category Contribute to the core in sidebar devpackaging"
-  },
-  "sidebar.devpackaging.category.Packaging applications": {
-    "message": "Packaging applications",
-    "description": "The label for category Packaging applications in sidebar devpackaging"
-  },
-  "sidebar.devpackaging.category.The manifest": {
-    "message": "The manifest",
-    "description": "The label for category The manifest in sidebar devpackaging"
-  },
-  "sidebar.devpackaging.category.The scripts": {
-    "message": "The scripts",
-    "description": "The label for category The scripts in sidebar devpackaging"
+  "sidebar.devpackaging.category.App scripts": {
+    "message": "App scripts",
+    "description": "The label for category 'App scripts' in sidebar 'devpackaging'"
   },
   "sidebar.devpackaging.category.Advanced": {
     "message": "Advanced",
@@ -134,26 +126,6 @@
   "sidebar.devpackaging.category.Misc resources.link.generated-index.title": {
     "message": "Misc resources",
     "description": "The generated-index page title for category 'Misc resources' in sidebar 'devpackaging'"
-  },
-  "sidebar.admin.category.👥 Accounts and portal": {
-    "message": "👥 Accounts and portal",
-    "description": "The label for category '👥 Accounts and portal' in sidebar 'admin'"
-  },
-  "sidebar.admin.category.👾 Advanced": {
-    "message": "👾 Advanced",
-    "description": "The label for category '👾 Advanced' in sidebar 'admin'"
-  },
-  "sidebar.admin.category.👾 Advanced.link.generated-index.title": {
-    "message": "👾 Advanced",
-    "description": "The generated-index page title for category '👾 Advanced' in sidebar 'admin'"
-  },
-  "sidebar.devpackaging.category.📦 Application packaging": {
-    "message": "📦 Application packaging",
-    "description": "The label for category '📦 Application packaging' in sidebar 'devpackaging'"
-  },
-  "sidebar.devpackaging.category.App scripts": {
-    "message": "App scripts",
-    "description": "The label for category 'App scripts' in sidebar 'devpackaging'"
   },
   "sidebar.devpackaging.category.⚙️ Core development": {
     "message": "⚙️ Core development",

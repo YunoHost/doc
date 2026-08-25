@@ -22,5 +22,9 @@
   "item.label.Apps catalog": {
     "message": "Apps catalog",
     "description": "Navbar item with label Apps catalog"
+  },
+  "item.label.Contribute": {
+    "message": "Contribute",
+    "description": "Navbar item with label Contribute"
   }
 }

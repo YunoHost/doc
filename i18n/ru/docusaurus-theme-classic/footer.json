@@ -53,7 +53,7 @@
   },
   "link.item.label.CGUs": {
     "message": "CGUs",
-    "description": "The label of footer link with label=CGUs linking to https://doc.yunohost.org/terms_of_services"
+    "description": "The label of footer link with label=CGUs linking to /community/terms_of_services"
   },
   "link.item.label.Organization": {
     "message": "Organization",
@@ -73,7 +73,7 @@
   },
   "link.item.label.Documentation": {
     "message": "Documentation",
-    "description": "The label of footer link with label=Documentation linking to https://doc.yunohost.org/"
+    "description": "The label of footer link with label=Documentation linking to /"
   },
   "link.item.label.Apps catalog": {
     "message": "Apps catalog",
@@ -81,7 +81,7 @@
   },
   "link.item.label.Ask for help": {
     "message": "Ask for help",
-    "description": "The label of footer link with label=Ask for help linking to https://doc.yunohost.org/help"
+    "description": "The label of footer link with label=Ask for help linking to /community/help"
   },
   "link.item.label.Service status": {
     "message": "Service status",
