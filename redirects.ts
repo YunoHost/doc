@@ -114,11 +114,19 @@ const redirects_from_grav: Array<{ from: string; to: string }> = [
 ];
 
 const en_redirects_from_grav: Array<{ from: string; to: string }> = redirects_from_grav.map(
-  item => ({ from: '/en' + item.from, to: item.to})
+    item => ({ from: '/en' + item.from, to: item.to})
 );
 
+const redirects_from_yunohost_webadmin: Array<{ from: string; to: string }> = [
+  { from: '/admin/get_started/providers/registrar/ovh/', to: '/admin/get_started/providers/registrar/ovh/autodns', },
+];
+
 const redirects: Options = {
-    redirects: [...redirects_from_grav, ...en_redirects_from_grav],
+  redirects: [
+    ...redirects_from_grav,
+    ...en_redirects_from_grav,
+    ...redirects_from_yunohost_webadmin
+  ],
 };
 
 export default redirects;
