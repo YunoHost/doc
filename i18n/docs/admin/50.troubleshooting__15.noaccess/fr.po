@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2026-01-04 16:21+0000\n"
+"POT-Creation-Date: 2026-06-04 14:05+0000\n"
 "PO-Revision-Date: 2025-11-29 16:25+0000\n"
 "Last-Translator: Weblate Admin <yunohost@translate.yunohost.org>\n"
 "Language-Team: French <https://translate.yunohost.org/projects/yunohost-"
@@ -138,20 +138,23 @@ msgstr "Vous avez accès en SSH mais pas à la Web admin ou inversement"
 
 #. type: Title ###
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:45
-#, no-wrap
-msgid "You are trying to log in with SSH as `root` instead of `admin` user"
+#, fuzzy, no-wrap
+#| msgid "You are trying to log in with SSH as `root` instead of `admin` user"
+msgid "You are trying to log in with SSH as `root` instead of a user from the `admins` group"
 msgstr "Vous essayez de vous connecter en SSH avec `root` plutôt qu'avec `admin`"
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:48
-#, no-wrap
-msgid "By default, SSH connection has to be made as `admin`. It possible to log into the server as `root` *only from the local network of the server*. If your server is a VPS, the web console or VNC provided by VPS providers may work.\n"
+#, fuzzy, no-wrap
+#| msgid "By default, SSH connection has to be made as `admin`. It possible to log into the server as `root` *only from the local network of the server*. If your server is a VPS, the web console or VNC provided by VPS providers may work.\n"
+msgid "By default, SSH connection has to be made as a user in the `admins` group. It possible to log into the server as `root` *only from the local network of the server*. If your server is a VPS, the web console or VNC provided by VPS providers may work.\n"
 msgstr "Par défaut, la connexion en SSH doit s'effectuer avec l'utilisateur `admin`. Il est possible de se connecter à la machine avec l'utilisateur `root` *seulement depuis le réseau local* sur lequel se situe le serveur (ou bien via la console web / VNC pour des VPS).\n"
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:50
-#, no-wrap
-msgid "If you are running `yunohost` commands in the CLI as `admin`, you have to call them with `sudo` before (for example `sudo yunohost user list`). You can also become `root` by running `sudo su`.\n"
+#, fuzzy, no-wrap
+#| msgid "If you are running `yunohost` commands in the CLI as `admin`, you have to call them with `sudo` before (for example `sudo yunohost user list`). You can also become `root` by running `sudo su`.\n"
+msgid "If you are running `yunohost` commands in the CLI as an administrator of your server, you have to call them with `sudo` before (for example `sudo yunohost user list`). You can also become `root` by running `sudo su`.\n"
 msgstr "Lorsque vous exécutez des commandes `yunohost` en tant qu'admin, il faut les précéder de la commande `sudo` (par exemple `sudo yunohost user list`). Vous pouvez également devenir `root` en tapant `sudo su`.\n"
 
 #. type: Title ###
