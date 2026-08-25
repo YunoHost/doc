@@ -2,19 +2,22 @@
 # This file is distributed under the same license as the YunoHost documentation.
 #
 # Languages add-on <noreply-addon-languages@weblate.org>, 2025.
+# Alekseï <support@digiology.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2025-12-02 17:58+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"POT-Creation-Date: 2026-01-04 16:21+0000\n"
+"PO-Revision-Date: 2026-08-25 06:33+0000\n"
+"Last-Translator: Alekseï <support@digiology.org>\n"
+"Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
+"45tutorials__35email_configure_relay/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 5.14.2\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/_configuration.mdx:18
@@ -34,7 +37,7 @@ msgstr ""
 #: docs/admin/45.tutorials/35.email_configure_relay.mdx:49
 #, no-wrap
 msgid "<TabItem value=\"web\" label=\"From the web interface\">\n"
-msgstr ""
+msgstr "<TabItem value=\"web\" label=\"Из веб-интерфейса\">\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/_configuration.mdx:36
@@ -55,25 +58,29 @@ msgstr ""
 #: docs/admin/45.tutorials/35.email_configure_relay.mdx:66
 #, no-wrap
 msgid "<TabItem value=\"cli\" label=\"From the command line\">\n"
-msgstr ""
+msgstr "<TabItem value=\"cli\" label=\"Из командной строки\">\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/45.tutorials/35.email_configure_relay.mdx:1
 #, no-wrap
 msgid "Configure SMTP relay"
-msgstr ""
+msgstr "Настройка SMTP-ретранслятора"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/35.email_configure_relay.mdx:9
 #, no-wrap
 msgid "If your ISP blocks port 25, if you can't set a reverseDNS on your server, or if you have any other troubles using the built-in SMTP server on YunoHost, you may want to setup your YunoHost server to use an SMTP relay.\n"
 msgstr ""
+"Если ваш интернет-провайдер блокирует порт 25, если вы не можете настроить "
+"обратное DNS-соединение на своём сервере или если у вас возникли другие "
+"проблемы с использованием встроенного SMTP-сервера в YunoHost, возможно, вам "
+"стоит настроить сервер YunoHost для использования SMTP-ретранслятора.\n"
 
 #. type: Title ##
 #: docs/admin/45.tutorials/35.email_configure_relay.mdx:10
 #, no-wrap
 msgid "What is an SMTP relay?"
-msgstr ""
+msgstr "Что такое SMTP-ретранслятор?"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/35.email_configure_relay.mdx:14
@@ -82,54 +89,94 @@ msgid ""
 "An SMTP relay is basically a third party hosted SMTP server that will send emails on behalf of your own SMTP server (Postfix service on YunoHost).\n"
 "Once setup correctly on YunoHost, its operation is transparent, both for you and for your correspondents: they will see emails as coming from your YunoHost main URL, but all the sending will be delegated to the SMTP relay you have chosen and configured.\n"
 msgstr ""
+"SMTP-ретранслятор — это, по сути, сторонний SMTP-сервер, который будет "
+"отправлять электронные письма от имени вашего собственного SMTP-сервера "
+"(сервис Postfix на YunoHost).\n"
+"После правильной настройки на YunoHost его работа прозрачна как для вас, так "
+"и для ваших корреспондентов: они будут видеть электронные письма как "
+"отправленные с вашего основного URL-адреса YunoHost, но вся отправка будет "
+"делегирована выбранному и настроенному вами SMTP-ретранслятору.\n"
 
 #. type: Title ##
 #: docs/admin/45.tutorials/35.email_configure_relay.mdx:15
 #, no-wrap
 msgid "<FAIcon icon=\"fa-exclamation-triangle\"/> Disadvantages of SMTP relays"
 msgstr ""
+"<FAIcon icon=\"fa-exclamation-triangle\"/> Недостатки SMTP-ретрансляторов"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/35.email_configure_relay.mdx:18
 #, no-wrap
 msgid "It's important to note that using an SMTP relay has to be seen as a (big) compromise in the world of self-hosting. Indeed, when using an SMTP relay, not only a third party sends emails on your behalf, but it has full access to the content of all the emails you'll send and can also possibly modify them (For example, by default, MailJet rewrites the html hyperlinks contained in your emails, in order to track the activity of your correspondents). Be also aware that an SMTP relay is setup for your whole YunoHost server: you can't choose which emails or which users go through it because all future emails will.\n"
 msgstr ""
+"Важно отметить, что использование SMTP-ретранслятора следует рассматривать "
+"как (значительный) компромисс в мире самостоятельного хостинга. "
+"Действительно, при использовании SMTP-ретранслятора третья сторона не только "
+"отправляет электронные письма от вашего имени, но и имеет полный доступ к "
+"содержимому всех отправляемых вами писем и может даже изменять их (например, "
+"по умолчанию MailJet переписывает HTML-гиперссылки в ваших письмах, чтобы "
+"отслеживать активность ваших корреспондентов). Также имейте в виду, что SMTP-"
+"ретранслятор настраивается для всего вашего сервера YunoHost: вы не можете "
+"выбирать, какие письма или какие пользователи будут через него проходить, "
+"потому что через него будут проходить все будущие письма.\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/35.email_configure_relay.mdx:20
 #, no-wrap
 msgid "Beyond the privacy considerations above, an SMTP relay can impose technical limitations that one would not have if port 25 was open. For example, with most relays, if a user of your YunoHost server declares **an external \"forwarding address\"** in order to automatically forward messages received on your YunoHost server to another mailbox, **such forwarding will not work** for emails originating from outside your server, without any warning. Indeed, relays generally require that the messages they forward have a sender address from your domain (to fight spam and preserve the reputation of their services), which is not the case for an \"automatic forward\" where the original sender of the mail is kept; the message is then blocked by the relay (which, normally, warns your YunoHost admin, but only afterwards)\n"
 msgstr ""
+"Помимо вышеупомянутых соображений конфиденциальности, SMTP-ретранслятор "
+"может накладывать технические ограничения, которых не было бы при открытом "
+"порте 25. Например, в большинстве случаев, если пользователь вашего сервера "
+"YunoHost указывает **внешний «адрес переадресации»** для автоматической "
+"пересылки сообщений, полученных на вашем сервере YunoHost, в другой почтовый "
+"ящик, **такая переадресация не будет работать** для писем, поступающих извне "
+"вашего сервера, без какого-либо предупреждения. Действительно, ретрансляторы "
+"обычно требуют, чтобы пересылаемые ими сообщения имели адрес отправителя из "
+"вашего домена (для борьбы со спамом и сохранения репутации своих сервисов), "
+"чего нет в случае «автоматической пересылки», где сохраняется первоначальный "
+"отправитель письма; затем сообщение блокируется ретранслятором (который, как "
+"правило, предупреждает вашего администратора YunoHost, но только задним "
+"числом)\n"
 
 #. type: Title ##
 #: docs/admin/45.tutorials/35.email_configure_relay.mdx:21
 #, no-wrap
 msgid "How to use an SMTP relay with YunoHost?"
-msgstr ""
+msgstr "Как использовать SMTP-ретранслятор с YunoHost?"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/35.email_configure_relay.mdx:24
 #, no-wrap
 msgid "YunoHost has a built-in SMTP relay configuration, available from version 4.1. That configuration is not yet available from the admin web interface, though. You will have to use the command line interface.\n"
 msgstr ""
+"YunoHost имеет встроенную функцию настройки SMTP-ретранслятора, доступную "
+"начиная с версии 4.1. Однако эта настройка пока недоступна через веб-"
+"интерфейс администратора. Вам придётся использовать интерфейс командной "
+"строки.\n"
 
 #. type: Title ###
 #: docs/admin/45.tutorials/35.email_configure_relay.mdx:25
 #, no-wrap
 msgid "Step 1: Register with an SMTP relay provider"
-msgstr ""
+msgstr "Шаг 1: Зарегистрируйтесь у поставщика услуг SMTP-ретрансляции"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/35.email_configure_relay.mdx:28
 #, no-wrap
 msgid "Many providers exist. Some have free plans with or without limitations, it's up to you. As written above, you have to be careful with your choice as you will basically handover all your emails to that third party. Whether you can trust it or not, that's your call!\n"
 msgstr ""
+"Существует множество провайдеров. У некоторых есть бесплатные тарифы с "
+"ограничениями или без них, выбор за вами. Как уже говорилось выше, вам нужно "
+"быть осторожным с выбором, поскольку вы, по сути, передадите всю свою "
+"электронную почту этой третьей стороне. Можно ли ей доверять или нет — "
+"решать вам!\n"
 
 #. type: Title ###
 #: docs/admin/45.tutorials/35.email_configure_relay.mdx:29
 #, no-wrap
 msgid "Step 2: Setup your DNS records correctly"
-msgstr ""
+msgstr "Шаг 2: Правильно настройте DNS-записи"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/35.email_configure_relay.mdx:34
@@ -139,36 +186,56 @@ msgid ""
 "Standard procedure is to add a DKIM key and a SPF key to your DNS records.\n"
 "The way to modify these records and the value of the keys you'll have to add depend both on your domain name provider and SMTP relay provider.\n"
 msgstr ""
+"После регистрации провайдер SMTP-ретрансляции обычно попросит вас изменить "
+"ваши DNS-записи.\n"
+"Стандартная процедура заключается в добавлении ключа DKIM и ключа SPF в ваши "
+"DNS-записи.\n"
+"Способ изменения этих записей и значения ключей, которые вам нужно будет "
+"добавить, зависят как от вашего провайдера доменных имен, так и от "
+"провайдера SMTP-ретрансляции.\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/35.email_configure_relay.mdx:36
 #, no-wrap
 msgid "Usually, the SMTP relay provider will provide you with a guide on how to modify these records, together with an automatic check tool that will tell you when your DNS have been setup correctly. That step is mandatory to prove \"the world\" that you, owner of your domain name, did explicitly authorize your SMTP relay provider to send emails on your behalf.\n"
 msgstr ""
+"Обычно провайдер SMTP-ретрансляции предоставляет руководство по изменению "
+"этих записей, а также инструмент автоматической проверки, который сообщит "
+"вам, правильно ли настроены ваши DNS-записи. Этот шаг обязателен для того, "
+"чтобы доказать «всем миру», что вы, владелец вашего доменного имени, явно "
+"разрешили вашему провайдеру SMTP-ретрансляции отправлять электронные письма "
+"от вашего имени.\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/35.email_configure_relay.mdx:38
 #, no-wrap
 msgid "Please note that modifying your DNS records could sometimes take over 24h to take effect, so be patient!\n"
 msgstr ""
+"Обратите внимание, что эффект от внесения изменений в DNS-записи иногда "
+"может проявиться более чем через 24 часа, поэтому наберитесь терпения!\n"
 
 #. type: Fenced div block (warning)
 #: docs/admin/45.tutorials/35.email_configure_relay.mdx:39
 #, no-wrap
 msgid "<FAIcon icon=\"fa-exclamation-triangle\"/> From now on, a non trusty SMTP relay provider could send emails from your main domain without telling you.\n"
 msgstr ""
+"<FAIcon icon=\"fa-exclamation-triangle\"/> Отныне недобросовестный SMTP-"
+"провайдер может отправлять электронные письма с вашего основного домена, не "
+"сообщая вам об этом.\n"
 
 #. type: Title ###
 #: docs/admin/45.tutorials/35.email_configure_relay.mdx:43
 #, no-wrap
 msgid "Step 3: Setup YunoHost correctly"
-msgstr ""
+msgstr "Шаг 3: Правильная настройка YunoHost"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/35.email_configure_relay.mdx:46
 #, no-wrap
 msgid "It can be configured either from the webadmin or the command line.\n"
 msgstr ""
+"Его можно настроить либо через веб-интерфейс администратора, либо через "
+"командную строку.\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/35.email_configure_relay.mdx:52
@@ -177,6 +244,9 @@ msgid ""
 "Go to your web admin, in `Tools` > `Yunohost Settings` and `Email`.\n"
 "Now set all options requests :\n"
 msgstr ""
+"Перейдите в веб-панель администратора, в раздел «Инструменты» > «Настройки "
+"Yunohost» (`Tools` > `Yunohost Settings`) и «Электронная почта» (`Email`).\n"
+"Теперь настройте все параметры запросов:\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/35.email_configure_relay.mdx:57
@@ -187,6 +257,10 @@ msgid ""
 "- **SMTP relay user** : Login or identification mail server.\n"
 "- **SMTP relay password** : Your SMTP relay password.\n"
 msgstr ""
+"- **SMTP relay host** : URL SMTP-сервера\n"
+"- **SMTP relay port** : Порт, используемый для связи с удалённым сервером.\n"
+"- **SMTP relay user** : Логин или идентификатор почтового сервера.\n"
+"- **SMTP relay password** : Ваш пароль SMTP-ретранслятора.\n"
 
 #. type: Fenced div block (warning)
 #: docs/admin/45.tutorials/35.email_configure_relay.mdx:58
@@ -194,12 +268,18 @@ msgstr ""
 #, no-wrap
 msgid "<FAIcon icon=\"fa-exclamation-triangle\"/> Password with `#` char won't works properly due to postfix limitation (it's possible other chars are forbidden, don't hesitate to report it to update this doc).\n"
 msgstr ""
+"<FAIcon icon=\"fa-exclamation-triangle\"/> Пароль, содержащий символ `#`, не "
+"будет работать должным образом из-за ограничений постфиксной клавиатуры ("
+"возможно, другие символы запрещены, сообщите об этом, чтобы мы обновили этот "
+"документ).\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/35.email_configure_relay.mdx:68
 #, no-wrap
 msgid "In order to setup your YunoHost to use your SMTP relay, you will have to configure four things:\n"
 msgstr ""
+"Для настройки YunoHost для использования SMTP-ретранслятора вам потребуется "
+"сконфигурировать четыре параметра:\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/35.email_configure_relay.mdx:73
@@ -210,6 +290,14 @@ msgid ""
 "3. Your SMTP relay username (for this tutorial we will use `username`)\n"
 "4. Your SMTP relay password (for this tutorial we will use `password`)\n"
 msgstr ""
+"1. URL-адрес вашего SMTP-ретранслятора "
+"(в этом руководстве мы будем использовать `smtprelay.tld`)\n"
+"2. Порт, через который осуществляется доступ к ретранслятору "
+"(в данном руководстве мы будем использовать порт 2525).\n"
+"3. Имя пользователя вашего SMTP-ретранслятора "
+"(в этом руководстве мы будем использовать `username`)\n"
+"4. Пароль для SMTP-ретранслятора "
+"(в этом руководстве мы будем использовать `password`)\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/35.email_configure_relay.mdx:79

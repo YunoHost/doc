@@ -1,0 +1,130 @@
+# Copyright (C) 2026 YunoHost Contributors
+# This file is distributed under the same license as the YunoHost documentation package.
+#
+# Mehmet Can Gökçe <rainessandrai2023@gmail.com>, 2026.
+msgid ""
+msgstr ""
+"Project-Id-Version: YunoHost documentation VERSION\n"
+"POT-Creation-Date: 2026-01-04 16:21+0000\n"
+"PO-Revision-Date: 2026-04-09 11:51+0000\n"
+"Last-Translator: Mehmet Can Gökçe <rainessandrai2023@gmail.com>\n"
+"Language-Team: Turkish <https://translate.yunohost.org/projects/yunohost-doc/"
+"05get_started__02why_should_you_not_host_yourself/tr/>\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.14.2\n"
+
+#. type: Yaml Front Matter Hash Value: description
+#: docs/admin/05.get_started/02.why_should_you_not_host_yourself.mdx:1
+#: docs/admin/05.get_started/10.providers/10.isp.mdx:1
+#: docs/admin/05.get_started/10.providers/20.servers.mdx:1
+#, no-wrap
+msgid " "
+msgstr " "
+
+#. type: Yaml Front Matter Hash Value: title
+#: docs/admin/05.get_started/02.why_should_you_not_host_yourself.mdx:1
+#, no-wrap
+msgid "Why should you (not?) host yourself?"
+msgstr "Neden kendi sunucunu kendin çalıştırma(ma)lısın?"
+
+#. type: Title ##
+#: docs/admin/05.get_started/02.why_should_you_not_host_yourself.mdx:8
+#, no-wrap
+msgid "Why should you host yourself?"
+msgstr "Neden kendi sunucunu kendin çalıştırmalısın?"
+
+#. type: Plain text
+#: docs/admin/05.get_started/02.why_should_you_not_host_yourself.mdx:11
+#, no-wrap
+msgid "- **You believe in a free, open and decentralized internet.** In a centralized internet, private companies and government can spy, analyze and influence people by dictating how they connect with each other, and by filtering content. YunoHost is developed by a community who believe in an open and decentralized internet, and we hope that you do, too!\n"
+msgstr ""
+"- **Eğer özgür, bağımsız ve açık kaynaklı bir internete inanıyorsan.** "
+"merkezleşmiş internette şirketler ve devletler, insanların davranışlarını "
+"gizlice izleyebilir, analiz edebilir ve birbirleri ile nasıl iletişim "
+"kuracaklarına müdahele edebilir. Bunu, gördükleri içerikleri filtreleyerek "
+"yaparlar. YunoHost, açık ve bağımsız bir internete inanan bir topluluk "
+"tarafından geliştiriliyor ve umuyoruz ki siz de öyle düşünüyorsunuzdur!\n"
+
+#. type: Plain text
+#: docs/admin/05.get_started/02.why_should_you_not_host_yourself.mdx:13
+#, no-wrap
+msgid "- **You want to have control of your data and services.** Your pictures, chat messages, browsing history, and that text you are writing for school, have nothing to do on somebody else's server (a.k.a. The Cloud). They are part of your private life, but also part of your family's life, your friend's life, and so on. These data should be managed by *you*, not a random company in the US who wants your data to analyze them and sell the results.\n"
+msgstr ""
+"- **Verilerin ve kullandığı servisler üzerinde kontrol sahibi olmak "
+"istiyorsun.** Resimlerin, mesajların, arama gemişin ve okulda yazdığın "
+"yazının başkasının sunucusunda (yani bulutta) olmasının hiçbir nedeni yok. "
+"Onlar bizim, ailemizin, arkadaşlarımız ve diğer önemli kişilerin özel "
+"hayatının bir parçası. Bu verileri *senin* tarafından yönetilmeli. Senin "
+"verilerini analiz edip sonuçlarını para karşılığında satmak isteyen "
+"Amerikalı bir şirket tarafından değil.\n"
+
+#. type: Plain text
+#: docs/admin/05.get_started/02.why_should_you_not_host_yourself.mdx:15
+#, no-wrap
+msgid "- **You want to learn about how computers and the Internet work.** Operating your own server is a pretty good context to understand the basic mechanisms at the heart of operating systems and the Internet. You might have to deal with command line interface, network architecture, DNS configuration, SSH, and so on.\n"
+msgstr ""
+"- **İnternetin ve bilgisayarların nasıl çalıştığı konusunda daha fazla şey "
+"öğrenmek istiyorsan.** Kendi sunucunu çalıştırmak, işletim sistemlerinin ve "
+"internetin basit mekanizmalarını anlaman konusunda iyi bir fikir sağlar. "
+"Komut arayüzleri ile, ağ mimarisi ile, DNS ayarları ile, SSH ile ve "
+"benzerleri ile uğraşmak zorunda kalabilirsin.\n"
+
+#. type: Plain text
+#: docs/admin/05.get_started/02.why_should_you_not_host_yourself.mdx:17
+#, no-wrap
+msgid "- **You want to explore new possibilities and customize things.** Ever dreamed of running a Minecraft server for you friends, or a persistent IRC or XMPP client? With your very own server, you can manually install and run virtually any program you want, and customize every bit.\n"
+msgstr ""
+"- **Yeni şeyler keşfetmek ve özelleştirmek istiyorsan.** Hiç arkadaşlarınla "
+"oynamak için Minecraft sunucusu çalıştırdığını düşündün mü? Peki düzenli "
+"olarak çalışan IRC veya XMPP hizmetini? Kendi sunucunla birlikte istediğin "
+"her şeyi yükleyebilir ve çalıştırabilirsin. Hatta istediğin gibi "
+"özelleştirebilirsin de.\n"
+
+#. type: Title ##
+#: docs/admin/05.get_started/02.why_should_you_not_host_yourself.mdx:18
+#, no-wrap
+msgid "Why should you *not* host yourself?"
+msgstr "Neden kendi sunucunu kendin *çalıştırmamalısın*?"
+
+#. type: Plain text
+#: docs/admin/05.get_started/02.why_should_you_not_host_yourself.mdx:21
+#, no-wrap
+msgid "- **Self-hosting requires some work and patience.** Hosting yourself is a bit like growing your own garden or vegetables: it requires work and patience. While YunoHost aims to do all the hard work for you, self-hosting still requires that you take time to learn and configure a few things to setup your server properly. You will also need to perform maintenance tasks (such as upgrades) from time to time, or to ask for support if some things break.\n"
+msgstr ""
+"- **Kendi sunucunu çalıştırmak sabır ve emek ister.** Kendi sunucunu "
+"çalıştırmak, kendi sebzelerini yetiştirmeye benzer. Sabır ve emek ister. "
+"YunoHost, tüm zor işleri senin yerine yapmayı hedefler ama kendi sunucunuzun "
+"düzgün bir şekilde çalışabilmesi ve düzgün bir şekilde özelleştirmeniz için "
+"bir kaç şeyi öğrenmeniz yine de gerekir. Ayrıca bakım işlerini yapmanız "
+"gerekir veya bir şeyler bozulduğunda yardım istemeniz gerekebilir.\n"
+
+#. type: Plain text
+#: docs/admin/05.get_started/02.why_should_you_not_host_yourself.mdx:23
+#, no-wrap
+msgid "- **With great servers comes great responsibilities.** Operating a server means that you are responsible for the data you are hosting. Nobody will be able to recover them for you if they get lost. YunoHost provides backup features, which you should use regularly to backup the configurations and data you care about. You should also keep an eye on security news and recommendations so that your server or critical data don't get compromised.\n"
+msgstr ""
+"- **İyi bir sunucu büyük sorumlulukları beraberinde getirir.** Kendi "
+"sunucunuzu çalıştırmak demek, kendi verinizden kendinizin sorumlu olduğunuz "
+"anlamına gelir. Eğer kendi verilerinizi kaybederseniz, hiç kimse onları geri "
+"getiremez. YunoHost'un kndi yedeklee seçenekleri var (ki önemsediğiniz "
+"veriler için özelleştirme yapmanızı ve düzenli aralıklarla yedeklemelisiniz)"
+". Aynı zamanda güvenlikle ilgili haberlere ve tavsiyelere göz "
+"gezdirmelisiniz. Böylelikle sunucunuz veya sunucunuzdaki kritik bir veri "
+"asla sızmaz.\n"
+
+#. type: Plain text
+#: docs/admin/05.get_started/02.why_should_you_not_host_yourself.mdx:24
+#, no-wrap
+msgid "- **Quality and performance probably won't be as good as premium services.** YunoHost (and most of the applications packaged for it) are free and open-source software, developed by communities of people in their free time and on the basis of best effort. There is no absolute guarantee that software will work in every possible circumstance. The performance of your self-hosted server is also related to its CPU and RAM, and to the available internet connectivity.\n"
+msgstr ""
+"- **Kalite ve performans, ücretli servisler kadar iyi olmayabilir.** "
+"YunoHost (ve barındırdığı bir çok uygulama) ücretsiz ve açık kaynak kodlu "
+"birer yazılımdır. Bunlar, insaların boş vakitlerinde, ellerinden gelenin en "
+"iyilerini yapmasıyla ortaya çıkmıştır. Bu uygulamaların her zaman her türlü "
+"şartta çalışacağının hiçbir garantisi yoktur. Kendi çalıştırdğın sunucunun "
+"performansı aynı zamanda işlemci gücüne, RAM'ine ve internet hızına da "
+"bağlıdır.\n"

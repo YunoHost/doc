@@ -2,74 +2,98 @@
 # This file is distributed under the same license as the YunoHost documentation.
 #
 # Languages add-on <noreply-addon-languages@weblate.org>, 2025.
+# Alekseï <support@digiology.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2025-12-02 17:58+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"POT-Creation-Date: 2026-01-04 16:21+0000\n"
+"PO-Revision-Date: 2026-08-24 20:50+0000\n"
+"Last-Translator: Alekseï <support@digiology.org>\n"
+"Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
+"45tutorials__25external_storage/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 5.14.2\n"
 
 #. type: Title ##
 #: docs/admin/05.get_started/20.install_on/wsl.mdx:28
 #: docs/admin/45.tutorials/25.external_storage.mdx:6
 #, no-wrap
 msgid "Introduction"
-msgstr ""
+msgstr "Введение"
 
 #. type: Yaml Front Matter Hash Value: sidebar_label
 #: docs/admin/45.tutorials/25.external_storage.mdx:1
 #, no-wrap
 msgid "Add external storage"
-msgstr ""
+msgstr "Добавление внешнего хранилища"
 
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/45.tutorials/25.external_storage.mdx:1
 #, no-wrap
 msgid "Adding an external storage to your server"
-msgstr ""
+msgstr "Добавление внешнего хранилища к вашему серверу"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/25.external_storage.mdx:9
 #, no-wrap
 msgid "Apart from the monitoring system that ensures that your system's partitions are not too small, YunoHost does not currently deal with the organisation of your partitions and disks.\n"
 msgstr ""
+"Помимо системы мониторинга, которая следит за тем, чтобы разделы вашей "
+"системы не были слишком маленькими, YunoHost в настоящее время не занимается "
+"организацией ваших разделов и дисков.\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/25.external_storage.mdx:11
 #, no-wrap
 msgid "If you are hosting on an ARM card with an SD card or on a server with a small SSD drive, you may, for reasons of reliability or lack of space, want to add a drive or drives to your server.\n"
 msgstr ""
+"Если вы используете ARM-процессор с SD-картой или сервер с небольшим SSD-"
+"накопителем, то по соображениям надёжности или из-за нехватки места вам "
+"может потребоваться добавить один или несколько накопителей к вашему серверу."
+"\n"
 
 #. type: Fenced div block (warning)
 #: docs/admin/45.tutorials/25.external_storage.mdx:12
 #, no-wrap
 msgid "If you have no space left on your server at all, you can now type `apt clean` to try and save some space while you clean up or follow the steps below.\n"
 msgstr ""
+"Если на вашем сервере совсем не осталось места, вы можете ввести команду `"
+"apt clean`, чтобы попытаться освободить место таким образом, или выполнить "
+"следующие действия.\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/25.external_storage.mdx:17
 #, no-wrap
 msgid "Below you will find explanations on how to move your data to a hard disk in a correct way with a minimum of impact on the functioning of YunoHost. This operation can be done during installation or, afterwards, when your storage needs have increased or when you no longer trust your SD card.\n"
 msgstr ""
+"Ниже вы найдёте инструкции по правильному перемещению данных на жёсткий диск "
+"с минимальным влиянием на работу YunoHost. Эту операцию можно выполнить во "
+"время установки или позже, когда ваши потребности в хранилище возрастут или "
+"когда вы перестанете доверять своей SD-карте.\n"
 
 #. type: Fenced div block (tip)
 #: docs/admin/45.tutorials/25.external_storage.mdx:18
 #, no-wrap
 msgid "The method presented here will first mount the single partition of the hard disk, then use one or more sub-folders of this disk to create different mount points on your system tree. This method is preferable to the use of symbolic links, as the latter may interfere with some applications including the YunoHost backup system. You could also choose to mount partitions rather than subfolders, but it is sometimes difficult to estimate the weight of a folder in advance.\n"
 msgstr ""
+"Представленный здесь метод сначала смонтирует единственный раздел жесткого "
+"диска, а затем с помощью одной или нескольких подпапок этого диска создаст "
+"различные точки монтирования в дереве вашей системы. Этот метод "
+"предпочтительнее использования символических ссылок, поскольку последние "
+"могут конфликтовать с некоторыми приложениями, включая систему резервного "
+"копирования YunoHost. Вы также можете монтировать разделы, а не подпапки, но "
+"иногда сложно заранее оценить размер папки.\n"
 
 #. type: Title ##
 #: docs/admin/45.tutorials/25.external_storage.mdx:22
 #, no-wrap
 msgid "<FAIcon icon=\"fa-list-alt\"/> Prerequisites"
-msgstr ""
+msgstr "<FAIcon icon=\"fa-list-alt\"/> Предварительные требования"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/25.external_storage.mdx:29
@@ -81,24 +105,38 @@ msgid ""
 "- Prepare a backup in case things don't work out as planned\n"
 "- Have extra storage (SSD, hard drive, USB stick) connected to your server via USB or SATA\n"
 msgstr ""
+"- Запланируйте момент, когда будет удобно выключить сервер. Даже если шаги "
+"относительно просты, они могут показаться техническими и в любом случае "
+"требуют **не торопиться**.\n"
+"- Вам нужно знать, как подключиться к системе от имени root, обычно через "
+"[SSH](/admin/command_line). (Примечание: войдя в систему как администратор, "
+"вы можете получить права `root` с помощью `sudo su` или `sudo -i`, что "
+"иногда удобнее, чем добавлять `sudo` к каждой команде)\n"
+"- Знайте основные команды `cd`, `ls`, `mkdir`, `rm`.\n"
+"- Подготовьте резервную копию на случай, если что-то пойдет не так\n"
+"- Подключите к серверу дополнительное хранилище "
+"(SSD, жесткий диск, USB-накопитель) через USB или SATA\n"
 
 #. type: Title ##
 #: docs/admin/45.tutorials/25.external_storage.mdx:30
 #, no-wrap
 msgid "1. Identify directories to be moved"
-msgstr ""
+msgstr "1. Определите каталоги, которые необходимо переместить"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/25.external_storage.mdx:33
 #, no-wrap
 msgid "The `ncdu /` command allows you to browse the folders on your server to see how big they are.\n"
-msgstr ""
+msgstr "Команда `ncdu /` позволяет просматривать размер папок на сервере.\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/25.external_storage.mdx:35
 #, no-wrap
 msgid "Below is an explanation of some of the paths that can take up weight with some comments to help you reduce their weight or choose to move them.\n"
 msgstr ""
+"Ниже приведено объяснение некоторых элементов, которые могут создавать "
+"дополнительную нагрузку, а также комментарии, которые помогут вам уменьшить "
+"их вес или принять решение об их перемещении.\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/25.external_storage.mdx:49
@@ -118,72 +156,130 @@ msgid ""
 "| `/opt`                      | Program and dependency of some YunoHost applications.        | Ideally leave it on the SSD for performance reasons. For nodejs applications it is possible to do some cleanup of unused versions. |\n"
 "| `/boot`                     | Kernels and boot files                                       | Do not move unless you know what you are doing. It can happen that too many kernels are kept, it is possible to do some cleanup. |\n"
 msgstr ""
+"| Пути                        | "
+"Содержимое                                                   | "
+"Советы               |\n"
+"| --------------------------- | "
+"------------------------------------------------------------ | "
+"----------------------- |\n"
+"| `/home`                     | Папки пользователя, доступные через "
+"SFTP                             | Можно переместить на жёсткий диск |\n"
+"| `/home/yunohost.backup`     | Резервные копии "
+"YunoHost                                           | В зависимости от вашей "
+"стратегии резервного копирования, вы можете разместить эту папку на "
+"отдельном диске от ваших данных или баз данных.|\n"
+"| `/home/yunohost.app`        | Обширный объём данных из приложений YunoHost "
+"(nextcloud, matrix...). | Можно переместить на жёсткий диск |\n"
+"| `/home/yunohost.multimedia` | Большие объёмы данных, используемые "
+"несколькими приложениями               | Можно переместить на жёсткий диск |"
+"\n"
+"| `/var/lib/mysql`            | База данных, используемая "
+"приложениями                                | В идеале оставьте на SSD для "
+"повышения производительности |\n"
+"| `/var/lib/postgresql`       | База данных, используемая "
+"приложениями                                | В идеале оставьте на SSD для "
+"повышения производительности |\n"
+"| `/var/mail`                 | Электронная почта пользователей           | "
+"Можно переместить на жёсткий диск |\n"
+"| `/var/www`                  | Программы установленных веб-"
+"приложений                        | В идеале оставьте на SSD для повышения "
+"производительности |\n"
+"| `/var/log`                  | Журналы событий "
+"(просмотренные страницы, попытки подключения, аппаратные ошибки...). | Этот "
+"каталог не должен занимать слишком много места; если он быстро "
+"увеличивается, это может быть ошибка зацикливания, которую следует "
+"устранить. |\n"
+"| `/opt`                      | Программы и зависимости некоторых приложений "
+"YunoHost.        | В идеале оставьте на SSD для повышения "
+"производительности. Для приложений Node.js можно выполнить очистку "
+"неиспользуемых версий. |\n"
+"| `/boot`                     | Ядра и загрузочные "
+"файлы                                       | Не перемещайте, если не "
+"знаете, что делаете. Может случиться так, что хранится слишком много ядер, "
+"можно выполнить очистку. |\n"
 
 #. type: Title ##
 #: docs/admin/45.tutorials/25.external_storage.mdx:50
 #, no-wrap
 msgid "2. Connect and identify the disk"
-msgstr ""
+msgstr "2. Подключение и определение диска"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/25.external_storage.mdx:53
 #, no-wrap
 msgid "Start by connecting your disk to your system. You must then identify the name under which the disk is designated by the system.\n"
 msgstr ""
+"Для начала подключите диск к системе. Затем вам необходимо определить имя, "
+"под которым система обозначила диск.\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/25.external_storage.mdx:55
 #, no-wrap
 msgid "To do this, use the command :\n"
-msgstr ""
+msgstr "Для этого используйте команду:\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/25.external_storage.mdx:61
 #, no-wrap
 msgid "It may return something like :\n"
-msgstr ""
+msgstr "В результате может быть возвращено что-то вроде:\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/25.external_storage.mdx:72
 #, no-wrap
 msgid "Here, `mmcblk0` corresponds to a 16GB SD card (you can see that the `mmcblk0p1` and `mmcblk0p2` partitions correspond to the `/boot` partition and the `/` system partition). The hard drive connected corresponds to `sda` which is about 1TB, and contains a single `sda1` partition which is not mounted (no \"MOUNTPOINT\").\n"
 msgstr ""
+"Здесь `mmcblk0` соответствует SD-карте объемом 16 ГБ (видно, что разделы "
+"`mmcblk0p1` и `mmcblk0p2` соответствуют разделу `/boot` и системному разделу "
+"`/`. Подключенный жёсткий диск соответствует разделу `sda` объёмом около 1 "
+"ТБ и содержит один раздел `sda1`, который не смонтирован "
+"(нет точки монтирования, \"MOUNTPOINT\").\n"
 
 #. type: Fenced div block (warning)
 #: docs/admin/45.tutorials/25.external_storage.mdx:73
 #, no-wrap
 msgid "<FAIcon icon=\"fa-exclamation-triangle\"/> On another system, it may be that your system is installed on `sda` and your disk is then `sdb` for example.\n"
 msgstr ""
+"<FAIcon icon=\"fa-exclamation-triangle\"/> В другой системе может оказаться, "
+"что ваша система установлена на `sda`, и ваш диск, например, называется "
+"`sdb`.\n"
 
 #. type: Fenced div block (tip)
 #: docs/admin/45.tutorials/25.external_storage.mdx:77
 #, no-wrap
 msgid "If the size of the disk is not enough for you to recognise it, you can unplug the disk, run the `lsblk` command, then plug the disk back in, run `lsblk` and deduce the differences.\n"
 msgstr ""
+"Если размера диска недостаточно, чтобы его распознать, вы можете отключить "
+"диск, выполнить команду `lsblk` , затем снова подключить диск, выполнить "
+"команду `lsblk` и определить различия.\n"
 
 #. type: Title ##
 #: docs/admin/45.tutorials/25.external_storage.mdx:81
 #, no-wrap
 msgid "3. (Optional) Format the disk"
-msgstr ""
+msgstr "3. (Необязательно) Отформатируйте диск"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/25.external_storage.mdx:84
 #, no-wrap
 msgid "This operation is optional if your disk is already formatted with a file system supported by linux (so not NTFS or FAT32).\n"
 msgstr ""
+"Это действие необязательно, если ваш диск уже отформатирован в файловой "
+"системе, поддерживаемой Linux (то есть не NTFS или FAT32).\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/25.external_storage.mdx:86
 #, no-wrap
 msgid "Let's create a partition on the disk:\n"
-msgstr ""
+msgstr "Давайте создадим раздел на диске:\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/25.external_storage.mdx:92
 #, no-wrap
 msgid "then enter `n`, `p`, `1`, `Enter`, `Enter`, and `w` successively to create a new partition.\n"
 msgstr ""
+"Затем последовательно введите `n`, `p`, `1`, `Enter`, `Enter`, и `w`, чтобы "
+"создать новый раздел.\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/25.external_storage.mdx:94

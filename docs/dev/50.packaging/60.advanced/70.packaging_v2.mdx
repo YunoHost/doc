@@ -9,7 +9,7 @@ Packaging v2 is a major improvement for the packaging introduced in YunoHost 11.
 
 The motivations for this new format is:
 
-- to get rid of some boring or unecessarily complex or duplicateds stuff such as saving/loading settings, creating a system user, etc.. during the install/upgrade/restore script, which are common things accross many apps.
+- to get rid of some boring or unnecessarily complex or duplicated stuff such as saving/loading settings, creating a system user, etc. during the install/upgrade/restore script, which are common things across many apps.
 - to get rid of funky historical, not-super-semantic stuff such as `__FINALPATH__` being replaced by `$final_path` (with underscore), or `__PATH__` being replaced by `$path_url`, etc.
 - formalize some aspects such as the existence of the install dir, data dir, apt dependencies, database, etc. which in turn unlock possible future developments such as computing the space used by an app at one given moment, auto-upgrading apt dependencies during Debian major migration, etc.
 - formalize some meta-info such as LDAP/SSO support, architectures supports, and other pre-install / post-install, pre-upgrade / post-upgrade notifications (replacing the infamous `ynh_send_readme_to_admin`) for better UI/UX during the install and upgrade process.

@@ -24,6 +24,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Install translation tools
+        uses: ./.github/actions/po4a
+
+      - name: List translated .mdx using the .po from po4a/weblate
+        shell: bash
+        run: ./scripts/po4a.py build_translated_mdx
+
       - name: Check and build doc
         uses: ./.github/actions/docusaurus
 

@@ -24,3 +24,4 @@ yarn-error.log*
 /venv
 
 .po4a
+i18n/*/docusaurus-plugin-content-docs/current/admin/

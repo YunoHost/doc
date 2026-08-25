@@ -3,19 +3,22 @@
 # This file is distributed under the same license as the YunoHost documentation package.
 # Automatically generated, 2025.
 #
+# Alekseï <support@digiology.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2025-12-02 17:58+0000\n"
-"PO-Revision-Date: 2025-11-11 19:34+0100\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"POT-Creation-Date: 2026-01-04 16:21+0000\n"
+"PO-Revision-Date: 2026-08-25 06:33+0000\n"
+"Last-Translator: Alekseï <support@digiology.org>\n"
+"Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
+"05get_started__20install_on__virtualbox/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 5.14.2\n"
 
 #. type: Title ##
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:18
@@ -26,7 +29,7 @@ msgstr ""
 #: docs/admin/05.get_started/20.install_on/wsl.mdx:21
 #, no-wrap
 msgid "<FAIcon icon=\"fa-list-alt\"/> Pre-requisites"
-msgstr ""
+msgstr "<FAIcon icon=\"fa-list-alt\"/> Предварительные требования"
 
 #. type: Fenced div block (note)
 #: docs/admin/05.get_started/20.install_on/raspberry_pi.mdx:34
@@ -38,20 +41,25 @@ msgid ""
 "\n"
 "Optionally, you can [download the project's public key](https://forge.yunohost.org/keys/yunohost_bookworm.asc) to check the authenticity of the images.\n"
 msgstr ""
+"(FIXME: этот фрагмент кода в данный момент не работает...)\n"
+"\n"
+"При желании вы можете [загрузить открытый ключ проекта]"
+"(https://forge.yunohost.org/keys/yunohost_bookworm.asc), чтобы проверить "
+"подлинность изображений.\n"
 
 #. type: Title ##
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:103
 #: docs/admin/05.get_started/20.install_on/virtualbox.mdx:70
 #, no-wrap
 msgid "<FAIcon icon=\"fa-rocket\"/> Launch the graphical install"
-msgstr ""
+msgstr "<FAIcon icon=\"fa-rocket\"/> Запуск графической установки"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:106
 #: docs/admin/05.get_started/20.install_on/virtualbox.mdx:73
 #, no-wrap
 msgid "You should see a screen like this:\n"
-msgstr ""
+msgstr "Вы должны увидеть примерно такой экран:\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:108
@@ -59,18 +67,16 @@ msgstr ""
 #, no-wrap
 msgid "<Figure caption=\"Preview of the ISO menu\" src=\"/img/softwares/virtualbox_3.png\"/>\n"
 msgstr ""
+"<Figure caption=\"Предварительный просмотр меню ISO\" src="
+"\"/img/softwares/virtualbox_3.png\"/>\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:111
 #: docs/admin/05.get_started/20.install_on/virtualbox.mdx:78
-#, fuzzy, no-wrap
-#| msgid ""
-#| "<TabItem value=\"direct\" label=\"With a direct access on the server\">\n"
-#| "Plug a screen on your server, log in and type `hostname --all-ip-address`.\n"
+#, no-wrap
 msgid "<TabItem value=\"classic\" label=\"Classic installation on a whole disk\">\n"
 msgstr ""
-"<TabItem value=\"direct\" label=\"С прямым доступом к серверу\">\n"
-"Подключите экран к своему серверу, войдите в систему и введите `hostname --all-ip-address`.\n"
+"<TabItem value=\"classic\" label=\"Классическая установка на весь диск\">\n"
 
 #. type: Fenced div block (danger)
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:112
@@ -78,6 +84,8 @@ msgstr ""
 #, no-wrap
 msgid "Once you have validated the keyboard layout, the installation will be launched and will completely erase the data on your hard disk!\n"
 msgstr ""
+"После проверки правильности раскладки клавиатуры запустится установка, "
+"которая полностью удалит данные с вашего жёсткого диска!\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:119
@@ -88,18 +96,17 @@ msgid ""
 "2. Select your language, your location, your keyboard layout, and eventually your timezone.\n"
 "3. The installer will then download and install all required packages.\n"
 msgstr ""
+"1. Выберите `Graphical install`\n"
+"2. Выберите язык, местоположение, раскладку клавиатуры и, при необходимости, "
+"часовой пояс.\n"
+"3. После этого установщик загрузит и установит все необходимые пакеты.\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:122
 #: docs/admin/05.get_started/20.install_on/virtualbox.mdx:89
-#, fuzzy, no-wrap
-#| msgid ""
-#| "<TabItem value=\"router\" label=\"With your internet router / box\">\n"
-#| "Connect to your internet box / router interface to list the machines connected.\n"
+#, no-wrap
 msgid "<TabItem value=\"expert\" label=\"Installation in expert mode\">\n"
-msgstr ""
-"<TabItem value=\"router\" label=\"С вашим интернет-маршрутизатором\">\n"
-"Подключитесь к интерфейсу вашего маршрутизатора, чтобы просмотреть список подключенных компьютеров.\n"
+msgstr "<TabItem value=\"expert\" label=\"Установка в режиме эксперта\">\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:124
@@ -107,6 +114,9 @@ msgstr ""
 #, no-wrap
 msgid "The YunoHost project simplified the classic installation as much as possible in order to avoid as many people as possible being lost with questions that are too technical or related to specific cases.\n"
 msgstr ""
+"Проект YunoHost максимально упростил классическую установку, чтобы как можно "
+"меньше людей сталкивались с вопросами, которые слишком технически сложны или "
+"касаются конкретных случаев.\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:126
@@ -114,20 +124,24 @@ msgstr ""
 #, no-wrap
 msgid "With the expert mode installation, you have more possibilities, especially concerning the exact partitioning of your storage media. You can also decide to use the classic mode and [add your disks afterwards](/admin/tutorials/external_storage).\n"
 msgstr ""
+"При установке в экспертном режиме у вас больше возможностей, особенно в "
+"отношении точного разбиения носителя информации на разделы. Вы также можете "
+"выбрать классический режим и [добавить свои диски позже]"
+"(/admin/tutorials/external_storage).\n"
 
 #. type: Title ###
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:127
 #: docs/admin/05.get_started/20.install_on/virtualbox.mdx:94
 #, no-wrap
 msgid "Summary of the steps in expert mode"
-msgstr ""
+msgstr "Краткое описание шагов в экспертном режиме"
 
 #. type: Title ###
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:135
 #: docs/admin/05.get_started/20.install_on/virtualbox.mdx:102
 #, no-wrap
 msgid "Regarding partitioning"
-msgstr ""
+msgstr "Насчёт разделения на разделы"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:138
@@ -135,6 +149,11 @@ msgstr ""
 #, no-wrap
 msgid "In general, we recommend against partitioning `/var`, `/opt`, `/usr`, `/bin`, `/etc`, `/lib`, `/tmp` and `/root` on separate partitions. This will prevent you from having to worry about full partitions that could crash your machine, cause app installations to fail, or even corrupt your databases.\n"
 msgstr ""
+"В целом, мы не рекомендуем разделять `/var`, `/opt`, `/usr`, `/bin`, `/etc`, "
+"`/lib`, `/tmp` и `/root` на отдельные разделы. Это избавит вас от "
+"необходимости беспокоиться о переполненных разделах, которые могут привести "
+"к сбоям в работе компьютера, ошибкам при установке приложений или даже "
+"повреждению баз данных.\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:140
@@ -142,6 +161,8 @@ msgstr ""
 #, no-wrap
 msgid "For performance reasons, it is recommended to mount your fastest storage (SSD) on the root `/`.\n"
 msgstr ""
+"В целях повышения производительности рекомендуется монтировать самый быстрый "
+"накопитель (SSD) в корневой каталог `/`.\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:142
@@ -149,6 +170,9 @@ msgstr ""
 #, no-wrap
 msgid "If you have one or more hard drives to store data, you can choose to mount it on one of these folders depending on your usage.\n"
 msgstr ""
+"Если у вас есть один или несколько жёстких дисков для хранения данных, вы "
+"можете выбрать одну из этих папок для монтирования в зависимости от ваших "
+"потребностей.\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:152
@@ -156,13 +180,17 @@ msgstr ""
 #, no-wrap
 msgid "If you want flexibility and don't want to (re)size partitions, you can also choose to mount on `/mnt/hdd` and follow this [tutorial to mount all these folders with `mount --bind`](/admin/tutorials/external_storage).\n"
 msgstr ""
+"Если вам нужна гибкость и вы не хотите (изменять) размер разделов, вы также "
+"можете выбрать монтирование в `/mnt/hdd` и следовать этому "
+"[руководству по монтированию всех этих папок с помощью `mount --bind`]"
+"(/admin/tutorials/external_storage).\n"
 
 #. type: Title ###
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:153
 #: docs/admin/05.get_started/20.install_on/virtualbox.mdx:120
 #, no-wrap
 msgid "About encryption"
-msgstr ""
+msgstr "О шифровании"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:156
@@ -170,20 +198,26 @@ msgstr ""
 #, no-wrap
 msgid "Be aware that if you encrypt all or part of your disks, you will have to type the passphrase every time you restart your server, which can be a problem if you are not on site. There are however solutions (quite difficult to implement) that allow you to type the passphrase via SSH or via a web page (search for \"dropbear encrypted disk\").\n"
 msgstr ""
+"Имейте в виду, что если вы зашифруете все или часть своих дисков, вам "
+"придется вводить парольную фразу каждый раз при перезапуске сервера, что "
+"может стать проблемой, если вы находитесь вне офиса. Однако существуют "
+"решения (довольно сложные в реализации), позволяющие вводить парольную фразу "
+"через SSH или через веб-страницу "
+"(найдите в интернете \"dropbear encrypted disk\").\n"
 
 #. type: Title ###
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:157
 #: docs/admin/05.get_started/20.install_on/virtualbox.mdx:124
 #, no-wrap
 msgid "About RAID"
-msgstr ""
+msgstr "Что такое RAID"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:160
 #: docs/admin/05.get_started/20.install_on/virtualbox.mdx:127
 #, no-wrap
 msgid "Keep in mind that:\n"
-msgstr ""
+msgstr "Имейте в виду, что:\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:164
@@ -194,24 +228,35 @@ msgid ""
 "- a RAID 1 (even without a spare) is more reliable than a RAID 5 from a probability point of view\n"
 "- hardware raids are dependent on the raid card, if the card fails you will need a replacement to read and rebuild the array\n"
 msgstr ""
+"- Диски в ваших RAID-массивах должны быть разных марок, с разным износом или "
+"из разных партий (особенно если это SSD-накопители).\n"
+"- RAID 1 (даже без запасного накопителя) более надёжен, чем RAID 5, с точки "
+"зрения вероятности.\n"
+"- Аппаратные RAID-массивы зависят от RAID-контроллера; если контроллер "
+"сломается, вам потребуется его замена для чтения и восстановления массива.\n"
 
 #. type: Yaml Front Matter Hash Value: description
 #: docs/admin/05.get_started/20.install_on/virtualbox.mdx:1
 #, no-wrap
 msgid "For testing and debugging purposes"
-msgstr ""
+msgstr "Для целей тестирования и отладки"
 
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/05.get_started/20.install_on/virtualbox.mdx:1
 #, no-wrap
 msgid "In a virtual machine"
-msgstr ""
+msgstr "В виртуальной машине"
 
 #. type: Fenced div block (warning)
 #: docs/admin/05.get_started/20.install_on/virtualbox.mdx:16
 #, no-wrap
 msgid "Installing YunoHost in a VirtualBox is usually intended for testing or development. It is not convenient to run an actual server on the long-term, because the machine it's installed on probably won't be up 24/7, and because Virtualbox adds an additional layer of complexity in exposing the machine to the Internet.\n"
 msgstr ""
+"Установка YunoHost в VirtualBox обычно предназначена для тестирования или "
+"разработки. Долгосрочная работа с реальным сервером внутри виртуальной "
+"машины неудобна, поскольку эта машина, скорее всего, не будет работать "
+"круглосуточно, а VirtualBox добавляет дополнительный уровень сложности, "
+"предоставляя доступ к машине из Интернета.\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/virtualbox.mdx:23

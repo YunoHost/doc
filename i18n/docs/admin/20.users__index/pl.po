@@ -1,0 +1,136 @@
+# Copyright (C) 2026 YunoHost Contributors
+# This file is distributed under the same license as the YunoHost documentation package.
+#
+# 1Poireau <unpoireau@proton.me>, 2026.
+msgid ""
+msgstr ""
+"Project-Id-Version: YunoHost documentation VERSION\n"
+"POT-Creation-Date: 2026-01-04 16:21+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: pl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && "
+"(n%100<10 || n%100>=20) ? 1 : 2;\n"
+
+#. type: Yaml Front Matter Hash Value: title
+#: docs/admin/20.users/index.mdx:1
+#, no-wrap
+msgid "👥 Accounts and portal"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/20.users/index.mdx:5
+#, no-wrap
+msgid "Users"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/20.users/index.mdx:8
+#, no-wrap
+msgid "Users are human being who have access to applications and other services on your server. The administrator can add and manage users through the web administration (in the User category) or through the command line (see `yunohost user --help`). After that, users obtain a personal email address (chosen by the admin), and can log in the user portal to access applications they have permissions over and configure other parameters.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/20.users/index.mdx:10
+#, no-wrap
+msgid "The first user created also automatically gets email aliases `root@main.domain.tld` and `admin@main.domain.tld`, such that mail sent to these addresses will end up in the first user's mailbox.\n"
+msgstr ""
+
+#. type: Fenced div block (caution)
+#: docs/admin/20.users/index.mdx:11
+#, no-wrap
+msgid "You should be careful about who you give your server access to. In terms of security, this largely increase the attack surface for someone who wants to mess with the server one way or another.\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/20.users/index.mdx:15
+#, no-wrap
+msgid "The user portal, or SSO"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/20.users/index.mdx:19
+#, no-wrap
+msgid ""
+"![User panel screenshot](/img/user_panel.jpg)\n"
+"The user portal, also called the SSO for 'Single Sign On' allows user to browse easily between the different apps they have access to. In particular, the term 'Single Sign On' comes from the fact that user only need to log in the portal to automatically be logged to all apps that require authentication (or at least those who are integrated with the SSO/LDAP, since this is sometimes technically complicated or not possible at all).\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/20.users/index.mdx:21
+#, no-wrap
+msgid "In the portal, users can also click on the avatar in the top-left to configure some other settings such as their identify, mail aliases, automatic mail forwards, or change their password.\n"
+msgstr ""
+
+#. type: Fenced div block (info)
+#: docs/admin/20.users/index.mdx:22
+#, no-wrap
+msgid "You should be aware that the SSO can only be reached through the actual domain name (i.e. `https://the.domain.tld/yunohost/sso`), and NOT by just using the IP of the server (i.e. `https://11.22.33.44/yunohost/sso`), contrarily to the webadmin ! This is a bit confusing but is necessary for technical reason. If you are in a situation where you need to access the SSO without having your DNS properly configured for some reason, you might consider tweaking your `/etc/hosts` as described in [this page](/admin/tutorials/domains/dns_local_network).\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/20.users/index.mdx:26
+#, no-wrap
+msgid "Creating new users"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/20.users/index.mdx:29
+#, no-wrap
+msgid "Only the administrator can create new users. From the webadmin, open the `Users` menu and click on the `+ New user` main button. Fill in all the whole form.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/20.users/index.mdx:31
+#, no-wrap
+msgid "Users are created with an associated email address with the format `username@domain.tld`. Additional email aliases and email forwards can later be added by the admin and the user.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/20.users/index.mdx:33
+#, no-wrap
+msgid "The password should be at least 8 characters - though it is good practice to use longer password (i.e. a passphrase) and/or to use various kind of characters (uppercase, lowercase, digits and special characters).\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/20.users/index.mdx:35
+#, no-wrap
+msgid "Finalize the user creation by clicking on the `Save` button.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/20.users/index.mdx:39
+#, no-wrap
+msgid ""
+"<Figure caption=\"From the main menu of the webadmin, open `Users`\" src=\"/img/webadmin/create_user_1.png\"/>\n"
+"<Figure caption=\"From the top of the users list, click on `+ New user`\" src=\"/img/webadmin/create_user_2.png\"/>\n"
+"<Figure caption=\"Fill in the form\" src=\"/img/webadmin/create_user_3.png\"/>\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/20.users/index.mdx:40
+#, no-wrap
+msgid "User groups and permissions"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/20.users/index.mdx:43
+#, no-wrap
+msgid "See [this dedicated page](/admin/users/groups_and_permissions).\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/20.users/index.mdx:44
+#, no-wrap
+msgid "SSH access"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/20.users/index.mdx:46
+#, no-wrap
+msgid "See [this dedicated page](/admin/command_line).\n"
+msgstr ""

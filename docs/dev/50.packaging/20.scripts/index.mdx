@@ -12,7 +12,7 @@ In the `scripts` folder of an app, you can expect to find:
 manifest.toml
 scripts
 ├── _common.sh  # Some "common" definition, typically custom helpers 
-│               # or global variables used accross all scripts
+│               # or global variables used across all scripts
 ├── install     # The install procedure
 ├── remove      # The remove procedure
 ├── backup      # The backup procedure - in fact it only "declares" what should be backed up.
@@ -83,7 +83,7 @@ ynh_app_setting_set --app=$app --key=db_name --value=$db_name
 
 ## Helper system
 
-We call helpers a set of custom bash function created by the YunoHost project to standardize common operations accross all apps. They are all prefixed with `ynh_`. The full list and documentation of these helpers is available on [this page](/dev/packaging/scripts/helpers_v2.1). Some of these helpers are now partially obsolete as they are now handled by the core via app resources.
+We call helpers a set of custom bash functions created by the YunoHost project to standardize common operations across all apps. They are all prefixed with `ynh_`. The full list and documentation of these helpers is available on [this page](/dev/packaging/scripts/helpers_v2.1). Some of these helpers are now partially obsolete as they are now handled by the core via app resources.
 
 Here is the list of the major ones:
 

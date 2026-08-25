@@ -72,7 +72,7 @@ def translated_langs() -> list[str]:
         docusaurus_config.read_text(),
     )
     assert langs_match
-    langs = langs_match[1].replace('"', "").replace(" ", "").split(",")
+    langs = langs_match[1].replace('"', "").replace(" ", "").replace("-", "_").split(",")
     langs.remove("en")
     return langs
 
@@ -179,10 +179,10 @@ def main() -> None:
 
         if files_to_git_add:
             subprocess.check_call(["git", "add", *files_to_git_add], cwd=DOCS_DIR)
-            # and restore the other ones
-            subprocess.check_call(
-                ["git", "checkout", "--", "i18n/docs/admin/"], cwd=DOCS_DIR
-            )
+        # and restore the other ones
+        subprocess.check_call(
+            ["git", "checkout", "--", "i18n/docs/admin/"], cwd=DOCS_DIR
+        )
 
     if action == "build_translated_mdx":
         # List generated files

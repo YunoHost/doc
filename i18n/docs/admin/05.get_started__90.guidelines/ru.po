@@ -2,49 +2,58 @@
 # This file is distributed under the same license as the YunoHost documentation.
 #
 # Languages add-on <noreply-addon-languages@weblate.org>, 2025.
+# Alekseï <support@digiology.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2025-12-02 17:58+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"POT-Creation-Date: 2026-01-04 16:21+0000\n"
+"PO-Revision-Date: 2026-08-23 19:55+0000\n"
+"Last-Translator: Alekseï <support@digiology.org>\n"
+"Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
+"05get_started__90guidelines/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 5.14.2\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/05.get_started/90.guidelines.mdx:1
 #, no-wrap
 msgid "Advices and guidelines"
-msgstr ""
+msgstr "Советы и рекомендации"
 
 #. type: Plain text
 #: docs/admin/05.get_started/90.guidelines.mdx:6
 #, no-wrap
 msgid "This page lists some advice and guidelines which every YunoHost administrator should be aware to take care of a YunoHost server :)\n"
 msgstr ""
+"На этой странице приведены некоторые советы и рекомендации, которые должен "
+"знать каждый администратор YunoHost, чтобы правильно управлять своим "
+"сервером :)\n"
 
 #. type: Title ##
 #: docs/admin/05.get_started/90.guidelines.mdx:7
 #, no-wrap
 msgid "Do not break YunoHost"
-msgstr ""
+msgstr "Не нарушайте работу YunoHost"
 
 #. type: Plain text
 #: docs/admin/05.get_started/90.guidelines.mdx:10
 #, no-wrap
 msgid "To put it another way: your server is either a production server (meant to work) or a test server on which you allow yourself to experiment.\n"
 msgstr ""
+"Иными словами: ваш сервер — это либо производственный сервер "
+"(предназначенный для работы), либо тестовый сервер, на котором вы можете "
+"экспериментировать.\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/90.guidelines.mdx:12
 #, no-wrap
 msgid "If your goal is to run a production server:\n"
-msgstr ""
+msgstr "Если ваша цель — запустить производственный сервер:\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/90.guidelines.mdx:18
@@ -56,18 +65,33 @@ msgid ""
 "- use non-official apps with caution, and do not use apps that are still 'in progress', 'not working' or level 0;\n"
 "- if something gets broken, think twice about fixing it by yourself if you don't know what you are doing. <small>(For instance, do not attempt to recreate yourself the admin user just because it mysteriously disappeared...)</small>\n"
 msgstr ""
+"- помните, что серверы — это хрупкая система. Будьте осторожны, методичны и "
+"терпеливы;\n"
+"- ограничьте эксперименты и настройки (например, конфигурационных файлов);\n"
+"- не устанавливайте десятки приложений просто для того, чтобы посмотреть, "
+"как они выглядят;\n"
+"- используйте неофициальные приложения с осторожностью и не используйте "
+"приложения, которые находятся «в стадии разработки», не работают или имеют "
+"нулевой уровень;\n"
+"- если что-то сломалось, дважды подумайте, прежде чем пытаться починить это "
+"самостоятельно, если вы не знаете, что делаете. <small>(Например, не "
+"пытайтесь заново создать учётную запись администратора только потому, что "
+"она таинственным образом исчезла...)</small>\n"
 
 #. type: Title ##
 #: docs/admin/05.get_started/90.guidelines.mdx:19
 #, no-wrap
 msgid "Keep it simple!"
-msgstr ""
+msgstr "Не усложняйте!"
 
 #. type: Plain text
 #: docs/admin/05.get_started/90.guidelines.mdx:22
 #, no-wrap
 msgid "YunoHost is designed to work with general and simple use cases in mind. Deviating from those conditions will make things harder and you will need technical knowledge to make it work. For instance:\n"
 msgstr ""
+"YunoHost разработан для работы с общими и простыми сценариями использования. "
+"Отклонение от этих условий усложнит задачу, и для корректной работы "
+"потребуются технические знания. Например:\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/90.guidelines.mdx:28
@@ -79,75 +103,130 @@ msgid ""
 "- do not try to use custom SSL certificates if you don't really need them;\n"
 "- ...\n"
 msgstr ""
+"- не пытайтесь запускать YunoHost в условиях, когда у вас нет контроля над "
+"портами 80 и 443 (или вообще нет подключения к Интернету);\n"
+"- не пытайтесь разместить пять серверов за одним и тем же интернет-"
+"соединением, если вы не являетесь опытным пользователем;\n"
+"- не поддавайтесь таким «гиковским» прихотям, как желание заменить NGINX на "
+"Apache (или запускать оба одновременно);\n"
+"- не пытайтесь использовать собственные SSL-сертификаты, если они вам "
+"действительно не нужны;\n"
+"- ...\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/90.guidelines.mdx:30
 #, no-wrap
 msgid "Keep things as simple as you can!\n"
-msgstr ""
+msgstr "Старайтесь всё максимально упростить!\n"
 
 #. type: Title ##
 #: docs/admin/05.get_started/90.guidelines.mdx:31
 #, no-wrap
 msgid "Do not reinstall every day"
-msgstr ""
+msgstr "Не переустанавливайте каждый день"
 
 #. type: Plain text
 #: docs/admin/05.get_started/90.guidelines.mdx:34
 #, no-wrap
 msgid "Some people tend to fall into \"the reinstallation spiral\" - where each time something breaks in the server and it is not obvious how to fix it, or because the server became \"dirty\", one ends up reinstalling the whole server from scratch because it looks like an \"easy\" and quick solution to clean the table.\n"
 msgstr ""
+"Некоторые люди склонны попадать в \"спираль переустановки\" - каждый раз, "
+"когда что-то ломается на сервере, и неясно, как это исправить, или потому "
+"что сервер \"загрязняется\", в итоге приходится переустанавливать весь "
+"сервер с нуля, потому что это кажется \"простым\" и быстрым решением для "
+"очистки системы.\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/90.guidelines.mdx:36
 #, no-wrap
 msgid "Please don't do this. Reinstalling is a heavy operation and is not a good long-term strategy for fixing problems. You will get tired and won't learn anything. Forget the dream of having a \"clean\" server. A real-life server always end up being a bit \"dirty\". Also, you need to (progressively) learn how to solve issues when you encounter them. Reach for [help](/community/help) with detailed symptoms of what you are trying to do and what is happening, and fix the issues. Over time, you will get a much better control over your server than just blindly reinstalling every time.\n"
 msgstr ""
+"Пожалуйста, не делайте этого. Переустановка — это трудоёмкая задача, и это "
+"не лучшая долгосрочная стратегия для решения проблем. Вы устанете и ничему "
+"не научитесь. Забудьте о мечте о «чистом» сервере. В реальной жизни сервер "
+"всегда оказывается немного «загрязнённым». Кроме того, вам нужно (постепенно)"
+" научиться решать проблемы, когда вы с ними сталкиваетесь. Обращайтесь за "
+"[помощью по этому адресу](/community/help), подробно описывая симптомы того, "
+"что вы пытаетесь сделать и что происходит, и устраняйте проблемы. Со "
+"временем вы получите гораздо лучший контроль над своим сервером, чем просто "
+"слепо переустанавливая его каждый раз.\n"
 
 #. type: Title ##
 #: docs/admin/05.get_started/90.guidelines.mdx:37
 #, no-wrap
 msgid "Do backups"
-msgstr ""
+msgstr "Делайте резервные копии"
 
 #. type: Plain text
 #: docs/admin/05.get_started/90.guidelines.mdx:40
 #, no-wrap
 msgid "If you host services and data that are important for your users, it is important that you setup a backup policy. Backups can be easily created from the webadmin - you can download it from the webadmin or via your favorite FTP client, such as FileZilla or your own terminal. You should perform backup regularly and keep them in a safe and different physical location from your server. More info on [the backup documentation](/admin/backups).\n"
 msgstr ""
+"Если вы размещаете сервисы и данные, важные для ваших пользователей, важно "
+"настроить политику резервного копирования. Резервные копии легко создаются "
+"через веб-панель администратора — вы можете загрузить их оттуда или через "
+"свой любимый FTP-клиент, например FileZilla, или через свой терминал. "
+"Рекомендуется регулярно создавать резервные копии и хранить их в безопасном "
+"месте, отличном от вашего сервера. Дополнительная информация в "
+"[документации по резервному копированию](/admin/backups).\n"
 
 #. type: Title ##
 #: docs/admin/05.get_started/90.guidelines.mdx:41
 #, no-wrap
 msgid "Check root’s email"
-msgstr ""
+msgstr "Проверка электронной почты root"
 
 #. type: Plain text
 #: docs/admin/05.get_started/90.guidelines.mdx:44
 #, no-wrap
 msgid "As an administrator, you should configure an email client to check emails sent to `root@your.domain.tld` (which should be an alias to the first user your added) or otherwise forward them to another address that you actively check. Those mails may contain information on what is happening on your server such as automated periodic tasks.\n"
 msgstr ""
+"Как администратор, вы должны настроить почтовый клиент для проверки писем, "
+"отправленных на адрес `root@your.domain.tld` "
+"(который должен быть псевдонимом первого добавленного вами пользователя), "
+"или перенаправить их на другой адрес, который вы активно проверяете. Эти "
+"письма могут содержать информацию о том, что происходит на вашем сервере, "
+"например, о выполнении автоматических периодических задач.\n"
 
 #. type: Title ##
 #: docs/admin/05.get_started/90.guidelines.mdx:45
 #, no-wrap
 msgid "YunoHost is free software, maintained by volunteers"
 msgstr ""
+"YunoHost — это бесплатное программное обеспечение, поддерживаемое волонтёрами"
 
 #. type: Plain text
 #: docs/admin/05.get_started/90.guidelines.mdx:48
 #, no-wrap
 msgid "Finally, keep in mind that YunoHost is a free software maintained by volunteers - and that the goal of YunoHost (to democratize self-hosting) is not an easy one! It is provided without any warranty. The team of volunteers does its best to maintain and provide the best possible experience - yet features, applications and YunoHost as a whole are far from being perfect and you will experience small and big shortcomings at some points. When this happens, kindly [reach for help on the chat or forum, or report the issue](/community/help)! :)\n"
 msgstr ""
+"Наконец, помните, что YunoHost — это бесплатное программное обеспечение, "
+"поддерживаемое волонтёрами, и цель YunoHost "
+"(демократизация самостоятельного хостинга) непроста! Оно предоставляется без "
+"каких-либо гарантий. Команда волонтёров делает всё возможное, чтобы делать "
+"его максимально удобным для пользователя, однако функции, приложения и "
+"YunoHost в целом далеки от совершенства, и вы можете столкнуться с "
+"небольшими и даже крупными недостатками в некоторых моментах. В таких "
+"случаях, пожалуйста, "
+"[обратитесь за помощью в чате или на форуме, или сообщите о проблеме]"
+"(/community/help)! :)\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/90.guidelines.mdx:50
 #, no-wrap
 msgid "If you like YunoHost and want to see the project being kept alive and make progress, feel free to leave a thank you note and to [donate](https://yunohost.org/donate.html) to the project and talk about it around you!\n"
 msgstr ""
+"Если вам нравится YunoHost и вы хотите, чтобы проект продолжал развиваться и "
+"процветать, не стесняйтесь оставлять благодарственные сообщения, делать "
+"[пожертвования](https://yunohost.org/donate.html) и рассказывать о проекте "
+"всем вокруг!\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/90.guidelines.mdx:51
 #, no-wrap
 msgid "Last but not least, since YunoHost is a free software project, you are legitimate and welcomed to come and [contribute](/dev/) to the project, be it on the technical aspects (i.e. code) and less-technical aspects (such as contributing to this documentation! ;))\n"
 msgstr ""
+"И наконец, поскольку YunoHost — это проект свободного программного "
+"обеспечения, вы имеете полное право и можете [внести свой вклад](/dev/) в "
+"проект, будь то в технических аспектах (например, в коде) или в менее "
+"технических (например, в создании документации! ;) )\n"

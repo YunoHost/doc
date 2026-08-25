@@ -2,49 +2,64 @@
 # This file is distributed under the same license as the YunoHost documentation.
 #
 # Languages add-on <noreply-addon-languages@weblate.org>, 2025.
+# Alekseï <support@digiology.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2025-12-02 17:58+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"POT-Creation-Date: 2026-01-04 16:21+0000\n"
+"PO-Revision-Date: 2026-08-24 15:43+0000\n"
+"Last-Translator: Alekseï <support@digiology.org>\n"
+"Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
+"35email__05clients/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 5.14.2\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/35.email/05.clients.mdx:1
 #, no-wrap
 msgid "Configure email clients"
-msgstr ""
+msgstr "Настройка почтовых клиентов"
 
 #. type: Plain text
 #: docs/admin/35.email/05.clients.mdx:9
 #, no-wrap
 msgid "You can fetch and send emails using your YunoHost instance from desktop email clients such as Thunderbird Desktop or on your smartphone with applications like K-9 Mail.\n"
 msgstr ""
+"Вы можете получать и отправлять электронные письма, используя свой экземпляр "
+"YunoHost, с помощью настольных почтовых клиентов, таких как Thunderbird "
+"Desktop, или на своем смартфоне с помощью таких приложений, как K-9 Mail.\n"
 
 #. type: Plain text
 #: docs/admin/35.email/05.clients.mdx:11
 #, no-wrap
 msgid "Modern mail clients should be able to configure themselves automatically. If autoconfiguration fails, you can do it manually following the instructions below. (If the autoconfiguration fails though, it should be understood as a bug in YunoHost, and we would be glad to read your feedback to try to reproduce the issue on our side!)\n"
 msgstr ""
+"Современные почтовые клиенты должны уметь настраиваться автоматически. Если "
+"автоматическая настройка не удалась, вы можете выполнить её вручную, следуя "
+"инструкциям ниже. (Если же автоматическая настройка не удалась, это следует "
+"рассматривать как ошибку в YunoHost, и мы будем рады получить ваш отзыв, "
+"чтобы попытаться воспроизвести проблему на нашей стороне!)\n"
 
 #. type: Title ###
 #: docs/admin/35.email/05.clients.mdx:12
 #, no-wrap
 msgid "Generic settings"
-msgstr ""
+msgstr "Общие настройки"
 
 #. type: Plain text
 #: docs/admin/35.email/05.clients.mdx:15
 #, no-wrap
 msgid "Here are the element you should enter to manually configure your mail client (`domain.tld` refers to what's after the @ in your email address, and `username` what's before @).\n"
 msgstr ""
+"Вот элементы, которые вам следует ввести для ручной настройки вашего "
+"почтового клиента (`domain.tld` обозначает то, что находится после символа @ "
+"в вашем адресе электронной почты, а `username` — то, что находится перед "
+"символом @).\n"
 
 #. type: Plain text
 #: docs/admin/35.email/05.clients.mdx:20
@@ -55,30 +70,42 @@ msgid ""
 "| IMAP     | 993  | SSL/TLS    | Normal password | `username` (without the `@domain.tld`) |\n"
 "| SMTP     | 587  | STARTTLS   | Normal password | `username` (without the `@domain.tld`) |\n"
 msgstr ""
+"| Протокол | Порт | Шифрование | Аутентификация  | Имя "
+"пользователя                       |\n"
+"| :--:     | :-:  | :--:       | :--:            | :--:"
+"                                   |\n"
+"| IMAP     | 993  | SSL/TLS    | Норм. пароль | `username` "
+"(без `@domain.tld`) |\n"
+"| SMTP     | 587  | STARTTLS   | Норм. пароль | `username` "
+"(без `@domain.tld`) |\n"
 
 #. type: Title ###
 #: docs/admin/35.email/05.clients.mdx:21
 #, no-wrap
 msgid "Client by client"
-msgstr ""
+msgstr "Клиент за клиентом"
 
 #. type: Plain text
 #: docs/admin/35.email/05.clients.mdx:25
 #, no-wrap
 msgid "<TabItem value=\"thunderbird\" label=\"Mozilla Thunderbird\">\n"
-msgstr ""
+msgstr "<TabItem value=\"thunderbird\" label=\"Mozilla Thunderbird\">\n"
 
 #. type: Title #####
 #: docs/admin/35.email/05.clients.mdx:26
 #, no-wrap
 msgid "<SmallInline url='/img/icons/logo-thunderbird.png'/> Configure Thunderbird Desktop (on a desktop computer)"
 msgstr ""
+"<SmallInline url='/img/icons/logo-thunderbird.png'/> Настройка Thunderbird "
+"(на настольном компьютере)"
 
 #. type: Plain text
 #: docs/admin/35.email/05.clients.mdx:29
 #, no-wrap
 msgid "To manually configure a new account in Thunderbird Desktop, add the account information, then click on 'Configure manually'.\n"
 msgstr ""
+"Чтобы вручную настроить новую учётную запись в Thunderbird Desktop, добавьте "
+"информацию об учётной записи, а затем нажмите «Настроить вручную».\n"
 
 #. type: Plain text
 #: docs/admin/35.email/05.clients.mdx:33
@@ -88,75 +115,109 @@ msgid ""
 "- For outgoing server, use port 587 with STARTTLS. \n"
 "- Select 'Normal Password' for the the authentication method of both. \n"
 msgstr ""
+"- Для входящего сервера используйте IMAP с портом 993 и SSL/TLS.\n"
+"- Для исходящего сервера используйте порт 587 с STARTTLS. \n"
+"- Выберите «Обычный пароль» в качестве метода аутентификации для обоих "
+"серверов. \n"
 
 #. type: Plain text
 #: docs/admin/35.email/05.clients.mdx:35
 #, no-wrap
 msgid "You may need to accept the certificate exceptions for fetching mails and after you send your first mail. Don't forget to remove the dot before the domain name.\n"
 msgstr ""
+"Возможно, вам потребуется принять исключения из сертификата для получения "
+"писем и после отправки первого письма. Не забудьте удалить точку перед "
+"доменным именем.\n"
 
 #. type: Plain text
 #: docs/admin/35.email/05.clients.mdx:40
 #, no-wrap
 msgid "- [Manage alias mails](https://support.mozilla.org/en-US/kb/configuring-email-aliases)\n"
 msgstr ""
+"- [Управление псевдонимами электронной почты]"
+"(https://support.mozilla.org/en-US/kb/configuring-email-aliases)\n"
 
 #. type: Plain text
 #: docs/admin/35.email/05.clients.mdx:43
 #, no-wrap
 msgid "<TabItem value=\"k9\" label=\"K-9 Mail (Thunderbird Mobile)\">\n"
 msgstr ""
+"<TabItem value=\"k9\" label=\"K-9 Mail (Мобильная версия Thunderbird)\">\n"
 
 #. type: Title #####
 #: docs/admin/35.email/05.clients.mdx:44
 #, no-wrap
 msgid "<SmallInline url='/img/icons/logo-k9.png'/> Configure K-9 Mail / Thunderbird Mobile (on Android)"
 msgstr ""
+"<SmallInline url='/img/icons/logo-k9.png'/> Настройка K-9 Mail / Thunderbird "
+"Mobile (на Android)"
 
 #. type: Plain text
 #: docs/admin/35.email/05.clients.mdx:47
 #, no-wrap
 msgid "Follow the following steps. (As for Thunderbird Desktop, you might need to accept certificates at some points)\n"
 msgstr ""
+"Выполните следующие шаги. (Что касается Thunderbird Desktop, вам может "
+"потребоваться принять сертификаты на некоторых этапах)\n"
 
 #. type: Plain text
 #: docs/admin/35.email/05.clients.mdx:49
 #, no-wrap
 msgid "- Enter your email address then click \"Next\"\n"
-msgstr ""
+msgstr "— Введите свой адрес электронной почты и нажмите «Далее»\n"
 
 #. type: Plain text
 #: docs/admin/35.email/05.clients.mdx:53
 #, no-wrap
 msgid "- Enter your domain name in the \"Server\" field, fill the \"Security\" and \"Port\" fields as per the IMAP row in the table above, then enter your password in the \"Password\" field and click \"Next\"\n"
 msgstr ""
+"- Введите имя вашего домена в поле «Сервер» (Server), заполните поля "
+"«Безопасность» (Security) и «Порт» (Port) в соответствии со строкой IMAP в "
+"таблице выше, затем введите свой пароль в поле «Пароль» (Password) и нажмите "
+"«Далее» (Next).\n"
 
 #. type: Plain text
 #: docs/admin/35.email/05.clients.mdx:57
 #, no-wrap
 msgid "- Again, your domain name in the \"Server\" field, but fill the \"Security\" and \"Port\" fields as per the SMTP row in the table above, then enter your password in the \"Password\" field and click \"Next\"\n"
 msgstr ""
+"- Снова введите имя вашего домена в поле «Сервер» (Server), но заполните "
+"поля «Безопасность» (Security) и «Порт» (Port) в соответствии со строкой "
+"SMTP в таблице выше, затем введите свой пароль в поле «Пароль» (Password) и "
+"нажмите «Далее» (Next)\n"
 
 #. type: Plain text
 #: docs/admin/35.email/05.clients.mdx:62
 #, no-wrap
 msgid "<TabItem value=\"dekko\" label=\"Dekko\">\n"
-msgstr ""
+msgstr "<TabItem value=\"dekko\" label=\"Dekko\">\n"
 
 #. type: Title #####
 #: docs/admin/35.email/05.clients.mdx:63
 #, no-wrap
 msgid "<SmallInline url='/img/icons/logo-dekko.png'/> Configure Dekko (on Ubuntu Touch)"
 msgstr ""
+"<SmallInline url='/img/icons/logo-dekko.png'/> Настройка Dekko "
+"(в Ubuntu Touch)"
 
 #. type: Plain text
 #: docs/admin/35.email/05.clients.mdx:66
 #, no-wrap
 msgid "The first time you can simply choose \"Add account\". If you already have an account configured, tap the hamburger menu then tap the gear, choose Mail, Accounts and press the '+'-symbol.\n"
 msgstr ""
+"При первом добавлении учётной записи достаточно выбрать «Добавить учетную "
+"запись» (Add account). Если учётная запись уже настроена, нажмите на значок "
+"меню (три горизонтальные полоски), затем на значок шестерёнки, выберите "
+"«Почта» (Mail), «Учётные записи» (Accounts) и нажмите символ «+».\n"
 
 #. type: Plain text
 #: docs/admin/35.email/05.clients.mdx:68
 #, no-wrap
 msgid "Then you choose IMAP. Fill in the fields and press Next. Now Dekko will look for the configuration. Check that all fields are correct. Make sure you have your YunoHost username, NOT your email address and choose \"Allow untrusted certificates\". Do this for IMAP and SMTP and press Next. Dekko will now synchronise the account after which you are done. Congratz!\n"
 msgstr ""
+"Затем выберите IMAP. Заполните поля и нажмите «Далее». Теперь Dekko будет "
+"искать конфигурацию. Убедитесь, что все поля заполнены правильно. Убедитесь, "
+"что вы указали имя пользователя YunoHost, а НЕ адрес электронной почты, и "
+"выберите «Разрешить недоверенные сертификаты» (Allow untrusted certificates)"
+". Сделайте это для IMAP и SMTP и нажмите «Далее». Dekko синхронизирует "
+"учётную запись, после чего все готово. Поздравляем!\n"

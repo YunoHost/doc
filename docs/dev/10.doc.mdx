@@ -6,7 +6,7 @@ The YunoHost documentation is managed through [this Git repository](https://gith
 
 **You do not need Git expertise just to improve an existing page** (you will need an account on the platform, though): there is an "Edit" button at the bottom of each page that will redirect you to the GitHub online editor where you make easily make change proposals (a.k.a Pull Request, PR).
 
-However, if you are on an editing spree, you probably want to work locally and submit a set of changes (a.k.a. a Pull Request, PR). In which case, refer to the section "Working locally on th documentation" below.
+However, if you are on an editing spree, you probably want to work locally and submit a set of changes (a.k.a. a Pull Request, PR). In which case, refer to [the section "Working locally on the documentation" below](#working-locally-on-the-documentation).
 
 ## Markdown
 
@@ -51,7 +51,7 @@ export PATH="$NODE_BIN_PATH:$PATH"
 # Then inside your "doc" clone, install the dependencies with:
 
 ```
-npm install
+npm ci
 ```
 
 Then:
@@ -79,4 +79,4 @@ npm run serve
 
 Some pages of the documentation are automatically or dynamically generated. Please do not try to edit them manually...
 
-See the [generation script](https://github.com/YunoHost/doc/blob/docusaurus/scripts/generate_docs.sh).
+See the [generation script](https://github.com/YunoHost/doc/blob/main/scripts/generate_docs.sh).

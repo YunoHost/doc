@@ -57,6 +57,7 @@ const redirects_from_grav: Array<{ from: string; to: string }> = [
     { from: '/isp_box_config',                          to: '/admin/get_started/post_install/port_forwarding', },
     { from: '/selfhosting',                             to: '/admin/about_self_hosting', },
     { from: '/providers/isp',                           to: '/admin/get_started/providers/isp/', },
+    { from: '/providers/isp_box_config',                to: '/admin/get_started/post_install/port_forwarding', },
     { from: '/providers/registrar',                     to: '/admin/get_started/providers/registrar/', },
     { from: '/providers/registrar/gandi/autodns',       to: '/admin/get_started/providers/registrar/gandi', },
     { from: '/providers/registrar/namecheap/autodns',   to: '/admin/get_started/providers/registrar/namecheap', },

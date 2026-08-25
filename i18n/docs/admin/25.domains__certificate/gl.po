@@ -1,19 +1,21 @@
 # Copyright (C) 2025 YunoHost Contributors
 # This file is distributed under the same license as the YunoHost documentation package.
 #
-# "José M." <correo@xmgz.eu>, 2025.
+# "José M." <correo@xmgz.eu>, 2025, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2025-12-02 17:58+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"POT-Creation-Date: 2026-04-19 08:39+0000\n"
+"PO-Revision-Date: 2026-01-25 07:27+0000\n"
+"Last-Translator: \"José M.\" <correo@xmgz.eu>\n"
+"Language-Team: Galician <https://translate.yunohost.org/projects/yunohost-"
+"doc/25domains__certificate/gl/>\n"
 "Language: gl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.14.2\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/_configuration.mdx:18
@@ -33,7 +35,7 @@ msgstr ""
 #: docs/admin/45.tutorials/35.email_configure_relay.mdx:49
 #, no-wrap
 msgid "<TabItem value=\"web\" label=\"From the web interface\">\n"
-msgstr ""
+msgstr "<TabItem value=\"web\" label=\"desde a interface web\">\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/_configuration.mdx:36
@@ -54,7 +56,7 @@ msgstr ""
 #: docs/admin/45.tutorials/35.email_configure_relay.mdx:66
 #, no-wrap
 msgid "<TabItem value=\"cli\" label=\"From the command line\">\n"
-msgstr ""
+msgstr "<TabItem value=\"cli\" label=\"desde a liña de ordes\">\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/25.domains/certificate.mdx:1
@@ -89,7 +91,7 @@ msgstr ""
 #. type: Plain text
 #: docs/admin/25.domains/certificate.mdx:20
 #, no-wrap
-msgid "To avoid this confusion, it's possible to get a certificate signed a known authority named **Let's Encrypt** which provide free certificates directly recognized by browsers. YunoHost allows to directly install this certificate from the web administration interface or from the command line.\n"
+msgid "To avoid this confusion, it's possible to get a certificate signed by a known authority named **Let's Encrypt** which provides free certificates directly recognized by browsers. YunoHost allows you to directly install this certificate from the web administration interface or from the command line.\n"
 msgstr ""
 
 #. type: Title ##

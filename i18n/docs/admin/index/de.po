@@ -2,28 +2,30 @@
 # This file is distributed under the same license as the YunoHost documentation.
 #
 # Languages add-on <noreply-addon-languages@weblate.org>, 2025.
+# Vri <vrifox@vrifox.eu>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2025-12-02 17:58+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"POT-Creation-Date: 2026-04-19 08:39+0000\n"
+"PO-Revision-Date: 2026-01-19 19:27+0000\n"
+"Last-Translator: Vri <vrifox@vrifox.eu>\n"
+"Language-Team: German <https://translate.yunohost.org/projects/yunohost-doc/index/de/>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.14.2\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #, no-wrap
 msgid "Welcome!"
-msgstr ""
+msgstr "Willkommen!"
 
 #. type: Plain text
 #, no-wrap
 msgid "#\n"
-msgstr ""
+msgstr "#\n"
 
 #. type: Plain text
 #, no-wrap
@@ -35,6 +37,12 @@ msgid ""
 "    style={{ marginTop: \"-2em\", maxWidth: \"7rem\", }}\n"
 "/>\n"
 msgstr ""
+"<img\n"
+"    class=\"text--center\"\n"
+"    src=\"/img/icons/logo-ynh-roundcorner.png\"\n"
+"    alt=\"YunoHost-Logo\"\n"
+"    style={{ marginTop: \"-2em\", maxWidth: \"7rem\", }}\n"
+"/>\n"
 
 #. type: Plain text
 #, no-wrap
@@ -42,11 +50,13 @@ msgid ""
 "This is the documentation for YunoHost,<br/>\n"
 "an **operating system** aiming to **simplify server administration**!\n"
 msgstr ""
+"Dies ist die Dokumentation für YunoHost,<br/>\n"
+"ein **Betriebssystem** mit dem Ziel, **Server-Administration zu vereinfachen**!\n"
 
 #. type: Plain text
 #, no-wrap
 msgid "If you are an **impatient power user**, you may want to try YunoHost, or jump right away to install:\n"
-msgstr ""
+msgstr "Falls du **ungeduldig und erfahren** bist, kannst du YunoHost ausprobieren oder gleich installieren:\n"
 
 #. type: Plain text
 #, no-wrap
@@ -55,21 +65,24 @@ msgid ""
 "<Button url=\"/admin/what_is_yunohost/demo\">⚗️ Try YunoHost</Button>\n"
 "<Button url=\"/admin/get_started/install_on\">🚀 Install</Button>\n"
 msgstr ""
+"<Button url=\"/admin/what_is_yunohost\">🤔 Was ist YunoHost?!</Button>\n"
+"<Button url=\"/admin/what_is_yunohost/demo\">⚗️ YunoHost ausprobieren</Button>\n"
+"<Button url=\"/admin/get_started/install_on\">🚀 Installieren</Button>\n"
 
 #. type: Plain text
 #, no-wrap
 msgid "<Button url=\"https://apps.yunohost.org/\">📦 Browse the app catalog</Button>\n"
-msgstr ""
+msgstr "<Button url=\"https://apps.yunohost.org/\">📦 Stöbere im Anwendungskatalog</Button>\n"
 
 #. type: Plain text
 #, no-wrap
-msgid "Are you **new to self-hosting and servers in general**? We recommend to take it slow and go through the pages presenting [self-hosting](/admin/about_self_hosting), the [different modes](/admin/get_started/methods) and [other](/admin/get_started/why_should_you_not_host_yourself) [things](/category/providers) you should know prior to jumping into the action! \n"
+msgid "Are you **new to self-hosting and servers in general**? We recommend taking it slow and go through the pages presenting [self-hosting](/admin/about_self_hosting), the [different modes](/admin/get_started/methods) and [other](/admin/get_started/why_should_you_not_host_yourself) [things](/category/providers) you should know prior to jumping into the action!\n"
 msgstr ""
 
 #. type: Plain text
 #, no-wrap
 msgid "Are you **already using YunoHost**? You may want to get in touch with the community or reach for help:\n"
-msgstr ""
+msgstr "Du **nutzt YunoHost bereits**? Dann wende dich an unsere Gemeinschaft oder bitte sie um Hilfe:\n"
 
 #. type: Plain text
 #, no-wrap
@@ -78,10 +91,13 @@ msgid ""
 "<Button url=\"/community/chat_rooms\">🗫  Chat rooms</Button>\n"
 "<Button url=\"/community/help\">🛟 Help</Button>\n"
 msgstr ""
+"<Button url=\"https://forum.yunohost.org\">📢 Forum</Button>\n"
+"<Button url=\"/community/chat_rooms\">🗫  Chat-Räume</Button>\n"
+"<Button url=\"/community/help\">🛟 Hilfe</Button>\n"
 
 #. type: Plain text
 #, no-wrap
-msgid "Finally, you can **support the project** or get involve in [different ways](/dev):\n"
+msgid "Finally, you can **support the project** or get involved in [different ways](/dev):\n"
 msgstr ""
 
 #. type: Plain text
@@ -93,3 +109,16 @@ msgid ""
 "<Button url=\"/dev/packaging\">📦 Learn app packaging</Button>\n"
 "<Button url=\"/dev/core\">⚙️  Develop on the core</Button>\n"
 msgstr ""
+"<Button url=\"https://yunohost.org/donate.html\">💰 Spende</Button>\n"
+"<Button url=\"/dev/doc\">📝 Verbessere die Dokumentation</Button>\n"
+"<Button url=\"/dev/doc\">🌐 Arbeite an Übersetzungen</Button>\n"
+"<Button url=\"/dev/packaging\">📦 Paketiere Anwendungen</Button>\n"
+"<Button url=\"/dev/core\">⚙️  Entwickle das System</Button>\n"
+
+#, no-wrap
+#~ msgid "Are you **new to self-hosting and servers in general**? We recommend to take it slow and go through the pages presenting [self-hosting](/admin/about_self_hosting), the [different modes](/admin/get_started/methods) and [other](/admin/get_started/why_should_you_not_host_yourself) [things](/category/providers) you should know prior to jumping into the action! \n"
+#~ msgstr "Sind **Self-Hosting und Server generell neu für dich**? Dann empfehlen wir dir, es langsam angehen zu lassen und dir die Seiten anzuschauen, die dir [Self-Hosting](/admin/about_self_hosting), die [verschiedenen Modi](/admin/get_started/methods) und [andere](/admin/get_started/why_should_you_not_host_yourself) [Dinge](/category/providers), die du vorm loslegen wissen solltest, anzuschauen! \n"
+
+#, no-wrap
+#~ msgid "Finally, you can **support the project** or get involve in [different ways](/dev):\n"
+#~ msgstr "Außerdem kannst du **das Projekt unterstützen** oder dich auf [verschiedene Arten](/dev) einbringen:\n"

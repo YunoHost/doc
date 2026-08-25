@@ -1,0 +1,43 @@
+# Copyright (C) 2026 YunoHost Contributors
+# This file is distributed under the same license as the YunoHost documentation package.
+#
+# Mehmet Can Gökçe <rainessandrai2023@gmail.com>, 2026.
+msgid ""
+msgstr ""
+"Project-Id-Version: YunoHost documentation VERSION\n"
+"POT-Creation-Date: 2026-01-04 16:21+0000\n"
+"PO-Revision-Date: 2026-04-10 12:45+0000\n"
+"Last-Translator: Mehmet Can Gökçe <rainessandrai2023@gmail.com>\n"
+"Language-Team: Turkish <https://translate.yunohost.org/projects/yunohost-doc/"
+"80advanced__70chatons/tr/>\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.14.2\n"
+
+#. type: Yaml Front Matter Hash Value: description
+#: docs/admin/80.advanced/70.chatons.mdx:1
+#, no-wrap
+msgid "See the tutorial on chatons.org"
+msgstr "chatons.org'da eğitimleri gör"
+
+#. type: Yaml Front Matter Hash Value: title
+#: docs/admin/80.advanced/70.chatons.mdx:1
+#, no-wrap
+msgid "Create a CHATONS ↗"
+msgstr "CHATONS ↗ Oluştur"
+
+#. type: Plain text
+#: docs/admin/80.advanced/70.chatons.mdx:10
+#, no-wrap
+msgid ""
+"<DocumentedHardRedirect\n"
+"    url=\"https://wiki.chatons.org/doku.php/heberger/administration_systeme/yunohost\"\n"
+"    description=\"the CHATONS documentation\"/>\n"
+msgstr ""
+"<DocumentedHardRedirect\n"
+"    url=\"https://wiki.chatons.org/doku.php/heberger/administration_systeme/"
+"yunohost\"\n"
+"    description=\"CHATONS dökümantasyonu\"/>\n"

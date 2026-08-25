@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2025-12-02 17:58+0000\n"
+"POT-Creation-Date: 2026-01-04 16:21+0000\n"
 "PO-Revision-Date: 2025-11-29 16:25+0000\n"
 "Last-Translator: Weblate Admin <yunohost@translate.yunohost.org>\n"
 "Language-Team: French <https://translate.yunohost.org/projects/yunohost-"
@@ -377,7 +377,7 @@ msgstr "A partir de là vous pouvez arréter le mode maintenance, la commande ci
 #: docs/admin/45.tutorials/25.external_storage.mdx:211
 #, no-wrap
 msgid "From this point on, your services are running with their data on disk, so it's time to test to see how much of an impact this has on performance (especially if you are using USB 2.0).\n"
-msgstr "A partir de cette étape, vos services tournent avec leurs données sur le disque, il est donc temps de tester pour voir dans quelle mesure il y a un impact sur les performances (notamment si vus utilisez de l'USB 2.0).\n"
+msgstr "A partir de cette étape, vos services tournent avec leurs données sur le disque, il est donc temps de tester pour voir dans quelle mesure il y a un impact sur les performances (notamment si vous utilisez de l'USB 2.0).\n"
 
 #. type: Title ##
 #: docs/admin/45.tutorials/25.external_storage.mdx:212

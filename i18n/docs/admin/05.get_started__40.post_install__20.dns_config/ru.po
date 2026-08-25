@@ -1,24 +1,29 @@
 # Copyright (C) 2025 YunoHost Contributors
 # This file is distributed under the same license as the YunoHost documentation.
 #
+# Alekseï <support@digiology.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2025-12-02 17:58+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
-"Language: \n"
+"POT-Creation-Date: 2026-01-04 16:21+0000\n"
+"PO-Revision-Date: 2026-08-15 00:00+0000\n"
+"Last-Translator: Alekseï <support@digiology.org>\n"
+"Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
+"05get_started__40post_install__20dns_config/ru/>\n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 5.14.2\n"
 
 #. type: Title ##
 #: docs/admin/05.get_started/10.providers/05.registrar/ovh/manualdns.mdx:29
 #: docs/admin/05.get_started/40.post_install/20.dns_config.mdx:93
 #, no-wrap
 msgid "Dynamic IP"
-msgstr "Динамический IP-адрес"
+msgstr "Динамический IP"
 
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/05.get_started/40.post_install/20.dns_config.mdx:1
@@ -74,12 +79,13 @@ msgstr "YunoHost предоставляет рекомендуемую конф�
 
 #. type: Plain text
 #: docs/admin/05.get_started/40.post_install/20.dns_config.mdx:23
-#, fuzzy, no-wrap
-#| msgid "or the command line, `yunohost domain dns suggest your.domain.tld`\n"
+#, no-wrap
 msgid ""
 "- the webadmin, in Domain > your.domain.tld > DNS configuration;\n"
 "- or the command line, `yunohost domain dns suggest your.domain.tld`\n"
-msgstr "или в командной строке: `yunohost domain dns suggest your.domain.tld`\n"
+msgstr ""
+"- веб-админка, в разделе Домен > ваш.домен.tld > Конфигурация DNS;\n"
+"- или командная строка: `yunohost domain dns suggest your.domain.tld`\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/40.post_install/20.dns_config.mdx:27
@@ -107,24 +113,7 @@ msgstr "Хотя, возможно, было бы легче понять это
 
 #. type: Plain text
 #: docs/admin/05.get_started/40.post_install/20.dns_config.mdx:62
-#, fuzzy, no-wrap
-#| msgid ""
-#| "| Type    | Name                   | Value                                                 |\n"
-#| "| :-----: | :--------------------: | :--------------------------------------------------:  |\n"
-#| "|  **A**  |   **@**                |  `111.222.333.444` (your IPv4)                        |\n"
-#| "|    A    |   *                    |  `111.222.333.444` (your IPv4)                        |\n"
-#| "|  AAAA   |   @                    |  `2222:444:8888:3333:bbbb:5555:3333:1111` (your IPv6) |\n"
-#| "|  AAAA   |   *                    |  `2222:444:8888:3333:bbbb:5555:3333:1111` (your IPv6) |\n"
-#| "| **SRV** | **_xmpp-client._tcp**  |  `0 5 5222 your.domain.tld.`                          |\n"
-#| "| **SRV** | **_xmpp-server._tcp**  |  `0 5 5269 your.domain.tld.`                          |\n"
-#| "|  CNAME  |   muc                  |  `@`                                                  |\n"
-#| "|  CNAME  |   pubsub               |  `@`                                                  |\n"
-#| "|  CNAME  |   vjud                 |  `@`                                                  |\n"
-#| "|  CNAME  |   xmpp-upload          |  `@`                                                  |\n"
-#| "| **MX**  | **@**                  |  `your.domain.tld.`     (and priority: 10)            |\n"
-#| "|   TXT   |   @                    |  `\"v=spf1 a mx -all\"`               |\n"
-#| "|   TXT   |  mail._domainkey       |  `\"v=DKIM1; k=rsa; p=someHuuuuuuugeKey\"`              |\n"
-#| "|   TXT   |  _dmarc                |  `\"v=DMARC1; p=none\"`                                 |\n"
+#, no-wrap
 msgid ""
 "| Type    | Name                   | Value                                                 |\n"
 "| :-----: | :--------------------: | :--------------------------------------------------:  |\n"
@@ -137,22 +126,26 @@ msgid ""
 "|   TXT   |  mail._domainkey       |  `\"v=DKIM1; k=rsa; p=someHuuuuuuugeKey\"`              |\n"
 "|   TXT   |  _dmarc                |  `\"v=DMARC1; p=none\"`                                 |\n"
 msgstr ""
-"| Тип    | Название                   | Значение                                                 |\n"
-"| :-----: | :--------------------: | :--------------------------------------------------:  |\n"
-"|  **A**  |   **@**                |  `111.222.333.444` (ваш IPv4)                        |\n"
-"|    A    |   *                    |  `111.222.333.444` (ваш IPv4)                        |\n"
-"|  AAAA   |   @                    |  `2222:444:8888:3333:bbbb:5555:3333:1111` (ваш IPv6) |\n"
-"|  AAAA   |   *                    |  `2222:444:8888:3333:bbbb:5555:3333:1111` (ваш IPv6) |\n"
-"| **SRV** | **_xmpp-client._tcp**  |  `0 5 5222 your.domain.tld.`                          |\n"
-"| **SRV** | **_xmpp-server._tcp**  |  `0 5 5269 your.domain.tld.`                          |\n"
-"|  CNAME  |   muc                  |  `@`                                                  |\n"
-"|  CNAME  |   pubsub               |  `@`                                                  |\n"
-"|  CNAME  |   vjud                 |  `@`                                                  |\n"
-"|  CNAME  |   xmpp-upload          |  `@`                                                  |\n"
-"| **MX**  | **@**                  |  `your.domain.tld.`     (с приоритетом: 10)            |\n"
-"|   TXT   |   @                    |  `\"v=spf1 a mx -all\"`               |\n"
-"|   TXT   |  mail._domainkey       |  `\"v=DKIM1; k=rsa; p=someHuuuuuuugeKey\"`              |\n"
-"|   TXT   |  _dmarc                |  `\"v=DMARC1; p=none\"`                                 |\n"
+"| Тип    | Название             | "
+"Значение                                        |\n"
+"| :-----: | :--------------------: | "
+":--------------------------------------------------:  |\n"
+"|  **A**  |   **@**                |  `111.222.333.444` (ваш IPv4)"
+"                        |\n"
+"|    A    |   *                    |  `111.222.333.444` (ваш IPv4)"
+"                        |\n"
+"|  AAAA   |   @                    |  "
+"`2222:444:8888:3333:bbbb:5555:3333:1111` (ваш IPv6) |\n"
+"|  AAAA   |   *                    |  "
+"`2222:444:8888:3333:bbbb:5555:3333:1111` (ваш IPv6) |\n"
+"| **MX**  | **@**                  |  `ваш.домен.tld.`     (и приоритет: 10)"
+"            |\n"
+"|   TXT   |   @                    |  `\"v=spf1 a mx -all\"`               |"
+"\n"
+"|   TXT   |  mail._domainkey       |  `"
+"\"v=DKIM1; k=rsa; p=какой-тодлии-и-инныйключ\"`              |\n"
+"|   TXT   |  _dmarc                |  `\"v=DMARC1; p=none\"`"
+"                                 |\n"
 
 #. type: Title ###
 #: docs/admin/05.get_started/40.post_install/20.dns_config.mdx:63
@@ -172,6 +165,23 @@ msgid ""
 "- Don't put an IPv6 record if you're not sure IPv6 really works on your server! You might have issues with Let's Encrypt if it doesn't.\n"
 "- If you're using the domain provider Namecheap the SRV DNS entries are formatted as **Service**: `_xmpp-client` **Protocol**: `_tcp` **Priority**: `0` **Weight**: `5` **Port**: `5222` **Target**: `your.domain.tld`\n"
 msgstr ""
+"- Не все эти строки абсолютно необходимы. Для минимальной настройки вам "
+"нужны только записи, выделенные жирным шрифтом.\n"
+"- Точка в конце `your.domain.tld.` важна ;);\n"
+"- `@` соответствует `your.domain.tld`, и, например, `muc` соответствует "
+"`muc.your.domain.tld`;\n"
+"- Это примеры значений! См. сгенерированный конфигурационный файл для "
+"фактических значений, которые следует использовать;\n"
+"- Мы рекомендуем [TTL]"
+"(https://en.wikipedia.org/wiki/Time_to_live#DNS_records) равный 3600 (1 час)"
+". Но вы можете использовать другое значение, если знаете, что делаете;\n"
+"- Не добавляйте запись IPv6, если вы не уверены, что IPv6 действительно "
+"работает на вашем сервере! В противном случае у вас могут возникнуть "
+"проблемы с Let's Encrypt.\n"
+"- Если вы используете доменного провайдера Namecheap, записи DNS SRV имеют "
+"следующий формат: **Сервис/Service**: `_xmpp-client` **Протокол/Protocol**: "
+"`_tcp` **Приоритет/Priority**: `0` **Вес/Weight**: `5` **Порт/Port**: `5222` "
+"**Цель/Target**: `your.domain.tld`\n"
 
 #. type: Title ##
 #: docs/admin/05.get_started/40.post_install/20.dns_config.mdx:73

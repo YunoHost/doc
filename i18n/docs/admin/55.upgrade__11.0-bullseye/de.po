@@ -2,24 +2,27 @@
 # This file is distributed under the same license as the YunoHost documentation.
 #
 # Languages add-on <noreply-addon-languages@weblate.org>, 2025.
+# Henning <daboj757@protonmail.com>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2025-11-11 01:24+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2025-12-14 23:03+0000\n"
+"Last-Translator: Henning <daboj757@protonmail.com>\n"
+"Language-Team: German <https://translate.yunohost.org/projects/yunohost-doc/"
+"55upgrade__110-bullseye/de/>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.14.2\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/55.upgrade/11.0-bullseye.mdx:1
 #, no-wrap
 msgid "Migrating from 4.x to 11.x"
-msgstr ""
+msgstr "Von 4.x auf 11.x migrieren"
 
 #. type: Plain text
 #: docs/admin/55.upgrade/11.0-bullseye.mdx:6
@@ -32,7 +35,7 @@ msgstr ""
 #: docs/admin/55.upgrade/12.0-bookworm/index.mdx:7
 #, no-wrap
 msgid "Important notes"
-msgstr ""
+msgstr "Wichtige Notizen"
 
 #. type: Plain text
 #: docs/admin/55.upgrade/11.0-bullseye.mdx:10
@@ -74,7 +77,7 @@ msgstr ""
 #: docs/admin/55.upgrade/index.mdx:5
 #, no-wrap
 msgid "From the webadmin"
-msgstr ""
+msgstr "Vom Webadmin"
 
 #. type: Plain text
 #: docs/admin/55.upgrade/11.0-bullseye.mdx:22
