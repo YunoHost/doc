@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: 2026-05-29 23:49+0000\n"
+"PO-Revision-Date: 2026-08-24 20:50+0000\n"
 "Last-Translator: Alekseï <support@digiology.org>\n"
 "Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
 "05get_started__20install_on__wsl/ru/>\n"
@@ -41,13 +41,17 @@ msgstr "Экспериментальный проект для любителе�
 #: docs/admin/05.get_started/20.install_on/wsl.mdx:1
 #, no-wrap
 msgid "On WSL"
-msgstr ""
+msgstr "В WSL"
 
 #. type: Fenced div block (danger)
 #: docs/admin/05.get_started/20.install_on/wsl.mdx:17
 #, no-wrap
 msgid "This setup is mainly meant for local testing by advanced users. Due to limitations on WSL's side (changing IP address, notably), selfhosting from it can be tricky and will not be described here.\n"
 msgstr ""
+"Данная конфигурация в основном предназначена для локального тестирования "
+"опытными пользователями. Из-за ограничений со стороны WSL "
+"(в частности, изменения IP-адреса) самостоятельный хостинг с её помощью "
+"может быть сложным и здесь не будет описан.\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/wsl.mdx:27
@@ -58,6 +62,13 @@ msgid ""
 "- Windows Subsystem for Linux, installed from the Optional Features menu of Windows\n"
 "- *Recommended:* Windows Terminal (Preview) app, installed from the Microsoft Store. Much better than the standard Terminal, as it offers shortcuts to the WSL distros.\n"
 msgstr ""
+"- Windows 10 и выше\n"
+"- Права администратора\n"
+"- Подсистема Windows для Linux, установленная из меню «Дополнительные "
+"компоненты» Windows\n"
+"- *Рекомендуется:* Приложение Windows Terminal (Preview), установленное из "
+"Microsoft Store. Значительно лучше стандартного Терминала, так как "
+"предлагает ярлыки для дистрибутивов WSL.\n"
 
 #. type: Title ##
 #: docs/admin/05.get_started/20.install_on/wsl.mdx:28
@@ -73,6 +84,12 @@ msgid ""
 "WSL is a nice feature of Windows 10, making Linux pseudo-distributions available through command line. Let's say pseudo, because even though they are not really like virtual machines, they rely on virtualization capacities that make their integration with Windows almost seamless.\n"
 "Docker for Windows can now rely on WSL instead of Hyper-V, for example.\n"
 msgstr ""
+"WSL — это полезная функция Windows 10, позволяющая использовать псевдо-"
+"дистрибутивы Linux через командную строку. Назовём их псевдо-дистрибутивами, "
+"потому что, хотя они и не совсем похожи на виртуальные машины, они "
+"используют возможности виртуализации, что делает их интеграцию с Windows "
+"практически бесшовной.\n"
+"Например, Docker для Windows теперь может использовать WSL вместо Hyper-V.\n"
 
 #. type: Fenced div block (warning)
 #: docs/admin/05.get_started/20.install_on/wsl.mdx:33
@@ -81,54 +98,65 @@ msgid ""
 "Bear in mind, this setup itself is *not* a container of any kind. If something breaks, there is no rollback capability.  \n"
 "You may need to delete the Debian distro altogether and restore it whole.\n"
 msgstr ""
+"Имейте в виду, что сама эта конфигурация *не* является каким-либо "
+"контейнером. Если что-то сломается, возможности отката нет.  \n"
+"Возможно, вам потребуется полностью удалить дистрибутив Debian и "
+"восстановить его целиком.\n"
 
 #. type: Title ##
 #: docs/admin/05.get_started/20.install_on/wsl.mdx:38
 #, no-wrap
 msgid "Install Debian"
-msgstr ""
+msgstr "Установка Debian"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/wsl.mdx:41
 #, no-wrap
 msgid "Let's install YunoHost into its own distro, not altering the default one. In a PowerShell terminal:\n"
 msgstr ""
+"Давайте установим YunoHost в отдельный дистрибутив, не изменяя дистрибутив "
+"по умолчанию. В терминале PowerShell:\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/wsl.mdx:56
 #, no-wrap
 msgid "You can now access it: run `wsl.exe -d YunoHost`\n"
 msgstr ""
+"Теперь вы можете получить к нему доступ: выполните команду `wsl.exe -d "
+"YunoHost`\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/wsl.mdx:58
 #, no-wrap
 msgid "It is under Debian 9 Stretch, so let's upgrade it:\n"
 msgstr ""
+"Она работает под управлением Debian 9 Stretch, так что давайте обновим её:\n"
 
 #. type: Title ##
 #: docs/admin/05.get_started/20.install_on/wsl.mdx:70
 #, no-wrap
 msgid "Prevent WSL from tweaking configuration files"
-msgstr ""
+msgstr "Запрет WSL изменять конфигурационные файлы"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/wsl.mdx:73
 #, no-wrap
 msgid "Edit `/etc/wsl.conf` and put the following code in it:\n"
-msgstr ""
+msgstr "Отредактируйте файл `/etc/wsl.conf`, добавив в него следующий код:\n"
 
 #. type: Title ##
 #: docs/admin/05.get_started/20.install_on/wsl.mdx:80
 #, no-wrap
 msgid "Force the use of iptables-legacy"
-msgstr ""
+msgstr "Принудительное использование iptables-legacy"
 
 #. type: Fenced div block (warning[FIXME])
 #: docs/admin/05.get_started/20.install_on/wsl.mdx:82
 #, no-wrap
 msgid "YunoHost now uses nftables, these instructions might be out of date.\n"
 msgstr ""
+"В YunoHost теперь используется nftables, поэтому данные инструкции могут "
+"быть устаревшими.\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/wsl.mdx:88
@@ -137,12 +165,15 @@ msgid ""
 "Somehow the YunoHost post-installation does not like `nf_tables`, the new software replacing `iptables`.\n"
 "We can still explicitely use the good ol' `iptables` though:\n"
 msgstr ""
+"Иногда после установки YunoHost не работает с `nf_tables`, новым программным "
+"обеспечением, заменяющим `iptables`.\n"
+"Однако мы по-прежнему можем явно использовать старый добрый `iptables`:\n"
 
 #. type: Title ##
 #: docs/admin/05.get_started/20.install_on/wsl.mdx:95
 #, no-wrap
 msgid "Install Systemd"
-msgstr ""
+msgstr "Установка Systemd"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/wsl.mdx:99
@@ -151,18 +182,22 @@ msgid ""
 "Debian on WSL does not have `systemd`, a service configuration software.\n"
 "This is a key element for YunoHost, and for any decent Debian distro (seriously MS, what the heck). Let's install it:\n"
 msgstr ""
+"В Debian на WSL отсутствует `systemd`, программное обеспечение для настройки "
+"служб.\n"
+"Это ключевой элемент для YunoHost и для любого приличного дистрибутива "
+"Debian (серьёзно, MS, что за чертовщина?). Давайте установим его:\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/wsl.mdx:101
 #, no-wrap
 msgid "1. Install dotNET runtime:\n"
-msgstr ""
+msgstr "1. Установите среду выполнения dotNET:\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/wsl.mdx:113
 #, no-wrap
 msgid "2. Install [Genie](https://github.com/arkane-systems/genie):\n"
-msgstr ""
+msgstr "2. Установите [Genie](https://github.com/arkane-systems/genie):\n"
 
 #. type: Title ##
 #: docs/admin/05.get_started/20.install_on/wsl.mdx:123
@@ -174,19 +209,19 @@ msgstr "Установка YunoHost"
 #: docs/admin/05.get_started/20.install_on/wsl.mdx:137
 #, no-wrap
 msgid "Access the command line"
-msgstr ""
+msgstr "Доступ к командной строке"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/wsl.mdx:140
 #, no-wrap
 msgid "Always call `genie -s` while starting your distro.\n"
-msgstr ""
+msgstr "При запуске дистрибутива всегда используйте команду `genie -s`.\n"
 
 #. type: Title ##
 #: docs/admin/05.get_started/20.install_on/wsl.mdx:145
 #, no-wrap
 msgid "Backup and restore the distro"
-msgstr ""
+msgstr "Создайте резервную копию и восстановите дистрибутив"
 
 #. type: Title ###
 #: docs/admin/05.get_started/20.install_on/wsl.mdx:147

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: 2026-05-29 17:22+0000\n"
+"PO-Revision-Date: 2026-07-07 00:42+0000\n"
 "Last-Translator: Alekseï <support@digiology.org>\n"
 "Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
 "01about_self_hosting/ru/>\n"
@@ -28,13 +28,26 @@ msgstr "Самостоятельная развёртка"
 #: docs/admin/01.about_self_hosting.mdx:7
 #, no-wrap
 msgid "Self-hosting means owning and administrating your own server, typically at home, to host your **personal data and services** yourself instead of relying exclusively on third parties. For instance, you can self-host your blog, such that it 'lives' on a machine that you have control of, instead of having it on somebody else's computer (a.k.a. FAANG or The Cloud) in exchange for money, advertisements, or private data.\n"
-msgstr "Самостоятельный хостинг - это деятельность по созданию и администрированию вашего собственного сервера, как правило, дома, для самостоятельного размещения ваших персональных данных и сервисов вместо того, чтобы полагаться исключительно на третьих лиц. Например, вы можете самостоятельно разместить свой блог, чтобы он \"жил\" на компьютере, который вы контролируете, вместо того, чтобы размещать его на чьем-то другом компьютере (он же Облако) в обмен на деньги, рекламу или личные данные.\n"
+msgstr ""
+"Самостоятельный хостинг - это деятельность по созданию и администрированию "
+"вашего собственного сервера, как правило, дома, для самостоятельного "
+"размещения ваших **персональных данных и сервисов** вместо того, чтобы "
+"полагаться исключительно на третьих лиц. Например, вы можете самостоятельно "
+"разместить свой блог, чтобы он \"жил\" на компьютере, который вы "
+"контролируете, вместо того, чтобы размещать его на чьем-то другом компьютере "
+"(он же Облако) в обмен на деньги, рекламу или личные данные.\n"
 
 #. type: Plain text
 #: docs/admin/01.about_self_hosting.mdx:9
 #, no-wrap
 msgid "Self-hosting implies owning a server. **A server is a computer that is typically accessible on the network 24/7**, and usually does not have a screen or keyboard (it is instead controlled remotely). Contrary to a popular belief, a server is not necessarily a huge and extra-powerful machine: nowadays, a small, ~$30 ARM board is adequate for self-hosting.\n"
-msgstr "Самостоятельный хостинг подразумевает владение сервером. Сервер - это компьютер, который обычно доступен в сети 24/7 и обычно не имеет экрана или клавиатуры (вместо этого он управляется удаленно). Вопреки распространенному мнению, сервер - это не обязательно огромная и сверхмощная машина: в настоящее время для самостоятельного размещения вполне достаточно небольшой платы ARM стоимостью ~ 30 долларов.\n"
+msgstr ""
+"Самостоятельный хостинг подразумевает владение сервером. **Сервер - это "
+"компьютер, который обычно доступен в сети 24/7** и обычно не имеет экрана "
+"или клавиатуры (вместо этого он управляется удалённо). Вопреки "
+"распространенному мнению, сервер - это не обязательно огромная и сверхмощная "
+"машина: в настоящее время для самостоятельного размещения вполне достаточно "
+"небольшой платы ARM стоимостью около 30 долларов.\n"
 
 #. type: Plain text
 #: docs/admin/01.about_self_hosting.mdx:11

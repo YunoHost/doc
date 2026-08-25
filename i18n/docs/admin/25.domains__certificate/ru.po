@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-04-19 08:39+0000\n"
-"PO-Revision-Date: 2026-05-29 17:22+0000\n"
+"PO-Revision-Date: 2026-08-24 15:43+0000\n"
 "Last-Translator: Alekseï <support@digiology.org>\n"
 "Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
 "25domains__certificate/ru/>\n"
@@ -64,121 +64,165 @@ msgstr "<TabItem value=\"cli\" label=\"Из командной строки\">\n
 #: docs/admin/25.domains/certificate.mdx:1
 #, no-wrap
 msgid "Certificate"
-msgstr ""
+msgstr "Сертификат"
 
 #. type: Plain text
 #: docs/admin/25.domains/certificate.mdx:10
 #, no-wrap
 msgid "Certificates are used to guarantee the confidentiality and authenticity of the communication between a web browser and your server. In particular, they protect against attackers trying to impersonate your server.\n"
 msgstr ""
+"Сертификаты используются для гарантии конфиденциальности и подлинности "
+"обмена данными между веб-браузером и вашим сервером. В частности, они "
+"защищают от злоумышленников, пытающихся выдать себя за ваш сервер.\n"
 
 #. type: Plain text
 #: docs/admin/25.domains/certificate.mdx:12
 #, no-wrap
 msgid "YunoHost provides a **self-signed** certificate, it means that your server guaranties the certificate validity. It's enough **for personal usage**, because you trust your own server. But this could be a problem if you want to open access to anonymous like web user for a website.\n"
 msgstr ""
+"YunoHost предоставляет **самоподписанный** сертификат, это означает, что ваш "
+"сервер гарантирует действительность сертификата. Этого достаточно **для "
+"личного использования**, поскольку вы доверяете своему собственному серверу. "
+"Но это может стать проблемой, если вы хотите предоставить анонимный доступ, "
+"например, веб-пользователям, к веб-сайту.\n"
 
 #. type: Plain text
 #: docs/admin/25.domains/certificate.mdx:14
 #, no-wrap
 msgid "In practice, visitors will see a screen list this:\n"
-msgstr ""
+msgstr "На практике посетители увидят на экране следующий список:\n"
 
 #. type: Plain text
 #: docs/admin/25.domains/certificate.mdx:18
 #, no-wrap
 msgid "Which basically asks the visitor : **\"Do you trust the server hosting this website?\"**. This can rightfully frighten a lot of people.\n"
 msgstr ""
+"По сути, это вопрос к посетителю: **"
+"\"Доверяете ли вы серверу, на котором размещён этот веб-сайт?\"**. Это "
+"вполне может напугать многих людей.\n"
 
 #. type: Plain text
 #: docs/admin/25.domains/certificate.mdx:20
 #, no-wrap
 msgid "To avoid this confusion, it's possible to get a certificate signed by a known authority named **Let's Encrypt** which provides free certificates directly recognized by browsers. YunoHost allows you to directly install this certificate from the web administration interface or from the command line.\n"
 msgstr ""
+"Чтобы избежать подобной путаницы, можно получить сертификат, подписанный "
+"известным центром сертификации, например, **Let's Encrypt**, который "
+"предоставляет бесплатные сертификаты, напрямую распознаваемые браузерами. "
+"YunoHost позволяет установить этот сертификат непосредственно через веб-"
+"интерфейс администрирования или из командной строки.\n"
 
 #. type: Title ##
 #: docs/admin/25.domains/certificate.mdx:21
 #, no-wrap
 msgid "Install a Let's Encrypt certificate"
-msgstr ""
+msgstr "Установка сертификата Let's Encrypt"
 
 #. type: Plain text
 #: docs/admin/25.domains/certificate.mdx:24
 #, no-wrap
 msgid "Before attempting to install a Let's Encrypt certificate, you should make sure that your DNS is correctly configured (your.domain.tld should point to your server's IP) and that your domain is accessible through HTTP from outside your local network (i.e. at least port 80 should be forwarded to your server).\n"
 msgstr ""
+"Прежде чем пытаться установить сертификат Let's Encrypt, убедитесь, что ваша "
+"DNS-система настроена правильно "
+"(ваш домен your.domain.tld должен указывать на IP-адрес вашего сервера) и "
+"что ваш домен доступен по протоколу HTTP извне вашей локальной сети "
+"(т.е. как минимум порт 80 должен быть перенаправлен на ваш сервер).\n"
 
 #. type: Plain text
 #: docs/admin/25.domains/certificate.mdx:29
 #, no-wrap
 msgid "Go to the 'Domain' part of the admin interface, then in the section dedicated to your.domain.tld. You should find a 'SSL certificate' button:\n"
 msgstr ""
+"Перейдите в раздел «Домен» веб-панели администратора, затем в разделе, "
+"посвящённом вашему домену .domain.tld, вы должны найти кнопку "
+"«SSL-сертификат»:\n"
 
 #. type: Plain text
 #: docs/admin/25.domains/certificate.mdx:33
 #, no-wrap
 msgid "In the 'SSL certificate' section, you can see the status of the current certificate. If you just added the domain, it should be a self-signed certificate.\n"
 msgstr ""
+"В разделе «SSL-сертификат» вы можете увидеть статус текущего сертификата. "
+"Если вы только что добавили домен, это должен быть самоподписанный "
+"сертификат.\n"
 
 #. type: Plain text
 #: docs/admin/25.domains/certificate.mdx:37
 #, no-wrap
 msgid "If your domain is correctly configured, it is then possible to install the Let's Encrypt certificate via the green button.\n"
 msgstr ""
+"Если ваш домен настроен правильно, то после этого можно установить "
+"сертификат Let's Encrypt, нажав на зелёную кнопку.\n"
 
 #. type: Plain text
 #: docs/admin/25.domains/certificate.mdx:41
 #, no-wrap
 msgid "Once the install is made, you can check that the certificate is live via your browser by going to your domain in HTTPS. The certificate will automatically be renewed every three months.\n"
 msgstr ""
+"После установки вы можете проверить, активен ли сертификат, через свой "
+"браузер, перейдя по протоколу HTTPS на свой домен. Сертификат будет "
+"автоматически продлеваться каждые три месяца.\n"
 
 #. type: Plain text
 #: docs/admin/25.domains/certificate.mdx:48
 #, no-wrap
 msgid "Connect to your server through SSH.\n"
-msgstr ""
+msgstr "Подключитесь к своему серверу через SSH.\n"
 
 #. type: Plain text
 #: docs/admin/25.domains/certificate.mdx:50
 #, no-wrap
 msgid "You can check the status of your current certificate with:\n"
 msgstr ""
+"Проверить статус вашего текущего сертификата можно с помощью следующей "
+"команды:\n"
 
 #. type: Plain text
 #: docs/admin/25.domains/certificate.mdx:56
 #, no-wrap
 msgid "Install a Let's Encrypt certificate with\n"
-msgstr ""
+msgstr "Установите сертификат Let's Encrypt с помощью\n"
 
 #. type: Plain text
 #: docs/admin/25.domains/certificate.mdx:62
 #, no-wrap
 msgid "This should return :\n"
-msgstr ""
+msgstr "В результате должно получиться следующее:\n"
 
 #. type: Plain text
 #: docs/admin/25.domains/certificate.mdx:69
 #, no-wrap
 msgid "Once this is done, you can check that the certificate is live via your browser by going to your domain in HTTPS. The certificate will automatically be renewed every three months.\n"
 msgstr ""
+"После этого вы можете проверить, активен ли сертификат, через свой браузер, "
+"перейдя по адресу вашего домена с протоколом HTTPS. Сертификат будет "
+"автоматически продлеваться каждые три месяца.\n"
 
 #. type: Title ##
 #: docs/admin/25.domains/certificate.mdx:73
 #, no-wrap
 msgid "Troubleshooting"
-msgstr ""
+msgstr "Поиск неисправностей"
 
 #. type: Plain text
 #: docs/admin/25.domains/certificate.mdx:76
 #, no-wrap
 msgid "If due to some bad tweaking, your certificate ends up in a bad state (e.g. lost the certificate or unable to read the files), you should be able to clean the situation by regenerating a self-signed certificate:\n"
 msgstr ""
+"Если из-за каких-либо неправильных настроек ваш сертификат окажется в "
+"некорректном состоянии "
+"(например, сертификат будет потерян или файлы будут недоступны для чтения), "
+"вы сможете исправить ситуацию, сгенерировав самоподписанный сертификат:\n"
 
 #. type: Plain text
 #: docs/admin/25.domains/certificate.mdx:82
 #, no-wrap
 msgid "If YunoHost thinks that your domain is badly configured despite the fact that you checked the DNS configuration and you have access in HTTP to your server from outside your local network, then you can:\n"
 msgstr ""
+"Если YunoHost считает, что ваш домен настроен неправильно, несмотря на то, "
+"что вы проверили конфигурацию DNS и имеете доступ к серверу по протоколу "
+"HTTP извне вашей локальной сети, то вы можете:\n"
 
 #. type: Plain text
 #: docs/admin/25.domains/certificate.mdx:84
@@ -187,3 +231,7 @@ msgid ""
 "- add a line `127.0.0.1 your.domain.tld` to the file `/etc/hosts` on your server;\n"
 "- if the certificate installation still doesn't work, you can disable the checks with `--no-checks` after the `cert install` command.\n"
 msgstr ""
+"- Добавьте строку `127.0.0.1 ваш.домен.tld` в файл `/etc/hosts` на вашем "
+"сервере.\n"
+"- Если установка сертификата по-прежнему не работает, вы можете отключить "
+"проверки с помощью `--no-checks` после команды `cert install`.\n"

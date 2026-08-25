@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: 2026-05-29 23:49+0000\n"
+"PO-Revision-Date: 2026-08-15 00:00+0000\n"
 "Last-Translator: Alekseï <support@digiology.org>\n"
 "Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
 "05get_started__40post_install__20dns_config/ru/>\n"
@@ -23,7 +23,7 @@ msgstr ""
 #: docs/admin/05.get_started/40.post_install/20.dns_config.mdx:93
 #, no-wrap
 msgid "Dynamic IP"
-msgstr "Динамический IP-адрес"
+msgstr "Динамический IP"
 
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/05.get_started/40.post_install/20.dns_config.mdx:1
@@ -165,6 +165,23 @@ msgid ""
 "- Don't put an IPv6 record if you're not sure IPv6 really works on your server! You might have issues with Let's Encrypt if it doesn't.\n"
 "- If you're using the domain provider Namecheap the SRV DNS entries are formatted as **Service**: `_xmpp-client` **Protocol**: `_tcp` **Priority**: `0` **Weight**: `5` **Port**: `5222` **Target**: `your.domain.tld`\n"
 msgstr ""
+"- Не все эти строки абсолютно необходимы. Для минимальной настройки вам "
+"нужны только записи, выделенные жирным шрифтом.\n"
+"- Точка в конце `your.domain.tld.` важна ;);\n"
+"- `@` соответствует `your.domain.tld`, и, например, `muc` соответствует "
+"`muc.your.domain.tld`;\n"
+"- Это примеры значений! См. сгенерированный конфигурационный файл для "
+"фактических значений, которые следует использовать;\n"
+"- Мы рекомендуем [TTL]"
+"(https://en.wikipedia.org/wiki/Time_to_live#DNS_records) равный 3600 (1 час)"
+". Но вы можете использовать другое значение, если знаете, что делаете;\n"
+"- Не добавляйте запись IPv6, если вы не уверены, что IPv6 действительно "
+"работает на вашем сервере! В противном случае у вас могут возникнуть "
+"проблемы с Let's Encrypt.\n"
+"- Если вы используете доменного провайдера Namecheap, записи DNS SRV имеют "
+"следующий формат: **Сервис/Service**: `_xmpp-client` **Протокол/Protocol**: "
+"`_tcp` **Приоритет/Priority**: `0` **Вес/Weight**: `5` **Порт/Port**: `5222` "
+"**Цель/Target**: `your.domain.tld`\n"
 
 #. type: Title ##
 #: docs/admin/05.get_started/40.post_install/20.dns_config.mdx:73

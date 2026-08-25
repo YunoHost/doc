@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-04-19 08:39+0000\n"
-"PO-Revision-Date: 2026-05-29 17:22+0000\n"
+"PO-Revision-Date: 2026-08-24 20:50+0000\n"
 "Last-Translator: Alekseï <support@digiology.org>\n"
 "Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
 "15command_line/ru/>\n"
@@ -64,37 +64,48 @@ msgstr "<TabItem value=\"cli\" label=\"Из командной строки\">\n
 #: docs/admin/15.command_line.mdx:1
 #, no-wrap
 msgid "🛠️ SSH and command line"
-msgstr ""
+msgstr "🛠️ SSH и командная строка"
 
 #. type: Title ##
 #: docs/admin/15.command_line.mdx:8
 #, no-wrap
 msgid "What's SSH?"
-msgstr ""
+msgstr "Что такое SSH?"
 
 #. type: Plain text
 #: docs/admin/15.command_line.mdx:11
 #, no-wrap
 msgid "**SSH** stands for Secure Shell, and refers to a protocol that allows you to remotely control and administer a machine using the command line interface (CLI). It is available by default in any terminal on GNU/Linux and macOS. On Windows, you may want to use [MobaXterm](https://mobaxterm.mobatek.net/download-home-edition.html) (after launching it, click on Session then SSH).\n"
 msgstr ""
+"**SSH** расшифровывается как Secure Shell (защищённая оболочка) и обозначает "
+"протокол, позволяющий удалённо управлять машиной и администрировать её с "
+"помощью интерфейса командной строки (CLI). Он доступен по умолчанию в любом "
+"терминале GNU/Linux и macOS. В Windows вы можете использовать [MobaXterm]"
+"(https://mobaxterm.mobatek.net/download-home-edition.html) "
+"(после запуска нажмите «Сессия», затем «SSH»).\n"
 
 #. type: Plain text
 #: docs/admin/15.command_line.mdx:13
 #, no-wrap
 msgid "The command line interface (CLI) is, in the computer world, the original (and more technical) way of interacting with a computer compared to graphical interface. Command line interfaces are generally said to be more complete, powerful or efficient than a graphical interface, though also more difficult to learn.\n"
 msgstr ""
+"В компьютерном мире интерфейс командной строки (CLI) — это оригинальный "
+"(и более технически сложный) способ взаимодействия с компьютером по "
+"сравнению с графическим интерфейсом. Как правило, считается, что интерфейс "
+"командной строки более полный, мощный и эффективный, чем графический "
+"интерфейс, хотя и сложнее в освоении.\n"
 
 #. type: Title ##
 #: docs/admin/15.command_line.mdx:14
 #, no-wrap
 msgid "How to connect"
-msgstr ""
+msgstr "Как подключиться"
 
 #. type: Title ###
 #: docs/admin/15.command_line.mdx:16
 #, no-wrap
 msgid "Credentials *before* running the postinstall"
-msgstr ""
+msgstr "Укажите учётные данные *перед* запуском postinstall"
 
 #. type: Plain text
 #: docs/admin/15.command_line.mdx:20
@@ -103,36 +114,58 @@ msgid ""
 "- If you are **installing at home**, the default credentials are login: `root` and password: `yunohost` (or `1234` if you flashed an armbian image)\n"
 "- If you are **installing a remote server (VPS)**, your provider should have communicated the login and password to you (or allowed you to configure an SSH key)\n"
 msgstr ""
+"- Если вы **устанавливаете систему дома**, учётные данные по умолчанию, "
+"логин: `root` и пароль: `yunohost` "
+"(или `1234`, если вы установили образ Armbian)\n"
+"- Если вы **устанавливаете систему на удаленный сервер (VPS)**, ваш "
+"провайдер должен был сообщить вам логин и пароль "
+"(или позволить вам настроить ключ SSH)\n"
 
 #. type: Title ###
 #: docs/admin/15.command_line.mdx:21
 #, no-wrap
 msgid "Credentials *after* running the postinstall"
-msgstr ""
+msgstr "Учётные данные *после* выполнения команды postinstall"
 
 #. type: Plain text
 #: docs/admin/15.command_line.mdx:25
 #, no-wrap
 msgid "During the postinstall, you've been asked to choose a user and an administration password. This user account allows you to connect to the server through SSH. The password also becomes the new password for the `root` user. Additionally, **the `root` SSH login becomes disabled after the postinstall and you should log in using the user account created during postinstall !**. The only exception is that you may still be able to login using `root` *from the local network - or from a direct console on the server* (this is to cover the event where the LDAP server is broken and the users who are members of the `admins` group are unusable).\n"
 msgstr ""
+"В процессе установки вам было предложено выбрать пользователя и пароль "
+"администратора. Эта учетная запись пользователя позволит вам подключаться к "
+"серверу через SSH. Пароль также станет новым паролем для пользователя `root`"
+". Кроме того, **вход через SSH для пользователя `root` будет отключен после "
+"установки, и вам следует входить в систему, используя учетную запись "
+"пользователя, созданную во время установки!**. Единственное исключение — вы "
+"все еще можете войти в систему, используя пользователя `root` *из локальной "
+"сети или непосредственно с консоли на сервере* (это необходимо для случая, "
+"когда LDAP-сервер неисправен, и пользователи, входящие в группу `admins`, "
+"становятся недоступны).\n"
 
 #. type: Fenced div block (tip)
 #: docs/admin/15.command_line.mdx:26
 #, no-wrap
 msgid "If you connected with the administration account and would like to become `root` for convenience (e.g. to avoid typing `sudo` in front of every command), you can become `root` using the command `sudo su` or `sudo -i`.\n"
 msgstr ""
+"Если вы подключились к системе под учетной записью администратора и хотите "
+"получить права `root` для удобства "
+"(например, чтобы не вводить `sudo` перед каждой командой), вы можете сделать "
+"это с помощью команды `sudo su` или `sudo -i`.\n"
 
 #. type: Title ###
 #: docs/admin/15.command_line.mdx:30
 #, no-wrap
 msgid "Address to use"
-msgstr ""
+msgstr "Адрес для использования"
 
 #. type: Plain text
 #: docs/admin/15.command_line.mdx:33
 #, no-wrap
 msgid "If you are **installing at home** (e.g. on a Raspberry Pi or OLinuXino or old computer):\n"
 msgstr ""
+"Если вы **устанавливаете приложение дома** "
+"(например, на Raspberry Pi, OLinuXino или старый компьютер):\n"
 
 #. type: Plain text
 #: docs/admin/15.command_line.mdx:37
@@ -142,66 +175,95 @@ msgid ""
 "- if `yunohost.local` and the like do not work, your need to [find out the local IP of the server](/admin/get_started/post_install/find_ip).\n"
 "- if you installed a server at home but are attempting to connect from outside your local network, make sure port 22 is correctly forwarded to your server.\n"
 msgstr ""
+"- Вы должны иметь возможность подключиться к своему серверу, используя "
+"`yunohost.local` "
+"(или `yunohost-2.local`, в зависимости от количества серверов в вашей сети)."
+"\n"
+"- Если `yunohost.local` и подобные не работают, вам необходимо "
+"[узнать локальный IP-адрес сервера](/admin/get_started/post_install/find_ip)."
+"\n"
+"- Если вы установили сервер дома, но пытаетесь подключиться извне вашей "
+"локальной сети, убедитесь, что порт 22 правильно перенаправлен на ваш сервер."
+"\n"
 
 #. type: Plain text
 #: docs/admin/15.command_line.mdx:39
 #, no-wrap
 msgid "If your server is a remote server (VPS), your provider should have provided you with the IP address of the machine\n"
 msgstr ""
+"Если ваш сервер является удалённым сервером (VPS), ваш провайдер должен был "
+"предоставить вам IP-адрес этого компьютера.\n"
 
 #. type: Plain text
 #: docs/admin/15.command_line.mdx:41
 #, no-wrap
 msgid "In any cases, if you already configured a domain name pointing to the appropriate IP, it's much better to use `your.domain.tld` instead of the IP address.\n"
 msgstr ""
+"В любом случае, если вы уже настроили доменное имя, указывающее на "
+"соответствующий IP-адрес, гораздо лучше использовать `your.domain.tld` "
+"вместо IP-адреса.\n"
 
 #. type: Title ###
 #: docs/admin/15.command_line.mdx:42
 #, no-wrap
 msgid "Connecting"
-msgstr ""
+msgstr "Подключение"
 
 #. type: Plain text
 #: docs/admin/15.command_line.mdx:45
 #, no-wrap
 msgid "The SSH command typically looks like:\n"
-msgstr ""
+msgstr "Команда SSH обычно выглядит следующим образом:\n"
 
 #. type: Fenced div block (note)
 #: docs/admin/15.command_line.mdx:62
 #, no-wrap
 msgid "`fail2ban` will ban your IP for 10 minutes if you perform 10 failed login attempts. If you need to unban the IP, have a look at the page about [Fail2Ban](/admin/troubleshooting/fail2ban)\n"
 msgstr ""
+"`fail2ban` заблокирует ваш IP-адрес на 10 минут, если вы совершите 10 "
+"неудачных попыток входа в систему. Если вам нужно разблокировать IP-адрес, "
+"ознакомьтесь со страницей о [Fail2Ban](/admin/troubleshooting/fail2ban)\n"
 
 #. type: Title ##
 #: docs/admin/15.command_line.mdx:66
 #, no-wrap
 msgid "Which other users may connect to the server?"
-msgstr ""
+msgstr "Какие ещё пользователи могут подключиться к серверу?"
 
 #. type: Plain text
 #: docs/admin/15.command_line.mdx:69
 #, no-wrap
 msgid "By default, only YunoHost users in the `admins` group can log in to YunoHost's SSH and SFTP servers. Non-admin YunoHost users can't connect via SSH for security reasons. With the permissions system it is possible to specifically grant SFTP or even SSH access to non-admin users.\n"
 msgstr ""
+"По умолчанию только пользователи YunoHost из группы `admins` могут "
+"подключаться к SSH и SFTP серверам YunoHost. Пользователи YunoHost, не "
+"являющиеся администраторами, не могут подключаться через SSH по соображениям "
+"безопасности. С помощью системы разрешений можно специально предоставить "
+"доступ к SFTP или даже SSH пользователям, не являющимся администраторами.\n"
 
 #. type: Fenced div block (caution)
 #: docs/admin/15.command_line.mdx:70
 #, no-wrap
 msgid "Be careful who you give SSH access to. This increases even more the attack surface available to a malicious user.\n"
 msgstr ""
+"Будьте осторожны с тем, кому вы предоставляете доступ по SSH. Это может "
+"значительно увеличить поверхность атаки для злоумышленника.\n"
 
 #. type: Plain text
 #: docs/admin/15.command_line.mdx:78
 #, no-wrap
 msgid "Go to `Users > Manage groups and permissions`.\n"
 msgstr ""
+"Перейдите в раздел «Пользователи > Управление группами и разрешениями» "
+"(`Users > Manage groups and permissions`).\n"
 
 #. type: Plain text
 #: docs/admin/15.command_line.mdx:80
 #, no-wrap
 msgid "From here, you can add SFTP or SSH permissions to any user or group.\n"
 msgstr ""
+"Здесь вы можете добавить права доступа по протоколам SFTP или SSH любому "
+"пользователю или группе.\n"
 
 #. type: Plain text
 #: docs/admin/15.command_line.mdx:82

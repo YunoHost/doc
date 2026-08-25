@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: 2026-06-02 20:31+0000\n"
+"PO-Revision-Date: 2026-08-10 13:35+0000\n"
 "Last-Translator: Alekseï <support@digiology.org>\n"
 "Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
 "30apps__custom_apps/ru/>\n"
@@ -39,64 +39,97 @@ msgstr ""
 #: docs/admin/30.apps/custom_apps.mdx:7
 #, no-wrap
 msgid "Installing your very own webapp"
-msgstr ""
+msgstr "Установка собственного веб-приложения"
 
 #. type: Plain text
 #: docs/admin/30.apps/custom_apps.mdx:10
 #, no-wrap
 msgid "A special application exists called [My webapp](https://apps.yunohost.org/app/my_webapp).\n"
 msgstr ""
+"Существует специальное приложение под названием [My webapp]"
+"(https://apps.yunohost.org/app/my_webapp).\n"
 
 #. type: Plain text
 #: docs/admin/30.apps/custom_apps.mdx:12
 #, no-wrap
 msgid "It can be seen as \"an empty shell\" in which you can drop your own HTML, CSS, JS, etc files through SFTP or other means. It also supports PHP, and an SQL database can be initialized.\n"
 msgstr ""
+"Его можно рассматривать как «пустую оболочку», в которую можно поместить "
+"собственные HTML, CSS, JS и другие файлы через SFTP или другими способами. "
+"Он также поддерживает PHP, и можно инициализировать базу данных SQL.\n"
 
 #. type: Title ##
 #: docs/admin/30.apps/custom_apps.mdx:13
 #, no-wrap
 msgid "Adding a reverse proxy to an app that you manually installed, for example using Docker"
 msgstr ""
+"Добавление обратного прокси-сервера в приложение, установленное вручную, "
+"например, с помощью Docker"
 
 #. type: Plain text
 #: docs/admin/30.apps/custom_apps.mdx:16
 #, no-wrap
 msgid "While YunoHost apps do not use Docker for reasons that are beyond the scope of this page, you can manually install Docker apps on your server (assuming you know what you're doing and won't tinker too much with the base system ...). However, this is not limited to Docker, you may have deployed an app \"manually\" using Python, Ruby or another language, and such an app usually listens on a specific port.\n"
 msgstr ""
+"Хотя приложения YunoHost не используют Docker по причинам, выходящим за "
+"рамки этой страницы, вы можете вручную установить приложения Docker на свой "
+"сервер (при условии, что вы знаете, что делаете, и не будете слишком сильно "
+"вмешиваться в базовую систему...). Однако это не ограничивается Docker: вы "
+"могли развернуть приложение «вручную» с использованием Python, Ruby или "
+"другого языка, и такое приложение обычно прослушивает определенный порт.\n"
 
 #. type: Plain text
 #: docs/admin/30.apps/custom_apps.mdx:18
 #, no-wrap
 msgid "Once your app or container is set up, you will probably need to actually *expose* the container on the web on a specific URL. This can be done using another special app called [Redirect](https://apps.yunohost.org/app/redirect).\n"
 msgstr ""
+"После настройки вашего приложения или контейнера вам, вероятно, потребуется "
+"фактически *сделать* контейнер доступным в интернете по определенному URL-"
+"адресу. Это можно сделать с помощью другого специального приложения, "
+"называемого [Redirect](https://apps.yunohost.org/app/redirect).\n"
 
 #. type: Plain text
 #: docs/admin/30.apps/custom_apps.mdx:20
 #, no-wrap
 msgid "Make sure to choose the reverse proxy mode, and point it to something like `http://127.0.0.1:PORT` where `PORT` is the port of your custom app.\n"
 msgstr ""
+"Обязательно выберите режим обратного прокси и укажите путь, например, "
+"`http://127.0.0.1:PORT`, где `PORT` — это порт вашего пользовательского "
+"приложения.\n"
 
 #. type: Plain text
 #: docs/admin/30.apps/custom_apps.mdx:22
 #, no-wrap
 msgid "It will add the appropriate configuration bits in Nginx, SSOwat and a tile in the user portal.\n"
 msgstr ""
+"Это добавит необходимые конфигурационные файлы в Nginx, SSOwat и плитку в "
+"пользовательский портал.\n"
 
 #. type: Title ##
 #: docs/admin/30.apps/custom_apps.mdx:23
 #, no-wrap
 msgid "Adding a custom tile in the portal pointing to an external app"
 msgstr ""
+"Добавление пользовательской плитки на портал, указывающей на внешнее "
+"приложение"
 
 #. type: Plain text
 #: docs/admin/30.apps/custom_apps.mdx:26
 #, no-wrap
 msgid "The [Redirect app](https://apps.yunohost.org/app/redirect) can also be used to add a \"shortcut\" tile in the user portal that points to an app or page located on a completely different server. Make sure to use the \"explicit redirect\" mode and the URL of the external page or app.\n"
 msgstr ""
+"Приложение [Redirect](https://apps.yunohost.org/app/redirect) также можно "
+"использовать для добавления на пользовательский портал плитки «ярлык», "
+"которая ведёт на приложение или страницу, расположенные на совершенно другом "
+"сервере. Обязательно используйте режим «явное перенаправление» и укажите URL-"
+"адрес внешней страницы или приложения.\n"
 
 #. type: Plain text
 #: docs/admin/30.apps/custom_apps.mdx:27
 #, no-wrap
 msgid "Generally, you should refrain from manually tinkering and installing apps, except if you are sure they will not interfere with your server. YunoHost proposes two generic apps to help you out:\n"
 msgstr ""
+"В целом, следует воздерживаться от ручного изменения настроек и установки "
+"приложений, за исключением случаев, когда вы уверены, что они не будут "
+"мешать работе вашего сервера. YunoHost предлагает два универсальных "
+"приложения, которые могут вам помочь:\n"

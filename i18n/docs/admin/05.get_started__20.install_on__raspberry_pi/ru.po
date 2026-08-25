@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: 2026-06-02 20:31+0000\n"
+"PO-Revision-Date: 2026-08-24 15:43+0000\n"
 "Last-Translator: Alekseï <support@digiology.org>\n"
 "Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
 "05get_started__20install_on__raspberry_pi/ru/>\n"
@@ -54,13 +54,15 @@ msgstr "<TabItem value=\"usbimager\" label=\"С помощью USBimager\">\n"
 #, no-wrap
 msgid "Download [USBimager](https://bztsrc.gitlab.io/usbimager/) for your operating system and install it.\n"
 msgstr ""
+"Загрузите и установите [USBimager](https://bztsrc.gitlab.io/usbimager/) для "
+"вашей операционной системы.\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:62
 #: docs/admin/05.get_started/20.install_on/raspberry_pi.mdx:61
 #, no-wrap
 msgid "Plug your SD card, select your image and click \"Write\"\n"
-msgstr ""
+msgstr "Вставьте SD-карту, выберите образ и нажмите «Записать» (Write).\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:64
@@ -68,7 +70,7 @@ msgstr ""
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:61
 #, no-wrap
 msgid "![USBimager](/img/softwares/usbimager.png)\n"
-msgstr ""
+msgstr "![USBimager](/img/softwares/usbimager.png)\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:67
@@ -85,6 +87,12 @@ msgstr "<TabItem value=\"dd\" label=\"С помощью dd\">\n"
 #, no-wrap
 msgid "If you are on GNU/Linux / macOS and know your way around command line, you may also flash your USB stick or SD card with `dd`. You can identify which device corresponds to your USB stick or SD card with `fdisk -l` or `lsblk`. A typical SD card name is something like `/dev/mmcblk0`. BE CAREFUL and make sure you got the right name.\n"
 msgstr ""
+"Если вы используете GNU/Linux/macOS и умеете работать с командной строкой, "
+"вы также можете записать образ на USB-накопитель или SD-карту с помощью "
+"команды `dd`. Определить, какое устройство соответствует вашему USB-"
+"накопителю или SD-карте, можно с помощью команд `fdisk -l` или `lsblk`. "
+"Типичное имя SD-карты выглядит примерно так: `/dev/mmcblk0`. БУДЬТЕ "
+"ОСТОРОЖНЫ и убедитесь, что вы указали правильное имя.\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:71
@@ -92,26 +100,26 @@ msgstr ""
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:68
 #, no-wrap
 msgid "Then run:\n"
-msgstr ""
+msgstr "Затем выполнить:\n"
 
 #. type: Title ##
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:80
 #: docs/admin/05.get_started/20.install_on/raspberry_pi.mdx:78
 #, no-wrap
 msgid "<FAIcon icon=\"fa-plug\"/> Power up the board"
-msgstr ""
+msgstr "<FAIcon icon=\"fa-plug\"/> Включите питание платы"
 
 #. type: Yaml Front Matter Hash Value: description
 #: docs/admin/05.get_started/20.install_on/raspberry_pi.mdx:1
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "One of the most popular baked boards"
-msgstr ""
+msgstr "Одна из самых популярных платформ сбора средств"
 
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/05.get_started/20.install_on/raspberry_pi.mdx:1
 #, no-wrap
 msgid "On a Raspberry Pi"
-msgstr ""
+msgstr "На Raspberry Pi"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/raspberry_pi.mdx:25
@@ -124,6 +132,18 @@ msgid ""
 "- A [reasonable ISP](/admin/get_started/providers/isp/), preferably with a good and unlimited upstream bandwidth\n"
 "- A computer to read this guide, flash the image and access your server.\n"
 msgstr ""
+"- Raspberry Pi 3, 4 или 5\n"
+"  - Блок питания (адаптер или USB-кабель) для вашей платы;\n"
+"  - Карта microSD: емкостью не менее 16 ГБ, [класса \"A1\"]"
+"(https://en.wikipedia.org/wiki/SD_card#Class) настоятельно рекомендуется ("
+"например, [эта карта SanDisk A1](https://www.amazon.fr/SanDisk-microSDHC-"
+"Adaptateur-homologu%C3%A9e-Nouvelle/dp/B073JWXGNT/));\n"
+"  - Кабель Ethernet (RJ-45) для подключения вашего сервера к маршрутизатору."
+"\n"
+"- [Достойный интернет-провайдер](/admin/get_started/providers/isp/), "
+"желательно с хорошей и неограниченной пропускной способностью на загрузку\n"
+"- Компьютер для чтения этого руководства, прошивки образа и доступа к вашему "
+"серверу.\n"
 
 #. type: Fenced div block (warning)
 #: docs/admin/05.get_started/20.install_on/raspberry_pi.mdx:26
@@ -133,13 +153,19 @@ msgid ""
 "\"Raspberry Pi OS (32-bit)\" from [the official website](https://www.raspberrypi.com/software/operating-systems/)\n"
 "and then [follow the instructions](./on_top_of_debian) to install YunoHost on Debian.\n"
 msgstr ""
+"Поддержка Raspberry Pi 2 прекращена. Если вы действительно хотите установить "
+"YunoHost на Pi 2, скачайте и установите\n"
+"\"Raspberry Pi OS (32-бит)\" с [официального сайта]"
+"(https://www.raspberrypi.com/software/operating-systems/)\n"
+"а затем [следуйте инструкциям](./on_top_of_debian) для установки YunoHost на "
+"Debian.\n"
 
 #. type: Title ##
 #: docs/admin/05.get_started/20.install_on/raspberry_pi.mdx:32
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:26
 #, no-wrap
 msgid "<FAIcon icon=\"fa-download\" /> Download the YunoHost image"
-msgstr ""
+msgstr "<FAIcon icon=\"fa-download\" /> Загрузка образа YunoHost"
 
 #. type: Fenced div block (note)
 #: docs/admin/05.get_started/20.install_on/raspberry_pi.mdx:34
@@ -161,31 +187,35 @@ msgstr ""
 #: docs/admin/05.get_started/20.install_on/raspberry_pi.mdx:42
 #, no-wrap
 msgid "<FAIcon icon=\"fa-sim-card\"/> Flash the YunoHost image"
-msgstr ""
+msgstr "<FAIcon icon=\"fa-sim-card\"/> Прошивка образа YunoHost"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/raspberry_pi.mdx:45
 #, no-wrap
 msgid "Now that you downloaded the image of YunoHost, you should flash it on a microSD card\n"
 msgstr ""
+"Теперь, когда вы загрузили образ YunoHost, вам следует записать его на карту "
+"microSD\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/raspberry_pi.mdx:50
 #, no-wrap
 msgid "    Download <Link to=\"https://www.balena.io/etcher/\" target=\"_blank\">Etcher</Link> for your operating system and install it.\n"
 msgstr ""
+"    Загрузите версию <Link to=\"https://www.balena.io/etcher/\" target="
+"\"_blank\">Etcher</Link> для вашей системы и установите его.\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/raspberry_pi.mdx:52
 #, no-wrap
 msgid "    Plug your SD card, select your image and click \"Flash\"\n"
-msgstr ""
+msgstr "    Вставьте SD-карту, выберите образ и нажмите «Прошить» (Flash).\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/raspberry_pi.mdx:54
 #, no-wrap
 msgid "    ![Etcher](/img/softwares/etcher.gif)\n"
-msgstr ""
+msgstr "    ![Программа Etcher](/img/softwares/etcher.gif)\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/raspberry_pi.mdx:85
@@ -197,3 +227,11 @@ msgid ""
 "- If you want to follow the initial boot, connect a screen and keyboard on your board.\n"
 "- Power up the board\n"
 msgstr ""
+"- Вставьте SD-карту в плату.\n"
+"- Подключите плату к домашнему маршрутизатору через Ethernet.\n"
+"  - Для опытных пользователей, которым требуется Wi-Fi, следуйте "
+"[официальной документации](https://www.raspberrypi.com/documentation/"
+"computers/configuration.html#connect-to-a-wireless-network).\n"
+"- Если вы хотите выполнить начальную загрузку, подключите к плате экран и "
+"клавиатуру.\n"
+"- Включите питание платы.\n"

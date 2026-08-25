@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: 2026-05-29 17:22+0000\n"
+"PO-Revision-Date: 2026-08-25 06:33+0000\n"
 "Last-Translator: Alekseï <support@digiology.org>\n"
 "Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
 "25domains__index/ru/>\n"
@@ -41,36 +41,56 @@ msgstr ""
 #, no-wrap
 msgid "Domains can be managed in the 'Domains' section of the webadmin, or via the `yunohost domain` category of the command line.\n"
 msgstr ""
+"Управление доменами осуществляется в разделе «Домены» веб-панели "
+"администратора или через категорию `yunohost domain` в командной строке.\n"
 
 #. type: Plain text
 #: docs/admin/25.domains/index.mdx:13
 #, no-wrap
 msgid "Whenever you add a domain, it is assumed that you have purchased (or at least control) the domain, so that you can manage its [DNS configuration](/admin/get_started/post_install/dns_config). An exception is [domains in `.nohost.me`, `.noho.st` and `ynh.fr`](/admin/tutorials/domains/dns_nohost_me) which are offered by the YunoHost Project, and can be directly integrated with YunoHost through automatic DynDNS configuration. To limit abuse and costs, an instance can only have one domain offered at a time, but you can add as many sub-domains to it as you like. For example, if you choose `example.ynh.co.uk` you can then add the domains `video.example.ynh.co.uk` or `www.exemple.ynh.fr` or any other sub-domain you may require.\n"
 msgstr ""
+"При добавлении домена предполагается, что вы приобрели "
+"(или, по крайней мере, контролируете) этот домен, чтобы иметь возможность "
+"управлять его [конфигурацией DNS](/admin/get_started/post_install/dns_config)"
+". Исключением являются [домены в `.nohost.me`, `.noho.st` и `ynh.fr`]"
+"(/admin/tutorials/domains/dns_nohost_me), которые предлагаются проектом "
+"YunoHost и могут быть напрямую интегрированы с YunoHost посредством "
+"автоматической настройки DynDNS. Чтобы ограничить злоупотребления и затраты, "
+"в одном экземпляре может быть предложен только один домен одновременно, но "
+"вы можете добавить к нему столько поддоменов, сколько пожелаете. Например, "
+"если вы выберете `example.ynh.co.uk`, вы сможете добавить домены "
+"`video.example.ynh.co.uk` или `www.exemple.ynh.fr` или любой другой "
+"необходимый вам поддомен.\n"
 
 #. type: Plain text
 #: docs/admin/25.domains/index.mdx:15
 #, no-wrap
 msgid "Domains can be managed in the 'Domain' section of the webadmin, or through the `yunohost domain` category of the command line.\n"
 msgstr ""
+"Управление доменами осуществляется в разделе «Домен» веб-панели "
+"администратора или через категорию `yunohost domain` в командной строке.\n"
 
 #. type: Plain text
 #: docs/admin/25.domains/index.mdx:17
 #, no-wrap
 msgid "![Screenshot of the webadmin domain interface with an \"Add domain\" button and a list of domains](/img/webadmin/webadmin_domain.png)\n"
 msgstr ""
+"![Снимок экрана веб-интерфейса администрирования домена с кнопкой «Добавить "
+"домен» и списком доменов](/img/webadmin/webadmin_domain.png)\n"
 
 #. type: Title ##
 #: docs/admin/25.domains/index.mdx:18
 #, no-wrap
 msgid "3 types of domains"
-msgstr ""
+msgstr "3 типа доменов"
 
 #. type: Plain text
 #: docs/admin/25.domains/index.mdx:22
 #, no-wrap
 msgid "<TabItem value=\"nohost\" label=\"Yunohost's domains (the free and easy way)\">\n"
 msgstr ""
+"<TabItem value=\"nohost\" label="
+"\"Домены Yunohost (бесплатный и простой способ)\">\n"
 
 #. type: Plain text
 #: docs/admin/25.domains/index.mdx:24
@@ -100,48 +120,69 @@ msgid ""
 "- `whateveryouwant.noho.st`;\n"
 "- `whateveryouwant.ynh.fr`.\n"
 msgstr ""
+"- `точтовыхотитенолатиницей.nohost.me`;\n"
+"- `точтовыхотитенолатиницей.noho.st`;\n"
+"- `точтовыхотитенолатиницей.ynh.fr`.\n"
 
 #. type: Plain text
 #: docs/admin/25.domains/index.mdx:32
 #, no-wrap
 msgid "In more, YunoHost uses an integrated dynamic DNS mechanism, so your server can stay reachable even if your public IP change.\n"
 msgstr ""
+"Кроме того, YunoHost использует встроенный механизм динамического DNS, "
+"поэтому ваш сервер останется доступным, даже если ваш публичный IP-адрес "
+"изменится.\n"
 
 #. type: Plain text
 #: docs/admin/25.domains/index.mdx:34
 #, no-wrap
 msgid "To get one of this domain you simply need to choose `I don't have a domaine name…` during the initial configuration (postinstall) or on the `Add domain` page.\n"
 msgstr ""
+"Чтобы получить один из этих доменов, вам достаточно выбрать «У меня нет "
+"доменного имени…» ( `I don't have a domaine name…`) во время первоначальной "
+"настройки (после установки) или на странице «Добавить домен» (`Add domain`)."
+"\n"
 
 #. type: Plain text
 #: docs/admin/25.domains/index.mdx:36
 #, no-wrap
 msgid "![Screenshot of the \"Add domain\" page where you can choose \"I don't have a domain name\"](/img/webadmin/webadmin_dyndns.png)\n"
 msgstr ""
+"![Снимок экрана страницы «Добавить домен», где можно выбрать «У меня нет "
+"доменного имени»](/img/webadmin/webadmin_dyndns.png)\n"
 
 #. type: Fenced div block (info)
 #: docs/admin/25.domains/index.mdx:37
 #, no-wrap
 msgid "To limit resources costs and abuses, each instance may only have one of these domains setup at any given time, however you can add as many sub-domains of it as you wish. For example, if you choose `example.noho.st` you can later add the domains `video.example.noho.st` or `www.example.ynh.noho.st` or any other sub-domain you may need. In this case you need to select `I already have a domain name`.\n"
 msgstr ""
+"Чтобы ограничить затраты ресурсов и предотвратить злоупотребления, каждый "
+"экземпляр может иметь только один из этих доменов, настроенный одновременно, "
+"однако вы можете добавить столько поддоменов, сколько пожелаете. Например, "
+"если вы выберете `example.noho.st`, вы сможете позже добавить домены "
+"`video.example.noho.st` или `www.example.ynh.noho.st` или любой другой "
+"необходимый вам поддомен. В этом случае вам нужно выбрать «У меня уже есть "
+"доменное имя» (`I already have a domain name`).\n"
 
 #. type: Plain text
 #: docs/admin/25.domains/index.mdx:42
 #, no-wrap
 msgid "[More information on this domains](/admin/tutorials/domains/dns_nohost_me)\n"
 msgstr ""
+"[Более подробная информация об этих доменах]"
+"(/admin/tutorials/domains/dns_nohost_me)\n"
 
 #. type: Plain text
 #: docs/admin/25.domains/index.mdx:45
 #, no-wrap
 msgid "<TabItem value=\"own\" label=\"Your own domains\">\n"
-msgstr ""
+msgstr "<TabItem value=\"own\" label=\"Ваши собственные домены\">\n"
 
 #. type: Plain text
 #: docs/admin/25.domains/index.mdx:47
 #, no-wrap
 msgid "Having your own domain brings several advantages:\n"
-msgstr ""
+msgstr "Наличие собственного домена даёт ряд преимуществ:\n"
 
 #. type: Plain text
 #: docs/admin/25.domains/index.mdx:50
@@ -150,36 +191,54 @@ msgid ""
 "- more control and autonomy\n"
 "- simpler domain name (for example directly in .net or .org)\n"
 msgstr ""
+"- больший контроль и автономия\n"
+"- более простое доменное имя (например, напрямую в зонах .net или .org\n"
 
 #. type: Plain text
 #: docs/admin/25.domains/index.mdx:52
 #, no-wrap
 msgid "However, you have to pay for it each year (about 15€/year ... depending on the TLD) and you have to do some extra configuration to [setup a correct DNS zone](/admin/get_started/post_install/dns_config). Our diagnosis tool can trigger alert to help you to do this configuration.\n"
 msgstr ""
+"Однако за это нужно платить каждый год "
+"(около 15 евро в год... в зависимости от домена верхнего уровня), а также "
+"выполнить дополнительную настройку для [установки правильной зоны DNS]"
+"(/admin/get_started/post_install/dns_config). Наш инструмент диагностики "
+"может запускать оповещения, чтобы помочь вам выполнить эту настройку.\n"
 
 #. type: Plain text
 #: docs/admin/25.domains/index.mdx:54
 #, no-wrap
 msgid "If you already have your own domain, you can simply click \"I already have a domain name…\". If you don't, in order to simplify and automate the DNS configuration, we suggest you to buy it from a [registrar whose API is supported by YunoHost](/admin/get_started/providers/registrar/).\n"
 msgstr ""
+"Если у вас уже есть собственный домен, вы можете просто нажать «У меня уже "
+"есть доменное имя…» (I already have a domain name…). Если же его нет, для "
+"упрощения и автоматизации настройки DNS мы рекомендуем приобрести его у "
+"[регистратора, API которого поддерживается YunoHost]"
+"(/admin/get_started/providers/registrar/).\n"
 
 #. type: Plain text
 #: docs/admin/25.domains/index.mdx:56
 #, no-wrap
 msgid "![Screenshot of the \"Add domain\" page where you can choose \"I already have a domain name\"](/img/webadmin/webadmin_domain_owndomain.png)\n"
 msgstr ""
+"![Снимок экрана страницы «Добавить домен», где можно выбрать «У меня уже "
+"есть доменное имя».](/img/webadmin/webadmin_domain_owndomain.png)\n"
 
 #. type: Plain text
 #: docs/admin/25.domains/index.mdx:58
 #, no-wrap
 msgid "[Know more on DNS zone configuration](/admin/get_started/post_install/dns_config)\n"
 msgstr ""
+"[Узнайте больше о настройке зоны DNS]"
+"(/admin/get_started/post_install/dns_config)\n"
 
 #. type: Plain text
 #: docs/admin/25.domains/index.mdx:61
 #, no-wrap
 msgid "<TabItem value=\"local\" label=\"Local domains (only reachable in your local network)\">\n"
 msgstr ""
+"<TabItem value=\"local\" label="
+"\"Локальные домены (доступны только в вашей локальной сети)\">\n"
 
 #. type: Plain text
 #: docs/admin/25.domains/index.mdx:65
@@ -189,6 +248,13 @@ msgid ""
 "They do not use the DNS protocol, but the mDNS one (also known as Zeroconf, Bonjour), which allows them to be published with no specific configuration but exclusively on your local network or VPN.\n"
 "Their use is this especially suitable when you do not need your apps to be available on the Internet.\n"
 msgstr ""
+"Начиная с YunoHost v4.3, помимо домена по умолчанию `yunohost.local`, "
+"полностью поддерживаются домены, заканчивающиеся на `.local`.\n"
+"Они используют не протокол DNS, а mDNS "
+"(также известный как Zeroconf, Bonjour), что позволяет публиковать их без "
+"специальной настройки, но исключительно в вашей локальной сети или VPN.\n"
+"Их использование особенно удобно, когда вам не нужно, чтобы ваши приложения "
+"были доступны в Интернете.\n"
 
 #. type: Plain text
 #: docs/admin/25.domains/index.mdx:67

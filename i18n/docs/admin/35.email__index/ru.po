@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-04-19 08:39+0000\n"
-"PO-Revision-Date: 2026-05-29 17:22+0000\n"
+"PO-Revision-Date: 2026-08-19 09:46+0000\n"
 "Last-Translator: Alekseï <support@digiology.org>\n"
 "Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
 "35email__index/ru/>\n"
@@ -39,24 +39,28 @@ msgstr ""
 #, no-wrap
 msgid "The mail stack includes an SMTP server (Postfix), an IMAP server (Dovecot), antispam (Rspamd) and DKIM configuration.\n"
 msgstr ""
+"Почтовый стек включает в себя SMTP-сервер (Postfix), IMAP-сервер (Dovecot), "
+"антиспам-сервер (Rspamd) и конфигурацию DKIM.\n"
 
 #. type: Title ##
 #: docs/admin/35.email/index.mdx:12
 #, no-wrap
 msgid "Making sure your setup is right"
-msgstr ""
+msgstr "Убедитесь, что ваша настройка выполнена правильно"
 
 #. type: Plain text
 #: docs/admin/35.email/index.mdx:15
 #, no-wrap
 msgid "Email is a complicated ecosystem and quite a few details can prevent it from working properly.\n"
 msgstr ""
+"Электронная почта — это сложная экосистема, и множество деталей могут "
+"помешать её нормальной работе.\n"
 
 #. type: Plain text
 #: docs/admin/35.email/index.mdx:17
 #, no-wrap
 msgid "To validate your setup:\n"
-msgstr ""
+msgstr "Для проверки вашей конфигурации:\n"
 
 #. type: Plain text
 #: docs/admin/35.email/index.mdx:22
@@ -67,66 +71,113 @@ msgid ""
 "- carefully configure mail DNS records according to [this documentation](/admin/get_started/post_install/dns_config) ;\n"
 "- test your configuration using the diagnostic features (<HighlightWebAdmin/> → <HighlightDiagnosis/> → <Highlight no_break={true} color='grey'><FAIcon icon=\"fa-envelope\"/> Email</Highlight> ). You can also use [mail-tester.com](https://mail-tester.com); a score of at least 8~9/10 is a reasonable goal <small>(be careful: only 3 tests per domain per day are allowed)</small>\n"
 msgstr ""
+"- если вы разворачиваете проект самостоятельно дома и не используете VPN, "
+"убедитесь, что [ваш интернет-провайдер не блокирует порт 25]"
+"(/admin/get_started/providers/isp/);\n"
+"- настройте маршрутизацию портов в соответствии с [данной документацией]"
+"(/admin/get_started/post_install/port_forwarding);\n"
+"- тщательно настройте DNS-записи для почты в соответствии с "
+"[данной документацией](/admin/get_started/post_install/dns_config);\n"
+"- проверьте свою конфигурацию с помощью диагностических функций (<"
+"HighlightWebAdmin/> → <HighlightDiagnosis/> → <Highlight no_break={true} "
+"color='grey'><FAIcon icon=\"fa-envelope\"/> Email</Highlight> ). Вы также "
+"можете использовать [mail-tester.com](https://mail-tester.com); достичь "
+"результата не ниже 8-9/10 вполне достаточно <small>"
+"(будьте внимательны: разрешено только 3 теста для одного домена в день)"
+"</small>\n"
 
 #. type: Title ##
 #: docs/admin/35.email/index.mdx:23
 #, no-wrap
 msgid "Email clients"
-msgstr ""
+msgstr "Почтовые клиенты"
 
 #. type: Plain text
 #: docs/admin/35.email/index.mdx:26
 #, no-wrap
 msgid "To interact with the email server (read and send emails), you can either install a webmail client such as Roundcube or Rainloop on your server or configure a desktop/mobile client as described in [this page](/admin/email/clients).\n"
 msgstr ""
+"Для взаимодействия с почтовым сервером (чтения и отправки писем) вы можете "
+"либо установить на свой сервер веб-клиент почты, например Roundcube или "
+"Rainloop, либо настроить настольный/мобильный клиент, как описано на "
+"[этой странице](/admin/email/clients).\n"
 
 #. type: Plain text
 #: docs/admin/35.email/index.mdx:28
 #, no-wrap
 msgid "Desktop and mobile clients have the advantage of copying your emails to the device, allowing offline viewing and relative protection against possible hardware failures of your server.\n"
 msgstr ""
+"Преимущество настольных и мобильных клиентов заключается в возможности "
+"копирования электронных писем на устройство, что позволяет просматривать их "
+"в автономном режиме и обеспечивает относительную защиту от возможных "
+"аппаратных сбоев сервера.\n"
 
 #. type: Title ##
 #: docs/admin/35.email/index.mdx:29
 #, no-wrap
 msgid "Configuring email aliases and auto-forwards"
-msgstr ""
+msgstr "Настройка псевдонимов электронной почты и автоматической пересылки"
 
 #. type: Plain text
 #: docs/admin/35.email/index.mdx:32
 #, no-wrap
 msgid "Mail aliases and forwards can be configured for each user. For instance, the first user created on the server automatically has an alias `root@the.domain.tld` configured—meaning that an email sent to this address will end up in the inbox of the first user. Automatic forwards may be configured, for instance if a user doesn't want to configure an additional email account and just wants to receive emails from the server on, say, his/her Gmail address (a copy of each email will be kept on the YunoHost server).\n"
 msgstr ""
+"Для каждого пользователя можно настроить псевдонимы и переадресацию почты. "
+"Например, для первого пользователя, созданного на сервере, автоматически "
+"настраивается псевдоним `root@the.domain.tld` — это означает, что письмо, "
+"отправленное на этот адрес, поступит в папку «Входящие» первого "
+"пользователя. Можно настроить автоматическую пересылку, например, если "
+"пользователь не хочет создавать дополнительную почтовую учётную запись и "
+"просто желает получать письма с сервера, скажем, на свой адрес Gmail "
+"(копия каждого письма будет сохраняться на сервере YunoHost).\n"
 
 #. type: Plain text
 #: docs/admin/35.email/index.mdx:34
 #, no-wrap
 msgid "Another feature which few people know about is the use of suffixes beginning with \"+\". For example, emails sent to `johndoe+booking@the.domain.tld` will automatically land in the `booking` directory (lowercase) of John Doe's mailbox or in John Doe's inbox if the `booking` directory doesn't exist. It is a practical technique, for example, to provide an email address to a website, then easily sort (via automatic filters) the mail coming from this website.\n"
 msgstr ""
+"Ещё одна особенность, о которой мало кто знает, — это использование "
+"суффиксов, начинающихся с \"+\". Например, электронные письма, отправленные "
+"на адрес `johndoe+booking@the.domain.tld`, автоматически попадут в папку "
+"`booking`(строчные буквы) почтового ящика Джона Доу или в папку «Входящие» "
+"Джона Доу, если папка `booking` отсутствует. Это практичный метод, например, "
+"для указания адреса электронной почты веб-сайту, после чего можно легко "
+"отсортировать (с помощью автоматических фильтров) письма, поступающие с "
+"этого веб-сайта.\n"
 
 #. type: Plain text
 #: docs/admin/35.email/index.mdx:36
 #, no-wrap
 msgid "Groups also can use alias features; by default, the group `admins` has aliases such as `root@<domain.tld>` and `webmaster@<domain.tld>`. [More info on the groups and permissions page](/admin/users/groups_and_permissions).\n"
 msgstr ""
+"Группы также могут использовать функцию псевдонимов; по умолчанию группа "
+"`admins` имеет такие псевдонимы, как `root@<domain.tld>` и "
+"`webmaster@<domain.tld>`. "
+"[Более подробная информация на странице групп и разрешений]"
+"(/admin/users/groups_and_permissions).\n"
 
 #. type: Title ##
 #: docs/admin/35.email/index.mdx:37
 #, no-wrap
 msgid "What happens if my server becomes unavailable?"
-msgstr ""
+msgstr "Что произойдёт, если мой сервер станет недоступен?"
 
 #. type: Plain text
 #: docs/admin/35.email/index.mdx:40
 #, no-wrap
 msgid "If your server becomes unavailable, emails sent to your server will stay in a pending queue on the sender's side for as long as ~5 days. The sender's host will regularly try to resend the email, until it drops it if it was unable to send it.\n"
 msgstr ""
+"Если ваш сервер станет недоступен, электронные письма, отправленные на ваш "
+"сервер, будут оставаться в очереди ожидания на стороне отправителя до ~5 "
+"дней. Хостинг отправителя будет регулярно пытаться повторно отправить "
+"письмо, пока не отклонит его, если отправка не удалась.\n"
 
 #. type: Title ##
 #: docs/admin/35.email/index.mdx:41
 #, no-wrap
 msgid "See also"
-msgstr ""
+msgstr "См. также"
 
 #. type: Plain text
 #: docs/admin/35.email/index.mdx:45
@@ -136,3 +187,8 @@ msgid ""
 "- [Migrating from an email provider to a YunoHost instance](/admin/email/migration)\n"
 "- [Configuring an SMTP relay](/admin/tutorials/email_configure_relay).\n"
 msgstr ""
+"- [Удаление IP-адреса/домена вашего сервера из списков антиспама]"
+"(/admin/troubleshooting/blacklist_forms).\n"
+"- [Переход от почтового провайдера к экземпляру YunoHost]"
+"(/admin/email/migration)\n"
+"- [Настройка SMTP-ретранслятора](/admin/tutorials/email_configure_relay).\n"

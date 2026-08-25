@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: 2026-05-29 17:22+0000\n"
+"PO-Revision-Date: 2026-08-17 18:14+0000\n"
 "Last-Translator: Alekseï <support@digiology.org>\n"
 "Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
 "40backups__25include_exclude_files/ru/>\n"
@@ -36,93 +36,123 @@ msgstr "Включаемые файлы"
 #, no-wrap
 msgid "YunoHost usually already knows what needs to be backed up. However, if you have made manual changes, such as installing an app outside of the YunoHost application system, you may want to extend YunoHost's mechanism to specify other files to be backed up.\n"
 msgstr ""
+"YunoHost обычно уже знает, какие файлы нужно резервировать. Однако, если вы "
+"внесли изменения вручную, например, установили приложение вне системы "
+"приложений YunoHost, вам может потребоваться расширить механизм YunoHost, "
+"чтобы указать другие файлы для резервного копирования.\n"
 
 #. type: Plain text
 #: docs/admin/40.backups/25.include_exclude_files.mdx:10
 #, no-wrap
 msgid "By default, if configurations tracked by YunoHost are changed, they will be backed up. On the other hand, a database or an app added by hand, changes on some configurations not tracked, will not be backed up.\n"
 msgstr ""
+"По умолчанию, если изменяются конфигурации, отслеживаемые YunoHost, они "
+"будут резервно скопированы. С другой стороны, если база данных или "
+"приложение добавлены вручную, изменения в конфигурациях, которые не "
+"отслеживаются, не будут резервно скопированы.\n"
 
 #. type: Plain text
 #: docs/admin/40.backups/25.include_exclude_files.mdx:12
 #, no-wrap
 msgid "You can create a backup hook and a restore hook to add data to backup. Here is an example:\n"
 msgstr ""
+"Вы можете создать обработчик резервного копирования и обработчик "
+"восстановления для добавления данных в резервную копию. Вот пример:\n"
 
 #. type: Plain text
 #: docs/admin/40.backups/25.include_exclude_files.mdx:14
 #, no-wrap
 msgid "`/etc/yunohost/hooks.d/backup/99-conf_custom`\n"
-msgstr ""
+msgstr "`/etc/yunohost/hooks.d/backup/99-conf_custom`\n"
 
 #. type: Plain text
 #: docs/admin/40.backups/25.include_exclude_files.mdx:55
 #, no-wrap
 msgid "`/etc/yunohost/hooks.d/restore/99-conf_custom`\n"
-msgstr ""
+msgstr "`/etc/yunohost/hooks.d/restore/99-conf_custom`\n"
 
 #. type: Title ##
 #: docs/admin/40.backups/25.include_exclude_files.mdx:101
 #, no-wrap
 msgid "Exclude files"
-msgstr ""
+msgstr "Исключить файлы"
 
 #. type: Plain text
 #: docs/admin/40.backups/25.include_exclude_files.mdx:104
 #, no-wrap
 msgid "There is no mechanism to exclude specific files from a YunoHost backup, other than the 2 options presented below:\n"
 msgstr ""
+"Помимо двух вариантов, представленных ниже, механизм исключения определенных "
+"файлов из резервной копии YunoHost отсутствует:\n"
 
 #. type: Title ###
 #: docs/admin/40.backups/25.include_exclude_files.mdx:105
 #, no-wrap
 msgid "Avoid backing up certain `/home` folders"
-msgstr ""
+msgstr "Избегайте резервного копирования определённых папок `/home`"
 
 #. type: Plain text
 #: docs/admin/40.backups/25.include_exclude_files.mdx:108
 #, no-wrap
 msgid "If needed, you can specify that certain user `home` folders not be backed up by the `yunohost backup` command, by creating an empty file named `.nobackup` inside.\n"
 msgstr ""
+"При необходимости можно указать, что определённые папки `home` пользователя "
+"не должны резервно копироваться командой `yunohost backup` , создав внутри "
+"них пустой файл с именем `.nobackup`.\n"
 
 #. type: Plain text
 #: docs/admin/40.backups/25.include_exclude_files.mdx:110
 #, no-wrap
 msgid "Caution: this setup only works with **first-level subfolders of `/home`**, such as `/home/user1` or `/home/yunohost.multimedia`. It does not work for other levels of subfolders, like `/home/user1/bigfolder/`.\n"
 msgstr ""
+"Внимание: эта настройка работает только с **подпапками первого уровня "
+"`/home`**, такими как `/home/user1` или `/home/yunohost.multimedia`. Она не "
+"работает для подпапок других уровней, например, `/home/user1/bigfolder/`.\n"
 
 #. type: Title ###
 #: docs/admin/40.backups/25.include_exclude_files.mdx:111
 #, no-wrap
 msgid "Do not backup large amounts of data"
-msgstr ""
+msgstr "Не создавайте резервные копии больших объёмов данных"
 
 #. type: Plain text
 #: docs/admin/40.backups/25.include_exclude_files.mdx:113
 #, no-wrap
 msgid "Some apps like Nextcloud are potentially attached to large amounts of data. It is possible to not backup them by default. In this case, the app is said to \"backup only the core\" (of the app).  \n"
 msgstr ""
+"Некоторые приложения, такие как Nextcloud, потенциально привязаны к большим "
+"объемам данных. Возможно, их резервное копирование по умолчанию отключено. В "
+"этом случае приложение, как правило, \"резервно копирует только ядро\" "
+"(приложения).  \n"
 
 #. type: Plain text
 #: docs/admin/40.backups/25.include_exclude_files.mdx:115
 #, no-wrap
 msgid "During an update, apps containing a large amount of data usually make a backup without these data.\n"
 msgstr ""
+"Во время обновления приложения, содержащие большой объём данных, обычно "
+"создают резервную копию, исключающую эти данные.\n"
 
 #. type: Plain text
 #: docs/admin/40.backups/25.include_exclude_files.mdx:117
 #, no-wrap
 msgid "To temporarily disable backup of large data, for applications that implement this feature, you can set the `BACKUP_CORE_ONLY` variable. To do this, the variable must be set before the backup command:\n"
 msgstr ""
+"Для временного отключения резервного копирования больших объёмов данных в "
+"приложениях, поддерживающих эту функцию, можно установить переменную "
+"`BACKUP_CORE_ONLY`. Для этого переменную необходимо установить перед "
+"командой резервного копирования:\n"
 
 #. type: Plain text
 #: docs/admin/40.backups/25.include_exclude_files.mdx:123
 #, no-wrap
 msgid "Be careful: you will have to backup Nextcloud users' data yourself.\n"
 msgstr ""
+"Будьте осторожны: вам придётся самостоятельно создавать резервные копии "
+"данных пользователей Nextcloud.\n"
 
 #. type: Plain text
 #: docs/admin/40.backups/25.include_exclude_files.mdx:125
 #, no-wrap
 msgid "If you want this behavior to be permanent:\n"
-msgstr ""
+msgstr "Если вы хотите, чтобы это поведение стало постоянным:\n"

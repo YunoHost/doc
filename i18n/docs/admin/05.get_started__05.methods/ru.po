@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-04-19 08:39+0000\n"
-"PO-Revision-Date: 2026-05-29 23:49+0000\n"
+"PO-Revision-Date: 2026-08-19 11:31+0000\n"
 "Last-Translator: Alekseï <support@digiology.org>\n"
 "Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
 "05get_started__05methods/ru/>\n"
@@ -161,6 +161,11 @@ msgid ""
 "      <th style={styleNone}>At home<br/>behind a VPN</th>\n"
 "      <th style={styleNone}>On a remote server<br/>(VPS or dedicated)</th>\n"
 msgstr ""
+"      <th style={styleNone}>Дома<br/><small>"
+"(например, плата ARM, старый компьютер)</small></th>\n"
+"      <th style={styleNone}>Дома<br/>за VPN</th>\n"
+"      <th style={styleNone}>На удалённом сервере<br/>"
+"(VPS или выделенный сервер)</th>\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/05.methods.mdx:64
@@ -170,6 +175,10 @@ msgid ""
 "      <td style={styleMeh} colspan=\"2\">About 50€<br/><small>(e.g. a Raspberry Pi)</small></td>\n"
 "      <td style={styleGood}>None</td>\n"
 msgstr ""
+"      <td style={styleNone}>Стоимость оборудования</td>\n"
+"      <td style={styleMeh} colspan=\"2\">Примерно 50 евро<br/><small>"
+"(например, Raspberry Pi)</small></td>\n"
+"      <td style={styleGood}>Нет</td>\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/05.methods.mdx:70
@@ -180,6 +189,11 @@ msgid ""
 "      <td style={styleMeh}>Around 5€<br/><small>(VPN)</small></td>\n"
 "      <td style={styleMeh}>Starting at ~3€<br/><small>(VPS)</small></td>\n"
 msgstr ""
+"      <td style={styleNone}>Ежемесячная стоимость</td>\n"
+"      <td style={styleGood}>Незначительная<br/><small>(электричество)"
+"</small></td>\n"
+"      <td style={styleMeh}>Около 5 евро<br/><small>(VPN)</small></td>\n"
+"      <td style={styleMeh}>От 3 евро<br/><small>(VPS)</small></td>\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/05.methods.mdx:76
@@ -190,6 +204,10 @@ msgid ""
 "      <td style={styleGood}>Yes</td>\n"
 "      <td style={styleDanger}>No</td>\n"
 msgstr ""
+"      <td style={styleNone}>Физическое управление машиной</td>\n"
+"      <td style={styleGood}>Да</td>\n"
+"      <td style={styleGood}>Да</td>\n"
+"      <td style={styleDanger}>Нет</td>\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/05.methods.mdx:82
@@ -200,6 +218,10 @@ msgid ""
 "      <td style={styleGood}>No</td>\n"
 "      <td style={styleGood}>No</td>\n"
 msgstr ""
+"      <td style={styleNone}>Требуется ручная маршрутизация портов.</td>\n"
+"      <td style={styleMeh}>Да</td>\n"
+"      <td style={styleGood}>Нет</td>\n"
+"      <td style={styleGood}>Нет</td>\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/05.methods.mdx:88
@@ -210,6 +232,12 @@ msgid ""
 "      <td style={styleGood}>Bypassed by VPN</td>\n"
 "      <td style={styleGood}>Typically no</td>\n"
 msgstr ""
+"      <td style={styleNone}>Возможные ограничения интернет-провайдера.</td>\n"
+"      <td style={styleDanger}>Да<br/><small>"
+"(см. <Link to=\"/admin/get_started/providers/isp\">здесь</Link>)</small></td>"
+"\n"
+"      <td style={styleGood}>Обходится с помощью VPN</td>\n"
+"      <td style={styleGood}>Обычно нет</td>\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/05.methods.mdx:93
@@ -219,3 +247,7 @@ msgid ""
 "      <td style={styleMeh} colspan=\"2\">Depends on home connectivity</td>\n"
 "      <td style={styleGood}>Typically pretty good</td>\n"
 msgstr ""
+"      <td style={styleNone}>Подключение к интернету</td>\n"
+"      <td style={styleMeh} colspan=\"2\">Зависит от уровня подключения к "
+"интернету в вашем доме</td>\n"
+"      <td style={styleGood}>Обычно довольно хорошо</td>\n"

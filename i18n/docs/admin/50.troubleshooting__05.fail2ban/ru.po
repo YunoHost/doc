@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: 2026-06-07 19:42+0000\n"
+"PO-Revision-Date: 2026-08-16 01:02+0000\n"
 "Last-Translator: Alekseï <support@digiology.org>\n"
 "Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
 "50troubleshooting__05fail2ban/ru/>\n"
@@ -56,69 +56,90 @@ msgstr "Разблокировка IP-адреса"
 #, no-wrap
 msgid "To unblock an IP address, you must first access your server by some means (for example from another IP address or from another internet connection than the banned one).\n"
 msgstr ""
+"Для разблокировки IP-адреса необходимо сначала получить доступ к серверу "
+"каким-либо другим способом (например, с другого IP-адреса или через другое "
+"интернет-соединение, отличное от заблокированного).\n"
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/05.fail2ban.mdx:15
 #, no-wrap
 msgid "Then, look at the **Fail2Ban’s log** to identify in which `jail` the IP address has been banned:\n"
 msgstr ""
+"Затем просмотрите журнал **Fail2Ban**, чтобы определить, в какой `тюрьме` "
+"был заблокирован IP-адрес:\n"
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/05.fail2ban.mdx:28
 #, no-wrap
 msgid "Here, the `11.22.33.44` IP address has been banned in the `sshd` and `recidive` jails.\n"
 msgstr ""
+"В данном случае IP-адрес `11.22.33.44` был заблокирован в средах `sshd` и "
+"`recidive`.\n"
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/05.fail2ban.mdx:30
 #, no-wrap
 msgid "Then deban the IP address with the following commands:\n"
-msgstr ""
+msgstr "Затем снимите блокировку с IP-адреса с помощью следующих команд:\n"
 
 #. type: Title ##
 #: docs/admin/50.troubleshooting/05.fail2ban.mdx:36
 #, no-wrap
 msgid "Whitelist an IP address"
-msgstr ""
+msgstr "Добавление IP-адреса в белый список"
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/05.fail2ban.mdx:39
 #, no-wrap
 msgid "If you don’t want a \"legitimate\" IP address to be blocked by **YunoHost** anymore, then you have to fill it in the whitelist of the `jail` configuration file.\n"
 msgstr ""
+"Если вы больше не хотите, чтобы **YunoHost** блокировал «легитимный» IP-"
+"адрес, вам необходимо добавить его в белый список конфигурационного файла "
+"`jail`.\n"
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/05.fail2ban.mdx:41
 #, no-wrap
 msgid "When updating the **Fail2Ban** software, the original `/etc/fail2ban/jail.conf` file is overwritten. So it is on a new dedicated file that we will store the changes. They will thus be preserved over time.\n"
 msgstr ""
+"При обновлении программного обеспечения **Fail2Ban** исходный файл `/etc/"
+"fail2ban/jail.conf` перезаписывается. Поэтому изменения будут храниться в "
+"новом, специально созданном файле. Таким образом, они сохранятся со временем."
+"\n"
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/05.fail2ban.mdx:43
 #, no-wrap
 msgid "1. Start by creating the new jail configuration file which will be called `yunohost-whitelist.conf`:\n"
 msgstr ""
+"1. Для начала создайте новый конфигурационный файл jail, который будет "
+"называться `yunohost-whitelist.conf`:\n"
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/05.fail2ban.mdx:49
 #, no-wrap
 msgid "2. Edit this new file with your favorite editor:\n"
 msgstr ""
+"2. Отредактируйте этот новый файл с помощью вашего любимого редактора:\n"
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/05.fail2ban.mdx:55
 #, no-wrap
 msgid "3. Paste the following content into the file and adapt the IP address `XXX.XXX.XXX.XXX`:\n"
 msgstr ""
+"3. Вставьте следующее содержимое в файл и измените IP-адрес на "
+"`XXX.XXX.XXX.XXX`:\n"
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/05.fail2ban.mdx:63
 #, no-wrap
 msgid "4. Save the file and reload the Fail2Ban configuration:\n"
-msgstr ""
+msgstr "4. Сохраните файл и перезагрузите конфигурацию Fail2Ban:\n"
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/05.fail2ban.mdx:68
 #, no-wrap
 msgid "Congratulations, no more risks of banning yourself from your own YunoHost server!\n"
 msgstr ""
+"Поздравляем, больше нет риска забанить себя на собственном сервере YunoHost!"
+"\n"

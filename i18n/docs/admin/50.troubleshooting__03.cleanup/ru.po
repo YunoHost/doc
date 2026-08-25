@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: 2026-06-02 20:31+0000\n"
+"PO-Revision-Date: 2026-07-18 20:56+0000\n"
 "Last-Translator: Alekseï <support@digiology.org>\n"
 "Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
 "50troubleshooting__03cleanup/ru/>\n"
@@ -39,40 +39,47 @@ msgstr ""
 #: docs/admin/50.troubleshooting/03.cleanup.mdx:8
 #, no-wrap
 msgid "Execute the basic-space-cleanup tool"
-msgstr ""
+msgstr "Запуск инструмента базовой очистки пространства"
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/03.cleanup.mdx:11
 #, no-wrap
 msgid "One may use the following command, to perform basic space cleanup (apt, journalctl, logs, ...) :\n"
 msgstr ""
+"Для выполнения базовой очистки пространства (apt, journalctl, logs и т. д.) "
+"можно использовать следующую команду:\n"
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/03.cleanup.mdx:17
 #, no-wrap
 msgid "Additionaly, you may want to cleanup YunoHost operation logs if they are taking too much space, cf [this issue](https://github.com/YunoHost/issues/issues/2329).\n"
 msgstr ""
+"Кроме того, если журналы операций YunoHost занимают слишком много места, "
+"возможно, вам потребуется очистить их; см. [эту проблему]"
+"(https://github.com/YunoHost/issues/issues/2329).\n"
 
 #. type: Title ##
 #: docs/admin/50.troubleshooting/03.cleanup.mdx:18
 #, no-wrap
 msgid "Explore what's taking up space"
-msgstr ""
+msgstr "Изучите, что занимает место"
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/03.cleanup.mdx:21
 #, no-wrap
 msgid "Install `ncdu`:\n"
-msgstr ""
+msgstr "Установка `ncdu`:\n"
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/03.cleanup.mdx:27
 #, no-wrap
 msgid "Then use it to scan the filesystem and have a dynamic, browsable report of what's using space:\n"
 msgstr ""
+"Затем используйте его для сканирования файловой системы и получите "
+"динамический, удобный для просмотра отчёт о том, что занимает место:\n"
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/03.cleanup.mdx:32
 #, no-wrap
 msgid "or `ncdu /var/`, for example to scan only `/var/`\n"
-msgstr ""
+msgstr "или `ncdu /var/`, например, для сканирования только `/var/`\n"

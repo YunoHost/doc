@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: 2026-05-29 17:22+0000\n"
+"PO-Revision-Date: 2026-08-25 06:33+0000\n"
 "Last-Translator: Alekseï <support@digiology.org>\n"
 "Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
 "45tutorials__15filezilla/ru/>\n"
@@ -36,138 +36,187 @@ msgstr "Обмен файлами с вашим сервером, использ
 #, no-wrap
 msgid "This page explains how to exchange files (backup archives, music, pictures, movies...) with your server using a graphical interface for the (S)FTP protocol. This is an alternative to using `scp` which can be deemed technical and cryptic, or using an app like Nextcloud.\n"
 msgstr ""
+"На этой странице объясняется, как обмениваться файлами "
+"(резервными копиями архивов, музыкой, изображениями, фильмами и т. д.) с "
+"вашим сервером, используя графический интерфейс для протокола (S)FTP. Это "
+"альтернатива использованию `scp`, который может показаться сложным и "
+"непонятным, или использованию таких приложений, как Nextcloud.\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/15.filezilla.mdx:9
 #, no-wrap
 msgid "[FileZilla](https://filezilla-project.org/) can be used for this. It is free software and is available for Windows, GNU/Linux and macOS.\n"
 msgstr ""
+"Для этого можно использовать [FileZilla](https://filezilla-project.org/). "
+"Это бесплатное программное обеспечение, доступное для Windows, GNU/Linux и "
+"macOS.\n"
 
 #. type: Title ##
 #: docs/admin/45.tutorials/15.filezilla.mdx:10
 #, no-wrap
 msgid "Download and install FileZilla"
-msgstr ""
+msgstr "Загрузите и установите FileZilla"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/15.filezilla.mdx:13
 #, no-wrap
 msgid "Get the client from the [download page](https://filezilla-project.org/download.php?type=client). It should automatically detect the version needed for your computer. Otherwise, follow the instructions to [install the client](https://wiki.filezilla-project.org/Client_Installation)\n"
 msgstr ""
+"Загрузите клиент со [страницы загрузки]"
+"(https://filezilla-project.org/download.php?type=client). Он должен "
+"автоматически определить необходимую для вашего компьютера версию. В "
+"противном случае следуйте инструкциям [по установке клиента]"
+"(https://wiki.filezilla-project.org/Client_Installation)\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/15.filezilla.mdx:15
 #, no-wrap
 msgid "Install the program and run *Filezilla*.\n"
-msgstr ""
+msgstr "Установите программу и запустите *Filezilla*.\n"
 
 #. type: Title ##
 #: docs/admin/45.tutorials/15.filezilla.mdx:16
 #, no-wrap
 msgid "Configuration"
-msgstr ""
+msgstr "Конфигурация"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/15.filezilla.mdx:19
 #, no-wrap
 msgid "1. Click the *Site Manager* icon in the upper left to begin.\n"
 msgstr ""
+"1. Чтобы начать, нажмите на значок *Менеджер сайта* (Site Manager) в верхнем "
+"левом углу.\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/15.filezilla.mdx:21
 #, no-wrap
 msgid "   ![Main screen of Filezilla](/img/softwares/filezilla_1.png)\n"
-msgstr ""
+msgstr "   ![Главный экран Filezilla](/img/softwares/filezilla_1.png)\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/15.filezilla.mdx:23
 #, no-wrap
 msgid "2. Click **New Site** and give a name the server you will be using : *Family* here. Fill the settings as on the screenshot (replace the server address with your own and leave the port field empty unless you changed your SSH port number, in which case use this port number), and click on **Connect**. (N.B. : if you want to interact with the [custom webapp](https://github.com/YunoHost-Apps/my_webapp_ynh) files, you should use a different user than `admin`. Refer to the custom webapp documentation.)\n"
 msgstr ""
+"2. Нажмите **Новый сайт** и укажите имя сервера, который вы будете "
+"использовать: *Family*. Заполните настройки, как показано на скриншоте ("
+"замените адрес сервера своим собственным и оставьте поле порта пустым, если "
+"вы не изменили номер порта SSH, в этом случае используйте этот номер порта), "
+"и нажмите **Подключиться**. (Примечание: если вы хотите взаимодействовать с "
+"файлами [пользовательского веб-приложения]"
+"(https://github.com/YunoHost-Apps/my_webapp_ynh), вам следует использовать "
+"другого пользователя, кроме `admin`. См. документацию по пользовательскому "
+"веб-приложению).\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/15.filezilla.mdx:25
 #, no-wrap
 msgid "   ![Site manager screen](/img/softwares/filezilla_2.png)\n"
-msgstr ""
+msgstr "   ![Экран администратора сайта](/img/softwares/filezilla_2.png)\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/15.filezilla.mdx:27
 #, no-wrap
 msgid "3. You will get a warning as you connect for the first time to the server. *You can ignore it safely the first time you get it.*\n"
 msgstr ""
+"3. При первом подключении к серверу вы получите предупреждение. *В первый "
+"раз вы можете смело его проигнорировать.*\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/15.filezilla.mdx:29
 #, no-wrap
 msgid "   ![warning about the unknown fingerprint of the server](/img/softwares/filezilla_3.png)\n"
 msgstr ""
+"   ![предупреждение о неизвестном отпечатке сервера]"
+"(/img/softwares/filezilla_3.png)\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/15.filezilla.mdx:31
 #, no-wrap
 msgid "4. Filezilla is now asking the `admin` password to connect to your server.\n"
 msgstr ""
+"4. Теперь Filezilla запрашивает пароль администратора(`admin`) для "
+"подключения к вашему серверу.\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/15.filezilla.mdx:33
 #, no-wrap
 msgid "   ![credential screen asking for the password](/img/softwares/filezilla_4.png)\n"
 msgstr ""
+"   ![Экран ввода учётных данных, запрашивающий пароль]"
+"(/img/softwares/filezilla_4.png)\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/15.filezilla.mdx:35
 #, no-wrap
 msgid "5. Once bookmarked, your server will be backup up and you will get this screen.\n"
 msgstr ""
+"5. После добавления в закладки ваш сервер будет резервно скопирован, и вы "
+"увидите этот экран.\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/15.filezilla.mdx:37
 #, no-wrap
 msgid "   ![View of the \"site manager\" with the newly server added](/img/softwares/filezilla_5.png)\n"
 msgstr ""
+"   ![Вид \"менеджера сайта\" с добавленным новым сервером]"
+"(/img/softwares/filezilla_5.png)\n"
 
 #. type: Title ##
 #: docs/admin/45.tutorials/15.filezilla.mdx:38
 #, no-wrap
 msgid "Usage"
-msgstr ""
+msgstr "Использование"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/15.filezilla.mdx:41
 #, no-wrap
 msgid "1. Connect to the Site created previously. *Your passwork might be asked again*\n"
 msgstr ""
+"1. Подключитесь к созданному ранее сайту. *Возможно, потребуется повторно "
+"ввести пароль.*\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/15.filezilla.mdx:43
 #, no-wrap
 msgid "   The left panel corresponds to your computer. The right panel corresponds to your remote YunoHost server. You can browse folders and drag-and-drop files between the two panels.\n"
 msgstr ""
+"   Левая панель соответствует вашему компьютеру. Правая панель соответствует "
+"вашему удалённому серверу YunoHost. Вы можете просматривать папки и "
+"перетаскивать файлы между двумя панелями.\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/15.filezilla.mdx:45
 #, no-wrap
 msgid "   ![view while connected to a remote server](/img/softwares/filezilla_6.png)\n"
 msgstr ""
+"   ![просмотр при подключении к удалённому серверу]"
+"(/img/softwares/filezilla_6.png)\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/15.filezilla.mdx:47
 #, no-wrap
 msgid "2. In the right panel, you can browse to `/home/yunohost.backup/archives/` to find [backup archives](/admin/backups/).\n"
 msgstr ""
+"2. В правой панели вы можете перейти по адресу `/home/yunohost.backup/"
+"archives/`, чтобы найти [архивы резервных копий](/admin/backups/).\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/15.filezilla.mdx:49
 #, no-wrap
 msgid "   ![path where backups are located on YunoHost](/img/softwares/filezilla_7.png)\n"
 msgstr ""
+"   ![путь к местам расположения резервных копий на YunoHost]"
+"(/img/softwares/filezilla_7.png)\n"
 
 #. type: Fenced div block (warning)
 #: docs/admin/45.tutorials/15.filezilla.mdx:50
 #, no-wrap
 msgid "   <FAIcon icon=\"fa-cloud-download\"/> Be sure to download both the `.tar.gz` and `.json` files.\n"
 msgstr ""
+"   <FAIcon icon=\"fa-cloud-download\"/> Обязательно загрузите оба файла: "
+"`.tar.gz` и `.json`.\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/15.filezilla.mdx:55

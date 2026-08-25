@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: 2026-06-02 20:31+0000\n"
+"PO-Revision-Date: 2026-08-15 13:33+0000\n"
 "Last-Translator: Alekseï <support@digiology.org>\n"
 "Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
 "50troubleshooting__20ipv6/ru/>\n"
@@ -48,30 +48,36 @@ msgid ""
 "OVH gives one IPv4 address and one IPv6 address for VPS but by default, only IPv4 is OK.\n"
 "Please check [The OVH documentation](https://docs.ovh.com/gb/en/vps/configuring-ipv6/).\n"
 msgstr ""
+"OVH предоставляет VPS по одному IPv4- и IPv6-адресу, но по умолчанию "
+"работает только IPv4.\n"
+"Пожалуйста, ознакомьтесь с [документацией OVH]"
+"(https://docs.ovh.com/gb/en/vps/configuring-ipv6/).\n"
 
 #. type: Title ###
 #: docs/admin/50.troubleshooting/20.ipv6.mdx:13
 #, no-wrap
 msgid "Configure the DNS server"
-msgstr ""
+msgstr "Настройка DNS-сервера"
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/20.ipv6.mdx:16
 #, no-wrap
 msgid "Also check [the documentation for subdomains](/admin/tutorials/domains/dns_subdomains).\n"
 msgstr ""
+"Также ознакомьтесь с [документацией по поддоменам]"
+"(/admin/tutorials/domains/dns_subdomains).\n"
 
 #. type: Title ###
 #: docs/admin/50.troubleshooting/20.ipv6.mdx:17
 #, no-wrap
 msgid "Configure the server"
-msgstr ""
+msgstr "Настройка сервера"
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/20.ipv6.mdx:20
 #, no-wrap
 msgid "On the OVH panel, you will copy 3 elements:\n"
-msgstr ""
+msgstr "На панели OVH вам нужно скопировать 3 элемента:\n"
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/20.ipv6.mdx:24
@@ -81,6 +87,10 @@ msgid ""
 "- the IPv6 gateway address\n"
 "- the IPv6 prefix. On OVH's VPS SSD, prefixes are `/128` because you have only *one* IPv6 address.\n"
 msgstr ""
+"- IPv6-адрес\n"
+"- IPv6-адрес шлюза\n"
+"- IPv6-префикс. На SSD-накопителе VPS от OVH префиксы — `/128` , потому что "
+"у вас только *один* IPv6-адрес.\n"
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/20.ipv6.mdx:27
@@ -89,24 +99,35 @@ msgid ""
 "On your VPS, create a backup of the network configuration with : `cp /etc/network/interfaces ~/interfaces` in home directory.\n"
 "Then, you can edit the configuration file (`/etc/network/interfaces`) with the following.\n"
 msgstr ""
+"На вашем VPS создайте резервную копию конфигурации сети с помощью команды: `"
+"cp /etc/network/interfaces ~/interfaces` в домашнем каталоге.\n"
+"Затем вы можете отредактировать файл конфигурации (`/etc/network/interfaces`)"
+" следующим образом.\n"
 
 #. type: Fenced div block (note)
 #: docs/admin/50.troubleshooting/20.ipv6.mdx:28
 #, no-wrap
 msgid "In this example, it is assumed that your network interface is `eth0`. If it's different (check with `ip a`) you need to adapt the example below.\n"
 msgstr ""
+"В этом примере предполагается, что ваш сетевой интерфейс — `eth0`. Если он "
+"отличается (проверьте с помощью `ip a`), вам необходимо адаптировать "
+"приведённый ниже пример.\n"
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/20.ipv6.mdx:43
 #, no-wrap
 msgid "Now, save the file and restart the network service with : `service networking restart`. (TODO : ideally we should find a way to validate the content of the configuration, otherwise it could fuck up the network stack and get disconnected from the VPS ?)\n"
 msgstr ""
+"Теперь сохраните файл и перезапустите сетевую службу с помощью команды: `"
+"service networking restart`. (TODO: в идеале нам следует найти способ "
+"проверить содержимое конфигурации, иначе это может нарушить работу сетевого "
+"стека и привести к отключению от VPS?)\n"
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/20.ipv6.mdx:45
 #, no-wrap
 msgid "Check your configuration with these commands :\n"
-msgstr ""
+msgstr "Проверьте свою конфигурацию с помощью следующих команд:\n"
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/20.ipv6.mdx:50
@@ -117,9 +138,15 @@ msgid ""
 "- try to ping an IPv6 server (for example you can use `ping6 ip6.yunohost.org`)\n"
 "- try to ping your server from your PC (assuming your PC has IPv6 enabled)\n"
 msgstr ""
+"- `ip a` для отображения сетевых интерфейсов и адресов\n"
+"- `hostname -I` для отображения IP-адресов системы\n"
+"- попробуйте пинговать сервер IPv6 "
+"(например, можно использовать `ping6 ip6.yunohost.org`)\n"
+"- попробуйте пинговать свой сервер с вашего ПК "
+"(при условии, что на вашем ПК включен IPv6)\n"
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/20.ipv6.mdx:51
 #, no-wrap
 msgid "If it's ok, it's ok !\n"
-msgstr ""
+msgstr "Если всё в порядке, значит, всё в порядке!\n"

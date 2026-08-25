@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: 2026-06-07 19:42+0000\n"
+"PO-Revision-Date: 2026-08-25 06:33+0000\n"
 "Last-Translator: Alekseï <support@digiology.org>\n"
 "Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
 "05get_started__10providers__15vpn__vpn_advantage/ru/>\n"
@@ -56,55 +56,80 @@ msgstr ""
 #: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:14
 #, no-wrap
 msgid "Plug & Play"
-msgstr ""
+msgstr "Plug and Play"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:17
 #, no-wrap
 msgid "By setting up a VPN on your server, you'll be able to make it accessible to the rest of the Internet without having to change the configuration of the router you connect it to. This can be really handy if you are going on vacation, moving or have an Internet disconnection, as you will be able to easily connect it to someone you trust without having to configure the router of the person who is helping you.\n"
 msgstr ""
+"Настроив VPN на своём сервере, вы сможете сделать его доступным для "
+"остальной части Интернета, не меняя конфигурацию маршрутизатора, к которому "
+"он подключён. Это может быть очень удобно, если вы уезжаете в отпуск, "
+"переезжаете или у вас отключился Интернет, так как вы сможете легко "
+"подключить его к кому-то, кому доверяете, без необходимости настраивать "
+"маршрутизатор того, кто вам помогает.\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:19
 #, no-wrap
 msgid "In the same way, you save yourself the trouble of opening your router's ports and bypassing hairpinning.\n"
 msgstr ""
+"Таким же образом вы избавляете себя от необходимости открывать порты "
+"маршрутизатора и обходить технологию hairpinning.\n"
 
 #. type: Title ###
 #: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:20
 #, no-wrap
 msgid "No micro DNS outages"
-msgstr ""
+msgstr "Отсутствие сбоев в работе микро-DNS"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:23
 #, no-wrap
 msgid "If your Internet connection does not have a fixed public IP, you will be forced to set up a dynamic domain name (Dynamic DNS). This solution may be acceptable, but the DNS will only be updated at regular intervals (every two minutes if it is a `noho.st` or `nohost.me` domain name). So there is a chance that this will cause some display errors in the browser from time to time, or even that another site will be displayed (the risks are however reduced because the practice of self-hosting is not widespread).\n"
 msgstr ""
+"Если ваше интернет-соединение не имеет фиксированного публичного IP-адреса, "
+"вам придётся настроить динамическое доменное имя (динамический DNS). Это "
+"решение может быть приемлемым, но DNS будет обновляться только с регулярными "
+"интервалами "
+"(каждые две минуты, если это доменное имя `noho.st` или `nohost.me`). "
+"Поэтому существует вероятность того, что это время от времени будет вызывать "
+"ошибки отображения в браузере или даже приведёт к отображению другого сайта ("
+"однако риски невелики, поскольку практика самостоятельного размещения сайтов "
+"не получила широкого распространения).\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:25
 #, no-wrap
 msgid "With a neutral VPN, this problem is circumvented because the VPN can be compared to a Virtual Internet connection, which has its own fixed IPv4 address, so no need to update the domain name.\n"
 msgstr ""
+"При использовании нейтрального VPN эта проблема обходится стороной, "
+"поскольку VPN можно сравнить с виртуальным интернет-соединением, которое "
+"имеет собственный фиксированный IPv4-адрес, поэтому нет необходимости "
+"обновлять доменное имя.\n"
 
 #. type: Title ###
 #: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:26
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "The case of email"
-msgstr ""
+msgstr "Использование почты"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:29
 #, no-wrap
 msgid "Email is one of the most complex protocols to self-host, usually it is what a user self-hosts last. Indeed, it is very easy to find yourself in a situation where emails sent by the server are refused by the recipient SMTP servers.\n"
 msgstr ""
+"Электронная почта — один из самых сложных протоколов для самостоятельного "
+"размещения, обычно пользователь размещает её в последнюю очередь. "
+"Действительно, очень легко оказаться в ситуации, когда электронные письма, "
+"отправленные сервером, отклоняются SMTP-серверами получателя.\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:31
 #, no-wrap
 msgid "To avoid this you need to:\n"
-msgstr ""
+msgstr "Чтобы этого избежать, вам необходимо:\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:36
@@ -115,66 +140,89 @@ msgid ""
 "- that this IPv4 is removable from all blacklists (notably the IP must not be on the DUL)\n"
 "- to be able to open port 25 (as well as the other SMTP ports)\n"
 msgstr ""
+"- Настройка обратного DNS-сервера для интернет-соединения сервера (или VPN)\n"
+"- Фиксированный IPv4-адрес\n"
+"- Возможность удаления этого IPv4-адреса из всех чёрных списков "
+"(в частности, IP-адрес не должен находиться в списке DUL)\n"
+"- Возможность открытия порта 25 (а также других портов SMTP)\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:38
 #, no-wrap
 msgid "Unfortunately, none of the most common French ISPs respect all these points.\n"
 msgstr ""
+"К сожалению, ни один из наиболее распространенных французских интернет-"
+"провайдеров не соблюдает все эти пункты.\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:40
 #, no-wrap
 msgid "To overcome this, the use of a VPN respecting these points can be an alternative.\n"
 msgstr ""
+"Для решения этой проблемы в качестве альтернативы можно использовать VPN, "
+"учитывающий эти моменты.\n"
 
 #. type: Title ###
 #: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:41
 #, no-wrap
 msgid "Trust"
-msgstr ""
+msgstr "Доверие"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:44
 #, no-wrap
 msgid "Finally, if you do not want the content of your server's communications to be spied on by equipment present on your ISP's network, you can use a VPN to encrypt your communications and deport your trust to a VPN provider. Remember, since 2015, the government officially deploys black boxes at the large network operators whose objective is to tap all French digital communications to preserve the scientific, economic and industrial interests of France.\n"
 msgstr ""
+"Наконец, если вы не хотите, чтобы содержимое ваших серверных коммуникаций "
+"отслеживалось оборудованием, присутствующим в сети вашего интернет-"
+"провайдера, вы можете использовать VPN для шифрования ваших коммуникаций и "
+"переложить своё доверие на VPN-провайдера. Помните, что с 2015 года "
+"правительство официально устанавливает «чёрные ящики» у крупных сетевых "
+"операторов, цель которых — перехват всех французских цифровых коммуникаций "
+"для защиты научных, экономических и промышленных интересов Франции.\n"
 
 #. type: Title ##
 #: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:45
 #, no-wrap
 msgid "Disadvantages"
-msgstr ""
+msgstr "Недостатки"
 
 #. type: Title ###
 #: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:47
 #, no-wrap
 msgid "Cost"
-msgstr ""
+msgstr "Расходы"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:50
 #, no-wrap
 msgid "A neutral VPN has a cost since the operator who provides it must run a server and use bandwidth. The prices of the FFDN's associative VPNs are around 6 € per month.\n"
 msgstr ""
+"Нейтральный VPN имеет свою стоимость, поскольку оператор, предоставляющий "
+"его, должен содержать сервер и использовать пропускную способность. Цены на "
+"ассоциативные VPN от FFDN составляют около 6 евро в месяц.\n"
 
 #. type: Title ###
 #: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:51
 #, no-wrap
 msgid "Packet path"
-msgstr ""
+msgstr "Путь пакета"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:54
 #, no-wrap
 msgid "When you set up a VPN on your server, if you don't set up any particular configuration, the transfer of a file from a computer on the local network to the server using the VPN, will go through the end of the VPN i.e. through the server of the VPN provider.\n"
 msgstr ""
+"При настройке VPN на сервере, если не заданы какие-либо специальные "
+"параметры, передача файла с компьютера в локальной сети на сервер с "
+"использованием VPN будет осуществляться через конечную точку VPN, то есть "
+"через сервер VPN-провайдера.\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:56
 #, no-wrap
 msgid "To solve this problem, there are two solutions:\n"
-msgstr ""
+msgstr "Для решения этой проблемы есть два варианта:\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:58
@@ -183,3 +231,10 @@ msgid ""
 "- transform the server into a router and connect the home equipments to it, these equipments will then benefit from the VPN confidentiality too.\n"
 "- use the YunoHost server as a DNS resolver when you are at home, in order to redirect the server's domain names to the local IP rather than the public IP. This operation can be done either on each equipment or on the router (if the latter allows it).\n"
 msgstr ""
+"- Превратите сервер в маршрутизатор и подключите к нему домашнее "
+"оборудование; это оборудование также получит преимущества конфиденциальности "
+"VPN.\n"
+"- Используйте сервер YunoHost в качестве DNS-сервера, когда вы находитесь "
+"дома, чтобы перенаправлять доменные имена сервера на локальный IP-адрес, а "
+"не на публичный. Эту операцию можно выполнить либо на каждом устройстве, "
+"либо на маршрутизаторе (если последний это позволяет).\n"
