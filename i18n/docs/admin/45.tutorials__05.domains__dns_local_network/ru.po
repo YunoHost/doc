@@ -104,7 +104,7 @@ msgstr ""
 msgid "Configure [hosts](https://en.wikipedia.org/wiki/Host_%28Unix%29) file on client workstation"
 msgstr ""
 "Настройка файла [hosts](https://en.wikipedia.org/wiki/Host_%28Unix%29) на "
-"клиентской рабочей станции"
+"клиентской рабочей станции {#configure-hosts-file-on-client-workstation}"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/05.domains/dns_local_network.mdx:27
