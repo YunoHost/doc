@@ -1,6 +1,7 @@
 name: Build Docusaurus doc
 
 on:
+  pull_request:
   push:
     branches:
       - main
