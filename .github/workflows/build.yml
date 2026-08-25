@@ -18,7 +18,7 @@ jobs:
 
     env:
       # This variable allow to build for either doc.yunohost.org or nextdoc.yunohost.org
-      BUILD_FOR: ${{ github.ref == 'refs/heads/main' && 'main' || 'next' }}
+      BUILD_FOR: ${{ github.ref == 'refs/heads/next' && 'next' || 'main' }}
 
     steps:
       - name: Checkout
