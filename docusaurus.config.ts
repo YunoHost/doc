@@ -14,7 +14,7 @@ function getUrl() : string {
 }
 
 function getLinguas(): string[] {
-  return fs.readFileSync( './i18n/LINGUAS', 'utf-8').trim().split(/\r?\n/);
+  return fs.readFileSync( './i18n/LINGUAS', 'utf-8').trim().replace("_", "-").split(/\r?\n/);
 }
 
 const enabled_locales = getLinguas();

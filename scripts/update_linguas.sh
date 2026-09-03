@@ -6,5 +6,5 @@ SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 DOCDIR=$(dirname "$SCRIPT_DIR")
 
 curl -s https://translate.yunohost.org/api/projects/yunohost-doc/languages/ \
-| jq '[ .[] | select(.translated_percent >= 5.5 ) | .code | sub("_"; "-") ] | sort | .[]' -r \
+| jq '[ .[] | select(.translated_percent >= 5.5 ) | .code ] | sort | .[]' -r \
 > "$DOCDIR/i18n/LINGUAS"
