@@ -1,6 +1,7 @@
 import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
+import * as fs from 'fs';
 
 import Footer from './footer.ts';
 
@@ -12,9 +13,11 @@ function getUrl() : string {
   return isMain ? 'https://doc.yunohost.org/' : 'https://doc.next.yunohost.org/';
 }
 
-// NB: this list is auto-updated during build using statistics from Weblate,
-// keeping the lang with at least 5% translations
-const enabled_locales = [  "zh-Hans",  "en",  "fr",  "gl",  "de",  "it",  "ru",  "es",  "tr"];
+function getLinguas(): string[] {
+  return fs.readFileSync( './i18n/LINGUAS', 'utf-8').trim().split(/\r?\n/);
+}
+
+const enabled_locales = getLinguas();
 
 const lunr_locales = enabled_locales.filter(
   function (l) { return (l != "gl" && l != "kab") }

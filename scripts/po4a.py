@@ -80,14 +80,8 @@ def download_po4a() -> Path:
 
 
 def translated_langs() -> list[str]:
-    # Find the translated langs from docusaurus config
-    docusaurus_config = DOCS_DIR / "docusaurus.config.ts"
-    langs_match = re.search(
-        r"\n\s*const enabled_locales\s*=\s*\[([^\]]*)\]\s*;",
-        docusaurus_config.read_text(),
-    )
-    assert langs_match
-    langs = langs_match[1].replace('"', "").replace(" ", "").replace("-", "_").split(",")
+    linguas = DOCS_DIR / "i18n" / "LINGUAS"
+    langs = linguas.read_text().splitlines()
     langs.remove("en")
     return langs
 

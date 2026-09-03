@@ -1,13 +1,14 @@
 #!/usr/bin/env bash
 set -Eeuo pipefail
-SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
-
 set -x
+
+SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
+DOCDIR=$(dirname "$SCRIPT_DIR")
 
 # Might be yarn, bun etc
 executor=${npm_execpath:-npm}
 
-langs=$(grep "enabled_locales =" $SCRIPT_DIR/../docusaurus.config.ts | awk -F= '{print $2}' | tr -d '[]",;')
-for lang in $langs; do
+readarray -t linguas < "$DOCDIR/i18n/LINGUAS"
+for lang in "${linguas[@]}"; do
     "$executor" run docusaurus write-translations -l "$lang" "$@"
 done

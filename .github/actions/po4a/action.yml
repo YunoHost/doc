@@ -24,4 +24,4 @@ runs:
 
   - name: Tweak enabled locales according to Weblate statistics (keep langs with >= 5% translated)
     shell: bash
-    run: scripts/patch_enabled_locales.sh
+    run: scripts/update_linguas.sh
