@@ -1,4 +1,23 @@
 #!/usr/bin/env python3
+#
+# Copyright (c) 2024 YunoHost Contributors
+#
+# This file is part of YunoHost (see https://yunohost.org)
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU Affero General Public License as
+# published by the Free Software Foundation, either version 3 of the
+# License, or (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU Affero General Public License for more details.
+#
+# You should have received a copy of the GNU Affero General Public License
+# along with this program. If not, see <http://www.gnu.org/licenses/>.
+#
+
 
 import argparse
 import datetime
@@ -44,9 +63,7 @@ patterns_to_ignore = [
 
 def download_po4a() -> Path:
     po4a_path = DOCS_DIR / ".po4a"
-    po4a_url = (
-        "https://github.com/mquinson/po4a/releases/download/v0.74/po4a-0.74.tar.gz"
-    )
+    po4a_url = "https://github.com/mquinson/po4a/releases/download/v0.74/po4a-0.74.tar.gz"
     po4a_tarball = DOCS_DIR / ".po4a.tar.gz"
 
     if not po4a_path.exists():
@@ -55,9 +72,7 @@ def download_po4a() -> Path:
         po4a_tarball.write_bytes(response.raw.read())
 
         po4a_path.mkdir()
-        subprocess.check_call(
-            ["tar", "xzf", po4a_tarball, "--strip-components=1"], cwd=po4a_path
-        )
+        subprocess.check_call(["tar", "xzf", po4a_tarball, "--strip-components=1"], cwd=po4a_path)
         po4a_tarball.unlink()
 
     assert (po4a_path / "po4a").exists()
@@ -77,7 +92,7 @@ def translated_langs() -> list[str]:
     return langs
 
 
-def po4a_config(langs: list[str], pages: list[str], print_whole: bool = False) -> str:
+def po4a_config(langs: list[str], pages: list[str], *, print_whole: bool = False) -> str:
     breaks = f"breaks='{'|'.join(patterns_to_ignore)}'"
     yfm_keys = f"yfm_keys={','.join(yaml_front_matter_keys_to_translate)}"
 
@@ -124,12 +139,10 @@ def main() -> None:
 
     admin_dir = DOCS_DIR / "docs" / "admin"
     for page in sorted(admin_dir.rglob("*.mdx")):
-        page = str(page.relative_to(admin_dir))
-        pages.append(page)
+        page_relative = str(page.relative_to(admin_dir))
+        pages.append(page_relative)
 
-    with tempfile.NamedTemporaryFile(
-        prefix="po4a_", suffix=".cfg", mode="w+t", dir=po4a_path
-    ) as po4a_conf:
+    with tempfile.NamedTemporaryFile(prefix="po4a_", suffix=".cfg", mode="w+t", dir=po4a_path) as po4a_conf:
         po4a_conf.write(po4a_config(langs, pages))
         po4a_conf.flush()
 
@@ -144,9 +157,7 @@ def main() -> None:
 
     if action == "regen_pot":
         # We don't want to update the .po, only the .pot ... Weblate will take care of the pot -> po workflow
-        subprocess.check_call(
-            f"git checkout {DOCS_DIR}/i18n/docs/admin/*/*.po", shell=True, cwd=DOCS_DIR
-        )
+        subprocess.check_call(["git", "checkout", f"{DOCS_DIR}/i18n/docs/admin/*/*.po"], cwd=DOCS_DIR)
         # Boring unecessary headers
         this_year = datetime.date.today().year
         subprocess.check_call(
@@ -173,16 +184,12 @@ def main() -> None:
             shell=True,
             cwd=DOCS_DIR,
         ).decode()
-        files_to_git_add = list(
-            filter(None, git_diff_result.replace("\n", " ").strip().split(" "))
-        )
+        files_to_git_add = list(filter(None, git_diff_result.replace("\n", " ").strip().split(" ")))
 
         if files_to_git_add:
             subprocess.check_call(["git", "add", *files_to_git_add], cwd=DOCS_DIR)
         # and restore the other ones
-        subprocess.check_call(
-            ["git", "checkout", "--", "i18n/docs/admin/"], cwd=DOCS_DIR
-        )
+        subprocess.check_call(["git", "checkout", "--", "i18n/docs/admin/"], cwd=DOCS_DIR)
 
     if action == "build_translated_mdx":
         # List generated files

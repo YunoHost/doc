@@ -26,8 +26,8 @@ from pathlib import Path
 
 from jinja2 import Template
 
-
 TEMPLATE_FILE = Path(__file__).resolve().parent / "resources_doc_template.md.j2"
+
 
 def get_current_commit(docdir: Path) -> str:
     p = subprocess.Popen(
@@ -36,7 +36,7 @@ def get_current_commit(docdir: Path) -> str:
         stdout=subprocess.PIPE,
         stderr=subprocess.STDOUT,
     )
-    stdout, stderr = p.communicate()
+    stdout, _stderr = p.communicate()
 
     current_commit = stdout.strip().decode("utf-8")
     return current_commit
@@ -68,6 +68,7 @@ def list_resources(srcdir: Path) -> dict[str, str]:
                 assert isinstance(cl.body[1].targets[0], ast.Name)
                 assert cl.body[1].targets[0].id == "type"
                 assert isinstance(cl.body[1].value, ast.Constant)
+                assert isinstance(cl.body[1].value.value, str)
                 resource_id = cl.body[1].value.value.replace("_", " ").title()
                 docstring = ast.get_docstring(cl)
                 assert isinstance(docstring, str)

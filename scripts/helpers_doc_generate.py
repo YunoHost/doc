@@ -44,7 +44,10 @@ def get_helpers_tree(helpers_version: str) -> dict[str, dict]:
         },
         "db": {
             "title": "Databases",
-            "notes": "This is coupled to the 'database' resource in the manifest.toml - at least for mysql/postgresql. Mongodb/redis may have better integration in the future.",
+            "notes": (
+                "This is coupled to the 'database' resource in the manifest.toml - at least for mysql/postgresql. "
+                "Mongodb/redis may have better integration in the future."
+            ),
             "subsections": ["mysql", "postgresql", "mongodb", "redis"],
             "helpers": {},
         },
@@ -79,7 +82,7 @@ def get_helpers_tree(helpers_version: str) -> dict[str, dict]:
         },
     }
     if helpers_version == "2.1":
-        tree["misc"]["subsections"][0] = "0-utils"  # type: ignore
+        tree["misc"]["subsections"][0] = "0-utils"
         del tree["tech"]
         tree["meh"]["subsections"] += ["nodejs", "ruby", "go", "composer"]
 
@@ -93,7 +96,7 @@ def get_current_commit(docdir: Path) -> str:
         stdout=subprocess.PIPE,
         stderr=subprocess.STDOUT,
     )
-    stdout, stderr = p.communicate()
+    stdout, _stderr = p.communicate()
 
     current_commit = stdout.strip().decode("utf-8")
     return current_commit
@@ -134,11 +137,11 @@ class Parser:
         current_reading = "void"
         current_block = Block()
 
-        for i, line in enumerate(self.file):
-            if i == 0 and line.startswith("#!"):
+        for i, line_unstripped in enumerate(self.file):
+            if i == 0 and line_unstripped.startswith("#!"):
                 continue
 
-            line = line.rstrip().replace("\t", "    ")
+            line = line_unstripped.rstrip().replace("\t", "    ")
 
             if current_reading == "void":
                 if is_global_comment(line):
@@ -160,16 +163,14 @@ class Parser:
                     # Well eh that was not an actual helper definition ... start over ?
                     current_reading = "void"
                     current_block = Block()
-                elif not (line.endswith("{") or line.endswith("()")):
+                elif not line.endswith(("{", "()")):
                     # Well we're not actually entering a function yet eh
                     # (c.f. global vars)
                     pass
                 else:
                     # We're getting out of a comment bloc, we should find
                     # the name of the function
-                    assert (
-                        len(line.split()) >= 1
-                    ), f"Malformed line {i} in {self.filepath}"
+                    assert len(line.split()) >= 1, f"Malformed line {i} in {self.filepath}"
                     current_block.line = i
                     current_block.name = line.split()[0].strip("(){")
                     # Then we expect to read the function
@@ -184,10 +185,7 @@ class Parser:
                     # (we ignore helpers containing [internal] ...)
                     if (
                         "[packagingv1]" not in current_block.comments
-                        and not any(
-                            line.startswith("[internal]")
-                            for line in current_block.comments
-                        )
+                        and not any(line.startswith("[internal]") for line in current_block.comments)
                         and not current_block.name.startswith("_")
                     ):
                         self.blocks.append(current_block)
@@ -200,8 +198,8 @@ class Parser:
     def parse_block(self, b: Block) -> None:
         subblocks = "\n".join(b.comments).split("\n\n")
 
-        for i, subblock in enumerate(subblocks):
-            subblock = subblock.strip()
+        for i, subblock_unstripped in enumerate(subblocks):
+            subblock = subblock_unstripped.strip()
 
             if i == 0:
                 b.brief = subblock
@@ -233,8 +231,8 @@ class Parser:
                         b.ret = " ".join(line.split()[2:])
                     else:
                         if line.startswith("usage"):
-                            line = " ".join(line.split()[1:])
-                        b.usage += line + "\n"
+                            usage = " ".join(line.split()[1:])
+                        b.usage += usage + "\n"
                 continue
 
             elif subblock.startswith("| arg"):
@@ -274,7 +272,7 @@ def main() -> None:
     parser.add_argument("--output", "-o", type=Path, required=False)
     args = parser.parse_args()
 
-    output = args.output if args.output else Path(f"helpers.v{args.version}.md")
+    output = args.output or Path(f"helpers.v{args.version}.md")
     helpers_dir = args.input / "helpers" / f"helpers.v{args.version}.d"
 
     tree = get_helpers_tree(args.version)
@@ -290,7 +288,7 @@ def main() -> None:
             for b in p.blocks:
                 p.parse_block(b)
 
-            section["helpers"][subsection] = p.blocks  # type: ignore
+            section["helpers"][subsection] = p.blocks
 
     template_data = {
         "tree": tree,
