@@ -1,0 +1,40 @@
+[project]
+name = "yunohost-doc"
+description = "YunoHost Documentation - This pyproject is only for utility scripts"
+readme = "README.md"
+version = "0.0.1"
+authors = [
+    { name = "YunoHost", email = "yunohost@yunohost.org" }
+]
+
+requires-python = ">=3.11"
+
+# These dependencies might not be up to date, please see debian/control instead
+dependencies = [
+    "jinja2>=3.1.6",
+    "requests>=2.34.2",
+]
+
+[dependency-groups]
+tests = [
+    "mypy",
+    "types-gevent",
+    "types-passlib",
+    "types-psutil",
+    "types-pyOpenSSL",
+    "types-pyYAML",
+    "types-requests",
+    "types-toml",
+    "pytest",
+    "mock",
+]
+
+[tool.ty]
+
+[tool.ruff]
+line-length = 120
+lint.select = ["ALL"]
+lint.ignore = [
+    "D", "S101", "RET504", "S607", "COM812", "T201", "S603", "PLR2004", "SIM102", "PLR0912", "C901", "DTZ", "ERA", "RET507",
+
+]

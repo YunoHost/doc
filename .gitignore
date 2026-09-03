@@ -25,3 +25,6 @@ yarn-error.log*
 
 .po4a
 i18n/*/docusaurus-plugin-content-docs/current/admin/
+
+bun.lock
+uv.lock
