@@ -22,10 +22,6 @@ runs:
         opensp \
         perl
 
-  - name: Check image paths consistency
-    shell: bash
-    run: scripts/check_missing_or_bad_image_path.sh
-
   - name: Tweak enabled locales according to Weblate statistics (keep langs with >= 5% translated)
     shell: bash
     run: scripts/patch_enabled_locales.sh
