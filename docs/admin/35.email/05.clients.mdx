@@ -58,6 +58,22 @@ Follow the following steps. (As for Thunderbird Desktop, you might need to accep
 <img src="/img/softwares/thunderbird_mobile_config_3.png" width="280"/>
 
 </TabItem>
+<TabItem value="outlook" label="Microsoft Outlook">
+
+IMPORTANT!
+Do not use the securtiy hardeing advice for Postfix with TLS 1.3 in yunohost.
+
+Outlook Classic and Outlook modern on Windows or Apple MacOS don't support TLS 1.3 for SMTP server. So do not set the postfix to "Modern (TLS 1.3 only)" setting on this page: https://your-yunohost-HOSTNAME/yunohost/admin/#/tools/settings/security
+
+You can only use "Intermediate (allow TLS 1.2)" with Microsoft Outlook as of 9.3.2026.
+
+Documenation about postfix hardeing:
+https://doc.yunohost.org/en/admin/security#hardening-cipher-used-by-nginx-ssh-dovecot-postfix
+
+More information about some tests an versions:
+https://forum.yunohost.org/t/outlook-classic-or-modern-doesnt-work-with-smtp-postfix-modern-tls-1-3-only-setting/41773
+
+</TabItem>
 <TabItem value="dekko" label="Dekko">
 
 ##### <SmallInline url='/img/icons/logo-dekko.png'/> Configure Dekko (on Ubuntu Touch)
