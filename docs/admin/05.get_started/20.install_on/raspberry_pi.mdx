@@ -62,6 +62,23 @@ Plug your SD card, select your image and click "Write"
 ![USBimager](/img/softwares/usbimager.png)
 
 </TabItem>
+<TabItem value="os-specific" label="OS Specific">
+
+Many OS provide tools to create usb images, then don't require to install additional software, some are documented bellow.
+
+# Gnome OS / Ubuntu - Debian
+
+If you are on GNU/Linux Gnome based distribution like Ubuntu 24 or Debian with Gnome you can use [gnome-disk utility](https://apps.gnome.org/en/DiskUtility/) to write your image on your card.
+
+[A video in french displays this](https://pire.artisanlogiciel.net/w/hVFbXUW7yYbGzP2BLmDgVP?start=3m11s)
+
+# Mint
+
+Linux Mint provides a USB Image writer
+
+![Mint USB Image writer](https://linuxmint-installation-guide.readthedocs.io/en/latest/_images/mintstick.png)
+
+</TabItem>
 <TabItem value="dd" label="With dd">
 
 If you are on GNU/Linux / macOS and know your way around command line, you may also flash your USB stick or SD card with `dd`. You can identify which device corresponds to your USB stick or SD card with `fdisk -l` or `lsblk`. A typical SD card name is something like `/dev/mmcblk0`. BE CAREFUL and make sure you got the right name.
