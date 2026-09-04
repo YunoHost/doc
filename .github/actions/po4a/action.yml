@@ -9,18 +9,7 @@ runs:
   - name: Install perl dependencies (for po4a)
     shell: bash
     run: |
-      sudo apt install -y \
-        gettext \
-        liblocale-gettext-perl \
-        libpod-parser-perl \
-        libsgmls-perl \
-        libsyntax-keyword-try-perl \
-        libterm-readkey-perl \
-        libtext-wrapi18n-perl \
-        libunicode-linebreak-perl \
-        libyaml-tiny-perl \
-        opensp \
-        perl
+      sudo apt install -y po4a
 
   - name: Tweak enabled locales according to Weblate statistics (keep langs with >= 5% translated)
     shell: bash
