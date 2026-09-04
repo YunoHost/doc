@@ -26,8 +26,8 @@ from pathlib import Path
 
 from jinja2 import Template
 
-
 TEMPLATE_FILE = Path(__file__).resolve().parent / "forms_doc_template.md.j2"
+
 
 def get_current_commit(docdir: Path) -> str:
     p = subprocess.Popen(
@@ -36,7 +36,7 @@ def get_current_commit(docdir: Path) -> str:
         stdout=subprocess.PIPE,
         stderr=subprocess.STDOUT,
     )
-    stdout, stderr = p.communicate()
+    stdout, _stderr = p.communicate()
 
     current_commit = stdout.strip().decode("utf-8")
     return current_commit
@@ -51,9 +51,9 @@ def get_changelog_version(srcdir: Path) -> str:
 ##############################################################################
 
 
-def dict_key_first(dict: dict, key) -> dict:
-    value = dict.pop(key)
-    return {key: value, **dict}
+def dict_key_first(dict_: dict[str, str], key: str) -> dict[str, str]:
+    value = dict_.pop(key)
+    return {key: value, **dict_}
 
 
 def list_config_panel(srcdir: Path) -> dict[str, str]:

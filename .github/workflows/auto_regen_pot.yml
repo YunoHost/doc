@@ -18,7 +18,7 @@ jobs:
 
       - name: Regenerate the .pot file
         shell: bash
-        run: python3 ./scripts/po4a.py regen_pot
+        run: ./scripts/po4a.py regen_pot
 
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
