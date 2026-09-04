@@ -23,6 +23,16 @@ In the portal, users can also click on the avatar in the top-left to configure s
 You should be aware that the SSO can only be reached through the actual domain name (i.e. `https://the.domain.tld/yunohost/sso`), and NOT by just using the IP of the server (i.e. `https://11.22.33.44/yunohost/sso`), contrarily to the webadmin ! This is a bit confusing but is necessary for technical reason. If you are in a situation where you need to access the SSO without having your DNS properly configured for some reason, you might consider tweaking your `/etc/hosts` as described in [this page](/admin/tutorials/domains/dns_local_network).
 :::
 
+### Domains and Portal access
+
+To access portal on a given domain, either :
+
+  - user has permission for an application with a URI on the domain
+  - user is an admin
+  - user has primary email on the domain
+
+If user is not an admin, has a primary address on another domain and has no access on an application on this domain, an error at login will be displayed.
+
 ## Creating new users
 
 Only the administrator can create new users. From the webadmin, open the `Users` menu and click on the `+ New user` main button. Fill in all the whole form.
