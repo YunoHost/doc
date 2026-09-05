@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: 2026-09-05 13:00+0000\n"
+"PO-Revision-Date: 2026-09-05 17:56+0000\n"
 "Last-Translator: Alekseï <support@digiology.org>\n"
 "Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
 "43upgrade__120-bookworm__index/ru/>\n"
@@ -296,7 +296,7 @@ msgstr ""
 #: docs/admin/43.upgrade/12.0-bookworm/index.mdx:66
 #, no-wrap
 msgid "Agreeing to the new Terms of Service via command line"
-msgstr ""
+msgstr "Принятие новых Условий использования через командную строку"
 
 #. type: Plain text
 #: docs/admin/43.upgrade/12.0-bookworm/index.mdx:69
