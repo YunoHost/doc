@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: 2026-09-05 12:59+0000\n"
+"PO-Revision-Date: 2026-09-05 17:56+0000\n"
 "Last-Translator: Alekseï <support@digiology.org>\n"
 "Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
 "40backups__15clone_filesystem/ru/>\n"
@@ -300,7 +300,7 @@ msgstr ""
 #: docs/admin/40.backups/15.clone_filesystem.mdx:165
 #, no-wrap
 msgid "<TabItem value=\"usbimage\" label=\"With USBimager\">\n"
-msgstr ""
+msgstr "<TabItem value=\"usbimage\" label=\"С помощью USBimager\">\n"
 
 #. type: Plain text
 #: docs/admin/40.backups/15.clone_filesystem.mdx:167

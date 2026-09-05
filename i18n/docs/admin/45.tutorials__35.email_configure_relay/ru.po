@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: 2026-09-05 12:59+0000\n"
+"PO-Revision-Date: 2026-09-05 17:56+0000\n"
 "Last-Translator: Alekseï <support@digiology.org>\n"
 "Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
 "45tutorials__35email_configure_relay/ru/>\n"
@@ -366,7 +366,7 @@ msgstr ""
 #: docs/admin/45.tutorials/35.email_configure_relay.mdx:120
 #, no-wrap
 msgid "Step 4: Check your setup"
-msgstr ""
+msgstr "Шаг 4: Проверьте настройки"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/35.email_configure_relay.mdx:124

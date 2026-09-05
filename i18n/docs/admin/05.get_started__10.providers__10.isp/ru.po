@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-05-23 07:43+0000\n"
-"PO-Revision-Date: 2026-09-05 13:00+0000\n"
+"PO-Revision-Date: 2026-09-05 17:56+0000\n"
 "Last-Translator: Alekseï <support@digiology.org>\n"
 "Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
 "05get_started__10providers__10isp/ru/>\n"
@@ -464,6 +464,12 @@ msgstr ""
 #, no-wrap
 msgid "Ownit reserves port 3 and 4 of their router to TV. With a simple call to their hotline, explaining that you want to selfhost, they can reassign one of the ports to be in bridge mode. It means that your server will have its own public fixed IP address, in addition to the modem's.\n"
 msgstr ""
+"Компания Ownit резервирует порты 3 и 4 своего роутера для работы "
+"телевидения. Достаточно просто позвонить в службу поддержки и объяснить, что "
+"вы хотите запустить собственный сервер (self-hosting), — и один из портов "
+"переведут в режим моста (bridge mode). Это позволит вашему серверу получить "
+"собственный публичный статический IP-адрес, помимо того, который использует "
+"сам модем.\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/10.providers/10.isp.mdx:151

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: 2026-09-05 12:59+0000\n"
+"PO-Revision-Date: 2026-09-05 17:56+0000\n"
 "Last-Translator: Alekseï <support@digiology.org>\n"
 "Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
 "25domains__index/ru/>\n"
@@ -347,7 +347,7 @@ msgstr ""
 #: docs/admin/25.domains/index.mdx:93
 #, no-wrap
 msgid "About Non-latin characters"
-msgstr ""
+msgstr "О символах нелатинского алфавита"
 
 #. type: Plain text
 #: docs/admin/25.domains/index.mdx:96
