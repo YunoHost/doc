@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: 2026-08-24 20:50+0000\n"
+"PO-Revision-Date: 2026-09-04 22:18+0000\n"
 "Last-Translator: Alekseï <support@digiology.org>\n"
 "Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
 "05get_started__20install_on__wsl/ru/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 5.14.2\n"
+"X-Generator: Weblate 5.14.3\n"
 
 #. type: Title ##
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:18
@@ -227,16 +227,18 @@ msgstr "Создайте резервную копию и восстановит
 #: docs/admin/05.get_started/20.install_on/wsl.mdx:147
 #, no-wrap
 msgid "Make your first distro backup"
-msgstr ""
+msgstr "Создайте первую резервную копию дистрибутива"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/wsl.mdx:150
 #, no-wrap
 msgid "As said before, there is no rollback capability. So let's export your fresh distro. In PowerShell:\n"
 msgstr ""
+"Как уже упоминалось, возможности отката не предусмотрено. Поэтому давайте "
+"экспортируем ваш свежий дистрибутив. В PowerShell:\n"
 
 #. type: Title ###
 #: docs/admin/05.get_started/20.install_on/wsl.mdx:156
 #, no-wrap
 msgid "In case of crash, delete and restore the whole distro"
-msgstr ""
+msgstr "В случае сбоя удалите и восстановите весь дистрибутив"

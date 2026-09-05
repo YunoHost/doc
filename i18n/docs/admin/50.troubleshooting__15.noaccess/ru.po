@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-06-04 14:05+0000\n"
-"PO-Revision-Date: 2026-08-24 20:50+0000\n"
+"PO-Revision-Date: 2026-09-05 12:59+0000\n"
 "Last-Translator: Alekseï <support@digiology.org>\n"
 "Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
 "50troubleshooting__15noaccess/ru/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 5.14.2\n"
+"X-Generator: Weblate 5.14.3\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:1
@@ -255,24 +255,35 @@ msgstr ""
 #, no-wrap
 msgid "Ban are usually 10 to 12-minute-long, and on IPv4 only.\n"
 msgstr ""
+"Блокировки обычно длятся от 10 до 12 минут и распространяются только на IPv4."
+"\n"
 
 #. type: Title ###
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:65
 #, no-wrap
 msgid "NGINX web server is broken"
-msgstr ""
+msgstr "Веб-сервер NGINX неисправен"
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:68
 #, no-wrap
 msgid "Maybe the NGINX web server is out of order. You can check that [trough SSH](/admin/command_line) with the command `yunohost service status nginx`. If it is failing, check that its configuration is correct by running `nginx -t`. If it is indeed broken, it may be due to the installation or removal of a low-quality app... If you need support, [ask for it](/community/help).\n"
 msgstr ""
+"Возможно, веб-сервер NGINX не работает. Вы можете проверить это [через SSH]"
+"(/admin/command_line) с помощью команды `yunohost service status nginx`. "
+"Если служба не работает, проверьте корректность конфигурации, выполнив "
+"команду `nginx -t`. Если конфигурация действительно нарушена, причиной могла "
+"стать установка или удаление некачественного приложения... Если вам нужна "
+"помощь, [обратитесь за ней](/community/help).\n"
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:70
 #, no-wrap
 msgid "The NGINX or SSH servers may have been killed due to a lack of storage space, RAM, or swap.\n"
 msgstr ""
+"Процессы NGINX или SSH могли быть завершены принудительно из-за нехватки "
+"дискового пространства, оперативной памяти или места в разделе подкачки "
+"(swap).\n"
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:74
@@ -282,30 +293,46 @@ msgid ""
 "- You can check used storage with `df -h`. If one of your partitions is full, you need to identify what fills it and make room. You can use `ncdu` command (install it with `apt install ncdu`) to browse from the root directory: `ncdu /`\n"
 "- You can check RAM and swap usage with `free -h`. Depending on the result, it may be necessary to optimize your server to use less RAM (removal of heavy or unused apps...), add more RAM or add a swap file.\n"
 msgstr ""
+"- Попробуйте перезапустить службу командой `systemctl restart nginx`.\n"
+"- Проверить использование дискового пространства можно с помощью команды `df "
+"-h`. Если какой-либо раздел переполнен, нужно выяснить, что именно занимает "
+"место, и освободить его. Для анализа можно использовать утилиту `ncdu` "
+"(установите её командой `apt install ncdu`), запустив её из корневого "
+"каталога: `ncdu /`\n"
+"- Проверить использование оперативной памяти и раздела подкачки (swap) можно "
+"командой `free -h`. В зависимости от результатов может потребоваться "
+"оптимизация сервера для снижения потребления памяти "
+"(удаление ресурсоёмких или неиспользуемых приложений и т. д.), увеличение "
+"объёма оперативной памяти или создание файла подкачки.\n"
 
 #. type: Title ###
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:75
 #, no-wrap
 msgid "Your server is reachable by IPv6, but not IPv4, or inversely"
-msgstr ""
+msgstr "Ваш сервер доступен по IPv6, но не по IPv4, или наоборот"
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:78
 #, no-wrap
 msgid "You can check that by `ping`ing it:\n"
-msgstr ""
+msgstr "Вы можете проверить это с помощью команды `ping`:\n"
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:85
 #, no-wrap
 msgid "If one of the two is working, use it to connect by SSH or the webadmin.\n"
 msgstr ""
+"Если один из них работает, используйте его для подключения по SSH или через "
+"веб-интерфейс администратора.\n"
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:87
 #, no-wrap
 msgid "If none are working, you need to resolv your connection issue. In some cases, an update of your router may have enabled IPv6 and DNS configuration may be disrupted.\n"
 msgstr ""
+"Если ни один из вариантов не работает, необходимо устранить проблему с "
+"подключением. В некоторых случаях обновление маршрутизатора могло привести к "
+"включению IPv6 и нарушению настроек DNS.\n"
 
 #. type: Title ##
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:88

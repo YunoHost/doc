@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: 2026-08-24 20:50+0000\n"
+"PO-Revision-Date: 2026-09-05 12:59+0000\n"
 "Last-Translator: Alekseï <support@digiology.org>\n"
 "Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
 "40backups__15clone_filesystem/ru/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 5.14.2\n"
+"X-Generator: Weblate 5.14.3\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/40.backups/15.clone_filesystem.mdx:1
@@ -238,12 +238,15 @@ msgstr "  Будьте осторожны, чтобы не удалить исх
 #, no-wrap
 msgid "  See [this tutorial](https://www.linux.com/training-tutorials/how-create-and-manage-btrfs-snapshots-and-rollbacks-linux-part-2/) for more info\n"
 msgstr ""
+"  Дополнительную информацию можно найти в [этом руководстве](https://"
+"www.linux.com/training-tutorials/"
+"how-create-and-manage-btrfs-snapshots-and-rollbacks-linux-part-2/)\n"
 
 #. type: Plain text
 #: docs/admin/40.backups/15.clone_filesystem.mdx:98
 #, no-wrap
 msgid "<TabItem value=\"ceph\" label=\"CEPH\">\n"
-msgstr ""
+msgstr "<TabItem value=\"ceph\" label=\"CEPH\">\n"
 
 #. type: Plain text
 #: docs/admin/40.backups/15.clone_filesystem.mdx:100
@@ -251,37 +254,47 @@ msgstr ""
 #, no-wrap
 msgid "Below we consider that `pool/volume` is the volume to snapshot.\n"
 msgstr ""
+"Ниже мы исходим из того, что `pool/volume` — это том, для которого создается "
+"снимок (snapshot).\n"
 
 #. type: Plain text
 #: docs/admin/40.backups/15.clone_filesystem.mdx:102
 #: docs/admin/40.backups/15.clone_filesystem.mdx:131
 #, no-wrap
 msgid "Create a snapshot\n"
-msgstr ""
+msgstr "Создание снимка\n"
 
 #. type: Plain text
 #: docs/admin/40.backups/15.clone_filesystem.mdx:127
 #, no-wrap
 msgid "<TabItem value=\"zfs\" label=\"ZFS\">\n"
-msgstr ""
+msgstr "<TabItem value=\"zfs\" label=\"ZFS\">\n"
 
 #. type: Title ##
 #: docs/admin/40.backups/15.clone_filesystem.mdx:157
 #, no-wrap
 msgid "Create a cold image of the file system "
-msgstr ""
+msgstr "Создайте «холодный» образ файловой системы. "
 
 #. type: Plain text
 #: docs/admin/40.backups/15.clone_filesystem.mdx:160
 #, no-wrap
 msgid "You can clone your media (SD card, ssd disk, VPS volume...) to create a disk image. This image before compression will be the exact size of your media, that's why this method applies rather to machines of less than 64GB.\n"
 msgstr ""
+"Вы можете клонировать свой носитель (SD-карту, SSD-диск, том VPS и т. д.) "
+"для создания образа диска. До сжатия размер этого образа будет точно "
+"соответствовать размеру исходного носителя, поэтому данный метод лучше "
+"подходит для систем объёмом менее 64 ГБ.\n"
 
 #. type: Plain text
 #: docs/admin/40.backups/15.clone_filesystem.mdx:162
 #, no-wrap
 msgid "Unless you can read a snapshot, this method requires you to stop the server while you create the image. With a VPS, you have to restart in rescue mode from your provider's interface.\n"
 msgstr ""
+"Если вы не умеете работать со снимками состояния (снапшотами), этот метод "
+"требует остановки сервера на время создания образа. В случае с VPS вам "
+"придется перезагрузить сервер в режиме восстановления через панель "
+"управления провайдера.\n"
 
 #. type: Plain text
 #: docs/admin/40.backups/15.clone_filesystem.mdx:165

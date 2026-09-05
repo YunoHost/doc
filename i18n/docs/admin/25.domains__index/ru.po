@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: 2026-08-25 06:33+0000\n"
+"PO-Revision-Date: 2026-09-05 12:59+0000\n"
 "Last-Translator: Alekseï <support@digiology.org>\n"
 "Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
 "25domains__index/ru/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 5.14.2\n"
+"X-Generator: Weblate 5.14.3\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/25.domains/index.mdx:1
@@ -261,12 +261,17 @@ msgstr ""
 #, no-wrap
 msgid "![Screenshot of the \"Add domain\" page where you can choose \"I already have a domain name\" and setup your domain ending by .local](/img/webadmin/webadmin_domain_local.png)\n"
 msgstr ""
+"![Снимок экрана страницы «Добавить домен», где можно выбрать вариант «У меня "
+"уже есть доменное имя» и настроить домен с окончанием .local.]"
+"(/img/webadmin/webadmin_domain_local.png)\n"
 
 #. type: Fenced div block (info)
 #: docs/admin/25.domains/index.mdx:68
 #, no-wrap
 msgid "mDNS protocol does not allow for subdomains to be created. So `domain.local` will work, while `sub.domain.local` is not possible.\n"
 msgstr ""
+"Протокол mDNS не поддерживает создание поддоменов. Поэтому `domain.local` "
+"будет работать, а `sub.domain.local` — нет.\n"
 
 #. type: Plain text
 #: docs/admin/25.domains/index.mdx:75
@@ -276,6 +281,11 @@ msgid ""
 "It has a configuration file, `/etc/yunohost/mdns.yml`, which allows you to choose which domains are published, and on which network interfaces.\n"
 "This file is automatically regenerated whenever you add or delete a `.local` domain.\n"
 msgstr ""
+"Служба `Yunomdns` отвечает за публикацию ваших доменов `.local` в сети.\n"
+"У неё есть файл конфигурации `/etc/yunohost/mdns.yml`, позволяющий выбрать, "
+"какие домены и на каких сетевых интерфейсах будут публиковаться.\n"
+"Этот файл автоматически обновляется при каждом добавлении или удалении "
+"домена `.local`.\n"
 
 #. type: Plain text
 #: docs/admin/25.domains/index.mdx:78
@@ -284,6 +294,12 @@ msgid ""
 "The service will always try to publish `yunohost.local`. If you have multiple YunoHost servers on your network, try `yunohost-2.local`, and so on.\n"
 "The number may change depending on which server starts first, so do not rely on it to use actual apps and create your own domains.\n"
 msgstr ""
+"Служба всегда будет пытаться опубликовать адрес `yunohost.local`. Если в "
+"вашей сети несколько серверов YunoHost, попробуйте `yunohost-2.local` и так "
+"далее.\n"
+"Этот номер может меняться в зависимости от того, какой сервер запустится "
+"первым, поэтому не стоит полагаться на него при использовании приложений или "
+"создании собственных доменов.\n"
 
 #. type: Fenced div block (caution)
 #: docs/admin/25.domains/index.mdx:79
@@ -292,24 +308,40 @@ msgid ""
 "Unfortunately, Android devices before version 12 (released in 2021) do not seem to be listening to mDNS protocol.\n"
 "To be able to reach `.local` domains on your Android devices, you will have to add in their DNS settings your YunoHost server's local IP address.\n"
 msgstr ""
+"К сожалению, устройства на базе Android версий ниже 12-й "
+"(выпущенной в 2021 году), по-видимому, не поддерживают протокол mDNS.\n"
+"Чтобы получить доступ к доменам `.local` с устройств Android, вам "
+"потребуется добавить локальный IP-адрес вашего сервера YunoHost в настройки "
+"DNS на этих устройствах.\n"
 
 #. type: Title ##
 #: docs/admin/25.domains/index.mdx:87
 #, no-wrap
 msgid "DNS configuration"
-msgstr ""
+msgstr "Настройка DNS"
 
 #. type: Plain text
 #: docs/admin/25.domains/index.mdx:90
 #, no-wrap
 msgid "DNS (Domain Name System) is a system that enables computers worldwide to translate human-readable domain names (such as `yolo.com`) into machine-readable IP addresses (such as `11.22.33.44`). For this translation (and other features) to work, DNS records need to be carefully configured.\n"
 msgstr ""
+"DNS (система доменных имен) — это система, позволяющая компьютерам по всему "
+"миру преобразовывать понятные человеку доменные имена (например, `yolo.com`) "
+"в машиночитаемые IP-адреса (например, `11.22.33.44`). Для корректной работы "
+"этого преобразования (а также других функций) необходимо тщательно настроить "
+"DNS-записи.\n"
 
 #. type: Plain text
 #: docs/admin/25.domains/index.mdx:92
 #, no-wrap
 msgid "YunoHost can generate a recommended DNS configuration for each domain, including the records required for e-mail. The recommended DNS configuration is available in the web administrator via Domains > (the domain) > DNS configuration, or with the command `yunohost domain dns suggest the.domain.tld`.\n"
 msgstr ""
+"YunoHost может сформировать рекомендуемую конфигурацию DNS для каждого "
+"домена, включая записи, необходимые для работы электронной почты. Эту "
+"конфигурацию можно найти в веб-интерфейсе администратора "
+"(в разделе «Домены» > «[имя домена]» > «Конфигурация DNS») "
+"(Domains > (the domain) > DNS configuration) или получить с помощью команды `"
+"yunohost domain dns suggest the.domain.tld`.\n"
 
 #. type: Title ##
 #: docs/admin/25.domains/index.mdx:93

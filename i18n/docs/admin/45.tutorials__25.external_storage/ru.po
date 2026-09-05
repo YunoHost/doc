@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: 2026-08-24 20:50+0000\n"
+"PO-Revision-Date: 2026-09-05 12:59+0000\n"
 "Last-Translator: Alekseï <support@digiology.org>\n"
 "Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
 "45tutorials__25external_storage/ru/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 5.14.2\n"
+"X-Generator: Weblate 5.14.3\n"
 
 #. type: Title ##
 #: docs/admin/05.get_started/20.install_on/wsl.mdx:28
@@ -286,48 +286,65 @@ msgstr ""
 #, no-wrap
 msgid "Check with `lsblk` that you have your disk containing a single partition.\n"
 msgstr ""
+"Убедитесь с помощью команды `lsblk`, что на диске имеется только один раздел."
+"\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/25.external_storage.mdx:96
 #, no-wrap
 msgid "Before you can use your disk, it must be formatted.\n"
 msgstr ""
+"Прежде чем вы сможете использовать диск, его необходимо отформатировать.\n"
 
 #. type: Fenced div block (warning)
 #: docs/admin/45.tutorials/25.external_storage.mdx:97
 #, no-wrap
 msgid "<FAIcon icon=\"fa-exclamation-triangle\"/> **Formatting a disk means deleting all the data on it!** Be careful not to get the name wrong, as this may result in formatting a different disk than the one you want! In the example given earlier, it was `/dev/sda`. If your disk is already \"clean\", you can skip this step.\n"
 msgstr ""
+"<FAIcon icon=\"fa-exclamation-triangle\"/> **Форматирование диска означает "
+"удаление всех данных на нём!** Будьте внимательны и не ошибитесь с именем "
+"диска, иначе вы можете отформатировать не тот диск, который планировали! В "
+"приведённом ранее примере использовалось имя `/dev/sda`. Если ваш диск уже "
+"«чист», этот шаг можно пропустить.\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/25.external_storage.mdx:102
 #, no-wrap
 msgid "To format the :\n"
-msgstr ""
+msgstr "Чтобы отформатировать :\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/25.external_storage.mdx:109
 #, no-wrap
 msgid "Replace `YOUR_DISK1` with the name of the first partition on the disk e.g. `sda1`.\n"
 msgstr ""
+"Замените `YOUR_DISK1` на имя первого раздела на диске, например `sda1`.\n"
 
 #. type: Fenced div block (tip)
 #: docs/admin/45.tutorials/25.external_storage.mdx:110
 #, no-wrap
 msgid "It is possible to adapt this step, for example to create a raid 1 volume (mirrored disks) or encrypt the folder.\n"
 msgstr ""
+"Этот шаг можно адаптировать, например, для создания тома RAID 1 "
+"(зеркалирование дисков) или шифрования папки.\n"
 
 #. type: Title ##
 #: docs/admin/45.tutorials/25.external_storage.mdx:114
 #, no-wrap
 msgid "4. Mount the disk"
-msgstr ""
+msgstr "4. Смонтируйте диск"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/25.external_storage.mdx:117
 #, no-wrap
 msgid "Unlike Windows where disks are accessed with letters (C:/), under Linux, disks are made accessible via the file tree. \"Mounting\" a disk means making it effectively accessible in the file tree. We will arbitrarily choose to mount the disk in `/mnt/hdd` but you can name it differently (e.g. `/mnt/disk` ...).\n"
 msgstr ""
+"В отличие от Windows, где доступ к дискам осуществляется с помощью букв "
+"(например, C:/), в Linux диски доступны через дерево файловой системы. "
+"«Монтирование» диска означает включение его в дерево файловой системы, делая "
+"его доступным для использования. Мы условно выберем для монтирования путь `/"
+"mnt/hdd`, но вы можете использовать другое имя "
+"(например, `/mnt/disk` и т. д.).\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/25.external_storage.mdx:119

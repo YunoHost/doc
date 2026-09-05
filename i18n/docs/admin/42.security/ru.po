@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-04-19 08:39+0000\n"
-"PO-Revision-Date: 2026-08-25 06:33+0000\n"
+"PO-Revision-Date: 2026-09-05 13:00+0000\n"
 "Last-Translator: Alekseï <support@digiology.org>\n"
 "Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
 "42security/ru/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 5.14.2\n"
+"X-Generator: Weblate 5.14.3\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/42.security.mdx:1
@@ -319,25 +319,30 @@ msgstr ""
 #: docs/admin/42.security.mdx:112
 #, no-wrap
 msgid "**On your server**, change the policy for NGINX\n"
-msgstr ""
+msgstr "**На вашем сервере** измените политику для NGINX\n"
 
 #. type: Plain text
 #: docs/admin/42.security.mdx:118
 #, no-wrap
 msgid "**On your server**, change the policy for SSH\n"
-msgstr ""
+msgstr "**На своём сервере** измените политику для SSH\n"
 
 #. type: Title ##
 #: docs/admin/42.security.mdx:123
 #, no-wrap
 msgid "Disabling the YunoHost API"
-msgstr ""
+msgstr "Отключение API YunoHost"
 
 #. type: Plain text
 #: docs/admin/42.security.mdx:126
 #, no-wrap
 msgid "YunoHost administration is accessible through an **HTTP API**, which is the API used by the webadmin. This may be an additional, unnecessary attack surface if you are not planning to use it. In this case, you can disable the corresponding service entirely via command line:\n"
 msgstr ""
+"Администрирование YunoHost осуществляется через **HTTP API** — тот же "
+"интерфейс, который использует веб-панель управления. Если вы не планируете "
+"им пользоваться, он может стать дополнительным, ненужным вектором атаки. В "
+"таком случае соответствующую службу можно полностью отключить через "
+"командную строку:\n"
 
 #. type: Fenced div block (warning)
 #: docs/admin/42.security.mdx:127
@@ -346,9 +351,15 @@ msgid ""
 "This will completely disable both YunoHost's API and the web administration panel that relies on it.\n"
 "Proceed only if you are comfortable with exclusively using the command line from now on.\n"
 msgstr ""
+"Это полностью отключит как API YunoHost, так и веб-панель администрирования, "
+"которая от него зависит.\n"
+"Продолжайте только в том случае, если вы уверены, что отныне будете "
+"использовать исключительно командную строку.\n"
 
 #. type: Plain text
 #: docs/admin/42.security.mdx:138
 #, no-wrap
 msgid "As `yunohost-api` is now disabled and not running, Diagnosis will report an error. This error can be ignored using:\n"
 msgstr ""
+"Поскольку `yunohost-api` теперь отключён и не запущен, диагностика сообщит "
+"об ошибке. Эту ошибку можно проигнорировать с помощью следующей команды:\n"

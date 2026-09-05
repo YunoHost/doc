@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2025-11-11 01:24+0100\n"
-"PO-Revision-Date: 2026-08-25 06:33+0000\n"
+"PO-Revision-Date: 2026-09-05 13:00+0000\n"
 "Last-Translator: Alekseï <support@digiology.org>\n"
 "Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
 "55upgrade__120-bookworm__index/ru/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 5.14.2\n"
+"X-Generator: Weblate 5.14.3\n"
 
 #. type: Title ##
 #: docs/admin/55.upgrade/11.0-bullseye.mdx:7
@@ -235,37 +235,43 @@ msgstr ""
 #: docs/admin/55.upgrade/12.0-bookworm/index.mdx:49
 #, no-wrap
 msgid "After the migration"
-msgstr ""
+msgstr "После миграции"
 
 #. type: Title ###
 #: docs/admin/55.upgrade/12.0-bookworm/index.mdx:51
 #, no-wrap
 msgid "Check that you actually are on Debian Bookworm and YunoHost 12.x"
 msgstr ""
+"Убедитесь, что вы действительно используете Debian Bookworm и YunoHost 12.x"
 
 #. type: Plain text
 #: docs/admin/55.upgrade/12.0-bookworm/index.mdx:54
 #, no-wrap
 msgid "Go to Diagnosis (category Base system) or look at the bottom-right of the webadmin to check YunoHost's version.\n"
 msgstr ""
+"Перейдите в раздел «Диагностика» (Diagnosis) "
+"(категория «Базовая система» (Base system)) или посмотрите в правый нижний "
+"угол веб-панели администрирования, чтобы узнать версию YunoHost.\n"
 
 #. type: Plain text
 #: docs/admin/55.upgrade/12.0-bookworm/index.mdx:56
 #, no-wrap
 msgid "From the command line, you can use `lsb_release -a` and `yunohost --version`.\n"
 msgstr ""
+"В командной строке можно использовать команды `lsb_release -a` и `yunohost "
+"--version`.\n"
 
 #. type: Title ###
 #: docs/admin/55.upgrade/12.0-bookworm/index.mdx:57
 #, no-wrap
 msgid "Run the new pending migrations"
-msgstr ""
+msgstr "Запустите новые ожидающие миграции"
 
 #. type: Plain text
 #: docs/admin/55.upgrade/12.0-bookworm/index.mdx:60
 #, no-wrap
 msgid "Some more migrations appeared after the upgrade:\n"
-msgstr ""
+msgstr "После обновления появились ещё несколько миграций:\n"
 
 #. type: Plain text
 #: docs/admin/55.upgrade/12.0-bookworm/index.mdx:63
@@ -274,12 +280,17 @@ msgid ""
 "- Rebuilding the virtualenvs of your Python apps\n"
 "- Migrate from PostgreSQL 13 to 15\n"
 msgstr ""
+"- Пересоздание виртуальных окружений (virtualenv) для ваших Python-"
+"приложений\n"
+"- Миграция с PostgreSQL 13 на 15\n"
 
 #. type: Plain text
 #: docs/admin/55.upgrade/12.0-bookworm/index.mdx:65
 #, no-wrap
 msgid "You should run those as soon as possible to ensure your apps work properly.\n"
 msgstr ""
+"Вам следует запустить их как можно скорее, чтобы обеспечить корректную "
+"работу ваших приложений.\n"
 
 #. type: Title ####
 #: docs/admin/55.upgrade/12.0-bookworm/index.mdx:66

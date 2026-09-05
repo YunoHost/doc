@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: 2026-08-25 06:33+0000\n"
+"PO-Revision-Date: 2026-09-05 13:00+0000\n"
 "Last-Translator: Alekseï <support@digiology.org>\n"
 "Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
 "30apps__index/ru/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 5.14.2\n"
+"X-Generator: Weblate 5.14.3\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/_configuration.mdx:18
@@ -264,49 +264,65 @@ msgstr ""
 #: docs/admin/30.apps/index.mdx:86
 #, no-wrap
 msgid "Multi-instance applications"
-msgstr ""
+msgstr "Многоэкземплярные приложения"
 
 #. type: Plain text
 #: docs/admin/30.apps/index.mdx:89
 #, no-wrap
 msgid "Some applications support the ability to be installed several times (at different locations) ! To do so, just go another time in <HighlightApplications/> → <HighlightAppInstall/>, and select again the application to install.\n"
 msgstr ""
+"Некоторые приложения можно устанавливать несколько раз (в разные места)! Для "
+"этого просто снова перейдите в раздел <HighlightApplications/> → <"
+"HighlightAppInstall/> и ещё раз выберите приложение для установки.\n"
 
 #. type: Title ##
 #: docs/admin/30.apps/index.mdx:90
 #, no-wrap
 msgid "LDAP / SSO integration"
-msgstr ""
+msgstr "Интеграция с LDAP / SSO"
 
 #. type: Plain text
 #: docs/admin/30.apps/index.mdx:93
 #, no-wrap
 msgid "Applications that allow users to register may support integration with the LDAP / Single Sign On of YunoHost, so that users who connect to the user portal can be automatically logged in all these apps.\n"
 msgstr ""
+"Приложения, поддерживающие регистрацию пользователей, могут быть "
+"интегрированы с системой LDAP / Single Sign-On (единого входа) YunoHost, "
+"благодаря чему пользователи, входящие на пользовательский портал, могут "
+"автоматически авторизоваться во всех этих приложениях.\n"
 
 #. type: Plain text
 #: docs/admin/30.apps/index.mdx:95
 #, no-wrap
 msgid "However, some applications do not support this as it can be either not implemented in the upstream, or the package does not work on this part yet. This information is usually available on the README of the application package.\n"
 msgstr ""
+"Однако некоторые приложения не поддерживают эту возможность, поскольку она "
+"либо не реализована в исходном проекте (upstream), либо соответствующая "
+"функция пакета пока не работает. Обычно эта информация приводится в файле "
+"README пакета приложения.\n"
 
 #. type: Title ##
 #: docs/admin/30.apps/index.mdx:96
 #, no-wrap
 msgid "Application configuration"
-msgstr ""
+msgstr "Конфигурация приложения"
 
 #. type: Plain text
 #: docs/admin/30.apps/index.mdx:99
 #, no-wrap
 msgid "After installation, some settings handled by YunoHost can be tweaked, such as user and group permissions, application's tile and label in the SSO page, or its access URL.\n"
 msgstr ""
+"После установки можно скорректировать некоторые настройки, управляемые "
+"YunoHost, — например, права доступа пользователей и групп, вид плитки и "
+"название приложения на странице SSO или URL для доступа к нему.\n"
 
 #. type: Plain text
 #: docs/admin/30.apps/index.mdx:104
 #, no-wrap
 msgid "You can access the app's operations page by clicking its name in the applications list.\n"
 msgstr ""
+"Вы можете перейти на страницу операций приложения, нажав на его название в "
+"списке приложений.\n"
 
 #. type: Plain text
 #: docs/admin/30.apps/index.mdx:106

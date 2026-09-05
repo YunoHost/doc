@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: 2026-08-25 06:33+0000\n"
+"PO-Revision-Date: 2026-09-04 22:18+0000\n"
 "Last-Translator: Alekseï <support@digiology.org>\n"
 "Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
 "05get_started__20install_on__regular_computer/ru/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 5.14.2\n"
+"X-Generator: Weblate 5.14.3\n"
 
 #. type: Title ##
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:18
@@ -257,7 +257,7 @@ msgstr ""
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:91
 #, no-wrap
 msgid "<FAIcon icon=\"fa-plug\"/> Boot the machine on your USB stick"
-msgstr ""
+msgstr "<FAIcon icon=\"fa-plug\"/> Загрузите машину с USB-накопителя"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:98
@@ -269,12 +269,26 @@ msgid ""
 "`<F9>`, `<F10>`, `<F11>`, `<F12>`, `<DEL>`, `<ESC>` or `<Alt>`.\n"
 "  - N.B. : if the server was previously installed with a recent version of Windows (8+), you first need to tell Windows, to \"actually reboot\". This can be done somewhere in \"Advanced startup options\".\n"
 msgstr ""
+"- Подключите компьютер к домашнему маршрутизатору с помощью Ethernet-кабеля."
+"\n"
+"- Загрузите сервер с вставленным USB-накопителем или компакт-диском, выбрав "
+"его в качестве **загрузочного устройства**. \n"
+"  - В зависимости от аппаратного обеспечения вам потребуется нажать одну из "
+"следующих клавиш:\n"
+"`<F9>`, `<F10>`, `<F11>`, `<F12>`, `<DEL>`, `<ESC>` or `<Alt>`.\n"
+"  - Примечание: если на сервере ранее была установлена современная версия "
+"Windows (8 или новее), сначала необходимо настроить систему так, чтобы она "
+"выполнила «полную перезагрузку». Это можно сделать в разделе «Особые "
+"варианты загрузки» (Advanced startup options).\n"
 
 #. type: Fenced div block (tip)
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:99
 #, no-wrap
 msgid "If you can't boot the YunoHost image, try using Ventoy (select \"Ventoy\" in the section \"Flash the YunoHost image\" above).\n"
 msgstr ""
+"Если не удается загрузиться с образа YunoHost, попробуйте воспользоваться "
+"Ventoy (выберите «Ventoy» в разделе «Запись образа YunoHost» "
+"(Flash the YunoHost image) выше).\n"
 
 #. type: Title ##
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:103

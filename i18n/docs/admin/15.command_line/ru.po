@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-04-19 08:39+0000\n"
-"PO-Revision-Date: 2026-08-24 20:50+0000\n"
+"PO-Revision-Date: 2026-09-05 13:00+0000\n"
 "Last-Translator: Alekseï <support@digiology.org>\n"
 "Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
 "15command_line/ru/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 5.14.2\n"
+"X-Generator: Weblate 5.14.3\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/_configuration.mdx:18
@@ -270,48 +270,61 @@ msgstr ""
 #, no-wrap
 msgid "If you want to add an SSH public key to the user, you have to do it from the command line, as the web interface does not yet offer this feature.\n"
 msgstr ""
+"Если вы хотите добавить открытый SSH-ключ для пользователя, это необходимо "
+"сделать через командную строку, так как веб-интерфейс пока не поддерживает "
+"эту функцию.\n"
 
 #. type: Plain text
 #: docs/admin/15.command_line.mdx:87
 #, no-wrap
 msgid "To allow a user or group to access via SFTP or SSH:\n"
-msgstr ""
+msgstr "Чтобы предоставить пользователю или группе доступ по SFTP или SSH:\n"
 
 #. type: Plain text
 #: docs/admin/15.command_line.mdx:96
 #, no-wrap
 msgid "To remove permission:\n"
-msgstr ""
+msgstr "Чтобы удалить разрешение:\n"
 
 #. type: Plain text
 #: docs/admin/15.command_line.mdx:105
 #, no-wrap
 msgid "Finally, it is possible to add, delete and list SSH keys, to improve SSH access security, using the commands:\n"
 msgstr ""
+"Наконец, для повышения безопасности SSH-доступа можно добавлять и удалять "
+"SSH-ключи, а также выводить их список, используя следующие команды:\n"
 
 #. type: Title ##
 #: docs/admin/15.command_line.mdx:115
 #, no-wrap
 msgid "Security and SSH"
-msgstr ""
+msgstr "Безопасность и SSH"
 
 #. type: Plain text
 #: docs/admin/15.command_line.mdx:118
 #, no-wrap
 msgid "A more extensive discussion about security & SSH can be found on the [dedicated page](/admin/security).\n"
 msgstr ""
+"Более подробную информацию о безопасности и SSH можно найти на "
+"[специальной странице](/admin/security).\n"
 
 #. type: Title ##
 #: docs/admin/15.command_line.mdx:119
 #, no-wrap
 msgid "The command line"
-msgstr ""
+msgstr "Командная строка"
 
 #. type: Fenced div block (info)
 #: docs/admin/15.command_line.mdx:121
 #, no-wrap
 msgid "Providing a full tutorial about the command line is quite beyond the scope of the YunoHost documentation : for this, consider reading a dedicated tutorial such as [this one](https://ryanstutorials.net/linuxtutorial/) or [this one](http://linuxcommand.org/). But be reassured that you don't need to be a CLI expert to start using it !\n"
 msgstr ""
+"Подробное руководство по работе с командной строкой выходит за рамки "
+"документации YunoHost; для этого лучше воспользоваться специализированными "
+"учебными материалами, например [этим]"
+"(https://ryanstutorials.net/linuxtutorial/) или [этим]"
+"(http://linuxcommand.org/). Однако не волнуйтесь: чтобы начать пользоваться "
+"командной строкой, не обязательно быть экспертом!\n"
 
 #. type: Title ###
 #: docs/admin/15.command_line.mdx:125
