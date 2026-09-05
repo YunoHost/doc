@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2025-11-11 01:24+0100\n"
-"PO-Revision-Date: 2026-09-05 13:00+0000\n"
+"PO-Revision-Date: 2026-09-05 21:44+0000\n"
 "Last-Translator: Alekseï <support@digiology.org>\n"
 "Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
 "55upgrade__110-bullseye/ru/>\n"
@@ -345,6 +345,8 @@ msgstr "Известные на данный момент проблемы по�
 #, no-wrap
 msgid "Can't run the migration due to `libc6-dev : Breaks: libgcc-8-dev issue`"
 msgstr ""
+"Не удается выполнить миграцию из-за ошибки `libc6-dev : Breaks: libgcc-8-dev "
+"issue`"
 
 #. type: Plain text
 #: docs/admin/55.upgrade/11.0-bullseye.mdx:98

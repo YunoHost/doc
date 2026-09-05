@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: 2026-09-05 12:59+0000\n"
+"PO-Revision-Date: 2026-09-05 21:44+0000\n"
 "Last-Translator: Alekseï <support@digiology.org>\n"
 "Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
 "45tutorials__25external_storage/ru/>\n"
@@ -350,31 +350,36 @@ msgstr ""
 #: docs/admin/45.tutorials/25.external_storage.mdx:119
 #, no-wrap
 msgid "Let's start by creating the directory :\n"
-msgstr ""
+msgstr "Начнем с создания каталога:\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/25.external_storage.mdx:125
 #, no-wrap
 msgid "Then we can mount the disk manually with :\n"
-msgstr ""
+msgstr "Затем можно смонтировать диск вручную с помощью команды:\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/25.external_storage.mdx:131
 #, no-wrap
 msgid "(Here, `/dev/YOUR_DISK1` corresponds to the first partition on the disk)\n"
-msgstr ""
+msgstr "(Здесь `/dev/YOUR_DISK1` соответствует первому разделу на диске)\n"
 
 #. type: Title ##
 #: docs/admin/45.tutorials/25.external_storage.mdx:132
 #, no-wrap
 msgid "5. Mount a `/mnt/hdd` folder on one of the folders you want to move data from"
 msgstr ""
+"5. Смонтируйте папку `/mnt/hdd` поверх одной из папок, из которых вы хотите "
+"перенести данные"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/25.external_storage.mdx:135
 #, no-wrap
 msgid "Here we will consider that you want to move the big data of the applications which are in `/home/yunohost.app` and the mails on your hard disk.\n"
 msgstr ""
+"В данном случае мы исходим из того, что вы хотите перенести на жесткий диск "
+"данные приложений, расположенные в `/home/yunohost.app`, а также электронную "
+"почту.\n"
 
 #. type: Title ###
 #: docs/admin/45.tutorials/25.external_storage.mdx:136

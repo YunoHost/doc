@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: 2026-09-05 12:59+0000\n"
+"PO-Revision-Date: 2026-09-05 21:44+0000\n"
 "Last-Translator: Alekseï <support@digiology.org>\n"
 "Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
 "45tutorials__35email_configure_relay/ru/>\n"
@@ -366,7 +366,7 @@ msgstr ""
 #: docs/admin/45.tutorials/35.email_configure_relay.mdx:120
 #, no-wrap
 msgid "Step 4: Check your setup"
-msgstr ""
+msgstr "Шаг 4: Проверьте настройки"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/35.email_configure_relay.mdx:124
@@ -376,3 +376,9 @@ msgid ""
 "Some of the SMTP relay will give you insights about the emails you send so that can also be a good way to check that everythings works as needed.\n"
 "Of course, you can always have a try with [mail-tester.com](https://www.mail-tester.com/) to check for any problem or discrepancy.\n"
 msgstr ""
+"Вы можете проверить настройки, отправив тестовые письма и убедившись, что "
+"всё работает.\n"
+"Некоторые SMTP-ретрансляторы предоставляют аналитику по отправленным "
+"письмам, что также позволяет проверить корректность работы системы.\n"
+"Разумеется, для выявления возможных проблем или несоответствий всегда можно "
+"воспользоваться сервисом [mail-tester.com](https://www.mail-tester.com/).\n"

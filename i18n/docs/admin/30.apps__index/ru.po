@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: 2026-09-05 13:00+0000\n"
+"PO-Revision-Date: 2026-09-05 21:44+0000\n"
 "Last-Translator: Alekseï <support@digiology.org>\n"
 "Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
 "30apps__index/ru/>\n"
@@ -329,18 +329,20 @@ msgstr ""
 #, no-wrap
 msgid "<Figure src=\"/img/webadmin/app_config_operations.png\" caption=\"Application operations page in the webadmin\"/>\n"
 msgstr ""
+"<Figure src=\"/img/webadmin/app_config_operations.png\" caption="
+"\"Страница операций с приложением в веб-интерфейсе администрирования\"/>\n"
 
 #. type: Plain text
 #: docs/admin/30.apps/index.mdx:108
 #, no-wrap
 msgid "You can also delete the application from this page.\n"
-msgstr ""
+msgstr "Вы также можете удалить приложение с этой страницы.\n"
 
 #. type: Plain text
 #: docs/admin/30.apps/index.mdx:113
 #, no-wrap
 msgid "From the command line, you can change:\n"
-msgstr ""
+msgstr "Из командной строки можно изменить:\n"
 
 #. type: Plain text
 #: docs/admin/30.apps/index.mdx:116
@@ -349,12 +351,15 @@ msgid ""
 "- the app's label in the SSO: `yunohost app change-label <app> <new_label>`\n"
 "- the app's url: `yunohost app change-url app [-d <DOMAIN>] [-p <PATH>]`\n"
 msgstr ""
+"- название приложения в SSO: `yunohost app change-label <app> <new_label>`\n"
+"- URL-адрес приложения: `yunohost app change-url app [-d <DOMAIN>] "
+"[-p <PATH>]`\n"
 
 #. type: Plain text
 #: docs/admin/30.apps/index.mdx:118
 #, no-wrap
 msgid "You can also delete the app: `yunohost app remove <app>`\n"
-msgstr ""
+msgstr "Вы также можете удалить приложение: `yunohost app remove <app>`\n"
 
 #. type: Plain text
 #: docs/admin/30.apps/index.mdx:120

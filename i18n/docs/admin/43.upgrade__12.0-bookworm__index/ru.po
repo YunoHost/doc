@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: 2026-09-05 13:00+0000\n"
+"PO-Revision-Date: 2026-09-05 21:44+0000\n"
 "Last-Translator: Alekseï <support@digiology.org>\n"
 "Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
 "43upgrade__120-bookworm__index/ru/>\n"
@@ -296,28 +296,36 @@ msgstr ""
 #: docs/admin/43.upgrade/12.0-bookworm/index.mdx:66
 #, no-wrap
 msgid "Agreeing to the new Terms of Service via command line"
-msgstr ""
+msgstr "Принятие новых Условий использования через командную строку"
 
 #. type: Plain text
 #: docs/admin/43.upgrade/12.0-bookworm/index.mdx:69
 #, no-wrap
 msgid "YunoHost 12.x now requires that you agree to the new [Terms of Service](https://doc.yunohost.org/terms_of_services/). After reading and accepting them you can run:\n"
 msgstr ""
+"Для YunoHost 12.x теперь требуется принять новые [Условия использования]"
+"(https://doc.yunohost.org/terms_of_services/). Ознакомившись с ними и приняв "
+"их, вы можете выполнить следующую команду:\n"
 
 #. type: Title ###
 #: docs/admin/43.upgrade/12.0-bookworm/index.mdx:74
 #, no-wrap
 msgid "Check the Diagnosis"
-msgstr ""
+msgstr "Проверка результатов диагностики"
 
 #. type: Plain text
 #: docs/admin/43.upgrade/12.0-bookworm/index.mdx:77
 #, no-wrap
 msgid "In the webadmin Diagnosis section, make sure that no specific issue appeared after running the migration (for example a service that crashed for some reason).\n"
 msgstr ""
+"В разделе «Диагностика» веб-интерфейса администрирования убедитесь, что "
+"после выполнения миграции не возникло никаких конкретных проблем "
+"(например, аварийной остановки какой-либо службы).\n"
 
 #. type: Plain text
 #: docs/admin/43.upgrade/12.0-bookworm/index.mdx:90
 #, no-wrap
 msgid "Please check the [issues FAQ](/admin/upgrade/12.0-bookworm/issues_faq/).\n"
 msgstr ""
+"Пожалуйста, ознакомьтесь с разделом часто задаваемых вопросов о проблемах "
+"[issues FAQ](/admin/upgrade/12.0-bookworm/issues_faq/).\n"

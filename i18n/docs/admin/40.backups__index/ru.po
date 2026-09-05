@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-04-19 08:39+0000\n"
-"PO-Revision-Date: 2026-09-05 12:59+0000\n"
+"PO-Revision-Date: 2026-09-05 21:44+0000\n"
 "Last-Translator: Alekseï <support@digiology.org>\n"
 "Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
 "40backups__index/ru/>\n"
@@ -314,18 +314,25 @@ msgstr "Простой случай: мало данных, архив уже е
 #, no-wrap
 msgid "Go in `Backup > Local storage` and select your archive. You can then select which items you want to restore, then click on 'Restore'.\n"
 msgstr ""
+"Перейдите в раздел «Резервное копирование» > «Локальное хранилище» "
+"(`Backup > Local storage`) и выберите свой архив. Затем выберите элементы, "
+"которые хотите восстановить, и нажмите кнопку «Восстановить» ('Restore').\n"
 
 #. type: Plain text
 #: docs/admin/40.backups/index.mdx:141
 #, no-wrap
 msgid "![Screenshot of YunoHost's restore panel](/img/webadmin/restore.png)\n"
 msgstr ""
+"![Снимок экрана панели восстановления YunoHost](/img/webadmin/restore.png)\n"
 
 #. type: Plain text
 #: docs/admin/40.backups/index.mdx:146
 #, no-wrap
 msgid "From the command line, you can run `yunohost backup list` to get the available archive names. They are basically their filenames without extensions.\n"
 msgstr ""
+"В командной строке можно выполнить команду `yunohost backup list`, чтобы "
+"получить список имен доступных архивов. По сути, это имена файлов без "
+"расширений.\n"
 
 #. type: Plain text
 #: docs/admin/40.backups/index.mdx:148

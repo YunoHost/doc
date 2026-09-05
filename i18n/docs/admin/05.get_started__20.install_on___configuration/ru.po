@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-04-19 08:39+0000\n"
-"PO-Revision-Date: 2026-09-05 12:59+0000\n"
+"PO-Revision-Date: 2026-09-05 21:44+0000\n"
 "Last-Translator: Alekseï <support@digiology.org>\n"
 "Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
 "05get_started__20install_on___configuration/ru/>\n"
@@ -382,18 +382,22 @@ msgstr ""
 #, no-wrap
 msgid "Go in Domains > Click on your domain > Certificate\n"
 msgstr ""
+"Перейдите в раздел «Домены» > Нажмите на свой домен > «Сертификат» "
+"(Domains > Domain > Certificate)\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/_configuration.mdx:132
 #, no-wrap
 msgid "<Figure caption=\"Preview of the diagnostic panel\" src=\"/img/webadmin/certificate-before-LE.png\"/>\n"
 msgstr ""
+"<Figure caption=\"Предварительный просмотр диагностической панели\" src="
+"\"/img/webadmin/certificate-before-LE.png\"/>\n"
 
 #. type: Title ##
 #: docs/admin/05.get_started/20.install_on/_configuration.mdx:143
 #, no-wrap
 msgid "🎉 Congratz!"
-msgstr ""
+msgstr "🎉 Поздравляем!"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/_configuration.mdx:145

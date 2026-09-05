@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: 2026-09-05 13:00+0000\n"
+"PO-Revision-Date: 2026-09-05 21:44+0000\n"
 "Last-Translator: Alekseï <support@digiology.org>\n"
 "Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
 "45tutorials__15filezilla/ru/>\n"
@@ -291,22 +291,23 @@ msgstr ""
 #: docs/admin/45.tutorials/15.filezilla.mdx:75
 #, no-wrap
 msgid "Windows"
-msgstr ""
+msgstr "Windows"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/15.filezilla.mdx:78
 #, no-wrap
 msgid "- [WinSCP](https://winscp.net/) is also a nice candidate for Windows\n"
-msgstr ""
+msgstr "- [WinSCP](https://winscp.net/) — тоже отличный вариант для Windows\n"
 
 #. type: Title ###
 #: docs/admin/45.tutorials/15.filezilla.mdx:79
 #, no-wrap
 msgid "macOS"
-msgstr ""
+msgstr "macOS"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/15.filezilla.mdx:81
 #, no-wrap
 msgid "- [Cyberduck](https://cyberduck.io/) is a free software available on macOS\n"
 msgstr ""
+"- [Cyberduck](https://cyberduck.io/) — это свободная программа для macOS\n"

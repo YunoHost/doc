@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: 2026-09-05 12:59+0000\n"
+"PO-Revision-Date: 2026-09-05 21:44+0000\n"
 "Last-Translator: Alekseï <support@digiology.org>\n"
 "Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
 "40backups__15clone_filesystem/ru/>\n"
@@ -300,13 +300,17 @@ msgstr ""
 #: docs/admin/40.backups/15.clone_filesystem.mdx:165
 #, no-wrap
 msgid "<TabItem value=\"usbimage\" label=\"With USBimager\">\n"
-msgstr ""
+msgstr "<TabItem value=\"usbimage\" label=\"С помощью USBimager\">\n"
 
 #. type: Plain text
 #: docs/admin/40.backups/15.clone_filesystem.mdx:167
 #, no-wrap
 msgid "This can be done with [USBimager](https://bztsrc.gitlab.io/usbimager/) (Note: make sure you download the 'Read-write' version! Not the 'Write-only' version!). The process then consists of the \"reverse\" of the SD card flashing process:\n"
 msgstr ""
+"Это можно сделать с помощью [USBimager](https://bztsrc.gitlab.io/usbimager/) "
+"(примечание: убедитесь, что вы загружаете версию «Read-write», а не «Write-"
+"only»!). Сам процесс представляет собой операцию, обратную записи образа на "
+"SD-карту:\n"
 
 #. type: Plain text
 #: docs/admin/40.backups/15.clone_filesystem.mdx:171
@@ -316,18 +320,25 @@ msgid ""
 "- Retrieve the SD card and plug it into your computer\n"
 "- In USBimager, click on \"Read\" to create an image (\"photograph\") of the SD card. You can use the resulting file to restore the whole system later.\n"
 msgstr ""
+"- Выключите сервер\n"
+"- Извлеките SD-карту и подключите её к компьютеру\n"
+"- В программе USBimager нажмите кнопку «Read» (Чтение), чтобы создать образ "
+"(«снимок») SD-карты. Полученный файл можно будет использовать для "
+"последующего восстановления всей системы.\n"
 
 #. type: Plain text
 #: docs/admin/40.backups/15.clone_filesystem.mdx:173
 #, no-wrap
 msgid "More details in [USBimager documentation](https://gitlab.com/bztsrc/usbimager/#creating-backup-image-file-from-device)\n"
 msgstr ""
+"Подробности — в [документации USBimager](https://gitlab.com/bztsrc/usbimager/"
+"#creating-backup-image-file-from-device)\n"
 
 #. type: Plain text
 #: docs/admin/40.backups/15.clone_filesystem.mdx:176
 #, no-wrap
 msgid "<TabItem value=\"dd\" label=\"In command line with dd\">\n"
-msgstr ""
+msgstr "<TabItem value=\"dd\" label=\"В командной строке с помощью dd\">\n"
 
 #. type: Plain text
 #: docs/admin/40.backups/15.clone_filesystem.mdx:178

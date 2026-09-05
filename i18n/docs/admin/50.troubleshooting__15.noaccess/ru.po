@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-06-04 14:05+0000\n"
-"PO-Revision-Date: 2026-09-05 12:59+0000\n"
+"PO-Revision-Date: 2026-09-05 21:44+0000\n"
 "Last-Translator: Alekseï <support@digiology.org>\n"
 "Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
 "50troubleshooting__15noaccess/ru/>\n"
@@ -339,24 +339,35 @@ msgstr ""
 #, no-wrap
 msgid "Webadmin is working, but some web apps are returning 502 errors"
 msgstr ""
+"Веб-панель администратора работает, но некоторые веб-приложения возвращают "
+"ошибку 502"
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:91
 #, no-wrap
 msgid "It is highly probable that the underlying service for these apps is failing (e.g. PHP apps requiring `php7.0-fpm` or `php7.3-fpm`). You can then try to restart the services, and/or ask for [help](/community/help)\n"
 msgstr ""
+"Весьма вероятно, что базовая служба, обеспечивающая работу этих приложений, "
+"дает сбой "
+"(например, для PHP-приложений, требующих `php7.0-fpm` или `php7.3-fpm`). В "
+"этом случае можно попробовать перезапустить службы и/или обратиться за "
+"[помощью](/community/help)\n"
 
 #. type: Title ##
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:92
 #, no-wrap
 msgid "You have lost your admin password, or the password is seemingly wrong"
 msgstr ""
+"Вы потеряли пароль администратора, или введенный пароль, по-видимому, неверен"
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:95
 #, no-wrap
 msgid "If you can reach the webadmin login page (force reload with `CTRL + F5` to be sure), and you cannot log in, your password is probably wrong.\n"
 msgstr ""
+"Если вам удаётся открыть страницу входа в веб-интерфейс администратора (для "
+"надёжности выполните принудительное обновление страницы с помощью `CTRL + F5`"
+", но войти не получается, скорее всего, вы вводите неверный пароль.\n"
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/15.noaccess.mdx:97

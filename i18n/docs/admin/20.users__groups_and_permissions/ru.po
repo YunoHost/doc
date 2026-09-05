@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: 2026-09-05 12:59+0000\n"
+"PO-Revision-Date: 2026-09-05 21:44+0000\n"
 "Last-Translator: Alekseï <support@digiology.org>\n"
 "Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
 "20users__groups_and_permissions/ru/>\n"
@@ -306,30 +306,41 @@ msgstr ""
 #, no-wrap
 msgid "To list permissions and corresponding accesses in CLI:\n"
 msgstr ""
+"Чтобы вывести список разрешений и соответствующих прав доступа в командной "
+"строке:\n"
 
 #. type: Plain text
 #: docs/admin/20.users/groups_and_permissions.mdx:177
 #, no-wrap
 msgid "Here, we find that all registered users can use email, XMPP, and access the WordPress blog. However, nobody can access the WordPress admin interface.\n"
 msgstr ""
+"В данном случае все зарегистрированные пользователи могут пользоваться "
+"электронной почтой и XMPP, а также получать доступ к блогу на WordPress. "
+"Однако никто не может получить доступ к панели администратора WordPress.\n"
 
 #. type: Plain text
 #: docs/admin/20.users/groups_and_permissions.mdx:179
 #, no-wrap
 msgid "More details can be displayed by adding the `--full` option which will display the list of users corresponding to groups allowed, as well as urls associated to a permission (relevant for web apps).\n"
 msgstr ""
+"Более подробную информацию можно получить, добавив опцию `--full`: она "
+"выведет список пользователей, относящихся к разрешенным группам, а также URL-"
+"адреса, связанные с тем или иным правом доступа "
+"(актуально для веб-приложений).\n"
 
 #. type: Title ###
 #: docs/admin/20.users/groups_and_permissions.mdx:183
 #, no-wrap
 msgid "Add accesses to group or users"
-msgstr ""
+msgstr "Предоставить доступ группе или пользователям"
 
 #. type: Plain text
 #: docs/admin/20.users/groups_and_permissions.mdx:189
 #, no-wrap
 msgid "To add a permission to a group, simply click the \"+\" button in the group panel, scroll to the desired permission, then click on it.\n"
 msgstr ""
+"Чтобы добавить разрешение группе, просто нажмите кнопку «+» на панели "
+"группы, прокрутите список до нужного разрешения и нажмите на него.\n"
 
 #. type: Plain text
 #: docs/admin/20.users/groups_and_permissions.mdx:193

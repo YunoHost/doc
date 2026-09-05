@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: 2026-09-05 12:59+0000\n"
+"PO-Revision-Date: 2026-09-05 21:44+0000\n"
 "Last-Translator: Alekseï <support@digiology.org>\n"
 "Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
 "25domains__index/ru/>\n"
@@ -347,22 +347,33 @@ msgstr ""
 #: docs/admin/25.domains/index.mdx:93
 #, no-wrap
 msgid "About Non-latin characters"
-msgstr ""
+msgstr "О символах нелатинского алфавита"
 
 #. type: Plain text
 #: docs/admin/25.domains/index.mdx:96
 #, no-wrap
 msgid "If your domain has special, non-latin characters, it will be transformed by YunoHost into its [internationalized version](https://en.wikipedia.org/wiki/Internationalized_domain_name) through [Punycode](https://en.wikipedia.org/wiki/Punycode). So when you use the command line, you have to use the punycode format return for example by `yunohost domain list`.\n"
 msgstr ""
+"Если ваше доменное имя содержит специальные символы (не латиницу), YunoHost "
+"преобразует его в [интернационализированную версию]"
+"(https://en.wikipedia.org/wiki/Internationalized_domain_name) с помощью "
+"[Punycode](https://en.wikipedia.org/wiki/Punycode). Поэтому при работе в "
+"командной строке необходимо использовать формат Punycode — например, тот, "
+"который выводится командой `yunohost domain list`.\n"
 
 #. type: Title ##
 #: docs/admin/25.domains/index.mdx:97
 #, no-wrap
 msgid "SSL/HTTPS certificates"
-msgstr ""
+msgstr "SSL/HTTPS-сертификаты"
 
 #. type: Plain text
 #: docs/admin/25.domains/index.mdx:99
 #, no-wrap
 msgid "Another important aspect of domain configuration is the SSL/HTTPS certificate. YunoHost is integrated with Let's Encrypt, so once your server is correctly reachable from anybody on the internet through the domain name, the administrator can request a Let's Encrypt certificate. See the documentation about [certificates](/admin/domains/certificate) for more information.\n"
 msgstr ""
+"Ещё одним важным аспектом настройки домена является SSL/HTTPS-сертификат. "
+"YunoHost интегрирован с Let's Encrypt, поэтому, как только ваш сервер станет "
+"доступен из интернета по доменному имени, администратор сможет запросить "
+"сертификат Let's Encrypt. Дополнительную информацию можно найти в разделе "
+"документации, посвященном [сертификатам](/admin/domains/certificate).\n"

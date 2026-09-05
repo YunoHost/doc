@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-04-19 08:39+0000\n"
-"PO-Revision-Date: 2026-09-05 13:00+0000\n"
+"PO-Revision-Date: 2026-09-05 21:44+0000\n"
 "Last-Translator: Alekseï <support@digiology.org>\n"
 "Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
 "15command_line/ru/>\n"
@@ -330,25 +330,35 @@ msgstr ""
 #: docs/admin/15.command_line.mdx:125
 #, no-wrap
 msgid "The `yunohost` command"
-msgstr ""
+msgstr "Команда `yunohost`"
 
 #. type: Plain text
 #: docs/admin/15.command_line.mdx:128
 #, no-wrap
 msgid "The `yunohost` command can be used to administer your server and perform the various actions similarly to what you do on the webadmin. The command must be launched either from the `root` user or from a user who is a member of the `admins` group by preceding the command with `sudo`. (ProTip™: you can become `root` with the command `sudo su` as a user who is a member of the `admins` group).\n"
 msgstr ""
+"Команда `yunohost` позволяет администрировать сервер и выполнять различные "
+"действия, аналогичные тем, что доступны в веб-интерфейсе администрирования "
+"(Webadmin). Эту команду необходимо запускать либо от имени пользователя "
+"`root`, либо от имени пользователя, входящего в группу `admins` (в последнем "
+"случае перед командой следует указывать `sudo`. (Полезный совет™: если вы "
+"входите в группу `admins`, то можете переключиться на пользователя `root` с "
+"помощью команды`sudo su`).\n"
 
 #. type: Plain text
 #: docs/admin/15.command_line.mdx:130
 #, no-wrap
 msgid "YunoHost commands usually have this kind of structure :\n"
-msgstr ""
+msgstr "Команды YunoHost обычно имеют следующую структуру:\n"
 
 #. type: Plain text
 #: docs/admin/15.command_line.mdx:139
 #, no-wrap
 msgid "Don't hesitate to browse and ask for more information about a given category or action using the the `--help` option. For instance, those commands :\n"
 msgstr ""
+"Не стесняйтесь изучать информацию и запрашивать дополнительные сведения о "
+"конкретной категории или действии с помощью опции `--help`. Например, "
+"следующие команды:\n"
 
 #. type: Plain text
 #: docs/admin/15.command_line.mdx:147
