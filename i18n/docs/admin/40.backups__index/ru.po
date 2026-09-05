@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-04-19 08:39+0000\n"
-"PO-Revision-Date: 2026-08-25 06:33+0000\n"
+"PO-Revision-Date: 2026-09-05 12:59+0000\n"
 "Last-Translator: Alekseï <support@digiology.org>\n"
 "Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
 "40backups__index/ru/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 5.14.2\n"
+"X-Generator: Weblate 5.14.3\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/_configuration.mdx:18
@@ -247,54 +247,67 @@ msgstr ""
 #, no-wrap
 msgid "It is possible to use `scp` (a program based on [`ssh`](/admin/command_line)) to copy files between two machines via the command line. So, from a GNU/Linux machine, you can use the following command to download an archive:\n"
 msgstr ""
+"Для копирования файлов между двумя компьютерами через командную строку можно "
+"использовать `scp` (программу, основанную на [`ssh`](/admin/command_line)). "
+"Так, на компьютере под управлением GNU/Linux для загрузки архива можно "
+"воспользоваться следующей командой:\n"
 
 #. type: Plain text
 #: docs/admin/40.backups/index.mdx:95 docs/admin/40.backups/index.mdx:179
 #, no-wrap
 msgid "If your SSH port is different from 22\n"
-msgstr ""
+msgstr "Если ваш SSH-порт отличается от 22\n"
 
 #. type: Fenced div block (caution)
 #: docs/admin/40.backups/index.mdx:104
 #, no-wrap
 msgid "Don't forget to store your backup in a different location from your server.\n"
-msgstr ""
+msgstr "Не забудьте хранить резервную копию отдельно от сервера.\n"
 
 #. type: Fenced div block (info)
 #: docs/admin/40.backups/index.mdx:108
 #, no-wrap
 msgid "If you want, you can connect an external disk to your server so that the archives are saved directly to it. See this guide on [adding external storage to your server](/admin/tutorials/external_storage).\n"
 msgstr ""
+"При желании вы можете подключить к серверу внешний диск, чтобы архивы "
+"сохранялись непосредственно на него. Ознакомьтесь с руководством по "
+"[подключению внешнего хранилища к серверу](/admin/tutorials/external_storage)"
+".\n"
 
 #. type: Title ###
 #: docs/admin/40.backups/index.mdx:112
 #, no-wrap
 msgid "Testing"
-msgstr ""
+msgstr "Тестирование"
 
 #. type: Plain text
 #: docs/admin/40.backups/index.mdx:115
 #, no-wrap
 msgid "You should regularly test your backups by at least listing the contents of the archives and checking the size of the associated data. It is best to practice restoration regularly.\n"
 msgstr ""
+"Следует регулярно проверять резервные копии — как минимум просматривать "
+"содержимое архивов и сверять размер соответствующих данных. Лучше всего "
+"регулярно практиковаться в восстановлении данных.\n"
 
 #. type: Title ###
 #: docs/admin/40.backups/index.mdx:127
 #, no-wrap
 msgid "Restoring backups"
-msgstr ""
+msgstr "Восстановление из резервных копий"
 
 #. type: Fenced div block (info)
 #: docs/admin/40.backups/index.mdx:129
 #, no-wrap
 msgid "SPOILER: The larger your data volume and the more applications you have, the more complex your recovery will be.\n"
 msgstr ""
+"СПОЙЛЕР: Чем больше объём ваших данных и количество приложений, тем сложнее "
+"будет процесс восстановления.\n"
 
 #. type: Title ####
 #: docs/admin/40.backups/index.mdx:133
 #, no-wrap
 msgid "Simple case: little data, archive already present"
-msgstr ""
+msgstr "Простой случай: мало данных, архив уже есть"
 
 #. type: Plain text
 #: docs/admin/40.backups/index.mdx:139

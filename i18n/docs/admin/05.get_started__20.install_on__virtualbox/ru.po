@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: 2026-08-25 06:33+0000\n"
+"PO-Revision-Date: 2026-09-05 13:00+0000\n"
 "Last-Translator: Alekseï <support@digiology.org>\n"
 "Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
 "05get_started__20install_on__virtualbox/ru/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 5.14.2\n"
+"X-Generator: Weblate 5.14.3\n"
 
 #. type: Title ##
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:18
@@ -263,48 +263,57 @@ msgstr ""
 #, no-wrap
 msgid "- An x86 computer with [VirtualBox installed](https://www.virtualbox.org/wiki/Downloads) and enough RAM capacity to be able to run a small virtual machine with 1024MB RAM and 8GB capacity (at least)\n"
 msgstr ""
+"- Компьютер архитектуры x86 с [установленной программой VirtualBox]"
+"(https://www.virtualbox.org/wiki/Downloads) и достаточным объёмом "
+"оперативной памяти для запуска небольшой виртуальной машины "
+"(минимум 1024 МБ ОЗУ и 8 ГБ дискового пространства).\n"
 
 #. type: Title ##
 #: docs/admin/05.get_started/20.install_on/virtualbox.mdx:24
 #, no-wrap
 msgid "<FAIcon icon=\"fa-download\"/> Download the YunoHost image"
-msgstr ""
+msgstr "<FAIcon icon=\"fa-download\"/> Загрузите образ YunoHost"
 
 #. type: Fenced div block (warning)
 #: docs/admin/05.get_started/20.install_on/virtualbox.mdx:26
 #, no-wrap
 msgid "If your host OS is 32 bits, be sure to download the 32-bit image.\n"
 msgstr ""
+"Если ваша хост-система — 32-битная, обязательно загрузите 32-битный образ.\n"
 
 #. type: Title ##
 #: docs/admin/05.get_started/20.install_on/virtualbox.mdx:38
 #, no-wrap
 msgid "Create a new virtual machine"
-msgstr ""
+msgstr "Создание новой виртуальной машины"
 
 #. type: Fenced div block (warning)
 #: docs/admin/05.get_started/20.install_on/virtualbox.mdx:42
 #, no-wrap
 msgid "It's okay if you can only have 32-bit versions, just be sure that you downloaded the 32-bit image previously.\n"
 msgstr ""
+"Ничего страшного, если вы можете использовать только 32-битные версии; "
+"главное — убедитесь, что вы заранее загрузили 32-битный образ.\n"
 
 #. type: Title ##
 #: docs/admin/05.get_started/20.install_on/virtualbox.mdx:46
 #, no-wrap
 msgid "Tweak network settings"
-msgstr ""
+msgstr "Настроить параметры сети"
 
 #. type: Fenced div block (warning)
 #: docs/admin/05.get_started/20.install_on/virtualbox.mdx:48
 #, no-wrap
 msgid "This step is important to properly expose the virtual machine on the network\n"
 msgstr ""
+"Этот шаг важен для корректного предоставления доступа к виртуальной машине в "
+"сети\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/virtualbox.mdx:53
 #, no-wrap
 msgid "Go to **Settings** > **Network**:\n"
-msgstr ""
+msgstr "Перейдите в раздел **Настройки** > **Сеть** (Settings > Network):\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/virtualbox.mdx:57

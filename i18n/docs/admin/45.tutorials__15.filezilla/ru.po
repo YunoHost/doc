@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: 2026-08-25 06:33+0000\n"
+"PO-Revision-Date: 2026-09-05 13:00+0000\n"
 "Last-Translator: Alekseï <support@digiology.org>\n"
 "Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
 "45tutorials__15filezilla/ru/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 5.14.2\n"
+"X-Generator: Weblate 5.14.3\n"
 
 #. type: Yaml Front Matter Hash Value: sidebar_label
 #: docs/admin/45.tutorials/15.filezilla.mdx:1
@@ -223,12 +223,14 @@ msgstr ""
 #, no-wrap
 msgid "   ![Copy backups from YunoHost to local computer](/img/softwares/filezilla_8.png)\n"
 msgstr ""
+"   ![Копирование резервных копий с YunoHost на локальный компьютер]"
+"(/img/softwares/filezilla_8.png)\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/15.filezilla.mdx:59
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Sources\n"
-msgstr ""
+msgstr "Исходные коды\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/15.filezilla.mdx:62
@@ -237,30 +239,38 @@ msgid ""
 "- [Official documentation](https://wiki.filezilla-project.org/FileZilla_Client_Tutorial_(en))\n"
 "- [General tutorial about using FileZilla](https://www.rc.fas.harvard.edu/resources/documentation/sftp-file-transfer/)\n"
 msgstr ""
+"- [Официальная документация]"
+"(https://wiki.filezilla-project.org/FileZilla_Client_Tutorial_(en))\n"
+"- [Общее руководство по использованию FileZilla](https://"
+"www.rc.fas.harvard.edu/resources/documentation/sftp-file-transfer/)\n"
 
 #. type: Title ##
 #: docs/admin/45.tutorials/15.filezilla.mdx:63
 #, no-wrap
 msgid "Alternatives to Filezilla"
-msgstr ""
+msgstr "Альтернативы FileZilla"
 
 #. type: Title ###
 #: docs/admin/45.tutorials/15.filezilla.mdx:65
 #, no-wrap
 msgid "GNU/Linux"
-msgstr ""
+msgstr "GNU/Linux"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/15.filezilla.mdx:68
 #, no-wrap
 msgid "From any recent GNU/Linux, you should be able to use the `file manager` to reach your server.\n"
 msgstr ""
+"В любом современном дистрибутиве GNU/Linux вы сможете подключиться к своему "
+"серверу с помощью файлового менеджера ( `file manager`).\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/15.filezilla.mdx:70
 #, no-wrap
 msgid "Nautilus from Gnome3 and Dolphin from KDE have features similar to FileZilla, out of the box.\n"
 msgstr ""
+"Nautilus из GNOME 3 и Dolphin из KDE обладают функциями, схожими с "
+"FileZilla, «из коробки».\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/15.filezilla.mdx:74
@@ -270,6 +280,12 @@ msgid ""
 "- [Dolphin](https://docs.kde.org/stable5/en/dolphin/dolphin/location-bar.html#location-bar-editable-kioslaves)\n"
 "- [Tutorial for Nautilus and SFTP](https://www.techrepublic.com/article/how-to-use-linux-file-manager-to-connect-to-an-sftp-server/)\n"
 msgstr ""
+"- [Nautilus Connect]"
+"(https://help.gnome.org/users/gnome-help/stable/nautilus-connect.html.en)\n"
+"- [Dolphin](https://docs.kde.org/stable5/en/dolphin/dolphin/location-bar.html"
+"#location-bar-editable-kioslaves)\n"
+"- [Руководство по Nautilus и SFTP](https://www.techrepublic.com/article/"
+"how-to-use-linux-file-manager-to-connect-to-an-sftp-server/)\n"
 
 #. type: Title ###
 #: docs/admin/45.tutorials/15.filezilla.mdx:75

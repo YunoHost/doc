@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-04-19 08:39+0000\n"
-"PO-Revision-Date: 2026-08-25 06:33+0000\n"
+"PO-Revision-Date: 2026-09-05 12:59+0000\n"
 "Last-Translator: Alekseï <support@digiology.org>\n"
 "Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
 "05get_started__20install_on___configuration/ru/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 5.14.2\n"
+"X-Generator: Weblate 5.14.3\n"
 
 #. type: Title ##
 #: docs/admin/05.get_started/20.install_on/_configuration.mdx:4
@@ -303,54 +303,79 @@ msgstr ""
 #, no-wrap
 msgid "**Don't run away** ! The first time you run the diagnosis, it is quite expected to see a bunch of yellow/red alerts because you typically need to [configure DNS records](/admin/get_started/post_install/dns_config) (if not using a `.nohost.me`/`noho.st`/`ynh.fr` domain), as well as [port forwarding](/admin/get_started/post_install/port_forwarding) on your home's router.\n"
 msgstr ""
+"**Не пугайтесь!** При первом запуске диагностики вполне ожидаемо увидеть "
+"множество предупреждений (жёлтых или красных), поскольку обычно требуется "
+"[настроить DNS-записи](/admin/get_started/post_install/dns_config) "
+"(если вы не используете домен `.nohost.me`/`noho.st`/`ynh.fr`), а также "
+"[настроить перенаправление портов]"
+"(/admin/get_started/post_install/port_forwarding) на домашнем маршрутизаторе."
+"\n"
 
 #. type: Fenced div block (tip)
 #: docs/admin/05.get_started/20.install_on/_configuration.mdx:92
 #, no-wrap
 msgid "If an alert is not relevant (for example because you don't intend on using a specific feature), it is perfectly fine to flag the issue as 'ignored' by going in the webadmin > Diagnosis, and clicking the ignore button for this specifc issue.\n"
 msgstr ""
+"Если уведомление неактуально "
+"(например, потому что вы не планируете использовать определённую функцию), "
+"можно смело пометить проблему как «игнорируемую»: для этого перейдите в "
+"раздел веб-панели администратора > Диагностика (Diagnosis), и нажмите кнопку "
+"игнорирования для данной конкретной проблемы.\n"
 
 #. type: Fenced div block (warning)
 #: docs/admin/05.get_started/20.install_on/_configuration.mdx:96
 #, no-wrap
 msgid "Especially, installations on WSL or virtual machines will likely not be reachable from outside without further network configuration on Virtualbox and your machine.\n"
 msgstr ""
+"В частности, к системам, установленным в WSL или на виртуальных машинах, "
+"скорее всего, нельзя будет получить доступ извне без дополнительной "
+"настройки сети в VirtualBox и на вашем компьютере.\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/_configuration.mdx:103
 #, no-wrap
 msgid "<TabItem value=\"web\" label=\"(Recommended) From the web interface\">\n"
-msgstr ""
+msgstr "<TabItem value=\"web\" label=\"(Рекомендуется) Через веб-интерфейс\">\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/_configuration.mdx:105
 #, no-wrap
 msgid "To run a diagnosis, go on Web Admin in the Diagnosis section. Click Run initial diagnosis and you should get a screen like this:\n"
 msgstr ""
+"Для запуска диагностики перейдите в раздел «Диагностика» (Diagnosis) в веб-"
+"интерфейсе администратора. Нажмите кнопку «Запустить начальную диагностику» "
+"(Run initial diagnosis) — вы должны увидеть экран, подобный этому:\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/_configuration.mdx:107
 #, no-wrap
 msgid "<Figure caption=\"Preview of the diagnostic panel\" src=\"/img/webadmin/diagnostic.png\"/>\n"
 msgstr ""
+"<Figure caption=\"Предварительный просмотр диагностической панели\" src="
+"\"/img/webadmin/diagnostic.png\"/>\n"
 
 #. type: Title ##
 #: docs/admin/05.get_started/20.install_on/_configuration.mdx:120
 #, no-wrap
 msgid "<FAIcon icon=\"fa-lock\"/> Get a Let's Encrypt certificate"
-msgstr ""
+msgstr "<FAIcon icon=\"fa-lock\"/> Получите сертификат Let's Encrypt"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/_configuration.mdx:123
 #, no-wrap
 msgid "Once you configured DNS records and port forwarding (if needed), you should be able to install a Let's Encrypt certificate. This will get rid of the spooky security warning from earlier for new visitors.\n"
 msgstr ""
+"После настройки DNS-записей и перенаправления портов (если оно требуется) вы "
+"сможете установить сертификат Let's Encrypt. Это избавит новых посетителей "
+"от того пугающего предупреждения о безопасности, которое возникало ранее.\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/_configuration.mdx:125
 #, no-wrap
 msgid "For more detailed instructions, or to lean more about SSL/TLS certificates, see [the corresponding page here](/admin/domains/certificate).\n"
 msgstr ""
+"Более подробные инструкции и информацию о сертификатах SSL/TLS можно найти "
+"на [соответствующей странице](/admin/domains/certificate).\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/_configuration.mdx:130

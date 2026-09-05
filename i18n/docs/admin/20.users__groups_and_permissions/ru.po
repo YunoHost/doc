@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: 2026-08-24 20:50+0000\n"
+"PO-Revision-Date: 2026-09-05 12:59+0000\n"
 "Last-Translator: Alekseï <support@digiology.org>\n"
 "Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
 "20users__groups_and_permissions/ru/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 5.14.2\n"
+"X-Generator: Weblate 5.14.3\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/_configuration.mdx:18
@@ -250,49 +250,56 @@ msgstr ""
 #: docs/admin/20.users/groups_and_permissions.mdx:105
 #, no-wrap
 msgid "Now in the group list we should see:\n"
-msgstr ""
+msgstr "Теперь в списке групп мы должны увидеть:\n"
 
 #. type: Title ###
 #: docs/admin/20.users/groups_and_permissions.mdx:124
 #, no-wrap
 msgid "Deleting groups"
-msgstr ""
+msgstr "Удаление групп"
 
 #. type: Plain text
 #: docs/admin/20.users/groups_and_permissions.mdx:130
 #, no-wrap
 msgid "To delete a group, click on the red cross on the top right of the group panel. You will be asked for confirmation.\n"
 msgstr ""
+"Чтобы удалить группу, нажмите на красный крестик в правом верхнем углу "
+"панели группы. Вам будет предложено подтвердить действие.\n"
 
 #. type: Plain text
 #: docs/admin/20.users/groups_and_permissions.mdx:137
 #, no-wrap
 msgid "To delete the group `yolo_crew` in CLI, you may run\n"
-msgstr ""
+msgstr "Чтобы удалить группу `yolo_crew` через CLI, можно выполнить команду\n"
 
 #. type: Title ##
 #: docs/admin/20.users/groups_and_permissions.mdx:145
 #, no-wrap
 msgid "Managing permissions"
-msgstr ""
+msgstr "Управление правами доступа"
 
 #. type: Plain text
 #: docs/admin/20.users/groups_and_permissions.mdx:148
 #, no-wrap
 msgid "The permission mechanism allow to restrict access to services (for example mail, XMPP...) and apps, or even specific parts of the apps (for example the administration interface of WordPress).\n"
 msgstr ""
+"Механизм прав доступа позволяет ограничивать доступ к службам "
+"(например, почте, XMPP...) и приложениям или даже к отдельным их частям "
+"(например, к интерфейсу администрирования WordPress).\n"
 
 #. type: Title ###
 #: docs/admin/20.users/groups_and_permissions.mdx:149
 #, no-wrap
 msgid "List permissions"
-msgstr ""
+msgstr "Список разрешений"
 
 #. type: Plain text
 #: docs/admin/20.users/groups_and_permissions.mdx:155
 #, no-wrap
 msgid "The groups page lists the permissions given to each group, including the special groups `all_users` and `visitors`.\n"
 msgstr ""
+"На странице групп перечислены права доступа, предоставленные каждой группе, "
+"включая специальные группы `all_users` и `visitors`.\n"
 
 #. type: Plain text
 #: docs/admin/20.users/groups_and_permissions.mdx:162

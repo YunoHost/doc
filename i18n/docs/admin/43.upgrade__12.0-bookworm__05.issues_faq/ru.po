@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: 2026-08-25 06:33+0000\n"
+"PO-Revision-Date: 2026-09-04 22:18+0000\n"
 "Last-Translator: Alekseï <support@digiology.org>\n"
 "Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
 "43upgrade__120-bookworm__05issues_faq/ru/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 5.14.2\n"
+"X-Generator: Weblate 5.14.3\n"
 
 #. type: Plain text
 #: docs/admin/43.upgrade/11.0-bullseye.mdx:58
@@ -240,15 +240,21 @@ msgstr ""
 #, no-wrap
 msgid "<!-- ### Can't run the migration due to `libc6-dev : Breaks: libgcc-8-dev issue`\n"
 msgstr ""
+"<!-- ### Не удается выполнить миграцию из-за конфликта `libc6-dev : Breaks: "
+"libgcc-8-dev`\n"
 
 #. type: Fenced div block (warning)
 #: docs/admin/43.upgrade/12.0-bookworm/05.issues_faq.mdx:51
 #, no-wrap
 msgid "f you have not yet rebooted your server, don't do it (we are looking for a solution). This will avoid you the use of a keyboard and screen.\n"
 msgstr ""
+"Если вы ещё не перезагрузили сервер, не делайте этого (мы ищем решение). Это "
+"позволит вам обойтись без использования клавиатуры и экрана.\n"
 
 #. type: Plain text
 #: docs/admin/43.upgrade/12.0-bookworm/05.issues_faq.mdx:69
 #, no-wrap
 msgid "After that you should be able to restore your apps. Don't forget to force upgrade them if you have 502 errors. -->\n"
 msgstr ""
+"После этого вы сможете восстановить свои приложения. Не забудьте "
+"принудительно обновить их, если возникают ошибки 502. -->\n"

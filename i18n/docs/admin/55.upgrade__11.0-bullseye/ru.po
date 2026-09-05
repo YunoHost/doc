@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2025-11-11 01:24+0100\n"
-"PO-Revision-Date: 2026-08-25 06:33+0000\n"
+"PO-Revision-Date: 2026-09-05 13:00+0000\n"
 "Last-Translator: Alekseï <support@digiology.org>\n"
 "Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
 "55upgrade__110-bullseye/ru/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 5.14.2\n"
+"X-Generator: Weblate 5.14.3\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/55.upgrade/11.0-bullseye.mdx:1
@@ -257,30 +257,54 @@ msgid ""
 "- synapse\n"
 "- weblate\n"
 msgstr ""
+"- calibreweb\n"
+"- django-for-runners\n"
+"- ffsync (это приложение написано на Python 2 и больше не поддерживается; "
+"никаких гарантий не предоставляется)\n"
+"- jupiterlab\n"
+"- librephotos\n"
+"- mautrix\n"
+"- mediadrop\n"
+"- mopidy\n"
+"- pgadmin\n"
+"- tracim\n"
+"- synapse\n"
+"- weblate\n"
 
 #. type: Fenced div block (tip)
 #: docs/admin/55.upgrade/11.0-bullseye.mdx:72
 #, no-wrap
 msgid "If needed, you can disable the automatic rebuild for a specific python app, by removing the dedicated file ending with `.requirements_backup_for_bullseye_upgrade.txt` before applying the migration. You can find this file near the venv (Python virtual environment) of your app inside `/opt` or `/var/www`.\n"
 msgstr ""
+"При необходимости вы можете отключить автоматическую пересборку конкретного "
+"Python-приложения, удалив специальный файл с расширением "
+"`.requirements_backup_for_bullseye_upgrade.txt` перед выполнением миграции. "
+"Этот файл находится рядом с venv (виртуальным окружением Python) вашего "
+"приложения в директории `/opt` или `/var/www`.\n"
 
 #. type: Title ###
 #: docs/admin/55.upgrade/11.0-bullseye.mdx:76
 #, no-wrap
 msgid "Check that no issue appeared in the diagnosis"
-msgstr ""
+msgstr "Убедитесь, что в ходе диагностики не было выявлено никаких проблем"
 
 #. type: Plain text
 #: docs/admin/55.upgrade/11.0-bullseye.mdx:79
 #, no-wrap
 msgid "Also in the webadmin Diagnosis section, make sure that no specific issue appeared after running the migration (for example a service that crashed for some reason).\n"
 msgstr ""
+"Кроме того, в разделе «Диагностика» (Diagnosis) веб-интерфейса "
+"администратора убедитесь, что после выполнения миграции не возникло никаких "
+"конкретных проблем (например, аварийной остановки какой-либо службы).\n"
 
 #. type: Plain text
 #: docs/admin/55.upgrade/11.0-bullseye.mdx:81
 #, no-wrap
 msgid "If the service `php7.3-fpm` appears to be dead, you should upgrade your PHP apps like the custom web app. Next, you can run `apt autoremove`.\n"
 msgstr ""
+"Если служба `php7.3-fpm` не работает, следует обновить PHP-приложения "
+"(например, пользовательское веб-приложение). После этого можно выполнить "
+"команду `apt autoremove`.\n"
 
 #. type: Title ###
 #: docs/admin/55.upgrade/11.0-bullseye.mdx:82

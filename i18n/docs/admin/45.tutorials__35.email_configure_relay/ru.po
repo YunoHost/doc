@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: 2026-08-25 06:33+0000\n"
+"PO-Revision-Date: 2026-09-05 12:59+0000\n"
 "Last-Translator: Alekseï <support@digiology.org>\n"
 "Language-Team: Russian <https://translate.yunohost.org/projects/yunohost-doc/"
 "45tutorials__35email_configure_relay/ru/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 5.14.2\n"
+"X-Generator: Weblate 5.14.3\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/_configuration.mdx:18
@@ -304,48 +304,63 @@ msgstr ""
 #, no-wrap
 msgid "Your SMTP relay will obviously provide you with these four things, that should be available in your control panel or whatsoever.\n"
 msgstr ""
+"Ваш SMTP-ретранслятор, разумеется, предоставит вам эти четыре параметра; они "
+"должны быть доступны в панели управления или аналогичном интерфейсе.\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/35.email_configure_relay.mdx:81
 #, no-wrap
 msgid "You can log into your YunoHost server using SSH:\n"
-msgstr ""
+msgstr "Вы можете подключиться к своему серверу YunoHost по SSH:\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/35.email_configure_relay.mdx:87
 #, no-wrap
 msgid "Then you can update the three values as below:\n"
-msgstr ""
+msgstr "Затем вы можете обновить эти три значения, как показано ниже:\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/35.email_configure_relay.mdx:97
 #, no-wrap
 msgid "It may be a good idea to double confirm your settings by doing:\n"
 msgstr ""
+"Возможно, стоит дополнительно проверить настройки, выполнив следующие "
+"действия:\n"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/35.email_configure_relay.mdx:106
 #, no-wrap
 msgid "Your SMTP relay is now configured!\n"
-msgstr ""
+msgstr "Ваш SMTP-ретранслятор настроен!\n"
 
 #. type: Fenced div block (warning)
 #: docs/admin/45.tutorials/35.email_configure_relay.mdx:107
 #, no-wrap
 msgid "<FAIcon icon=\"fa-exclamation-triangle\"/> From now on, a non trusty SMTP relay provider could read or use the data of all the emails you send without telling you (but still won't be able to read nor to use the data from emails you receive).\n"
 msgstr ""
+"<FAIcon icon=\"fa-exclamation-triangle\"/> Отныне ненадёжный провайдер SMTP-"
+"ретрансляции сможет читать или использовать данные всех отправляемых вами "
+"писем без вашего ведома (однако он по-прежнему не сможет читать или "
+"использовать данные из писем, которые вы получаете).\n"
 
 #. type: Title ####
 #: docs/admin/45.tutorials/35.email_configure_relay.mdx:111
 #, no-wrap
 msgid "Relay all emails, even those from domains managed by YunoHost"
 msgstr ""
+"Пересылать все электронные письма, включая письма с доменов, управляемых "
+"YunoHost"
 
 #. type: Plain text
 #: docs/admin/45.tutorials/35.email_configure_relay.mdx:114
 #, no-wrap
 msgid "If you have plenty of trust in your SMTP relay, have a second IMAP server that you wish or are forced to use instead of the YunoHost one, you can choose to relay all emails even those from domain names managed by YunoHost by commenting the following two lines in `/etc/postfix/main.cf` :\n"
 msgstr ""
+"Если вы полностью доверяете своему SMTP-ретранслятору и у вас есть второй "
+"IMAP-сервер, который вы хотите (или вынуждены) использовать вместо сервера "
+"YunoHost, вы можете настроить пересылку (релей) всех писем — в том числе "
+"отправляемых с доменов, управляемых YunoHost, — закомментировав следующие "
+"две строки в файле `/etc/postfix/main.cf`:\n"
 
 #. type: Title ###
 #: docs/admin/45.tutorials/35.email_configure_relay.mdx:120
