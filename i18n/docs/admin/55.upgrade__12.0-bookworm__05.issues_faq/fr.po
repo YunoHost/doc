@@ -254,9 +254,9 @@ msgstr ""
 #. type: Plain text
 #: docs/admin/55.upgrade/12.0-bookworm/05.issues_faq.mdx:39
 #, no-wrap
-msgid "<!-- ### Can't run the migration due to `libc6-dev : Breaks: libgcc-8-dev issue`\n"
+msgid "{/* ### Can't run the migration due to `libc6-dev : Breaks: libgcc-8-dev issue`\n"
 msgstr ""
-"<!-- ### Impossible d'exécuter la migration en raison de `libc6-dev : Breaks "
+"{/* ### Impossible d'exécuter la migration en raison de `libc6-dev : Breaks "
 ": libgcc-8-dev issue`\n"
 
 #. type: Fenced div block (warning)
@@ -271,7 +271,7 @@ msgstr ""
 #. type: Plain text
 #: docs/admin/55.upgrade/12.0-bookworm/05.issues_faq.mdx:69
 #, no-wrap
-msgid "After that you should be able to restore your apps. Don't forget to force upgrade them if you have 502 errors. -->\n"
+msgid "After that you should be able to restore your apps. Don't forget to force upgrade them if you have 502 errors. */}\n"
 msgstr ""
 "Après cela, vous devriez pouvoir restaurer vos applications. N'oubliez pas "
-"de forcer leur mise à jour si vous obtenez des erreurs 502. -->\n"
+"de forcer leur mise à jour si vous obtenez des erreurs 502. */}\n"
