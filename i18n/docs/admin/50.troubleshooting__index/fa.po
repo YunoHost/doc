@@ -1,0 +1,36 @@
+# Copyright (C) 2026 YunoHost Contributors
+# This file is distributed under the same license as the YunoHost documentation package.
+#
+# نادکارو <nadkaro@riseup.net>, 2026.
+msgid ""
+msgstr ""
+"Project-Id-Version: YunoHost documentation VERSION\n"
+"POT-Creation-Date: 2026-01-04 16:21+0000\n"
+"PO-Revision-Date: 2026-09-29 16:11+0000\n"
+"Last-Translator: نادکارو <nadkaro@riseup.net>\n"
+"Language-Team: Persian <https://translate.yunohost.org/projects/yunohost-doc/"
+"50troubleshooting__index/fa/>\n"
+"Language: fa\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.14.3\n"
+
+#. type: Yaml Front Matter Hash Value: title
+#: docs/admin/50.troubleshooting/index.mdx:1
+#, no-wrap
+msgid "🐞 Troubleshooting"
+msgstr "🐞 عیب‌یابی"
+
+#. type: Plain text
+#: docs/admin/50.troubleshooting/index.mdx:6
+#, no-wrap
+msgid "This section contains specific tips to troubleshoot common issues.\n"
+msgstr "این بخش شامل نکات خاصی برای عیب‌یابی مشکلات رایج است.\n"
+
+#. type: Plain text
+#: docs/admin/50.troubleshooting/index.mdx:7
+#, no-wrap
+msgid "If you are looking for help, consider having a look at [the forum](https://forum.yunohost.org/), [the support chat room](/community/chat_rooms) and [the 'Help' page](/community/help).\n"
+msgstr ""

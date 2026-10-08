@@ -1,17 +1,16 @@
-# Copyright (C) 2025 YunoHost Contributors
+# Copyright (C) 2026 YunoHost Contributors
 # This file is distributed under the same license as the YunoHost documentation package.
 #
-# ButterflyOfFire <BoFFire@users.noreply.translate.yunohost.org>, 2025.
-# ButterflyOfFire <butterflyoffire@protonmail.com>, 2026.
+# نادکارو <nadkaro@riseup.net>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: 2026-10-08 16:07+0000\n"
-"Last-Translator: ButterflyOfFire <butterflyoffire@protonmail.com>\n"
-"Language-Team: Kabyle <https://translate.yunohost.org/projects/yunohost-doc/"
-"50troubleshooting__20ipv6/kab/>\n"
-"Language: kab\n"
+"PO-Revision-Date: 2026-09-30 08:48+0000\n"
+"Last-Translator: نادکارو <nadkaro@riseup.net>\n"
+"Language-Team: Persian <https://translate.yunohost.org/projects/yunohost-doc/"
+"50troubleshooting__20ipv6/fa/>\n"
+"Language: fa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -22,13 +21,16 @@ msgstr ""
 #: docs/admin/50.troubleshooting/20.ipv6.mdx:1
 #, no-wrap
 msgid "Setting up IPv6"
-msgstr "Tzwila n IPv6"
+msgstr "راه‌اندازی IPv6"
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/20.ipv6.mdx:7
 #, no-wrap
 msgid "IPv6 may work out of the box in many cases. But in some cases or some specific provider, you may need to tweak things manually to enable IPv6.\n"
 msgstr ""
+"در بسیاری از موارد، IPv6 ممکن است بلافاصله و بدون نیاز به تنظیمات خاصی "
+"(به‌صورت پیش‌فرض) کار کند؛ اما در برخی موارد یا هنگام استفاده از سرویس‌دهنده‌های "
+"خاص، ممکن است برای فعال‌سازی آن نیاز به انجام تنظیمات دستی داشته باشید.\n"
 
 #. type: Title ##
 #: docs/admin/50.troubleshooting/20.ipv6.mdx:8
@@ -48,7 +50,7 @@ msgstr ""
 #: docs/admin/50.troubleshooting/20.ipv6.mdx:13
 #, no-wrap
 msgid "Configure the DNS server"
-msgstr ""
+msgstr "کارساز ساناد را پیکربندی کنید"
 
 #. type: Plain text
 #: docs/admin/50.troubleshooting/20.ipv6.mdx:16

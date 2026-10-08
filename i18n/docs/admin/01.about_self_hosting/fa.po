@@ -1,0 +1,59 @@
+# Copyright (C) 2026 YunoHost Contributors
+# This file is distributed under the same license as the YunoHost documentation package.
+#
+# نادکارو <nadkaro@riseup.net>, 2026.
+msgid ""
+msgstr ""
+"Project-Id-Version: YunoHost documentation VERSION\n"
+"POT-Creation-Date: 2026-01-04 16:21+0000\n"
+"PO-Revision-Date: 2026-09-30 08:48+0000\n"
+"Last-Translator: نادکارو <nadkaro@riseup.net>\n"
+"Language-Team: Persian <https://translate.yunohost.org/projects/yunohost-doc/"
+"01about_self_hosting/fa/>\n"
+"Language: fa\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.14.3\n"
+
+#. type: Yaml Front Matter Hash Value: title
+#: docs/admin/01.about_self_hosting.mdx:1
+#, no-wrap
+msgid "About self-hosting"
+msgstr "دربارهٔ خودمیزبانی"
+
+#. type: Plain text
+#: docs/admin/01.about_self_hosting.mdx:7
+#, no-wrap
+msgid "Self-hosting means owning and administrating your own server, typically at home, to host your **personal data and services** yourself instead of relying exclusively on third parties. For instance, you can self-host your blog, such that it 'lives' on a machine that you have control of, instead of having it on somebody else's computer (a.k.a. FAANG or The Cloud) in exchange for money, advertisements, or private data.\n"
+msgstr ""
+"خودمیزبانی به معنای در اختیار داشتن مالکیت و مدیریت کارساز شخصی خودتان است، "
+"**داده‌ها و خدمات شخصی یا گروهی** که معمولاً در خانه انجام می‌شود تا به‌جای تکیه‌ٔ "
+"انحصاری بر اشخاص ثالث، خودتان میزبانی داده‌ها و سرویس‌هایِ شخصی‌تان را بر عهده "
+"بگیرید. برایِ نمونه، می‌توانید وبلاگتان را خودمیزبانی کنید؛ به‌طوری که آن روی "
+"دستگاهی اجرا شود (مثلاً در محل خانه) که شما بر آن کنترل کامل دارید، نه اینکه "
+"آن را روی رایانه‌ٔ شخص دیگری (مشهور به FAANG یا همان «ابر») در ازای پرداخت پول،"
+" نمایش تبلیغات یا واگذاری داده‌های خصوصی‌تان داشته باشید. کنترل داده‌ها در دست "
+"خودتان/کمون و...\n"
+
+#. type: Plain text
+#: docs/admin/01.about_self_hosting.mdx:9
+#, no-wrap
+msgid "Self-hosting implies owning a server. **A server is a computer that is typically accessible on the network 24/7**, and usually does not have a screen or keyboard (it is instead controlled remotely). Contrary to a popular belief, a server is not necessarily a huge and extra-powerful machine: nowadays, a small, ~$30 ARM board is adequate for self-hosting.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/01.about_self_hosting.mdx:11
+#, no-wrap
+msgid "![Internet topologies diagram](/img/internet_topologies.png)\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/01.about_self_hosting.mdx:12
+#, no-wrap
+msgid "Self-hosting is not about making \"your Internet\" more secure and does not provide anonymity by itself. Instead, it is about being autonomous and in control of your services and data — which also means being responsible for them.\n"
+msgstr ""
+"خودمیزبانی به معنای امن‌تر کردن «اینترنت شما» نیست و به خودی خود گمنامی به "
+"همراه نمی‌آورد. در عوض، موضوعِ آن خودمختار بودن و داشتن کنترل بر خدمات و داده‌"
+"هایتان است — که این خود به معنای مسئول بودن در قبالِ آن‌هاست.\n"
