@@ -1,0 +1,225 @@
+# Copyright (C) 2026 YunoHost Contributors
+# This file is distributed under the same license as the YunoHost documentation package.
+#
+# نادکارو <nadkaro@riseup.net>, 2026.
+msgid ""
+msgstr ""
+"Project-Id-Version: YunoHost documentation VERSION\n"
+"POT-Creation-Date: 2026-01-04 16:21+0000\n"
+"PO-Revision-Date: 2026-09-30 08:48+0000\n"
+"Last-Translator: نادکارو <nadkaro@riseup.net>\n"
+"Language-Team: Persian <https://translate.yunohost.org/projects/yunohost-doc/"
+"05get_started__40post_install__20dns_config/fa/>\n"
+"Language: fa\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.14.3\n"
+
+#. type: Title ##
+#: docs/admin/05.get_started/10.providers/05.registrar/ovh/manualdns.mdx:29
+#: docs/admin/05.get_started/40.post_install/20.dns_config.mdx:93
+#, no-wrap
+msgid "Dynamic IP"
+msgstr "آی‌پی پویا"
+
+#. type: Yaml Front Matter Hash Value: title
+#: docs/admin/05.get_started/40.post_install/20.dns_config.mdx:1
+#, no-wrap
+msgid "DNS zone configuration"
+msgstr "پیکربندی ناحیه ساناد"
+
+#. type: Plain text
+#: docs/admin/05.get_started/40.post_install/20.dns_config.mdx:9
+#, no-wrap
+msgid ""
+"DNS (domain name system) is a system that converts human-readable addresses\n"
+"(domain names) into machine-understandable addresses (IP). For your server to be\n"
+"easily accessible by human beings, and for some services like mail to work\n"
+"properly, DNS must be configured.\n"
+msgstr ""
+"ساناد (سامانهٔ نام دامنه) در واقع سامانه‌ای است که نشانی‌های خوانا برای انسان "
+"(نام‌های دامنه) را به نشانی‌های قابل‌فهم برای ماشین (آی‌پی) تبدیل می‌کند. برای "
+"اینکه کارساز شما به‌آسانی توسط انسان‌ها دردسترس باشد و همچنین برای اینکه برخی "
+"خدمات مانند ایمیل به‌درستی کار کنند، ساناد باید «پیکربندی» شود.\n"
+
+#. type: Plain text
+#: docs/admin/05.get_started/40.post_install/20.dns_config.mdx:14
+#, no-wrap
+msgid ""
+"If you're using an [automatic domain](/admin/tutorials/domains/dns_nohost_me) provided by the YunoHost Project, the configuration should be\n"
+"performed automatically. If you're using your own domain name (e.g. bought via\n"
+"a registrar), you should manually configure your domain on your registrar's\n"
+"interface.\n"
+msgstr ""
+"اگر از یک دامنه‌ی خودکار[automatic domain]"
+"(/admin/tutorials/domains/dns_nohost_me) که توسط پروژهٔ «یونوهاست» ارائه شده "
+"است استفاده می‌کنید، پیکربندی باید به‌طور خودکار انجام شود. اگر از نام دامنه‌ٔ "
+"خودتان استفاده می‌کنید (مثلاً دامنه‌ای که از طریق یک ثبت‌کننده خریداری شده است)، "
+"باید دامنهٔ خود را به‌صورت دستی در رابط ثبت‌کننده پیکربندی کنید.\n"
+
+#. type: Title ##
+#: docs/admin/05.get_started/40.post_install/20.dns_config.mdx:15
+#, no-wrap
+msgid "Recommended DNS configuration"
+msgstr "پیکربندی پیشنهادی ساناد"
+
+#. type: Plain text
+#: docs/admin/05.get_started/40.post_install/20.dns_config.mdx:18
+#, no-wrap
+msgid "NB: Examples here use the placeholder `your.domain.tld`, you have to replace it with your real domain, such as `www.yunohost.org`.\n"
+msgstr ""
+"نکته: در مثال‌های اینجا از عبارت جای‌گذار `your.domain.tld` استفاده شده است؛ "
+"شما باید آن را با دامنه واقعی خود، مانند `www.yunohost.org` جایگزین کنید.\n"
+
+#. type: Plain text
+#: docs/admin/05.get_started/40.post_install/20.dns_config.mdx:20
+#, no-wrap
+msgid "YunoHost provides a recommended DNS configuration, available via:\n"
+msgstr ""
+"یونوهاست یک پیکربندی پیشنهادی برای ساناد ارائه می‌دهد که از طریق مسیر زیر در "
+"دسترس است:\n"
+
+#. type: Plain text
+#: docs/admin/05.get_started/40.post_install/20.dns_config.mdx:23
+#, no-wrap
+msgid ""
+"- the webadmin, in Domain > your.domain.tld > DNS configuration;\n"
+"- or the command line, `yunohost domain dns suggest your.domain.tld`\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/40.post_install/20.dns_config.mdx:27
+#, no-wrap
+msgid ""
+"For specific needs or specific setups, and if you know what you're doing, you\n"
+"might want or have to tweak these, or add additional ones (e.g. to handle\n"
+"subdomains).\n"
+msgstr ""
+"برای نیازهای ویژه یا پیکربندی‌های خاص، و اگر می‌دانید چه می‌کنید، ممکن است "
+"بخواهید یا نیاز داشته باشید که این‌ها را تغییر دهید یا موارد بیشتری به آن‌ها "
+"بیفزایید (مثلاً برای مدیریت زیردامنه‌ها)\n"
+
+#. type: Plain text
+#: docs/admin/05.get_started/40.post_install/20.dns_config.mdx:29
+#, no-wrap
+msgid "The recommended configuration typically looks like this:\n"
+msgstr "پیکربندی توصیه‌شده معمولاً به این صورت است:\n"
+
+#. type: Plain text
+#: docs/admin/05.get_started/40.post_install/20.dns_config.mdx:51
+#, no-wrap
+msgid "Though it might be easier to understand it if displayed like this:\n"
+msgstr "اگر به این شکل نمایش داده شود، شاید درک آن آسان‌تر باشد:\n"
+
+#. type: Plain text
+#: docs/admin/05.get_started/40.post_install/20.dns_config.mdx:62
+#, fuzzy, no-wrap
+msgid ""
+"| Type    | Name                   | Value                                                 |\n"
+"| :-----: | :--------------------: | :--------------------------------------------------:  |\n"
+"|  **A**  |   **@**                |  `111.222.333.444` (your IPv4)                        |\n"
+"|    A    |   *                    |  `111.222.333.444` (your IPv4)                        |\n"
+"|  AAAA   |   @                    |  `2222:444:8888:3333:bbbb:5555:3333:1111` (your IPv6) |\n"
+"|  AAAA   |   *                    |  `2222:444:8888:3333:bbbb:5555:3333:1111` (your IPv6) |\n"
+"| **MX**  | **@**                  |  `your.domain.tld.`     (and priority: 10)            |\n"
+"|   TXT   |   @                    |  `\"v=spf1 a mx -all\"`               |\n"
+"|   TXT   |  mail._domainkey       |  `\"v=DKIM1; k=rsa; p=someHuuuuuuugeKey\"`              |\n"
+"|   TXT   |  _dmarc                |  `\"v=DMARC1; p=none\"`                                 |\n"
+msgstr ""
+"| Type    | Name                   | "
+"Value                                                 |\n"
+"| :-----: | :--------------------: | "
+":--------------------------------------------------:  |\n"
+"|  **A**  |   **@**                |  `111.222.333.444` (your IPv4)"
+"                        |\n"
+"|    A    |   *                    |  `111.222.333.444` (your IPv4)"
+"                        |\n"
+"|  AAAA   |   @                    |  "
+"`2222:444:8888:3333:bbbb:5555:3333:1111` (your IPv6) |\n"
+"|  AAAA   |   *                    |  "
+"`2222:444:8888:3333:bbbb:5555:3333:1111` (your IPv6) |\n"
+"| **MX**  | **@**                  |  `your.domain.tld.`     "
+"(and priority: 10)            |\n"
+"|   TXT   |   @                    |  `\"v=spf1 a mx -all\"`               |"
+"\n"
+"|   TXT   |  mail._domainkey       |  `"
+"\"v=DKIM1; k=rsa; p=someHuuuuuuugeKey\"`              |\n"
+"|   TXT   |  _dmarc                |  `\"v=DMARC1; p=none\"`"
+"                                 |\n"
+
+#. type: Title ###
+#: docs/admin/05.get_started/40.post_install/20.dns_config.mdx:63
+#, no-wrap
+msgid "A few notes about this table"
+msgstr "چند نکته درباره این جدول"
+
+#. type: Plain text
+#: docs/admin/05.get_started/40.post_install/20.dns_config.mdx:72
+#, no-wrap
+msgid ""
+"- Not all these lines are absolutely necessary. For a minimal setup, you only need the records in bold.\n"
+"- The dot at the end of `your.domain.tld.` is important ;);\n"
+"- `@` corresponds to `your.domain.tld`, and e.g. `muc` corresponds to `muc.your.domain.tld`;\n"
+"- These are example values ! See your generated conf for the actual values you should use;\n"
+"- We recommend a [TTL](https://en.wikipedia.org/wiki/Time_to_live#DNS_records) of 3600 (1 hour). But you can use something else if you know what you're doing;\n"
+"- Don't put an IPv6 record if you're not sure IPv6 really works on your server! You might have issues with Let's Encrypt if it doesn't.\n"
+"- If you're using the domain provider Namecheap the SRV DNS entries are formatted as **Service**: `_xmpp-client` **Protocol**: `_tcp` **Priority**: `0` **Weight**: `5` **Port**: `5222` **Target**: `your.domain.tld`\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/05.get_started/40.post_install/20.dns_config.mdx:73
+#, no-wrap
+msgid "Reverse DNS"
+msgstr "ساناد معکوس"
+
+#. type: Plain text
+#: docs/admin/05.get_started/40.post_install/20.dns_config.mdx:79
+#, no-wrap
+msgid ""
+"If your ISP or VPS provider let you define a [Reverse DNS\n"
+"lookup](https://en.wikipedia.org/wiki/Reverse_DNS_lookup) for your public IPv4\n"
+"and/or IPv6 addresses, you must configure it. It will prevent you to be marked as\n"
+"spam by anti-spam filters.\n"
+msgstr ""
+"اگر ارائه‌دهنده خدمات اینترنت (ISP) یا سرویس‌دهنده VPS شما امکان تعریف "
+"[Reverse DNS lookup](https://en.wikipedia.org/wiki/Reverse_DNS_lookup) را "
+"برای آدرس‌های عمومی IPv4 و/یا IPv6 فراهم می‌کند، باید آن را پیکربندی کنید. این "
+"کار از شناسایی شدن شما به عنوان فرستنده هرزنامه توسط پالایه‌های ضد هرزنامه "
+"جلوگیری می‌کند.\n"
+
+#. type: Plain text
+#: docs/admin/05.get_started/40.post_install/20.dns_config.mdx:81
+#, no-wrap
+msgid "**N.B.: the reverse DNS configuration happens on your Internet Service Provider or VPS provider. It is *not* handled by your domain's registrar.**\n"
+msgstr ""
+"نکته: پیکربندی ساناد معکوس توسط ارائه‌دهنده خدمات اینترنت یا ارائه‌دهنده سرور "
+"مجازی شما انجام می‌شود و ارتباطی به شرکت ثبت‌کننده دامنه شما ندارد.\n"
+
+#. type: Plain text
+#: docs/admin/05.get_started/40.post_install/20.dns_config.mdx:85
+#, fuzzy, no-wrap
+msgid ""
+"If your public IPv4 address is `111.222.333.444` and your DNS\n"
+"domain is `domain.tld`, you should get following answer when using `nslookup`\n"
+"command tool:\n"
+msgstr ""
+"اگر آدرس IPv4 عمومی شما `111.222.333.444` و دامنه ساناد شما `domain.tld` است،"
+" هنگام استفاده از ابزار خط‌فرمان `nslookup` باید پاسخ زیر را دریافت کنید:\n"
+
+#. type: Plain text
+#: docs/admin/05.get_started/40.post_install/20.dns_config.mdx:92
+#, no-wrap
+msgid "The diagnosis system available in the webadmin performs this checks automatically (in section Email).\n"
+msgstr ""
+"سامانه‌ی عیب‌یابی موجود در «رابط مدیریتی وب»، این بررسی‌ها را به‌طور خودکار "
+"انجام می‌دهد (در بخش رایانامه).\n"
+
+#. type: Plain text
+#: docs/admin/05.get_started/40.post_install/20.dns_config.mdx:95
+#, no-wrap
+msgid "If your global IP address is constantly changing, follow this [tutorial](/admin/tutorials/domains/dns_dynamicip).\n"
+msgstr ""
+"اگر آدرس آی‌پی عمومی شما دائماً در حال تغییر است، این [آموزش]"
+"(/admin/tutorials/domains/dns_dynamicip) را دنبال کنید.\n"
