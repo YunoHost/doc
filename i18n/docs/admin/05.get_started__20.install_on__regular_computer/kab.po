@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: 2026-01-09 18:09+0000\n"
+"PO-Revision-Date: 2026-10-17 18:07+0000\n"
 "Last-Translator: ButterflyOfFire <butterflyoffire@protonmail.com>\n"
 "Language-Team: Kabyle <https://translate.yunohost.org/projects/yunohost-doc/"
 "05get_started__20install_on__regular_computer/kab/>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.14.2\n"
+"X-Generator: Weblate 5.14.3\n"
 
 #. type: Title ##
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:18
@@ -81,7 +81,7 @@ msgstr "![USBimager](/img/softwares/usbimager.png)\n"
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:64
 #, no-wrap
 msgid "<TabItem value=\"dd\" label=\"With dd\">\n"
-msgstr ""
+msgstr "<TabItem value=\"dd\" label=\"S dd\">\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:69
@@ -104,7 +104,7 @@ msgstr ""
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:26
 #, no-wrap
 msgid "<FAIcon icon=\"fa-download\" /> Download the YunoHost image"
-msgstr ""
+msgstr "<FAIcon icon=\"fa-download\" /> Sader-d tugna n YunoHost"
 
 #. type: Fenced div block (note)
 #: docs/admin/05.get_started/20.install_on/raspberry_pi.mdx:34
@@ -127,7 +127,7 @@ msgstr ""
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:1
 #, no-wrap
 msgid "On a regular computer"
-msgstr ""
+msgstr "Ɣef uselkim amagnu"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:25
@@ -175,7 +175,7 @@ msgstr ""
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:76
 #, no-wrap
 msgid "<TabItem value=\"ventoy\" label=\"Using Ventoy\">\n"
-msgstr ""
+msgstr "<TabItem value=\"ventoy\" label=\"S Ventoy\">\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:78
