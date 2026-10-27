@@ -2,21 +2,21 @@
 # This file is distributed under the same license as the YunoHost documentation package.
 #
 # ButterflyOfFire <BoFFire@users.noreply.translate.yunohost.org>, 2025.
+# ButterflyOfFire <butterflyoffire@protonmail.com>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: 2025-11-29 18:39+0000\n"
-"Last-Translator: ButterflyOfFire <BoFFire@users.noreply.translate.yunohost."
-"org>\n"
-"Language-Team: Kabyle <https://translate.yunohost.org/projects/yunohost-"
-"doc/05get_started__20install_on__arm_board/kab/>\n"
+"PO-Revision-Date: 2026-10-17 18:07+0000\n"
+"Last-Translator: ButterflyOfFire <butterflyoffire@protonmail.com>\n"
+"Language-Team: Kabyle <https://translate.yunohost.org/projects/yunohost-doc/"
+"05get_started__20install_on__arm_board/kab/>\n"
 "Language: kab\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.14.2\n"
+"X-Generator: Weblate 5.14.3\n"
 
 #. type: Yaml Front Matter Hash Value: description
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:1
@@ -157,7 +157,7 @@ msgstr "![USBimager](/img/softwares/usbimager.png)\n"
 #: docs/admin/05.get_started/20.install_on/regular_computer.mdx:64
 #, no-wrap
 msgid "<TabItem value=\"dd\" label=\"With dd\">\n"
-msgstr ""
+msgstr "<TabItem value=\"dd\" label=\"S dd\">\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/20.install_on/arm_board.mdx:69
