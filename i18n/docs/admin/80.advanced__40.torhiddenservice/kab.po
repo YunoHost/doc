@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-04 16:21+0000\n"
-"PO-Revision-Date: 2026-01-09 18:09+0000\n"
+"PO-Revision-Date: 2026-10-17 18:07+0000\n"
 "Last-Translator: ButterflyOfFire <butterflyoffire@protonmail.com>\n"
 "Language-Team: Kabyle <https://translate.yunohost.org/projects/yunohost-doc/"
 "80advanced__40torhiddenservice/kab/>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.14.2\n"
+"X-Generator: Weblate 5.14.3\n"
 
 #. type: Yaml Front Matter Hash Value: sidebar_label
 #: docs/admin/80.advanced/40.torhiddenservice.mdx:1
@@ -78,7 +78,7 @@ msgstr ""
 #: docs/admin/80.advanced/40.torhiddenservice.mdx:41
 #, no-wrap
 msgid "Add the .onion domain to YunoHost"
-msgstr ""
+msgstr "Rnu taɣult n .onion ɣer YunoHost"
 
 #. type: Title ###
 #: docs/admin/80.advanced/40.torhiddenservice.mdx:47
