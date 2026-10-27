@@ -5,12 +5,13 @@
 # ppr <pouetpouetratatouille@gmail.com>, 2026.
 # 1Poireau <unpoireau@proton.me>, 2026.
 # Julie Boissière-Vasseur <jboisseur@posteo.net>, 2026.
+# Léo Millon <millon.leo@gmail.com>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
 "POT-Creation-Date: 2026-01-11 19:20+0000\n"
-"PO-Revision-Date: 2026-04-28 12:08+0000\n"
-"Last-Translator: 1Poireau <unpoireau@proton.me>\n"
+"PO-Revision-Date: 2026-10-27 13:29+0000\n"
+"Last-Translator: Léo Millon <millon.leo@gmail.com>\n"
 "Language-Team: French <https://translate.yunohost.org/projects/yunohost-doc/"
 "02what_is_yunohost__index/fr/>\n"
 "Language: fr\n"
@@ -18,7 +19,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.14.2\n"
+"X-Generator: Weblate 5.14.3\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/02.what_is_yunohost/index.mdx:1
@@ -210,14 +211,14 @@ msgstr ""
 #, no-wrap
 msgid "**YunoHost is *not* designed to be a *heavy* multi-tenant solution** for providing services to completely separate organizations across different domains. While you *can* manage multiple domains and subdomains — such as hosting apps for friends, colleagues, and an association — you should keep in mind that there is no strict isolation between apps. Under the hood, all applications share the same system and environment.\n"
 msgstr ""
-"**YunoHost n'est *pas* conçu pour être une solution de mutualisation *lourde*"
-" ** fournissant des services à de multiples organisations complètement "
-"séparées à travers différents domaines. Bien qu'il soit *possible* de gérer "
-"plusieurs domaines et sous-domaines — comme pour héberger des applications "
-"pour des amis, des collègues et une association, vous devez garder à "
-"l'esprit qu'il n'y a pas d'isolation stricte entre les applications. Sous le "
-"capot, toutes les applications partagent le même système et le même "
-"environnement.\n"
+"**YunoHost n'est *pas* conçu pour être une solution de mutualisation "
+"*lourde*** fournissant des services à de multiples organisations "
+"complètement séparées à travers différents domaines. Bien qu'il soit "
+"*possible* de gérer plusieurs domaines et sous-domaines — comme pour "
+"héberger des applications pour des amis, des collègues et une association, "
+"vous devez garder à l'esprit qu'il n'y a pas d'isolation stricte entre les "
+"applications. Sous le capot, toutes les applications partagent le même "
+"système et le même environnement.\n"
 
 #. type: Plain text
 #: docs/admin/02.what_is_yunohost/index.mdx:57
