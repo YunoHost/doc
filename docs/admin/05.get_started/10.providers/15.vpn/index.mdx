@@ -36,19 +36,6 @@ By **compatible for self-hosting** we means VPN offers with at least:
 ¹ [Pay what you want](https://en.wikipedia.org/wiki/Pay_what_you_want)
 
 :::info
-Self-hosting notes, checked November 2026. VPNClient connects via OpenVPN (.ovpn import), so the IPv6 column reflects the provider's OpenVPN tunnel: Proton, IVPN and Windscribe only provide IPv6 over WireGuard (their .ovpn configs are IPv4-only, and Proton has marked OpenVPN Deprecated overall); PIA's client blocks IPv6 by design; AirVPN tunnels IPv6 natively inside OpenVPN. Mullvad removed OpenVPN on 2026-01-15, which is why VPNClient cannot use it. Fixed dedicated IPv4 exists only as a paid add-on for PIA (dedicated IP) and Windscribe (Static IP, 2–8 $ / month); Proton's static IPs are business-plan only; AirVPN, Mullvad and IVPN offer none — use DDNS against the stable exit IP.
-
-- **AirVPN**: up to 5 remote forwarded ports (≥ 2048) included with any plan, but outbound port 25 is blocked and there is no dedicated IPv4 — the exit IP is shared per server (stable while you stay on the same server, use the included `.airdns.org` DDNS).
-- **Private Internet Access**: random port forwarding on select servers; the dedicated IPv4 add-on does not allow custom rDNS. IPv6 is deliberately blocked by the client (leak protection).
-- **Proton VPN**: one forwarded port on P2P servers with Plus plans; no consumer dedicated IP (static IPs are business-plan only, with a leased dedicated server); no rDNS customization.
-- **Mullvad**: up to 5 randomly assigned ports (TCP/UDP, IPv4 and IPv6), but intentionally no static/dedicated IP — bring your own DDNS. Note: ports cannot be added to accounts with an active auto-recurring subscription.
-- **IVPN**: port forwarding was fully removed from the service on 2023-09-30 — not usable for self-hosting inbound connections.
-- **Windscribe**: ephemeral port forwarding included with Pro; the Static IP add-on gives a fixed dedicated IPv4 with port forwarding (IPv4 only, no rDNS). IPv6 egress only on some locations.
-
-None of these providers offers customizable reverse DNS, and only PIA and Windscribe sell a fixed dedicated IPv4 on a consumer plan (Proton: business plans only) — so per the definition above they are all only partially suitable for self-hosting mail.
-:::
-
-:::info
 If you try an other VPN provider that include **public dedicated ipv4 and port forwarding**, feel free to contribute to this documentation. We need people to test specific offers of those commercial providers:
 
 - ✘ [VPN area](https://vpnarea.com/front/home/dedicated-ip) does not allow forwarding port 80. Running a webserver is against their TOS.
