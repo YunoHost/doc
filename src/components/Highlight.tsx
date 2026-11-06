@@ -70,6 +70,27 @@ export function HighlightNonProfit() {
     </Highlight>
   );
 }
+export function HighlightForProfit() {
+  return (
+    <Highlight no_break={true} color="#f0980c">
+      For Profit
+    </Highlight>
+  );
+}
+export function HighlightAuditedNoLogs() {
+  return (
+    <Highlight no_break={true} color="#7c3aed">
+      Audited No-Logs
+    </Highlight>
+  );
+}
+export function HighlightNonAudited() {
+  return (
+    <Highlight no_break={true} color="#6c757d">
+      Non-audited
+    </Highlight>
+  );
+}
 
 export function HighlightCHATONS() {
   return (

@@ -2,7 +2,7 @@
 title: VPN providers
 ---
 
-import {HighlightFFDN, HighlightNonProfit} from '@site/src/components/Highlight';
+import {HighlightAuditedNoLogs, HighlightFFDN, HighlightForProfit, HighlightNonAudited, HighlightNonProfit} from '@site/src/components/Highlight';
 
 Since setting up a server at home is an uncommon practice, most Internet connections provided to individuals are unsuitable for this purpose especially if you desire to send mail. A net neutral VPN providing a dedicated fixed public IPv4 address and IPv6 addresses [can help to circumvent some limitations or difficulties](/admin/get_started/providers/vpn/vpn_advantage).
 
@@ -25,9 +25,28 @@ By **compatible for self-hosting** we means VPN offers with at least:
 
 | VPN provider | [VPNClient](https://github.com/labriqueinternet/vpnclient_ynh) compatibility | IPv6 | rDNS IPv4 | rDNS IPv6 | Price | Membership | Net Neutrality |
 | ------------ | ---------------------------------------------------------------------------- | ---- | --------- | --------- | ----- | ---------- | -------------- |
+| [AirVPN](https://airvpn.org/) | ✔ (.ovpn) | ✔ | ✘ | ✘ | 7 € / month (2.75 € on the 3-year plan) [↗](https://airvpn.org/buy/) | none | <HighlightForProfit/> <HighlightNonAudited/> |
+| [IVPN](https://www.ivpn.net/) | ✔ (.ovpn) | ✘ | ✘ | ✘ | 6 $ / month (60 $ / year) · Pro 10 $ / month [↗](https://www.ivpn.net/pricing/) | none | <HighlightForProfit/> <HighlightAuditedNoLogs/> |
+| [Mullvad](https://mullvad.net/) | ✘ (WireGuard only since 2026-01) | ✔ | ✘ | ✘ | 5 € / month (flat rate, no long-term discount) [↗](https://mullvad.net/en/pricing) | none | <HighlightForProfit/> <HighlightAuditedNoLogs/> |
 | [Neutrinet](https://neutrinet.be/en/vpn) | ✔ (.cube + [internetcube](https://internetcu.be)) | ✔   | ✔         | ✔         | ~10€¹/month or 30€/year | included | <HighlightFFDN/> <HighlightNonProfit/> |
+| [Private Internet Access](https://www.privateinternetaccess.com/) | ✔ (.ovpn) | ✘ | ✘ | ✘ | 11.95 $ / month (≈4 $ on yearly plans) + dedicated IP [↗](https://www.privateinternetaccess.com/buy-vpn-online) | none | <HighlightForProfit/> <HighlightAuditedNoLogs/> |
+| [Proton VPN](https://protonvpn.com/) | ✔ (.ovpn) | ✘ | ✘ | ✘ | 12.99 $ / month (3–4 $ on the 2-year plan) [↗](https://protonvpn.com/pricing) | none | <HighlightForProfit/> <HighlightAuditedNoLogs/> |
+| [Windscribe](https://windscribe.com/) | ✔ (.ovpn) | ✘ | ✘ | ✘ | 9 $ / month (69 $ / year ≈ 5.75 $ / month) + Static IP [↗](https://windscribe.com/pricing) | none | <HighlightForProfit/> <HighlightAuditedNoLogs/> |
 
 ¹ [Pay what you want](https://en.wikipedia.org/wiki/Pay_what_you_want)
+
+:::info
+Self-hosting notes, checked November 2026. VPNClient connects via OpenVPN (.ovpn import), so the IPv6 column reflects the provider's OpenVPN tunnel: Proton, IVPN and Windscribe only provide IPv6 over WireGuard (their .ovpn configs are IPv4-only, and Proton has marked OpenVPN Deprecated overall); PIA's client blocks IPv6 by design; AirVPN tunnels IPv6 natively inside OpenVPN. Mullvad removed OpenVPN on 2026-01-15, which is why VPNClient cannot use it. Fixed dedicated IPv4 exists only as a paid add-on for PIA (dedicated IP) and Windscribe (Static IP, 2–8 $ / month); Proton's static IPs are business-plan only; AirVPN, Mullvad and IVPN offer none — use DDNS against the stable exit IP.
+
+- **AirVPN**: up to 5 remote forwarded ports (≥ 2048) included with any plan, but outbound port 25 is blocked and there is no dedicated IPv4 — the exit IP is shared per server (stable while you stay on the same server, use the included `.airdns.org` DDNS).
+- **Private Internet Access**: random port forwarding on select servers; the dedicated IPv4 add-on does not allow custom rDNS. IPv6 is deliberately blocked by the client (leak protection).
+- **Proton VPN**: one forwarded port on P2P servers with Plus plans; no consumer dedicated IP (static IPs are business-plan only, with a leased dedicated server); no rDNS customization.
+- **Mullvad**: up to 5 randomly assigned ports (TCP/UDP, IPv4 and IPv6), but intentionally no static/dedicated IP — bring your own DDNS. Note: ports cannot be added to accounts with an active auto-recurring subscription.
+- **IVPN**: port forwarding was fully removed from the service on 2023-09-30 — not usable for self-hosting inbound connections.
+- **Windscribe**: ephemeral port forwarding included with Pro; the Static IP add-on gives a fixed dedicated IPv4 with port forwarding (IPv4 only, no rDNS). IPv6 egress only on some locations.
+
+None of these providers offers customizable reverse DNS, and only PIA and Windscribe sell a fixed dedicated IPv4 on a consumer plan (Proton: business plans only) — so per the definition above they are all only partially suitable for self-hosting mail.
+:::
 
 :::info
 If you try an other VPN provider that include **public dedicated ipv4 and port forwarding**, feel free to contribute to this documentation. We need people to test specific offers of those commercial providers:
