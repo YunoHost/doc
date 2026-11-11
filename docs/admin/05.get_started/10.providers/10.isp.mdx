@@ -16,6 +16,7 @@ values={[
 {label: 'North America', value: 'northamerica'},
 {label: 'South America', value: 'southamerica'},
 {label: 'Oceania', value: 'oceania'},
+{label: 'International (Satellite)', value: 'international'},
 ]}>
 
 <TabItem value="africa">
@@ -181,10 +182,12 @@ NB: Most of non-business IP provided by ISP are blocklisted.
 
 | Service provider  | Port 25 openable                      | [Hairpinning](http://en.wikipedia.org/wiki/Hairpinning) | Customizable reverse DNS | Fixed IP                           |
 | ----------------- | ------------------------------------- | ------------------------------------------------------- | ------------------------ | ---------------------------------- |
-| Cox               | No. Only for business class customer. | No                                                      | No                       | Yes, as a business class customer  |
-| Charter           | No. Only for business class customer. | No                                                      | No                       | Yes, as a business class customer  |
-| DSLExtreme        | Yes                                   | No                                                      | No                       | Yes, extra charge.                 |
 | AT&T              | No. Only for business class customer. | unknown.                                                | unknown.                 | unknown.                           |
+| Charter           | No. Only for business class customer. | No                                                      | No                       | Yes, as a business class customer  |
+| Cox               | No. Only for business class customer. | No                                                      | No                       | Yes, as a business class customer  |
+| DSLExtreme        | Yes                                   | No                                                      | No                       | Yes, extra charge.                 |
+| T-Mobile® 5G Home Internet | No | No | No | Yes, as a business class customer  |
+| Verizon Home Internet (non-5G) | No | No | No | No. Only for business class customer. |
 | Xfinity (Comcast) | No. Only for business class customer. | unknown.                                                | unknown.                 | Yes, as a business class customer  |
 
 </TabItem>
@@ -204,5 +207,13 @@ NB: Most of non-business IP provided by ISP are blocklisted.
 </TabItem>
 
 <TabItem value="oceania">
+</TabItem>
+
+<TabItem value="international">
+
+| Service provider | Port 25 openable | [Hairpinning](http://en.wikipedia.org/wiki/Hairpinning) | Customizable reverse DNS | Fixed IP |
+| ---------------- | ---------------- | ------------------------------------------------------- | ------------------------ | -------- |
+| Starlink         | No               | No                                                      | No                       | No       |
+
 </TabItem>
 </Tabs>
