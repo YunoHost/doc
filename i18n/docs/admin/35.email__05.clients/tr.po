@@ -5,11 +5,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YunoHost documentation VERSION\n"
-"POT-Creation-Date: 2026-01-04 16:21+0000\n"
+"POT-Creation-Date: 2026-11-11 23:13+0000\n"
 "PO-Revision-Date: 2026-04-10 15:56+0000\n"
 "Last-Translator: Mehmet Can Gökçe <rainessandrai2023@gmail.com>\n"
-"Language-Team: Turkish <https://translate.yunohost.org/projects/yunohost-doc/"
-"35email__05clients/tr/>\n"
+"Language-Team: Turkish <https://translate.yunohost.org/projects/yunohost-"
+"doc/35email__05clients/tr/>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -27,21 +27,13 @@ msgstr "E-posta kullanıcılarını yönet"
 #: docs/admin/35.email/05.clients.mdx:9
 #, no-wrap
 msgid "You can fetch and send emails using your YunoHost instance from desktop email clients such as Thunderbird Desktop or on your smartphone with applications like K-9 Mail.\n"
-msgstr ""
-"Thunderbird masaüstü uygulaması ile veya telefonlardaki K-9 E-posta "
-"uygulaması ile YunoHost üzerinde çalışan e-posta hizmetin üzerinden e-posta "
-"alıp gönderebilirsin.\n"
+msgstr "Thunderbird masaüstü uygulaması ile veya telefonlardaki K-9 E-posta uygulaması ile YunoHost üzerinde çalışan e-posta hizmetin üzerinden e-posta alıp gönderebilirsin.\n"
 
 #. type: Plain text
 #: docs/admin/35.email/05.clients.mdx:11
 #, no-wrap
 msgid "Modern mail clients should be able to configure themselves automatically. If autoconfiguration fails, you can do it manually following the instructions below. (If the autoconfiguration fails though, it should be understood as a bug in YunoHost, and we would be glad to read your feedback to try to reproduce the issue on our side!)\n"
-msgstr ""
-"Modern e-posta istemcileri kendileri otomatik bir şekilde "
-"özelleştirebilirler. Ama bu başarısız olursa, aşağıdaki adımları takip "
-"ederek el ile bunları düzeltebilirsiniz. (eğer bu başarısız olursa, bunun "
-"YunoHost kaynaklı bir hata olduğu anlaşılmalıdır ve biz hatayı tekrarlamak "
-"için bize vereceğiniz geri bildirimleri memnuniyetle okuruz!)\n"
+msgstr "Modern e-posta istemcileri kendileri otomatik bir şekilde özelleştirebilirler. Ama bu başarısız olursa, aşağıdaki adımları takip ederek el ile bunları düzeltebilirsiniz. (eğer bu başarısız olursa, bunun YunoHost kaynaklı bir hata olduğu anlaşılmalıdır ve biz hatayı tekrarlamak için bize vereceğiniz geri bildirimleri memnuniyetle okuruz!)\n"
 
 #. type: Title ###
 #: docs/admin/35.email/05.clients.mdx:12
@@ -149,23 +141,65 @@ msgstr ""
 #. type: Plain text
 #: docs/admin/35.email/05.clients.mdx:62
 #, no-wrap
+msgid "<TabItem value=\"outlook\" label=\"Microsoft Outlook\">\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/35.email/05.clients.mdx:65
+#, no-wrap
+msgid ""
+"IMPORTANT!\n"
+"Do not use the securtiy hardeing advice for Postfix with TLS 1.3 in yunohost.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/35.email/05.clients.mdx:67
+#, no-wrap
+msgid "Outlook Classic and Outlook modern on Windows or Apple MacOS don't support TLS 1.3 for SMTP server. So do not set the postfix to \"Modern (TLS 1.3 only)\" setting on this page: https://your-yunohost-HOSTNAME/yunohost/admin/#/tools/settings/security\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/35.email/05.clients.mdx:69
+#, no-wrap
+msgid "You can only use \"Intermediate (allow TLS 1.2)\" with Microsoft Outlook as of 9.3.2026.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/35.email/05.clients.mdx:72
+#, no-wrap
+msgid ""
+"Documenation about postfix hardeing:\n"
+"https://doc.yunohost.org/en/admin/security#hardening-cipher-used-by-nginx-ssh-dovecot-postfix\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/35.email/05.clients.mdx:75
+#, no-wrap
+msgid ""
+"More information about some tests an versions:\n"
+"https://forum.yunohost.org/t/outlook-classic-or-modern-doesnt-work-with-smtp-postfix-modern-tls-1-3-only-setting/41773\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/35.email/05.clients.mdx:78
+#, no-wrap
 msgid "<TabItem value=\"dekko\" label=\"Dekko\">\n"
 msgstr ""
 
 #. type: Title #####
-#: docs/admin/35.email/05.clients.mdx:63
+#: docs/admin/35.email/05.clients.mdx:79
 #, no-wrap
 msgid "<SmallInline url='/img/icons/logo-dekko.png'/> Configure Dekko (on Ubuntu Touch)"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/35.email/05.clients.mdx:66
+#: docs/admin/35.email/05.clients.mdx:82
 #, no-wrap
 msgid "The first time you can simply choose \"Add account\". If you already have an account configured, tap the hamburger menu then tap the gear, choose Mail, Accounts and press the '+'-symbol.\n"
 msgstr ""
 
 #. type: Plain text
-#: docs/admin/35.email/05.clients.mdx:68
+#: docs/admin/35.email/05.clients.mdx:84
 #, no-wrap
 msgid "Then you choose IMAP. Fill in the fields and press Next. Now Dekko will look for the configuration. Check that all fields are correct. Make sure you have your YunoHost username, NOT your email address and choose \"Allow untrusted certificates\". Do this for IMAP and SMTP and press Next. Dekko will now synchronise the account after which you are done. Congratz!\n"
 msgstr ""
