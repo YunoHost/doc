@@ -47,9 +47,9 @@ Using stupidly simple passwords is arguably the number one reason why servers ge
 
 The following sections describe possible ways to further harden the security of your server.
 
-## SSH authentication via key
+## SSH authentication profiles
 
-By default, the SSH authentication uses the administration password. Deactivating this kind of authentication and replacing it by a key mechanism is advised.
+By default, the SSH authentication uses the administration password. Deactivating this kind of authentication and replacing it by a key mechanism is highly advised.
 
 **On your client**:
 
@@ -68,7 +68,25 @@ Type your admnistration password and your key will be copied onto your server.
 **On your server**, editing the SSH configuration file to deactivate password authentication is handled by a system setting:
 
 ```bash
-sudo yunohost settings set security.ssh.ssh_password_authentication -v no
+sudo yunohost settings set security.ssh.ssh_authentication_methods -v basic
+```
+
+The basic profile prohibits password authentication and requires key based authentication. Alternatively, you can also set an intermediate profile with the following
+system setting:
+```bash
+sudo yunohost settings set security.ssh.ssh_authentication_methods -v intermediate
+```
+
+This profiles first requires key based authentication **and** your user password[^ssh_password_vs_passphrase] to successfuly authenticate against your server.
+
+[^ssh_password_vs_passphrase]: Password and passphrase in this context should not be confused. A passphrase is related to the encryption of one’s ssh 
+private key on the client, while the password is related to the user password on the server against which the user tries to authenticate. The password in this context
+has nothing to do with the passphrase and the encryption of the ssh key. You can (and should) you use a passphrase for the *value* of your password however, as those
+are more robust.
+
+Also, if you really want to use password authentication onlly, you can with the following system setting:
+```bash
+sudo yunohost settings set security.ssh.ssh_authentication_methods -v insecure
 ```
 
 :::danger
